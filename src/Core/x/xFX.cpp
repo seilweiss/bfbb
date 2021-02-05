@@ -4,13 +4,19 @@
 #include "xstransvc.h"
 
 #include "../p2/iMath.h"
+#include "../p2/iDraw.h"
+#include "../p2/iModel.h"
+#include "../p2/iFX.h"
+#include "../p2/iParMgr.h"
 #include "../../Game/zParEmitter.h"
 #include "../../Game/zSurface.h"
 #include "../../Game/zFX.h"
 #include "../../Game/zGlobals.h"
 
 #include <string.h>
+
 #include <rpmatfx.h>
+#include <rpskin.h>
 
 /* boot.HIP texture IDs */
 #define ID_gloss_edge 0xB8C2351E
@@ -23,6 +29,7 @@ extern float32 _958;
 extern float32 _995;
 extern float32 _1132;
 extern float32 _1171;
+extern float32 _1872;
 
 RpAtomicCallBackRender gAtomicRenderCallBack = NULL;
 float32 EnvMapShininess = 1.0f;
@@ -398,11 +405,82 @@ static RpAtomic* AtomicSetShininess(RpAtomic* atomic, void* data)
     return atomic;
 }
 
-// func_8002752C
-#pragma GLOBAL_ASM("asm/Core/x/xFX.s", "MaterialSetEnvMap__FP10RpMaterialPv")
+static RpMaterial* MaterialSetEnvMap(RpMaterial* material, void* data)
+{
+    if (!data)
+    {
+        return NULL;
+    }
 
+    if (RpMaterialGetTexture(material))
+    {
+        RwTexture* texture = (RwTexture*)data;
+
+        if (texture)
+        {
+            RwFrame* frame;
+
+            if (gFXSurfaceFlags & 0x10)
+            {
+                if (globals.camera.lo_cam)
+                {
+                    frame = RwCameraGetFrame(globals.camera.lo_cam);
+                }
+                else
+                {
+                    frame = RpLightGetFrame(MainLight);
+                }
+            }
+            else
+            {
+                frame = RpLightGetFrame(MainLight);
+            }
+
+            RpMatFXMaterialSetEffects(material, rpMATFXEFFECTENVMAP);
+            RpMatFXMaterialSetupEnvMap(material, texture, frame, FALSE, _958);
+        }
+        else
+        {
+            RpMatFXMaterialSetEffects(material, rpMATFXEFFECTNULL);
+        }
+    }
+
+    return material;
+}
+
+#ifndef NON_MATCHING
+RpMaterial* MaterialSetEnvMap2(RpMaterial* material, void* data);
 // func_800275F8
 #pragma GLOBAL_ASM("asm/Core/x/xFX.s", "MaterialSetEnvMap2__FP10RpMaterialPv")
+#else
+RpMaterial* MaterialSetEnvMap2(RpMaterial* material, void* data)
+{
+    if (RpMaterialGetTexture(material))
+    {
+        const RwChar* textureName;
+        RwTexture* texture = (RwTexture*)data;
+        RwFrame* frame;
+
+        // non-matching: scheduling
+
+        textureName = RwTextureGetName(texture);
+
+        if (rwstrcmp(textureName, _stringBase0_7 + 88) == 0)
+        {
+            frame = RwCameraGetFrame(globals.camera.lo_cam);
+        }
+        else
+        {
+            frame = RpLightGetFrame(MainLight);
+        }
+
+        RpMatFXMaterialSetEffects(material, rpMATFXEFFECTENVMAP);
+        RpMatFXMaterialSetupEnvMap(material, texture, frame, FALSE, EnvMapShininess);
+    }
+
+    return material;
+}
+#endif
 
 struct xFXBubbleParams
 {
@@ -434,28 +512,203 @@ static xFXBubbleParams defaultBFX = {
 static uint32 bfx_curr = 0;
 static xFXBubbleParams* BFX = &defaultBFX;
 
+#define env_map_setup(atomic, envmapID, shininess)                                                 \
+    {                                                                                              \
+        gFXSurfaceFlags = 0x10;                                                                    \
+        xFXAtomicEnvMapSetup((atomic), (envmapID), (shininess));                                   \
+        gFXSurfaceFlags = 0;                                                                       \
+    }
+
+#ifndef NON_MATCHING
 // func_800276AC
 #pragma GLOBAL_ASM("asm/Core/x/xFX.s", "xFXBubbleRender__FP8RpAtomic")
+#else
+RpAtomic* xFXBubbleRender(RpAtomic* atomic)
+{
+    RwCullMode cmode;
+    xFXBubbleParams* bp = &BFX[bfx_curr];
+
+    RwRenderStateGet(rwRENDERSTATECULLMODE, (void*)&cmode);
+    RwRenderStateSet(rwRENDERSTATECULLMODE, (void*)rwCULLMODECULLBACK);
+
+    iDrawSetFBMSK(bp->pass1_fbmsk);
+    iModelSetMaterialAlpha(atomic, bp->pass1_alpha);
+
+    if (bp->pass1)
+    {
+        AtomicDisableMatFX(atomic);
+        gAtomicRenderCallBack(atomic);
+    }
+
+    iDrawSetFBMSK(0);
+    iModelSetMaterialAlpha(atomic, bp->pass2_alpha);
+
+    if (bp->pass2)
+    {
+        // non-matching: scheduling
+
+        env_map_setup(atomic, bp->fresnel_map, bp->fresnel_map_coeff);
+        gAtomicRenderCallBack(atomic);
+    }
+
+    iModelSetMaterialAlpha(atomic, bp->pass3_alpha);
+
+    if (bp->pass3)
+    {
+        // non-matching: scheduling
+
+        AtomicDisableMatFX(atomic);
+        env_map_setup(atomic, bp->env_map, bp->env_map_coeff);
+        gAtomicRenderCallBack(atomic);
+    }
+
+    RwRenderStateSet(rwRENDERSTATECULLMODE, (void*)cmode);
+    return atomic;
+}
+#endif
 
 static uint32 sFresnelMap = 0;
 static uint32 sEnvMap = 0;
 static int32 sTweaked = 0;
 
+#ifndef NON_MATCHING
 // func_800277EC
 #pragma GLOBAL_ASM("asm/Core/x/xFX.s", "xFXShinyRender__FP8RpAtomic")
+#else
+RpAtomic* xFXShinyRender(RpAtomic* atomic)
+{
+    // non-matching: scheduling in multiple areas
 
-// func_8002792C
-#pragma GLOBAL_ASM("asm/Core/x/xFX.s", "AtomicSetEnvMap__FP8RpAtomicPv")
+    if (!sTweaked)
+    {
+        sEnvMap = xStrHash(_stringBase0_7 + 94);
+        sFresnelMap = xStrHash(_stringBase0_7 + 114);
+        sTweaked = 1;
+    }
 
-// func_80027984
-#pragma GLOBAL_ASM("asm/Core/x/xFX.s", "xFXAtomicEnvMapSetup__FP8RpAtomicUif")
+    RwCullMode cmode;
 
-// func_80027A30
-#pragma GLOBAL_ASM("asm/Core/x/xFX.s", "MaterialSetBumpMap__FP10RpMaterialPv")
+    RwRenderStateGet(rwRENDERSTATECULLMODE, (void*)&cmode);
+    RwRenderStateSet(rwRENDERSTATECULLMODE, (void*)rwCULLMODECULLBACK);
 
-// func_80027AC0
-#pragma GLOBAL_ASM("asm/Core/x/xFX.s",                                                             \
-                   "MaterialSetBumpEnvMap__FP10RpMaterialP9RwTexturefP9RwTexturef")
+    iDrawSetFBMSK(0xFFFFFFFF);
+    iModelSetMaterialAlpha(atomic, 255);
+    AtomicDisableMatFX(atomic);
+    gAtomicRenderCallBack(atomic);
+
+    iDrawSetFBMSK(0);
+    iModelSetMaterialAlpha(atomic, 0);
+    env_map_setup(atomic, sFresnelMap, _957_0);
+    gAtomicRenderCallBack(atomic);
+
+    iModelSetMaterialAlpha(atomic, 255);
+    AtomicDisableMatFX(atomic);
+    env_map_setup(atomic, sEnvMap, _958);
+    gAtomicRenderCallBack(atomic);
+
+    RwRenderStateSet(rwRENDERSTATECULLMODE, (void*)cmode);
+    return atomic;
+}
+#endif
+
+static RpAtomic* AtomicSetEnvMap(RpAtomic* atomic, void* data)
+{
+    RpMatFXAtomicEnableEffects(atomic);
+
+    RpGeometry* geometry = RpAtomicGetGeometry(atomic);
+
+    if (geometry)
+    {
+        RpGeometryForAllMaterials(geometry, MaterialSetEnvMap2, data);
+    }
+
+    return atomic;
+}
+
+RpAtomic* xFXAtomicEnvMapSetup(RpAtomic* atomic, uint32 envmapID, float32 shininess)
+{
+    RwTexture* env = (RwTexture*)xSTFindAsset(envmapID, NULL);
+
+    if (env)
+    {
+        AtomicSetEnvMap(atomic, env);
+
+        float32 tmp = EnvMapShininess;
+
+        EnvMapShininess = shininess;
+        AtomicSetShininess(atomic, NULL);
+
+        EnvMapShininess = tmp;
+
+        RpSkin* skin = RpSkinGeometryGetSkin(RpAtomicGetGeometry(atomic));
+
+        if (skin)
+        {
+            RpSkinAtomicSetType(atomic, rpSKINTYPEMATFX);
+        }
+
+        return atomic;
+    }
+
+    return NULL;
+}
+
+static RpMaterial* MaterialSetBumpMap(RpMaterial* material, void* data)
+{
+    if (!data)
+    {
+        return NULL;
+    }
+
+    if (RpMaterialGetTexture(material))
+    {
+        RwTexture* texture = (RwTexture*)data;
+
+        if (texture)
+        {
+            RwFrame* frame = RpLightGetFrame(MainLight);
+
+            RpMatFXMaterialSetEffects(material, rpMATFXEFFECTBUMPMAP);
+            RpMatFXMaterialSetupBumpMap(material, texture, frame, _958);
+        }
+        else
+        {
+            RpMatFXMaterialSetEffects(material, rpMATFXEFFECTNULL);
+        }
+    }
+
+    return material;
+}
+
+static RpMaterial* MaterialSetBumpEnvMap(RpMaterial* material, RwTexture* env, float32 shininess,
+                                         RwTexture* bump, float32 bumpiness)
+{
+    if (!env || !bump)
+    {
+        return NULL;
+    }
+
+    RpMatFXMaterialSetEffects(material, rpMATFXEFFECTBUMPENVMAP);
+
+    RwFrame* frame;
+
+    if (gFXSurfaceFlags & 0x10)
+    {
+        frame = RwCameraGetFrame(globals.camera.lo_cam);
+    }
+    else
+    {
+        frame = RpLightGetFrame(MainLight);
+    }
+
+    RpMatFXMaterialSetupEnvMap(material, env, frame, TRUE, shininess);
+
+    frame = RpLightGetFrame(MainLight);
+
+    RpMatFXMaterialSetupBumpMap(material, bump, frame, bumpiness);
+
+    return material;
+}
 
 static RxPipeline* xFXanimUVPipeline = NULL;
 float32 xFXanimUVRotMat0[2] = { 1.0f, 0.0f };
@@ -468,63 +721,395 @@ float32 xFXanimUV2PTrans[2] = { 0.0f, 0.0f };
 float32 xFXanimUV2PScale[2] = { 1.0f, 1.0f };
 RwTexture* xFXanimUV2PTexture = NULL;
 
-// func_80027B8C
-#pragma GLOBAL_ASM("asm/Core/x/xFX.s", "xFXanimUVSetTranslation__FPC5xVec3")
+void xFXanimUVSetTranslation(const xVec3* trans)
+{
+    xFXanimUVTrans[0] = trans->x;
+    xFXanimUVTrans[1] = trans->y;
+}
 
-// func_80027BA4
-#pragma GLOBAL_ASM("asm/Core/x/xFX.s", "xFXanimUVSetScale__FPC5xVec3")
+void xFXanimUVSetScale(const xVec3* scale)
+{
+    xFXanimUVScale[0] = scale->x;
+    xFXanimUVScale[1] = scale->y;
+}
 
+#ifndef NON_MATCHING
 // func_80027BBC
 #pragma GLOBAL_ASM("asm/Core/x/xFX.s", "xFXanimUVSetAngle__Ff")
+#else
+void xFXanimUVSetAngle(float32 angle)
+{
+    // non-matching: scheduling
 
-// func_80027C18
-#pragma GLOBAL_ASM("asm/Core/x/xFX.s", "xFXanimUV2PSetTranslation__FPC5xVec3")
+    float32 x = isin(angle);
+    float32 y = icos(angle);
 
-// func_80027C30
-#pragma GLOBAL_ASM("asm/Core/x/xFX.s", "xFXanimUV2PSetScale__FPC5xVec3")
+    xFXanimUVRotMat0[0] = y;
+    xFXanimUVRotMat0[1] = -x;
+    xFXanimUVRotMat1[0] = x;
+    xFXanimUVRotMat1[1] = y;
+}
+#endif
 
+void xFXanimUV2PSetTranslation(const xVec3* trans)
+{
+    xFXanimUV2PTrans[0] = trans->x;
+    xFXanimUV2PTrans[1] = trans->y;
+}
+
+void xFXanimUV2PSetScale(const xVec3* scale)
+{
+    xFXanimUV2PScale[0] = scale->x;
+    xFXanimUV2PScale[1] = scale->y;
+}
+
+#ifndef NON_MATCHING
 // func_80027C48
 #pragma GLOBAL_ASM("asm/Core/x/xFX.s", "xFXanimUV2PSetAngle__Ff")
+#else
+void xFXanimUV2PSetAngle(float32 angle)
+{
+    // non-matching: scheduling
 
-// func_80027CA4
-#pragma GLOBAL_ASM("asm/Core/x/xFX.s", "xFXanimUV2PSetTexture__FP9RwTexture")
+    float32 x = isin(angle);
+    float32 y = icos(angle);
 
-// func_80027CAC
-#pragma GLOBAL_ASM("asm/Core/x/xFX.s", "xFXanimUVAtomicSetup__FP8RpAtomic")
+    xFXanimUV2PRotMat0[0] = y;
+    xFXanimUV2PRotMat0[1] = -x;
+    xFXanimUV2PRotMat1[0] = x;
+    xFXanimUV2PRotMat1[1] = y;
+}
+#endif
 
-// func_80027CC8
-#pragma GLOBAL_ASM("asm/Core/x/xFX.s", "xFXanimUVCreate__Fv")
+void xFXanimUV2PSetTexture(RwTexture* texture)
+{
+    xFXanimUV2PTexture = texture;
+}
 
-// func_80027D08
-#pragma GLOBAL_ASM(                                                                                \
-    "asm/Core/x/xFX.s",                                                                            \
-    "depth_sort__17_esc__2_unnamed_esc__2_xFX_cpp_esc__2_FPUsPCQ217_esc__2_unnamed_esc__2_xFX_cpp_esc__2_8tri_dataUl")
+RpAtomic* xFXanimUVAtomicSetup(RpAtomic* atomic)
+{
+    if (atomic && xFXanimUVPipeline)
+    {
+        RpAtomicSetPipeline(atomic, xFXanimUVPipeline);
+    }
+
+    return atomic;
+}
+
+uint32 xFXanimUVCreate()
+{
+    if (!xFXanimUVPipeline)
+    {
+        xFXanimUVPipeline = iFXanimUVCreatePipe();
+    }
+
+    return (xFXanimUVPipeline != NULL);
+}
 
 namespace
 {
+    struct vert_data
+    {
+        xVec3 loc;
+        xVec3 norm;
+        RwRGBA color;
+        RwTexCoords uv;
+        float32 depth;
+    };
+
+    struct tri_data
+    {
+        vert_data vert[3];
+
+        void init(const xVec3* loc, const xVec3* normal, const RwTexCoords* uv,
+                  const float32* depth, const uint16* vertIndex);
+        tri_data& operator=(const tri_data&); // temp
+    };
+
+    void depth_sort(uint16* index, const tri_data* tri, ulong32 size)
+    {
+        for (ulong32 i = 0; i < size; i++)
+        {
+            uint16& e0 = index[i];
+            float32 d0 = tri[e0].vert[0].depth;
+
+            for (ulong32 j = i + 1; j < size; j++)
+            {
+                if (tri[index[j]].vert[0].depth > d0)
+                {
+                    uint16 temp = e0;
+                    e0 = index[j];
+                    index[j] = temp;
+                }
+            }
+        }
+    }
+
 #define ALPHA_COUNT 300
 
     uint8 alpha_count0[ALPHA_COUNT];
     uint8 alpha_count1[ALPHA_COUNT];
+
+    void push_triangle(RwIm3DVertex*& vert, const tri_data& tri);
+    void set_vert(RwIm3DVertex& vert, const xVec3& loc, const xVec3& norm, const RwTexCoords& uv,
+                  uint8 alpha);
+    int32 clip_triangle(tri_data* r3, const tri_data& r4, float32 f1);
+    void refresh_vert_buffer(RwIm3DVertex*& vert, bool r4);
+    int32 count_alpha_triangles(const RpTriangle* tri, const float32* depth, ulong32 size);
 } // namespace
 
+#define alloc_temp(T, count) ((T*)xMemPushTemp((count) * sizeof(T)))
+#define free_temp(ptr) xMemPopTemp((ptr))
+
+#if 1 // wip
 // func_80027D84
 #pragma GLOBAL_ASM("asm/Core/x/xFX.s", "xFXRenderProximityFade__FRC14xModelInstanceff")
+#else
+void xFXRenderProximityFade(const xModelInstance& model, float32 near_dist, float32 far_dist)
+{
+    memset(alpha_count0, 0, sizeof(alpha_count0));
+    memset(alpha_count1, 0, sizeof(alpha_count1));
+
+    RpGeometry* geometry = RpAtomicGetGeometry(model.Data);
+    RwRaster* raster = RwRasterGetParent(
+        RwTextureGetRaster(RpMaterialGetTexture(RpGeometryGetMaterial(geometry, 0))));
+    RpTriangle* tri = RpGeometryGetTriangles(geometry);
+    RwFrame* frame = RwCameraGetFrame(RwCameraGetCurrentCamera());
+    RwTexCoords* uv = RpGeometryGetVertexTexCoords(geometry, 1);
+    int32 vert_total = RpGeometryGetNumVertices(geometry);
+
+    RwRenderStateSet(rwRENDERSTATESRCBLEND, (void*)rwBLENDSRCALPHA);
+    RwRenderStateSet(rwRENDERSTATEDESTBLEND, (void*)rwBLENDINVSRCALPHA);
+    RwRenderStateSet(rwRENDERSTATETEXTURERASTER, (void*)raster);
+    RwRenderStateSet(rwRENDERSTATEVERTEXALPHAENABLE, (void*)TRUE);
+
+    xVec3* vert = alloc_temp(xVec3, vert_total);
+    xVec3* normal = alloc_temp(xVec3, vert_total);
+
+    iModelVertEval(model.Data, 0, vert_total, model.Mat, NULL, vert);
+    iModelNormalEval(normal, *model.Data, model.Mat, 0, -1, NULL);
+
+    uint8* alpha = alloc_temp(uint8, vert_total);
+    float32* depth = alloc_temp(float32, vert_total);
+
+    xMat4x3& cm = *(xMat4x3*)RwFrameGetLTM(frame);
+    xVec3 ov;
+    float32 zfrac = (near_dist >= far_dist) ? (_958) : (_958 / (far_dist - near_dist));
+
+    for (int32 i = 0; i < vert_total; i++)
+    {
+        xMat4x3Tolocal(&ov, &cm, &vert[i]);
+
+        depth[i] = zfrac * (ov.z - near_dist);
+
+        float32 a = _1872 * depth[i];
+
+        if (a < _957_0)
+        {
+            alpha[i] = 0;
+        }
+        else if (a >= _1872)
+        {
+            alpha[i] = 255;
+        }
+        else
+        {
+            alpha[i] = _1132 + a;
+        }
+    }
+
+    RwIm3DVertex* out_vert = gRenderBuffer.m_vertex;
+    int32 tri_total;
+    uint16* alpha_tri_index = NULL;
+    tri_data* alpha_tri = NULL;
+    uint32 alpha_tri_total = 0;
+
+    tri_total = count_alpha_triangles(tri, depth, RpGeometryGetNumTriangles(geometry));
+
+    if (tri_total)
+    {
+        alpha_tri_index = alloc_temp(uint16, tri_total);
+        alpha_tri = alloc_temp(tri_data, tri_total);
+    }
+    else if (vert_total < 0 && depth[0] < _957_0)
+    {
+        goto done;
+    }
+
+    tri_data tri_buffer[2][3];
+    tri_data cur_tri;
+    RpTriangle* end = tri + RpGeometryGetNumTriangles(geometry);
+
+    while (tri != end)
+    {
+        refresh_vert_buffer(out_vert, false);
+
+        uint16 vi[3];
+        vi[0] = tri->vertIndex[0];
+        vi[1] = tri->vertIndex[1];
+        vi[2] = tri->vertIndex[2];
+
+        float32 d0 = depth[vi[0]];
+        float32 d1 = depth[vi[1]];
+        float32 d2 = depth[vi[2]];
+
+        uint32 flags = 0;
+
+#define D0_NEAR 0x1
+#define D1_NEAR 0x2
+#define D2_NEAR 0x4
+#define NEAR_MASK (D0_NEAR | D1_NEAR | D2_NEAR)
+
+#define D0_MIDDLE 0x8
+#define D1_MIDDLE 0x10
+#define D2_MIDDLE 0x20
+#define MIDDLE_MASK (D0_MIDDLE | D1_MIDDLE | D2_MIDDLE)
+
+#define D0_FAR 0x40
+#define D1_FAR 0x80
+#define D2_FAR 0x100
+#define FAR_MASK (D0_FAR | D1_FAR | D2_FAR)
+
+        if (d0 < _957_0)
+        {
+            flags |= D0_NEAR;
+        }
+        else if (d0 > _958)
+        {
+            flags |= D0_FAR;
+        }
+        else
+        {
+            flags |= D0_MIDDLE;
+        }
+
+        if (d1 < _957_0)
+        {
+            flags |= D1_NEAR;
+        }
+        else if (d1 > _958)
+        {
+            flags |= D1_FAR;
+        }
+        else
+        {
+            flags |= D1_MIDDLE;
+        }
+
+        if (d2 < _957_0)
+        {
+            flags |= D2_NEAR;
+        }
+        else if (d2 > _958)
+        {
+            flags |= D2_FAR;
+        }
+        else
+        {
+            flags |= D2_MIDDLE;
+        }
+
+        if ((flags & MIDDLE_MASK) == MIDDLE_MASK || (flags & FAR_MASK) == FAR_MASK)
+        {
+            if (alpha[vi[0]])
+            {
+                set_vert(*out_vert++, vert[vi[0]], normal[vi[0]], uv[vi[0]], alpha[vi[0]]);
+                set_vert(*out_vert++, vert[vi[1]], normal[vi[1]], uv[vi[1]], alpha[vi[1]]);
+                set_vert(*out_vert++, vert[vi[2]], normal[vi[2]], uv[vi[2]], alpha[vi[2]]);
+            }
+        }
+        else if ((flags & NEAR_MASK) == NEAR_MASK)
+        {
+            cur_tri.init(vert, normal, uv, depth, vi);
+
+            int32 i;
+            int32 size1 = clip_triangle(tri_buffer[0], cur_tri, _957_0);
+
+            for (i = 0; i < size1; i++)
+            {
+                if (tri_buffer[0][i].vert[0].depth <= _957_0 ||
+                    tri_buffer[0][i].vert[1].depth <= _957_0 ||
+                    tri_buffer[0][i].vert[2].depth <= _957_0)
+                {
+                    int32 j;
+                    int32 size2 = clip_triangle(&tri_buffer[1][0], tri_buffer[0][i], _958);
+
+                    for (j = 0; j < size2; j++)
+                    {
+                        if (tri_buffer[1][i].vert[0].depth >= _958 &&
+                            tri_buffer[1][i].vert[1].depth >= _958 &&
+                            tri_buffer[1][i].vert[2].depth >= _958)
+                        {
+                            push_triangle(out_vert, tri_buffer[1][i]);
+                        }
+                        else
+                        {
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+done:
+    free_temp(depth);
+    free_temp(alpha);
+    free_temp(normal);
+    free_temp(vert);
+}
+#endif
 
 // func_800283D0
 #pragma GLOBAL_ASM(                                                                                \
     "asm/Core/x/xFX.s",                                                                            \
     "__as__Q217_esc__2_unnamed_esc__2_xFX_cpp_esc__2_8tri_dataFRCQ217_esc__2_unnamed_esc__2_xFX_cpp_esc__2_8tri_data")
 
-// func_800283F8
-#pragma GLOBAL_ASM(                                                                                \
-    "asm/Core/x/xFX.s",                                                                            \
-    "push_triangle__17_esc__2_unnamed_esc__2_xFX_cpp_esc__2_FRP18RxObjSpace3DVertexRCQ217_esc__2_unnamed_esc__2_xFX_cpp_esc__2_8tri_data")
+namespace
+{
+    void set_vert(RwIm3DVertex& vert, const vert_data& vd);
 
+    void push_triangle(RwIm3DVertex*& vert, const tri_data& tri)
+    {
+        for (int32 i = 0; i < 3; i++, vert++)
+        {
+            set_vert(*vert, tri.vert[i]);
+        }
+    }
+
+#ifndef NON_MATCHING
 // func_80028460
 #pragma GLOBAL_ASM(                                                                                \
     "asm/Core/x/xFX.s",                                                                            \
     "set_vert__17_esc__2_unnamed_esc__2_xFX_cpp_esc__2_FR18RxObjSpace3DVertexRCQ217_esc__2_unnamed_esc__2_xFX_cpp_esc__2_9vert_data")
+#else
+    void set_vert(RwIm3DVertex& vert, const vert_data& vd)
+    {
+        uint8 alpha;
+        float32 a = _1872 * vd.depth;
+
+        if (a < _957_0)
+        {
+            alpha = 0;
+        }
+        else if (a >= _1872)
+        {
+            alpha = 255;
+        }
+        else
+        {
+            alpha = _1132 + a;
+        }
+
+        // non-matching: regalloc
+
+        RwIm3DVertexSetPos(&vert, vd.loc.x, vd.loc.y, vd.loc.z);
+        RwIm3DVertexSetNormal(&vert, vd.norm.x, vd.norm.y, vd.norm.z);
+        RwIm3DVertexSetRGBA(&vert, 255, 255, 255, alpha);
+        RwIm3DVertexSetU(&vert, vd.uv.u);
+        RwIm3DVertexSetV(&vert, vd.uv.v);
+    }
+#endif
+} // namespace
 
 // clip_triangle jumptable
 static uint32 _1933[] = { 0x80028610, 0x80028640, 0x80028640, 0x80028640, 0x80028640, 0x80028640,

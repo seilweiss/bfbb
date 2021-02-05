@@ -2,7 +2,7 @@
 #define XFX_H
 
 #include "../p2/iColor.h"
-#include "xVec3.h"
+#include "xModel.h"
 
 #include <rwcore.h>
 #include <rpworld.h>
@@ -34,18 +34,19 @@ void xFX_SceneExit(RpWorld* world);
 void xFXUpdate(float32 dt);
 RpAtomic* AtomicDisableMatFX(RpAtomic* atomic);
 void xFXPreAllocMatFX(RpClump* clump);
-
 RpAtomic* xFXBubbleRender(RpAtomic* atomic);
-
-void xFXanimUV2PSetTexture(RwTexture* texture);
+RpAtomic* xFXShinyRender(RpAtomic* atomic);
+RpAtomic* xFXAtomicEnvMapSetup(RpAtomic* atomic, uint32 envmapID, float32 shininess);
 void xFXanimUVSetTranslation(const xVec3* trans);
-void xFXanimUV2PSetTranslation(const xVec3* trans);
 void xFXanimUVSetScale(const xVec3* scale);
-void xFXanimUV2PSetScale(const xVec3* scale);
 void xFXanimUVSetAngle(float32 angle);
+void xFXanimUV2PSetTranslation(const xVec3* trans);
+void xFXanimUV2PSetScale(const xVec3* scale);
 void xFXanimUV2PSetAngle(float32 angle);
+void xFXanimUV2PSetTexture(RwTexture* texture);
 RpAtomic* xFXanimUVAtomicSetup(RpAtomic* atomic);
 uint32 xFXanimUVCreate();
+void xFXRenderProximityFade(const xModelInstance& model, float32 near_dist, float32 far_dist);
 void xFXFireworksInit(const char* fireworksTrailEmitter, const char* fireworksEmitter1,
                       const char* fireworksEmitter2, const char* fireworksSound,
                       const char* fireworksLaunchSound);

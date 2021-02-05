@@ -135,6 +135,74 @@ struct RpGeometry
     RpMorphTarget* morphTarget;
 };
 
+#define RpMorphTargetSetBoundingSphereMacro(_mt, _sphere)                                          \
+    (RwSphereAssign(&((_mt)->boundingSphere), (_sphere)), (_mt))
+
+#define RpMorphTargetGetBoundingSphereMacro(_mt) (&((_mt)->boundingSphere))
+
+#define RpGeometryGetNumMorphTargetsMacro(_geometry) ((_geometry)->numMorphTargets)
+
+#define RpGeometryGetMorphTargetMacro(_geometry, _index) (&((_geometry)->morphTarget[(_index)]))
+
+#define RpGeometryGetPreLightColorsMacro(_geometry) ((_geometry)->preLitLum)
+
+#define RpGeometryGetVertexTexCoordsMacro(_geometry, _uvIndex)                                     \
+    ((_geometry)->texCoords[(_uvIndex)-1])
+
+#define RpGeometryGetNumTexCoordSetsMacro(_geometry) ((_geometry)->numTexCoordSets)
+
+#define RpGeometryGetNumVerticesMacro(_geometry) ((_geometry)->numVertices)
+
+#define RpMorphTargetGetVerticesMacro(_mt) ((_mt)->verts)
+
+#define RpMorphTargetGetVertexNormalsMacro(_mt) ((_mt)->normals)
+
+#define RpGeometryGetTrianglesMacro(_geometry) ((_geometry)->triangles)
+
+#define RpGeometryGetNumTrianglesMacro(_geometry) ((_geometry)->numTriangles)
+
+#define RpGeometryGetMaterialMacro(_geometry, _num) (((_geometry)->matList.materials)[(_num)])
+
+#define RpGeometryGetNumMaterialsMacro(_geometry) ((_geometry)->matList.numMaterials)
+
+#define RpGeometryGetFlagsMacro(_geometry) ((_geometry)->flags)
+
+#define RpGeometrySetFlagsMacro(_geometry, _flags) (((_geometry)->flags = (_flags)), (_geometry))
+
+#define RpMorphTargetSetBoundingSphere(_geometry, _sphere)                                         \
+    RpMorphTargetSetBoundingSphereMacro(_geometry, _sphere)
+
+#define RpMorphTargetGetBoundingSphere(_geometry) RpMorphTargetGetBoundingSphereMacro(_geometry)
+
+#define RpGeometryGetNumMorphTargets(_geometry) RpGeometryGetNumMorphTargetsMacro(_geometry)
+
+#define RpGeometryGetMorphTarget(_geometry, _index) RpGeometryGetMorphTargetMacro(_geometry, _index)
+
+#define RpGeometryGetPreLightColors(_geometry) RpGeometryGetPreLightColorsMacro(_geometry)
+
+#define RpGeometryGetVertexTexCoords(_geometry, _uvIndex)                                          \
+    RpGeometryGetVertexTexCoordsMacro(_geometry, _uvIndex)
+
+#define RpGeometryGetNumTexCoordSets(_geometry) RpGeometryGetNumTexCoordSetsMacro(_geometry)
+
+#define RpGeometryGetNumVertices(_geometry) RpGeometryGetNumVerticesMacro(_geometry)
+
+#define RpMorphTargetGetVertices(_mt) RpMorphTargetGetVerticesMacro(_mt)
+
+#define RpMorphTargetGetVertexNormals(_mt) RpMorphTargetGetVertexNormalsMacro(_mt)
+
+#define RpGeometryGetTriangles(_geometry) RpGeometryGetTrianglesMacro(_geometry)
+
+#define RpGeometryGetNumTriangles(_geometry) RpGeometryGetNumTrianglesMacro(_geometry)
+
+#define RpGeometryGetMaterial(_geometry, _num) RpGeometryGetMaterialMacro(_geometry, _num)
+
+#define RpGeometryGetNumMaterials(_geometry) RpGeometryGetNumMaterialsMacro(_geometry)
+
+#define RpGeometryGetFlags(_geometry) RpGeometryGetFlagsMacro(_geometry)
+
+#define RpGeometrySetFlags(_geometry, _flags) RpGeometrySetFlagsMacro(_geometry, _flags)
+
 enum RpInterpolatorFlag
 {
     rpINTERPOLATORDIRTYINSTANCE = 0x01,

@@ -159,12 +159,190 @@ struct RwV2d
     RwReal y;
 };
 
+#define RwV2dAssignMacro(_target, _source) (*(_target) = *(_source))
+
+#define RwV2dAddMacro(o, a, b)                                                                     \
+    MACRO_START                                                                                    \
+    {                                                                                              \
+        (o)->x = (((a)->x) + ((b)->x));                                                            \
+        (o)->y = (((a)->y) + ((b)->y));                                                            \
+    }                                                                                              \
+    MACRO_STOP
+
+#define RwV2dSubMacro(o, a, b)                                                                     \
+    MACRO_START                                                                                    \
+    {                                                                                              \
+        (o)->x = (((a)->x) - ((b)->x));                                                            \
+        (o)->y = (((a)->y) - ((b)->y));                                                            \
+    }                                                                                              \
+    MACRO_STOP
+
+#define RwV2dScaleMacro(o, i, s)                                                                   \
+    MACRO_START                                                                                    \
+    {                                                                                              \
+        (o)->x = (((i)->x) * ((s)));                                                               \
+        (o)->y = (((i)->y) * ((s)));                                                               \
+    }                                                                                              \
+    MACRO_STOP
+
+#define RwV2dDotProductMacro(a, b) ((((((a)->x) * ((b)->x))) + ((((a)->y) * ((b)->y)))))
+
+#define _rwV2dNormalizeMacro(_result, _out, _in)                                                   \
+    MACRO_START                                                                                    \
+    {                                                                                              \
+        RwReal length2 = RwV2dDotProductMacro((_in), (_in));                                       \
+        rwInvSqrtMacro(&(_result), length2);                                                       \
+        RwV2dScaleMacro((_out), (_in), (_result));                                                 \
+    }                                                                                              \
+    MACRO_STOP
+
+#define RwV2dNormalizeMacro(_result, _out, _in)                                                    \
+    MACRO_START                                                                                    \
+    {                                                                                              \
+        RwReal length2 = RwV2dDotProductMacro((_in), (_in));                                       \
+        RwReal recip;                                                                              \
+                                                                                                   \
+        rwSqrtInvSqrtMacro(&(_result), &recip, length2);                                           \
+        RwV2dScaleMacro((_out), (_in), recip);                                                     \
+    }                                                                                              \
+    MACRO_STOP
+
+#define RwV2dLengthMacro(_result, _in)                                                             \
+    MACRO_START                                                                                    \
+    {                                                                                              \
+        (_result) = RwV2dDotProductMacro(_in, _in);                                                \
+        rwSqrtMacro(&(_result), (_result));                                                        \
+    }                                                                                              \
+    MACRO_STOP
+
+#define RwV2dLineNormalMacro(_o, _a, _b)                                                           \
+    MACRO_START                                                                                    \
+    {                                                                                              \
+        RwReal recip;                                                                              \
+                                                                                                   \
+        (_o)->y = (((_b)->x) - ((_a)->x));                                                         \
+        (_o)->x = (((_a)->y) - ((_b)->y));                                                         \
+        _rwV2dNormalizeMacro(recip, _o, _o);                                                       \
+    }                                                                                              \
+    MACRO_STOP
+
+#define RwV2dPerpMacro(o, a)                                                                       \
+    MACRO_START                                                                                    \
+    {                                                                                              \
+        (o)->x = -(a)->y;                                                                          \
+        (o)->y = (a)->x;                                                                           \
+    }                                                                                              \
+    MACRO_STOP
+
 struct RwV3d
 {
     RwReal x;
     RwReal y;
     RwReal z;
 };
+
+#define RwV3dAssignMacro(_target, _source) (*(_target) = *(_source))
+
+#define RwV3dAddMacro(o, a, b)                                                                     \
+    MACRO_START                                                                                    \
+    {                                                                                              \
+        (o)->x = (((a)->x) + ((b)->x));                                                            \
+        (o)->y = (((a)->y) + ((b)->y));                                                            \
+        (o)->z = (((a)->z) + ((b)->z));                                                            \
+    }                                                                                              \
+    MACRO_STOP
+
+#define RwV3dSubMacro(o, a, b)                                                                     \
+    MACRO_START                                                                                    \
+    {                                                                                              \
+        (o)->x = (((a)->x) - ((b)->x));                                                            \
+        (o)->y = (((a)->y) - ((b)->y));                                                            \
+        (o)->z = (((a)->z) - ((b)->z));                                                            \
+    }                                                                                              \
+    MACRO_STOP
+
+#define RwV3dScaleMacro(o, a, s)                                                                   \
+    MACRO_START                                                                                    \
+    {                                                                                              \
+        (o)->x = (((a)->x) * ((s)));                                                               \
+        (o)->y = (((a)->y) * ((s)));                                                               \
+        (o)->z = (((a)->z) * ((s)));                                                               \
+    }                                                                                              \
+    MACRO_STOP
+
+#define RwV3dIncrementScaledMacro(o, a, s)                                                         \
+    MACRO_START                                                                                    \
+    {                                                                                              \
+        (o)->x += (((a)->x) * ((s)));                                                              \
+        (o)->y += (((a)->y) * ((s)));                                                              \
+        (o)->z += (((a)->z) * ((s)));                                                              \
+    }                                                                                              \
+    MACRO_STOP
+
+#define RwV3dNegateMacro(o, a)                                                                     \
+    MACRO_START                                                                                    \
+    {                                                                                              \
+        (o)->x = -(a)->x;                                                                          \
+        (o)->y = -(a)->y;                                                                          \
+        (o)->z = -(a)->z;                                                                          \
+    }                                                                                              \
+    MACRO_STOP
+
+#define RwV3dDotProductMacro(a, b)                                                                 \
+    ((((((((a)->x) * ((b)->x))) + ((((a)->y) * ((b)->y))))) + ((((a)->z) * ((b)->z)))))
+
+#define RwV3dCrossProductMacro(o, a, b)                                                            \
+    MACRO_START                                                                                    \
+    {                                                                                              \
+        (o)->x = (((((a)->y) * ((b)->z))) - ((((a)->z) * ((b)->y))));                              \
+        (o)->y = (((((a)->z) * ((b)->x))) - ((((a)->x) * ((b)->z))));                              \
+        (o)->z = (((((a)->x) * ((b)->y))) - ((((a)->y) * ((b)->x))));                              \
+    }                                                                                              \
+    MACRO_STOP
+
+#define _rwV3dNormalizeMacro(_result, _out, _in)                                                   \
+    MACRO_START                                                                                    \
+    {                                                                                              \
+        RwReal length2 = RwV3dDotProductMacro(_in, _in);                                           \
+        rwInvSqrtMacro(&(_result), length2);                                                       \
+        RwV3dScaleMacro(_out, _in, _result);                                                       \
+    }                                                                                              \
+    MACRO_STOP
+
+#define RwV3dNormalizeMacro(_result, _out, _in)                                                    \
+    MACRO_START                                                                                    \
+    {                                                                                              \
+        RwReal length2 = RwV3dDotProductMacro((_in), (_in));                                       \
+        RwReal recip;                                                                              \
+                                                                                                   \
+        rwSqrtInvSqrtMacro(&(_result), &recip, length2);                                           \
+        RwV3dScaleMacro((_out), (_in), recip);                                                     \
+    }                                                                                              \
+    MACRO_STOP
+
+#define RwV3dLengthMacro(_result, _in)                                                             \
+    MACRO_START                                                                                    \
+    {                                                                                              \
+        (_result) = RwV3dDotProductMacro(_in, _in);                                                \
+        rwSqrtMacro(&(_result), _result);                                                          \
+    }                                                                                              \
+    MACRO_STOP
+
+#define RwV2dAssign(o, a) RwV2dAssignMacro(o, a)
+#define RwV2dAdd(o, a, b) RwV2dAddMacro(o, a, b)
+#define RwV2dSub(o, a, b) RwV2dSubMacro(o, a, b)
+#define RwV2dLineNormal(_o, _a, _b) RwV2dLineNormalMacro(_o, _a, _b)
+#define RwV2dScale(o, i, s) RwV2dScaleMacro(o, i, s)
+#define RwV2dDotProduct(a, b) RwV2dDotProductMacro(a, b)
+#define RwV2dPerp(o, a) RwV2dPerpMacro(o, a)
+#define RwV3dAssign(o, a) RwV3dAssignMacro(o, a)
+#define RwV3dAdd(o, a, b) RwV3dAddMacro(o, a, b)
+#define RwV3dSub(o, a, b) RwV3dSubMacro(o, a, b)
+#define RwV3dScale(o, a, s) RwV3dScaleMacro(o, a, s)
+#define RwV3dIncrementScaled(o, a, s) RwV3dIncrementScaledMacro(o, a, s)
+#define RwV3dNegate(o, a) RwV3dNegateMacro(o, a)
+#define RwV3dDotProduct(a, b) RwV3dDotProductMacro(a, b)
+#define RwV3dCrossProduct(o, a, b) RwV3dCrossProductMacro(o, a, b)
 
 struct RwV4dTag
 {
@@ -803,95 +981,6 @@ typedef RxVertexIndex RwImVertexIndex;
 #define RwIm2DVertexGetAlpha(vert) ((vert)->emissiveColor.alpha)
 
 #define RwIm2DVertexCopyRGBA(dst, src) ((dst)->emissiveColor = (src)->emissiveColor)
-
-#if (!defined(RwV3dAssignMacro))
-#define RwV3dAssignMacro(_target, _source) (*(_target) = *(_source))
-#endif /* (!defined(RwV3dAssignMacro)) */
-
-#define RwV3dAddMacro(o, a, b)                                                                     \
-    MACRO_START                                                                                    \
-    {                                                                                              \
-        (o)->x = (((a)->x) + ((b)->x));                                                            \
-        (o)->y = (((a)->y) + ((b)->y));                                                            \
-        (o)->z = (((a)->z) + ((b)->z));                                                            \
-    }                                                                                              \
-    MACRO_STOP
-
-#define RwV3dSubMacro(o, a, b)                                                                     \
-    MACRO_START                                                                                    \
-    {                                                                                              \
-        (o)->x = (((a)->x) - ((b)->x));                                                            \
-        (o)->y = (((a)->y) - ((b)->y));                                                            \
-        (o)->z = (((a)->z) - ((b)->z));                                                            \
-    }                                                                                              \
-    MACRO_STOP
-
-#define RwV3dScaleMacro(o, a, s)                                                                   \
-    MACRO_START                                                                                    \
-    {                                                                                              \
-        (o)->x = (((a)->x) * ((s)));                                                               \
-        (o)->y = (((a)->y) * ((s)));                                                               \
-        (o)->z = (((a)->z) * ((s)));                                                               \
-    }                                                                                              \
-    MACRO_STOP
-
-#define RwV3dIncrementScaledMacro(o, a, s)                                                         \
-    MACRO_START                                                                                    \
-    {                                                                                              \
-        (o)->x += (((a)->x) * ((s)));                                                              \
-        (o)->y += (((a)->y) * ((s)));                                                              \
-        (o)->z += (((a)->z) * ((s)));                                                              \
-    }                                                                                              \
-    MACRO_STOP
-
-#define RwV3dNegateMacro(o, a)                                                                     \
-    MACRO_START                                                                                    \
-    {                                                                                              \
-        (o)->x = -(a)->x;                                                                          \
-        (o)->y = -(a)->y;                                                                          \
-        (o)->z = -(a)->z;                                                                          \
-    }                                                                                              \
-    MACRO_STOP
-
-#define RwV3dDotProductMacro(a, b)                                                                 \
-    ((((((((a)->x) * ((b)->x))) + ((((a)->y) * ((b)->y))))) + ((((a)->z) * ((b)->z)))))
-
-#define RwV3dCrossProductMacro(o, a, b)                                                            \
-    MACRO_START                                                                                    \
-    {                                                                                              \
-        (o)->x = (((((a)->y) * ((b)->z))) - ((((a)->z) * ((b)->y))));                              \
-        (o)->y = (((((a)->z) * ((b)->x))) - ((((a)->x) * ((b)->z))));                              \
-        (o)->z = (((((a)->x) * ((b)->y))) - ((((a)->y) * ((b)->x))));                              \
-    }                                                                                              \
-    MACRO_STOP
-
-#define _rwV3dNormalizeMacro(_result, _out, _in)                                                   \
-    MACRO_START                                                                                    \
-    {                                                                                              \
-        RwReal length2 = RwV3dDotProductMacro(_in, _in);                                           \
-        rwInvSqrtMacro(&(_result), length2);                                                       \
-        RwV3dScaleMacro(_out, _in, _result);                                                       \
-    }                                                                                              \
-    MACRO_STOP
-
-#define RwV3dNormalizeMacro(_result, _out, _in)                                                    \
-    MACRO_START                                                                                    \
-    {                                                                                              \
-        RwReal length2 = RwV3dDotProductMacro((_in), (_in));                                       \
-        RwReal recip;                                                                              \
-                                                                                                   \
-        rwSqrtInvSqrtMacro(&(_result), &recip, length2);                                           \
-        RwV3dScaleMacro((_out), (_in), recip);                                                     \
-    }                                                                                              \
-    MACRO_STOP
-
-#define RwV3dLengthMacro(_result, _in)                                                             \
-    MACRO_START                                                                                    \
-    {                                                                                              \
-        (_result) = RwV3dDotProductMacro(_in, _in);                                                \
-        rwSqrtMacro(&(_result), _result);                                                          \
-    }                                                                                              \
-    MACRO_STOP
 
 enum RwRenderState
 {

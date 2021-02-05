@@ -3,25 +3,104 @@
 
 #include "rwplcore.h"
 
-typedef struct _RxObjSpace3DVertex RxObjSpace3DVertex;
-
 union RxColorUnion
 {
     RwRGBA preLitColor;
     RwRGBA color;
 };
 
-struct _RxObjSpace3DVertex
+struct RxObjSpace3DVertex
 {
     RwV3d objVertex;
-    RxColorUnion c;
     RwV3d objNormal;
+    RxColorUnion c;
     RwReal u;
     RwReal v;
 };
 
+#define RxRGBAAssign(_target, _source) RwRGBAAssign(_target, _source)
+#define RxV3dAssign(_target, _source) RwV3dAssign(_target, _source)
+
+#define RxObjSpace3DVertexGetPos(_vert, _pos) RxV3dAssign(_pos, &(_vert)->objVertex)
+
+#define RxObjSpace3DVertexSetPos(_vert, _pos) RxV3dAssign(&(_vert)->objVertex, _pos)
+
+#define RxObjSpace3DVertexGetPreLitColor(_vert, _col) RxRGBAAssign(_col, &(_vert)->c.preLitColor)
+
+#define RxObjSpace3DVertexSetPreLitColor(_vert, _col) RxRGBAAssign(&(_vert)->c.preLitColor, _col)
+
+#define RxObjSpace3DVertexGetColor RxObjSpace3DVertexGetPreLitColor
+
+#define RxObjSpace3DVertexGetNormal(_vert, _normal) RxV3dAssign(_normal, &(_vert)->objNormal)
+
+#define RxObjSpace3DVertexSetNormal(_vert, _normal) RxV3dAssign(&(_vert)->objNormal, _normal)
+
+#define RxObjSpace3DVertexGetU(_vert) ((_vert)->u)
+
+#define RxObjSpace3DVertexGetV(_vert) ((_vert)->v)
+
+#define RxObjSpace3DVertexSetU(_vert, _imu) ((_vert)->u = (_imu))
+
+#define RxObjSpace3DVertexSetV(_vert, _imv) ((_vert)->v = (_imv))
+
 typedef RxObjSpace3DVertex RxObjSpace3DLitVertex;
 typedef RxObjSpace3DLitVertex RwIm3DVertex;
+
+#define RwIm3DVertexSetU RxObjSpace3DVertexSetU
+#define RwIm3DVertexSetV RxObjSpace3DVertexSetV
+#define RwIm3DVertexGetNext(_vert) ((_vert) + 1)
+
+#define RwIm2DCameraVertexSetU(_devvert, _camvert, _u, _recipz)                                    \
+    MACRO_START                                                                                    \
+    {                                                                                              \
+        RwReal _uLocal = _u;                                                                       \
+        _camvert->u = _uLocal;                                                                     \
+        RwIm2DVertexSetU(_devvert, _uLocal, _recipz);                                              \
+    }                                                                                              \
+    MACRO_STOP
+
+#define RwIm2DCameraVertexSetV(_devvert, _camvert, _v, _recipz)                                    \
+    MACRO_START                                                                                    \
+    {                                                                                              \
+        RwReal _vLocal = _v;                                                                       \
+        _camvert->v = _vLocal;                                                                     \
+        RwIm2DVertexSetV(_devvert, _vLocal, _recipz);                                              \
+    }                                                                                              \
+    MACRO_STOP
+
+#define RwIm3DVertexSetPos(_vert, _imx, _imy, _imz)                                                \
+    MACRO_START                                                                                    \
+    {                                                                                              \
+        (_vert)->objVertex.x = _imx;                                                               \
+        (_vert)->objVertex.y = _imy;                                                               \
+        (_vert)->objVertex.z = _imz;                                                               \
+    }                                                                                              \
+    MACRO_STOP
+
+#define RwIm3DVertexSetRGBA(_vert, _r, _g, _b, _a)                                                 \
+    MACRO_START                                                                                    \
+    {                                                                                              \
+        RwRGBA* const _col = &(_vert)->c.color;                                                    \
+        _col->red = (_r);                                                                          \
+        _col->green = (_g);                                                                        \
+        _col->blue = (_b);                                                                         \
+        _col->alpha = (_a);                                                                        \
+    }                                                                                              \
+    MACRO_STOP
+
+#define RwIm3DVertexSetNormal(_vert, _imx, _imy, _imz)                                             \
+    MACRO_START                                                                                    \
+    {                                                                                              \
+        (_vert)->objNormal.x = _imx;                                                               \
+        (_vert)->objNormal.y = _imy;                                                               \
+        (_vert)->objNormal.z = _imz;                                                               \
+    }                                                                                              \
+    MACRO_STOP
+
+#define RwIm3DVertexGetPos(_vert) (&((_vert)->objVertex))
+#define RwIm3DVertexGetNormal(_vert) (&((_vert)->objNormal))
+
+#define RwIm3DVertexCopyRGBA(dst, src) RxRGBAAssign(&((dst)->c.color), &((src)->c.color))
 
 typedef struct rxHeapFreeBlock;
 typedef struct rxHeapSuperBlockDescriptor;
