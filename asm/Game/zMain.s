@@ -2,8 +2,8 @@
 
 .section .text  # 0x800A26A0 - 0x800A6000
 
-.global func_800A26A0
-func_800A26A0:
+.global main
+main:
 /* 800A26A0 0009F4A0  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 800A26A4 0009F4A4  7C 08 02 A6 */	mflr r0
 /* 800A26A8 0009F4A8  3C 60 80 3C */	lis r3, globals@ha
@@ -3603,7 +3603,7 @@ lbl_800A5D44:
 /* 800A5D44 000A2B44  38 60 00 01 */	li r3, 1
 /* 800A5D48 000A2B48  38 80 00 00 */	li r4, 0
 /* 800A5D4C 000A2B4C  38 A0 00 01 */	li r5, 1
-/* 800A5D50 000A2B50  48 12 F6 25 */	bl func_801D5374
+/* 800A5D50 000A2B50  48 12 F6 25 */	bl OSResetSystem
 /* 800A5D54 000A2B54  4B FF FA 48 */	b lbl_800A579C
 lbl_800A5D58:
 /* 800A5D58 000A2B58  38 60 00 00 */	li r3, 0
