@@ -105,7 +105,8 @@ $(DOL): $(ELF) | tools
 	$S$(SHA1SUM) -c bfbb.sha1 || $(ASMDIFF)
 
 clean:
-	rm -f $(DOL) $(ELF) $(O_FILES) $(MAP)
+	@echo cleaning build dir
+	$Srm -rf $(DOL) $(ELF) $(O_FILES) $(MAP) obj
 	$S$(MAKE) -C tools clean
 
 tools:
@@ -128,5 +129,5 @@ $(OBJ_DIR)/%.o: %.c
 
 $(OBJ_DIR)/%.o: %.cpp
 	@echo "CXX     "$<
-	$S$(CC) $(PREPROCESS) -o $*.cp $<
-	$S$(CC) $(CFLAGS) -c -o $@ $*.cp
+	$S$(CC) $(PREPROCESS) -o obj/$*.cp $<
+	$S$(CC) $(CFLAGS) -c -o $@ obj/$*.cp
