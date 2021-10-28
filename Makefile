@@ -44,8 +44,8 @@ include obj_files.mk
 
 O_FILES := $(INIT_O_FILES) $(EXTAB_O_FILES) $(EXTABINDEX_O_FILES) $(TEXT_O_FILES) \
            $(CTORS_O_FILES) $(DTORS_O_FILES) $(RODATA_O_FILES) $(DATA_O_FILES)    \
-           $(BSS_O_FILES) $(SDATA_O_FILES) $(SBSS_O_FILES) $(SDATA2_O_FILES) 	  \
-		   $(SBSS2_O_FILES)
+           $(BSS_O_FILES) $(SDATA_O_FILES) $(SBSS_O_FILES) $(SDATA2_O_FILES)      \
+           $(SBSS2_O_FILES)
 
 #-------------------------------------------------------------------------------
 # Tools
@@ -70,9 +70,10 @@ ASMDIFF := ./asmdiff.sh
 INCLUDES := -Isrc/dolphin/include -Isrc/CodeWarrior -Isrc/rwsdk
 
 ASFLAGS := -mgekko -I include
-LDFLAGS := -map $(MAP)
+LDFLAGS := -map $(MAP) -w off -maxerrors 1 -nostdlib
 CFLAGS  := -g -Cpp_exceptions off -proc gekko -fp hard -str reuse,pool,readonly \
            -pragma "check_header_flags off" -pragma "force_active on" \
+           -char unsigned -enum int -fp_contract on -nostdinc -RTTI off \
            -use_lmw_stmw on -inline off -O4,p -msgstyle gcc -gccincludes $(INCLUDES)
 PREPROCESS := -preprocess -gccincludes $(INCLUDES)
 PPROCFLAGS := -fsymbol-fixup
@@ -95,30 +96,37 @@ ALL_DIRS := $(OBJ_DIR) $(addprefix $(OBJ_DIR)/,$(SRC_DIRS) $(ASM_DIRS))
 DUMMY != mkdir -p $(ALL_DIRS)
 
 .PHONY: tools
-	
+    
+S=@
+
 $(DOL): $(ELF) | tools
-	$(ELF2DOL) $< $@ $(SDATA_PDHR) $(SBSS_PDHR) $(TARGET_COL)
-	$(SHA1SUM) -c bfbb.sha1 || $(ASMDIFF)
+	@echo "ELF2DOL "$<
+	$S$(ELF2DOL) $< $@ $(SDATA_PDHR) $(SBSS_PDHR) $(TARGET_COL)
+	$S$(SHA1SUM) -c bfbb.sha1 || $(ASMDIFF)
 
 clean:
 	rm -f $(DOL) $(ELF) $(O_FILES) $(MAP)
-	$(MAKE) -C tools clean
+	$S$(MAKE) -C tools clean
 
 tools:
-	$(MAKE) -C tools
+	$S$(MAKE) -C tools
 
 $(ELF): $(O_FILES) $(LDSCRIPT)
-	$(LD) $(LDFLAGS) -o $@ -lcf $(LDSCRIPT) $(O_FILES)
+	@echo "LINK    "$@
+	$S$(LD) $(LDFLAGS) -o $@ -lcf $(LDSCRIPT) $(O_FILES)
 # The Metrowerks linker doesn't generate physical addresses in the ELF program headers. This fixes it somehow.
-	$(OBJCOPY) $@ $@
+	$S$(OBJCOPY) $@ $@
 
 $(OBJ_DIR)/%.o: %.s
-	$(AS) $(ASFLAGS) -o $@ $<
-	$(PPROC) $(PPROCFLAGS) $@
+	@echo "AS      "$<
+	$S$(AS) $(ASFLAGS) -o $@ $<
+	$S$(PPROC) $(PPROCFLAGS) $@
 
 $(OBJ_DIR)/%.o: %.c
-	$(CC) $(CFLAGS) -c -o $@ $<
+	@echo "CC      "$<
+	$S$(CC) $(CFLAGS) -c -o $@ $<
 
 $(OBJ_DIR)/%.o: %.cpp
-	$(CC) $(PREPROCESS) -o $*.cp $<
-	$(CC) $(CFLAGS) -c -o $@ $*.cp
+	@echo "CXX     "$<
+	$S$(CC) $(PREPROCESS) -o $*.cp $<
+	$S$(CC) $(CFLAGS) -c -o $@ $*.cp
