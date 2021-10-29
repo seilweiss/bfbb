@@ -325,7 +325,12 @@ lbl_800C32EC:
 /* 800C32FC 000C00FC  4E 80 00 20 */	blr 
 .section .rodata
 lbl_80260130:
-	.incbin "baserom.dol", 0x25D110, 0x18
+	.4byte 0x447A0000
+	.4byte 0x447A0000
+	.4byte 0x447A0000
+	.4byte 0xC47A0000
+	.4byte 0xC47A0000
+	.4byte 0xC47A0000
 
 .section .sbss
 lbl_803CBAB0:

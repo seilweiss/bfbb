@@ -104,10 +104,12 @@ lbl_8017C3AC:
 
 .section .sdata2
 lbl_803CF760:
-	.incbin "baserom.dol", 0x2B9000, 0x4
+	.4byte 0x00000000
 lbl_803CF764:
-	.incbin "baserom.dol", 0x2B9004, 0x4
+	.4byte 0x3F800000
 lbl_803CF768:
-	.incbin "baserom.dol", 0x2B9008, 0x8
+	.4byte 0x43300000
+	.4byte 0x80000000
 lbl_803CF770:
-	.incbin "baserom.dol", 0x2B9010, 0x8
+	.4byte 0x43300000
+	.4byte 0x00000000

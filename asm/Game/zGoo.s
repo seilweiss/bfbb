@@ -304,6 +304,6 @@ lbl_803CBE58:
 
 .section .sdata2
 lbl_803CEA48:
-	.incbin "baserom.dol", 0x2B82E8, 0x4
+	.4byte 0x00000000
 lbl_803CEA4C:
-	.incbin "baserom.dol", 0x2B82EC, 0x4
+	.4byte 0x3E800000

@@ -853,7 +853,18 @@ zMenuFirstBootSet__Fi:
 /* 800A6BF4 000A39F4  4E 80 00 20 */	blr 
 .section .rodata
 lbl_8025E558:
-	.incbin "baserom.dol", 0x25B538, 0x30
+	.4byte 0x4D4E5533
+	.4byte 0x20505245
+	.4byte 0x53532053
+	.4byte 0x54415254
+	.4byte 0x20303220
+	.4byte 0x55494600
+	.4byte 0x4D4E5533
+	.4byte 0x20535441
+	.4byte 0x5254204E
+	.4byte 0x45574741
+	.4byte 0x4D452055
+	.4byte 0x49460000
 
 .section .bss
 lbl_802F2990:
@@ -879,30 +890,33 @@ lbl_803D0878:
 
 .section .sdata
 lbl_803CABC0:
-	.incbin "baserom.dol", 0x2B5C80, 0x4
+	.4byte 0x00000001
 lbl_803CABC4:
-	.incbin "baserom.dol", 0x2B5C84, 0x4
+	.4byte 0x3C23D70A
 lbl_803CABC8:
-	.incbin "baserom.dol", 0x2B5C88, 0x8
+	.4byte 0x41200000
+	.4byte 0x00000000
 
 .section .sdata2
 lbl_803CDD10:
-	.incbin "baserom.dol", 0x2B75B0, 0x4
+	.4byte 0x42410E56
 lbl_803CDD14:
-	.incbin "baserom.dol", 0x2B75B4, 0x4
+	.4byte 0xBF800000
 lbl_803CDD18:
-	.incbin "baserom.dol", 0x2B75B8, 0x4
+	.4byte 0x000000FF
 lbl_803CDD1C:
-	.incbin "baserom.dol", 0x2B75BC, 0x4
+	.4byte 0x3F800000
 lbl_803CDD20:
-	.incbin "baserom.dol", 0x2B75C0, 0x4
+	.4byte 0x3C888889
 lbl_803CDD24:
-	.incbin "baserom.dol", 0x2B75C4, 0x4
+	.4byte 0x00000000
 lbl_803CDD28:
-	.incbin "baserom.dol", 0x2B75C8, 0x4
+	.4byte 0x40000000
 lbl_803CDD2C:
-	.incbin "baserom.dol", 0x2B75CC, 0x4
+	.4byte 0x41200000
 lbl_803CDD30:
-	.incbin "baserom.dol", 0x2B75D0, 0x8
+	.4byte 0x3DCCCCCD
+	.4byte 0x00000000
 lbl_803CDD38:
-	.incbin "baserom.dol", 0x2B75D8, 0x8
+	.4byte 0x43300000
+	.4byte 0x00000000

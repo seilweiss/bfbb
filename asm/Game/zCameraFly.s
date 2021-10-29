@@ -171,6 +171,6 @@ lbl_8017C29C:
 
 .section .sdata2
 lbl_803CF758:
-	.incbin "baserom.dol", 0x2B8FF8, 0x4
+	.4byte 0x3F800000
 lbl_803CF75C:
-	.incbin "baserom.dol", 0x2B8FFC, 0x4
+	.4byte 0x40000000

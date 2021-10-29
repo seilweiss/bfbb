@@ -64,7 +64,24 @@ lbl_80092BD0:
 /* 80092BE8 0008F9E8  4E 80 00 20 */	blr 
 .section .rodata
 lbl_8025B9D8:
-	.incbin "baserom.dol", 0x2589B8, 0x48
+	.4byte 0x534E4446
+	.4byte 0x585F5354
+	.4byte 0x45505F00
+	.4byte 0x50415245
+	.4byte 0x4D49545F
+	.4byte 0x53445F50
+	.4byte 0x41575052
+	.4byte 0x494E5400
+	.4byte 0x50415245
+	.4byte 0x4D49545F
+	.4byte 0x56494C5F
+	.4byte 0x464F4F54
+	.4byte 0x5052494E
+	.4byte 0x5400534B
+	.4byte 0x49444D41
+	.4byte 0x524B5445
+	.4byte 0x58000000
+	.4byte 0x00000000
 
 .section .bss
 lbl_802DF430:

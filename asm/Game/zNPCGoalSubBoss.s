@@ -411,7 +411,19 @@ __ct__12zNPCGoalHereFi:
 
 .section .data
 lbl_80299860:
-	.incbin "baserom.dol", 0x296840, 0x34
+	.4byte 0x80138CE4
+	.4byte 0x80138D0C
+	.4byte 0x80138D34
+	.4byte 0x80138D5C
+	.4byte 0x80138D84
+	.4byte 0x80138DAC
+	.4byte 0x80138DD4
+	.4byte 0x80138DFC
+	.4byte 0x80138E24
+	.4byte 0x80138E4C
+	.4byte 0x80138E74
+	.4byte 0x80138E9C
+	.4byte 0x80138EC4
 /* SPECULATION: link order */
 .global __vt__12zNPCGoalHere
 __vt__12zNPCGoalHere:

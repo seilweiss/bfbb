@@ -1160,14 +1160,14 @@ lbl_803D08E4:
 
 .section .sdata2
 lbl_803CEAC0:
-	.incbin "baserom.dol", 0x2B8360, 0x4
+	.4byte 0x47C35000
 lbl_803CEAC4:
-	.incbin "baserom.dol", 0x2B8364, 0x4
+	.4byte 0xC7C35000
 lbl_803CEAC8:
-	.incbin "baserom.dol", 0x2B8368, 0x4
+	.4byte 0x3FC00000
 lbl_803CEACC:
-	.incbin "baserom.dol", 0x2B836C, 0x4
+	.4byte 0x3F800000
 lbl_803CEAD0:
-	.incbin "baserom.dol", 0x2B8370, 0x4
+	.4byte 0x00000000
 lbl_803CEAD4:
-	.incbin "baserom.dol", 0x2B8374, 0x4
+	.4byte 0x41C80000

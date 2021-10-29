@@ -344,6 +344,8 @@ lbl_80035E54:
 
 .section .sdata2
 lbl_803CCEE8:
-	.incbin "baserom.dol", 0x2B6788, 0x8
+	.4byte 0x3F733333
+	.4byte 0x00000000
 lbl_803CCEF0:
-	.incbin "baserom.dol", 0x2B6790, 0x8
+	.4byte 0x43300000
+	.4byte 0x80000000

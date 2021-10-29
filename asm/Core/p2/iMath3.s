@@ -1446,20 +1446,21 @@ xVec2Init__FP5xVec2ff:
 
 .section .sdata2
 lbl_803CE0B8:
-	.incbin "baserom.dol", 0x2B7958, 0x4
+	.4byte 0x3F000000
 lbl_803CE0BC:
-	.incbin "baserom.dol", 0x2B795C, 0x4
+	.4byte 0x00000000
 lbl_803CE0C0:
-	.incbin "baserom.dol", 0x2B7960, 0x4
+	.4byte 0x3F800000
 lbl_803CE0C4:
-	.incbin "baserom.dol", 0x2B7964, 0x4
+	.4byte 0x3727C5AC
 lbl_803CE0C8:
-	.incbin "baserom.dol", 0x2B7968, 0x4
+	.4byte 0x40000000
 lbl_803CE0CC:
-	.incbin "baserom.dol", 0x2B796C, 0x4
+	.4byte 0xBF800000
 lbl_803CE0D0:
-	.incbin "baserom.dol", 0x2B7970, 0x4
+	.4byte 0xFE967699
 lbl_803CE0D4:
-	.incbin "baserom.dol", 0x2B7974, 0x4
+	.4byte 0x7E967699
 lbl_803CE0D8:
-	.incbin "baserom.dol", 0x2B7978, 0x8
+	.4byte 0xBF000000
+	.4byte 0x00000000

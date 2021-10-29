@@ -837,22 +837,24 @@ lbl_803CBA84:
 
 .section .sdata2
 lbl_803CE030:
-	.incbin "baserom.dol", 0x2B78D0, 0x4
+	.4byte 0x3F800000
 lbl_803CE034:
-	.incbin "baserom.dol", 0x2B78D4, 0x4
+	.4byte 0x40490FDB
 lbl_803CE038:
-	.incbin "baserom.dol", 0x2B78D8, 0x4
+	.4byte 0x3F000000
 lbl_803CE03C:
-	.incbin "baserom.dol", 0x2B78DC, 0x4
+	.4byte 0x43340000
 lbl_803CE040:
-	.incbin "baserom.dol", 0x2B78E0, 0x4
+	.4byte 0x3F400000
 lbl_803CE044:
-	.incbin "baserom.dol", 0x2B78E4, 0x4
+	.4byte 0x3D4CCCCD
 lbl_803CE048:
-	.incbin "baserom.dol", 0x2B78E8, 0x4
+	.4byte 0x00000000
 lbl_803CE04C:
-	.incbin "baserom.dol", 0x2B78EC, 0x4
+	.4byte 0x43C80000
 lbl_803CE050:
-	.incbin "baserom.dol", 0x2B78F0, 0x8
+	.4byte 0x43300000
+	.4byte 0x00000000
 lbl_803CE058:
-	.incbin "baserom.dol", 0x2B78F8, 0x8
+	.4byte 0x43300000
+	.4byte 0x80000000

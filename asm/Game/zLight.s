@@ -580,15 +580,28 @@ lbl_8009E7E4:
 /* 8009E7F4 0009B5F4  4E 80 00 20 */	blr 
 .section .rodata
 lbl_8025CD30:
-	.incbin "baserom.dol", 0x259D10, 0x20
+	.4byte 0x4C696768
+	.4byte 0x74696E67
+	.4byte 0x004C4947
+	.4byte 0x48545F50
+	.4byte 0x41525449
+	.4byte 0x54494F4E
+	.4byte 0x00000000
+	.4byte 0x00000000
 
 .section .data
 lbl_8028FB50:
-	.incbin "baserom.dol", 0x28CB30, 0x10
+	.4byte 0x00000000
+	.4byte 0x3F800000
+	.4byte 0x00000000
+	.4byte 0x00000000
 /* SPECULATION: link order */
 .global lightning_type_names
 lightning_type_names:
-	.incbin "baserom.dol", 0x28CB40, 0x10
+	.4byte 0x8025CD50
+	.4byte 0x8025CD55
+	.4byte 0x8025CD5E
+	.4byte 0x8025CD63
 
 .section .bss
 lbl_802E8F88:
@@ -608,4 +621,5 @@ lbl_803CB8F0:
 
 .section .sdata2
 lbl_803CDB58:
-	.incbin "baserom.dol", 0x2B73F8, 0x8
+	.4byte 0x3F800000
+	.4byte 0x00000000

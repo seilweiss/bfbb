@@ -284,16 +284,38 @@ AnimPick__8zNPCTestFi16en_NPC_GOAL_SPOTP5xGoal:
 /* 80135E9C 00132C9C  4E 80 00 20 */	blr 
 .section .rodata
 lbl_8026CA50:
-	.incbin "baserom.dol", 0x269A30, 0x58
+	.4byte 0x556E6B6E
+	.4byte 0x6F776E00
+	.4byte 0x54657374
+	.4byte 0x30310054
+	.4byte 0x65737430
+	.4byte 0x32005465
+	.4byte 0x73743033
+	.4byte 0x00546573
+	.4byte 0x74303400
+	.4byte 0x54657374
+	.4byte 0x30350054
+	.4byte 0x65737430
+	.4byte 0x36005465
+	.4byte 0x73743037
+	.4byte 0x00546573
+	.4byte 0x74303800
+	.4byte 0x54657374
+	.4byte 0x30390054
+	.4byte 0x65737431
+	.4byte 0x30007A4E
+	.4byte 0x50435465
+	.4byte 0x73740000
 
 .section .sdata2
 lbl_803CECF0:
-	.incbin "baserom.dol", 0x2B8590, 0x4
+	.4byte 0x3F800000
 lbl_803CECF4:
-	.incbin "baserom.dol", 0x2B8594, 0x4
+	.4byte 0x00000000
 lbl_803CECF8:
-	.incbin "baserom.dol", 0x2B8598, 0x4
+	.4byte 0x3E19999A
 lbl_803CECFC:
-	.incbin "baserom.dol", 0x2B859C, 0x4
+	.4byte 0xBF800000
 lbl_803CED00:
-	.incbin "baserom.dol", 0x2B85A0, 0x8
+	.4byte 0x40A00000
+	.4byte 0x00000000

@@ -1290,7 +1290,10 @@ lbl_800CA914:
 /* 800CA91C 000C771C  4E 80 00 20 */	blr 
 .section .rodata
 lbl_802601A8:
-	.incbin "baserom.dol", 0x25D188, 0x10
+	.4byte 0x4D4F5250
+	.4byte 0x48535441
+	.4byte 0x54450000
+	.4byte 0x00000000
 
 .section .sbss
 lbl_803CBB68:
@@ -1308,8 +1311,9 @@ lbl_803CBB7C:
 
 .section .sdata2
 lbl_803CE108:
-	.incbin "baserom.dol", 0x2B79A8, 0x4
+	.4byte 0x3F800000
 lbl_803CE10C:
-	.incbin "baserom.dol", 0x2B79AC, 0x4
+	.4byte 0x46800000
 lbl_803CE110:
-	.incbin "baserom.dol", 0x2B79B0, 0x8
+	.4byte 0x43300000
+	.4byte 0x80000000

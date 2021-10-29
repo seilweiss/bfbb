@@ -214,7 +214,74 @@ PhysicsFlags__11zNPCSubBossCFv:
 /* 80136128 00132F28  4E 80 00 20 */	blr 
 .section .rodata
 lbl_8026CAA8:
-	.incbin "baserom.dol", 0x269A88, 0x110
+	.4byte 0x556E6B6E
+	.4byte 0x6F776E00
+	.4byte 0x49646C65
+	.4byte 0x30310049
+	.4byte 0x646C6530
+	.4byte 0x32004964
+	.4byte 0x6C653033
+	.4byte 0x00466964
+	.4byte 0x67657430
+	.4byte 0x31004669
+	.4byte 0x64676574
+	.4byte 0x30320046
+	.4byte 0x69646765
+	.4byte 0x74303300
+	.4byte 0x5461756E
+	.4byte 0x74303100
+	.4byte 0x41747461
+	.4byte 0x636B3031
+	.4byte 0x0044616D
+	.4byte 0x61676530
+	.4byte 0x31004461
+	.4byte 0x6D616765
+	.4byte 0x30320044
+	.4byte 0x65617468
+	.4byte 0x30310041
+	.4byte 0x74746163
+	.4byte 0x6B57696E
+	.4byte 0x64757030
+	.4byte 0x31004174
+	.4byte 0x7461636B
+	.4byte 0x4C6F6F70
+	.4byte 0x30310041
+	.4byte 0x74746163
+	.4byte 0x6B456E64
+	.4byte 0x30310053
+	.4byte 0x7061776E
+	.4byte 0x4B696473
+	.4byte 0x30310041
+	.4byte 0x74746163
+	.4byte 0x6B303257
+	.4byte 0x696E6475
+	.4byte 0x70303100
+	.4byte 0x41747461
+	.4byte 0x636B3032
+	.4byte 0x4C6F6F70
+	.4byte 0x30310041
+	.4byte 0x74746163
+	.4byte 0x6B303245
+	.4byte 0x6E643031
+	.4byte 0x004C6173
+	.4byte 0x736F4772
+	.4byte 0x61623031
+	.4byte 0x004C6173
+	.4byte 0x736F486F
+	.4byte 0x6C644C65
+	.4byte 0x66743031
+	.4byte 0x004C6173
+	.4byte 0x736F486F
+	.4byte 0x6C645269
+	.4byte 0x67687430
+	.4byte 0x31004C61
+	.4byte 0x73736F46
+	.4byte 0x72656530
+	.4byte 0x31005041
+	.4byte 0x52454D49
+	.4byte 0x545F434C
+	.4byte 0x4F554400
+	.4byte 0x00000000
 
 .section .bss
 lbl_803242F8:

@@ -66,12 +66,71 @@ lbl_800A8E9C:
 
 .section .data
 lbl_8028FF40:
-	.incbin "baserom.dol", 0x28CF20, 0xC0
+	.4byte 0x8025E710
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x8025E71C
+	.4byte 0x00000000
+	.4byte 0x00010000
+	.4byte 0x8025E726
+	.4byte 0x00000000
+	.4byte 0x00020000
+	.4byte 0x8025E731
+	.4byte 0x00000000
+	.4byte 0x00030000
+	.4byte 0x8025E73D
+	.4byte 0x00000000
+	.4byte 0x00040000
+	.4byte 0x8025E746
+	.4byte 0x00000000
+	.4byte 0x01000000
+	.4byte 0x8025E754
+	.4byte 0x00000000
+	.4byte 0x01010000
+	.4byte 0x8025E75E
+	.4byte 0x00000000
+	.4byte 0x01020000
+	.4byte 0x8025E76E
+	.4byte 0x00000000
+	.4byte 0x01060000
+	.4byte 0x8025E777
+	.4byte 0x00000000
+	.4byte 0x01030000
+	.4byte 0x8025E781
+	.4byte 0x00000000
+	.4byte 0x01040000
+	.4byte 0x8025E78A
+	.4byte 0x00000000
+	.4byte 0x01050000
+	.4byte 0x8025E791
+	.4byte 0x00000000
+	.4byte 0x01070000
+	.4byte 0x8025E79C
+	.4byte 0x00000000
+	.4byte 0x01080000
+	.4byte 0x8025E7A7
+	.4byte 0x00000000
+	.4byte 0x01090000
+	.4byte 0x8025E7B7
+	.4byte 0x00000000
+	.4byte 0x010A0000
 /* SPECULATION: link order */
 .global lbl_80290000
 lbl_80290000:
-	.incbin "baserom.dol", 0x28CFE0, 0x30
+	.4byte 0x8025E7C1
+	.4byte 0x00000000
+	.4byte 0x010B0000
+	.4byte 0x8025E7CD
+	.4byte 0x00000000
+	.4byte 0x010C0000
+	.4byte 0x8025E7D8
+	.4byte 0x00000000
+	.4byte 0x010D0000
+	.4byte 0x8025E7E2
+	.4byte 0x00000000
+	.4byte 0x010E0000
 
 .section .sdata
 lbl_803CABE0:
-	.incbin "baserom.dol", 0x2B5CA0, 0x8
+	.4byte 0x00000014
+	.4byte 0x00000000

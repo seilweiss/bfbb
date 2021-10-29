@@ -817,7 +817,58 @@ __ct__13zNPCGoalExistFi:
 
 .section .data
 lbl_8029A138:
-	.incbin "baserom.dol", 0x297118, 0xD0
+	.4byte 0x8014ECC0
+	.4byte 0x8014ECE8
+	.4byte 0x8014ED10
+	.4byte 0x8014ED38
+	.4byte 0x8014ED60
+	.4byte 0x8014ED88
+	.4byte 0x8014EDB0
+	.4byte 0x8014EDD8
+	.4byte 0x8014EE00
+	.4byte 0x8014EE28
+	.4byte 0x8014EE50
+	.4byte 0x8014EE78
+	.4byte 0x8014EEA0
+	.4byte 0x8014EEC8
+	.4byte 0x8014EEF0
+	.4byte 0x8014EF18
+	.4byte 0x8014EF40
+	.4byte 0x8014F0F4
+	.4byte 0x8014F0F4
+	.4byte 0x8014F0F4
+	.4byte 0x8014F0F4
+	.4byte 0x8014F0F4
+	.4byte 0x8014F0F4
+	.4byte 0x8014F0F4
+	.4byte 0x8014F0F4
+	.4byte 0x8014F0F4
+	.4byte 0x8014F0F4
+	.4byte 0x8014F0F4
+	.4byte 0x8014F0F4
+	.4byte 0x8014F0F4
+	.4byte 0x8014F0F4
+	.4byte 0x8014F0F4
+	.4byte 0x8014F0F4
+	.4byte 0x8014F0F4
+	.4byte 0x8014F0F4
+	.4byte 0x8014F0F4
+	.4byte 0x8014F0F4
+	.4byte 0x8014F0F4
+	.4byte 0x8014F0F4
+	.4byte 0x8014F0F4
+	.4byte 0x8014F0F4
+	.4byte 0x8014F0F4
+	.4byte 0x8014EF68
+	.4byte 0x8014EF90
+	.4byte 0x8014EFB8
+	.4byte 0x8014EFE0
+	.4byte 0x8014F008
+	.4byte 0x8014F030
+	.4byte 0x8014F058
+	.4byte 0x8014F080
+	.4byte 0x8014F0A8
+	.4byte 0x8014F0D0
 /* SPECULATION: link order */
 .global __vt__13zNPCGoalExist
 __vt__13zNPCGoalExist:

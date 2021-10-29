@@ -4,10 +4,140 @@
 
 .global lbl_80254E00
 lbl_80254E00:
-	.incbin "baserom.dol", 0x251DE0, 0x10
+	.4byte 0xFFFFFFFF
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
 .global lbl_80254E10
 lbl_80254E10:
-	.incbin "baserom.dol", 0x251DF0, 0x200
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
 
 .section .text  # 0x800534E4 - 0x80054200
 
@@ -994,7 +1124,30 @@ lbl_800541C4:
 
 .section .data
 lbl_8028C0F8:
-	.incbin "baserom.dol", 0x2890D8, 0x60
+	.4byte 0x800538C0
+	.4byte 0x800538CC
+	.4byte 0x800538E0
+	.4byte 0x800538F0
+	.4byte 0x80053924
+	.4byte 0x80053934
+	.4byte 0x80053B10
+	.4byte 0x80053B10
+	.4byte 0x80053B10
+	.4byte 0x80053B10
+	.4byte 0x80053974
+	.4byte 0x80053984
+	.4byte 0x800539A4
+	.4byte 0x800539E0
+	.4byte 0x80053A1C
+	.4byte 0x80053A2C
+	.4byte 0x80053A4C
+	.4byte 0x80053A88
+	.4byte 0x80053AC4
+	.4byte 0x80053AD0
+	.4byte 0x80053AEC
+	.4byte 0x80053AF8
+	.4byte 0x80053B10
+	.4byte 0x00000000
 
 .section .sbss
 lbl_803CB520:
@@ -1026,18 +1179,21 @@ lbl_803D0828:
 
 .section .sdata
 lbl_803CAA60:
-	.incbin "baserom.dol", 0x2B5B20, 0x8
+	.4byte 0x00000000
+	.4byte 0x00000000
 
 .section .sdata2
 lbl_803CD270:
-	.incbin "baserom.dol", 0x2B6B10, 0x4
+	.4byte 0x000000FF
 lbl_803CD274:
-	.incbin "baserom.dol", 0x2B6B14, 0x4
+	.4byte 0x00000000
 lbl_803CD278:
-	.incbin "baserom.dol", 0x2B6B18, 0x4
+	.4byte 0x3C8EFA35
 lbl_803CD27C:
-	.incbin "baserom.dol", 0x2B6B1C, 0x4
+	.4byte 0x3DCCCCCD
 lbl_803CD280:
-	.incbin "baserom.dol", 0x2B6B20, 0x8
+	.4byte 0x3F800000
+	.4byte 0x00000000
 lbl_803CD288:
-	.incbin "baserom.dol", 0x2B6B28, 0x8
+	.4byte 0x43300000
+	.4byte 0x80000000

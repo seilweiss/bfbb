@@ -230,6 +230,6 @@ lbl_803CB954:
 
 .section .sdata2
 lbl_803CDD40:
-	.incbin "baserom.dol", 0x2B75E0, 0x4
+	.4byte 0x3727C5AC
 lbl_803CDD44:
-	.incbin "baserom.dol", 0x2B75E4, 0x4
+	.4byte 0xBF800000

@@ -485,8 +485,9 @@ xSphereHitsVCircle__FRC7xSphereRC5xVec3f:
 
 .section .sdata2
 lbl_803CD958:
-	.incbin "baserom.dol", 0x2B71F8, 0x4
+	.4byte 0x3F000000
 lbl_803CD95C:
-	.incbin "baserom.dol", 0x2B71FC, 0x4
+	.4byte 0xBF000000
 lbl_803CD960:
-	.incbin "baserom.dol", 0x2B7200, 0x8
+	.4byte 0x00000000
+	.4byte 0x00000000

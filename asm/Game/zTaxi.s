@@ -460,7 +460,12 @@ on_stop__6taxiCBFv:
 /* 80172660 0016F460  4E 80 00 20 */	blr 
 .section .rodata
 lbl_80271E40:
-	.incbin "baserom.dol", 0x26EE20, 0x18
+	.4byte 0x4D4E5535
+	.4byte 0x20544158
+	.4byte 0x49205741
+	.4byte 0x524E494E
+	.4byte 0x47205458
+	.4byte 0x54000000
 
 .section .bss
 lbl_8032A568:
@@ -474,30 +479,33 @@ lbl_803CC06C:
 
 .section .sdata
 lbl_803CADB0:
-	.incbin "baserom.dol", 0x2B5E70, 0x8
+	.4byte 0x00000003
+	.4byte 0x00000000
 /* SPECULATION: link order */
 .global mFirstFrame__7ROMFont
 mFirstFrame__7ROMFont:
-	.incbin "baserom.dol", 0x2B5E78, 0x1
+	.byte 0x01
 /* SPECULATION: link order */
 .global mResetEnabled__11ResetButton
 mResetEnabled__11ResetButton:
-	.incbin "baserom.dol", 0x2B5E79, 0x7
+	.4byte 0x01000000
+	.2byte 0x0000
+	.byte 0x00
 
 .section .sdata2
 lbl_803CF610:
-	.incbin "baserom.dol", 0x2B8EB0, 0x4
+	.4byte 0x3FA66666
 lbl_803CF614:
-	.incbin "baserom.dol", 0x2B8EB4, 0x4
+	.4byte 0xBF800000
 lbl_803CF618:
-	.incbin "baserom.dol", 0x2B8EB8, 0x4
+	.4byte 0x40A00000
 lbl_803CF61C:
-	.incbin "baserom.dol", 0x2B8EBC, 0x4
+	.4byte 0x40200000
 lbl_803CF620:
-	.incbin "baserom.dol", 0x2B8EC0, 0x4
+	.4byte 0x00000000
 lbl_803CF624:
-	.incbin "baserom.dol", 0x2B8EC4, 0x4
+	.4byte 0x3E4CCCCD
 lbl_803CF628:
-	.incbin "baserom.dol", 0x2B8EC8, 0x4
+	.4byte 0x3F000000
 lbl_803CF62C:
-	.incbin "baserom.dol", 0x2B8ECC, 0x4
+	.4byte 0x40000000

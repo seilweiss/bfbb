@@ -296,34 +296,53 @@ zPadAddRumble__F14_tagRumbleTypefiUi:
 
 .section .data
 lbl_80290090:
-	.incbin "baserom.dol", 0x28D070, 0x50
+	.4byte 0x800AD01C
+	.4byte 0x800ACF78
+	.4byte 0x800ACE28
+	.4byte 0x800ACE58
+	.4byte 0x800ACF90
+	.4byte 0x800ACFA8
+	.4byte 0x800ACFC0
+	.4byte 0x800ACF48
+	.4byte 0x800ACF18
+	.4byte 0x800ACF00
+	.4byte 0x800ACE70
+	.4byte 0x800ACE88
+	.4byte 0x800ACEE8
+	.4byte 0x800ACE40
+	.4byte 0x800ACEA0
+	.4byte 0x800ACEB8
+	.4byte 0x800ACFD8
+	.4byte 0x800ACFF0
+	.4byte 0x800AD008
+	.4byte 0x00000000
 
 .section .sdata2
 lbl_803CDE30:
-	.incbin "baserom.dol", 0x2B76D0, 0x4
+	.4byte 0x3E4CCCCD
 lbl_803CDE34:
-	.incbin "baserom.dol", 0x2B76D4, 0x4
+	.4byte 0x3DCCCCCD
 lbl_803CDE38:
-	.incbin "baserom.dol", 0x2B76D8, 0x4
+	.4byte 0x3D75C28F
 lbl_803CDE3C:
-	.incbin "baserom.dol", 0x2B76DC, 0x4
+	.4byte 0x40A00000
 lbl_803CDE40:
-	.incbin "baserom.dol", 0x2B76E0, 0x4
+	.4byte 0x3F000000
 lbl_803CDE44:
-	.incbin "baserom.dol", 0x2B76E4, 0x4
+	.4byte 0x3E99999A
 lbl_803CDE48:
-	.incbin "baserom.dol", 0x2B76E8, 0x4
+	.4byte 0x3D4CCCCD
 lbl_803CDE4C:
-	.incbin "baserom.dol", 0x2B76EC, 0x4
+	.4byte 0x3E19999A
 lbl_803CDE50:
-	.incbin "baserom.dol", 0x2B76F0, 0x4
+	.4byte 0x3EB33333
 lbl_803CDE54:
-	.incbin "baserom.dol", 0x2B76F4, 0x4
+	.4byte 0x3F19999A
 lbl_803CDE58:
-	.incbin "baserom.dol", 0x2B76F8, 0x4
+	.4byte 0x3D23D70A
 lbl_803CDE5C:
-	.incbin "baserom.dol", 0x2B76FC, 0x4
+	.4byte 0x3DB851EC
 lbl_803CDE60:
-	.incbin "baserom.dol", 0x2B7700, 0x4
+	.4byte 0x00000000
 lbl_803CDE64:
-	.incbin "baserom.dol", 0x2B7704, 0x4
+	.4byte 0x3F800000

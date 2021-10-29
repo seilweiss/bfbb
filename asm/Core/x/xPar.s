@@ -171,6 +171,6 @@ xParInit__FP4xPar:
 
 .section .sdata2
 lbl_803CCF10:
-	.incbin "baserom.dol", 0x2B67B0, 0x4
+	.4byte 0x00000000
 lbl_803CCF14:
-	.incbin "baserom.dol", 0x2B67B4, 0x4
+	.4byte 0x437F0000

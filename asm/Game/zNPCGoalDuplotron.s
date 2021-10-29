@@ -539,26 +539,28 @@ __ct__17zNPCGoalDuploLiveFi:
 
 .section .sdata2
 lbl_803CEB58:
-	.incbin "baserom.dol", 0x2B83F8, 0x4
+	.4byte 0x41A00000
 lbl_803CEB5C:
-	.incbin "baserom.dol", 0x2B83FC, 0x4
+	.4byte 0x00000000
 lbl_803CEB60:
-	.incbin "baserom.dol", 0x2B8400, 0x4
+	.4byte 0xBF800000
 lbl_803CEB64:
-	.incbin "baserom.dol", 0x2B8404, 0x4
+	.4byte 0x3F800000
 lbl_803CEB68:
-	.incbin "baserom.dol", 0x2B8408, 0x4
+	.4byte 0x3E800000
 lbl_803CEB6C:
-	.incbin "baserom.dol", 0x2B840C, 0x4
+	.4byte 0x3F000000
 lbl_803CEB70:
-	.incbin "baserom.dol", 0x2B8410, 0x8
+	.4byte 0x43340000
+	.4byte 0x00000000
 lbl_803CEB78:
-	.incbin "baserom.dol", 0x2B8418, 0x8
+	.4byte 0x43300000
+	.4byte 0x80000000
 lbl_803CEB80:
-	.incbin "baserom.dol", 0x2B8420, 0x4
+	.4byte 0x3FC00000
 lbl_803CEB84:
-	.incbin "baserom.dol", 0x2B8424, 0x4
+	.4byte 0x3ECCCCCD
 lbl_803CEB88:
-	.incbin "baserom.dol", 0x2B8428, 0x4
+	.4byte 0x41200000
 lbl_803CEB8C:
-	.incbin "baserom.dol", 0x2B842C, 0x4
+	.4byte 0x3F400000

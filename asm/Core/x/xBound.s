@@ -1004,22 +1004,58 @@ xDrawSphere2__FPC7xSphereUi:
 
 .section .data
 lbl_8027B380:
-	.incbin "baserom.dol", 0x278360, 0x70
+	.4byte 0x8000A93C
+	.4byte 0x8000A97C
+	.4byte 0x8000A9A4
+	.4byte 0x8000A9A4
+	.4byte 0x8000A9A4
+	.4byte 0x8000A9A4
+	.4byte 0x8000A9A4
+	.4byte 0x8000A9A4
+	.4byte 0x8000A968
+	.4byte 0x8000A9A4
+	.4byte 0x8000A9A4
+	.4byte 0x8000A9A4
+	.4byte 0x8000A9A4
+	.4byte 0x8000A9A4
+	.4byte 0x8000A9A4
+	.4byte 0x8000A9A4
+	.4byte 0x8000A9A4
+	.4byte 0x8000A9A4
+	.4byte 0x8000A9A4
+	.4byte 0x8000A9A4
+	.4byte 0x8000A9A4
+	.4byte 0x8000A9A4
+	.4byte 0x8000A9A4
+	.4byte 0x8000A9A4
+	.4byte 0x8000A950
+	.4byte 0x8000A990
+	.4byte 0x8000A9A4
+	.4byte 0x8000A9A4
 /* SPECULATION: link order */
 .global sCameraFXTable
 sCameraFXTable:
-	.incbin "baserom.dol", 0x2783D0, 0x28
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000001
+	.4byte 0x8000CE30
+	.4byte 0x00000000
+	.4byte 0x00000002
+	.4byte 0x8000D074
+	.4byte 0x00000000
+	.4byte 0x00000000
 
 .section .sdata2
 lbl_803CC9B8:
-	.incbin "baserom.dol", 0x2B6258, 0x4
+	.4byte 0x3F000000
 lbl_803CC9BC:
-	.incbin "baserom.dol", 0x2B625C, 0x4
+	.4byte 0x40400000
 lbl_803CC9C0:
-	.incbin "baserom.dol", 0x2B6260, 0x4
+	.4byte 0x00000000
 lbl_803CC9C4:
-	.incbin "baserom.dol", 0x2B6264, 0x4
+	.4byte 0x3F800000
 lbl_803CC9C8:
-	.incbin "baserom.dol", 0x2B6268, 0x4
+	.4byte 0x47C35000
 lbl_803CC9CC:
-	.incbin "baserom.dol", 0x2B626C, 0x4
+	.4byte 0x3727C5AC

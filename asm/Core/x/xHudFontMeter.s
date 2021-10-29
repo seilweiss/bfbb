@@ -4,10 +4,22 @@
 
 .global lbl_80252F00
 lbl_80252F00:
-	.incbin "baserom.dol", 0x24FEE0, 0x10
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x3F800000
+	.4byte 0x3F800000
 .global lbl_80252F10
 lbl_80252F10:
-	.incbin "baserom.dol", 0x24FEF0, 0x28
+	.4byte 0x6875643A
+	.4byte 0x6D657465
+	.4byte 0x723A666F
+	.4byte 0x6E740025
+	.4byte 0x64002564
+	.4byte 0x2F256400
+	.4byte 0x2564206F
+	.4byte 0x66202564
+	.4byte 0x00000000
+	.4byte 0x00000000
 
 .section .text  # 0x8002F008 - 0x8002F57C
 
@@ -403,7 +415,9 @@ render__5xfontCFPCcff:
 
 .section .data
 lbl_8027D640:
-	.incbin "baserom.dol", 0x27A620, 0xC
+	.4byte 0x80252F1F
+	.4byte 0x80252F22
+	.4byte 0x80252F28
 /* SPECULATION: link order */
 .global __vt__Q24xhud17font_meter_widget
 __vt__Q24xhud17font_meter_widget:
@@ -466,10 +480,12 @@ lbl_803CB2AC:
 
 .section .sdata2
 lbl_803CCD88:
-	.incbin "baserom.dol", 0x2B6628, 0x4
+	.4byte 0x3F000000
 lbl_803CCD8C:
-	.incbin "baserom.dol", 0x2B662C, 0x4
+	.4byte 0x437F0000
 lbl_803CCD90:
-	.incbin "baserom.dol", 0x2B6630, 0x8
+	.4byte 0x00000000
+	.4byte 0x00000000
 lbl_803CCD98:
-	.incbin "baserom.dol", 0x2B6638, 0x8
+	.4byte 0x43300000
+	.4byte 0x00000000

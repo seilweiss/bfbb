@@ -352,7 +352,10 @@ type_name__Q24xhud10text_assetFv:
 /* 80195908 00192708  4E 80 00 20 */	blr 
 .section .rodata
 lbl_802749F0:
-	.incbin "baserom.dol", 0x2719D0, 0x10
+	.4byte 0x6875643A
+	.4byte 0x74657874
+	.4byte 0x00000000
+	.4byte 0x00000000
 
 .section .sbss
 lbl_803CC1C8:
@@ -366,14 +369,16 @@ comboHUD:
 
 .section .sdata2
 lbl_803CFBC0:
-	.incbin "baserom.dol", 0x2B9460, 0x8
+	.4byte 0x437F0000
+	.4byte 0x00000000
 lbl_803CFBC8:
-	.incbin "baserom.dol", 0x2B9468, 0x8
+	.4byte 0x43300000
+	.4byte 0x00000000
 lbl_803CFBD0:
-	.incbin "baserom.dol", 0x2B9470, 0x4
+	.4byte 0x00000000
 lbl_803CFBD4:
-	.incbin "baserom.dol", 0x2B9474, 0x4
+	.4byte 0x3F000000
 lbl_803CFBD8:
-	.incbin "baserom.dol", 0x2B9478, 0x4
+	.4byte 0x43480000
 lbl_803CFBDC:
-	.incbin "baserom.dol", 0x2B947C, 0x4
+	.4byte 0x3BF5C28F

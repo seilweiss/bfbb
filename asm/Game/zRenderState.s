@@ -268,7 +268,30 @@ lbl_800ACDCC:
 
 .section .data
 lbl_80290030:
-	.incbin "baserom.dol", 0x28D010, 0x60
+	.4byte 0x800ACDCC
+	.4byte 0x800ACDCC
+	.4byte 0x800ACADC
+	.4byte 0x800ACDCC
+	.4byte 0x800ACBD4
+	.4byte 0x800ACDCC
+	.4byte 0x800ACB78
+	.4byte 0x800ACBC4
+	.4byte 0x800ACAB4
+	.4byte 0x800ACB08
+	.4byte 0x800ACB24
+	.4byte 0x800ACBFC
+	.4byte 0x800ACAEC
+	.4byte 0x800ACC24
+	.4byte 0x800ACB34
+	.4byte 0x800ACC7C
+	.4byte 0x800ACCA4
+	.4byte 0x800ACCD8
+	.4byte 0x800ACCF4
+	.4byte 0x800ACB44
+	.4byte 0x800ACD40
+	.4byte 0x800ACD80
+	.4byte 0x800ACDA8
+	.4byte 0x00000000
 
 .section .sbss
 lbl_803CB978:

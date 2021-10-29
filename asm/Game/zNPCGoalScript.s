@@ -378,7 +378,14 @@ __ct__14zNPCGoalScriptFi:
 
 .section .data
 lbl_80298108:
-	.incbin "baserom.dol", 0x2950E8, 0x20
+	.4byte 0x80124618
+	.4byte 0x80124640
+	.4byte 0x80124668
+	.4byte 0x80124690
+	.4byte 0x801246B8
+	.4byte 0x801246E0
+	.4byte 0x80124708
+	.4byte 0x80124730
 /* SPECULATION: link order */
 .global __vt__14zNPCGoalScript
 __vt__14zNPCGoalScript:

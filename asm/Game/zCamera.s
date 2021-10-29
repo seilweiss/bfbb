@@ -4,7 +4,12 @@
 
 .global lbl_802547A0
 lbl_802547A0:
-	.incbin "baserom.dol", 0x251780, 0x18
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x3F800000
+	.4byte 0x00000000
 
 .section .text  # 0x8004FBFC - 0x80052558
 
@@ -2975,116 +2980,120 @@ lbl_803CB50A:
 
 .section .sdata
 lbl_803CAA40:
-	.incbin "baserom.dol", 0x2B5B00, 0x4
+	.4byte 0x01000000
 lbl_803CAA44:
-	.incbin "baserom.dol", 0x2B5B04, 0x4
+	.4byte 0x3F800000
 lbl_803CAA48:
-	.incbin "baserom.dol", 0x2B5B08, 0x4
+	.4byte 0x3F8CCCCD
 lbl_803CAA4C:
-	.incbin "baserom.dol", 0x2B5B0C, 0x4
+	.4byte 0x40C00000
 lbl_803CAA50:
-	.incbin "baserom.dol", 0x2B5B10, 0x4
+	.4byte 0x42C80000
 lbl_803CAA54:
-	.incbin "baserom.dol", 0x2B5B14, 0x4
+	.4byte 0x3FC00000
 lbl_803CAA58:
-	.incbin "baserom.dol", 0x2B5B18, 0x8
+	.4byte 0xBE6147AE
+	.4byte 0x00000000
 
 .section .sdata2
 lbl_803CD198:
-	.incbin "baserom.dol", 0x2B6A38, 0x4
+	.4byte 0x42960000
 lbl_803CD19C:
-	.incbin "baserom.dol", 0x2B6A3C, 0x4
+	.4byte 0x00000000
 lbl_803CD1A0:
-	.incbin "baserom.dol", 0x2B6A40, 0x4
+	.4byte 0xFE967699
 lbl_803CD1A4:
-	.incbin "baserom.dol", 0x2B6A44, 0x4
+	.4byte 0x3F800000
 lbl_803CD1A8:
-	.incbin "baserom.dol", 0x2B6A48, 0x4
+	.4byte 0x3F000000
 lbl_803CD1AC:
-	.incbin "baserom.dol", 0x2B6A4C, 0x4
+	.4byte 0x40000000
 lbl_803CD1B0:
-	.incbin "baserom.dol", 0x2B6A50, 0x4
+	.4byte 0x3FC00000
 lbl_803CD1B4:
-	.incbin "baserom.dol", 0x2B6A54, 0x4
+	.4byte 0x41F00000
 lbl_803CD1B8:
-	.incbin "baserom.dol", 0x2B6A58, 0x4
+	.4byte 0x3727C5AC
 lbl_803CD1BC:
-	.incbin "baserom.dol", 0x2B6A5C, 0x4
+	.4byte 0x42E52EE0
 lbl_803CD1C0:
-	.incbin "baserom.dol", 0x2B6A60, 0x4
+	.4byte 0x3D088889
 lbl_803CD1C4:
-	.incbin "baserom.dol", 0x2B6A64, 0x4
+	.4byte 0x41200000
 lbl_803CD1C8:
-	.incbin "baserom.dol", 0x2B6A68, 0x4
+	.4byte 0x40A00000
 lbl_803CD1CC:
-	.incbin "baserom.dol", 0x2B6A6C, 0x4
+	.4byte 0x42340000
 lbl_803CD1D0:
-	.incbin "baserom.dol", 0x2B6A70, 0x8
+	.4byte 0x43300000
+	.4byte 0x00000000
 lbl_803CD1D8:
-	.incbin "baserom.dol", 0x2B6A78, 0x4
+	.4byte 0x3DCCCCCD
 lbl_803CD1DC:
-	.incbin "baserom.dol", 0x2B6A7C, 0x4
+	.4byte 0x3F333333
 lbl_803CD1E0:
-	.incbin "baserom.dol", 0x2B6A80, 0x4
+	.4byte 0x3FA66666
 lbl_803CD1E4:
-	.incbin "baserom.dol", 0x2B6A84, 0x4
+	.4byte 0x3F2E147B
 lbl_803CD1E8:
-	.incbin "baserom.dol", 0x2B6A88, 0x4
+	.4byte 0x40E33333
 lbl_803CD1EC:
-	.incbin "baserom.dol", 0x2B6A8C, 0x4
+	.4byte 0x42D80000
 lbl_803CD1F0:
-	.incbin "baserom.dol", 0x2B6A90, 0x4
+	.4byte 0xBE6147AE
 lbl_803CD1F4:
-	.incbin "baserom.dol", 0x2B6A94, 0x4
+	.4byte 0x3FCCCCCD
 lbl_803CD1F8:
-	.incbin "baserom.dol", 0x2B6A98, 0x4
+	.4byte 0xBE800000
 lbl_803CD1FC:
-	.incbin "baserom.dol", 0x2B6A9C, 0x4
+	.4byte 0x3F8CCCCD
 lbl_803CD200:
-	.incbin "baserom.dol", 0x2B6AA0, 0x4
+	.4byte 0x40BCCCCD
 lbl_803CD204:
-	.incbin "baserom.dol", 0x2B6AA4, 0x4
+	.4byte 0x42C80000
 lbl_803CD208:
-	.incbin "baserom.dol", 0x2B6AA8, 0x4
+	.4byte 0xBE4CCCCD
 lbl_803CD20C:
-	.incbin "baserom.dol", 0x2B6AAC, 0x4
+	.4byte 0x40600000
 lbl_803CD210:
-	.incbin "baserom.dol", 0x2B6AB0, 0x4
+	.4byte 0x4019999A
 lbl_803CD214:
-	.incbin "baserom.dol", 0x2B6AB4, 0x4
+	.4byte 0x40490FDB
 lbl_803CD218:
-	.incbin "baserom.dol", 0x2B6AB8, 0x4
+	.4byte 0x41A00000
 lbl_803CD21C:
-	.incbin "baserom.dol", 0x2B6ABC, 0x4
+	.4byte 0x43340000
 lbl_803CD220:
-	.incbin "baserom.dol", 0x2B6AC0, 0x4
+	.4byte 0x3F060A92
 lbl_803CD224:
-	.incbin "baserom.dol", 0x2B6AC4, 0x4
+	.4byte 0x3F32B8C3
 lbl_803CD228:
-	.incbin "baserom.dol", 0x2B6AC8, 0x4
+	.4byte 0x41423D70
 lbl_803CD22C:
-	.incbin "baserom.dol", 0x2B6ACC, 0x4
+	.4byte 0x4207999A
 lbl_803CD230:
-	.incbin "baserom.dol", 0x2B6AD0, 0x4
+	.4byte 0x40B758B6
 lbl_803CD234:
-	.incbin "baserom.dol", 0x2B6AD4, 0x4
+	.4byte 0x3F9C61AB
 lbl_803CD238:
-	.incbin "baserom.dol", 0x2B6AD8, 0x4
+	.4byte 0x3FD55555
 lbl_803CD23C:
-	.incbin "baserom.dol", 0x2B6ADC, 0x4
+	.4byte 0x3F99999A
 lbl_803CD240:
-	.incbin "baserom.dol", 0x2B6AE0, 0x4
+	.4byte 0x3E99999A
 lbl_803CD244:
-	.incbin "baserom.dol", 0x2B6AE4, 0x4
+	.4byte 0x3C888889
 lbl_803CD248:
-	.incbin "baserom.dol", 0x2B6AE8, 0x4
+	.4byte 0x3E4CCCCD
 lbl_803CD24C:
-	.incbin "baserom.dol", 0x2B6AEC, 0x4
+	.4byte 0x3CCCCCCD
 lbl_803CD250:
-	.incbin "baserom.dol", 0x2B6AF0, 0x4
+	.4byte 0xBF800000
 lbl_803CD254:
-	.incbin "baserom.dol", 0x2B6AF4, 0x4
+	.4byte 0x3F7FF972
 lbl_803CD258:
-	.incbin "baserom.dol", 0x2B6AF8, 0x8
+	.4byte 0x41C80000
+	.4byte 0x00000000
 lbl_803CD260:
-	.incbin "baserom.dol", 0x2B6B00, 0x8
+	.4byte 0x43300000
+	.4byte 0x80000000

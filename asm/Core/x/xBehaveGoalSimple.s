@@ -257,4 +257,9 @@ Clear__10xGoalEmptyFv:
 /* 8010EED4 0010BCD4  4E 80 00 20 */	blr 
 .section .rodata
 lbl_8026A3B0:
-	.incbin "baserom.dol", 0x267390, 0x18
+	.4byte 0x78476F61
+	.4byte 0x6C47656E
+	.4byte 0x65726963
+	.4byte 0x0078476F
+	.4byte 0x616C456D
+	.4byte 0x70747900

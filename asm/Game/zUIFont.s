@@ -881,14 +881,33 @@ yextent__8xtextboxCFfRib:
 /* 800BD1AC 000B9FAC  4E 80 00 20 */	blr 
 .section .rodata
 lbl_8025F998:
-	.incbin "baserom.dol", 0x25C978, 0x10
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
 lbl_8025F9A8:
-	.incbin "baserom.dol", 0x25C988, 0x40
+	.4byte 0x4D4E5533
+	.4byte 0x20505245
+	.4byte 0x53532053
+	.4byte 0x54415254
+	.4byte 0x004C4420
+	.4byte 0x47414D45
+	.4byte 0x534C4F54
+	.4byte 0x2032004C
+	.4byte 0x44204741
+	.4byte 0x4D45534C
+	.4byte 0x4F542030
+	.4byte 0x006D6E75
+	.4byte 0x34207874
+	.4byte 0x6F636F6E
+	.4byte 0x74696E75
+	.4byte 0x65000000
 
 .section .sdata2
 lbl_803CDF98:
-	.incbin "baserom.dol", 0x2B7838, 0x4
+	.4byte 0x42480000
 lbl_803CDF9C:
-	.incbin "baserom.dol", 0x2B783C, 0x4
+	.4byte 0x3F000000
 lbl_803CDFA0:
-	.incbin "baserom.dol", 0x2B7840, 0x8
+	.4byte 0x43300000
+	.4byte 0x00000000

@@ -452,10 +452,10 @@ Clear__16zNPCGoalTikiIdleFv:
 
 .section .sdata2
 lbl_803CE408:
-	.incbin "baserom.dol", 0x2B7CA8, 0x4
+	.4byte 0x3DCCCCCD
 lbl_803CE40C:
-	.incbin "baserom.dol", 0x2B7CAC, 0x4
+	.4byte 0x40000000
 lbl_803CE410:
-	.incbin "baserom.dol", 0x2B7CB0, 0x4
+	.4byte 0x40400000
 lbl_803CE414:
-	.incbin "baserom.dol", 0x2B7CB4, 0x4
+	.4byte 0x00000000
