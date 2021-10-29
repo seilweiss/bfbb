@@ -10931,55 +10931,249 @@ lbl_8029B4C4:
 /* SPECULATION: link order */
 .global __vt__21zNPCGoalDutchmanDeath
 __vt__21zNPCGoalDutchmanDeath:
-	.incbin "baserom.dol", 0x2984D4, 0x34
+  .4byte 0
+  .4byte 0
+  .4byte Clear__14zNPCGoalCommonFv
+  .4byte Enter__21zNPCGoalDutchmanDeathFfPv
+  .4byte Exit__21zNPCGoalDutchmanDeathFfPv
+  .4byte Suspend__5xGoalFfPv
+  .4byte Resume__14zNPCGoalCommonFfPv
+  .4byte PreCalc__14zNPCGoalCommonFfPv
+  .4byte EvalRules__5xGoalFP11en_trantypefPv
+  .4byte Process__21zNPCGoalDutchmanDeathFP11en_trantypefPvP6xScene
+  .4byte SysEvent__5xGoalFP5xBaseP5xBaseUiPCfP5xBasePi
+  .4byte NPCMessage__14zNPCGoalCommonFP6NPCMsg
+  .4byte CollReview__14zNPCGoalCommonFPv
 /* SPECULATION: link order */
 .global __vt__22zNPCGoalDutchmanDamage
 __vt__22zNPCGoalDutchmanDamage:
-	.incbin "baserom.dol", 0x298508, 0x34
+  .4byte 0
+  .4byte 0
+  .4byte Clear__14zNPCGoalCommonFv
+  .4byte Enter__22zNPCGoalDutchmanDamageFfPv
+  .4byte Exit__22zNPCGoalDutchmanDamageFfPv
+  .4byte Suspend__5xGoalFfPv
+  .4byte Resume__14zNPCGoalCommonFfPv
+  .4byte PreCalc__14zNPCGoalCommonFfPv
+  .4byte EvalRules__5xGoalFP11en_trantypefPv
+  .4byte Process__22zNPCGoalDutchmanDamageFP11en_trantypefPvP6xScene
+  .4byte SysEvent__5xGoalFP5xBaseP5xBaseUiPCfP5xBasePi
+  .4byte NPCMessage__14zNPCGoalCommonFP6NPCMsg
+  .4byte CollReview__14zNPCGoalCommonFPv
 /* SPECULATION: link order */
 .global __vt__22zNPCGoalDutchmanCaught
 __vt__22zNPCGoalDutchmanCaught:
-	.incbin "baserom.dol", 0x29853C, 0x34
+  .4byte 0
+  .4byte 0
+  .4byte Clear__14zNPCGoalCommonFv
+  .4byte Enter__22zNPCGoalDutchmanCaughtFfPv
+  .4byte Exit__22zNPCGoalDutchmanCaughtFfPv
+  .4byte Suspend__5xGoalFfPv
+  .4byte Resume__14zNPCGoalCommonFfPv
+  .4byte PreCalc__14zNPCGoalCommonFfPv
+  .4byte EvalRules__5xGoalFP11en_trantypefPv
+  .4byte Process__22zNPCGoalDutchmanCaughtFP11en_trantypefPvP6xScene
+  .4byte SysEvent__5xGoalFP5xBaseP5xBaseUiPCfP5xBasePi
+  .4byte NPCMessage__14zNPCGoalCommonFP6NPCMsg
+  .4byte CollReview__14zNPCGoalCommonFPv
 /* SPECULATION: link order */
 .global __vt__25zNPCGoalDutchmanPostFlame
 __vt__25zNPCGoalDutchmanPostFlame:
-	.incbin "baserom.dol", 0x298570, 0x34
+  .4byte 0
+  .4byte 0
+  .4byte Clear__14zNPCGoalCommonFv
+  .4byte Enter__25zNPCGoalDutchmanPostFlameFfPv
+  .4byte Exit__25zNPCGoalDutchmanPostFlameFfPv
+  .4byte Suspend__5xGoalFfPv
+  .4byte Resume__14zNPCGoalCommonFfPv
+  .4byte PreCalc__14zNPCGoalCommonFfPv
+  .4byte EvalRules__5xGoalFP11en_trantypefPv
+  .4byte Process__25zNPCGoalDutchmanPostFlameFP11en_trantypefPvP6xScene
+  .4byte SysEvent__5xGoalFP5xBaseP5xBaseUiPCfP5xBasePi
+  .4byte NPCMessage__14zNPCGoalCommonFP6NPCMsg
+  .4byte CollReview__14zNPCGoalCommonFPv
 /* SPECULATION: link order */
 .global __vt__21zNPCGoalDutchmanFlame
 __vt__21zNPCGoalDutchmanFlame:
-	.incbin "baserom.dol", 0x2985A4, 0x34
+  .4byte 0
+  .4byte 0
+  .4byte Clear__14zNPCGoalCommonFv
+  .4byte Enter__21zNPCGoalDutchmanFlameFfPv
+  .4byte Exit__21zNPCGoalDutchmanFlameFfPv
+  .4byte Suspend__5xGoalFfPv
+  .4byte Resume__14zNPCGoalCommonFfPv
+  .4byte PreCalc__14zNPCGoalCommonFfPv
+  .4byte EvalRules__5xGoalFP11en_trantypefPv
+  .4byte Process__21zNPCGoalDutchmanFlameFP11en_trantypefPvP6xScene
+  .4byte SysEvent__5xGoalFP5xBaseP5xBaseUiPCfP5xBasePi
+  .4byte NPCMessage__14zNPCGoalCommonFP6NPCMsg
+  .4byte CollReview__14zNPCGoalCommonFPv
 /* SPECULATION: link order */
 .global __vt__20zNPCGoalDutchmanBeam
 __vt__20zNPCGoalDutchmanBeam:
-	.incbin "baserom.dol", 0x2985D8, 0x34
+  .4byte 0
+  .4byte 0
+  .4byte Clear__14zNPCGoalCommonFv
+  .4byte Enter__20zNPCGoalDutchmanBeamFfPv
+  .4byte Exit__20zNPCGoalDutchmanBeamFfPv
+  .4byte Suspend__5xGoalFfPv
+  .4byte Resume__14zNPCGoalCommonFfPv
+  .4byte PreCalc__14zNPCGoalCommonFfPv
+  .4byte EvalRules__5xGoalFP11en_trantypefPv
+  .4byte Process__20zNPCGoalDutchmanBeamFP11en_trantypefPvP6xScene
+  .4byte SysEvent__5xGoalFP5xBaseP5xBaseUiPCfP5xBasePi
+  .4byte NPCMessage__14zNPCGoalCommonFP6NPCMsg
+  .4byte CollReview__14zNPCGoalCommonFPv
 /* SPECULATION: link order */
 .global __vt__24zNPCGoalDutchmanReappear
 __vt__24zNPCGoalDutchmanReappear:
-	.incbin "baserom.dol", 0x29860C, 0x34
+  .4byte 0
+  .4byte 0
+  .4byte Clear__14zNPCGoalCommonFv
+  .4byte Enter__24zNPCGoalDutchmanReappearFfPv
+  .4byte Exit__24zNPCGoalDutchmanReappearFfPv
+  .4byte Suspend__5xGoalFfPv
+  .4byte Resume__14zNPCGoalCommonFfPv
+  .4byte PreCalc__14zNPCGoalCommonFfPv
+  .4byte EvalRules__5xGoalFP11en_trantypefPv
+  .4byte Process__24zNPCGoalDutchmanReappearFP11en_trantypefPvP6xScene
+  .4byte SysEvent__5xGoalFP5xBaseP5xBaseUiPCfP5xBasePi
+  .4byte NPCMessage__14zNPCGoalCommonFP6NPCMsg
+  .4byte CollReview__14zNPCGoalCommonFPv
 /* SPECULATION: link order */
 .global __vt__24zNPCGoalDutchmanTeleport
 __vt__24zNPCGoalDutchmanTeleport:
-	.incbin "baserom.dol", 0x298640, 0x34
+  .4byte 0
+  .4byte 0
+  .4byte Clear__14zNPCGoalCommonFv
+  .4byte Enter__24zNPCGoalDutchmanTeleportFfPv
+  .4byte Exit__24zNPCGoalDutchmanTeleportFfPv
+  .4byte Suspend__5xGoalFfPv
+  .4byte Resume__14zNPCGoalCommonFfPv
+  .4byte PreCalc__14zNPCGoalCommonFfPv
+  .4byte EvalRules__5xGoalFP11en_trantypefPv
+  .4byte Process__24zNPCGoalDutchmanTeleportFP11en_trantypefPvP6xScene
+  .4byte SysEvent__5xGoalFP5xBaseP5xBaseUiPCfP5xBasePi
+  .4byte NPCMessage__14zNPCGoalCommonFP6NPCMsg
+  .4byte CollReview__14zNPCGoalCommonFPv
 /* SPECULATION: link order */
 .global __vt__25zNPCGoalDutchmanDisappear
 __vt__25zNPCGoalDutchmanDisappear:
-	.incbin "baserom.dol", 0x298674, 0x34
+  .4byte 0
+  .4byte 0
+  .4byte Clear__14zNPCGoalCommonFv
+  .4byte Enter__25zNPCGoalDutchmanDisappearFfPv
+  .4byte Exit__25zNPCGoalDutchmanDisappearFfPv
+  .4byte Suspend__5xGoalFfPv
+  .4byte Resume__14zNPCGoalCommonFfPv
+  .4byte PreCalc__14zNPCGoalCommonFfPv
+  .4byte EvalRules__5xGoalFP11en_trantypefPv
+  .4byte Process__25zNPCGoalDutchmanDisappearFP11en_trantypefPvP6xScene
+  .4byte SysEvent__5xGoalFP5xBaseP5xBaseUiPCfP5xBasePi
+  .4byte NPCMessage__14zNPCGoalCommonFP6NPCMsg
+  .4byte CollReview__14zNPCGoalCommonFPv
 /* SPECULATION: link order */
 .global __vt__20zNPCGoalDutchmanIdle
 __vt__20zNPCGoalDutchmanIdle:
-	.incbin "baserom.dol", 0x2986A8, 0x34
+  .4byte 0
+  .4byte 0
+  .4byte Clear__14zNPCGoalCommonFv
+  .4byte Enter__20zNPCGoalDutchmanIdleFfPv
+  .4byte Exit__20zNPCGoalDutchmanIdleFfPv
+  .4byte Suspend__5xGoalFfPv
+  .4byte Resume__14zNPCGoalCommonFfPv
+  .4byte PreCalc__14zNPCGoalCommonFfPv
+  .4byte EvalRules__5xGoalFP11en_trantypefPv
+  .4byte Process__20zNPCGoalDutchmanIdleFP11en_trantypefPvP6xScene
+  .4byte SysEvent__5xGoalFP5xBaseP5xBaseUiPCfP5xBasePi
+  .4byte NPCMessage__14zNPCGoalCommonFP6NPCMsg
+  .4byte CollReview__14zNPCGoalCommonFPv
 /* SPECULATION: link order */
 .global __vt__24zNPCGoalDutchmanInitiate
 __vt__24zNPCGoalDutchmanInitiate:
-	.incbin "baserom.dol", 0x2986DC, 0x34
+  .4byte 0
+  .4byte 0
+  .4byte Clear__14zNPCGoalCommonFv
+  .4byte Enter__24zNPCGoalDutchmanInitiateFfPv
+  .4byte Exit__24zNPCGoalDutchmanInitiateFfPv
+  .4byte Suspend__5xGoalFfPv
+  .4byte Resume__14zNPCGoalCommonFfPv
+  .4byte PreCalc__14zNPCGoalCommonFfPv
+  .4byte EvalRules__5xGoalFP11en_trantypefPv
+  .4byte Process__24zNPCGoalDutchmanInitiateFP11en_trantypefPvP6xScene
+  .4byte SysEvent__5xGoalFP5xBaseP5xBaseUiPCfP5xBasePi
+  .4byte NPCMessage__14zNPCGoalCommonFP6NPCMsg
+  .4byte CollReview__14zNPCGoalCommonFPv
 /* SPECULATION: link order */
 .global __vt__19zNPCGoalDutchmanNil
 __vt__19zNPCGoalDutchmanNil:
-	.incbin "baserom.dol", 0x298710, 0x34
+  .4byte 0
+  .4byte 0
+  .4byte Clear__14zNPCGoalCommonFv
+  .4byte Enter__14zNPCGoalCommonFfPv
+  .4byte Exit__5xGoalFfPv
+  .4byte Suspend__5xGoalFfPv
+  .4byte Resume__14zNPCGoalCommonFfPv
+  .4byte PreCalc__14zNPCGoalCommonFfPv
+  .4byte EvalRules__5xGoalFP11en_trantypefPv
+  .4byte Process__5xGoalFP11en_trantypefPvP6xScene
+  .4byte SysEvent__5xGoalFP5xBaseP5xBaseUiPCfP5xBasePi
+  .4byte NPCMessage__14zNPCGoalCommonFP6NPCMsg
+  .4byte CollReview__14zNPCGoalCommonFPv
 /* SPECULATION: link order */
 .global __vt__12zNPCDutchman
 __vt__12zNPCDutchman:
-	.incbin "baserom.dol", 0x298744, 0xCC
+  .4byte 0
+  .4byte 0
+  .4byte Init__12zNPCDutchmanFP9xEntAsset
+  .4byte PostInit__9xNPCBasicFv
+  .4byte Setup__12zNPCDutchmanFv
+  .4byte PostSetup__9xNPCBasicFv
+  .4byte Reset__12zNPCDutchmanFv
+  .4byte Process__12zNPCDutchmanFP6xScenef
+  .4byte BUpdate__10zNPCCommonFP5xVec3
+  .4byte NewTime__10zNPCCommonFP6xScenef
+  .4byte Move__10zNPCCommonFP6xScenefP9xEntFrame
+  .4byte SysEvent__12zNPCDutchmanFP5xBaseP5xBaseUiPCfP5xBasePi
+  .4byte Render__12zNPCDutchmanFv
+  .4byte Save__9xNPCBasicCFP7xSerial
+  .4byte Load__9xNPCBasicFP7xSerial
+  .4byte CollideReview__10zNPCCommonFv
+  .4byte ColChkFlags__12zNPCDutchmanCFv
+  .4byte ColPenFlags__12zNPCDutchmanCFv
+  .4byte ColChkByFlags__12zNPCDutchmanCFv
+  .4byte ColPenByFlags__12zNPCDutchmanCFv
+  .4byte PhysicsFlags__12zNPCDutchmanCFv
+  .4byte Destroy__12zNPCDutchmanFv
+  .4byte NPCMessage__10zNPCCommonFP6NPCMsg
+  .4byte RenderExtra__12zNPCDutchmanFv
+  .4byte RenderExtraPostParticles__10zNPCCommonFv
+  .4byte ParseINI__12zNPCDutchmanFv
+  .4byte ParseLinks__10zNPCCommonFv
+  .4byte ParseProps__10zNPCCommonFv
+  .4byte SelfSetup__12zNPCDutchmanFv
+  .4byte SelfDestroy__10zNPCCommonFv
+  .4byte IsHealthy__10zNPCCommonFv
+  .4byte IsAlive__12zNPCDutchmanFv
+  .4byte Damage__12zNPCDutchmanF18en_NPC_DAMAGE_TYPEP5xBasePC5xVec3
+  .4byte Respawn__10zNPCCommonFPC5xVec3P10zMovePointP10zMovePoint
+  .4byte DuploOwner__10zNPCCommonFP10zNPCCommon
+  .4byte DuploNotice__10zNPCCommonF13en_SM_NOTICESPv
+  .4byte CanRope__10zNPCCommonFv
+  .4byte LassoNotify__12zNPCDutchmanF14en_LASSO_EVENT
+  .4byte SetCarryState__10zNPCCommonF18en_NPC_CARRY_STATE
+  .4byte Stun__10zNPCCommonFf
+  .4byte SpeakBegin__10zNPCCommonFv
+  .4byte SpeakEnd__10zNPCCommonFv
+  .4byte SpeakStart__10zNPCCommonFUiUii
+  .4byte SpeakStop__10zNPCCommonFv
+  .4byte AnimPick__12zNPCDutchmanFi16en_NPC_GOAL_SPOTP5xGoal
+  .4byte GetParm__10zNPCCommonF10en_npcparmPv
+  .4byte GetParmDefault__10zNPCCommonF10en_npcparmPv
+  .4byte GenShadCacheRad__10zNPCCommonFv
+  .4byte PRIV_GetDriverData__10zNPCCommonFv
+  .4byte PRIV_GetLassoData__12zNPCDutchmanFv
+  .4byte LassoSetup__12zNPCDutchmanFv
 
 .section .bss
 lbl_8032A578:

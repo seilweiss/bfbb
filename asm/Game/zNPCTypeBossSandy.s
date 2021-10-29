@@ -10155,51 +10155,237 @@ lbl_80299A64:
 /* SPECULATION: link order */
 .global __vt__28zNPCGoalBossSandyClothesline
 __vt__28zNPCGoalBossSandyClothesline:
-	.incbin "baserom.dol", 0x296A70, 0x34
+  .4byte 0
+  .4byte 0
+  .4byte Clear__14zNPCGoalCommonFv
+  .4byte Enter__28zNPCGoalBossSandyClotheslineFfPv
+  .4byte Exit__5xGoalFfPv
+  .4byte Suspend__5xGoalFfPv
+  .4byte Resume__14zNPCGoalCommonFfPv
+  .4byte PreCalc__14zNPCGoalCommonFfPv
+  .4byte EvalRules__5xGoalFP11en_trantypefPv
+  .4byte Process__28zNPCGoalBossSandyClotheslineFP11en_trantypefPvP6xScene
+  .4byte SysEvent__5xGoalFP5xBaseP5xBaseUiPCfP5xBasePi
+  .4byte NPCMessage__14zNPCGoalCommonFP6NPCMsg
+  .4byte CollReview__14zNPCGoalCommonFPv
 /* SPECULATION: link order */
 .global __vt__26zNPCGoalBossSandyRunToRope
 __vt__26zNPCGoalBossSandyRunToRope:
-	.incbin "baserom.dol", 0x296AA4, 0x34
+  .4byte 0
+  .4byte 0
+  .4byte Clear__14zNPCGoalCommonFv
+  .4byte Enter__26zNPCGoalBossSandyRunToRopeFfPv
+  .4byte Exit__26zNPCGoalBossSandyRunToRopeFfPv
+  .4byte Suspend__5xGoalFfPv
+  .4byte Resume__14zNPCGoalCommonFfPv
+  .4byte PreCalc__14zNPCGoalCommonFfPv
+  .4byte EvalRules__5xGoalFP11en_trantypefPv
+  .4byte Process__26zNPCGoalBossSandyRunToRopeFP11en_trantypefPvP6xScene
+  .4byte SysEvent__5xGoalFP5xBaseP5xBaseUiPCfP5xBasePi
+  .4byte NPCMessage__14zNPCGoalCommonFP6NPCMsg
+  .4byte CollReview__14zNPCGoalCommonFPv
 /* SPECULATION: link order */
 .global __vt__22zNPCGoalBossSandyGetUp
 __vt__22zNPCGoalBossSandyGetUp:
-	.incbin "baserom.dol", 0x296AD8, 0x34
+  .4byte 0
+  .4byte 0
+  .4byte Clear__14zNPCGoalCommonFv
+  .4byte Enter__22zNPCGoalBossSandyGetUpFfPv
+  .4byte Exit__5xGoalFfPv
+  .4byte Suspend__5xGoalFfPv
+  .4byte Resume__14zNPCGoalCommonFfPv
+  .4byte PreCalc__14zNPCGoalCommonFfPv
+  .4byte EvalRules__5xGoalFP11en_trantypefPv
+  .4byte Process__22zNPCGoalBossSandyGetUpFP11en_trantypefPvP6xScene
+  .4byte SysEvent__5xGoalFP5xBaseP5xBaseUiPCfP5xBasePi
+  .4byte NPCMessage__14zNPCGoalCommonFP6NPCMsg
+  .4byte CollReview__14zNPCGoalCommonFPv
 /* SPECULATION: link order */
 .global __vt__20zNPCGoalBossSandySit
 __vt__20zNPCGoalBossSandySit:
-	.incbin "baserom.dol", 0x296B0C, 0x34
+  .4byte 0
+  .4byte 0
+  .4byte Clear__14zNPCGoalCommonFv
+  .4byte Enter__20zNPCGoalBossSandySitFfPv
+  .4byte Exit__20zNPCGoalBossSandySitFfPv
+  .4byte Suspend__5xGoalFfPv
+  .4byte Resume__14zNPCGoalCommonFfPv
+  .4byte PreCalc__14zNPCGoalCommonFfPv
+  .4byte EvalRules__5xGoalFP11en_trantypefPv
+  .4byte Process__20zNPCGoalBossSandySitFP11en_trantypefPvP6xScene
+  .4byte SysEvent__5xGoalFP5xBaseP5xBaseUiPCfP5xBasePi
+  .4byte NPCMessage__14zNPCGoalCommonFP6NPCMsg
+  .4byte CollReview__14zNPCGoalCommonFPv
 /* SPECULATION: link order */
 .global __vt__21zNPCGoalBossSandyLeap
 __vt__21zNPCGoalBossSandyLeap:
-	.incbin "baserom.dol", 0x296B40, 0x34
+  .4byte 0
+  .4byte 0
+  .4byte Clear__14zNPCGoalCommonFv
+  .4byte Enter__21zNPCGoalBossSandyLeapFfPv
+  .4byte Exit__21zNPCGoalBossSandyLeapFfPv
+  .4byte Suspend__5xGoalFfPv
+  .4byte Resume__14zNPCGoalCommonFfPv
+  .4byte PreCalc__14zNPCGoalCommonFfPv
+  .4byte EvalRules__5xGoalFP11en_trantypefPv
+  .4byte Process__21zNPCGoalBossSandyLeapFP11en_trantypefPvP6xScene
+  .4byte SysEvent__5xGoalFP5xBaseP5xBaseUiPCfP5xBasePi
+  .4byte NPCMessage__14zNPCGoalCommonFP6NPCMsg
+  .4byte CollReview__14zNPCGoalCommonFPv
 /* SPECULATION: link order */
 .global __vt__26zNPCGoalBossSandyElbowDrop
 __vt__26zNPCGoalBossSandyElbowDrop:
-	.incbin "baserom.dol", 0x296B74, 0x34
+  .4byte 0
+  .4byte 0
+  .4byte Clear__14zNPCGoalCommonFv
+  .4byte Enter__26zNPCGoalBossSandyElbowDropFfPv
+  .4byte Exit__26zNPCGoalBossSandyElbowDropFfPv
+  .4byte Suspend__5xGoalFfPv
+  .4byte Resume__14zNPCGoalCommonFfPv
+  .4byte PreCalc__14zNPCGoalCommonFfPv
+  .4byte EvalRules__5xGoalFP11en_trantypefPv
+  .4byte Process__26zNPCGoalBossSandyElbowDropFP11en_trantypefPvP6xScene
+  .4byte SysEvent__5xGoalFP5xBaseP5xBaseUiPCfP5xBasePi
+  .4byte NPCMessage__14zNPCGoalCommonFP6NPCMsg
+  .4byte CollReview__14zNPCGoalCommonFPv
 /* SPECULATION: link order */
 .global __vt__23zNPCGoalBossSandyNoHead
 __vt__23zNPCGoalBossSandyNoHead:
-	.incbin "baserom.dol", 0x296BA8, 0x34
+  .4byte 0
+  .4byte 0
+  .4byte Clear__14zNPCGoalCommonFv
+  .4byte Enter__23zNPCGoalBossSandyNoHeadFfPv
+  .4byte Exit__5xGoalFfPv
+  .4byte Suspend__5xGoalFfPv
+  .4byte Resume__14zNPCGoalCommonFfPv
+  .4byte PreCalc__14zNPCGoalCommonFfPv
+  .4byte EvalRules__5xGoalFP11en_trantypefPv
+  .4byte Process__23zNPCGoalBossSandyNoHeadFP11en_trantypefPvP6xScene
+  .4byte SysEvent__5xGoalFP5xBaseP5xBaseUiPCfP5xBasePi
+  .4byte NPCMessage__14zNPCGoalCommonFP6NPCMsg
+  .4byte CollReview__14zNPCGoalCommonFPv
 /* SPECULATION: link order */
 .global __vt__22zNPCGoalBossSandyMelee
 __vt__22zNPCGoalBossSandyMelee:
-	.incbin "baserom.dol", 0x296BDC, 0x34
+  .4byte 0
+  .4byte 0
+  .4byte Clear__14zNPCGoalCommonFv
+  .4byte Enter__22zNPCGoalBossSandyMeleeFfPv
+  .4byte Exit__22zNPCGoalBossSandyMeleeFfPv
+  .4byte Suspend__5xGoalFfPv
+  .4byte Resume__14zNPCGoalCommonFfPv
+  .4byte PreCalc__14zNPCGoalCommonFfPv
+  .4byte EvalRules__5xGoalFP11en_trantypefPv
+  .4byte Process__22zNPCGoalBossSandyMeleeFP11en_trantypefPvP6xScene
+  .4byte SysEvent__5xGoalFP5xBaseP5xBaseUiPCfP5xBasePi
+  .4byte NPCMessage__14zNPCGoalCommonFP6NPCMsg
+  .4byte CollReview__14zNPCGoalCommonFPv
 /* SPECULATION: link order */
 .global __vt__22zNPCGoalBossSandyChase
 __vt__22zNPCGoalBossSandyChase:
-	.incbin "baserom.dol", 0x296C10, 0x34
+  .4byte 0
+  .4byte 0
+  .4byte Clear__14zNPCGoalCommonFv
+  .4byte Enter__22zNPCGoalBossSandyChaseFfPv
+  .4byte Exit__22zNPCGoalBossSandyChaseFfPv
+  .4byte Suspend__5xGoalFfPv
+  .4byte Resume__14zNPCGoalCommonFfPv
+  .4byte PreCalc__14zNPCGoalCommonFfPv
+  .4byte EvalRules__5xGoalFP11en_trantypefPv
+  .4byte Process__22zNPCGoalBossSandyChaseFP11en_trantypefPvP6xScene
+  .4byte SysEvent__5xGoalFP5xBaseP5xBaseUiPCfP5xBasePi
+  .4byte NPCMessage__14zNPCGoalCommonFP6NPCMsg
+  .4byte CollReview__14zNPCGoalCommonFPv
 /* SPECULATION: link order */
 .global __vt__22zNPCGoalBossSandyTaunt
 __vt__22zNPCGoalBossSandyTaunt:
-	.incbin "baserom.dol", 0x296C44, 0x34
+  .4byte 0
+  .4byte 0
+  .4byte Clear__14zNPCGoalCommonFv
+  .4byte Enter__22zNPCGoalBossSandyTauntFfPv
+  .4byte Exit__5xGoalFfPv
+  .4byte Suspend__5xGoalFfPv
+  .4byte Resume__14zNPCGoalCommonFfPv
+  .4byte PreCalc__14zNPCGoalCommonFfPv
+  .4byte EvalRules__5xGoalFP11en_trantypefPv
+  .4byte Process__22zNPCGoalBossSandyTauntFP11en_trantypefPvP6xScene
+  .4byte SysEvent__5xGoalFP5xBaseP5xBaseUiPCfP5xBasePi
+  .4byte NPCMessage__14zNPCGoalCommonFP6NPCMsg
+  .4byte CollReview__14zNPCGoalCommonFPv
 /* SPECULATION: link order */
 .global __vt__21zNPCGoalBossSandyIdle
 __vt__21zNPCGoalBossSandyIdle:
-	.incbin "baserom.dol", 0x296C78, 0x34
+  .4byte 0
+  .4byte 0
+  .4byte Clear__14zNPCGoalCommonFv
+  .4byte Enter__21zNPCGoalBossSandyIdleFfPv
+  .4byte Exit__21zNPCGoalBossSandyIdleFfPv
+  .4byte Suspend__5xGoalFfPv
+  .4byte Resume__14zNPCGoalCommonFfPv
+  .4byte PreCalc__14zNPCGoalCommonFfPv
+  .4byte EvalRules__5xGoalFP11en_trantypefPv
+  .4byte Process__21zNPCGoalBossSandyIdleFP11en_trantypefPvP6xScene
+  .4byte SysEvent__5xGoalFP5xBaseP5xBaseUiPCfP5xBasePi
+  .4byte NPCMessage__14zNPCGoalCommonFP6NPCMsg
+  .4byte CollReview__14zNPCGoalCommonFPv
 /* SPECULATION: link order */
 .global __vt__10zNPCBSandy
 __vt__10zNPCBSandy:
-	.incbin "baserom.dol", 0x296CAC, 0xDC
+  .4byte 0
+  .4byte 0
+  .4byte Init__10zNPCBSandyFP9xEntAsset
+  .4byte PostInit__9xNPCBasicFv
+  .4byte Setup__10zNPCBSandyFv
+  .4byte PostSetup__9xNPCBasicFv
+  .4byte Reset__10zNPCBSandyFv
+  .4byte Process__10zNPCBSandyFP6xScenef
+  .4byte BUpdate__10zNPCCommonFP5xVec3
+  .4byte NewTime__10zNPCBSandyFP6xScenef
+  .4byte Move__10zNPCCommonFP6xScenefP9xEntFrame
+  .4byte SysEvent__10zNPCCommonFP5xBaseP5xBaseUiPCfP5xBasePi
+  .4byte Render__10zNPCBSandyFv
+  .4byte Save__9xNPCBasicCFP7xSerial
+  .4byte Load__9xNPCBasicFP7xSerial
+  .4byte CollideReview__10zNPCCommonFv
+  .4byte ColChkFlags__8zNPCBossCFv
+  .4byte ColPenFlags__8zNPCBossCFv
+  .4byte ColChkByFlags__8zNPCBossCFv
+  .4byte ColPenByFlags__8zNPCBossCFv
+  .4byte PhysicsFlags__8zNPCBossCFv
+  .4byte Destroy__10zNPCCommonFv
+  .4byte NPCMessage__10zNPCCommonFP6NPCMsg
+  .4byte RenderExtra__10zNPCCommonFv
+  .4byte RenderExtraPostParticles__10zNPCCommonFv
+  .4byte ParseINI__10zNPCBSandyFv
+  .4byte ParseLinks__10zNPCCommonFv
+  .4byte ParseProps__10zNPCCommonFv
+  .4byte SelfSetup__10zNPCBSandyFv
+  .4byte SelfDestroy__10zNPCCommonFv
+  .4byte IsHealthy__10zNPCCommonFv
+  .4byte IsAlive__10zNPCCommonFv
+  .4byte Damage__10zNPCBSandyF18en_NPC_DAMAGE_TYPEP5xBasePC5xVec3
+  .4byte Respawn__10zNPCCommonFPC5xVec3P10zMovePointP10zMovePoint
+  .4byte DuploOwner__10zNPCCommonFP10zNPCCommon
+  .4byte DuploNotice__10zNPCCommonF13en_SM_NOTICESPv
+  .4byte CanRope__10zNPCCommonFv
+  .4byte LassoNotify__10zNPCCommonF14en_LASSO_EVENT
+  .4byte SetCarryState__10zNPCCommonF18en_NPC_CARRY_STATE
+  .4byte Stun__10zNPCCommonFf
+  .4byte SpeakBegin__10zNPCCommonFv
+  .4byte SpeakEnd__10zNPCCommonFv
+  .4byte SpeakStart__10zNPCCommonFUiUii
+  .4byte SpeakStop__10zNPCCommonFv
+  .4byte AnimPick__10zNPCBSandyFi16en_NPC_GOAL_SPOTP5xGoal
+  .4byte GetParm__10zNPCCommonF10en_npcparmPv
+  .4byte GetParmDefault__10zNPCCommonF10en_npcparmPv
+  .4byte GenShadCacheRad__10zNPCCommonFv
+  .4byte PRIV_GetDriverData__10zNPCCommonFv
+  .4byte PRIV_GetLassoData__10zNPCCommonFv
+  .4byte LassoSetup__10zNPCCommonFv
+  .4byte AttackTimeLeft__8zNPCBossFv
+  .4byte HoldUpDude__8zNPCBossFv
+  .4byte ThanksImDone__8zNPCBossFv
+  .4byte 0
 
 .section .bss
 lbl_80328000:

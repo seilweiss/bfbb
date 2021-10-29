@@ -3107,31 +3107,62 @@ lbl_80297EB8:
 /* SPECULATION: link order */
 .global __vt__Q39oob_state32_esc__2_unnamed_esc__2_zEntPlayerOOBState_cpp_esc__2_13in_state_type
 __vt__Q39oob_state32_esc__2_unnamed_esc__2_zEntPlayerOOBState_cpp_esc__2_13in_state_type:
-	.incbin "baserom.dol", 0x294EC8, 0x14
+  .4byte 0
+  .4byte 0
+  .4byte start__Q39oob_state32_esc__2_unnamed_esc__2_zEntPlayerOOBState_cpp_esc__2_13in_state_typeFv
+  .4byte stop__Q39oob_state32_esc__2_unnamed_esc__2_zEntPlayerOOBState_cpp_esc__2_13in_state_typeFv
+  .4byte update__Q39oob_state32_esc__2_unnamed_esc__2_zEntPlayerOOBState_cpp_esc__2_13in_state_typeFR6xSceneRf
 /* SPECULATION: link order */
 .global __vt__Q39oob_state32_esc__2_unnamed_esc__2_zEntPlayerOOBState_cpp_esc__2_14out_state_type
 __vt__Q39oob_state32_esc__2_unnamed_esc__2_zEntPlayerOOBState_cpp_esc__2_14out_state_type:
-	.incbin "baserom.dol", 0x294EDC, 0x14
+  .4byte 0
+  .4byte 0
+  .4byte start__Q39oob_state32_esc__2_unnamed_esc__2_zEntPlayerOOBState_cpp_esc__2_14out_state_typeFv
+  .4byte stop__Q39oob_state32_esc__2_unnamed_esc__2_zEntPlayerOOBState_cpp_esc__2_14out_state_typeFv
+  .4byte update__Q39oob_state32_esc__2_unnamed_esc__2_zEntPlayerOOBState_cpp_esc__2_14out_state_typeFR6xSceneRf
 /* SPECULATION: link order */
 .global __vt__Q28ztalkbox8callback
 __vt__Q28ztalkbox8callback:
-	.incbin "baserom.dol", 0x294EF0, 0x18
+  .4byte 0
+  .4byte 0
+  .4byte on_signal__Q28ztalkbox8callbackFUi
+  .4byte on_start__Q28ztalkbox8callbackFv
+  .4byte on_stop__Q28ztalkbox8callbackFv
+  .4byte on_answer__Q28ztalkbox8callbackFQ28ztalkbox11answer_enum
 /* SPECULATION: link order */
 .global __vt__Q49oob_state32_esc__2_unnamed_esc__2_zEntPlayerOOBState_cpp_esc__2_15grab_state_type17tutorial_callback
 __vt__Q49oob_state32_esc__2_unnamed_esc__2_zEntPlayerOOBState_cpp_esc__2_15grab_state_type17tutorial_callback:
-	.incbin "baserom.dol", 0x294F08, 0x18
+  .4byte 0
+  .4byte 0
+  .4byte on_signal__Q28ztalkbox8callbackFUi
+  .4byte on_start__Q28ztalkbox8callbackFv
+  .4byte on_stop__Q49oob_state32_esc__2_unnamed_esc__2_zEntPlayerOOBState_cpp_esc__2_15grab_state_type17tutorial_callbackFv
+  .4byte on_answer__Q28ztalkbox8callbackFQ28ztalkbox11answer_enum
 /* SPECULATION: link order */
 .global __vt__Q39oob_state32_esc__2_unnamed_esc__2_zEntPlayerOOBState_cpp_esc__2_15grab_state_type
 __vt__Q39oob_state32_esc__2_unnamed_esc__2_zEntPlayerOOBState_cpp_esc__2_15grab_state_type:
-	.incbin "baserom.dol", 0x294F20, 0x14
+  .4byte 0
+  .4byte 0
+  .4byte start__Q39oob_state32_esc__2_unnamed_esc__2_zEntPlayerOOBState_cpp_esc__2_15grab_state_typeFv
+  .4byte stop__Q39oob_state32_esc__2_unnamed_esc__2_zEntPlayerOOBState_cpp_esc__2_15grab_state_typeFv
+  .4byte update__Q39oob_state32_esc__2_unnamed_esc__2_zEntPlayerOOBState_cpp_esc__2_15grab_state_typeFR6xSceneRf
 /* SPECULATION: link order */
 .global __vt__Q39oob_state32_esc__2_unnamed_esc__2_zEntPlayerOOBState_cpp_esc__2_10state_type
 __vt__Q39oob_state32_esc__2_unnamed_esc__2_zEntPlayerOOBState_cpp_esc__2_10state_type:
-	.incbin "baserom.dol", 0x294F34, 0x14
+  .4byte 0
+  .4byte 0
+  .4byte start__Q39oob_state32_esc__2_unnamed_esc__2_zEntPlayerOOBState_cpp_esc__2_10state_typeFv
+  .4byte stop__Q39oob_state32_esc__2_unnamed_esc__2_zEntPlayerOOBState_cpp_esc__2_10state_typeFv
+  .4byte 0
 /* SPECULATION: link order */
 .global __vt__Q39oob_state32_esc__2_unnamed_esc__2_zEntPlayerOOBState_cpp_esc__2_15drop_state_type
 __vt__Q39oob_state32_esc__2_unnamed_esc__2_zEntPlayerOOBState_cpp_esc__2_15drop_state_type:
-	.incbin "baserom.dol", 0x294F48, 0x18
+  .4byte 0
+  .4byte 0
+  .4byte start__Q39oob_state32_esc__2_unnamed_esc__2_zEntPlayerOOBState_cpp_esc__2_15drop_state_typeFv
+  .4byte stop__Q39oob_state32_esc__2_unnamed_esc__2_zEntPlayerOOBState_cpp_esc__2_15drop_state_typeFv
+  .4byte update__Q39oob_state32_esc__2_unnamed_esc__2_zEntPlayerOOBState_cpp_esc__2_15drop_state_typeFR6xSceneRf
+  .4byte 0
 
 .section .bss
 lbl_80314530:

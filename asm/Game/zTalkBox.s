@@ -4211,23 +4211,43 @@ lbl_80298E68:
 /* SPECULATION: link order */
 .global __vt__Q222_esc__2_unnamed_esc__2_zTalkBox_cpp_esc__2_16start_state_type
 __vt__Q222_esc__2_unnamed_esc__2_zTalkBox_cpp_esc__2_16start_state_type:
-	.incbin "baserom.dol", 0x295EFC, 0x14
+  .4byte 0
+  .4byte 0
+  .4byte start__Q222_esc__2_unnamed_esc__2_zTalkBox_cpp_esc__2_16start_state_typeFv
+  .4byte stop__Q222_esc__2_unnamed_esc__2_zTalkBox_cpp_esc__2_16start_state_typeFv
+  .4byte update__Q222_esc__2_unnamed_esc__2_zTalkBox_cpp_esc__2_16start_state_typeFR6xScenef
 /* SPECULATION: link order */
 .global __vt__Q222_esc__2_unnamed_esc__2_zTalkBox_cpp_esc__2_15next_state_type
 __vt__Q222_esc__2_unnamed_esc__2_zTalkBox_cpp_esc__2_15next_state_type:
-	.incbin "baserom.dol", 0x295F10, 0x14
+  .4byte 0
+  .4byte 0
+  .4byte start__Q222_esc__2_unnamed_esc__2_zTalkBox_cpp_esc__2_15next_state_typeFv
+  .4byte stop__Q222_esc__2_unnamed_esc__2_zTalkBox_cpp_esc__2_15next_state_typeFv
+  .4byte update__Q222_esc__2_unnamed_esc__2_zTalkBox_cpp_esc__2_15next_state_typeFR6xScenef
 /* SPECULATION: link order */
 .global __vt__Q222_esc__2_unnamed_esc__2_zTalkBox_cpp_esc__2_15wait_state_type
 __vt__Q222_esc__2_unnamed_esc__2_zTalkBox_cpp_esc__2_15wait_state_type:
-	.incbin "baserom.dol", 0x295F24, 0x14
+  .4byte 0
+  .4byte 0
+  .4byte start__Q222_esc__2_unnamed_esc__2_zTalkBox_cpp_esc__2_15wait_state_typeFv
+  .4byte stop__Q222_esc__2_unnamed_esc__2_zTalkBox_cpp_esc__2_15wait_state_typeFv
+  .4byte update__Q222_esc__2_unnamed_esc__2_zTalkBox_cpp_esc__2_15wait_state_typeFR6xScenef
 /* SPECULATION: link order */
 .global __vt__Q222_esc__2_unnamed_esc__2_zTalkBox_cpp_esc__2_10state_type
 __vt__Q222_esc__2_unnamed_esc__2_zTalkBox_cpp_esc__2_10state_type:
-	.incbin "baserom.dol", 0x295F38, 0x14
+  .4byte 0
+  .4byte 0
+  .4byte start__Q222_esc__2_unnamed_esc__2_zTalkBox_cpp_esc__2_10state_typeFv
+  .4byte stop__Q222_esc__2_unnamed_esc__2_zTalkBox_cpp_esc__2_10state_typeFv
+  .4byte 0
 /* SPECULATION: link order */
 .global __vt__Q222_esc__2_unnamed_esc__2_zTalkBox_cpp_esc__2_15stop_state_type
 __vt__Q222_esc__2_unnamed_esc__2_zTalkBox_cpp_esc__2_15stop_state_type:
-	.incbin "baserom.dol", 0x295F4C, 0x14
+  .4byte 0
+  .4byte 0
+  .4byte start__Q222_esc__2_unnamed_esc__2_zTalkBox_cpp_esc__2_15stop_state_typeFv
+  .4byte stop__Q222_esc__2_unnamed_esc__2_zTalkBox_cpp_esc__2_15stop_state_typeFv
+  .4byte update__Q222_esc__2_unnamed_esc__2_zTalkBox_cpp_esc__2_15stop_state_typeFR6xScenef
 
 .section .bss
 lbl_8031B320:

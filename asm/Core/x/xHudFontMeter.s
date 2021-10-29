@@ -407,19 +407,56 @@ lbl_8027D640:
 /* SPECULATION: link order */
 .global __vt__Q24xhud17font_meter_widget
 __vt__Q24xhud17font_meter_widget:
-	.incbin "baserom.dol", 0x27A62C, 0x2C
+  .4byte 0
+  .4byte 0
+  .4byte destroy__Q24xhud17font_meter_widgetFv
+  .4byte type__Q24xhud17font_meter_widgetCFv
+  .4byte is__Q24xhud17font_meter_widgetCFUi
+  .4byte init__Q24xhud6widgetFv
+  .4byte setup__Q24xhud6widgetFv
+  .4byte update__Q24xhud17font_meter_widgetFf
+  .4byte render__Q24xhud17font_meter_widgetFv
+  .4byte dispatch__Q24xhud6widgetFP5xBaseUiPCfP5xBase
+  .4byte 0
 /* SPECULATION: link order */
 .global __vt__Q24xhud12meter_widget
 __vt__Q24xhud12meter_widget:
-	.incbin "baserom.dol", 0x27A658, 0x28
+  .4byte 0
+  .4byte 0
+  .4byte destroy__Q24xhud6widgetFv
+  .4byte type__Q24xhud12meter_widgetCFv
+  .4byte is__Q24xhud12meter_widgetCFUi
+  .4byte init__Q24xhud6widgetFv
+  .4byte setup__Q24xhud6widgetFv
+  .4byte update__Q24xhud12meter_widgetFf
+  .4byte render__Q24xhud6widgetFv
+  .4byte dispatch__Q24xhud6widgetFP5xBaseUiPCfP5xBase
 /* SPECULATION: link order */
 .global __vt__Q24xhud12model_widget
 __vt__Q24xhud12model_widget:
-	.incbin "baserom.dol", 0x27A680, 0x28
+  .4byte 0
+  .4byte 0
+  .4byte destroy__Q24xhud12model_widgetFv
+  .4byte type__Q24xhud12model_widgetCFv
+  .4byte is__Q24xhud12model_widgetCFUi
+  .4byte init__Q24xhud6widgetFv
+  .4byte setup__Q24xhud6widgetFv
+  .4byte update__Q24xhud12model_widgetFf
+  .4byte render__Q24xhud12model_widgetFv
+  .4byte dispatch__Q24xhud6widgetFP5xBaseUiPCfP5xBase
 /* SPECULATION: link order */
 .global __vt__Q24xhud17unit_meter_widget
 __vt__Q24xhud17unit_meter_widget:
-	.incbin "baserom.dol", 0x27A6A8, 0x28
+  .4byte 0
+  .4byte 0
+  .4byte destroy__Q24xhud17unit_meter_widgetFv
+  .4byte type__Q24xhud17unit_meter_widgetCFv
+  .4byte is__Q24xhud17unit_meter_widgetCFUi
+  .4byte init__Q24xhud6widgetFv
+  .4byte setup__Q24xhud17unit_meter_widgetFv
+  .4byte update__Q24xhud17unit_meter_widgetFf
+  .4byte render__Q24xhud17unit_meter_widgetFv
+  .4byte dispatch__Q24xhud6widgetFP5xBaseUiPCfP5xBase
 
 .section .sbss
 lbl_803CB2A8:

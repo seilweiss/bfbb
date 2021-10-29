@@ -768,7 +768,27 @@ lbl_80297460:
 /* SPECULATION: link order */
 .global __vt__9xNPCBasic
 __vt__9xNPCBasic:
-	.incbin "baserom.dol", 0x2949F4, 0x54
+  .4byte 0
+  .4byte 0
+  .4byte Init__9xNPCBasicFP9xEntAsset
+  .4byte PostInit__9xNPCBasicFv
+  .4byte Setup__9xNPCBasicFv
+  .4byte PostSetup__9xNPCBasicFv
+  .4byte Reset__9xNPCBasicFv
+  .4byte Process__9xNPCBasicFP6xScenef
+  .4byte BUpdate__9xNPCBasicFP5xVec3
+  .4byte NewTime__9xNPCBasicFP6xScenef
+  .4byte Move__9xNPCBasicFP6xScenefP9xEntFrame
+  .4byte SysEvent__9xNPCBasicFP5xBaseP5xBaseUiPCfP5xBasePi
+  .4byte Render__9xNPCBasicFv
+  .4byte Save__9xNPCBasicCFP7xSerial
+  .4byte Load__9xNPCBasicFP7xSerial
+  .4byte CollideReview__9xNPCBasicFv
+  .4byte ColChkFlags__9xNPCBasicCFv
+  .4byte ColPenFlags__9xNPCBasicCFv
+  .4byte ColChkByFlags__9xNPCBasicCFv
+  .4byte ColPenByFlags__9xNPCBasicCFv
+  .4byte PhysicsFlags__9xNPCBasicCFv
 
 .section .sdata2
 lbl_803CE7D0:

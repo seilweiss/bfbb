@@ -5463,43 +5463,457 @@ lbl_802967A4:
 /* SPECULATION: link order */
 .global __vt__15zNPCBubbleBuddy
 __vt__15zNPCBubbleBuddy:
-	.incbin "baserom.dol", 0x2938A0, 0xD0
+  .4byte 0
+  .4byte 0
+  .4byte Init__15zNPCBubbleBuddyFP9xEntAsset
+  .4byte PostInit__9xNPCBasicFv
+  .4byte Setup__15zNPCBubbleBuddyFv
+  .4byte PostSetup__9xNPCBasicFv
+  .4byte Reset__15zNPCBubbleBuddyFv
+  .4byte Process__8zNPCFishFP6xScenef
+  .4byte BUpdate__10zNPCCommonFP5xVec3
+  .4byte NewTime__10zNPCCommonFP6xScenef
+  .4byte Move__10zNPCCommonFP6xScenefP9xEntFrame
+  .4byte SysEvent__10zNPCCommonFP5xBaseP5xBaseUiPCfP5xBasePi
+  .4byte Render__15zNPCBubbleBuddyFv
+  .4byte Save__9xNPCBasicCFP7xSerial
+  .4byte Load__9xNPCBasicFP7xSerial
+  .4byte CollideReview__12zNPCVillagerFv
+  .4byte ColChkFlags__12zNPCVillagerCFv
+  .4byte ColPenFlags__12zNPCVillagerCFv
+  .4byte ColChkByFlags__12zNPCVillagerCFv
+  .4byte ColPenByFlags__12zNPCVillagerCFv
+  .4byte PhysicsFlags__12zNPCVillagerCFv
+  .4byte Destroy__10zNPCCommonFv
+  .4byte NPCMessage__12zNPCVillagerFP6NPCMsg
+  .4byte RenderExtra__15zNPCBubbleBuddyFv
+  .4byte RenderExtraPostParticles__10zNPCCommonFv
+  .4byte ParseINI__8zNPCFishFv
+  .4byte ParseLinks__10zNPCCommonFv
+  .4byte ParseProps__10zNPCCommonFv
+  .4byte SelfSetup__8zNPCFishFv
+  .4byte SelfDestroy__10zNPCCommonFv
+  .4byte IsHealthy__10zNPCCommonFv
+  .4byte IsAlive__10zNPCCommonFv
+  .4byte Damage__10zNPCCommonF18en_NPC_DAMAGE_TYPEP5xBasePC5xVec3
+  .4byte Respawn__10zNPCCommonFPC5xVec3P10zMovePointP10zMovePoint
+  .4byte DuploOwner__10zNPCCommonFP10zNPCCommon
+  .4byte DuploNotice__10zNPCCommonF13en_SM_NOTICESPv
+  .4byte CanRope__10zNPCCommonFv
+  .4byte LassoNotify__10zNPCCommonF14en_LASSO_EVENT
+  .4byte SetCarryState__10zNPCCommonF18en_NPC_CARRY_STATE
+  .4byte Stun__10zNPCCommonFf
+  .4byte SpeakBegin__12zNPCVillagerFv
+  .4byte SpeakEnd__12zNPCVillagerFv
+  .4byte SpeakStart__12zNPCVillagerFUiUii
+  .4byte SpeakStop__12zNPCVillagerFv
+  .4byte AnimPick__8zNPCFishFi16en_NPC_GOAL_SPOTP5xGoal
+  .4byte GetParm__10zNPCCommonF10en_npcparmPv
+  .4byte GetParmDefault__10zNPCCommonF10en_npcparmPv
+  .4byte GenShadCacheRad__12zNPCVillagerFv
+  .4byte PRIV_GetDriverData__8zNPCFishFv
+  .4byte PRIV_GetLassoData__10zNPCCommonFv
+  .4byte LassoSetup__10zNPCCommonFv
+  .4byte FolkHandleMail__8zNPCFishFP6NPCMsg
 /* SPECULATION: link order */
 .global __vt__14zNPCBalloonBoy
 __vt__14zNPCBalloonBoy:
-	.incbin "baserom.dol", 0x293970, 0xD0
+  .4byte 0
+  .4byte 0
+  .4byte Init__14zNPCBalloonBoyFP9xEntAsset
+  .4byte PostInit__9xNPCBasicFv
+  .4byte Setup__10zNPCCommonFv
+  .4byte PostSetup__9xNPCBasicFv
+  .4byte Reset__14zNPCBalloonBoyFv
+  .4byte Process__8zNPCFishFP6xScenef
+  .4byte BUpdate__10zNPCCommonFP5xVec3
+  .4byte NewTime__10zNPCCommonFP6xScenef
+  .4byte Move__10zNPCCommonFP6xScenefP9xEntFrame
+  .4byte SysEvent__10zNPCCommonFP5xBaseP5xBaseUiPCfP5xBasePi
+  .4byte Render__14zNPCBalloonBoyFv
+  .4byte Save__9xNPCBasicCFP7xSerial
+  .4byte Load__9xNPCBasicFP7xSerial
+  .4byte CollideReview__12zNPCVillagerFv
+  .4byte ColChkFlags__12zNPCVillagerCFv
+  .4byte ColPenFlags__12zNPCVillagerCFv
+  .4byte ColChkByFlags__12zNPCVillagerCFv
+  .4byte ColPenByFlags__12zNPCVillagerCFv
+  .4byte PhysicsFlags__12zNPCVillagerCFv
+  .4byte Destroy__10zNPCCommonFv
+  .4byte NPCMessage__12zNPCVillagerFP6NPCMsg
+  .4byte RenderExtra__10zNPCCommonFv
+  .4byte RenderExtraPostParticles__10zNPCCommonFv
+  .4byte ParseINI__8zNPCFishFv
+  .4byte ParseLinks__10zNPCCommonFv
+  .4byte ParseProps__10zNPCCommonFv
+  .4byte SelfSetup__14zNPCBalloonBoyFv
+  .4byte SelfDestroy__10zNPCCommonFv
+  .4byte IsHealthy__10zNPCCommonFv
+  .4byte IsAlive__10zNPCCommonFv
+  .4byte Damage__10zNPCCommonF18en_NPC_DAMAGE_TYPEP5xBasePC5xVec3
+  .4byte Respawn__10zNPCCommonFPC5xVec3P10zMovePointP10zMovePoint
+  .4byte DuploOwner__10zNPCCommonFP10zNPCCommon
+  .4byte DuploNotice__10zNPCCommonF13en_SM_NOTICESPv
+  .4byte CanRope__10zNPCCommonFv
+  .4byte LassoNotify__10zNPCCommonF14en_LASSO_EVENT
+  .4byte SetCarryState__10zNPCCommonF18en_NPC_CARRY_STATE
+  .4byte Stun__10zNPCCommonFf
+  .4byte SpeakBegin__12zNPCVillagerFv
+  .4byte SpeakEnd__12zNPCVillagerFv
+  .4byte SpeakStart__12zNPCVillagerFUiUii
+  .4byte SpeakStop__12zNPCVillagerFv
+  .4byte AnimPick__14zNPCBalloonBoyFi16en_NPC_GOAL_SPOTP5xGoal
+  .4byte GetParm__10zNPCCommonF10en_npcparmPv
+  .4byte GetParmDefault__10zNPCCommonF10en_npcparmPv
+  .4byte GenShadCacheRad__12zNPCVillagerFv
+  .4byte PRIV_GetDriverData__8zNPCFishFv
+  .4byte PRIV_GetLassoData__10zNPCCommonFv
+  .4byte LassoSetup__10zNPCCommonFv
+  .4byte FolkHandleMail__14zNPCBalloonBoyFP6NPCMsg
 /* SPECULATION: link order */
 .global __vt__15zNPCSandyBikini
 __vt__15zNPCSandyBikini:
-	.incbin "baserom.dol", 0x293A40, 0xD0
+  .4byte 0
+  .4byte 0
+  .4byte Init__12zNPCVillagerFP9xEntAsset
+  .4byte PostInit__9xNPCBasicFv
+  .4byte Setup__10zNPCCommonFv
+  .4byte PostSetup__9xNPCBasicFv
+  .4byte Reset__15zNPCSandyBikiniFv
+  .4byte Process__15zNPCSandyBikiniFP6xScenef
+  .4byte BUpdate__10zNPCCommonFP5xVec3
+  .4byte NewTime__10zNPCCommonFP6xScenef
+  .4byte Move__10zNPCCommonFP6xScenefP9xEntFrame
+  .4byte SysEvent__10zNPCCommonFP5xBaseP5xBaseUiPCfP5xBasePi
+  .4byte Render__9xNPCBasicFv
+  .4byte Save__9xNPCBasicCFP7xSerial
+  .4byte Load__9xNPCBasicFP7xSerial
+  .4byte CollideReview__12zNPCVillagerFv
+  .4byte ColChkFlags__12zNPCVillagerCFv
+  .4byte ColPenFlags__12zNPCVillagerCFv
+  .4byte ColChkByFlags__12zNPCVillagerCFv
+  .4byte ColPenByFlags__12zNPCVillagerCFv
+  .4byte PhysicsFlags__12zNPCVillagerCFv
+  .4byte Destroy__10zNPCCommonFv
+  .4byte NPCMessage__12zNPCVillagerFP6NPCMsg
+  .4byte RenderExtra__10zNPCCommonFv
+  .4byte RenderExtraPostParticles__10zNPCCommonFv
+  .4byte ParseINI__12zNPCVillagerFv
+  .4byte ParseLinks__10zNPCCommonFv
+  .4byte ParseProps__10zNPCCommonFv
+  .4byte SelfSetup__12zNPCVillagerFv
+  .4byte SelfDestroy__10zNPCCommonFv
+  .4byte IsHealthy__10zNPCCommonFv
+  .4byte IsAlive__10zNPCCommonFv
+  .4byte Damage__10zNPCCommonF18en_NPC_DAMAGE_TYPEP5xBasePC5xVec3
+  .4byte Respawn__10zNPCCommonFPC5xVec3P10zMovePointP10zMovePoint
+  .4byte DuploOwner__10zNPCCommonFP10zNPCCommon
+  .4byte DuploNotice__10zNPCCommonF13en_SM_NOTICESPv
+  .4byte CanRope__10zNPCCommonFv
+  .4byte LassoNotify__10zNPCCommonF14en_LASSO_EVENT
+  .4byte SetCarryState__10zNPCCommonF18en_NPC_CARRY_STATE
+  .4byte Stun__10zNPCCommonFf
+  .4byte SpeakBegin__12zNPCVillagerFv
+  .4byte SpeakEnd__12zNPCVillagerFv
+  .4byte SpeakStart__12zNPCVillagerFUiUii
+  .4byte SpeakStop__12zNPCVillagerFv
+  .4byte AnimPick__12zNPCVillagerFi16en_NPC_GOAL_SPOTP5xGoal
+  .4byte GetParm__10zNPCCommonF10en_npcparmPv
+  .4byte GetParmDefault__10zNPCCommonF10en_npcparmPv
+  .4byte GenShadCacheRad__12zNPCVillagerFv
+  .4byte PRIV_GetDriverData__10zNPCCommonFv
+  .4byte PRIV_GetLassoData__10zNPCCommonFv
+  .4byte LassoSetup__10zNPCCommonFv
+  .4byte FolkHandleMail__12zNPCVillagerFP6NPCMsg
 /* SPECULATION: link order */
 .global __vt__12zNPCNewsFish
 __vt__12zNPCNewsFish:
-	.incbin "baserom.dol", 0x293B10, 0xD0
+  .4byte 0
+  .4byte 0
+  .4byte Init__12zNPCNewsFishFP9xEntAsset
+  .4byte PostInit__9xNPCBasicFv
+  .4byte Setup__10zNPCCommonFv
+  .4byte PostSetup__12zNPCNewsFishFv
+  .4byte Reset__12zNPCNewsFishFv
+  .4byte Process__12zNPCNewsFishFP6xScenef
+  .4byte BUpdate__10zNPCCommonFP5xVec3
+  .4byte NewTime__10zNPCCommonFP6xScenef
+  .4byte Move__10zNPCCommonFP6xScenefP9xEntFrame
+  .4byte SysEvent__10zNPCCommonFP5xBaseP5xBaseUiPCfP5xBasePi
+  .4byte Render__12zNPCNewsFishFv
+  .4byte Save__9xNPCBasicCFP7xSerial
+  .4byte Load__9xNPCBasicFP7xSerial
+  .4byte CollideReview__12zNPCVillagerFv
+  .4byte ColChkFlags__12zNPCVillagerCFv
+  .4byte ColPenFlags__12zNPCVillagerCFv
+  .4byte ColChkByFlags__12zNPCVillagerCFv
+  .4byte ColPenByFlags__12zNPCVillagerCFv
+  .4byte PhysicsFlags__12zNPCVillagerCFv
+  .4byte Destroy__10zNPCCommonFv
+  .4byte NPCMessage__12zNPCVillagerFP6NPCMsg
+  .4byte RenderExtra__10zNPCCommonFv
+  .4byte RenderExtraPostParticles__10zNPCCommonFv
+  .4byte ParseINI__12zNPCVillagerFv
+  .4byte ParseLinks__10zNPCCommonFv
+  .4byte ParseProps__10zNPCCommonFv
+  .4byte SelfSetup__12zNPCNewsFishFv
+  .4byte SelfDestroy__10zNPCCommonFv
+  .4byte IsHealthy__10zNPCCommonFv
+  .4byte IsAlive__10zNPCCommonFv
+  .4byte Damage__10zNPCCommonF18en_NPC_DAMAGE_TYPEP5xBasePC5xVec3
+  .4byte Respawn__10zNPCCommonFPC5xVec3P10zMovePointP10zMovePoint
+  .4byte DuploOwner__10zNPCCommonFP10zNPCCommon
+  .4byte DuploNotice__10zNPCCommonF13en_SM_NOTICESPv
+  .4byte CanRope__10zNPCCommonFv
+  .4byte LassoNotify__10zNPCCommonF14en_LASSO_EVENT
+  .4byte SetCarryState__10zNPCCommonF18en_NPC_CARRY_STATE
+  .4byte Stun__10zNPCCommonFf
+  .4byte SpeakBegin__12zNPCVillagerFv
+  .4byte SpeakEnd__12zNPCVillagerFv
+  .4byte SpeakStart__12zNPCNewsFishFUiUii
+  .4byte SpeakStop__12zNPCNewsFishFv
+  .4byte AnimPick__12zNPCVillagerFi16en_NPC_GOAL_SPOTP5xGoal
+  .4byte GetParm__10zNPCCommonF10en_npcparmPv
+  .4byte GetParmDefault__10zNPCCommonF10en_npcparmPv
+  .4byte GenShadCacheRad__12zNPCVillagerFv
+  .4byte PRIV_GetDriverData__10zNPCCommonFv
+  .4byte PRIV_GetLassoData__10zNPCCommonFv
+  .4byte LassoSetup__10zNPCCommonFv
+  .4byte FolkHandleMail__12zNPCVillagerFP6NPCMsg
 /* SPECULATION: link order */
 .global __vt__15zNPCMerManChair
 __vt__15zNPCMerManChair:
-	.incbin "baserom.dol", 0x293BE0, 0xD0
+  .4byte 0
+  .4byte 0
+  .4byte Init__15zNPCMerManChairFP9xEntAsset
+  .4byte PostInit__9xNPCBasicFv
+  .4byte Setup__10zNPCCommonFv
+  .4byte PostSetup__9xNPCBasicFv
+  .4byte Reset__15zNPCMerManChairFv
+  .4byte Process__15zNPCMerManChairFP6xScenef
+  .4byte BUpdate__10zNPCCommonFP5xVec3
+  .4byte NewTime__10zNPCCommonFP6xScenef
+  .4byte Move__10zNPCCommonFP6xScenefP9xEntFrame
+  .4byte SysEvent__10zNPCCommonFP5xBaseP5xBaseUiPCfP5xBasePi
+  .4byte Render__9xNPCBasicFv
+  .4byte Save__9xNPCBasicCFP7xSerial
+  .4byte Load__9xNPCBasicFP7xSerial
+  .4byte CollideReview__12zNPCVillagerFv
+  .4byte ColChkFlags__15zNPCMerManChairCFv
+  .4byte ColPenFlags__15zNPCMerManChairCFv
+  .4byte ColChkByFlags__12zNPCVillagerCFv
+  .4byte ColPenByFlags__12zNPCVillagerCFv
+  .4byte PhysicsFlags__15zNPCMerManChairCFv
+  .4byte Destroy__10zNPCCommonFv
+  .4byte NPCMessage__12zNPCVillagerFP6NPCMsg
+  .4byte RenderExtra__10zNPCCommonFv
+  .4byte RenderExtraPostParticles__10zNPCCommonFv
+  .4byte ParseINI__12zNPCVillagerFv
+  .4byte ParseLinks__10zNPCCommonFv
+  .4byte ParseProps__10zNPCCommonFv
+  .4byte SelfSetup__15zNPCMerManChairFv
+  .4byte SelfDestroy__10zNPCCommonFv
+  .4byte IsHealthy__10zNPCCommonFv
+  .4byte IsAlive__10zNPCCommonFv
+  .4byte Damage__10zNPCCommonF18en_NPC_DAMAGE_TYPEP5xBasePC5xVec3
+  .4byte Respawn__10zNPCCommonFPC5xVec3P10zMovePointP10zMovePoint
+  .4byte DuploOwner__10zNPCCommonFP10zNPCCommon
+  .4byte DuploNotice__10zNPCCommonF13en_SM_NOTICESPv
+  .4byte CanRope__10zNPCCommonFv
+  .4byte LassoNotify__10zNPCCommonF14en_LASSO_EVENT
+  .4byte SetCarryState__10zNPCCommonF18en_NPC_CARRY_STATE
+  .4byte Stun__10zNPCCommonFf
+  .4byte SpeakBegin__12zNPCVillagerFv
+  .4byte SpeakEnd__12zNPCVillagerFv
+  .4byte SpeakStart__12zNPCVillagerFUiUii
+  .4byte SpeakStop__12zNPCVillagerFv
+  .4byte AnimPick__15zNPCMerManChairFi16en_NPC_GOAL_SPOTP5xGoal
+  .4byte GetParm__10zNPCCommonF10en_npcparmPv
+  .4byte GetParmDefault__10zNPCCommonF10en_npcparmPv
+  .4byte GenShadCacheRad__12zNPCVillagerFv
+  .4byte PRIV_GetDriverData__10zNPCCommonFv
+  .4byte PRIV_GetLassoData__10zNPCCommonFv
+  .4byte LassoSetup__10zNPCCommonFv
+  .4byte FolkHandleMail__12zNPCVillagerFP6NPCMsg
 /* SPECULATION: link order */
 .global __vt__8zNPCFish
 __vt__8zNPCFish:
-	.incbin "baserom.dol", 0x293CB0, 0xD0
+  .4byte 0
+  .4byte 0
+  .4byte Init__8zNPCFishFP9xEntAsset
+  .4byte PostInit__9xNPCBasicFv
+  .4byte Setup__10zNPCCommonFv
+  .4byte PostSetup__9xNPCBasicFv
+  .4byte Reset__8zNPCFishFv
+  .4byte Process__8zNPCFishFP6xScenef
+  .4byte BUpdate__10zNPCCommonFP5xVec3
+  .4byte NewTime__10zNPCCommonFP6xScenef
+  .4byte Move__10zNPCCommonFP6xScenefP9xEntFrame
+  .4byte SysEvent__10zNPCCommonFP5xBaseP5xBaseUiPCfP5xBasePi
+  .4byte Render__9xNPCBasicFv
+  .4byte Save__9xNPCBasicCFP7xSerial
+  .4byte Load__9xNPCBasicFP7xSerial
+  .4byte CollideReview__12zNPCVillagerFv
+  .4byte ColChkFlags__12zNPCVillagerCFv
+  .4byte ColPenFlags__12zNPCVillagerCFv
+  .4byte ColChkByFlags__12zNPCVillagerCFv
+  .4byte ColPenByFlags__12zNPCVillagerCFv
+  .4byte PhysicsFlags__12zNPCVillagerCFv
+  .4byte Destroy__10zNPCCommonFv
+  .4byte NPCMessage__12zNPCVillagerFP6NPCMsg
+  .4byte RenderExtra__10zNPCCommonFv
+  .4byte RenderExtraPostParticles__10zNPCCommonFv
+  .4byte ParseINI__8zNPCFishFv
+  .4byte ParseLinks__10zNPCCommonFv
+  .4byte ParseProps__10zNPCCommonFv
+  .4byte SelfSetup__8zNPCFishFv
+  .4byte SelfDestroy__10zNPCCommonFv
+  .4byte IsHealthy__10zNPCCommonFv
+  .4byte IsAlive__10zNPCCommonFv
+  .4byte Damage__10zNPCCommonF18en_NPC_DAMAGE_TYPEP5xBasePC5xVec3
+  .4byte Respawn__10zNPCCommonFPC5xVec3P10zMovePointP10zMovePoint
+  .4byte DuploOwner__10zNPCCommonFP10zNPCCommon
+  .4byte DuploNotice__10zNPCCommonF13en_SM_NOTICESPv
+  .4byte CanRope__10zNPCCommonFv
+  .4byte LassoNotify__10zNPCCommonF14en_LASSO_EVENT
+  .4byte SetCarryState__10zNPCCommonF18en_NPC_CARRY_STATE
+  .4byte Stun__10zNPCCommonFf
+  .4byte SpeakBegin__12zNPCVillagerFv
+  .4byte SpeakEnd__12zNPCVillagerFv
+  .4byte SpeakStart__12zNPCVillagerFUiUii
+  .4byte SpeakStop__12zNPCVillagerFv
+  .4byte AnimPick__8zNPCFishFi16en_NPC_GOAL_SPOTP5xGoal
+  .4byte GetParm__10zNPCCommonF10en_npcparmPv
+  .4byte GetParmDefault__10zNPCCommonF10en_npcparmPv
+  .4byte GenShadCacheRad__12zNPCVillagerFv
+  .4byte PRIV_GetDriverData__8zNPCFishFv
+  .4byte PRIV_GetLassoData__10zNPCCommonFv
+  .4byte LassoSetup__10zNPCCommonFv
+  .4byte FolkHandleMail__8zNPCFishFP6NPCMsg
 /* SPECULATION: link order */
 .global __vt__12zNPCVillager
 __vt__12zNPCVillager:
-	.incbin "baserom.dol", 0x293D80, 0xD0
+  .4byte 0
+  .4byte 0
+  .4byte Init__12zNPCVillagerFP9xEntAsset
+  .4byte PostInit__9xNPCBasicFv
+  .4byte Setup__10zNPCCommonFv
+  .4byte PostSetup__9xNPCBasicFv
+  .4byte Reset__12zNPCVillagerFv
+  .4byte Process__12zNPCVillagerFP6xScenef
+  .4byte BUpdate__10zNPCCommonFP5xVec3
+  .4byte NewTime__10zNPCCommonFP6xScenef
+  .4byte Move__10zNPCCommonFP6xScenefP9xEntFrame
+  .4byte SysEvent__10zNPCCommonFP5xBaseP5xBaseUiPCfP5xBasePi
+  .4byte Render__9xNPCBasicFv
+  .4byte Save__9xNPCBasicCFP7xSerial
+  .4byte Load__9xNPCBasicFP7xSerial
+  .4byte CollideReview__12zNPCVillagerFv
+  .4byte ColChkFlags__12zNPCVillagerCFv
+  .4byte ColPenFlags__12zNPCVillagerCFv
+  .4byte ColChkByFlags__12zNPCVillagerCFv
+  .4byte ColPenByFlags__12zNPCVillagerCFv
+  .4byte PhysicsFlags__12zNPCVillagerCFv
+  .4byte Destroy__10zNPCCommonFv
+  .4byte NPCMessage__12zNPCVillagerFP6NPCMsg
+  .4byte RenderExtra__10zNPCCommonFv
+  .4byte RenderExtraPostParticles__10zNPCCommonFv
+  .4byte ParseINI__12zNPCVillagerFv
+  .4byte ParseLinks__10zNPCCommonFv
+  .4byte ParseProps__10zNPCCommonFv
+  .4byte SelfSetup__12zNPCVillagerFv
+  .4byte SelfDestroy__10zNPCCommonFv
+  .4byte IsHealthy__10zNPCCommonFv
+  .4byte IsAlive__10zNPCCommonFv
+  .4byte Damage__10zNPCCommonF18en_NPC_DAMAGE_TYPEP5xBasePC5xVec3
+  .4byte Respawn__10zNPCCommonFPC5xVec3P10zMovePointP10zMovePoint
+  .4byte DuploOwner__10zNPCCommonFP10zNPCCommon
+  .4byte DuploNotice__10zNPCCommonF13en_SM_NOTICESPv
+  .4byte CanRope__10zNPCCommonFv
+  .4byte LassoNotify__10zNPCCommonF14en_LASSO_EVENT
+  .4byte SetCarryState__10zNPCCommonF18en_NPC_CARRY_STATE
+  .4byte Stun__10zNPCCommonFf
+  .4byte SpeakBegin__12zNPCVillagerFv
+  .4byte SpeakEnd__12zNPCVillagerFv
+  .4byte SpeakStart__12zNPCVillagerFUiUii
+  .4byte SpeakStop__12zNPCVillagerFv
+  .4byte AnimPick__12zNPCVillagerFi16en_NPC_GOAL_SPOTP5xGoal
+  .4byte GetParm__10zNPCCommonF10en_npcparmPv
+  .4byte GetParmDefault__10zNPCCommonF10en_npcparmPv
+  .4byte GenShadCacheRad__12zNPCVillagerFv
+  .4byte PRIV_GetDriverData__10zNPCCommonFv
+  .4byte PRIV_GetLassoData__10zNPCCommonFv
+  .4byte LassoSetup__10zNPCCommonFv
+  .4byte FolkHandleMail__12zNPCVillagerFP6NPCMsg
 /* SPECULATION: link order */
 .global __vt__Q28ztaskbox8callback
 __vt__Q28ztaskbox8callback:
-	.incbin "baserom.dol", 0x293E50, 0x10
+  .4byte 0
+  .4byte 0
+  .4byte on_talk_start__Q28ztaskbox8callbackFv
+  .4byte on_talk_stop__Q28ztaskbox8callbackFv
 /* SPECULATION: link order */
 .global __vt__7HiThere
 __vt__7HiThere:
-	.incbin "baserom.dol", 0x293E60, 0x10
+  .4byte 0
+  .4byte 0
+  .4byte on_talk_start__7HiThereFv
+  .4byte on_talk_stop__7HiThereFv
 /* SPECULATION: link order */
 .global __vt__14zNPCNewsFishTV
 __vt__14zNPCNewsFishTV:
-	.incbin "baserom.dol", 0x293E70, 0xD0
+  .4byte 0
+  .4byte 0
+  .4byte Init__12zNPCVillagerFP9xEntAsset
+  .4byte PostInit__9xNPCBasicFv
+  .4byte Setup__10zNPCCommonFv
+  .4byte PostSetup__9xNPCBasicFv
+  .4byte Reset__12zNPCVillagerFv
+  .4byte Process__12zNPCVillagerFP6xScenef
+  .4byte BUpdate__10zNPCCommonFP5xVec3
+  .4byte NewTime__10zNPCCommonFP6xScenef
+  .4byte Move__10zNPCCommonFP6xScenefP9xEntFrame
+  .4byte SysEvent__10zNPCCommonFP5xBaseP5xBaseUiPCfP5xBasePi
+  .4byte Render__9xNPCBasicFv
+  .4byte Save__9xNPCBasicCFP7xSerial
+  .4byte Load__9xNPCBasicFP7xSerial
+  .4byte CollideReview__12zNPCVillagerFv
+  .4byte ColChkFlags__14zNPCNewsFishTVCFv
+  .4byte ColPenFlags__14zNPCNewsFishTVCFv
+  .4byte ColChkByFlags__14zNPCNewsFishTVCFv
+  .4byte ColPenByFlags__14zNPCNewsFishTVCFv
+  .4byte PhysicsFlags__14zNPCNewsFishTVCFv
+  .4byte Destroy__10zNPCCommonFv
+  .4byte NPCMessage__12zNPCVillagerFP6NPCMsg
+  .4byte RenderExtra__10zNPCCommonFv
+  .4byte RenderExtraPostParticles__10zNPCCommonFv
+  .4byte ParseINI__12zNPCVillagerFv
+  .4byte ParseLinks__10zNPCCommonFv
+  .4byte ParseProps__10zNPCCommonFv
+  .4byte SelfSetup__12zNPCVillagerFv
+  .4byte SelfDestroy__10zNPCCommonFv
+  .4byte IsHealthy__10zNPCCommonFv
+  .4byte IsAlive__10zNPCCommonFv
+  .4byte Damage__10zNPCCommonF18en_NPC_DAMAGE_TYPEP5xBasePC5xVec3
+  .4byte Respawn__10zNPCCommonFPC5xVec3P10zMovePointP10zMovePoint
+  .4byte DuploOwner__10zNPCCommonFP10zNPCCommon
+  .4byte DuploNotice__10zNPCCommonF13en_SM_NOTICESPv
+  .4byte CanRope__10zNPCCommonFv
+  .4byte LassoNotify__10zNPCCommonF14en_LASSO_EVENT
+  .4byte SetCarryState__10zNPCCommonF18en_NPC_CARRY_STATE
+  .4byte Stun__10zNPCCommonFf
+  .4byte SpeakBegin__12zNPCVillagerFv
+  .4byte SpeakEnd__12zNPCVillagerFv
+  .4byte SpeakStart__12zNPCVillagerFUiUii
+  .4byte SpeakStop__12zNPCVillagerFv
+  .4byte AnimPick__12zNPCVillagerFi16en_NPC_GOAL_SPOTP5xGoal
+  .4byte GetParm__10zNPCCommonF10en_npcparmPv
+  .4byte GetParmDefault__10zNPCCommonF10en_npcparmPv
+  .4byte GenShadCacheRad__12zNPCVillagerFv
+  .4byte PRIV_GetDriverData__10zNPCCommonFv
+  .4byte PRIV_GetLassoData__10zNPCCommonFv
+  .4byte LassoSetup__10zNPCCommonFv
+  .4byte FolkHandleMail__12zNPCVillagerFP6NPCMsg
 /* SPECULATION: link order */
 .global g_hash_ambianim
 g_hash_ambianim:
@@ -5511,35 +5925,323 @@ g_strz_ambianim:
 /* SPECULATION: link order */
 .global __vt__12zNPCMimeFish
 __vt__12zNPCMimeFish:
-	.incbin "baserom.dol", 0x293FA0, 0xD0
+  .4byte 0
+  .4byte 0
+  .4byte Init__11zNPCAmbientFP9xEntAsset
+  .4byte PostInit__9xNPCBasicFv
+  .4byte Setup__10zNPCCommonFv
+  .4byte PostSetup__9xNPCBasicFv
+  .4byte Reset__12zNPCMimeFishFv
+  .4byte Process__12zNPCMimeFishFP6xScenef
+  .4byte BUpdate__10zNPCCommonFP5xVec3
+  .4byte NewTime__10zNPCCommonFP6xScenef
+  .4byte Move__10zNPCCommonFP6xScenefP9xEntFrame
+  .4byte SysEvent__10zNPCCommonFP5xBaseP5xBaseUiPCfP5xBasePi
+  .4byte Render__9xNPCBasicFv
+  .4byte Save__9xNPCBasicCFP7xSerial
+  .4byte Load__9xNPCBasicFP7xSerial
+  .4byte CollideReview__10zNPCCommonFv
+  .4byte ColChkFlags__11zNPCAmbientCFv
+  .4byte ColPenFlags__11zNPCAmbientCFv
+  .4byte ColChkByFlags__11zNPCAmbientCFv
+  .4byte ColPenByFlags__11zNPCAmbientCFv
+  .4byte PhysicsFlags__11zNPCAmbientCFv
+  .4byte Destroy__10zNPCCommonFv
+  .4byte NPCMessage__11zNPCAmbientFP6NPCMsg
+  .4byte RenderExtra__10zNPCCommonFv
+  .4byte RenderExtraPostParticles__10zNPCCommonFv
+  .4byte ParseINI__10zNPCCommonFv
+  .4byte ParseLinks__10zNPCCommonFv
+  .4byte ParseProps__10zNPCCommonFv
+  .4byte SelfSetup__12zNPCMimeFishFv
+  .4byte SelfDestroy__10zNPCCommonFv
+  .4byte IsHealthy__10zNPCCommonFv
+  .4byte IsAlive__10zNPCCommonFv
+  .4byte Damage__10zNPCCommonF18en_NPC_DAMAGE_TYPEP5xBasePC5xVec3
+  .4byte Respawn__10zNPCCommonFPC5xVec3P10zMovePointP10zMovePoint
+  .4byte DuploOwner__10zNPCCommonFP10zNPCCommon
+  .4byte DuploNotice__10zNPCCommonF13en_SM_NOTICESPv
+  .4byte CanRope__10zNPCCommonFv
+  .4byte LassoNotify__10zNPCCommonF14en_LASSO_EVENT
+  .4byte SetCarryState__10zNPCCommonF18en_NPC_CARRY_STATE
+  .4byte Stun__10zNPCCommonFf
+  .4byte SpeakBegin__10zNPCCommonFv
+  .4byte SpeakEnd__10zNPCCommonFv
+  .4byte SpeakStart__10zNPCCommonFUiUii
+  .4byte SpeakStop__10zNPCCommonFv
+  .4byte AnimPick__12zNPCMimeFishFi16en_NPC_GOAL_SPOTP5xGoal
+  .4byte GetParm__10zNPCCommonF10en_npcparmPv
+  .4byte GetParmDefault__10zNPCCommonF10en_npcparmPv
+  .4byte GenShadCacheRad__10zNPCCommonFv
+  .4byte PRIV_GetDriverData__10zNPCCommonFv
+  .4byte PRIV_GetLassoData__10zNPCCommonFv
+  .4byte LassoSetup__10zNPCCommonFv
+  .4byte AmbiHandleMail__11zNPCAmbientFP6NPCMsg
 /* SPECULATION: link order */
 .global __vt__11zNPCNeptune
 __vt__11zNPCNeptune:
-	.incbin "baserom.dol", 0x294070, 0xD0
+  .4byte 0
+  .4byte 0
+  .4byte Init__11zNPCAmbientFP9xEntAsset
+  .4byte PostInit__9xNPCBasicFv
+  .4byte Setup__10zNPCCommonFv
+  .4byte PostSetup__9xNPCBasicFv
+  .4byte Reset__11zNPCNeptuneFv
+  .4byte Process__11zNPCNeptuneFP6xScenef
+  .4byte BUpdate__10zNPCCommonFP5xVec3
+  .4byte NewTime__10zNPCCommonFP6xScenef
+  .4byte Move__10zNPCCommonFP6xScenefP9xEntFrame
+  .4byte SysEvent__10zNPCCommonFP5xBaseP5xBaseUiPCfP5xBasePi
+  .4byte Render__9xNPCBasicFv
+  .4byte Save__9xNPCBasicCFP7xSerial
+  .4byte Load__9xNPCBasicFP7xSerial
+  .4byte CollideReview__10zNPCCommonFv
+  .4byte ColChkFlags__11zNPCNeptuneCFv
+  .4byte ColPenFlags__11zNPCNeptuneCFv
+  .4byte ColChkByFlags__11zNPCNeptuneCFv
+  .4byte ColPenByFlags__11zNPCNeptuneCFv
+  .4byte PhysicsFlags__11zNPCAmbientCFv
+  .4byte Destroy__10zNPCCommonFv
+  .4byte NPCMessage__11zNPCAmbientFP6NPCMsg
+  .4byte RenderExtra__10zNPCCommonFv
+  .4byte RenderExtraPostParticles__10zNPCCommonFv
+  .4byte ParseINI__11zNPCNeptuneFv
+  .4byte ParseLinks__10zNPCCommonFv
+  .4byte ParseProps__10zNPCCommonFv
+  .4byte SelfSetup__11zNPCNeptuneFv
+  .4byte SelfDestroy__10zNPCCommonFv
+  .4byte IsHealthy__10zNPCCommonFv
+  .4byte IsAlive__10zNPCCommonFv
+  .4byte Damage__10zNPCCommonF18en_NPC_DAMAGE_TYPEP5xBasePC5xVec3
+  .4byte Respawn__10zNPCCommonFPC5xVec3P10zMovePointP10zMovePoint
+  .4byte DuploOwner__10zNPCCommonFP10zNPCCommon
+  .4byte DuploNotice__10zNPCCommonF13en_SM_NOTICESPv
+  .4byte CanRope__10zNPCCommonFv
+  .4byte LassoNotify__10zNPCCommonF14en_LASSO_EVENT
+  .4byte SetCarryState__10zNPCCommonF18en_NPC_CARRY_STATE
+  .4byte Stun__10zNPCCommonFf
+  .4byte SpeakBegin__10zNPCCommonFv
+  .4byte SpeakEnd__10zNPCCommonFv
+  .4byte SpeakStart__10zNPCCommonFUiUii
+  .4byte SpeakStop__10zNPCCommonFv
+  .4byte AnimPick__11zNPCNeptuneFi16en_NPC_GOAL_SPOTP5xGoal
+  .4byte GetParm__10zNPCCommonF10en_npcparmPv
+  .4byte GetParmDefault__10zNPCCommonF10en_npcparmPv
+  .4byte GenShadCacheRad__10zNPCCommonFv
+  .4byte PRIV_GetDriverData__10zNPCCommonFv
+  .4byte PRIV_GetLassoData__10zNPCCommonFv
+  .4byte LassoSetup__10zNPCCommonFv
+  .4byte AmbiHandleMail__11zNPCAmbientFP6NPCMsg
 /* SPECULATION: link order */
 .global __vt__9zNPCJelly
 __vt__9zNPCJelly:
-	.incbin "baserom.dol", 0x294140, 0xD0
+  .4byte 0
+  .4byte 0
+  .4byte Init__9zNPCJellyFP9xEntAsset
+  .4byte PostInit__9xNPCBasicFv
+  .4byte Setup__10zNPCCommonFv
+  .4byte PostSetup__9xNPCBasicFv
+  .4byte Reset__9zNPCJellyFv
+  .4byte Process__9zNPCJellyFP6xScenef
+  .4byte BUpdate__9zNPCJellyFP5xVec3
+  .4byte NewTime__10zNPCCommonFP6xScenef
+  .4byte Move__10zNPCCommonFP6xScenefP9xEntFrame
+  .4byte SysEvent__10zNPCCommonFP5xBaseP5xBaseUiPCfP5xBasePi
+  .4byte Render__9xNPCBasicFv
+  .4byte Save__9xNPCBasicCFP7xSerial
+  .4byte Load__9xNPCBasicFP7xSerial
+  .4byte CollideReview__10zNPCCommonFv
+  .4byte ColChkFlags__11zNPCAmbientCFv
+  .4byte ColPenFlags__11zNPCAmbientCFv
+  .4byte ColChkByFlags__11zNPCAmbientCFv
+  .4byte ColPenByFlags__11zNPCAmbientCFv
+  .4byte PhysicsFlags__11zNPCAmbientCFv
+  .4byte Destroy__10zNPCCommonFv
+  .4byte NPCMessage__11zNPCAmbientFP6NPCMsg
+  .4byte RenderExtra__10zNPCCommonFv
+  .4byte RenderExtraPostParticles__10zNPCCommonFv
+  .4byte ParseINI__9zNPCJellyFv
+  .4byte ParseLinks__10zNPCCommonFv
+  .4byte ParseProps__10zNPCCommonFv
+  .4byte SelfSetup__9zNPCJellyFv
+  .4byte SelfDestroy__10zNPCCommonFv
+  .4byte IsHealthy__10zNPCCommonFv
+  .4byte IsAlive__9zNPCJellyFv
+  .4byte Damage__10zNPCCommonF18en_NPC_DAMAGE_TYPEP5xBasePC5xVec3
+  .4byte Respawn__10zNPCCommonFPC5xVec3P10zMovePointP10zMovePoint
+  .4byte DuploOwner__10zNPCCommonFP10zNPCCommon
+  .4byte DuploNotice__10zNPCCommonF13en_SM_NOTICESPv
+  .4byte CanRope__10zNPCCommonFv
+  .4byte LassoNotify__10zNPCCommonF14en_LASSO_EVENT
+  .4byte SetCarryState__10zNPCCommonF18en_NPC_CARRY_STATE
+  .4byte Stun__10zNPCCommonFf
+  .4byte SpeakBegin__10zNPCCommonFv
+  .4byte SpeakEnd__10zNPCCommonFv
+  .4byte SpeakStart__10zNPCCommonFUiUii
+  .4byte SpeakStop__10zNPCCommonFv
+  .4byte AnimPick__9zNPCJellyFi16en_NPC_GOAL_SPOTP5xGoal
+  .4byte GetParm__10zNPCCommonF10en_npcparmPv
+  .4byte GetParmDefault__10zNPCCommonF10en_npcparmPv
+  .4byte GenShadCacheRad__10zNPCCommonFv
+  .4byte PRIV_GetDriverData__10zNPCCommonFv
+  .4byte PRIV_GetLassoData__10zNPCCommonFv
+  .4byte LassoSetup__10zNPCCommonFv
+  .4byte AmbiHandleMail__9zNPCJellyFP6NPCMsg
 /* SPECULATION: link order */
 .global __vt__11zNPCAmbient
 __vt__11zNPCAmbient:
-	.incbin "baserom.dol", 0x294210, 0xD0
+  .4byte 0
+  .4byte 0
+  .4byte Init__11zNPCAmbientFP9xEntAsset
+  .4byte PostInit__9xNPCBasicFv
+  .4byte Setup__10zNPCCommonFv
+  .4byte PostSetup__9xNPCBasicFv
+  .4byte Reset__11zNPCAmbientFv
+  .4byte Process__11zNPCAmbientFP6xScenef
+  .4byte BUpdate__10zNPCCommonFP5xVec3
+  .4byte NewTime__10zNPCCommonFP6xScenef
+  .4byte Move__10zNPCCommonFP6xScenefP9xEntFrame
+  .4byte SysEvent__10zNPCCommonFP5xBaseP5xBaseUiPCfP5xBasePi
+  .4byte Render__9xNPCBasicFv
+  .4byte Save__9xNPCBasicCFP7xSerial
+  .4byte Load__9xNPCBasicFP7xSerial
+  .4byte CollideReview__10zNPCCommonFv
+  .4byte ColChkFlags__11zNPCAmbientCFv
+  .4byte ColPenFlags__11zNPCAmbientCFv
+  .4byte ColChkByFlags__11zNPCAmbientCFv
+  .4byte ColPenByFlags__11zNPCAmbientCFv
+  .4byte PhysicsFlags__11zNPCAmbientCFv
+  .4byte Destroy__10zNPCCommonFv
+  .4byte NPCMessage__11zNPCAmbientFP6NPCMsg
+  .4byte RenderExtra__10zNPCCommonFv
+  .4byte RenderExtraPostParticles__10zNPCCommonFv
+  .4byte ParseINI__10zNPCCommonFv
+  .4byte ParseLinks__10zNPCCommonFv
+  .4byte ParseProps__10zNPCCommonFv
+  .4byte SelfSetup__11zNPCAmbientFv
+  .4byte SelfDestroy__10zNPCCommonFv
+  .4byte IsHealthy__10zNPCCommonFv
+  .4byte IsAlive__10zNPCCommonFv
+  .4byte Damage__10zNPCCommonF18en_NPC_DAMAGE_TYPEP5xBasePC5xVec3
+  .4byte Respawn__10zNPCCommonFPC5xVec3P10zMovePointP10zMovePoint
+  .4byte DuploOwner__10zNPCCommonFP10zNPCCommon
+  .4byte DuploNotice__10zNPCCommonF13en_SM_NOTICESPv
+  .4byte CanRope__10zNPCCommonFv
+  .4byte LassoNotify__10zNPCCommonF14en_LASSO_EVENT
+  .4byte SetCarryState__10zNPCCommonF18en_NPC_CARRY_STATE
+  .4byte Stun__10zNPCCommonFf
+  .4byte SpeakBegin__10zNPCCommonFv
+  .4byte SpeakEnd__10zNPCCommonFv
+  .4byte SpeakStart__10zNPCCommonFUiUii
+  .4byte SpeakStop__10zNPCCommonFv
+  .4byte AnimPick__11zNPCAmbientFi16en_NPC_GOAL_SPOTP5xGoal
+  .4byte GetParm__10zNPCCommonF10en_npcparmPv
+  .4byte GetParmDefault__10zNPCCommonF10en_npcparmPv
+  .4byte GenShadCacheRad__10zNPCCommonFv
+  .4byte PRIV_GetDriverData__10zNPCCommonFv
+  .4byte PRIV_GetLassoData__10zNPCCommonFv
+  .4byte LassoSetup__10zNPCCommonFv
+  .4byte AmbiHandleMail__11zNPCAmbientFP6NPCMsg
 /* SPECULATION: link order */
 .global __vt__8zNPCTiki
 __vt__8zNPCTiki:
-	.incbin "baserom.dol", 0x2942E0, 0xD0
+  .4byte 0
+  .4byte 0
+  .4byte Init__8zNPCTikiFP9xEntAsset
+  .4byte PostInit__9xNPCBasicFv
+  .4byte Setup__8zNPCTikiFv
+  .4byte PostSetup__9xNPCBasicFv
+  .4byte Reset__8zNPCTikiFv
+  .4byte Process__8zNPCTikiFP6xScenef
+  .4byte BUpdate__8zNPCTikiFP5xVec3
+  .4byte NewTime__10zNPCCommonFP6xScenef
+  .4byte Move__8zNPCTikiFP6xScenefP9xEntFrame
+  .4byte SysEvent__8zNPCTikiFP5xBaseP5xBaseUiPCfP5xBasePi
+  .4byte Render__9xNPCBasicFv
+  .4byte Save__9xNPCBasicCFP7xSerial
+  .4byte Load__9xNPCBasicFP7xSerial
+  .4byte CollideReview__10zNPCCommonFv
+  .4byte ColChkFlags__8zNPCTikiCFv
+  .4byte ColPenFlags__8zNPCTikiCFv
+  .4byte ColChkByFlags__8zNPCTikiCFv
+  .4byte ColPenByFlags__8zNPCTikiCFv
+  .4byte PhysicsFlags__8zNPCTikiCFv
+  .4byte Destroy__10zNPCCommonFv
+  .4byte NPCMessage__10zNPCCommonFP6NPCMsg
+  .4byte RenderExtra__10zNPCCommonFv
+  .4byte RenderExtraPostParticles__10zNPCCommonFv
+  .4byte ParseINI__8zNPCTikiFv
+  .4byte ParseLinks__10zNPCCommonFv
+  .4byte ParseProps__10zNPCCommonFv
+  .4byte SelfSetup__8zNPCTikiFv
+  .4byte SelfDestroy__10zNPCCommonFv
+  .4byte IsHealthy__8zNPCTikiFv
+  .4byte IsAlive__8zNPCTikiFv
+  .4byte Damage__8zNPCTikiF18en_NPC_DAMAGE_TYPEP5xBasePC5xVec3
+  .4byte Respawn__10zNPCCommonFPC5xVec3P10zMovePointP10zMovePoint
+  .4byte DuploOwner__10zNPCCommonFP10zNPCCommon
+  .4byte DuploNotice__10zNPCCommonF13en_SM_NOTICESPv
+  .4byte CanRope__8zNPCTikiFv
+  .4byte LassoNotify__10zNPCCommonF14en_LASSO_EVENT
+  .4byte SetCarryState__8zNPCTikiF18en_NPC_CARRY_STATE
+  .4byte Stun__10zNPCCommonFf
+  .4byte SpeakBegin__10zNPCCommonFv
+  .4byte SpeakEnd__10zNPCCommonFv
+  .4byte SpeakStart__10zNPCCommonFUiUii
+  .4byte SpeakStop__10zNPCCommonFv
+  .4byte AnimPick__8zNPCTikiFi16en_NPC_GOAL_SPOTP5xGoal
+  .4byte GetParm__10zNPCCommonF10en_npcparmPv
+  .4byte GetParmDefault__10zNPCCommonF10en_npcparmPv
+  .4byte GenShadCacheRad__10zNPCCommonFv
+  .4byte PRIV_GetDriverData__10zNPCCommonFv
+  .4byte PRIV_GetLassoData__10zNPCCommonFv
+  .4byte LassoSetup__10zNPCCommonFv
+  .4byte 0
 /* SPECULATION: link order */
 .global __vt__5xGoal
 __vt__5xGoal:
-	.incbin "baserom.dol", 0x2943B0, 0x30
+  .4byte 0
+  .4byte 0
+  .4byte 0
+  .4byte Enter__5xGoalFfPv
+  .4byte Exit__5xGoalFfPv
+  .4byte Suspend__5xGoalFfPv
+  .4byte Resume__5xGoalFfPv
+  .4byte PreCalc__5xGoalFfPv
+  .4byte EvalRules__5xGoalFP11en_trantypefPv
+  .4byte Process__5xGoalFP11en_trantypefPvP6xScene
+  .4byte SysEvent__5xGoalFP5xBaseP5xBaseUiPCfP5xBasePi
+  .4byte 0
 /* SPECULATION: link order */
 .global __vt__12xGoalGeneric
 __vt__12xGoalGeneric:
-	.incbin "baserom.dol", 0x2943E0, 0x30
+  .4byte 0
+  .4byte 0
+  .4byte Clear__12xGoalGenericFv
+  .4byte Enter__12xGoalGenericFfPv
+  .4byte Exit__12xGoalGenericFfPv
+  .4byte Suspend__12xGoalGenericFfPv
+  .4byte Resume__12xGoalGenericFfPv
+  .4byte PreCalc__5xGoalFfPv
+  .4byte EvalRules__5xGoalFP11en_trantypefPv
+  .4byte Process__5xGoalFP11en_trantypefPvP6xScene
+  .4byte SysEvent__12xGoalGenericFP5xBaseP5xBaseUiPCfP5xBasePi
+  .4byte Name__12xGoalGenericFv
 /* SPECULATION: link order */
 .global __vt__10xGoalEmpty
 __vt__10xGoalEmpty:
-	.incbin "baserom.dol", 0x294410, 0x30
+  .4byte 0
+  .4byte 0
+  .4byte Clear__10xGoalEmptyFv
+  .4byte Enter__5xGoalFfPv
+  .4byte Exit__5xGoalFfPv
+  .4byte Suspend__5xGoalFfPv
+  .4byte Resume__5xGoalFfPv
+  .4byte PreCalc__5xGoalFfPv
+  .4byte EvalRules__5xGoalFP11en_trantypefPv
+  .4byte Process__5xGoalFP11en_trantypefPvP6xScene
+  .4byte SysEvent__5xGoalFP5xBaseP5xBaseUiPCfP5xBasePi
+  .4byte Name__10xGoalEmptyFv
 
 .section .bss
 lbl_80313188:

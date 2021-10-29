@@ -2,6 +2,7 @@
 
 .section .text  # 0x80190F80 - 0x80195428
 
+.global NCIN_Par_BPLANK_JET_1_Upd__FPC12zCutsceneMgrP9NCINEntryi
 NCIN_Par_BPLANK_JET_1_Upd__FPC12zCutsceneMgrP9NCINEntryi:
 /* 80190F80 0018DD80  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 80190F84 0018DD84  7C 08 02 A6 */	mflr r0
@@ -4921,15 +4922,31 @@ lbl_802A1B24:
 /* SPECULATION: link order */
 .global __vt__9XCSNNosey
 __vt__9XCSNNosey:
-	.incbin "baserom.dol", 0x29EB1C, 0x10
+  .4byte 0
+  .4byte 0
+  .4byte CanRenderNow__9XCSNNoseyFv
+  .4byte UpdatedAnimated__9XCSNNoseyFP8RpAtomicP11RwMatrixTagUiUi
 /* SPECULATION: link order */
 .global __vt__11NCINBeNosey
 __vt__11NCINBeNosey:
-	.incbin "baserom.dol", 0x29EB2C, 0x14
+  .4byte 0
+  .4byte 0
+  .4byte CanRenderNow__11NCINBeNoseyFv
+  .4byte UpdatedAnimated__11NCINBeNoseyFP8RpAtomicP11RwMatrixTagUiUi
+  .4byte 0
 /* SPECULATION: link order */
 .global __vt__Q24xhud11text_widget
 __vt__Q24xhud11text_widget:
-	.incbin "baserom.dol", 0x29EB40, 0x28
+  .4byte 0
+  .4byte 0
+  .4byte destroy__Q24xhud11text_widgetFv
+  .4byte type__Q24xhud11text_widgetCFv
+  .4byte is__Q24xhud11text_widgetCFUi
+  .4byte init__Q24xhud6widgetFv
+  .4byte setup__Q24xhud11text_widgetFv
+  .4byte update__Q24xhud11text_widgetFf
+  .4byte render__Q24xhud11text_widgetFv
+  .4byte dispatch__Q24xhud6widgetFP5xBaseUiPCfP5xBase
 
 .section .bss
 lbl_80362B10:

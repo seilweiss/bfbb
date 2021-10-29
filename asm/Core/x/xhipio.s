@@ -755,7 +755,16 @@ lbl_8027D5E0:
 /* SPECULATION: link order */
 .global __vt__Q24xhud6widget
 __vt__Q24xhud6widget:
-	.incbin "baserom.dol", 0x27A5F8, 0x28
+  .4byte 0
+  .4byte 0
+  .4byte destroy__Q24xhud6widgetFv
+  .4byte type__Q24xhud6widgetCFv
+  .4byte is__Q24xhud6widgetCFUi
+  .4byte init__Q24xhud6widgetFv
+  .4byte setup__Q24xhud6widgetFv
+  .4byte update__Q24xhud6widgetFf
+  .4byte render__Q24xhud6widgetFv
+  .4byte dispatch__Q24xhud6widgetFP5xBaseUiPCfP5xBase
 
 .section .sbss
 .balign 8

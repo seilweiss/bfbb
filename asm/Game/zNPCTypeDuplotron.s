@@ -1339,7 +1339,58 @@ lbl_80298AA8:
 /* SPECULATION: link order */
 .global __vt__13zNPCDuplotron
 __vt__13zNPCDuplotron:
-	.incbin "baserom.dol", 0x295A98, 0xD0
+  .4byte 0
+  .4byte 0
+  .4byte Init__13zNPCDuplotronFP9xEntAsset
+  .4byte PostInit__9xNPCBasicFv
+  .4byte Setup__13zNPCDuplotronFv
+  .4byte PostSetup__9xNPCBasicFv
+  .4byte Reset__13zNPCDuplotronFv
+  .4byte Process__13zNPCDuplotronFP6xScenef
+  .4byte BUpdate__13zNPCDuplotronFP5xVec3
+  .4byte NewTime__10zNPCCommonFP6xScenef
+  .4byte Move__13zNPCDuplotronFP6xScenefP9xEntFrame
+  .4byte SysEvent__10zNPCCommonFP5xBaseP5xBaseUiPCfP5xBasePi
+  .4byte Render__9xNPCBasicFv
+  .4byte Save__9xNPCBasicCFP7xSerial
+  .4byte Load__9xNPCBasicFP7xSerial
+  .4byte CollideReview__10zNPCCommonFv
+  .4byte ColChkFlags__13zNPCDuplotronCFv
+  .4byte ColPenFlags__13zNPCDuplotronCFv
+  .4byte ColChkByFlags__13zNPCDuplotronCFv
+  .4byte ColPenByFlags__13zNPCDuplotronCFv
+  .4byte PhysicsFlags__13zNPCDuplotronCFv
+  .4byte Destroy__10zNPCCommonFv
+  .4byte NPCMessage__13zNPCDuplotronFP6NPCMsg
+  .4byte RenderExtra__10zNPCCommonFv
+  .4byte RenderExtraPostParticles__10zNPCCommonFv
+  .4byte ParseINI__13zNPCDuplotronFv
+  .4byte ParseLinks__13zNPCDuplotronFv
+  .4byte ParseProps__10zNPCCommonFv
+  .4byte SelfSetup__13zNPCDuplotronFv
+  .4byte SelfDestroy__10zNPCCommonFv
+  .4byte IsHealthy__10zNPCCommonFv
+  .4byte IsAlive__13zNPCDuplotronFv
+  .4byte Damage__10zNPCCommonF18en_NPC_DAMAGE_TYPEP5xBasePC5xVec3
+  .4byte Respawn__10zNPCCommonFPC5xVec3P10zMovePointP10zMovePoint
+  .4byte DuploOwner__10zNPCCommonFP10zNPCCommon
+  .4byte DuploNotice__13zNPCDuplotronF13en_SM_NOTICESPv
+  .4byte CanRope__10zNPCCommonFv
+  .4byte LassoNotify__10zNPCCommonF14en_LASSO_EVENT
+  .4byte SetCarryState__10zNPCCommonF18en_NPC_CARRY_STATE
+  .4byte Stun__10zNPCCommonFf
+  .4byte SpeakBegin__10zNPCCommonFv
+  .4byte SpeakEnd__10zNPCCommonFv
+  .4byte SpeakStart__10zNPCCommonFUiUii
+  .4byte SpeakStop__10zNPCCommonFv
+  .4byte AnimPick__13zNPCDuplotronFi16en_NPC_GOAL_SPOTP5xGoal
+  .4byte GetParm__10zNPCCommonF10en_npcparmPv
+  .4byte GetParmDefault__10zNPCCommonF10en_npcparmPv
+  .4byte GenShadCacheRad__10zNPCCommonFv
+  .4byte PRIV_GetDriverData__10zNPCCommonFv
+  .4byte PRIV_GetLassoData__10zNPCCommonFv
+  .4byte LassoSetup__10zNPCCommonFv
+  .4byte 0
 
 .section .bss
 lbl_80314CB8:
