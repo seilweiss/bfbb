@@ -1012,12 +1012,12 @@ lbl_803CB534:
 lbl_803CB538:
 	.skip 0x8
 /* SPECULATION: link order */
-.global model_id$localstatic3$checkpoint_collision_hack__FP4zEnt
-model_id$localstatic3$checkpoint_collision_hack__FP4zEnt:
+.global model_id_esc__6_localstatic3_esc__6_checkpoint_collision_hack__FP4zEnt
+model_id_esc__6_localstatic3_esc__6_checkpoint_collision_hack__FP4zEnt:
 	.skip 0x4
 /* SPECULATION: link order */
-.global init$localstatic4$checkpoint_collision_hack__FP4zEnt
-init$localstatic4$checkpoint_collision_hack__FP4zEnt:
+.global init_esc__6_localstatic4_esc__6_checkpoint_collision_hack__FP4zEnt
+init_esc__6_localstatic4_esc__6_checkpoint_collision_hack__FP4zEnt:
 	.skip 0x4
 
 .section .sbss2

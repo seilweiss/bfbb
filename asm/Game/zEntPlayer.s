@@ -46100,8 +46100,8 @@ lbl_802560DC:
 	.incbin "baserom.dol", 0x2530BC, 0xC
 lbl_802560E8:
 	.incbin "baserom.dol", 0x2530C8, 0xC
-.global offsetChuck$localstatic4$get_reticle_bound__FR5xVec3Rf
-offsetChuck$localstatic4$get_reticle_bound__FR5xVec3Rf:
+.global offsetChuck_esc__6_localstatic4_esc__6_get_reticle_bound__FR5xVec3Rf
+offsetChuck_esc__6_localstatic4_esc__6_get_reticle_bound__FR5xVec3Rf:
 	.incbin "baserom.dol", 0x2530D4, 0xC
 lbl_80256100:
 	.incbin "baserom.dol", 0x2530E0, 0xC

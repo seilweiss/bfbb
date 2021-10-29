@@ -529,8 +529,8 @@ lbl_801109DC:
 /* 801109EC 0010D7EC  4E 80 00 20 */	blr 
 
 /* __as__Q312bungee_state10hook_asset35@class$913zEntPlayerBungeeState_cppFRCQ312bungee_state10hook_asset35@class$913zEntPlayerBungeeState_cpp */
-.global __as__Q312bungee_state10hook_asset35_esc__2_class$913zEntPlayerBungeeState_cppFRCQ312bungee_state10hook_asset35_esc__2_class$913zEntPlayerBungeeState_cpp
-__as__Q312bungee_state10hook_asset35_esc__2_class$913zEntPlayerBungeeState_cppFRCQ312bungee_state10hook_asset35_esc__2_class$913zEntPlayerBungeeState_cpp:
+.global __as__Q312bungee_state10hook_asset35_esc__2_class_esc__6_913zEntPlayerBungeeState_cppFRCQ312bungee_state10hook_asset35_esc__2_class_esc__6_913zEntPlayerBungeeState_cpp
+__as__Q312bungee_state10hook_asset35_esc__2_class_esc__6_913zEntPlayerBungeeState_cppFRCQ312bungee_state10hook_asset35_esc__2_class_esc__6_913zEntPlayerBungeeState_cpp:
 /* 801109F0 0010D7F0  C0 04 00 00 */	lfs f0, 0(r4)
 /* 801109F4 0010D7F4  C0 24 00 04 */	lfs f1, 4(r4)
 /* 801109F8 0010D7F8  D0 03 00 00 */	stfs f0, 0(r3)
@@ -592,8 +592,8 @@ lbl_80110AB8:
 /* 80110AC8 0010D8C8  4E 80 00 20 */	blr 
 
 /* __as__Q312bungee_state10hook_asset35@class$912zEntPlayerBungeeState_cppFRCQ312bungee_state10hook_asset35@class$912zEntPlayerBungeeState_cpp */
-.global __as__Q312bungee_state10hook_asset35_esc__2_class$912zEntPlayerBungeeState_cppFRCQ312bungee_state10hook_asset35_esc__2_class$912zEntPlayerBungeeState_cpp
-__as__Q312bungee_state10hook_asset35_esc__2_class$912zEntPlayerBungeeState_cppFRCQ312bungee_state10hook_asset35_esc__2_class$912zEntPlayerBungeeState_cpp:
+.global __as__Q312bungee_state10hook_asset35_esc__2_class_esc__6_912zEntPlayerBungeeState_cppFRCQ312bungee_state10hook_asset35_esc__2_class_esc__6_912zEntPlayerBungeeState_cpp
+__as__Q312bungee_state10hook_asset35_esc__2_class_esc__6_912zEntPlayerBungeeState_cppFRCQ312bungee_state10hook_asset35_esc__2_class_esc__6_912zEntPlayerBungeeState_cpp:
 /* 80110ACC 0010D8CC  C0 04 00 00 */	lfs f0, 0(r4)
 /* 80110AD0 0010D8D0  C0 24 00 04 */	lfs f1, 4(r4)
 /* 80110AD4 0010D8D4  D0 03 00 00 */	stfs f0, 0(r3)
@@ -646,8 +646,8 @@ lbl_80110B74:
 /* 80110B80 0010D980  4E 80 00 20 */	blr 
 
 /* __as__Q312bungee_state10hook_asset35@class$911zEntPlayerBungeeState_cppFRCQ312bungee_state10hook_asset35@class$911zEntPlayerBungeeState_cpp */
-.global __as__Q312bungee_state10hook_asset35_esc__2_class$911zEntPlayerBungeeState_cppFRCQ312bungee_state10hook_asset35_esc__2_class$911zEntPlayerBungeeState_cpp
-__as__Q312bungee_state10hook_asset35_esc__2_class$911zEntPlayerBungeeState_cppFRCQ312bungee_state10hook_asset35_esc__2_class$911zEntPlayerBungeeState_cpp:
+.global __as__Q312bungee_state10hook_asset35_esc__2_class_esc__6_911zEntPlayerBungeeState_cppFRCQ312bungee_state10hook_asset35_esc__2_class_esc__6_911zEntPlayerBungeeState_cpp
+__as__Q312bungee_state10hook_asset35_esc__2_class_esc__6_911zEntPlayerBungeeState_cppFRCQ312bungee_state10hook_asset35_esc__2_class_esc__6_911zEntPlayerBungeeState_cpp:
 /* 80110B84 0010D984  C0 04 00 00 */	lfs f0, 0(r4)
 /* 80110B88 0010D988  D0 03 00 00 */	stfs f0, 0(r3)
 /* 80110B8C 0010D98C  4E 80 00 20 */	blr 
@@ -923,8 +923,8 @@ find_spring_min__Q312bungee_state35_esc__2_unnamed_esc__2_zEntPlayerBungeeState_
 /* 80110F60 0010DD60  4E 80 00 20 */	blr 
 
 /* __as__Q312bungee_state10hook_asset35@class$910zEntPlayerBungeeState_cppFRCQ312bungee_state10hook_asset35@class$910zEntPlayerBungeeState_cpp */
-.global __as__Q312bungee_state10hook_asset35_esc__2_class$910zEntPlayerBungeeState_cppFRCQ312bungee_state10hook_asset35_esc__2_class$910zEntPlayerBungeeState_cpp
-__as__Q312bungee_state10hook_asset35_esc__2_class$910zEntPlayerBungeeState_cppFRCQ312bungee_state10hook_asset35_esc__2_class$910zEntPlayerBungeeState_cpp:
+.global __as__Q312bungee_state10hook_asset35_esc__2_class_esc__6_910zEntPlayerBungeeState_cppFRCQ312bungee_state10hook_asset35_esc__2_class_esc__6_910zEntPlayerBungeeState_cpp
+__as__Q312bungee_state10hook_asset35_esc__2_class_esc__6_910zEntPlayerBungeeState_cppFRCQ312bungee_state10hook_asset35_esc__2_class_esc__6_910zEntPlayerBungeeState_cpp:
 /* 80110F64 0010DD64  C0 24 00 00 */	lfs f1, 0(r4)
 /* 80110F68 0010DD68  C0 04 00 04 */	lfs f0, 4(r4)
 /* 80110F6C 0010DD6C  D0 23 00 00 */	stfs f1, 0(r3)
