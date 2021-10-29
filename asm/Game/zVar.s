@@ -63,7 +63,7 @@ var_text_BadCardAvailable__18_esc__2_unnamed_esc__2_zVar_cpp_esc__2_Fv:
 /* 800BD27C 000BA07C  90 01 00 14 */	stw r0, 0x14(r1)
 /* 800BD280 000BA080  38 63 86 58 */	addi r3, r3, lbl_802F8658@l
 /* 800BD284 000BA084  38 84 FC B0 */	addi r4, r4, lbl_8025FCB0@l
-/* 800BD288 000BA088  80 AD 91 60 */	lwz r5, bad_card_available-_SDA_BASE_(r13)
+/* 800BD288 000BA088  80 AD 91 60 */	lwz r5, bad_card_available@sda21(r13)
 /* 800BD28C 000BA08C  4C C6 31 82 */	crclr 6
 /* 800BD290 000BA090  48 12 6C A5 */	bl sprintf
 /* 800BD294 000BA094  80 01 00 14 */	lwz r0, 0x14(r1)
@@ -81,7 +81,7 @@ var_text_BadCardNeeded__18_esc__2_unnamed_esc__2_zVar_cpp_esc__2_Fv:
 /* 800BD2BC 000BA0BC  90 01 00 14 */	stw r0, 0x14(r1)
 /* 800BD2C0 000BA0C0  38 63 86 64 */	addi r3, r3, lbl_802F8664@l
 /* 800BD2C4 000BA0C4  38 84 FC B0 */	addi r4, r4, lbl_8025FCB0@l
-/* 800BD2C8 000BA0C8  80 AD 91 64 */	lwz r5, bad_card_needed-_SDA_BASE_(r13)
+/* 800BD2C8 000BA0C8  80 AD 91 64 */	lwz r5, bad_card_needed@sda21(r13)
 /* 800BD2CC 000BA0CC  4C C6 31 82 */	crclr 6
 /* 800BD2D0 000BA0D0  48 12 6C 65 */	bl sprintf
 /* 800BD2D4 000BA0D4  80 01 00 14 */	lwz r0, 0x14(r1)
@@ -647,7 +647,7 @@ var_text_MCSelectedGame__18_esc__2_unnamed_esc__2_zVar_cpp_esc__2_Fv:
 /* 800BDAC4 000BA8C4  4E 80 00 20 */	blr 
 .global var_text_PlayerHeShe__18_esc__2_unnamed_esc__2_zVar_cpp_esc__2_Fv
 var_text_PlayerHeShe__18_esc__2_unnamed_esc__2_zVar_cpp_esc__2_Fv:
-/* 800BDAC8 000BA8C8  80 0D 8D 60 */	lwz r0, gCurrentPlayer-_SDA_BASE_(r13)
+/* 800BDAC8 000BA8C8  80 0D 8D 60 */	lwz r0, gCurrentPlayer@sda21(r13)
 /* 800BDACC 000BA8CC  3C 60 80 29 */	lis r3, lbl_802916F0@ha
 /* 800BDAD0 000BA8D0  38 63 16 F0 */	addi r3, r3, lbl_802916F0@l
 /* 800BDAD4 000BA8D4  54 00 10 3A */	slwi r0, r0, 2
@@ -655,7 +655,7 @@ var_text_PlayerHeShe__18_esc__2_unnamed_esc__2_zVar_cpp_esc__2_Fv:
 /* 800BDADC 000BA8DC  4E 80 00 20 */	blr 
 .global var_text_PlayerName__18_esc__2_unnamed_esc__2_zVar_cpp_esc__2_Fv
 var_text_PlayerName__18_esc__2_unnamed_esc__2_zVar_cpp_esc__2_Fv:
-/* 800BDAE0 000BA8E0  80 0D 8D 60 */	lwz r0, gCurrentPlayer-_SDA_BASE_(r13)
+/* 800BDAE0 000BA8E0  80 0D 8D 60 */	lwz r0, gCurrentPlayer@sda21(r13)
 /* 800BDAE4 000BA8E4  3C 60 80 29 */	lis r3, lbl_802916FC@ha
 /* 800BDAE8 000BA8E8  38 63 16 FC */	addi r3, r3, lbl_802916FC@l
 /* 800BDAEC 000BA8EC  54 00 10 3A */	slwi r0, r0, 2
@@ -699,7 +699,7 @@ var_text_SelectedArea__18_esc__2_unnamed_esc__2_zVar_cpp_esc__2_Fv:
 /* 800BDB74 000BA974  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 800BDB78 000BA978  7C 08 02 A6 */	mflr r0
 /* 800BDB7C 000BA97C  90 01 00 14 */	stw r0, 0x14(r1)
-/* 800BDB80 000BA980  80 6D 91 68 */	lwz r3, lbl_803CBA68-_SDA_BASE_(r13)
+/* 800BDB80 000BA980  80 6D 91 68 */	lwz r3, lbl_803CBA68@sda21(r13)
 /* 800BDB84 000BA984  4B FF 73 71 */	bl zSceneGetAreaname__FUi
 /* 800BDB88 000BA988  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 800BDB8C 000BA98C  7C 08 03 A6 */	mtlr r0
@@ -1110,9 +1110,9 @@ zVarEntryCB_SndMusicVol__FPv:
 /* 800BE0F4 000BAEF4  3C 60 80 3C */	lis r3, gSnd@ha
 /* 800BE0F8 000BAEF8  90 01 00 14 */	stw r0, 0x14(r1)
 /* 800BE0FC 000BAEFC  38 63 D5 B4 */	addi r3, r3, gSnd@l
-/* 800BE100 000BAF00  C8 22 96 28 */	lfd f1, lbl_803CDFA8-_SDA2_BASE_(r2)
+/* 800BE100 000BAF00  C8 22 96 28 */	lfd f1, lbl_803CDFA8@sda21(r2)
 /* 800BE104 000BAF04  C0 43 00 10 */	lfs f2, 0x10(r3)
-/* 800BE108 000BAF08  C8 02 96 30 */	lfd f0, lbl_803CDFB0-_SDA2_BASE_(r2)
+/* 800BE108 000BAF08  C8 02 96 30 */	lfd f0, lbl_803CDFB0@sda21(r2)
 /* 800BE10C 000BAF0C  FC 42 00 72 */	fmul f2, f2, f1
 /* 800BE110 000BAF10  FC 20 10 2A */	fadd f1, f0, f2
 /* 800BE114 000BAF14  48 12 F2 C9 */	bl __cvt_fp2unsigned
@@ -1128,9 +1128,9 @@ zVarEntryCB_SndFXVol__FPv:
 /* 800BE130 000BAF30  3C 60 80 3C */	lis r3, gSnd@ha
 /* 800BE134 000BAF34  90 01 00 14 */	stw r0, 0x14(r1)
 /* 800BE138 000BAF38  38 63 D5 B4 */	addi r3, r3, gSnd@l
-/* 800BE13C 000BAF3C  C8 22 96 28 */	lfd f1, lbl_803CDFA8-_SDA2_BASE_(r2)
+/* 800BE13C 000BAF3C  C8 22 96 28 */	lfd f1, lbl_803CDFA8@sda21(r2)
 /* 800BE140 000BAF40  C0 43 00 08 */	lfs f2, 8(r3)
-/* 800BE144 000BAF44  C8 02 96 30 */	lfd f0, lbl_803CDFB0-_SDA2_BASE_(r2)
+/* 800BE144 000BAF44  C8 02 96 30 */	lfd f0, lbl_803CDFB0@sda21(r2)
 /* 800BE148 000BAF48  FC 42 00 72 */	fmul f2, f2, f1
 /* 800BE14C 000BAF4C  FC 20 10 2A */	fadd f1, f0, f2
 /* 800BE150 000BAF50  48 12 F2 8D */	bl __cvt_fp2unsigned

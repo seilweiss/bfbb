@@ -302,8 +302,8 @@ iTimeInit__Fv:
 /* 800D4928 000D1728  7C 08 02 A6 */	mflr r0
 /* 800D492C 000D172C  90 01 00 14 */	stw r0, 0x14(r1)
 /* 800D4930 000D1730  48 10 2C 1D */	bl OSGetTime
-/* 800D4934 000D1734  90 8D 93 44 */	stw r4, lbl_803CBC44-_SDA_BASE_(r13)
-/* 800D4938 000D1738  90 6D 93 40 */	stw r3, sStartupTime-_SDA_BASE_(r13)
+/* 800D4934 000D1734  90 8D 93 44 */	stw r4, lbl_803CBC44@sda21(r13)
+/* 800D4938 000D1738  90 6D 93 40 */	stw r3, sStartupTime@sda21(r13)
 /* 800D493C 000D173C  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 800D4940 000D1740  7C 08 03 A6 */	mtlr r0
 /* 800D4944 000D1744  38 21 00 10 */	addi r1, r1, 0x10
@@ -319,8 +319,8 @@ iTimeGet__Fv:
 /* 800D4954 000D1754  7C 08 02 A6 */	mflr r0
 /* 800D4958 000D1758  90 01 00 14 */	stw r0, 0x14(r1)
 /* 800D495C 000D175C  48 10 2B F1 */	bl OSGetTime
-/* 800D4960 000D1760  80 AD 93 44 */	lwz r5, lbl_803CBC44-_SDA_BASE_(r13)
-/* 800D4964 000D1764  80 0D 93 40 */	lwz r0, sStartupTime-_SDA_BASE_(r13)
+/* 800D4960 000D1760  80 AD 93 44 */	lwz r5, lbl_803CBC44@sda21(r13)
+/* 800D4964 000D1764  80 0D 93 40 */	lwz r0, sStartupTime@sda21(r13)
 /* 800D4968 000D1768  7C 85 20 10 */	subfc r4, r5, r4
 /* 800D496C 000D176C  7C 60 19 10 */	subfe r3, r0, r3
 /* 800D4970 000D1770  80 01 00 14 */	lwz r0, 0x14(r1)
@@ -339,7 +339,7 @@ iTimeDiffSec__Fx:
 /* 800D4998 000D1798  80 63 00 F8 */	lwz r3, 0x800000F8@l(r3)
 /* 800D499C 000D179C  90 01 00 08 */	stw r0, 8(r1)
 /* 800D49A0 000D17A0  54 60 F0 BE */	srwi r0, r3, 2
-/* 800D49A4 000D17A4  C8 42 98 58 */	lfd f2, lbl_803CE1D8-_SDA2_BASE_(r2)
+/* 800D49A4 000D17A4  C8 42 98 58 */	lfd f2, lbl_803CE1D8@sda21(r2)
 /* 800D49A8 000D17A8  90 01 00 0C */	stw r0, 0xc(r1)
 /* 800D49AC 000D17AC  C8 01 00 08 */	lfd f0, 8(r1)
 /* 800D49B0 000D17B0  EC 00 10 28 */	fsubs f0, f0, f2
@@ -364,14 +364,14 @@ iTimeDiffSec__Fxx:
 
 .global iTimeGameAdvance__Ff
 iTimeGameAdvance__Ff:
-/* 800D49F0 000D17F0  C0 0D 93 48 */	lfs f0, lbl_803CBC48-_SDA_BASE_(r13)
+/* 800D49F0 000D17F0  C0 0D 93 48 */	lfs f0, lbl_803CBC48@sda21(r13)
 /* 800D49F4 000D17F4  EC 00 08 2A */	fadds f0, f0, f1
-/* 800D49F8 000D17F8  D0 0D 93 48 */	stfs f0, lbl_803CBC48-_SDA_BASE_(r13)
+/* 800D49F8 000D17F8  D0 0D 93 48 */	stfs f0, lbl_803CBC48@sda21(r13)
 /* 800D49FC 000D17FC  4E 80 00 20 */	blr 
 
 .global iTimeSetGame__Ff
 iTimeSetGame__Ff:
-/* 800D4A00 000D1800  D0 2D 93 48 */	stfs f1, lbl_803CBC48-_SDA_BASE_(r13)
+/* 800D4A00 000D1800  D0 2D 93 48 */	stfs f1, lbl_803CBC48@sda21(r13)
 /* 800D4A04 000D1804  4E 80 00 20 */	blr 
 
 .global iProfileClear__FUi

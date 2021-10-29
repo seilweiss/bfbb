@@ -8,7 +8,7 @@ iFileInit__Fv:
 /* 800C3304 000C0104  38 63 AE 60 */	addi r3, r3, lbl_802FAE60@l
 /* 800C3308 000C0108  38 03 00 1F */	addi r0, r3, 0x1f
 /* 800C330C 000C010C  54 00 00 34 */	rlwinm r0, r0, 0, 0, 0x1a
-/* 800C3310 000C0110  90 0D 91 C0 */	stw r0, lbl_803CBAC0-_SDA_BASE_(r13)
+/* 800C3310 000C0110  90 0D 91 C0 */	stw r0, lbl_803CBAC0@sda21(r13)
 /* 800C3314 000C0114  4E 80 00 20 */	blr 
 
 .global iFileExit__Fv
@@ -38,7 +38,7 @@ iFileLoad__FPcPUiPUi:
 /* 800C3364 000C0164  7C 7F 1B 78 */	mr r31, r3
 /* 800C3368 000C0168  40 82 00 18 */	bne lbl_800C3380
 /* 800C336C 000C016C  38 1F 00 1F */	addi r0, r31, 0x1f
-/* 800C3370 000C0170  80 6D 86 40 */	lwz r3, lbl_803CAF40-_SDA_BASE_(r13)
+/* 800C3370 000C0170  80 6D 86 40 */	lwz r3, lbl_803CAF40@sda21(r13)
 /* 800C3374 000C0174  54 04 00 34 */	rlwinm r4, r0, 0, 0, 0x1a
 /* 800C3378 000C0178  48 10 EA 89 */	bl OSAllocFromHeap
 /* 800C337C 000C017C  7C 7D 1B 78 */	mr r29, r3
@@ -168,7 +168,7 @@ lbl_800C3504:
 /* 800C3518 000C0318  4E 80 00 20 */	blr 
 lbl_800C351C:
 /* 800C351C 000C031C  38 00 00 00 */	li r0, 0
-/* 800C3520 000C0320  90 0D 91 C4 */	stw r0, iFileSyncAsyncReadActive-_SDA_BASE_(r13)
+/* 800C3520 000C0320  90 0D 91 C4 */	stw r0, iFileSyncAsyncReadActive@sda21(r13)
 /* 800C3524 000C0324  4E 80 00 20 */	blr 
 
 .global iFileRead__FP9tag_xFilePvUi
@@ -187,7 +187,7 @@ iFileRead__FP9tag_xFilePvUi:
 /* 800C3554 000C0354  4B FF FF 25 */	bl iFileSeek__FP9tag_xFileii
 /* 800C3558 000C0358  38 00 00 01 */	li r0, 1
 /* 800C355C 000C035C  3C 60 80 0C */	lis r3, lbl_800C351C@ha
-/* 800C3560 000C0360  90 0D 91 C4 */	stw r0, iFileSyncAsyncReadActive-_SDA_BASE_(r13)
+/* 800C3560 000C0360  90 0D 91 C4 */	stw r0, iFileSyncAsyncReadActive@sda21(r13)
 /* 800C3564 000C0364  38 C3 35 1C */	addi r6, r3, lbl_800C351C@l
 /* 800C3568 000C0368  7F A3 EB 78 */	mr r3, r29
 /* 800C356C 000C036C  7F C4 F3 78 */	mr r4, r30
@@ -198,7 +198,7 @@ iFileRead__FP9tag_xFilePvUi:
 lbl_800C3580:
 /* 800C3580 000C0380  48 0B D7 0D */	bl CheckDVDAndResetState__8iTRCDiskFv
 lbl_800C3584:
-/* 800C3584 000C0384  80 0D 91 C4 */	lwz r0, iFileSyncAsyncReadActive-_SDA_BASE_(r13)
+/* 800C3584 000C0384  80 0D 91 C4 */	lwz r0, iFileSyncAsyncReadActive@sda21(r13)
 /* 800C3588 000C0388  28 00 00 00 */	cmplwi r0, 0
 /* 800C358C 000C038C  40 82 FF F4 */	bne lbl_800C3580
 /* 800C3590 000C0390  80 01 00 24 */	lwz r0, 0x24(r1)
@@ -330,12 +330,12 @@ iFileReadAsync__FP9tag_xFilePvUiPFP9tag_xFile_vi:
 /* 800C374C 000C054C  7C 7E 1B 78 */	mr r30, r3
 /* 800C3750 000C0550  93 A1 00 14 */	stw r29, 0x14(r1)
 /* 800C3754 000C0554  93 81 00 10 */	stw r28, 0x10(r1)
-/* 800C3758 000C0558  88 0D 91 CC */	lbz r0, lbl_803CBACC-_SDA_BASE_(r13)
+/* 800C3758 000C0558  88 0D 91 CC */	lbz r0, lbl_803CBACC@sda21(r13)
 /* 800C375C 000C055C  7C 00 07 75 */	extsb. r0, r0
 /* 800C3760 000C0560  40 82 00 10 */	bne lbl_800C3770
 /* 800C3764 000C0564  38 00 00 01 */	li r0, 1
-/* 800C3768 000C0568  90 0D 91 C8 */	stw r0, lbl_803CBAC8-_SDA_BASE_(r13)
-/* 800C376C 000C056C  98 0D 91 CC */	stb r0, lbl_803CBACC-_SDA_BASE_(r13)
+/* 800C3768 000C0568  90 0D 91 C8 */	stw r0, lbl_803CBAC8@sda21(r13)
+/* 800C376C 000C056C  98 0D 91 CC */	stb r0, lbl_803CBACC@sda21(r13)
 lbl_800C3770:
 /* 800C3770 000C0570  3C 60 80 3C */	lis r3, file_queue@ha
 /* 800C3774 000C0574  38 00 00 04 */	li r0, 4
@@ -348,12 +348,12 @@ lbl_800C3784:
 /* 800C378C 000C058C  41 82 00 94 */	beq lbl_800C3820
 /* 800C3790 000C0590  2C 00 00 01 */	cmpwi r0, 1
 /* 800C3794 000C0594  41 82 00 8C */	beq lbl_800C3820
-/* 800C3798 000C0598  81 0D 91 C8 */	lwz r8, lbl_803CBAC8-_SDA_BASE_(r13)
+/* 800C3798 000C0598  81 0D 91 C8 */	lwz r8, lbl_803CBAC8@sda21(r13)
 /* 800C379C 000C059C  3C E0 80 3C */	lis r7, file_queue@ha
 /* 800C37A0 000C05A0  1D 3F 00 1C */	mulli r9, r31, 0x1c
 /* 800C37A4 000C05A4  38 60 00 00 */	li r3, 0
 /* 800C37A8 000C05A8  38 08 00 01 */	addi r0, r8, 1
-/* 800C37AC 000C05AC  90 0D 91 C8 */	stw r0, lbl_803CBAC8-_SDA_BASE_(r13)
+/* 800C37AC 000C05AC  90 0D 91 C8 */	stw r0, lbl_803CBAC8@sda21(r13)
 /* 800C37B0 000C05B0  38 E7 35 F0 */	addi r7, r7, file_queue@l
 /* 800C37B4 000C05B4  55 1C 10 3A */	slwi r28, r8, 2
 /* 800C37B8 000C05B8  7F C7 49 2E */	stwx r30, r7, r9

@@ -39,13 +39,13 @@ ZNPC_Boss_Shutdown__Fv:
 .global zNPCBoss_ScenePrepare__Fv
 zNPCBoss_ScenePrepare__Fv:
 /* 80136198 00132F98  38 00 00 01 */	li r0, 1
-/* 8013619C 00132F9C  90 0D 96 40 */	stw r0, lbl_803CBF40-_SDA_BASE_(r13)
+/* 8013619C 00132F9C  90 0D 96 40 */	stw r0, lbl_803CBF40@sda21(r13)
 /* 801361A0 00132FA0  4E 80 00 20 */	blr 
 
 .global zNPCBoss_SceneFinish__Fv
 zNPCBoss_SceneFinish__Fv:
 /* 801361A4 00132FA4  38 00 00 00 */	li r0, 0
-/* 801361A8 00132FA8  90 0D 96 40 */	stw r0, lbl_803CBF40-_SDA_BASE_(r13)
+/* 801361A8 00132FA8  90 0D 96 40 */	stw r0, lbl_803CBF40@sda21(r13)
 /* 801361AC 00132FAC  4E 80 00 20 */	blr 
 .global ZNPC_Create_Boss__FiP10RyzMemGrowPv
 ZNPC_Create_Boss__FiP10RyzMemGrowPv:
@@ -173,8 +173,8 @@ ZNPC_AnimTable_BossSBobbyArm__Fv:
 /* 80136348 00133148  38 63 CB B8 */	addi r3, r3, lbl_8026CBB8@l
 /* 8013634C 0013314C  38 63 03 6D */	addi r3, r3, 0x36d
 /* 80136350 00133150  93 E1 00 2C */	stw r31, 0x2c(r1)
-/* 80136354 00133154  80 A2 A3 88 */	lwz r5, lbl_803CED08-_SDA2_BASE_(r2)
-/* 80136358 00133158  80 02 A3 8C */	lwz r0, lbl_803CED0C-_SDA2_BASE_(r2)
+/* 80136354 00133154  80 A2 A3 88 */	lwz r5, lbl_803CED08@sda21(r2)
+/* 80136358 00133158  80 02 A3 8C */	lwz r0, lbl_803CED0C@sda21(r2)
 /* 8013635C 0013315C  90 A1 00 18 */	stw r5, 0x18(r1)
 /* 80136360 00133160  38 A0 00 00 */	li r5, 0
 /* 80136364 00133164  90 01 00 1C */	stw r0, 0x1c(r1)
@@ -195,11 +195,11 @@ ZNPC_AnimTable_BossSBobbyArm__Fv:
 /* 801363A0 001331A0  39 20 00 00 */	li r9, 0
 /* 801363A4 001331A4  39 40 00 00 */	li r10, 0
 /* 801363A8 001331A8  80 84 00 04 */	lwz r4, 4(r4)
-/* 801363AC 001331AC  C0 22 A3 90 */	lfs f1, lbl_803CED10-_SDA2_BASE_(r2)
-/* 801363B0 001331B0  C0 42 A3 94 */	lfs f2, lbl_803CED14-_SDA2_BASE_(r2)
+/* 801363AC 001331AC  C0 22 A3 90 */	lfs f1, lbl_803CED10@sda21(r2)
+/* 801363B0 001331B0  C0 42 A3 94 */	lfs f2, lbl_803CED14@sda21(r2)
 /* 801363B4 001331B4  4B ED 09 A5 */	bl xAnimTableNewState__FP10xAnimTablePCcUiUifPfPffPUsPvPFP9xAnimPlayP10xAnimState_vPFP10xAnimStateP11xAnimSinglePv_vPFP9xAnimPlayP5xQuatP5xVec3i_v
 /* 801363B8 001331B8  3C 60 80 2A */	lis r3, g_strz_bossanim@ha
-/* 801363BC 001331BC  C0 22 A3 98 */	lfs f1, lbl_803CED18-_SDA2_BASE_(r2)
+/* 801363BC 001331BC  C0 22 A3 98 */	lfs f1, lbl_803CED18@sda21(r2)
 /* 801363C0 001331C0  38 83 93 A0 */	addi r4, r3, g_strz_bossanim@l
 /* 801363C4 001331C4  38 A1 00 18 */	addi r5, r1, 0x18
 /* 801363C8 001331C8  7F E3 FB 78 */	mr r3, r31
@@ -218,11 +218,11 @@ Setup__8zNPCBossFv:
 /* 801363F0 001331F0  7C 08 02 A6 */	mflr r0
 /* 801363F4 001331F4  90 01 00 14 */	stw r0, 0x14(r1)
 /* 801363F8 001331F8  4B FB 90 69 */	bl Setup__10zNPCCommonFv
-/* 801363FC 001331FC  80 0D 96 40 */	lwz r0, lbl_803CBF40-_SDA_BASE_(r13)
+/* 801363FC 001331FC  80 0D 96 40 */	lwz r0, lbl_803CBF40@sda21(r13)
 /* 80136400 00133200  2C 00 00 00 */	cmpwi r0, 0
 /* 80136404 00133204  41 82 00 10 */	beq lbl_80136414
 /* 80136408 00133208  38 00 00 00 */	li r0, 0
-/* 8013640C 0013320C  90 0D 96 40 */	stw r0, lbl_803CBF40-_SDA_BASE_(r13)
+/* 8013640C 0013320C  90 0D 96 40 */	stw r0, lbl_803CBF40@sda21(r13)
 /* 80136410 00133210  48 00 00 15 */	bl BOSS_InitEffects__Fv
 lbl_80136414:
 /* 80136414 00133214  80 01 00 14 */	lwz r0, 0x14(r1)
@@ -240,7 +240,7 @@ BOSS_InitEffects__Fv:
 /* 80136438 00133238  38 63 03 7B */	addi r3, r3, 0x37b
 /* 8013643C 0013323C  4B F7 24 09 */	bl zParEmitterFind__FPCc
 /* 80136440 00133240  3C 80 80 32 */	lis r4, lbl_80324468@ha
-/* 80136444 00133244  90 6D 96 44 */	stw r3, lbl_803CBF44-_SDA_BASE_(r13)
+/* 80136444 00133244  90 6D 96 44 */	stw r3, lbl_803CBF44@sda21(r13)
 /* 80136448 00133248  38 64 44 68 */	addi r3, r4, lbl_80324468@l
 /* 8013644C 0013324C  38 00 01 00 */	li r0, 0x100
 /* 80136450 00133250  90 03 01 38 */	stw r0, 0x138(r3)
@@ -342,7 +342,7 @@ PhysicsFlags__8zNPCBossCFv:
 /* 80136578 00133378  4E 80 00 20 */	blr 
 .global AttackTimeLeft__8zNPCBossFv
 AttackTimeLeft__8zNPCBossFv:
-/* 8013657C 0013337C  C0 22 A3 9C */	lfs f1, lbl_803CED1C-_SDA2_BASE_(r2)
+/* 8013657C 0013337C  C0 22 A3 9C */	lfs f1, lbl_803CED1C@sda21(r2)
 /* 80136580 00133380  4E 80 00 20 */	blr 
 .global HoldUpDude__8zNPCBossFv
 HoldUpDude__8zNPCBossFv:

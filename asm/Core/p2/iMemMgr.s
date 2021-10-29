@@ -10,18 +10,18 @@ iMemInit__Fv:
 /* 800C636C 000C316C  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 800C6370 000C3170  48 10 BC F5 */	bl OSGetArenaHi
 /* 800C6374 000C3174  54 7F 00 34 */	rlwinm r31, r3, 0, 0, 0x1a
-/* 800C6378 000C3178  93 ED 92 20 */	stw r31, he-_SDA_BASE_(r13)
+/* 800C6378 000C3178  93 ED 92 20 */	stw r31, he@sda21(r13)
 /* 800C637C 000C317C  48 10 BC F1 */	bl OSGetArenaLo
 /* 800C6380 000C3180  38 03 00 1F */	addi r0, r3, 0x1f
 /* 800C6384 000C3184  7F E4 FB 78 */	mr r4, r31
 /* 800C6388 000C3188  54 03 00 34 */	rlwinm r3, r0, 0, 0, 0x1a
 /* 800C638C 000C318C  38 A0 00 01 */	li r5, 1
-/* 800C6390 000C3190  90 6D 92 1C */	stw r3, hs-_SDA_BASE_(r13)
+/* 800C6390 000C3190  90 6D 92 1C */	stw r3, hs@sda21(r13)
 /* 800C6394 000C3194  48 10 BB F5 */	bl OSInitAlloc
-/* 800C6398 000C3198  80 8D 92 20 */	lwz r4, he-_SDA_BASE_(r13)
+/* 800C6398 000C3198  80 8D 92 20 */	lwz r4, he@sda21(r13)
 /* 800C639C 000C319C  48 10 BC 5D */	bl OSCreateHeap
-/* 800C63A0 000C31A0  90 6D 92 18 */	stw r3, the_heap-_SDA_BASE_(r13)
-/* 800C63A4 000C31A4  80 6D 92 18 */	lwz r3, the_heap-_SDA_BASE_(r13)
+/* 800C63A0 000C31A0  90 6D 92 18 */	stw r3, the_heap@sda21(r13)
+/* 800C63A4 000C31A4  80 6D 92 18 */	lwz r3, the_heap@sda21(r13)
 /* 800C63A8 000C31A8  2C 03 00 00 */	cmpwi r3, 0
 /* 800C63AC 000C31AC  41 80 00 0C */	blt lbl_800C63B8
 /* 800C63B0 000C31B0  48 10 BB C9 */	bl OSSetCurrentHeap
@@ -49,19 +49,19 @@ lbl_800C63C0:
 /* 800C6400 000C3200  90 C9 00 0C */	stw r6, 0xc(r9)
 /* 800C6404 000C3204  90 A9 00 10 */	stw r5, 0x10(r9)
 /* 800C6408 000C3208  90 09 00 14 */	stw r0, 0x14(r9)
-/* 800C640C 000C320C  90 8D 92 24 */	stw r4, HeapSize-_SDA_BASE_(r13)
-/* 800C6410 000C3210  80 6D 86 40 */	lwz r3, lbl_803CAF40-_SDA_BASE_(r13)
+/* 800C640C 000C320C  90 8D 92 24 */	stw r4, HeapSize@sda21(r13)
+/* 800C6410 000C3210  80 6D 86 40 */	lwz r3, lbl_803CAF40@sda21(r13)
 /* 800C6414 000C3214  48 10 B9 ED */	bl OSAllocFromHeap
-/* 800C6418 000C3218  90 6D 92 14 */	stw r3, mem_base_alloc-_SDA_BASE_(r13)
+/* 800C6418 000C3218  90 6D 92 14 */	stw r3, mem_base_alloc@sda21(r13)
 /* 800C641C 000C321C  3C 80 80 39 */	lis r4, gMemInfo@ha
 /* 800C6420 000C3220  38 E4 C3 20 */	addi r7, r4, gMemInfo@l
 /* 800C6424 000C3224  38 C0 08 20 */	li r6, 0x820
-/* 800C6428 000C3228  81 2D 92 24 */	lwz r9, HeapSize-_SDA_BASE_(r13)
+/* 800C6428 000C3228  81 2D 92 24 */	lwz r9, HeapSize@sda21(r13)
 /* 800C642C 000C322C  38 A0 00 00 */	li r5, 0
 /* 800C6430 000C3230  3C 80 00 20 */	lis r4, 0x20
 /* 800C6434 000C3234  38 00 06 60 */	li r0, 0x660
 /* 800C6438 000C3238  7D 03 4A 14 */	add r8, r3, r9
-/* 800C643C 000C323C  91 0D 92 10 */	stw r8, mem_top_alloc-_SDA_BASE_(r13)
+/* 800C643C 000C323C  91 0D 92 10 */	stw r8, mem_top_alloc@sda21(r13)
 /* 800C6440 000C3240  90 67 00 18 */	stw r3, 0x18(r7)
 /* 800C6444 000C3244  91 27 00 1C */	stw r9, 0x1c(r7)
 /* 800C6448 000C3248  90 C7 00 20 */	stw r6, 0x20(r7)
