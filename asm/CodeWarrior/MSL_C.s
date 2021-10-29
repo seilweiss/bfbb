@@ -14420,8 +14420,12 @@ lbl_801E9084:
 /* 801E90A4 001E5EA4  7C 08 03 A6 */	mtlr r0
 /* 801E90A8 001E5EA8  38 21 00 40 */	addi r1, r1, 0x40
 /* 801E90AC 001E5EAC  4E 80 00 20 */	blr 
+.global __close_console
+__close_console:
 /* 801E90B0 001E5EB0  38 60 00 00 */	li r3, 0
 /* 801E90B4 001E5EB4  4E 80 00 20 */	blr 
+.global __write_console
+__write_console:
 /* 801E90B8 001E5EB8  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 801E90BC 001E5EBC  7C 08 02 A6 */	mflr r0
 /* 801E90C0 001E5EC0  90 01 00 24 */	stw r0, 0x24(r1)

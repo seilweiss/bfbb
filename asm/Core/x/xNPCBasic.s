@@ -535,6 +535,8 @@ lbl_8010FF78:
 /* 8010FF90 0010CD90  7C 08 03 A6 */	mtlr r0
 /* 8010FF94 0010CD94  38 21 00 30 */	addi r1, r1, 0x30
 /* 8010FF98 0010CD98  4E 80 00 20 */	blr 
+.global CollideReview__9xNPCBasicFv
+CollideReview__9xNPCBasicFv:
 /* 8010FF9C 0010CD9C  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 8010FFA0 0010CDA0  7C 08 02 A6 */	mflr r0
 /* 8010FFA4 0010CDA4  38 80 00 08 */	li r4, 8
@@ -746,6 +748,8 @@ DBG_PStatClear__9xNPCBasicFv:
 .global DBG_HaltOnMe__9xNPCBasicFUiPc
 DBG_HaltOnMe__9xNPCBasicFUiPc:
 /* 80110294 0010D094  4E 80 00 20 */	blr 
+.global BUpdate__9xNPCBasicFP5xVec3
+BUpdate__9xNPCBasicFP5xVec3:
 /* 80110298 0010D098  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8011029C 0010D09C  7C 08 02 A6 */	mflr r0
 /* 801102A0 0010D0A0  90 01 00 14 */	stw r0, 0x14(r1)

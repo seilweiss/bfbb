@@ -31457,6 +31457,8 @@ zEntPlayerDyingInGoo__Fv:
 /* 80082AC0 0007F8C0  7C 00 1B 78 */	or r0, r0, r3
 /* 80082AC4 0007F8C4  54 03 0F FE */	srwi r3, r0, 0x1f
 /* 80082AC8 0007F8C8  4E 80 00 20 */	blr 
+.global __sinit_zEntPlayer_cpp
+__sinit_zEntPlayer_cpp:
 /* 80082ACC 0007F8CC  C0 0D 81 A0 */	lfs f0, lbl_803CAAA0-_SDA_BASE_(r13)
 /* 80082AD0 0007F8D0  D0 0D 8C E0 */	stfs f0, lbl_803CB5E0-_SDA_BASE_(r13)
 /* 80082AD4 0007F8D4  4E 80 00 20 */	blr 
@@ -31530,8 +31532,12 @@ xMat3x3SMul__FP7xMat3x3PC7xMat3x3f:
 /* 80082BC4 0007F9C4  7C 08 03 A6 */	mtlr r0
 /* 80082BC8 0007F9C8  38 21 00 20 */	addi r1, r1, 0x20
 /* 80082BCC 0007F9CC  4E 80 00 20 */	blr 
+.global SetCarryState__10zNPCCommonF18en_NPC_CARRY_STATE
+SetCarryState__10zNPCCommonF18en_NPC_CARRY_STATE:
 /* 80082BD0 0007F9D0  38 60 00 00 */	li r3, 0
 /* 80082BD4 0007F9D4  4E 80 00 20 */	blr 
+.global CanRope__10zNPCCommonFv
+CanRope__10zNPCCommonFv:
 /* 80082BD8 0007F9D8  80 03 01 C8 */	lwz r0, 0x1c8(r3)
 /* 80082BDC 0007F9DC  54 03 01 CE */	rlwinm r3, r0, 0, 7, 7
 /* 80082BE0 0007F9E0  4E 80 00 20 */	blr 
@@ -31645,6 +31651,8 @@ xSndIsPlayingByHandle__FUi:
 /* 80082D40 0007FB40  7C 08 03 A6 */	mtlr r0
 /* 80082D44 0007FB44  38 21 00 10 */	addi r1, r1, 0x10
 /* 80082D48 0007FB48  4E 80 00 20 */	blr 
+.global zSandy_AnimTable__Fv
+zSandy_AnimTable__Fv:
 /* 80082D4C 0007FB4C  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 80082D50 0007FB50  7C 08 02 A6 */	mflr r0
 /* 80082D54 0007FB54  3C 60 80 25 */	lis r3, lbl_80256118@ha
@@ -35192,6 +35200,8 @@ xSndIsPlayingByHandle__FUi:
 /* 800864AC 000832AC  7C 08 03 A6 */	mtlr r0
 /* 800864B0 000832B0  38 21 00 20 */	addi r1, r1, 0x20
 /* 800864B4 000832B4  4E 80 00 20 */	blr 
+.global zPatrick_AnimTable__Fv
+zPatrick_AnimTable__Fv:
 /* 800864B8 000832B8  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 800864BC 000832BC  7C 08 02 A6 */	mflr r0
 /* 800864C0 000832C0  3C 60 80 25 */	lis r3, lbl_80256118@ha
@@ -37952,6 +37962,8 @@ xSndIsPlayingByHandle__FUi:
 /* 80088FCC 00085DCC  7C 08 03 A6 */	mtlr r0
 /* 80088FD0 00085DD0  38 21 00 20 */	addi r1, r1, 0x20
 /* 80088FD4 00085DD4  4E 80 00 20 */	blr 
+.global zEntPlayer_AnimTable__Fv
+zEntPlayer_AnimTable__Fv:
 /* 80088FD8 00085DD8  94 21 FF 80 */	stwu r1, -0x80(r1)
 /* 80088FDC 00085DDC  7C 08 02 A6 */	mflr r0
 /* 80088FE0 00085DE0  3C 60 80 25 */	lis r3, lbl_80256118@ha
@@ -43915,6 +43927,8 @@ lbl_8008CB18:
 /* 8008ECD8 0008BAD8  7C 08 03 A6 */	mtlr r0
 /* 8008ECDC 0008BADC  38 21 00 80 */	addi r1, r1, 0x80
 /* 8008ECE0 0008BAE0  4E 80 00 20 */	blr 
+.global zSpongeBobTongue_AnimTable__Fv
+zSpongeBobTongue_AnimTable__Fv:
 /* 8008ECE4 0008BAE4  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 8008ECE8 0008BAE8  7C 08 02 A6 */	mflr r0
 /* 8008ECEC 0008BAEC  3C 60 80 25 */	lis r3, lbl_80256118@ha
@@ -44064,6 +44078,8 @@ lbl_8008CB18:
 /* 8008EF2C 0008BD2C  7C 08 03 A6 */	mtlr r0
 /* 8008EF30 0008BD30  38 21 00 20 */	addi r1, r1, 0x20
 /* 8008EF34 0008BD34  4E 80 00 20 */	blr 
+.global zEntPlayer_BoulderVehicleAnimTable__Fv
+zEntPlayer_BoulderVehicleAnimTable__Fv:
 /* 8008EF38 0008BD38  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 8008EF3C 0008BD3C  7C 08 02 A6 */	mflr r0
 /* 8008EF40 0008BD40  3C 60 80 25 */	lis r3, lbl_80256118@ha
@@ -44154,6 +44170,8 @@ lbl_8008CB18:
 /* 8008F094 0008BE94  7C 08 03 A6 */	mtlr r0
 /* 8008F098 0008BE98  38 21 00 20 */	addi r1, r1, 0x20
 /* 8008F09C 0008BE9C  4E 80 00 20 */	blr 
+.global zEntPlayer_TreeDomeSBAnimTable__Fv
+zEntPlayer_TreeDomeSBAnimTable__Fv:
 /* 8008F0A0 0008BEA0  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 8008F0A4 0008BEA4  7C 08 02 A6 */	mflr r0
 /* 8008F0A8 0008BEA8  3C 60 80 25 */	lis r3, lbl_80256118@ha
@@ -46037,6 +46055,8 @@ __as__13xiMat4x3UnionFRC13xiMat4x3Union:
 /* 80090DE8 0008DBE8  90 A3 00 38 */	stw r5, 0x38(r3)
 /* 80090DEC 0008DBEC  90 03 00 3C */	stw r0, 0x3c(r3)
 /* 80090DF0 0008DBF0  4E 80 00 20 */	blr 
+.global IsHealthy__8zNPCTikiFv
+IsHealthy__8zNPCTikiFv:
 /* 80090DF4 0008DBF4  80 63 01 C8 */	lwz r3, 0x1c8(r3)
 /* 80090DF8 0008DBF8  7C 03 00 D0 */	neg r0, r3
 /* 80090DFC 0008DBFC  7C 00 1B 78 */	or r0, r0, r3

@@ -1901,6 +1901,8 @@ lbl_8000CE20:
 /* 8000CE24 00009C24  42 00 FF D4 */	bdnz lbl_8000CDF8
 /* 8000CE28 00009C28  38 60 00 00 */	li r3, 0
 /* 8000CE2C 00009C2C  4E 80 00 20 */	blr 
+.global xCameraFXZoomUpdate__FP8cameraFXfPC7xMat4x3P7xMat4x3
+xCameraFXZoomUpdate__FP8cameraFXfPC7xMat4x3P7xMat4x3:
 /* 8000CE30 00009C30  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8000CE34 00009C34  7C 08 02 A6 */	mflr r0
 /* 8000CE38 00009C38  90 01 00 14 */	stw r0, 0x14(r1)
@@ -2058,6 +2060,8 @@ lbl_8000D030:
 /* 8000D068 00009E68  7C 08 03 A6 */	mtlr r0
 /* 8000D06C 00009E6C  38 21 00 70 */	addi r1, r1, 0x70
 /* 8000D070 00009E70  4E 80 00 20 */	blr 
+.global xCameraFXShakeUpdate__FP8cameraFXfPC7xMat4x3P7xMat4x3
+xCameraFXShakeUpdate__FP8cameraFXfPC7xMat4x3P7xMat4x3:
 /* 8000D074 00009E74  94 21 FF A0 */	stwu r1, -0x60(r1)
 /* 8000D078 00009E78  7C 08 02 A6 */	mflr r0
 /* 8000D07C 00009E7C  90 01 00 64 */	stw r0, 0x64(r1)

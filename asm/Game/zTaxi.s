@@ -438,8 +438,14 @@ lbl_80172620:
 /* 80172628 0016F428  7C 08 03 A6 */	mtlr r0
 /* 8017262C 0016F42C  38 21 00 10 */	addi r1, r1, 0x10
 /* 80172630 0016F430  4E 80 00 20 */	blr 
+.global on_signal__6taxiCBFUi
+on_signal__6taxiCBFUi:
 /* 80172634 0016F434  4E 80 00 20 */	blr 
+.global on_start__6taxiCBFv
+on_start__6taxiCBFv:
 /* 80172638 0016F438  4E 80 00 20 */	blr 
+.global on_answer__6taxiCBFQ28ztalkbox11answer_enum
+on_answer__6taxiCBFQ28ztalkbox11answer_enum:
 /* 8017263C 0016F43C  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 80172640 0016F440  7C 08 02 A6 */	mflr r0
 /* 80172644 0016F444  7C 83 23 78 */	mr r3, r4
@@ -449,6 +455,8 @@ lbl_80172620:
 /* 80172654 0016F454  7C 08 03 A6 */	mtlr r0
 /* 80172658 0016F458  38 21 00 10 */	addi r1, r1, 0x10
 /* 8017265C 0016F45C  4E 80 00 20 */	blr 
+.global on_stop__6taxiCBFv
+on_stop__6taxiCBFv:
 /* 80172660 0016F460  4E 80 00 20 */	blr 
 .section .rodata
 lbl_80271E40:

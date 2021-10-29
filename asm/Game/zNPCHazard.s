@@ -4027,6 +4027,8 @@ lbl_8018AF94:
 /* 8018AFA0 00187DA0  7C 08 03 A6 */	mtlr r0
 /* 8018AFA4 00187DA4  38 21 00 10 */	addi r1, r1, 0x10
 /* 8018AFA8 00187DA8  4E 80 00 20 */	blr 
+.global ZNPC_AnimTable_HazardStd__Fv
+ZNPC_AnimTable_HazardStd__Fv:
 /* 8018AFAC 00187DAC  94 21 FF D0 */	stwu r1, -0x30(r1)
 /* 8018AFB0 00187DB0  7C 08 02 A6 */	mflr r0
 /* 8018AFB4 00187DB4  3C 80 80 27 */	lis r4, lbl_80273710@ha
@@ -8969,6 +8971,8 @@ lbl_8018F6DC:
 /* 8018F6E8 0018C4E8  7C 08 03 A6 */	mtlr r0
 /* 8018F6EC 0018C4EC  38 21 00 20 */	addi r1, r1, 0x20
 /* 8018F6F0 0018C4F0  4E 80 00 20 */	blr 
+.global __sinit_zNPCHazard_cpp
+__sinit_zNPCHazard_cpp:
 /* 8018F6F4 0018C4F4  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8018F6F8 0018C4F8  7C 08 02 A6 */	mflr r0
 /* 8018F6FC 0018C4FC  3C 60 80 36 */	lis r3, lbl_8035E738@ha

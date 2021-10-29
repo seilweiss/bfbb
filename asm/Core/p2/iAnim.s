@@ -2,7 +2,6 @@
 
 .section .text  # 0x800BE470 - 0x800BF1C0
 
-
 .global iAnimInit__Fv
 iAnimInit__Fv:
 /* 800BE9F4 000BB7F4  4E 80 00 20 */	blr 

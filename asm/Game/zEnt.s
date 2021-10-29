@@ -1030,6 +1030,8 @@ lbl_80055A7C:
 /* 80055A8C 0005288C  7C 08 03 A6 */	mtlr r0
 /* 80055A90 00052890  38 21 00 70 */	addi r1, r1, 0x70
 /* 80055A94 00052894  4E 80 00 20 */	blr 
+.global xEnt_AnimTable_AutoEventSmall__Fv
+xEnt_AnimTable_AutoEventSmall__Fv:
 /* 80055A98 00052898  94 21 FF D0 */	stwu r1, -0x30(r1)
 /* 80055A9C 0005289C  7C 08 02 A6 */	mflr r0
 /* 80055AA0 000528A0  3C 60 80 29 */	lis r3, g_hash_xentanim@ha

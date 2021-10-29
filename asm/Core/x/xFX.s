@@ -1218,6 +1218,8 @@ lbl_800277C4:
 /* 800277E0 000245E0  7C 08 03 A6 */	mtlr r0
 /* 800277E4 000245E4  38 21 00 20 */	addi r1, r1, 0x20
 /* 800277E8 000245E8  4E 80 00 20 */	blr 
+.global xFXShinyRender__FP8RpAtomic
+xFXShinyRender__FP8RpAtomic:
 /* 800277EC 000245EC  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 800277F0 000245F0  7C 08 02 A6 */	mflr r0
 /* 800277F4 000245F4  90 01 00 24 */	stw r0, 0x24(r1)

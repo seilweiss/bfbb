@@ -61,6 +61,8 @@ lbl_800BC600:
 .global zUIFontInit__Fv
 zUIFontInit__Fv:
 /* 800BC61C 000B941C  4E 80 00 20 */	blr 
+.global zUIFont_Init__FPvPv
+zUIFont_Init__FPvPv:
 /* 800BC620 000B9420  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 800BC624 000B9424  7C 08 02 A6 */	mflr r0
 /* 800BC628 000B9428  90 01 00 14 */	stw r0, 0x14(r1)

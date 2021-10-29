@@ -1748,6 +1748,8 @@ TRKInitializeDispatcher:
 /* 801F08D4 001ED6D4  38 60 00 00 */	li r3, 0
 /* 801F08D8 001ED6D8  90 04 00 00 */	stw r0, 0(r4)
 /* 801F08DC 001ED6DC  4E 80 00 20 */	blr 
+.global TRKDoSetOption
+TRKDoSetOption:
 /* 801F08E0 001ED6E0  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 801F08E4 001ED6E4  7C 08 02 A6 */	mflr r0
 /* 801F08E8 001ED6E8  38 80 00 00 */	li r4, 0
@@ -1864,6 +1866,8 @@ lbl_801F0A6C:
 /* 801F0A78 001ED878  7C 08 03 A6 */	mtlr r0
 /* 801F0A7C 001ED87C  38 21 00 20 */	addi r1, r1, 0x20
 /* 801F0A80 001ED880  4E 80 00 20 */	blr 
+.global TRKDoStop
+TRKDoStop:
 /* 801F0A84 001ED884  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 801F0A88 001ED888  7C 08 02 A6 */	mflr r0
 /* 801F0A8C 001ED88C  90 01 00 14 */	stw r0, 0x14(r1)
@@ -1939,6 +1943,8 @@ lbl_801F0B6C:
 /* 801F0B78 001ED978  7C 08 03 A6 */	mtlr r0
 /* 801F0B7C 001ED97C  38 21 00 10 */	addi r1, r1, 0x10
 /* 801F0B80 001ED980  4E 80 00 20 */	blr 
+.global TRKDoStep
+TRKDoStep:
 /* 801F0B84 001ED984  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 801F0B88 001ED988  7C 08 02 A6 */	mflr r0
 /* 801F0B8C 001ED98C  90 01 00 24 */	stw r0, 0x24(r1)
@@ -2310,6 +2316,8 @@ lbl_801F109C:
 /* 801F10A8 001EDEA8  7C 08 03 A6 */	mtlr r0
 /* 801F10AC 001EDEAC  38 21 00 20 */	addi r1, r1, 0x20
 /* 801F10B0 001EDEB0  4E 80 00 20 */	blr 
+.global TRKDoContinue
+TRKDoContinue:
 /* 801F10B4 001EDEB4  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 801F10B8 001EDEB8  7C 08 02 A6 */	mflr r0
 /* 801F10BC 001EDEBC  90 01 00 14 */	stw r0, 0x14(r1)
@@ -2404,6 +2412,8 @@ lbl_801F11F0:
 /* 801F11FC 001EDFFC  7C 08 03 A6 */	mtlr r0
 /* 801F1200 001EE000  38 21 00 10 */	addi r1, r1, 0x10
 /* 801F1204 001EE004  4E 80 00 20 */	blr 
+.global TRKDoFlushCache
+TRKDoFlushCache:
 /* 801F1208 001EE008  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 801F120C 001EE00C  7C 08 02 A6 */	mflr r0
 /* 801F1210 001EE010  90 01 00 24 */	stw r0, 0x24(r1)
@@ -2617,6 +2627,8 @@ lbl_801F14E8:
 /* 801F14F4 001EE2F4  7C 08 03 A6 */	mtlr r0
 /* 801F14F8 001EE2F8  38 21 00 20 */	addi r1, r1, 0x20
 /* 801F14FC 001EE2FC  4E 80 00 20 */	blr 
+.global TRKDoWriteRegisters
+TRKDoWriteRegisters:
 /* 801F1500 001EE300  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 801F1504 001EE304  7C 08 02 A6 */	mflr r0
 /* 801F1508 001EE308  90 01 00 24 */	stw r0, 0x24(r1)
@@ -2895,6 +2907,8 @@ lbl_801F18B0:
 /* 801F18BC 001EE6BC  7C 08 03 A6 */	mtlr r0
 /* 801F18C0 001EE6C0  38 21 00 20 */	addi r1, r1, 0x20
 /* 801F18C4 001EE6C4  4E 80 00 20 */	blr 
+.global TRKDoReadRegisters
+TRKDoReadRegisters:
 /* 801F18C8 001EE6C8  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 801F18CC 001EE6CC  7C 08 02 A6 */	mflr r0
 /* 801F18D0 001EE6D0  90 01 00 24 */	stw r0, 0x24(r1)
@@ -3173,6 +3187,8 @@ lbl_801F1C7C:
 /* 801F1C88 001EEA88  7C 08 03 A6 */	mtlr r0
 /* 801F1C8C 001EEA8C  38 21 00 20 */	addi r1, r1, 0x20
 /* 801F1C90 001EEA90  4E 80 00 20 */	blr 
+.global TRKDoWriteMemory
+TRKDoWriteMemory:
 /* 801F1C94 001EEA94  94 21 F7 E0 */	stwu r1, -0x820(r1)
 /* 801F1C98 001EEA98  7C 08 02 A6 */	mflr r0
 /* 801F1C9C 001EEA9C  90 01 08 24 */	stw r0, 0x824(r1)
@@ -3466,6 +3482,8 @@ lbl_801F209C:
 /* 801F20A8 001EEEA8  7C 08 03 A6 */	mtlr r0
 /* 801F20AC 001EEEAC  38 21 08 20 */	addi r1, r1, 0x820
 /* 801F20B0 001EEEB0  4E 80 00 20 */	blr 
+.global TRKDoReadMemory
+TRKDoReadMemory:
 /* 801F20B4 001EEEB4  94 21 F7 E0 */	stwu r1, -0x820(r1)
 /* 801F20B8 001EEEB8  7C 08 02 A6 */	mflr r0
 /* 801F20BC 001EEEBC  90 01 08 24 */	stw r0, 0x824(r1)
@@ -3753,6 +3771,8 @@ lbl_801F24AC:
 /* 801F24B8 001EF2B8  7C 08 03 A6 */	mtlr r0
 /* 801F24BC 001EF2BC  38 21 08 20 */	addi r1, r1, 0x820
 /* 801F24C0 001EF2C0  4E 80 00 20 */	blr 
+.global TRKDoCPUType
+TRKDoCPUType:
 /* 801F24C4 001EF2C4  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 801F24C8 001EF2C8  7C 08 02 A6 */	mflr r0
 /* 801F24CC 001EF2CC  90 01 00 24 */	stw r0, 0x24(r1)
@@ -4009,6 +4029,8 @@ lbl_801F2844:
 /* 801F2850 001EF650  7C 08 03 A6 */	mtlr r0
 /* 801F2854 001EF654  38 21 00 20 */	addi r1, r1, 0x20
 /* 801F2858 001EF658  4E 80 00 20 */	blr 
+.global TRKDoSupportMask
+TRKDoSupportMask:
 /* 801F285C 001EF65C  94 21 FF D0 */	stwu r1, -0x30(r1)
 /* 801F2860 001EF660  7C 08 02 A6 */	mflr r0
 /* 801F2864 001EF664  90 01 00 34 */	stw r0, 0x34(r1)
@@ -4164,6 +4186,8 @@ lbl_801F2A74:
 /* 801F2A80 001EF880  7C 08 03 A6 */	mtlr r0
 /* 801F2A84 001EF884  38 21 00 30 */	addi r1, r1, 0x30
 /* 801F2A88 001EF888  4E 80 00 20 */	blr 
+.global TRKDoVersions
+TRKDoVersions:
 /* 801F2A8C 001EF88C  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 801F2A90 001EF890  7C 08 02 A6 */	mflr r0
 /* 801F2A94 001EF894  90 01 00 24 */	stw r0, 0x24(r1)
@@ -4366,6 +4390,8 @@ lbl_801F2D4C:
 /* 801F2D58 001EFB58  7C 08 03 A6 */	mtlr r0
 /* 801F2D5C 001EFB5C  38 21 00 20 */	addi r1, r1, 0x20
 /* 801F2D60 001EFB60  4E 80 00 20 */	blr 
+.global TRKDoReset
+TRKDoReset:
 /* 801F2D64 001EFB64  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 801F2D68 001EFB68  7C 08 02 A6 */	mflr r0
 /* 801F2D6C 001EFB6C  38 80 00 01 */	li r4, 1
@@ -4416,6 +4442,8 @@ lbl_801F2DFC:
 /* 801F2E10 001EFC10  7C 08 03 A6 */	mtlr r0
 /* 801F2E14 001EFC14  38 21 00 10 */	addi r1, r1, 0x10
 /* 801F2E18 001EFC18  4E 80 00 20 */	blr 
+.global TRKDoDisconnect
+TRKDoDisconnect:
 /* 801F2E1C 001EFC1C  94 21 FF D0 */	stwu r1, -0x30(r1)
 /* 801F2E20 001EFC20  7C 08 02 A6 */	mflr r0
 /* 801F2E24 001EFC24  3C 80 80 38 */	lis r4, lbl_80380CC8@ha
@@ -4478,6 +4506,8 @@ lbl_801F2EE0:
 /* 801F2EF4 001EFCF4  7C 08 03 A6 */	mtlr r0
 /* 801F2EF8 001EFCF8  38 21 00 30 */	addi r1, r1, 0x30
 /* 801F2EFC 001EFCFC  4E 80 00 20 */	blr 
+.global TRKDoConnect
+TRKDoConnect:
 /* 801F2F00 001EFD00  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 801F2F04 001EFD04  7C 08 02 A6 */	mflr r0
 /* 801F2F08 001EFD08  3C 80 80 38 */	lis r4, lbl_80380CC8@ha
@@ -4529,6 +4559,8 @@ lbl_801F2FA4:
 /* 801F2FB0 001EFDB0  7C 08 03 A6 */	mtlr r0
 /* 801F2FB4 001EFDB4  38 21 00 10 */	addi r1, r1, 0x10
 /* 801F2FB8 001EFDB8  4E 80 00 20 */	blr 
+.global TRKDoUnsupported
+TRKDoUnsupported:
 /* 801F2FBC 001EFDBC  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 801F2FC0 001EFDC0  7C 08 02 A6 */	mflr r0
 /* 801F2FC4 001EFDC4  38 80 00 01 */	li r4, 1
@@ -8561,6 +8593,8 @@ lbl_801F66BC:
 /* 801F66C8 001F34C8  7C 08 03 A6 */	mtlr r0
 /* 801F66CC 001F34CC  38 21 00 20 */	addi r1, r1, 0x20
 /* 801F66D0 001F34D0  4E 80 00 20 */	blr 
+.global __read_console
+__read_console:
 /* 801F66D4 001F34D4  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 801F66D8 001F34D8  7C 08 02 A6 */	mflr r0
 /* 801F66DC 001F34DC  90 01 00 24 */	stw r0, 0x24(r1)

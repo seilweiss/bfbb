@@ -4,6 +4,8 @@
 
 .global .init_proc
 .init_proc:
+.global __check_pad3
+__check_pad3:
 /* 80003100 00000100  7C 08 02 A6 */	mflr r0
 /* 80003104 00000104  3C 60 80 00 */	lis r3, 0x800030E4@ha
 /* 80003108 00000108  90 01 00 04 */	stw r0, 4(r1)
@@ -2393,6 +2395,8 @@ lbl_80004814:
 
 .global gTRKInterruptVectorTableEnd
 gTRKInterruptVectorTableEnd:
+.global __TRK_reset
+__TRK_reset:
 /* 80005518 00002518  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 8000551C 0000251C  7C 08 02 A6 */	mflr r0
 /* 80005520 00002520  3C 60 80 38 */	lis r3, lbl_80381250@ha

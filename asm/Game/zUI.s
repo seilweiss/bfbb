@@ -428,6 +428,8 @@ zUI_Init__Fv:
 /* 800B9C48 000B6A48  7C 08 03 A6 */	mtlr r0
 /* 800B9C4C 000B6A4C  38 21 00 10 */	addi r1, r1, 0x10
 /* 800B9C50 000B6A50  4E 80 00 20 */	blr 
+.global zUI_Init__FPvPv
+zUI_Init__FPvPv:
 /* 800B9C54 000B6A54  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 800B9C58 000B6A58  7C 08 02 A6 */	mflr r0
 /* 800B9C5C 000B6A5C  90 01 00 14 */	stw r0, 0x14(r1)
@@ -3284,6 +3286,8 @@ lbl_800BC440:
 /* 800BC464 000B9264  7C 08 03 A6 */	mtlr r0
 /* 800BC468 000B9268  38 21 00 20 */	addi r1, r1, 0x20
 /* 800BC46C 000B926C  4E 80 00 20 */	blr 
+.global __sinit_zUI_cpp
+__sinit_zUI_cpp:
 /* 800BC470 000B9270  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 800BC474 000B9274  7C 08 02 A6 */	mflr r0
 /* 800BC478 000B9278  3C 60 80 26 */	lis r3, lbl_8025F750@ha

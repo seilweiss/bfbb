@@ -819,11 +819,15 @@ DBG_PerfTrack__7zNPCMgrFv:
 GetFactory__10xBehaveMgrFv:
 /* 800EED60 000EBB60  80 63 00 00 */	lwz r3, 0(r3)
 /* 800EED64 000EBB64  4E 80 00 20 */	blr 
+.global PostSetup__9xNPCBasicFv
+PostSetup__9xNPCBasicFv:
 /* 800EED68 000EBB68  4E 80 00 20 */	blr 
 
 .global RenderExtra__10zNPCCommonFv
 RenderExtra__10zNPCCommonFv:
 /* 800EED6C 000EBB6C  4E 80 00 20 */	blr 
+.global RenderExtraPostParticles__10zNPCCommonFv
+RenderExtraPostParticles__10zNPCCommonFv:
 /* 800EED70 000EBB70  4E 80 00 20 */	blr 
 
 .section .data

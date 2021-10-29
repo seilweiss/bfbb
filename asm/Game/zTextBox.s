@@ -20,6 +20,8 @@ render_bk_fill__22_esc__2_unnamed_esc__2_zTextBox_cpp_esc__2_FRC8ztextbox:
 /* 80133E70 00130C70  7C 08 03 A6 */	mtlr r0
 /* 80133E74 00130C74  38 21 00 20 */	addi r1, r1, 0x20
 /* 80133E78 00130C78  4E 80 00 20 */	blr 
+.global render_bk_tex_scale__22_esc__2_unnamed_esc__2_zTextBox_cpp_esc__2_FRC8ztextbox
+render_bk_tex_scale__22_esc__2_unnamed_esc__2_zTextBox_cpp_esc__2_FRC8ztextbox:
 /* 80133E7C 00130C7C  94 21 FF A0 */	stwu r1, -0x60(r1)
 /* 80133E80 00130C80  7C 08 02 A6 */	mflr r0
 /* 80133E84 00130C84  90 01 00 64 */	stw r0, 0x64(r1)
@@ -159,6 +161,8 @@ set_vert__22_esc__2_unnamed_esc__2_zTextBox_cpp_esc__2_FR18rwGameCube2DVertexfff
 /* 80134090 00130E90  88 04 00 03 */	lbz r0, 3(r4)
 /* 80134094 00130E94  98 03 00 0F */	stb r0, 0xf(r3)
 /* 80134098 00130E98  4E 80 00 20 */	blr 
+.global render_bk_tex_wrap__22_esc__2_unnamed_esc__2_zTextBox_cpp_esc__2_FRC8ztextbox
+render_bk_tex_wrap__22_esc__2_unnamed_esc__2_zTextBox_cpp_esc__2_FRC8ztextbox:
 /* 8013409C 00130E9C  4E 80 00 20 */	blr 
 
 /* init_textbox__22@unnamed@zTextBox_cpp@FR8ztextbox */
@@ -297,6 +301,8 @@ lbl_80134234:
 /* 80134298 00131098  7C 08 03 A6 */	mtlr r0
 /* 8013429C 0013109C  38 21 00 30 */	addi r1, r1, 0x30
 /* 801342A0 001310A0  4E 80 00 20 */	blr 
+.global parse_tag_blahblah__22_esc__2_unnamed_esc__2_zTextBox_cpp_esc__2_FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag
+parse_tag_blahblah__22_esc__2_unnamed_esc__2_zTextBox_cpp_esc__2_FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag:
 /* 801342A4 001310A4  4E 80 00 20 */	blr 
 lbl_801342A8:
 /* 801342A8 001310A8  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -758,6 +764,8 @@ init__8ztextboxFv:
 /* 801348A0 001316A0  7C 08 03 A6 */	mtlr r0
 /* 801348A4 001316A4  38 21 00 10 */	addi r1, r1, 0x10
 /* 801348A8 001316A8  4E 80 00 20 */	blr 
+.global load__8ztextboxFR5xBaseR9xDynAssetUl
+load__8ztextboxFR5xBaseR9xDynAssetUl:
 /* 801348AC 001316AC  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 801348B0 001316B0  7C 08 02 A6 */	mflr r0
 /* 801348B4 001316B4  90 01 00 14 */	stw r0, 0x14(r1)

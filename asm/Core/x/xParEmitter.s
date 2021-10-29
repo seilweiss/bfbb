@@ -93,6 +93,8 @@ lbl_801177B8:
 /* 801177C0 001145C0  7C 08 03 A6 */	mtlr r0
 /* 801177C4 001145C4  38 21 00 10 */	addi r1, r1, 0x10
 /* 801177C8 001145C8  4E 80 00 20 */	blr 
+.global xParEmitterInit__FPvPv
+xParEmitterInit__FPvPv:
 /* 801177CC 001145CC  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 801177D0 001145D0  7C 08 02 A6 */	mflr r0
 /* 801177D4 001145D4  90 01 00 14 */	stw r0, 0x14(r1)

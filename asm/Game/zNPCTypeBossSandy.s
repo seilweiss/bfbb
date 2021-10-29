@@ -19,6 +19,8 @@ on_change_newsfish__FRC10tweak_info:
 /* 8013D088 00139E88  7C 08 03 A6 */	mtlr r0
 /* 8013D08C 00139E8C  38 21 00 10 */	addi r1, r1, 0x10
 /* 8013D090 00139E90  4E 80 00 20 */	blr 
+.global on_change_shockwave__FRC10tweak_info
+on_change_shockwave__FRC10tweak_info:
 /* 8013D094 00139E94  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8013D098 00139E98  7C 08 02 A6 */	mflr r0
 /* 8013D09C 00139E9C  90 01 00 14 */	stw r0, 0x14(r1)
@@ -46,6 +48,8 @@ on_change_newsfish__FRC10tweak_info:
 /* 8013D0F4 00139EF4  7C 08 03 A6 */	mtlr r0
 /* 8013D0F8 00139EF8  38 21 00 10 */	addi r1, r1, 0x10
 /* 8013D0FC 00139EFC  4E 80 00 20 */	blr 
+.global ZNPC_AnimTable_BossSandy__Fv
+ZNPC_AnimTable_BossSandy__Fv:
 /* 8013D100 00139F00  94 21 FF 70 */	stwu r1, -0x90(r1)
 /* 8013D104 00139F04  7C 08 02 A6 */	mflr r0
 /* 8013D108 00139F08  3C 60 80 27 */	lis r3, lbl_8026D138@ha
@@ -562,6 +566,8 @@ lbl_8013D8DC:
 /* 8013D8E8 0013A6E8  7C 00 00 34 */	cntlzw r0, r0
 /* 8013D8EC 0013A6EC  54 03 DE 3E */	rlwinm r3, r0, 0x1b, 0x18, 0x1f
 /* 8013D8F0 0013A6F0  4E 80 00 20 */	blr 
+.global ZNPC_AnimTable_BossSandyHead__Fv
+ZNPC_AnimTable_BossSandyHead__Fv:
 /* 8013D8F4 0013A6F4  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 8013D8F8 0013A6F8  7C 08 02 A6 */	mflr r0
 /* 8013D8FC 0013A6FC  3C 60 80 27 */	lis r3, lbl_8026D19C@ha
@@ -707,6 +713,8 @@ lbl_8013D8DC:
 /* 8013DB2C 0013A92C  7C 08 03 A6 */	mtlr r0
 /* 8013DB30 0013A930  38 21 00 20 */	addi r1, r1, 0x20
 /* 8013DB34 0013A934  4E 80 00 20 */	blr 
+.global ZNPC_AnimTable_BossSandyScoreboard__Fv
+ZNPC_AnimTable_BossSandyScoreboard__Fv:
 /* 8013DB38 0013A938  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 8013DB3C 0013A93C  7C 08 02 A6 */	mflr r0
 /* 8013DB40 0013A940  3C 60 80 27 */	lis r3, lbl_8026D19C@ha
@@ -797,6 +805,8 @@ lbl_8013D8DC:
 /* 8013DC94 0013AA94  7C 08 03 A6 */	mtlr r0
 /* 8013DC98 0013AA98  38 21 00 20 */	addi r1, r1, 0x20
 /* 8013DC9C 0013AA9C  4E 80 00 20 */	blr 
+.global Init__10zNPCBSandyFP9xEntAsset
+Init__10zNPCBSandyFP9xEntAsset:
 /* 8013DCA0 0013AAA0  94 21 FF 80 */	stwu r1, -0x80(r1)
 /* 8013DCA4 0013AAA4  7C 08 02 A6 */	mflr r0
 /* 8013DCA8 0013AAA8  3C A0 80 2A */	lis r5, lbl_802998C8@ha
@@ -1288,6 +1298,8 @@ lbl_8013E1AC:
 /* 8013E40C 0013B20C  7C 08 03 A6 */	mtlr r0
 /* 8013E410 0013B210  38 21 00 80 */	addi r1, r1, 0x80
 /* 8013E414 0013B214  4E 80 00 20 */	blr 
+.global Setup__10zNPCBSandyFv
+Setup__10zNPCBSandyFv:
 /* 8013E418 0013B218  94 21 FF C0 */	stwu r1, -0x40(r1)
 /* 8013E41C 0013B21C  7C 08 02 A6 */	mflr r0
 /* 8013E420 0013B220  3C 80 80 27 */	lis r4, lbl_8026D19C@ha
@@ -1406,6 +1418,8 @@ lbl_8013E474:
 /* 8013E5E0 0013B3E0  7C 08 03 A6 */	mtlr r0
 /* 8013E5E4 0013B3E4  38 21 00 40 */	addi r1, r1, 0x40
 /* 8013E5E8 0013B3E8  4E 80 00 20 */	blr 
+.global SelfSetup__10zNPCBSandyFv
+SelfSetup__10zNPCBSandyFv:
 /* 8013E5EC 0013B3EC  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8013E5F0 0013B3F0  7C 08 02 A6 */	mflr r0
 /* 8013E5F4 0013B3F4  90 01 00 14 */	stw r0, 0x14(r1)
@@ -1551,6 +1565,8 @@ lbl_8013E474:
 /* 8013E824 0013B624  7C 08 03 A6 */	mtlr r0
 /* 8013E828 0013B628  38 21 00 10 */	addi r1, r1, 0x10
 /* 8013E82C 0013B62C  4E 80 00 20 */	blr 
+.global Reset__10zNPCBSandyFv
+Reset__10zNPCBSandyFv:
 /* 8013E830 0013B630  94 21 FF 90 */	stwu r1, -0x70(r1)
 /* 8013E834 0013B634  7C 08 02 A6 */	mflr r0
 /* 8013E838 0013B638  3C 80 80 33 */	lis r4, lbl_80328000@ha
@@ -2179,6 +2195,8 @@ lbl_8013F17C:
 /* 8013F1A0 0013BFA0  7C 08 03 A6 */	mtlr r0
 /* 8013F1A4 0013BFA4  38 21 00 70 */	addi r1, r1, 0x70
 /* 8013F1A8 0013BFA8  4E 80 00 20 */	blr 
+.global ParseINI__10zNPCBSandyFv
+ParseINI__10zNPCBSandyFv:
 /* 8013F1AC 0013BFAC  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8013F1B0 0013BFB0  7C 08 02 A6 */	mflr r0
 /* 8013F1B4 0013BFB4  90 01 00 14 */	stw r0, 0x14(r1)
@@ -2198,6 +2216,8 @@ lbl_8013F17C:
 /* 8013F1EC 0013BFEC  7C 08 03 A6 */	mtlr r0
 /* 8013F1F0 0013BFF0  38 21 00 10 */	addi r1, r1, 0x10
 /* 8013F1F4 0013BFF4  4E 80 00 20 */	blr 
+.global AnimPick__10zNPCBSandyFi16en_NPC_GOAL_SPOTP5xGoal
+AnimPick__10zNPCBSandyFi16en_NPC_GOAL_SPOTP5xGoal:
 /* 8013F1F8 0013BFF8  3C A4 B1 B9 */	addis r5, r4, 0xb1b9
 /* 8013F1FC 0013BFFC  38 E0 FF FF */	li r7, -1
 /* 8013F200 0013C000  38 A5 BD CF */	addi r5, r5, -16945
@@ -2746,6 +2766,8 @@ lbl_8013F978:
 /* 8013F9B0 0013C7B0  7C 08 03 A6 */	mtlr r0
 /* 8013F9B4 0013C7B4  38 21 00 50 */	addi r1, r1, 0x50
 /* 8013F9B8 0013C7B8  4E 80 00 20 */	blr 
+.global Render__10zNPCBSandyFv
+Render__10zNPCBSandyFv:
 /* 8013F9BC 0013C7BC  94 21 FF A0 */	stwu r1, -0x60(r1)
 /* 8013F9C0 0013C7C0  7C 08 02 A6 */	mflr r0
 /* 8013F9C4 0013C7C4  3C 80 80 33 */	lis r4, lbl_80328000@ha
@@ -3675,6 +3697,8 @@ lbl_80140730:
 lbl_80140754:
 /* 80140754 0013D554  38 60 00 01 */	li r3, 1
 /* 80140758 0013D558  4E 80 00 20 */	blr 
+.global Process__10zNPCBSandyFP6xScenef
+Process__10zNPCBSandyFP6xScenef:
 /* 8014075C 0013D55C  94 21 FF 10 */	stwu r1, -0xf0(r1)
 /* 80140760 0013D560  7C 08 02 A6 */	mflr r0
 /* 80140764 0013D564  90 01 00 F4 */	stw r0, 0xf4(r1)
@@ -4838,6 +4862,8 @@ lbl_80141830:
 /* 80141840 0013E640  7C 08 03 A6 */	mtlr r0
 /* 80141844 0013E644  38 21 00 20 */	addi r1, r1, 0x20
 /* 80141848 0013E648  4E 80 00 20 */	blr 
+.global Damage__10zNPCBSandyF18en_NPC_DAMAGE_TYPEP5xBasePC5xVec3
+Damage__10zNPCBSandyF18en_NPC_DAMAGE_TYPEP5xBasePC5xVec3:
 /* 8014184C 0013E64C  2C 04 00 04 */	cmpwi r4, 4
 /* 80141850 0013E650  4C 82 00 20 */	bnelr 
 /* 80141854 0013E654  80 03 02 C0 */	lwz r0, 0x2c0(r3)
@@ -4953,6 +4979,8 @@ lbl_801419C0:
 /* 801419C4 0013E7C4  7C 08 03 A6 */	mtlr r0
 /* 801419C8 0013E7C8  38 21 00 10 */	addi r1, r1, 0x10
 /* 801419CC 0013E7CC  4E 80 00 20 */	blr 
+.global NewTime__10zNPCBSandyFP6xScenef
+NewTime__10zNPCBSandyFP6xScenef:
 /* 801419D0 0013E7D0  94 21 FF 70 */	stwu r1, -0x90(r1)
 /* 801419D4 0013E7D4  7C 08 02 A6 */	mflr r0
 /* 801419D8 0013E7D8  90 01 00 94 */	stw r0, 0x94(r1)
@@ -6456,6 +6484,8 @@ lbl_80142FB4:
 /* 80142FD0 0013FDD0  7C 08 03 A6 */	mtlr r0
 /* 80142FD4 0013FDD4  38 21 00 30 */	addi r1, r1, 0x30
 /* 80142FD8 0013FDD8  4E 80 00 20 */	blr 
+.global Enter__21zNPCGoalBossSandyIdleFfPv
+Enter__21zNPCGoalBossSandyIdleFfPv:
 /* 80142FDC 0013FDDC  94 21 FF D0 */	stwu r1, -0x30(r1)
 /* 80142FE0 0013FDE0  7C 08 02 A6 */	mflr r0
 /* 80142FE4 0013FDE4  90 01 00 34 */	stw r0, 0x34(r1)
@@ -6501,6 +6531,8 @@ lbl_80142FB4:
 /* 80143084 0013FE84  7C 08 03 A6 */	mtlr r0
 /* 80143088 0013FE88  38 21 00 30 */	addi r1, r1, 0x30
 /* 8014308C 0013FE8C  4E 80 00 20 */	blr 
+.global Process__21zNPCGoalBossSandyIdleFP11en_trantypefPvP6xScene
+Process__21zNPCGoalBossSandyIdleFP11en_trantypefPvP6xScene:
 /* 80143090 0013FE90  94 21 FF C0 */	stwu r1, -0x40(r1)
 /* 80143094 0013FE94  7C 08 02 A6 */	mflr r0
 /* 80143098 0013FE98  90 01 00 44 */	stw r0, 0x44(r1)
@@ -6586,6 +6618,8 @@ lbl_80142FB4:
 /* 801431D8 0013FFD8  7C 08 03 A6 */	mtlr r0
 /* 801431DC 0013FFDC  38 21 00 40 */	addi r1, r1, 0x40
 /* 801431E0 0013FFE0  4E 80 00 20 */	blr 
+.global Exit__21zNPCGoalBossSandyIdleFfPv
+Exit__21zNPCGoalBossSandyIdleFfPv:
 /* 801431E4 0013FFE4  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 801431E8 0013FFE8  7C 08 02 A6 */	mflr r0
 /* 801431EC 0013FFEC  90 01 00 14 */	stw r0, 0x14(r1)
@@ -6607,6 +6641,8 @@ lbl_80142FB4:
 /* 8014322C 0014002C  7C 08 03 A6 */	mtlr r0
 /* 80143230 00140030  38 21 00 10 */	addi r1, r1, 0x10
 /* 80143234 00140034  4E 80 00 20 */	blr 
+.global Enter__22zNPCGoalBossSandyTauntFfPv
+Enter__22zNPCGoalBossSandyTauntFfPv:
 /* 80143238 00140038  94 21 FF D0 */	stwu r1, -0x30(r1)
 /* 8014323C 0014003C  7C 08 02 A6 */	mflr r0
 /* 80143240 00140040  90 01 00 34 */	stw r0, 0x34(r1)
@@ -6654,6 +6690,8 @@ lbl_80142FB4:
 /* 801432E8 001400E8  7C 08 03 A6 */	mtlr r0
 /* 801432EC 001400EC  38 21 00 30 */	addi r1, r1, 0x30
 /* 801432F0 001400F0  4E 80 00 20 */	blr 
+.global Process__22zNPCGoalBossSandyTauntFP11en_trantypefPvP6xScene
+Process__22zNPCGoalBossSandyTauntFP11en_trantypefPvP6xScene:
 /* 801432F4 001400F4  94 21 FF C0 */	stwu r1, -0x40(r1)
 /* 801432F8 001400F8  7C 08 02 A6 */	mflr r0
 /* 801432FC 001400FC  90 01 00 44 */	stw r0, 0x44(r1)
@@ -6724,6 +6762,8 @@ lbl_80142FB4:
 /* 80143400 00140200  7C 08 03 A6 */	mtlr r0
 /* 80143404 00140204  38 21 00 40 */	addi r1, r1, 0x40
 /* 80143408 00140208  4E 80 00 20 */	blr 
+.global Enter__22zNPCGoalBossSandyChaseFfPv
+Enter__22zNPCGoalBossSandyChaseFfPv:
 /* 8014340C 0014020C  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 80143410 00140210  7C 08 02 A6 */	mflr r0
 /* 80143414 00140214  90 01 00 14 */	stw r0, 0x14(r1)
@@ -6747,6 +6787,8 @@ lbl_80142FB4:
 /* 8014345C 0014025C  7C 08 03 A6 */	mtlr r0
 /* 80143460 00140260  38 21 00 10 */	addi r1, r1, 0x10
 /* 80143464 00140264  4E 80 00 20 */	blr 
+.global Process__22zNPCGoalBossSandyChaseFP11en_trantypefPvP6xScene
+Process__22zNPCGoalBossSandyChaseFP11en_trantypefPvP6xScene:
 /* 80143468 00140268  94 21 FF C0 */	stwu r1, -0x40(r1)
 /* 8014346C 0014026C  7C 08 02 A6 */	mflr r0
 /* 80143470 00140270  90 01 00 44 */	stw r0, 0x44(r1)
@@ -6826,6 +6868,8 @@ lbl_80142FB4:
 /* 80143598 00140398  7C 08 03 A6 */	mtlr r0
 /* 8014359C 0014039C  38 21 00 40 */	addi r1, r1, 0x40
 /* 801435A0 001403A0  4E 80 00 20 */	blr 
+.global Exit__22zNPCGoalBossSandyChaseFfPv
+Exit__22zNPCGoalBossSandyChaseFfPv:
 /* 801435A4 001403A4  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 801435A8 001403A8  7C 08 02 A6 */	mflr r0
 /* 801435AC 001403AC  90 01 00 14 */	stw r0, 0x14(r1)
@@ -6847,6 +6891,8 @@ lbl_80142FB4:
 /* 801435EC 001403EC  7C 08 03 A6 */	mtlr r0
 /* 801435F0 001403F0  38 21 00 10 */	addi r1, r1, 0x10
 /* 801435F4 001403F4  4E 80 00 20 */	blr 
+.global Enter__22zNPCGoalBossSandyMeleeFfPv
+Enter__22zNPCGoalBossSandyMeleeFfPv:
 /* 801435F8 001403F8  94 21 FF D0 */	stwu r1, -0x30(r1)
 /* 801435FC 001403FC  7C 08 02 A6 */	mflr r0
 /* 80143600 00140400  90 01 00 34 */	stw r0, 0x34(r1)
@@ -6919,6 +6965,8 @@ lbl_80142FB4:
 /* 8014370C 0014050C  7C 08 03 A6 */	mtlr r0
 /* 80143710 00140510  38 21 00 30 */	addi r1, r1, 0x30
 /* 80143714 00140514  4E 80 00 20 */	blr 
+.global Exit__22zNPCGoalBossSandyMeleeFfPv
+Exit__22zNPCGoalBossSandyMeleeFfPv:
 /* 80143718 00140518  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8014371C 0014051C  7C 08 02 A6 */	mflr r0
 /* 80143720 00140520  90 01 00 14 */	stw r0, 0x14(r1)
@@ -6951,6 +6999,8 @@ lbl_80142FB4:
 /* 8014378C 0014058C  7C 08 03 A6 */	mtlr r0
 /* 80143790 00140590  38 21 00 10 */	addi r1, r1, 0x10
 /* 80143794 00140594  4E 80 00 20 */	blr 
+.global Process__22zNPCGoalBossSandyMeleeFP11en_trantypefPvP6xScene
+Process__22zNPCGoalBossSandyMeleeFP11en_trantypefPvP6xScene:
 /* 80143798 00140598  94 21 FF C0 */	stwu r1, -0x40(r1)
 /* 8014379C 0014059C  7C 08 02 A6 */	mflr r0
 /* 801437A0 001405A0  90 01 00 44 */	stw r0, 0x44(r1)
@@ -7057,6 +7107,8 @@ lbl_8014388C:
 /* 80143930 00140730  7C 08 03 A6 */	mtlr r0
 /* 80143934 00140734  38 21 00 40 */	addi r1, r1, 0x40
 /* 80143938 00140738  4E 80 00 20 */	blr 
+.global Enter__23zNPCGoalBossSandyNoHeadFfPv
+Enter__23zNPCGoalBossSandyNoHeadFfPv:
 /* 8014393C 0014073C  94 21 FF D0 */	stwu r1, -0x30(r1)
 /* 80143940 00140740  7C 08 02 A6 */	mflr r0
 /* 80143944 00140744  90 01 00 34 */	stw r0, 0x34(r1)
@@ -7108,6 +7160,8 @@ lbl_801439C0:
 /* 801439F8 001407F8  7C 08 03 A6 */	mtlr r0
 /* 801439FC 001407FC  38 21 00 30 */	addi r1, r1, 0x30
 /* 80143A00 00140800  4E 80 00 20 */	blr 
+.global Process__23zNPCGoalBossSandyNoHeadFP11en_trantypefPvP6xScene
+Process__23zNPCGoalBossSandyNoHeadFP11en_trantypefPvP6xScene:
 /* 80143A04 00140804  94 21 FF 50 */	stwu r1, -0xb0(r1)
 /* 80143A08 00140808  7C 08 02 A6 */	mflr r0
 /* 80143A0C 0014080C  90 01 00 B4 */	stw r0, 0xb4(r1)
@@ -7740,6 +7794,8 @@ lbl_8014433C:
 /* 8014436C 0014116C  7C 08 03 A6 */	mtlr r0
 /* 80144370 00141170  38 21 00 B0 */	addi r1, r1, 0xb0
 /* 80144374 00141174  4E 80 00 20 */	blr 
+.global Enter__26zNPCGoalBossSandyElbowDropFfPv
+Enter__26zNPCGoalBossSandyElbowDropFfPv:
 /* 80144378 00141178  94 21 FF D0 */	stwu r1, -0x30(r1)
 /* 8014437C 0014117C  7C 08 02 A6 */	mflr r0
 /* 80144380 00141180  90 01 00 34 */	stw r0, 0x34(r1)
@@ -7821,6 +7877,8 @@ lbl_8014433C:
 /* 801444B0 001412B0  7C 08 03 A6 */	mtlr r0
 /* 801444B4 001412B4  38 21 00 30 */	addi r1, r1, 0x30
 /* 801444B8 001412B8  4E 80 00 20 */	blr 
+.global Process__26zNPCGoalBossSandyElbowDropFP11en_trantypefPvP6xScene
+Process__26zNPCGoalBossSandyElbowDropFP11en_trantypefPvP6xScene:
 /* 801444BC 001412BC  94 21 FF C0 */	stwu r1, -0x40(r1)
 /* 801444C0 001412C0  7C 08 02 A6 */	mflr r0
 /* 801444C4 001412C4  90 01 00 44 */	stw r0, 0x44(r1)
@@ -7992,6 +8050,8 @@ lbl_80144720:
 /* 80144748 00141548  7C 08 03 A6 */	mtlr r0
 /* 8014474C 0014154C  38 21 00 40 */	addi r1, r1, 0x40
 /* 80144750 00141550  4E 80 00 20 */	blr 
+.global Exit__26zNPCGoalBossSandyElbowDropFfPv
+Exit__26zNPCGoalBossSandyElbowDropFfPv:
 /* 80144754 00141554  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 80144758 00141558  7C 08 02 A6 */	mflr r0
 /* 8014475C 0014155C  90 01 00 14 */	stw r0, 0x14(r1)
@@ -8006,6 +8066,8 @@ lbl_80144720:
 /* 80144780 00141580  7C 08 03 A6 */	mtlr r0
 /* 80144784 00141584  38 21 00 10 */	addi r1, r1, 0x10
 /* 80144788 00141588  4E 80 00 20 */	blr 
+.global Enter__21zNPCGoalBossSandyLeapFfPv
+Enter__21zNPCGoalBossSandyLeapFfPv:
 /* 8014478C 0014158C  94 21 FF C0 */	stwu r1, -0x40(r1)
 /* 80144790 00141590  7C 08 02 A6 */	mflr r0
 /* 80144794 00141594  90 01 00 44 */	stw r0, 0x44(r1)
@@ -8142,6 +8204,8 @@ lbl_80144918:
 /* 80144994 00141794  7C 08 03 A6 */	mtlr r0
 /* 80144998 00141798  38 21 00 40 */	addi r1, r1, 0x40
 /* 8014499C 0014179C  4E 80 00 20 */	blr 
+.global Process__21zNPCGoalBossSandyLeapFP11en_trantypefPvP6xScene
+Process__21zNPCGoalBossSandyLeapFP11en_trantypefPvP6xScene:
 /* 801449A0 001417A0  94 21 FF B0 */	stwu r1, -0x50(r1)
 /* 801449A4 001417A4  7C 08 02 A6 */	mflr r0
 /* 801449A8 001417A8  90 01 00 54 */	stw r0, 0x54(r1)
@@ -8443,6 +8507,8 @@ lbl_80144DEC:
 /* 80144E14 00141C14  7C 08 03 A6 */	mtlr r0
 /* 80144E18 00141C18  38 21 00 50 */	addi r1, r1, 0x50
 /* 80144E1C 00141C1C  4E 80 00 20 */	blr 
+.global Exit__21zNPCGoalBossSandyLeapFfPv
+Exit__21zNPCGoalBossSandyLeapFfPv:
 /* 80144E20 00141C20  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 80144E24 00141C24  7C 08 02 A6 */	mflr r0
 /* 80144E28 00141C28  90 01 00 14 */	stw r0, 0x14(r1)
@@ -8453,6 +8519,8 @@ lbl_80144DEC:
 /* 80144E3C 00141C3C  7C 08 03 A6 */	mtlr r0
 /* 80144E40 00141C40  38 21 00 10 */	addi r1, r1, 0x10
 /* 80144E44 00141C44  4E 80 00 20 */	blr 
+.global Enter__20zNPCGoalBossSandySitFfPv
+Enter__20zNPCGoalBossSandySitFfPv:
 /* 80144E48 00141C48  94 21 FF D0 */	stwu r1, -0x30(r1)
 /* 80144E4C 00141C4C  7C 08 02 A6 */	mflr r0
 /* 80144E50 00141C50  90 01 00 34 */	stw r0, 0x34(r1)
@@ -8524,6 +8592,8 @@ lbl_80144F2C:
 /* 80144F4C 00141D4C  7C 08 03 A6 */	mtlr r0
 /* 80144F50 00141D50  38 21 00 30 */	addi r1, r1, 0x30
 /* 80144F54 00141D54  4E 80 00 20 */	blr 
+.global Process__20zNPCGoalBossSandySitFP11en_trantypefPvP6xScene
+Process__20zNPCGoalBossSandySitFP11en_trantypefPvP6xScene:
 /* 80144F58 00141D58  94 21 FF A0 */	stwu r1, -0x60(r1)
 /* 80144F5C 00141D5C  7C 08 02 A6 */	mflr r0
 /* 80144F60 00141D60  90 01 00 64 */	stw r0, 0x64(r1)
@@ -9010,6 +9080,8 @@ lbl_80145664:
 /* 8014568C 0014248C  7C 08 03 A6 */	mtlr r0
 /* 80145690 00142490  38 21 00 60 */	addi r1, r1, 0x60
 /* 80145694 00142494  4E 80 00 20 */	blr 
+.global Exit__20zNPCGoalBossSandySitFfPv
+Exit__20zNPCGoalBossSandySitFfPv:
 /* 80145698 00142498  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8014569C 0014249C  7C 08 02 A6 */	mflr r0
 /* 801456A0 001424A0  90 01 00 14 */	stw r0, 0x14(r1)
@@ -9038,6 +9110,8 @@ lbl_801456F0:
 /* 801456F8 001424F8  7C 08 03 A6 */	mtlr r0
 /* 801456FC 001424FC  38 21 00 10 */	addi r1, r1, 0x10
 /* 80145700 00142500  4E 80 00 20 */	blr 
+.global Enter__22zNPCGoalBossSandyGetUpFfPv
+Enter__22zNPCGoalBossSandyGetUpFfPv:
 /* 80145704 00142504  94 21 FF D0 */	stwu r1, -0x30(r1)
 /* 80145708 00142508  7C 08 02 A6 */	mflr r0
 /* 8014570C 0014250C  90 01 00 34 */	stw r0, 0x34(r1)
@@ -9118,6 +9192,8 @@ lbl_80145808:
 /* 80145830 00142630  7C 08 03 A6 */	mtlr r0
 /* 80145834 00142634  38 21 00 30 */	addi r1, r1, 0x30
 /* 80145838 00142638  4E 80 00 20 */	blr 
+.global Process__22zNPCGoalBossSandyGetUpFP11en_trantypefPvP6xScene
+Process__22zNPCGoalBossSandyGetUpFP11en_trantypefPvP6xScene:
 /* 8014583C 0014263C  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 80145840 00142640  7C 08 02 A6 */	mflr r0
 /* 80145844 00142644  90 01 00 14 */	stw r0, 0x14(r1)
@@ -9129,6 +9205,8 @@ lbl_80145808:
 /* 8014585C 0014265C  7C 08 03 A6 */	mtlr r0
 /* 80145860 00142660  38 21 00 10 */	addi r1, r1, 0x10
 /* 80145864 00142664  4E 80 00 20 */	blr 
+.global Enter__26zNPCGoalBossSandyRunToRopeFfPv
+Enter__26zNPCGoalBossSandyRunToRopeFfPv:
 /* 80145868 00142668  94 21 FF 60 */	stwu r1, -0xa0(r1)
 /* 8014586C 0014266C  7C 08 02 A6 */	mflr r0
 /* 80145870 00142670  90 01 00 A4 */	stw r0, 0xa4(r1)
@@ -9285,6 +9363,8 @@ lbl_80145A40:
 /* 80145AA8 001428A8  7C 08 03 A6 */	mtlr r0
 /* 80145AAC 001428AC  38 21 00 A0 */	addi r1, r1, 0xa0
 /* 80145AB0 001428B0  4E 80 00 20 */	blr 
+.global Process__26zNPCGoalBossSandyRunToRopeFP11en_trantypefPvP6xScene
+Process__26zNPCGoalBossSandyRunToRopeFP11en_trantypefPvP6xScene:
 /* 80145AB4 001428B4  94 21 FF C0 */	stwu r1, -0x40(r1)
 /* 80145AB8 001428B8  7C 08 02 A6 */	mflr r0
 /* 80145ABC 001428BC  90 01 00 44 */	stw r0, 0x44(r1)
@@ -9362,6 +9442,8 @@ lbl_80145A40:
 /* 80145BDC 001429DC  7C 08 03 A6 */	mtlr r0
 /* 80145BE0 001429E0  38 21 00 40 */	addi r1, r1, 0x40
 /* 80145BE4 001429E4  4E 80 00 20 */	blr 
+.global Exit__26zNPCGoalBossSandyRunToRopeFfPv
+Exit__26zNPCGoalBossSandyRunToRopeFfPv:
 /* 80145BE8 001429E8  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 80145BEC 001429EC  7C 08 02 A6 */	mflr r0
 /* 80145BF0 001429F0  90 01 00 14 */	stw r0, 0x14(r1)
@@ -9372,6 +9454,8 @@ lbl_80145A40:
 /* 80145C04 00142A04  7C 08 03 A6 */	mtlr r0
 /* 80145C08 00142A08  38 21 00 10 */	addi r1, r1, 0x10
 /* 80145C0C 00142A0C  4E 80 00 20 */	blr 
+.global Enter__28zNPCGoalBossSandyClotheslineFfPv
+Enter__28zNPCGoalBossSandyClotheslineFfPv:
 /* 80145C10 00142A10  94 21 FF C0 */	stwu r1, -0x40(r1)
 /* 80145C14 00142A14  7C 08 02 A6 */	mflr r0
 /* 80145C18 00142A18  90 01 00 44 */	stw r0, 0x44(r1)
@@ -9469,6 +9553,8 @@ lbl_80145CF4:
 /* 80145D84 00142B84  7C 08 03 A6 */	mtlr r0
 /* 80145D88 00142B88  38 21 00 40 */	addi r1, r1, 0x40
 /* 80145D8C 00142B8C  4E 80 00 20 */	blr 
+.global Process__28zNPCGoalBossSandyClotheslineFP11en_trantypefPvP6xScene
+Process__28zNPCGoalBossSandyClotheslineFP11en_trantypefPvP6xScene:
 /* 80145D90 00142B90  94 21 FF 90 */	stwu r1, -0x70(r1)
 /* 80145D94 00142B94  7C 08 02 A6 */	mflr r0
 /* 80145D98 00142B98  90 01 00 74 */	stw r0, 0x74(r1)

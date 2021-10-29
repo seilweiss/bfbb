@@ -2310,6 +2310,8 @@ lbl_801292DC:
 /* 801292FC 001260FC  7C 08 03 A6 */	mtlr r0
 /* 80129300 00126100  38 21 00 10 */	addi r1, r1, 0x10
 /* 80129304 00126104  4E 80 00 20 */	blr 
+.global zShrapnel_DestructObjInit__FP14zShrapnelAssetP14xModelInstanceP5xVec3PFP5zFragP10zFragAsset_v
+zShrapnel_DestructObjInit__FP14zShrapnelAssetP14xModelInstanceP5xVec3PFP5zFragP10zFragAsset_v:
 /* 80129308 00126108  94 21 FF 30 */	stwu r1, -0xd0(r1)
 /* 8012930C 0012610C  7C 08 02 A6 */	mflr r0
 /* 80129310 00126110  90 01 00 D4 */	stw r0, 0xd4(r1)
@@ -2623,6 +2625,8 @@ lbl_80129778:
 /* 80129798 00126598  7C 08 03 A6 */	mtlr r0
 /* 8012979C 0012659C  38 21 00 D0 */	addi r1, r1, 0xd0
 /* 801297A0 001265A0  4E 80 00 20 */	blr 
+.global zShrapnel_BB03FloorInit__FP14zShrapnelAssetP14xModelInstanceP5xVec3PFP5zFragP10zFragAsset_v
+zShrapnel_BB03FloorInit__FP14zShrapnelAssetP14xModelInstanceP5xVec3PFP5zFragP10zFragAsset_v:
 /* 801297A4 001265A4  94 21 FF 90 */	stwu r1, -0x70(r1)
 /* 801297A8 001265A8  7C 08 02 A6 */	mflr r0
 /* 801297AC 001265AC  28 03 00 00 */	cmplwi r3, 0
@@ -2848,6 +2852,8 @@ lbl_80129AE4:
 /* 80129AEC 001268EC  7C 08 03 A6 */	mtlr r0
 /* 80129AF0 001268F0  38 21 00 10 */	addi r1, r1, 0x10
 /* 80129AF4 001268F4  4E 80 00 20 */	blr 
+.global zShrapnel_BB03FloorChildInit__FP14zShrapnelAssetP14xModelInstanceP5xVec3PFP5zFragP10zFragAsset_v
+zShrapnel_BB03FloorChildInit__FP14zShrapnelAssetP14xModelInstanceP5xVec3PFP5zFragP10zFragAsset_v:
 /* 80129AF8 001268F8  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 80129AFC 001268FC  7C 08 02 A6 */	mflr r0
 /* 80129B00 00126900  3C C0 80 13 */	lis r6, lbl_80129A7C@ha
@@ -2858,6 +2864,8 @@ lbl_80129AE4:
 /* 80129B14 00126914  7C 08 03 A6 */	mtlr r0
 /* 80129B18 00126918  38 21 00 10 */	addi r1, r1, 0x10
 /* 80129B1C 0012691C  4E 80 00 20 */	blr 
+.global zShrapnel_GlobalRobotInit__FP14zShrapnelAssetP14xModelInstanceP5xVec3PFP5zFragP10zFragAsset_v
+zShrapnel_GlobalRobotInit__FP14zShrapnelAssetP14xModelInstanceP5xVec3PFP5zFragP10zFragAsset_v:
 /* 80129B20 00126920  94 21 FF C0 */	stwu r1, -0x40(r1)
 /* 80129B24 00126924  7C 08 02 A6 */	mflr r0
 /* 80129B28 00126928  90 01 00 44 */	stw r0, 0x44(r1)
@@ -2997,6 +3005,8 @@ lbl_80129CEC:
 /* 80129CFC 00126AFC  7C 08 03 A6 */	mtlr r0
 /* 80129D00 00126B00  38 21 00 40 */	addi r1, r1, 0x40
 /* 80129D04 00126B04  4E 80 00 20 */	blr 
+.global zShrapnel_SpongebobInit__FP14zShrapnelAssetP14xModelInstanceP5xVec3PFP5zFragP10zFragAsset_v
+zShrapnel_SpongebobInit__FP14zShrapnelAssetP14xModelInstanceP5xVec3PFP5zFragP10zFragAsset_v:
 /* 80129D08 00126B08  94 21 FF C0 */	stwu r1, -0x40(r1)
 /* 80129D0C 00126B0C  7C 08 02 A6 */	mflr r0
 /* 80129D10 00126B10  90 01 00 44 */	stw r0, 0x44(r1)

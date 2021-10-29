@@ -402,6 +402,8 @@ __ct__Q28ztaskbox13talk_callbackFv:
 /* 80134EC0 00131CC0  7C 08 03 A6 */	mtlr r0
 /* 80134EC4 00131CC4  38 21 00 10 */	addi r1, r1, 0x10
 /* 80134EC8 00131CC8  4E 80 00 20 */	blr 
+.global load__8ztaskboxFR5xBaseR9xDynAssetUl
+load__8ztaskboxFR5xBaseR9xDynAssetUl:
 /* 80134ECC 00131CCC  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 80134ED0 00131CD0  7C 08 02 A6 */	mflr r0
 /* 80134ED4 00131CD4  90 01 00 14 */	stw r0, 0x14(r1)
@@ -673,6 +675,8 @@ lbl_80135238:
 /* 80135240 00132040  7C 08 03 A6 */	mtlr r0
 /* 80135244 00132044  38 21 00 10 */	addi r1, r1, 0x10
 /* 80135248 00132048  4E 80 00 20 */	blr 
+.global on_start__Q28ztaskbox13talk_callbackFv
+on_start__Q28ztaskbox13talk_callbackFv:
 /* 8013524C 0013204C  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 80135250 00132050  7C 08 02 A6 */	mflr r0
 /* 80135254 00132054  90 01 00 14 */	stw r0, 0x14(r1)
@@ -682,6 +686,8 @@ lbl_80135238:
 /* 80135264 00132064  7C 08 03 A6 */	mtlr r0
 /* 80135268 00132068  38 21 00 10 */	addi r1, r1, 0x10
 /* 8013526C 0013206C  4E 80 00 20 */	blr 
+.global on_stop__Q28ztaskbox13talk_callbackFv
+on_stop__Q28ztaskbox13talk_callbackFv:
 /* 80135270 00132070  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 80135274 00132074  7C 08 02 A6 */	mflr r0
 /* 80135278 00132078  7C 64 1B 78 */	mr r4, r3
@@ -693,6 +699,8 @@ lbl_80135238:
 /* 80135290 00132090  7C 08 03 A6 */	mtlr r0
 /* 80135294 00132094  38 21 00 10 */	addi r1, r1, 0x10
 /* 80135298 00132098  4E 80 00 20 */	blr 
+.global on_answer__Q28ztaskbox13talk_callbackFQ28ztalkbox11answer_enum
+on_answer__Q28ztaskbox13talk_callbackFQ28ztalkbox11answer_enum:
 /* 8013529C 0013209C  90 83 00 08 */	stw r4, 8(r3)
 /* 801352A0 001320A0  4E 80 00 20 */	blr 
 

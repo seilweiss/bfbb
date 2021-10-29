@@ -17021,6 +17021,8 @@ lbl_801C4118:
 /* 801C411C 001C0F1C  38 21 00 08 */	addi r1, r1, 8
 /* 801C4120 001C0F20  7C 08 03 A6 */	mtlr r0
 /* 801C4124 001C0F24  4E 80 00 20 */	blr 
+.global defaultOptionalCommandChecker
+defaultOptionalCommandChecker:
 /* 801C4128 001C0F28  4E 80 00 20 */	blr 
 
 .global DVDInit
@@ -22934,6 +22936,8 @@ lbl_801C92F4:
 /* 801C9300 001C6100  7C 60 1A 14 */	add r3, r0, r3
 lbl_801C9304:
 /* 801C9304 001C6104  4E 80 00 20 */	blr 
+.global __GXShutdown
+__GXShutdown:
 /* 801C9308 001C6108  7C 08 02 A6 */	mflr r0
 /* 801C930C 001C610C  90 01 00 04 */	stw r0, 4(r1)
 /* 801C9310 001C6110  94 21 FF E0 */	stwu r1, -0x20(r1)
@@ -38135,6 +38139,8 @@ __OSInitSystemCall:
 /* 801D6600 001D3400  38 21 00 10 */	addi r1, r1, 0x10
 /* 801D6604 001D3404  7C 08 03 A6 */	mtlr r0
 /* 801D6608 001D3408  4E 80 00 20 */	blr 
+.global DefaultSwitchThreadCallback
+DefaultSwitchThreadCallback:
 /* 801D660C 001D340C  4E 80 00 20 */	blr 
 
 .global __OSThreadInit

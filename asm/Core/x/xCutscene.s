@@ -2153,7 +2153,11 @@ xVec3Lerp__FP5xVec3PC5xVec3PC5xVec3f:
 /* 80017D28 00014B28  D0 43 00 04 */	stfs f2, 4(r3)
 /* 80017D2C 00014B2C  D0 03 00 08 */	stfs f0, 8(r3)
 /* 80017D30 00014B30  4E 80 00 20 */	blr 
+.global CanRenderNow__9XCSNNoseyFv
+CanRenderNow__9XCSNNoseyFv:
 /* 80017D34 00014B34  4E 80 00 20 */	blr 
+.global UpdatedAnimated__9XCSNNoseyFP8RpAtomicP11RwMatrixTagUiUi
+UpdatedAnimated__9XCSNNoseyFP8RpAtomicP11RwMatrixTagUiUi:
 /* 80017D38 00014B38  4E 80 00 20 */	blr 
 
 .section .data

@@ -99,6 +99,8 @@ lbl_801ECE80:
 /* 801ECE90 001E9C90  38 C6 00 01 */	addi r6, r6, 1
 /* 801ECE94 001E9C94  40 82 FF EC */	bne lbl_801ECE80
 /* 801ECE98 001E9C98  4E 80 00 20 */	blr 
+.global __dt__Q23std9exceptionFv
+__dt__Q23std9exceptionFv:
 /* 801ECE9C 001E9C9C  94 21 FF D0 */	stwu r1, -0x30(r1)
 /* 801ECEA0 001E9CA0  7C 08 02 A6 */	mflr r0
 /* 801ECEA4 001E9CA4  90 01 00 34 */	stw r0, 0x34(r1)
@@ -154,6 +156,8 @@ lbl_801ECF40:
 /* 801ECF50 001E9D50  7D 41 53 78 */	mr r1, r10
 /* 801ECF54 001E9D54  7C 08 03 A6 */	mtlr r0
 /* 801ECF58 001E9D58  4E 80 00 20 */	blr 
+.global what__Q23std9exceptionCFv
+what__Q23std9exceptionCFv:
 /* 801ECF5C 001E9D5C  3C 60 80 28 */	lis r3, lbl_8027A1A0@ha
 /* 801ECF60 001E9D60  38 63 A1 A0 */	addi r3, r3, lbl_8027A1A0@l
 /* 801ECF64 001E9D64  4E 80 00 20 */	blr 
@@ -227,6 +231,8 @@ lbl_801ED040:
 /* 801ED054 001E9E54  7C 08 03 A6 */	mtlr r0
 /* 801ED058 001E9E58  38 21 00 30 */	addi r1, r1, 0x30
 /* 801ED05C 001E9E5C  4E 80 00 20 */	blr 
+.global __dt__26__partial_array_destructorFv
+__dt__26__partial_array_destructorFv:
 /* 801ED060 001E9E60  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 801ED064 001E9E64  7C 08 02 A6 */	mflr r0
 /* 801ED068 001E9E68  90 01 00 24 */	stw r0, 0x24(r1)
@@ -469,6 +475,8 @@ terminate__3stdFv:
 /* 801ED388 001EA188  7C 08 03 A6 */	mtlr r0
 /* 801ED38C 001EA18C  38 21 00 10 */	addi r1, r1, 0x10
 /* 801ED390 001EA190  4E 80 00 20 */	blr 
+.global duhandler__3stdFv
+duhandler__3stdFv:
 /* 801ED394 001EA194  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 801ED398 001EA198  7C 08 02 A6 */	mflr r0
 /* 801ED39C 001EA19C  90 01 00 14 */	stw r0, 0x14(r1)
@@ -479,6 +487,8 @@ terminate__3stdFv:
 /* 801ED3B0 001EA1B0  7C 08 03 A6 */	mtlr r0
 /* 801ED3B4 001EA1B4  38 21 00 10 */	addi r1, r1, 0x10
 /* 801ED3B8 001EA1B8  4E 80 00 20 */	blr 
+.global dthandler__3stdFv
+dthandler__3stdFv:
 /* 801ED3BC 001EA1BC  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 801ED3C0 001EA1C0  7C 08 02 A6 */	mflr r0
 /* 801ED3C4 001EA1C4  90 01 00 14 */	stw r0, 0x14(r1)
@@ -515,6 +525,8 @@ lbl_801ED41C:
 lbl_801ED430:
 /* 801ED430 001EA230  38 21 00 10 */	addi r1, r1, 0x10
 /* 801ED434 001EA234  4E 80 00 20 */	blr 
+.global __save_fpr
+__save_fpr:
 /* 801ED438 001EA238  D9 CB FF 70 */	stfd f14, -0x90(r11)
 /* 801ED43C 001EA23C  D9 EB FF 78 */	stfd f15, -0x88(r11)
 /* 801ED440 001EA240  DA 0B FF 80 */	stfd f16, -0x80(r11)
@@ -543,6 +555,8 @@ func_801ED470:
 /* 801ED478 001EA278  DB CB FF F0 */	stfd f30, -0x10(r11)
 /* 801ED47C 001EA27C  DB EB FF F8 */	stfd f31, -8(r11)
 /* 801ED480 001EA280  4E 80 00 20 */	blr 
+.global __restore_fpr
+__restore_fpr:
 /* 801ED484 001EA284  C9 CB FF 70 */	lfd f14, -0x90(r11)
 /* 801ED488 001EA288  C9 EB FF 78 */	lfd f15, -0x88(r11)
 /* 801ED48C 001EA28C  CA 0B FF 80 */	lfd f16, -0x80(r11)
@@ -2643,6 +2657,8 @@ func_801EEFE0:
 lbl_801EF00C:
 /* 801EF00C 001EBE0C  38 60 FF FF */	li r3, -1
 /* 801EF010 001EBE10  4E 80 00 20 */	blr 
+.global what__Q23std13bad_exceptionCFv
+what__Q23std13bad_exceptionCFv:
 /* 801EF014 001EBE14  3C 60 80 28 */	lis r3, lbl_8027A240@ha
 /* 801EF018 001EBE18  38 63 A2 40 */	addi r3, r3, lbl_8027A240@l
 /* 801EF01C 001EBE1C  4E 80 00 20 */	blr 

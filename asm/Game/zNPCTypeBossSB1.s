@@ -565,6 +565,8 @@ lbl_801555D4:
 /* 80155654 00152454  7C 08 03 A6 */	mtlr r0
 /* 80155658 00152458  38 21 00 20 */	addi r1, r1, 0x20
 /* 8015565C 0015245C  4E 80 00 20 */	blr 
+.global Init__9zNPCB_SB1FP9xEntAsset
+Init__9zNPCB_SB1FP9xEntAsset:
 /* 80155660 00152460  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 80155664 00152464  7C 08 02 A6 */	mflr r0
 /* 80155668 00152468  90 01 00 24 */	stw r0, 0x24(r1)
@@ -668,6 +670,8 @@ lbl_80155720:
 /* 801557E0 001525E0  7C 08 03 A6 */	mtlr r0
 /* 801557E4 001525E4  38 21 00 20 */	addi r1, r1, 0x20
 /* 801557E8 001525E8  4E 80 00 20 */	blr 
+.global SelfSetup__9zNPCB_SB1Fv
+SelfSetup__9zNPCB_SB1Fv:
 /* 801557EC 001525EC  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 801557F0 001525F0  7C 08 02 A6 */	mflr r0
 /* 801557F4 001525F4  90 01 00 14 */	stw r0, 0x14(r1)
@@ -748,6 +752,8 @@ lbl_80155720:
 /* 80155920 00152720  7C 08 03 A6 */	mtlr r0
 /* 80155924 00152724  38 21 00 10 */	addi r1, r1, 0x10
 /* 80155928 00152728  4E 80 00 20 */	blr 
+.global Reset__9zNPCB_SB1Fv
+Reset__9zNPCB_SB1Fv:
 /* 8015592C 0015272C  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 80155930 00152730  7C 08 02 A6 */	mflr r0
 /* 80155934 00152734  90 01 00 14 */	stw r0, 0x14(r1)
@@ -773,6 +779,8 @@ lbl_80155978:
 /* 80155980 00152780  7C 08 03 A6 */	mtlr r0
 /* 80155984 00152784  38 21 00 10 */	addi r1, r1, 0x10
 /* 80155988 00152788  4E 80 00 20 */	blr 
+.global AnimPick__9zNPCB_SB1Fi16en_NPC_GOAL_SPOTP5xGoal
+AnimPick__9zNPCB_SB1Fi16en_NPC_GOAL_SPOTP5xGoal:
 /* 8015598C 0015278C  3C A0 4E 47 */	lis r5, 0x4E47423E@ha
 /* 80155990 00152790  38 C0 00 00 */	li r6, 0
 /* 80155994 00152794  38 05 42 3E */	addi r0, r5, 0x4E47423E@l
@@ -837,6 +845,8 @@ lbl_80155A40:
 lbl_80155A58:
 /* 80155A58 00152858  7C C3 33 78 */	mr r3, r6
 /* 80155A5C 0015285C  4E 80 00 20 */	blr 
+.global Process__9zNPCB_SB1FP6xScenef
+Process__9zNPCB_SB1FP6xScenef:
 /* 80155A60 00152860  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 80155A64 00152864  7C 08 02 A6 */	mflr r0
 /* 80155A68 00152868  90 01 00 24 */	stw r0, 0x24(r1)
@@ -948,6 +958,8 @@ lbl_80155BA0:
 /* 80155BFC 001529FC  7C 08 03 A6 */	mtlr r0
 /* 80155C00 00152A00  38 21 00 20 */	addi r1, r1, 0x20
 /* 80155C04 00152A04  4E 80 00 20 */	blr 
+.global NewTime__9zNPCB_SB1FP6xScenef
+NewTime__9zNPCB_SB1FP6xScenef:
 /* 80155C08 00152A08  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 80155C0C 00152A0C  7C 08 02 A6 */	mflr r0
 /* 80155C10 00152A10  90 01 00 14 */	stw r0, 0x14(r1)
@@ -979,6 +991,8 @@ lbl_80155C54:
 /* 80155C70 00152A70  7C 08 03 A6 */	mtlr r0
 /* 80155C74 00152A74  38 21 00 10 */	addi r1, r1, 0x10
 /* 80155C78 00152A78  4E 80 00 20 */	blr 
+.global AttackTimeLeft__9zNPCB_SB1Fv
+AttackTimeLeft__9zNPCB_SB1Fv:
 /* 80155C7C 00152A7C  88 03 04 A4 */	lbz r0, 0x4a4(r3)
 /* 80155C80 00152A80  28 00 00 00 */	cmplwi r0, 0
 /* 80155C84 00152A84  40 82 00 0C */	bne lbl_80155C90
@@ -989,11 +1003,15 @@ lbl_80155C90:
 /* 80155C94 00152A94  C0 03 04 A8 */	lfs f0, 0x4a8(r3)
 /* 80155C98 00152A98  EC 21 00 28 */	fsubs f1, f1, f0
 /* 80155C9C 00152A9C  4E 80 00 20 */	blr 
+.global HoldUpDude__9zNPCB_SB1Fv
+HoldUpDude__9zNPCB_SB1Fv:
 /* 80155CA0 00152AA0  38 00 00 00 */	li r0, 0
 /* 80155CA4 00152AA4  98 03 04 A4 */	stb r0, 0x4a4(r3)
 /* 80155CA8 00152AA8  C0 02 A8 5C */	lfs f0, lbl_803CF1DC-_SDA2_BASE_(r2)
 /* 80155CAC 00152AAC  D0 03 04 A8 */	stfs f0, 0x4a8(r3)
 /* 80155CB0 00152AB0  4E 80 00 20 */	blr 
+.global ThanksImDone__9zNPCB_SB1Fv
+ThanksImDone__9zNPCB_SB1Fv:
 /* 80155CB4 00152AB4  38 00 00 01 */	li r0, 1
 /* 80155CB8 00152AB8  98 03 04 A4 */	stb r0, 0x4a4(r3)
 /* 80155CBC 00152ABC  C0 02 A8 54 */	lfs f0, lbl_803CF1D4-_SDA2_BASE_(r2)
@@ -1357,6 +1375,8 @@ lbl_801561B0:
 /* 801561E0 00152FE0  7C 08 03 A6 */	mtlr r0
 /* 801561E4 00152FE4  38 21 00 40 */	addi r1, r1, 0x40
 /* 801561E8 00152FE8  4E 80 00 20 */	blr 
+.global Enter__19zNPCGoalBossSB1IdleFfPv
+Enter__19zNPCGoalBossSB1IdleFfPv:
 /* 801561EC 00152FEC  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 801561F0 00152FF0  7C 08 02 A6 */	mflr r0
 /* 801561F4 00152FF4  90 01 00 24 */	stw r0, 0x24(r1)
@@ -1388,6 +1408,8 @@ lbl_801561B0:
 /* 8015625C 0015305C  7C 08 03 A6 */	mtlr r0
 /* 80156260 00153060  38 21 00 20 */	addi r1, r1, 0x20
 /* 80156264 00153064  4E 80 00 20 */	blr 
+.global Process__19zNPCGoalBossSB1IdleFP11en_trantypefPvP6xScene
+Process__19zNPCGoalBossSB1IdleFP11en_trantypefPvP6xScene:
 /* 80156268 00153068  94 21 FF D0 */	stwu r1, -0x30(r1)
 /* 8015626C 0015306C  7C 08 02 A6 */	mflr r0
 /* 80156270 00153070  90 01 00 34 */	stw r0, 0x34(r1)
@@ -1443,6 +1465,8 @@ lbl_801562E4:
 /* 80156334 00153134  7C 08 03 A6 */	mtlr r0
 /* 80156338 00153138  38 21 00 30 */	addi r1, r1, 0x30
 /* 8015633C 0015313C  4E 80 00 20 */	blr 
+.global Enter__20zNPCGoalBossSB1TauntFfPv
+Enter__20zNPCGoalBossSB1TauntFfPv:
 /* 80156340 00153140  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 80156344 00153144  7C 08 02 A6 */	mflr r0
 /* 80156348 00153148  90 01 00 24 */	stw r0, 0x24(r1)
@@ -1470,6 +1494,8 @@ lbl_801562E4:
 /* 801563A0 001531A0  7C 08 03 A6 */	mtlr r0
 /* 801563A4 001531A4  38 21 00 20 */	addi r1, r1, 0x20
 /* 801563A8 001531A8  4E 80 00 20 */	blr 
+.global Process__20zNPCGoalBossSB1TauntFP11en_trantypefPvP6xScene
+Process__20zNPCGoalBossSB1TauntFP11en_trantypefPvP6xScene:
 /* 801563AC 001531AC  94 21 FF D0 */	stwu r1, -0x30(r1)
 /* 801563B0 001531B0  7C 08 02 A6 */	mflr r0
 /* 801563B4 001531B4  90 01 00 34 */	stw r0, 0x34(r1)
@@ -1511,6 +1537,8 @@ lbl_801562E4:
 /* 80156444 00153244  7C 08 03 A6 */	mtlr r0
 /* 80156448 00153248  38 21 00 30 */	addi r1, r1, 0x30
 /* 8015644C 0015324C  4E 80 00 20 */	blr 
+.global Enter__20zNPCGoalBossSB1StompFfPv
+Enter__20zNPCGoalBossSB1StompFfPv:
 /* 80156450 00153250  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 80156454 00153254  7C 08 02 A6 */	mflr r0
 /* 80156458 00153258  90 01 00 24 */	stw r0, 0x24(r1)
@@ -1574,6 +1602,8 @@ lbl_80156520:
 /* 8015652C 0015332C  7C 08 03 A6 */	mtlr r0
 /* 80156530 00153330  38 21 00 10 */	addi r1, r1, 0x10
 /* 80156534 00153334  4E 80 00 20 */	blr 
+.global Process__20zNPCGoalBossSB1StompFP11en_trantypefPvP6xScene
+Process__20zNPCGoalBossSB1StompFP11en_trantypefPvP6xScene:
 /* 80156538 00153338  94 21 FF 80 */	stwu r1, -0x80(r1)
 /* 8015653C 0015333C  7C 08 02 A6 */	mflr r0
 /* 80156540 00153340  90 01 00 84 */	stw r0, 0x84(r1)
@@ -1657,6 +1687,8 @@ lbl_80156648:
 /* 80156670 00153470  7C 08 03 A6 */	mtlr r0
 /* 80156674 00153474  38 21 00 80 */	addi r1, r1, 0x80
 /* 80156678 00153478  4E 80 00 20 */	blr 
+.global Enter__20zNPCGoalBossSB1SmashFfPv
+Enter__20zNPCGoalBossSB1SmashFfPv:
 /* 8015667C 0015347C  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 80156680 00153480  7C 08 02 A6 */	mflr r0
 /* 80156684 00153484  90 01 00 24 */	stw r0, 0x24(r1)
@@ -1684,6 +1716,8 @@ lbl_80156648:
 /* 801566DC 001534DC  7C 08 03 A6 */	mtlr r0
 /* 801566E0 001534E0  38 21 00 20 */	addi r1, r1, 0x20
 /* 801566E4 001534E4  4E 80 00 20 */	blr 
+.global Exit__20zNPCGoalBossSB1SmashFfPv
+Exit__20zNPCGoalBossSB1SmashFfPv:
 /* 801566E8 001534E8  94 21 FF D0 */	stwu r1, -0x30(r1)
 /* 801566EC 001534EC  7C 08 02 A6 */	mflr r0
 /* 801566F0 001534F0  90 01 00 34 */	stw r0, 0x34(r1)
@@ -1740,6 +1774,8 @@ lbl_80156648:
 /* 801567BC 001535BC  7C 08 03 A6 */	mtlr r0
 /* 801567C0 001535C0  38 21 00 30 */	addi r1, r1, 0x30
 /* 801567C4 001535C4  4E 80 00 20 */	blr 
+.global Process__20zNPCGoalBossSB1SmashFP11en_trantypefPvP6xScene
+Process__20zNPCGoalBossSB1SmashFP11en_trantypefPvP6xScene:
 /* 801567C8 001535C8  94 21 FF A0 */	stwu r1, -0x60(r1)
 /* 801567CC 001535CC  7C 08 02 A6 */	mflr r0
 /* 801567D0 001535D0  90 01 00 64 */	stw r0, 0x64(r1)
@@ -1879,6 +1915,8 @@ lbl_801569AC:
 /* 801569D4 001537D4  7C 08 03 A6 */	mtlr r0
 /* 801569D8 001537D8  38 21 00 60 */	addi r1, r1, 0x60
 /* 801569DC 001537DC  4E 80 00 20 */	blr 
+.global Enter__22zNPCGoalBossSB1DeflateFfPv
+Enter__22zNPCGoalBossSB1DeflateFfPv:
 /* 801569E0 001537E0  94 21 FF D0 */	stwu r1, -0x30(r1)
 /* 801569E4 001537E4  7C 08 02 A6 */	mflr r0
 /* 801569E8 001537E8  90 01 00 34 */	stw r0, 0x34(r1)
@@ -1958,6 +1996,8 @@ lbl_80156A94:
 /* 80156B08 00153908  7C 08 03 A6 */	mtlr r0
 /* 80156B0C 0015390C  38 21 00 30 */	addi r1, r1, 0x30
 /* 80156B10 00153910  4E 80 00 20 */	blr 
+.global Exit__22zNPCGoalBossSB1DeflateFfPv
+Exit__22zNPCGoalBossSB1DeflateFfPv:
 /* 80156B14 00153914  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 80156B18 00153918  7C 08 02 A6 */	mflr r0
 /* 80156B1C 0015391C  90 01 00 24 */	stw r0, 0x24(r1)
@@ -2040,6 +2080,8 @@ lbl_80156C24:
 /* 80156C48 00153A48  7C 08 03 A6 */	mtlr r0
 /* 80156C4C 00153A4C  38 21 00 20 */	addi r1, r1, 0x20
 /* 80156C50 00153A50  4E 80 00 20 */	blr 
+.global Process__22zNPCGoalBossSB1DeflateFP11en_trantypefPvP6xScene
+Process__22zNPCGoalBossSB1DeflateFP11en_trantypefPvP6xScene:
 /* 80156C54 00153A54  94 21 FF D0 */	stwu r1, -0x30(r1)
 /* 80156C58 00153A58  7C 08 02 A6 */	mflr r0
 /* 80156C5C 00153A5C  90 01 00 34 */	stw r0, 0x34(r1)

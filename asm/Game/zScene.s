@@ -211,6 +211,8 @@ lbl_800B0CD8:
 /* 800B0CFC 000ADAFC  7C 08 03 A6 */	mtlr r0
 /* 800B0D00 000ADB00  38 21 00 20 */	addi r1, r1, 0x20
 /* 800B0D04 000ADB04  4E 80 00 20 */	blr 
+.global zSceneInitFunc_DefaultEnt__FP6zSceneP24zSceneObjectInstanceDescUi
+zSceneInitFunc_DefaultEnt__FP6zSceneP24zSceneObjectInstanceDescUi:
 /* 800B0D08 000ADB08  94 21 FF C0 */	stwu r1, -0x40(r1)
 /* 800B0D0C 000ADB0C  7C 08 02 A6 */	mflr r0
 /* 800B0D10 000ADB10  90 01 00 44 */	stw r0, 0x44(r1)
@@ -279,6 +281,8 @@ lbl_800B0DE8:
 /* 800B0DFC 000ADBFC  7C 08 03 A6 */	mtlr r0
 /* 800B0E00 000ADC00  38 21 00 40 */	addi r1, r1, 0x40
 /* 800B0E04 000ADC04  4E 80 00 20 */	blr 
+.global zSceneInitFunc_Default__FP6zSceneP24zSceneObjectInstanceDescUi
+zSceneInitFunc_Default__FP6zSceneP24zSceneObjectInstanceDescUi:
 /* 800B0E08 000ADC08  94 21 FF D0 */	stwu r1, -0x30(r1)
 /* 800B0E0C 000ADC0C  7C 08 02 A6 */	mflr r0
 /* 800B0E10 000ADC10  90 01 00 34 */	stw r0, 0x34(r1)
@@ -341,6 +345,8 @@ lbl_800B0ED0:
 /* 800B0EE4 000ADCE4  7C 08 03 A6 */	mtlr r0
 /* 800B0EE8 000ADCE8  38 21 00 30 */	addi r1, r1, 0x30
 /* 800B0EEC 000ADCEC  4E 80 00 20 */	blr 
+.global zSceneInitFunc_MovePoint__FP6zSceneP24zSceneObjectInstanceDescUi
+zSceneInitFunc_MovePoint__FP6zSceneP24zSceneObjectInstanceDescUi:
 /* 800B0EF0 000ADCF0  94 21 FF D0 */	stwu r1, -0x30(r1)
 /* 800B0EF4 000ADCF4  7C 08 02 A6 */	mflr r0
 /* 800B0EF8 000ADCF8  90 01 00 34 */	stw r0, 0x34(r1)
@@ -397,6 +403,8 @@ lbl_800B0FAC:
 /* 800B0FB8 000ADDB8  7C 08 03 A6 */	mtlr r0
 /* 800B0FBC 000ADDBC  38 21 00 30 */	addi r1, r1, 0x30
 /* 800B0FC0 000ADDC0  4E 80 00 20 */	blr 
+.global zSceneInitFunc_SBNPC__FP6zSceneP24zSceneObjectInstanceDescUi
+zSceneInitFunc_SBNPC__FP6zSceneP24zSceneObjectInstanceDescUi:
 /* 800B0FC4 000ADDC4  94 21 FF D0 */	stwu r1, -0x30(r1)
 /* 800B0FC8 000ADDC8  7C 08 02 A6 */	mflr r0
 /* 800B0FCC 000ADDCC  90 01 00 34 */	stw r0, 0x34(r1)
@@ -450,6 +458,8 @@ lbl_800B1074:
 /* 800B107C 000ADE7C  7C 08 03 A6 */	mtlr r0
 /* 800B1080 000ADE80  38 21 00 30 */	addi r1, r1, 0x30
 /* 800B1084 000ADE84  4E 80 00 20 */	blr 
+.global zSceneInitFunc_Player__FP6zSceneP24zSceneObjectInstanceDescUi
+zSceneInitFunc_Player__FP6zSceneP24zSceneObjectInstanceDescUi:
 /* 800B1088 000ADE88  94 21 FF D0 */	stwu r1, -0x30(r1)
 /* 800B108C 000ADE8C  7C 08 02 A6 */	mflr r0
 /* 800B1090 000ADE90  90 01 00 34 */	stw r0, 0x34(r1)
@@ -511,6 +521,8 @@ lbl_800B1154:
 /* 800B1160 000ADF60  7C 08 03 A6 */	mtlr r0
 /* 800B1164 000ADF64  38 21 00 30 */	addi r1, r1, 0x30
 /* 800B1168 000ADF68  4E 80 00 20 */	blr 
+.global zSceneInitFunc_Camera__FP6zSceneP24zSceneObjectInstanceDescUi
+zSceneInitFunc_Camera__FP6zSceneP24zSceneObjectInstanceDescUi:
 /* 800B116C 000ADF6C  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 800B1170 000ADF70  7C 08 02 A6 */	mflr r0
 /* 800B1174 000ADF74  90 01 00 24 */	stw r0, 0x24(r1)
@@ -565,6 +577,8 @@ lbl_800B1220:
 /* 800B122C 000AE02C  7C 08 03 A6 */	mtlr r0
 /* 800B1230 000AE030  38 21 00 20 */	addi r1, r1, 0x20
 /* 800B1234 000AE034  4E 80 00 20 */	blr 
+.global zSceneInitFunc_Surface__FP6zSceneP24zSceneObjectInstanceDescUi
+zSceneInitFunc_Surface__FP6zSceneP24zSceneObjectInstanceDescUi:
 /* 800B1238 000AE038  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 800B123C 000AE03C  7C 08 02 A6 */	mflr r0
 /* 800B1240 000AE040  90 01 00 24 */	stw r0, 0x24(r1)
@@ -607,6 +621,8 @@ lbl_800B12BC:
 /* 800B12C8 000AE0C8  7C 08 03 A6 */	mtlr r0
 /* 800B12CC 000AE0CC  38 21 00 20 */	addi r1, r1, 0x20
 /* 800B12D0 000AE0D0  4E 80 00 20 */	blr 
+.global zSceneInitFunc_Gust__FP6zSceneP24zSceneObjectInstanceDescUi
+zSceneInitFunc_Gust__FP6zSceneP24zSceneObjectInstanceDescUi:
 /* 800B12D4 000AE0D4  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 800B12D8 000AE0D8  7C 08 02 A6 */	mflr r0
 /* 800B12DC 000AE0DC  90 01 00 24 */	stw r0, 0x24(r1)
@@ -650,6 +666,8 @@ lbl_800B135C:
 /* 800B1368 000AE168  7C 08 03 A6 */	mtlr r0
 /* 800B136C 000AE16C  38 21 00 20 */	addi r1, r1, 0x20
 /* 800B1370 000AE170  4E 80 00 20 */	blr 
+.global zSceneInitFunc_Volume__FP6zSceneP24zSceneObjectInstanceDescUi
+zSceneInitFunc_Volume__FP6zSceneP24zSceneObjectInstanceDescUi:
 /* 800B1374 000AE174  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 800B1378 000AE178  7C 08 02 A6 */	mflr r0
 /* 800B137C 000AE17C  90 01 00 24 */	stw r0, 0x24(r1)
@@ -695,8 +713,12 @@ lbl_800B1404:
 /* 800B1410 000AE210  7C 08 03 A6 */	mtlr r0
 /* 800B1414 000AE214  38 21 00 20 */	addi r1, r1, 0x20
 /* 800B1418 000AE218  4E 80 00 20 */	blr 
+.global zSceneInitFunc_LobMaster__FP6zSceneP24zSceneObjectInstanceDescUi
+zSceneInitFunc_LobMaster__FP6zSceneP24zSceneObjectInstanceDescUi:
 /* 800B141C 000AE21C  7C A3 2B 78 */	mr r3, r5
 /* 800B1420 000AE220  4E 80 00 20 */	blr 
+.global zSceneInitFunc_Dispatcher__FP6zSceneP24zSceneObjectInstanceDescUi
+zSceneInitFunc_Dispatcher__FP6zSceneP24zSceneObjectInstanceDescUi:
 /* 800B1424 000AE224  94 21 FF D0 */	stwu r1, -0x30(r1)
 /* 800B1428 000AE228  7C 08 02 A6 */	mflr r0
 /* 800B142C 000AE22C  90 01 00 34 */	stw r0, 0x34(r1)
@@ -5052,7 +5074,11 @@ xModelBucket_RenderAlpha__Fv:
 /* 800B51E8 000B1FE8  7C 08 03 A6 */	mtlr r0
 /* 800B51EC 000B1FEC  38 21 00 10 */	addi r1, r1, 0x10
 /* 800B51F0 000B1FF0  4E 80 00 20 */	blr 
+.global Save__9xNPCBasicCFP7xSerial
+Save__9xNPCBasicCFP7xSerial:
 /* 800B51F4 000B1FF4  4E 80 00 20 */	blr 
+.global Load__9xNPCBasicFP7xSerial
+Load__9xNPCBasicFP7xSerial:
 /* 800B51F8 000B1FF8  4E 80 00 20 */	blr 
 
 .global xQuickCullInit__FPC4xBox

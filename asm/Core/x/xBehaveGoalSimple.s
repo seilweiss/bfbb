@@ -89,6 +89,8 @@ lbl_8010ECA4:
 /* 8010ECBC 0010BABC  7C 08 03 A6 */	mtlr r0
 /* 8010ECC0 0010BAC0  38 21 00 10 */	addi r1, r1, 0x10
 /* 8010ECC4 0010BAC4  4E 80 00 20 */	blr 
+.global Enter__12xGoalGenericFfPv
+Enter__12xGoalGenericFfPv:
 /* 8010ECC8 0010BAC8  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8010ECCC 0010BACC  7C 08 02 A6 */	mflr r0
 /* 8010ECD0 0010BAD0  90 01 00 14 */	stw r0, 0x14(r1)
@@ -107,6 +109,8 @@ lbl_8010ECF8:
 /* 8010ECFC 0010BAFC  7C 08 03 A6 */	mtlr r0
 /* 8010ED00 0010BB00  38 21 00 10 */	addi r1, r1, 0x10
 /* 8010ED04 0010BB04  4E 80 00 20 */	blr 
+.global Exit__12xGoalGenericFfPv
+Exit__12xGoalGenericFfPv:
 /* 8010ED08 0010BB08  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8010ED0C 0010BB0C  7C 08 02 A6 */	mflr r0
 /* 8010ED10 0010BB10  90 01 00 14 */	stw r0, 0x14(r1)
@@ -125,6 +129,8 @@ lbl_8010ED38:
 /* 8010ED3C 0010BB3C  7C 08 03 A6 */	mtlr r0
 /* 8010ED40 0010BB40  38 21 00 10 */	addi r1, r1, 0x10
 /* 8010ED44 0010BB44  4E 80 00 20 */	blr 
+.global Suspend__12xGoalGenericFfPv
+Suspend__12xGoalGenericFfPv:
 /* 8010ED48 0010BB48  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8010ED4C 0010BB4C  7C 08 02 A6 */	mflr r0
 /* 8010ED50 0010BB50  90 01 00 14 */	stw r0, 0x14(r1)
@@ -143,6 +149,8 @@ lbl_8010ED78:
 /* 8010ED7C 0010BB7C  7C 08 03 A6 */	mtlr r0
 /* 8010ED80 0010BB80  38 21 00 10 */	addi r1, r1, 0x10
 /* 8010ED84 0010BB84  4E 80 00 20 */	blr 
+.global Resume__12xGoalGenericFfPv
+Resume__12xGoalGenericFfPv:
 /* 8010ED88 0010BB88  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8010ED8C 0010BB8C  7C 08 02 A6 */	mflr r0
 /* 8010ED90 0010BB90  90 01 00 14 */	stw r0, 0x14(r1)
@@ -161,6 +169,8 @@ lbl_8010EDB8:
 /* 8010EDBC 0010BBBC  7C 08 03 A6 */	mtlr r0
 /* 8010EDC0 0010BBC0  38 21 00 10 */	addi r1, r1, 0x10
 /* 8010EDC4 0010BBC4  4E 80 00 20 */	blr 
+.global SysEvent__12xGoalGenericFP5xBaseP5xBaseUiPCfP5xBasePi
+SysEvent__12xGoalGenericFP5xBaseP5xBaseUiPCfP5xBasePi:
 /* 8010EDC8 0010BBC8  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8010EDCC 0010BBCC  7C 08 02 A6 */	mflr r0
 /* 8010EDD0 0010BBD0  7C EB 3B 78 */	mr r11, r7
@@ -228,14 +238,22 @@ __ct__12xGoalGenericFi:
 /* 8010EEA8 0010BCA8  7C 08 03 A6 */	mtlr r0
 /* 8010EEAC 0010BCAC  38 21 00 10 */	addi r1, r1, 0x10
 /* 8010EEB0 0010BCB0  4E 80 00 20 */	blr 
+.global Name__12xGoalGenericFv
+Name__12xGoalGenericFv:
 /* 8010EEB4 0010BCB4  3C 60 80 27 */	lis r3, lbl_8026A3B0@ha
 /* 8010EEB8 0010BCB8  38 63 A3 B0 */	addi r3, r3, lbl_8026A3B0@l
 /* 8010EEBC 0010BCBC  4E 80 00 20 */	blr 
+.global Clear__12xGoalGenericFv
+Clear__12xGoalGenericFv:
 /* 8010EEC0 0010BCC0  4E 80 00 20 */	blr 
+.global Name__10xGoalEmptyFv
+Name__10xGoalEmptyFv:
 /* 8010EEC4 0010BCC4  3C 60 80 27 */	lis r3, lbl_8026A3B0@ha
 /* 8010EEC8 0010BCC8  38 63 A3 B0 */	addi r3, r3, lbl_8026A3B0@l
 /* 8010EECC 0010BCCC  38 63 00 0D */	addi r3, r3, 0xd
 /* 8010EED0 0010BCD0  4E 80 00 20 */	blr 
+.global Clear__10xGoalEmptyFv
+Clear__10xGoalEmptyFv:
 /* 8010EED4 0010BCD4  4E 80 00 20 */	blr 
 .section .rodata
 lbl_8026A3B0:

@@ -251,6 +251,8 @@ using_ptank_render__FRC12xParSysAsset:
 /* 80116C7C 00113A7C  88 03 00 14 */	lbz r0, 0x14(r3)
 /* 80116C80 00113A80  54 03 CF FE */	rlwinm r3, r0, 0x19, 0x1f, 0x1f
 /* 80116C84 00113A84  4E 80 00 20 */	blr 
+.global render_par_sprite__FPvP9xParGroup
+render_par_sprite__FPvP9xParGroup:
 /* 80116C88 00113A88  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 80116C8C 00113A8C  7C 08 02 A6 */	mflr r0
 /* 80116C90 00113A90  90 01 00 14 */	stw r0, 0x14(r1)
@@ -305,6 +307,8 @@ xParCmdTexInit__FP10xParCmdTex:
 /* 80116D44 00113B44  D0 03 00 20 */	stfs f0, 0x20(r3)
 /* 80116D48 00113B48  38 21 00 20 */	addi r1, r1, 0x20
 /* 80116D4C 00113B4C  4E 80 00 20 */	blr 
+.global xParSysInit__FPvPv
+xParSysInit__FPvPv:
 /* 80116D50 00113B50  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 80116D54 00113B54  7C 08 02 A6 */	mflr r0
 /* 80116D58 00113B58  90 01 00 14 */	stw r0, 0x14(r1)

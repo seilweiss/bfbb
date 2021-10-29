@@ -2688,6 +2688,8 @@ lbl_800B8F54:
 /* 800B8F78 000B5D78  7C 08 03 A6 */	mtlr r0
 /* 800B8F7C 000B5D7C  38 21 00 10 */	addi r1, r1, 0x10
 /* 800B8F80 000B5D80  4E 80 00 20 */	blr 
+.global zThrownCollide_DestructObj__FP13zThrownStructP10xEntCollisPfPf
+zThrownCollide_DestructObj__FP13zThrownStructP10xEntCollisPfPf:
 /* 800B8F84 000B5D84  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 800B8F88 000B5D88  7C 08 02 A6 */	mflr r0
 /* 800B8F8C 000B5D8C  90 01 00 24 */	stw r0, 0x24(r1)
@@ -2735,6 +2737,8 @@ lbl_800B8FEC:
 /* 800B9030 000B5E30  7C 08 03 A6 */	mtlr r0
 /* 800B9034 000B5E34  38 21 00 10 */	addi r1, r1, 0x10
 /* 800B9038 000B5E38  4E 80 00 20 */	blr 
+.global zThrownCollide_Tiki__FP13zThrownStructP10xEntCollisPfPf
+zThrownCollide_Tiki__FP13zThrownStructP10xEntCollisPfPf:
 /* 800B903C 000B5E3C  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 800B9040 000B5E40  7C 08 02 A6 */	mflr r0
 /* 800B9044 000B5E44  90 01 00 24 */	stw r0, 0x24(r1)

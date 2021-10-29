@@ -47,6 +47,8 @@ zNPCBoss_SceneFinish__Fv:
 /* 801361A4 00132FA4  38 00 00 00 */	li r0, 0
 /* 801361A8 00132FA8  90 0D 96 40 */	stw r0, lbl_803CBF40-_SDA_BASE_(r13)
 /* 801361AC 00132FAC  4E 80 00 20 */	blr 
+.global ZNPC_Create_Boss__FiP10RyzMemGrowPv
+ZNPC_Create_Boss__FiP10RyzMemGrowPv:
 /* 801361B0 00132FB0  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 801361B4 00132FB4  7C 08 02 A6 */	mflr r0
 /* 801361B8 00132FB8  3C C0 4E 54 */	lis r6, 0x4E544232@ha
@@ -150,6 +152,8 @@ lbl_801362FC:
 /* 80136304 00133104  7C 08 03 A6 */	mtlr r0
 /* 80136308 00133108  38 21 00 10 */	addi r1, r1, 0x10
 /* 8013630C 0013310C  4E 80 00 20 */	blr 
+.global ZNPC_Destroy_Boss__FP12xFactoryInst
+ZNPC_Destroy_Boss__FP12xFactoryInst:
 /* 80136310 00133110  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 80136314 00133114  7C 08 02 A6 */	mflr r0
 /* 80136318 00133118  38 80 00 01 */	li r4, 1
@@ -159,6 +163,8 @@ lbl_801362FC:
 /* 80136328 00133128  7C 08 03 A6 */	mtlr r0
 /* 8013632C 0013312C  38 21 00 10 */	addi r1, r1, 0x10
 /* 80136330 00133130  4E 80 00 20 */	blr 
+.global ZNPC_AnimTable_BossSBobbyArm__Fv
+ZNPC_AnimTable_BossSBobbyArm__Fv:
 /* 80136334 00133134  94 21 FF D0 */	stwu r1, -0x30(r1)
 /* 80136338 00133138  7C 08 02 A6 */	mflr r0
 /* 8013633C 0013313C  3C 60 80 27 */	lis r3, lbl_8026CBB8@ha
@@ -314,19 +320,35 @@ __ct__10zNPCBSandyFi:
 /* 80136548 00133348  7C 08 03 A6 */	mtlr r0
 /* 8013654C 0013334C  38 21 00 10 */	addi r1, r1, 0x10
 /* 80136550 00133350  4E 80 00 20 */	blr 
+.global ColChkFlags__8zNPCBossCFv
+ColChkFlags__8zNPCBossCFv:
 /* 80136554 00133354  38 60 00 00 */	li r3, 0
 /* 80136558 00133358  4E 80 00 20 */	blr 
+.global ColPenFlags__8zNPCBossCFv
+ColPenFlags__8zNPCBossCFv:
 /* 8013655C 0013335C  38 60 00 00 */	li r3, 0
 /* 80136560 00133360  4E 80 00 20 */	blr 
+.global ColChkByFlags__8zNPCBossCFv
+ColChkByFlags__8zNPCBossCFv:
 /* 80136564 00133364  38 60 00 10 */	li r3, 0x10
 /* 80136568 00133368  4E 80 00 20 */	blr 
+.global ColPenByFlags__8zNPCBossCFv
+ColPenByFlags__8zNPCBossCFv:
 /* 8013656C 0013336C  38 60 00 10 */	li r3, 0x10
 /* 80136570 00133370  4E 80 00 20 */	blr 
+.global PhysicsFlags__8zNPCBossCFv
+PhysicsFlags__8zNPCBossCFv:
 /* 80136574 00133374  38 60 00 03 */	li r3, 3
 /* 80136578 00133378  4E 80 00 20 */	blr 
+.global AttackTimeLeft__8zNPCBossFv
+AttackTimeLeft__8zNPCBossFv:
 /* 8013657C 0013337C  C0 22 A3 9C */	lfs f1, lbl_803CED1C-_SDA2_BASE_(r2)
 /* 80136580 00133380  4E 80 00 20 */	blr 
+.global HoldUpDude__8zNPCBossFv
+HoldUpDude__8zNPCBossFv:
 /* 80136584 00133384  4E 80 00 20 */	blr 
+.global ThanksImDone__8zNPCBossFv
+ThanksImDone__8zNPCBossFv:
 /* 80136588 00133388  4E 80 00 20 */	blr 
 
 .global __ct__9zNPCB_SB2Fi

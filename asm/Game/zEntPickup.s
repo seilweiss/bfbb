@@ -160,6 +160,8 @@ lbl_800629EC:
 .global zEntPickup_Startup__Fv
 zEntPickup_Startup__Fv:
 /* 80062A08 0005F808  4E 80 00 20 */	blr 
+.global zEntPickupInit__FPvPv
+zEntPickupInit__FPvPv:
 /* 80062A0C 0005F80C  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 80062A10 0005F810  7C 08 02 A6 */	mflr r0
 /* 80062A14 0005F814  90 01 00 14 */	stw r0, 0x14(r1)
