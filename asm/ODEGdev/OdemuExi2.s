@@ -9384,3 +9384,105 @@ lbl_801F7204:
 /* 801F7204 001F4004  BA C1 00 20 */	lmw r22, 0x20(r1)
 /* 801F7208 001F4008  38 21 00 48 */	addi r1, r1, 0x48
 /* 801F720C 001F400C  4E 80 00 20 */	blr 
+
+.section .data
+.global gTRKDispatchTable
+gTRKDispatchTable:
+	.4byte 0x801F2FBC
+	.4byte 0x801F2F00
+	.4byte 0x801F2E1C
+	.4byte 0x801F2D64
+	.4byte 0x801F2A8C
+	.4byte 0x801F285C
+	.4byte 0x801F24C4
+	.4byte 0x801F2FBC
+	.4byte 0x801F2FBC
+	.4byte 0x801F2FBC
+	.4byte 0x801F2FBC
+	.4byte 0x801F2FBC
+	.4byte 0x801F2FBC
+	.4byte 0x801F2FBC
+	.4byte 0x801F2FBC
+	.4byte 0x801F2FBC
+	.4byte 0x801F20B4
+	.4byte 0x801F1C94
+	.4byte 0x801F18C8
+	.4byte 0x801F1500
+	.4byte 0x801F2FBC
+	.4byte 0x801F2FBC
+	.4byte 0x801F1208
+	.4byte 0x801F08E0
+	.4byte 0x801F10B4
+	.4byte 0x801F0B84
+	.4byte 0x801F0A84
+	.4byte 0x801F2FBC
+	.4byte 0x801F2FBC
+	.4byte 0x801F2FBC
+	.4byte 0x801F2FBC
+	.4byte 0x801F2FBC
+	.4byte 0x00000000
+	.4byte 0x00000000
+.global lbl_802B75F0
+lbl_802B75F0:
+	.4byte 0x801F1FD4
+	.4byte 0x801F1FF4
+	.4byte 0x801F1FCC
+	.4byte 0x801F1FF4
+	.4byte 0x801F1FDC
+	.4byte 0x801F1FE4
+	.4byte 0x801F1FEC
+.global lbl_802B760C
+lbl_802B760C:
+	.4byte 0x801F23E4
+	.4byte 0x801F2404
+	.4byte 0x801F23DC
+	.4byte 0x801F2404
+	.4byte 0x801F23EC
+	.4byte 0x801F23F4
+	.4byte 0x801F23FC
+.global gTRKRestoreFlags
+gTRKRestoreFlags:
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+.global lbl_802B7634
+lbl_802B7634:
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x01000000
+.global lbl_802B7644
+lbl_802B7644:
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+.global lbl_802B7658
+lbl_802B7658:
+	.4byte 0x00000100
+	.4byte 0x00000200
+	.4byte 0x00000300
+	.4byte 0x00000400
+	.4byte 0x00000500
+	.4byte 0x00000600
+	.4byte 0x00000700
+	.4byte 0x00000800
+	.4byte 0x00000900
+	.4byte 0x00000C00
+	.4byte 0x00000D00
+	.4byte 0x00000F00
+	.4byte 0x00001300
+	.4byte 0x00001400
+	.4byte 0x00001700
+	.4byte 0x00000000
+.global gDBCommTable
+gDBCommTable:
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000

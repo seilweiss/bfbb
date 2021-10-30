@@ -248,9 +248,6 @@ DTORS_O_FILES :=                                    \
 RODATA_O_FILES :=                                   \
     $(OBJ_DIR)/asm/rodata.o
 
-DATA_O_FILES :=                                     \
-    $(OBJ_DIR)/asm/data.o
-
 BSS_O_FILES :=                                      \
     $(OBJ_DIR)/asm/bss.o
 
