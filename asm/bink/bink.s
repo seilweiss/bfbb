@@ -53531,3 +53531,17 @@ patterns:
 	.4byte 0x2E2F2627
 	.4byte 0x1E1F1617
 	.4byte 0x0E0F0607
+
+.section .bss
+/* SPECULATION: link order */
+.global lbl_80363088
+lbl_80363088:
+	.skip 0x400
+/* SPECULATION: link order */
+.global lbl_80363488
+lbl_80363488:
+	.skip 0x400
+/* SPECULATION: link order */
+.global lbl_80363888
+lbl_80363888:
+	.skip 0x500

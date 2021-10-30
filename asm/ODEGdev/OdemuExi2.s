@@ -9575,3 +9575,58 @@ lbl_8027A3CC:
 	.4byte 0x48206861
 	.4byte 0x72647761
 	.4byte 0x72650A00
+.section .bss
+.global gTRKEventQueue
+gTRKEventQueue:
+	.skip 0x28
+.global gTRKBigEndian
+gTRKBigEndian:
+	.skip 0x8
+.global gTRKMsgBufs
+gTRKMsgBufs:
+	.skip 0xD10
+.global lbl_80380008
+lbl_80380008:
+	.skip 0xCA0
+.global gTRKInputPendingPtr
+gTRKInputPendingPtr:
+	.skip 0x4
+.global lbl_80380CAC
+lbl_80380CAC:
+	.skip 0x14
+.global gTRKDispatchTableSize
+gTRKDispatchTableSize:
+	.skip 0x8
+.global lbl_80380CC8
+lbl_80380CC8:
+	.skip 0x8
+.global lbl_80380CD0
+lbl_80380CD0:
+	.skip 0x4
+.global gTRKState
+gTRKState:
+	.skip 0xA4
+.global lbl_80380D78
+lbl_80380D78:
+	.skip 0x430
+.global gTRKSaveState
+gTRKSaveState:
+	.skip 0x94
+.global TRKvalue128_temp
+TRKvalue128_temp:
+	.skip 0x14
+.global lbl_80381250
+lbl_80381250:
+	.skip 0x8
+.global lbl_80381258
+lbl_80381258:
+	.skip 0x8
+.global lbl_80381260
+lbl_80381260:
+	.skip 0x111C
+.global lbl_8038237C
+lbl_8038237C:
+	.skip 0x110C
+.global lbl_80383488
+lbl_80383488:
+	.skip 0x8

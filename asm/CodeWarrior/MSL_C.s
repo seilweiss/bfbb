@@ -20072,3 +20072,13 @@ lbl_8027A1C8:
 	.4byte 0x3A657863
 	.4byte 0x65707469
 	.4byte 0x6F6E0000
+.section .bss
+.global lbl_8037EE68
+lbl_8037EE68:
+	.skip 0x100
+.global lbl_8037EF68
+lbl_8037EF68:
+	.skip 0x338
+.global lbl_8037F2A0
+lbl_8037F2A0:
+	.skip 0x18

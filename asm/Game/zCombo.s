@@ -811,18 +811,6 @@ lbl_80362B88:
 .global lbl_80362C88
 lbl_80362C88:
 	.skip 0x400
-/* SPECULATION: link order */
-.global lbl_80363088
-lbl_80363088:
-	.skip 0x400
-/* SPECULATION: link order */
-.global lbl_80363488
-lbl_80363488:
-	.skip 0x400
-/* SPECULATION: link order */
-.global lbl_80363888
-lbl_80363888:
-	.skip 0x500
 
 .section .sbss
 lbl_803CC1D4:

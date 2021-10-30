@@ -2882,3 +2882,7 @@ lbl_8027A298:
 	.4byte 0x6561700A
 	.4byte 0x00000000
 	.4byte 0x00000000
+.section .bss
+.global lbl_8037F2B8
+lbl_8037F2B8:
+	.skip 0x10
