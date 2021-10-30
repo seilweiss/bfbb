@@ -1,7 +1,7 @@
 .section .ctors  # 0x80251D00 - 0x80251D40
 .global lbl_80251D00
 lbl_80251D00:
-	.4byte 0x801EDBA8
+	.4byte lbl_801EDBA8 /* 0x801EDBA8 */
 	.4byte __sinit_xpkrsvc_cpp /* 0x8003C448 */
 	.4byte __sinit_xScrFx_cpp /* 0x80042CD8 */
 	.4byte __sinit_zEntCruiseBubble_cpp /* 0x8005FE1C */

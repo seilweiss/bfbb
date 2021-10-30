@@ -367,6 +367,7 @@ lbl_80195DD4:
 /* 80195E38 00192C38  7C 03 00 2E */	lwzx r0, r3, r0
 /* 80195E3C 00192C3C  7C 09 03 A6 */	mtctr r0
 /* 80195E40 00192C40  4E 80 04 20 */	bctr 
+lbl_80195E44:
 /* 80195E44 00192C44  C0 22 B2 6C */	lfs f1, lbl_803CFBEC@sda21(r2)
 /* 80195E48 00192C48  38 60 00 00 */	li r3, 0
 /* 80195E4C 00192C4C  38 80 00 01 */	li r4, 1
@@ -374,6 +375,7 @@ lbl_80195DD4:
 /* 80195E54 00192C54  38 C0 00 53 */	li r6, 0x53
 /* 80195E58 00192C58  4B EE AC 25 */	bl zEntPlayer_SNDPlayStreamRandom__FUiUi20_tagePlayerStreamSnd20_tagePlayerStreamSndf
 /* 80195E5C 00192C5C  48 00 01 00 */	b lbl_80195F5C
+lbl_80195E60:
 /* 80195E60 00192C60  C0 22 B2 6C */	lfs f1, lbl_803CFBEC@sda21(r2)
 /* 80195E64 00192C64  38 60 00 00 */	li r3, 0
 /* 80195E68 00192C68  38 80 00 02 */	li r4, 2
@@ -381,6 +383,7 @@ lbl_80195DD4:
 /* 80195E70 00192C70  38 C0 00 53 */	li r6, 0x53
 /* 80195E74 00192C74  4B EE AC 09 */	bl zEntPlayer_SNDPlayStreamRandom__FUiUi20_tagePlayerStreamSnd20_tagePlayerStreamSndf
 /* 80195E78 00192C78  48 00 00 E4 */	b lbl_80195F5C
+lbl_80195E7C:
 /* 80195E7C 00192C7C  C0 22 B2 6C */	lfs f1, lbl_803CFBEC@sda21(r2)
 /* 80195E80 00192C80  38 60 00 00 */	li r3, 0
 /* 80195E84 00192C84  38 80 00 03 */	li r4, 3
@@ -388,6 +391,7 @@ lbl_80195DD4:
 /* 80195E8C 00192C8C  38 C0 00 53 */	li r6, 0x53
 /* 80195E90 00192C90  4B EE AB ED */	bl zEntPlayer_SNDPlayStreamRandom__FUiUi20_tagePlayerStreamSnd20_tagePlayerStreamSndf
 /* 80195E94 00192C94  48 00 00 C8 */	b lbl_80195F5C
+lbl_80195E98:
 /* 80195E98 00192C98  C0 22 B2 6C */	lfs f1, lbl_803CFBEC@sda21(r2)
 /* 80195E9C 00192C9C  38 60 00 00 */	li r3, 0
 /* 80195EA0 00192CA0  38 80 00 04 */	li r4, 4
@@ -395,6 +399,7 @@ lbl_80195DD4:
 /* 80195EA8 00192CA8  38 C0 00 53 */	li r6, 0x53
 /* 80195EAC 00192CAC  4B EE AB D1 */	bl zEntPlayer_SNDPlayStreamRandom__FUiUi20_tagePlayerStreamSnd20_tagePlayerStreamSndf
 /* 80195EB0 00192CB0  48 00 00 AC */	b lbl_80195F5C
+lbl_80195EB4:
 /* 80195EB4 00192CB4  C0 22 B2 6C */	lfs f1, lbl_803CFBEC@sda21(r2)
 /* 80195EB8 00192CB8  38 60 00 00 */	li r3, 0
 /* 80195EBC 00192CBC  38 80 00 05 */	li r4, 5
@@ -408,6 +413,7 @@ lbl_80195DD4:
 /* 80195EDC 00192CDC  38 C0 00 56 */	li r6, 0x56
 /* 80195EE0 00192CE0  4B EE AB 9D */	bl zEntPlayer_SNDPlayStreamRandom__FUiUi20_tagePlayerStreamSnd20_tagePlayerStreamSndf
 /* 80195EE4 00192CE4  48 00 00 78 */	b lbl_80195F5C
+lbl_80195EE8:
 /* 80195EE8 00192CE8  C0 22 B2 6C */	lfs f1, lbl_803CFBEC@sda21(r2)
 /* 80195EEC 00192CEC  38 60 00 00 */	li r3, 0
 /* 80195EF0 00192CF0  38 80 00 0A */	li r4, 0xa
@@ -420,6 +426,7 @@ lbl_80195DD4:
 /* 80195F0C 00192D0C  38 C0 00 00 */	li r6, 0
 /* 80195F10 00192D10  4B EE AB 29 */	bl zEntPlayer_SNDPlayStream__FUiUi20_tagePlayerStreamSndUi
 /* 80195F14 00192D14  48 00 00 48 */	b lbl_80195F5C
+lbl_80195F18:
 /* 80195F18 00192D18  C0 22 B2 6C */	lfs f1, lbl_803CFBEC@sda21(r2)
 /* 80195F1C 00192D1C  38 60 00 00 */	li r3, 0
 /* 80195F20 00192D20  38 80 00 0A */	li r4, 0xa
@@ -432,6 +439,7 @@ lbl_80195DD4:
 /* 80195F3C 00192D3C  38 C0 00 00 */	li r6, 0
 /* 80195F40 00192D40  4B EE AA F9 */	bl zEntPlayer_SNDPlayStream__FUiUi20_tagePlayerStreamSndUi
 /* 80195F44 00192D44  48 00 00 18 */	b lbl_80195F5C
+lbl_80195F48:
 /* 80195F48 00192D48  38 60 00 00 */	li r3, 0
 /* 80195F4C 00192D4C  38 80 00 64 */	li r4, 0x64
 /* 80195F50 00192D50  38 A0 00 58 */	li r5, 0x58
@@ -786,17 +794,17 @@ lbl_802A1B88:
 	.4byte 0x00000000
 	.4byte 0x00000000
 lbl_802A1F08:
-	.4byte 0x80195E44
-	.4byte 0x80195E60
-	.4byte 0x80195E60
-	.4byte 0x80195E7C
-	.4byte 0x80195E7C
-	.4byte 0x80195E98
-	.4byte 0x80195EB4
-	.4byte 0x80195EB4
-	.4byte 0x80195EE8
-	.4byte 0x80195F18
-	.4byte 0x80195F48
+	.4byte lbl_80195E44 /* 0x80195E44 */
+	.4byte lbl_80195E60 /* 0x80195E60 */
+	.4byte lbl_80195E60 /* 0x80195E60 */
+	.4byte lbl_80195E7C /* 0x80195E7C */
+	.4byte lbl_80195E7C /* 0x80195E7C */
+	.4byte lbl_80195E98 /* 0x80195E98 */
+	.4byte lbl_80195EB4 /* 0x80195EB4 */
+	.4byte lbl_80195EB4 /* 0x80195EB4 */
+	.4byte lbl_80195EE8 /* 0x80195EE8 */
+	.4byte lbl_80195F18 /* 0x80195F18 */
+	.4byte lbl_80195F48 /* 0x80195F48 */
 
 .section .bss
 lbl_80362B68:

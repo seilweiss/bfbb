@@ -164,6 +164,8 @@ create_ptank__24_esc__2_unnamed_esc__2_xPtankPool_cpp_esc__2_FUi:
 /* 8017F810 0017C610  90 01 00 14 */	stw r0, 0x14(r1)
 /* 8017F814 0017C614  7C 60 1B 78 */	mr r0, r3
 /* 8017F818 0017C618  38 60 00 40 */	li r3, 0x40
+.global lbl_8017F81C
+lbl_8017F81C:
 /* 8017F81C 0017C61C  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 8017F820 0017C620  64 04 20 00 */	oris r4, r0, 0x2000
 /* 8017F824 0017C624  48 08 6B FD */	bl RpPTankAtomicCreate

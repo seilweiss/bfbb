@@ -5723,6 +5723,7 @@ lbl_801153F8:
 /* 80115410 00112210  7C 03 00 2E */	lwzx r0, r3, r0
 /* 80115414 00112214  7C 09 03 A6 */	mtctr r0
 /* 80115418 00112218  4E 80 04 20 */	bctr 
+lbl_8011541C:
 /* 8011541C 0011221C  C0 22 9E A0 */	lfs f1, lbl_803CE820@sda21(r2)
 /* 80115420 00112220  38 60 00 03 */	li r3, 3
 /* 80115424 00112224  4B FF AE 95 */	bl play_sound__Q212bungee_state35_esc__2_unnamed_esc__2_zEntPlayerBungeeState_cpp_esc__2_FQ312bungee_state35_esc__2_unnamed_esc__2_zEntPlayerBungeeState_cpp_esc__2_10sound_enumf
@@ -5738,6 +5739,7 @@ lbl_801153F8:
 /* 8011544C 0011224C  60 00 00 02 */	ori r0, r0, 2
 /* 80115450 00112250  90 1F 01 98 */	stw r0, 0x198(r31)
 /* 80115454 00112254  48 00 00 C0 */	b lbl_80115514
+lbl_80115458:
 /* 80115458 00112258  3C 80 80 29 */	lis r4, lbl_80297A68@ha
 /* 8011545C 0011225C  7F A3 EB 78 */	mr r3, r29
 /* 80115460 00112260  38 84 7A 68 */	addi r4, r4, lbl_80297A68@l
@@ -5747,6 +5749,7 @@ lbl_801153F8:
 /* 80115470 00112270  54 00 07 FA */	rlwinm r0, r0, 0, 0x1f, 0x1d
 /* 80115474 00112274  90 1F 01 98 */	stw r0, 0x198(r31)
 /* 80115478 00112278  48 00 00 9C */	b lbl_80115514
+lbl_8011547C:
 /* 8011547C 0011227C  C0 22 9E A0 */	lfs f1, lbl_803CE820@sda21(r2)
 /* 80115480 00112280  38 60 00 04 */	li r3, 4
 /* 80115484 00112284  4B FF AE 35 */	bl play_sound__Q212bungee_state35_esc__2_unnamed_esc__2_zEntPlayerBungeeState_cpp_esc__2_FQ312bungee_state35_esc__2_unnamed_esc__2_zEntPlayerBungeeState_cpp_esc__2_10sound_enumf
@@ -5759,6 +5762,7 @@ lbl_801153F8:
 /* 801154A0 001122A0  60 00 00 08 */	ori r0, r0, 8
 /* 801154A4 001122A4  90 1F 01 98 */	stw r0, 0x198(r31)
 /* 801154A8 001122A8  48 00 00 6C */	b lbl_80115514
+lbl_801154AC:
 /* 801154AC 001122AC  3C 80 80 29 */	lis r4, lbl_80297A68@ha
 /* 801154B0 001122B0  7F A3 EB 78 */	mr r3, r29
 /* 801154B4 001122B4  38 84 7A 68 */	addi r4, r4, lbl_80297A68@l
@@ -5768,6 +5772,7 @@ lbl_801153F8:
 /* 801154C4 001122C4  54 00 07 76 */	rlwinm r0, r0, 0, 0x1d, 0x1b
 /* 801154C8 001122C8  90 1F 01 98 */	stw r0, 0x198(r31)
 /* 801154CC 001122CC  48 00 00 48 */	b lbl_80115514
+lbl_801154D0:
 /* 801154D0 001122D0  3C 80 80 29 */	lis r4, lbl_80297A68@ha
 /* 801154D4 001122D4  7F A3 EB 78 */	mr r3, r29
 /* 801154D8 001122D8  38 84 7A 68 */	addi r4, r4, lbl_80297A68@l
@@ -5777,6 +5782,7 @@ lbl_801153F8:
 /* 801154E8 001122E8  60 00 00 20 */	ori r0, r0, 0x20
 /* 801154EC 001122EC  90 1F 01 98 */	stw r0, 0x198(r31)
 /* 801154F0 001122F0  48 00 00 24 */	b lbl_80115514
+lbl_801154F4:
 /* 801154F4 001122F4  3C 80 80 29 */	lis r4, lbl_80297A68@ha
 /* 801154F8 001122F8  7F A3 EB 78 */	mr r3, r29
 /* 801154FC 001122FC  38 84 7A 68 */	addi r4, r4, lbl_80297A68@l
@@ -7820,24 +7826,22 @@ __vt__Q312bungee_state35_esc__2_unnamed_esc__2_zEntPlayerBungeeState_cpp_esc__2_
   .4byte render__Q312bungee_state35_esc__2_unnamed_esc__2_zEntPlayerBungeeState_cpp_esc__2_18hanging_state_typeFv
 lbl_80297C58:
 	.4byte lbl_80115514 /* 0x80115514 */
-	.4byte 0x8011541C
-	.4byte 0x80115458
+	.4byte lbl_8011541C /* 0x8011541C */
+	.4byte lbl_80115458 /* 0x80115458 */
 	.4byte lbl_80115514 /* 0x80115514 */
-	.4byte 0x8011547C
-	.4byte lbl_80115514 /* 0x80115514 */
-	.4byte lbl_80115514 /* 0x80115514 */
-	.4byte lbl_80115514 /* 0x80115514 */
-	.4byte 0x801154AC
+	.4byte lbl_8011547C /* 0x8011547C */
 	.4byte lbl_80115514 /* 0x80115514 */
 	.4byte lbl_80115514 /* 0x80115514 */
+	.4byte lbl_80115514 /* 0x80115514 */
+	.4byte lbl_801154AC /* 0x801154AC */
 	.4byte lbl_80115514 /* 0x80115514 */
 	.4byte lbl_80115514 /* 0x80115514 */
 	.4byte lbl_80115514 /* 0x80115514 */
 	.4byte lbl_80115514 /* 0x80115514 */
 	.4byte lbl_80115514 /* 0x80115514 */
-	.4byte 0x801154D0
 	.4byte lbl_80115514 /* 0x80115514 */
 	.4byte lbl_80115514 /* 0x80115514 */
+	.4byte lbl_801154D0 /* 0x801154D0 */
 	.4byte lbl_80115514 /* 0x80115514 */
 	.4byte lbl_80115514 /* 0x80115514 */
 	.4byte lbl_80115514 /* 0x80115514 */
@@ -7851,7 +7855,9 @@ lbl_80297C58:
 	.4byte lbl_80115514 /* 0x80115514 */
 	.4byte lbl_80115514 /* 0x80115514 */
 	.4byte lbl_80115514 /* 0x80115514 */
-	.4byte 0x801154F4
+	.4byte lbl_80115514 /* 0x80115514 */
+	.4byte lbl_80115514 /* 0x80115514 */
+	.4byte lbl_801154F4 /* 0x801154F4 */
 	.4byte 0x00000000
 
 .section .bss

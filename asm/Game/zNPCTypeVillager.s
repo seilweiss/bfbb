@@ -2296,41 +2296,49 @@ FishSoundTables__8zNPCFishFv:
 /* 80104C70 00101A70  7C 03 20 2E */	lwzx r0, r3, r4
 /* 80104C74 00101A74  7C 09 03 A6 */	mtctr r0
 /* 80104C78 00101A78  4E 80 04 20 */	bctr 
+lbl_80104C7C:
 /* 80104C7C 00101A7C  3C 80 80 2A */	lis r4, g_sndTrax_VillagerCoStar@ha
 /* 80104C80 00101A80  80 7F 01 D8 */	lwz r3, 0x1d8(r31)
 /* 80104C84 00101A84  38 04 86 08 */	addi r0, r4, g_sndTrax_VillagerCoStar@l
 /* 80104C88 00101A88  90 03 03 9C */	stw r0, 0x39c(r3)
 /* 80104C8C 00101A8C  48 00 00 9C */	b lbl_80104D28
+lbl_80104C90:
 /* 80104C90 00101A90  3C 80 80 2A */	lis r4, g_sndTrax_Squidward@ha
 /* 80104C94 00101A94  80 7F 01 D8 */	lwz r3, 0x1d8(r31)
 /* 80104C98 00101A98  38 04 85 C0 */	addi r0, r4, g_sndTrax_Squidward@l
 /* 80104C9C 00101A9C  90 03 03 9C */	stw r0, 0x39c(r3)
 /* 80104CA0 00101AA0  48 00 00 88 */	b lbl_80104D28
+lbl_80104CA4:
 /* 80104CA4 00101AA4  3C 80 80 2A */	lis r4, g_sndTrax_VillagerMale@ha
 /* 80104CA8 00101AA8  80 7F 01 D8 */	lwz r3, 0x1d8(r31)
 /* 80104CAC 00101AAC  38 04 86 C8 */	addi r0, r4, g_sndTrax_VillagerMale@l
 /* 80104CB0 00101AB0  90 03 03 9C */	stw r0, 0x39c(r3)
 /* 80104CB4 00101AB4  48 00 00 74 */	b lbl_80104D28
+lbl_80104CB8:
 /* 80104CB8 00101AB8  3C 80 80 2A */	lis r4, g_sndTrax_VillagerFemale@ha
 /* 80104CBC 00101ABC  80 7F 01 D8 */	lwz r3, 0x1d8(r31)
 /* 80104CC0 00101AC0  38 04 86 D4 */	addi r0, r4, g_sndTrax_VillagerFemale@l
 /* 80104CC4 00101AC4  90 03 03 9C */	stw r0, 0x39c(r3)
 /* 80104CC8 00101AC8  48 00 00 60 */	b lbl_80104D28
+lbl_80104CCC:
 /* 80104CCC 00101ACC  3C 80 80 2A */	lis r4, g_sndTrax_VillagerElder@ha
 /* 80104CD0 00101AD0  80 7F 01 D8 */	lwz r3, 0x1d8(r31)
 /* 80104CD4 00101AD4  38 04 86 E0 */	addi r0, r4, g_sndTrax_VillagerElder@l
 /* 80104CD8 00101AD8  90 03 03 9C */	stw r0, 0x39c(r3)
 /* 80104CDC 00101ADC  48 00 00 4C */	b lbl_80104D28
+lbl_80104CE0:
 /* 80104CE0 00101AE0  3C 80 80 2A */	lis r4, g_sndTrax_VillagerEldess@ha
 /* 80104CE4 00101AE4  80 7F 01 D8 */	lwz r3, 0x1d8(r31)
 /* 80104CE8 00101AE8  38 04 86 EC */	addi r0, r4, g_sndTrax_VillagerEldess@l
 /* 80104CEC 00101AEC  90 03 03 9C */	stw r0, 0x39c(r3)
 /* 80104CF0 00101AF0  48 00 00 38 */	b lbl_80104D28
+lbl_80104CF4:
 /* 80104CF4 00101AF4  3C 80 80 2A */	lis r4, g_sndTrax_VillagerBoy@ha
 /* 80104CF8 00101AF8  80 7F 01 D8 */	lwz r3, 0x1d8(r31)
 /* 80104CFC 00101AFC  38 04 86 F8 */	addi r0, r4, g_sndTrax_VillagerBoy@l
 /* 80104D00 00101B00  90 03 03 9C */	stw r0, 0x39c(r3)
 /* 80104D04 00101B04  48 00 00 24 */	b lbl_80104D28
+lbl_80104D08:
 /* 80104D08 00101B08  3C 80 80 2A */	lis r4, g_sndTrax_VillagerGirl@ha
 /* 80104D0C 00101B0C  80 7F 01 D8 */	lwz r3, 0x1d8(r31)
 /* 80104D10 00101B10  38 04 87 10 */	addi r0, r4, g_sndTrax_VillagerGirl@l
@@ -5909,34 +5917,34 @@ lbl_80269D40:
 
 .section .data
 lbl_80296708:
-	.4byte 0x80104CA4
-	.4byte 0x80104CA4
-	.4byte 0x80104CB8
-	.4byte 0x80104CCC
-	.4byte 0x80104CE0
-	.4byte 0x80104CF4
-	.4byte 0x80104D08
-	.4byte 0x80104CF4
-	.4byte 0x80104C7C
-	.4byte 0x80104C90
-	.4byte 0x80104C90
-	.4byte 0x80104C90
-	.4byte 0x80104C7C
-	.4byte 0x80104C7C
+	.4byte lbl_80104CA4 /* 0x80104CA4 */
+	.4byte lbl_80104CA4 /* 0x80104CA4 */
+	.4byte lbl_80104CB8 /* 0x80104CB8 */
+	.4byte lbl_80104CCC /* 0x80104CCC */
+	.4byte lbl_80104CE0 /* 0x80104CE0 */
+	.4byte lbl_80104CF4 /* 0x80104CF4 */
+	.4byte lbl_80104D08 /* 0x80104D08 */
+	.4byte lbl_80104CF4 /* 0x80104CF4 */
+	.4byte lbl_80104C7C /* 0x80104C7C */
+	.4byte lbl_80104C90 /* 0x80104C90 */
+	.4byte lbl_80104C90 /* 0x80104C90 */
+	.4byte lbl_80104C90 /* 0x80104C90 */
+	.4byte lbl_80104C7C /* 0x80104C7C */
+	.4byte lbl_80104C7C /* 0x80104C7C */
 	.4byte lbl_80104D1C /* 0x80104D1C */
 	.4byte lbl_80104D1C /* 0x80104D1C */
 	.4byte lbl_80104D1C /* 0x80104D1C */
-	.4byte 0x80104C7C
-	.4byte 0x80104C7C
-	.4byte 0x80104C7C
-	.4byte 0x80104C7C
-	.4byte 0x80104C7C
+	.4byte lbl_80104C7C /* 0x80104C7C */
+	.4byte lbl_80104C7C /* 0x80104C7C */
+	.4byte lbl_80104C7C /* 0x80104C7C */
+	.4byte lbl_80104C7C /* 0x80104C7C */
+	.4byte lbl_80104C7C /* 0x80104C7C */
 	.4byte lbl_80104D1C /* 0x80104D1C */
 	.4byte lbl_80104D1C /* 0x80104D1C */
 	.4byte lbl_80104D1C /* 0x80104D1C */
-	.4byte 0x80104C7C
-	.4byte 0x80104C7C
-	.4byte 0x80104C7C
+	.4byte lbl_80104C7C /* 0x80104C7C */
+	.4byte lbl_80104C7C /* 0x80104C7C */
+	.4byte lbl_80104C7C /* 0x80104C7C */
 	.4byte lbl_80104D1C /* 0x80104D1C */
 lbl_8029677C:
 	.4byte 0x4E474E30

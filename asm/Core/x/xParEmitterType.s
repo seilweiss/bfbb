@@ -1363,10 +1363,12 @@ get_random_offset__29_esc__2_unnamed_esc__2_xParEmitterType_cpp_esc__2_FRC10xPEE
 /* 80119DC0 00116BC0  7C 03 00 2E */	lwzx r0, r3, r0
 /* 80119DC4 00116BC4  7C 09 03 A6 */	mtctr r0
 /* 80119DC8 00116BC8  4E 80 04 20 */	bctr 
+lbl_80119DCC:
 /* 80119DCC 00116BCC  C0 22 9F 78 */	lfs f1, lbl_803CE8F8@sda21(r2)
 /* 80119DD0 00116BD0  38 61 00 E0 */	addi r3, r1, 0xe0
 /* 80119DD4 00116BD4  4B F0 2A A5 */	bl __as__5xVec3Ff
 /* 80119DD8 00116BD8  48 00 03 B4 */	b lbl_8011A18C
+lbl_80119DDC:
 /* 80119DDC 00116BDC  4B F1 6E AD */	bl xurand__Fv
 /* 80119DE0 00116BE0  C0 02 9F 88 */	lfs f0, lbl_803CE908@sda21(r2)
 /* 80119DE4 00116BE4  EF 80 00 72 */	fmuls f28, f0, f1
@@ -1395,6 +1397,7 @@ get_random_offset__29_esc__2_unnamed_esc__2_xParEmitterType_cpp_esc__2_FRC10xPEE
 /* 80119E40 00116C40  EC 7D 06 F2 */	fmuls f3, f29, f27
 /* 80119E44 00116C44  4B EF 12 A9 */	bl assign__5xVec3Ffff
 /* 80119E48 00116C48  48 00 03 44 */	b lbl_8011A18C
+lbl_80119E4C:
 /* 80119E4C 00116C4C  4B F1 6E 3D */	bl xurand__Fv
 /* 80119E50 00116C50  C0 02 9F 88 */	lfs f0, lbl_803CE908@sda21(r2)
 /* 80119E54 00116C54  EF 60 00 72 */	fmuls f27, f0, f1
@@ -1413,6 +1416,7 @@ get_random_offset__29_esc__2_unnamed_esc__2_xParEmitterType_cpp_esc__2_FRC10xPEE
 /* 80119E88 00116C88  38 61 00 E0 */	addi r3, r1, 0xe0
 /* 80119E8C 00116C8C  4B EF 12 61 */	bl assign__5xVec3Ffff
 /* 80119E90 00116C90  48 00 02 FC */	b lbl_8011A18C
+lbl_80119E94:
 /* 80119E94 00116C94  4B F1 6D F5 */	bl xurand__Fv
 /* 80119E98 00116C98  C0 02 9F 88 */	lfs f0, lbl_803CE908@sda21(r2)
 /* 80119E9C 00116C9C  EF 60 00 72 */	fmuls f27, f0, f1
@@ -1440,6 +1444,7 @@ get_random_offset__29_esc__2_unnamed_esc__2_xParEmitterType_cpp_esc__2_FRC10xPEE
 /* 80119EF4 00116CF4  38 81 00 D4 */	addi r4, r1, 0xd4
 /* 80119EF8 00116CF8  4B EF 13 6D */	bl __as__5xVec3FRC5xVec3
 /* 80119EFC 00116CFC  48 00 02 90 */	b lbl_8011A18C
+lbl_80119F00:
 /* 80119F00 00116D00  4B F1 6D 89 */	bl xurand__Fv
 /* 80119F04 00116D04  C0 02 9F 88 */	lfs f0, lbl_803CE908@sda21(r2)
 /* 80119F08 00116D08  EF 60 00 72 */	fmuls f27, f0, f1
@@ -1467,6 +1472,7 @@ get_random_offset__29_esc__2_unnamed_esc__2_xParEmitterType_cpp_esc__2_FRC10xPEE
 /* 80119F60 00116D60  38 81 00 B0 */	addi r4, r1, 0xb0
 /* 80119F64 00116D64  4B EF 13 01 */	bl __as__5xVec3FRC5xVec3
 /* 80119F68 00116D68  48 00 02 24 */	b lbl_8011A18C
+lbl_80119F6C:
 /* 80119F6C 00116D6C  4B F1 6D 1D */	bl xurand__Fv
 /* 80119F70 00116D70  C0 02 9F 88 */	lfs f0, lbl_803CE908@sda21(r2)
 /* 80119F74 00116D74  EF 60 00 72 */	fmuls f27, f0, f1
@@ -1494,6 +1500,7 @@ get_random_offset__29_esc__2_unnamed_esc__2_xParEmitterType_cpp_esc__2_FRC10xPEE
 /* 80119FCC 00116DCC  38 81 00 8C */	addi r4, r1, 0x8c
 /* 80119FD0 00116DD0  4B EF 12 95 */	bl __as__5xVec3FRC5xVec3
 /* 80119FD4 00116DD4  48 00 01 B8 */	b lbl_8011A18C
+lbl_80119FD8:
 /* 80119FD8 00116DD8  4B F1 6C B1 */	bl xurand__Fv
 /* 80119FDC 00116DDC  C0 02 9F 88 */	lfs f0, lbl_803CE908@sda21(r2)
 /* 80119FE0 00116DE0  EF 60 00 72 */	fmuls f27, f0, f1
@@ -1516,6 +1523,7 @@ get_random_offset__29_esc__2_unnamed_esc__2_xParEmitterType_cpp_esc__2_FRC10xPEE
 /* 8011A024 00116E24  EC 7C 07 B2 */	fmuls f3, f28, f30
 /* 8011A028 00116E28  4B EF 10 C5 */	bl assign__5xVec3Ffff
 /* 8011A02C 00116E2C  48 00 01 60 */	b lbl_8011A18C
+lbl_8011A030:
 /* 8011A030 00116E30  4B F1 6C 59 */	bl xurand__Fv
 /* 8011A034 00116E34  C0 02 9F 88 */	lfs f0, lbl_803CE908@sda21(r2)
 /* 8011A038 00116E38  EF 60 00 72 */	fmuls f27, f0, f1
@@ -1532,6 +1540,7 @@ get_random_offset__29_esc__2_unnamed_esc__2_xParEmitterType_cpp_esc__2_FRC10xPEE
 /* 8011A064 00116E64  EC 20 00 72 */	fmuls f1, f0, f1
 /* 8011A068 00116E68  4B EF 10 85 */	bl assign__5xVec3Ffff
 /* 8011A06C 00116E6C  48 00 01 20 */	b lbl_8011A18C
+lbl_8011A070:
 /* 8011A070 00116E70  4B F1 6C 19 */	bl xurand__Fv
 /* 8011A074 00116E74  C0 02 9F 88 */	lfs f0, lbl_803CE908@sda21(r2)
 /* 8011A078 00116E78  C3 9E 00 10 */	lfs f28, 0x10(r30)
@@ -1556,6 +1565,7 @@ get_random_offset__29_esc__2_unnamed_esc__2_xParEmitterType_cpp_esc__2_FRC10xPEE
 /* 8011A0C4 00116EC4  38 81 00 68 */	addi r4, r1, 0x68
 /* 8011A0C8 00116EC8  4B EF 11 9D */	bl __as__5xVec3FRC5xVec3
 /* 8011A0CC 00116ECC  48 00 00 C0 */	b lbl_8011A18C
+lbl_8011A0D0:
 /* 8011A0D0 00116ED0  4B F1 6B B9 */	bl xurand__Fv
 /* 8011A0D4 00116ED4  C0 02 9F 88 */	lfs f0, lbl_803CE908@sda21(r2)
 /* 8011A0D8 00116ED8  C3 9E 00 10 */	lfs f28, 0x10(r30)
@@ -1580,6 +1590,7 @@ get_random_offset__29_esc__2_unnamed_esc__2_xParEmitterType_cpp_esc__2_FRC10xPEE
 /* 8011A124 00116F24  38 81 00 44 */	addi r4, r1, 0x44
 /* 8011A128 00116F28  4B EF 11 3D */	bl __as__5xVec3FRC5xVec3
 /* 8011A12C 00116F2C  48 00 00 60 */	b lbl_8011A18C
+lbl_8011A130:
 /* 8011A130 00116F30  4B F1 6B 59 */	bl xurand__Fv
 /* 8011A134 00116F34  C0 02 9F 88 */	lfs f0, lbl_803CE908@sda21(r2)
 /* 8011A138 00116F38  C3 9E 00 10 */	lfs f28, 0x10(r30)
@@ -1737,6 +1748,7 @@ get_random_offset__29_esc__2_unnamed_esc__2_xParEmitterType_cpp_esc__2_FRC6xBoun
 /* 8011A370 00117170  7C 03 00 2E */	lwzx r0, r3, r0
 /* 8011A374 00117174  7C 09 03 A6 */	mtctr r0
 /* 8011A378 00117178  4E 80 04 20 */	bctr 
+lbl_8011A37C:
 /* 8011A37C 0011717C  4B F1 69 0D */	bl xurand__Fv
 /* 8011A380 00117180  C0 02 9F 88 */	lfs f0, lbl_803CE908@sda21(r2)
 /* 8011A384 00117184  EF 60 00 72 */	fmuls f27, f0, f1
@@ -1766,6 +1778,7 @@ get_random_offset__29_esc__2_unnamed_esc__2_xParEmitterType_cpp_esc__2_FRC6xBoun
 /* 8011A3E4 001171E4  EC 7C 06 B2 */	fmuls f3, f28, f26
 /* 8011A3E8 001171E8  4B EF 0D 05 */	bl assign__5xVec3Ffff
 /* 8011A3EC 001171EC  48 00 03 98 */	b lbl_8011A784
+lbl_8011A3F0:
 /* 8011A3F0 001171F0  38 61 00 50 */	addi r3, r1, 0x50
 /* 8011A3F4 001171F4  38 9F 00 30 */	addi r4, r31, 0x30
 /* 8011A3F8 001171F8  38 BF 00 24 */	addi r5, r31, 0x24
@@ -1799,6 +1812,7 @@ get_random_offset__29_esc__2_unnamed_esc__2_xParEmitterType_cpp_esc__2_FRC6xBoun
 /* 8011A468 00117268  EC 00 00 72 */	fmuls f0, f0, f1
 /* 8011A46C 0011726C  D0 01 00 88 */	stfs f0, 0x88(r1)
 /* 8011A470 00117270  48 00 03 14 */	b lbl_8011A784
+lbl_8011A474:
 /* 8011A474 00117274  38 61 00 44 */	addi r3, r1, 0x44
 /* 8011A478 00117278  38 9F 00 30 */	addi r4, r31, 0x30
 /* 8011A47C 0011727C  48 00 04 01 */	bl __pl__5xVec3CFf
@@ -1831,6 +1845,7 @@ get_random_offset__29_esc__2_unnamed_esc__2_xParEmitterType_cpp_esc__2_FRC6xBoun
 /* 8011A4E8 001172E8  D0 01 00 88 */	stfs f0, 0x88(r1)
 /* 8011A4EC 001172EC  48 00 03 F1 */	bl xMat3x3RMulVec__FP5xVec3PC7xMat3x3PC5xVec3
 /* 8011A4F0 001172F0  48 00 02 94 */	b lbl_8011A784
+lbl_8011A4F4:
 /* 8011A4F4 001172F4  4B F1 67 95 */	bl xurand__Fv
 /* 8011A4F8 001172F8  C0 02 9F 88 */	lfs f0, lbl_803CE908@sda21(r2)
 /* 8011A4FC 001172FC  EF 40 00 72 */	fmuls f26, f0, f1
@@ -1854,6 +1869,7 @@ get_random_offset__29_esc__2_unnamed_esc__2_xParEmitterType_cpp_esc__2_FRC6xBoun
 /* 8011A544 00117344  EC 7B 07 72 */	fmuls f3, f27, f29
 /* 8011A548 00117348  4B EF 0B A5 */	bl assign__5xVec3Ffff
 /* 8011A54C 0011734C  48 00 02 38 */	b lbl_8011A784
+lbl_8011A550:
 /* 8011A550 00117350  4B F1 67 19 */	bl xrand__Fv
 /* 8011A554 00117354  3C 80 AA AB */	lis r4, 0xAAAAAAAB@ha
 /* 8011A558 00117358  54 60 9F 7B */	rlwinm. r0, r3, 0x13, 0x1d, 0x1d
@@ -1930,6 +1946,7 @@ lbl_8011A62C:
 /* 8011A660 00117460  38 81 00 38 */	addi r4, r1, 0x38
 /* 8011A664 00117464  4B EF 0C 01 */	bl __as__5xVec3FRC5xVec3
 /* 8011A668 00117468  48 00 01 1C */	b lbl_8011A784
+lbl_8011A66C:
 /* 8011A66C 0011746C  4B F1 65 FD */	bl xrand__Fv
 /* 8011A670 00117470  3C 80 AA AB */	lis r4, 0xAAAAAAAB@ha
 /* 8011A674 00117474  54 60 9F 7B */	rlwinm. r0, r3, 0x13, 0x1d, 0x1d
@@ -2276,31 +2293,31 @@ lbl_8026B258:
 
 .section .data
 lbl_80297DB8:
-	.4byte 0x80119DCC
-	.4byte 0x80119DDC
-	.4byte 0x80119E4C
-	.4byte 0x80119E94
-	.4byte 0x80119F00
-	.4byte 0x80119F6C
-	.4byte 0x80119FD8
-	.4byte 0x8011A030
-	.4byte 0x8011A070
-	.4byte 0x8011A0D0
-	.4byte 0x8011A130
+	.4byte lbl_80119DCC /* 0x80119DCC */
+	.4byte lbl_80119DDC /* 0x80119DDC */
+	.4byte lbl_80119E4C /* 0x80119E4C */
+	.4byte lbl_80119E94 /* 0x80119E94 */
+	.4byte lbl_80119F00 /* 0x80119F00 */
+	.4byte lbl_80119F6C /* 0x80119F6C */
+	.4byte lbl_80119FD8 /* 0x80119FD8 */
+	.4byte lbl_8011A030 /* 0x8011A030 */
+	.4byte lbl_8011A070 /* 0x8011A070 */
+	.4byte lbl_8011A0D0 /* 0x8011A0D0 */
+	.4byte lbl_8011A130 /* 0x8011A130 */
 lbl_80297DE4:
 	.4byte lbl_8011A784 /* 0x8011A784 */
-	.4byte 0x8011A37C
-	.4byte 0x8011A3F0
+	.4byte lbl_8011A37C /* 0x8011A37C */
+	.4byte lbl_8011A3F0 /* 0x8011A3F0 */
 	.4byte lbl_8011A784 /* 0x8011A784 */
-	.4byte 0x8011A474
-	.4byte lbl_8011A784 /* 0x8011A784 */
-	.4byte lbl_8011A784 /* 0x8011A784 */
+	.4byte lbl_8011A474 /* 0x8011A474 */
 	.4byte lbl_8011A784 /* 0x8011A784 */
 	.4byte lbl_8011A784 /* 0x8011A784 */
-	.4byte 0x8011A4F4
-	.4byte 0x8011A550
 	.4byte lbl_8011A784 /* 0x8011A784 */
-	.4byte 0x8011A66C
+	.4byte lbl_8011A784 /* 0x8011A784 */
+	.4byte lbl_8011A4F4 /* 0x8011A4F4 */
+	.4byte lbl_8011A550 /* 0x8011A550 */
+	.4byte lbl_8011A784 /* 0x8011A784 */
+	.4byte lbl_8011A66C /* 0x8011A66C */
 /* SPECULATION: link order */
 .global sBlendTable
 sBlendTable:

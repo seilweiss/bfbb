@@ -91,6 +91,7 @@ NPCC_MakeLightningInfo__F9en_npclytP16_tagLightningAdd:
 /* 80180E50 0017DC50  7C 03 00 2E */	lwzx r0, r3, r0
 /* 80180E54 0017DC54  7C 09 03 A6 */	mtctr r0
 /* 80180E58 0017DC58  4E 80 04 20 */	bctr 
+lbl_80180E5C:
 /* 80180E5C 0017DC5C  38 60 00 03 */	li r3, 3
 /* 80180E60 0017DC60  38 00 00 04 */	li r0, 4
 /* 80180E64 0017DC64  90 7F 00 00 */	stw r3, 0(r31)
@@ -134,6 +135,7 @@ NPCC_MakeLightningInfo__F9en_npclytP16_tagLightningAdd:
 /* 80180EFC 0017DCFC  EC 01 00 32 */	fmuls f0, f1, f0
 /* 80180F00 0017DD00  D0 1F 00 08 */	stfs f0, 8(r31)
 /* 80180F04 0017DD04  48 00 04 9C */	b lbl_801813A0
+lbl_80180F08:
 /* 80180F08 0017DD08  38 60 00 03 */	li r3, 3
 /* 80180F0C 0017DD0C  38 00 00 0A */	li r0, 0xa
 /* 80180F10 0017DD10  90 7F 00 00 */	stw r3, 0(r31)
@@ -177,6 +179,7 @@ NPCC_MakeLightningInfo__F9en_npclytP16_tagLightningAdd:
 /* 80180FA8 0017DDA8  EC 01 00 32 */	fmuls f0, f1, f0
 /* 80180FAC 0017DDAC  D0 1F 00 08 */	stfs f0, 8(r31)
 /* 80180FB0 0017DDB0  48 00 03 F0 */	b lbl_801813A0
+lbl_80180FB4:
 /* 80180FB4 0017DDB4  38 60 00 03 */	li r3, 3
 /* 80180FB8 0017DDB8  38 00 00 0A */	li r0, 0xa
 /* 80180FBC 0017DDBC  90 7F 00 00 */	stw r3, 0(r31)
@@ -220,6 +223,7 @@ NPCC_MakeLightningInfo__F9en_npclytP16_tagLightningAdd:
 /* 80181054 0017DE54  EC 01 00 32 */	fmuls f0, f1, f0
 /* 80181058 0017DE58  D0 1F 00 08 */	stfs f0, 8(r31)
 /* 8018105C 0017DE5C  48 00 03 44 */	b lbl_801813A0
+lbl_80181060:
 /* 80181060 0017DE60  38 60 00 03 */	li r3, 3
 /* 80181064 0017DE64  38 00 00 04 */	li r0, 4
 /* 80181068 0017DE68  90 7F 00 00 */	stw r3, 0(r31)
@@ -269,6 +273,7 @@ NPCC_MakeLightningInfo__F9en_npclytP16_tagLightningAdd:
 /* 80181118 0017DF18  EC 01 00 32 */	fmuls f0, f1, f0
 /* 8018111C 0017DF1C  D0 1F 00 08 */	stfs f0, 8(r31)
 /* 80181120 0017DF20  48 00 02 80 */	b lbl_801813A0
+lbl_80181124:
 /* 80181124 0017DF24  38 60 00 03 */	li r3, 3
 /* 80181128 0017DF28  38 00 00 04 */	li r0, 4
 /* 8018112C 0017DF2C  90 7F 00 00 */	stw r3, 0(r31)
@@ -312,6 +317,7 @@ NPCC_MakeLightningInfo__F9en_npclytP16_tagLightningAdd:
 /* 801811C4 0017DFC4  EC 01 00 32 */	fmuls f0, f1, f0
 /* 801811C8 0017DFC8  D0 1F 00 08 */	stfs f0, 8(r31)
 /* 801811CC 0017DFCC  48 00 01 D4 */	b lbl_801813A0
+lbl_801811D0:
 /* 801811D0 0017DFD0  38 60 00 03 */	li r3, 3
 /* 801811D4 0017DFD4  38 00 00 08 */	li r0, 8
 /* 801811D8 0017DFD8  90 7F 00 00 */	stw r3, 0(r31)
@@ -355,6 +361,7 @@ NPCC_MakeLightningInfo__F9en_npclytP16_tagLightningAdd:
 /* 80181270 0017E070  EC 01 00 32 */	fmuls f0, f1, f0
 /* 80181274 0017E074  D0 1F 00 08 */	stfs f0, 8(r31)
 /* 80181278 0017E078  48 00 01 28 */	b lbl_801813A0
+lbl_8018127C:
 /* 8018127C 0017E07C  38 60 00 03 */	li r3, 3
 /* 80181280 0017E080  38 00 00 0C */	li r0, 0xc
 /* 80181284 0017E084  90 7F 00 00 */	stw r3, 0(r31)
@@ -392,6 +399,7 @@ NPCC_MakeLightningInfo__F9en_npclytP16_tagLightningAdd:
 /* 80181304 0017E104  EC 01 00 32 */	fmuls f0, f1, f0
 /* 80181308 0017E108  D0 1F 00 08 */	stfs f0, 8(r31)
 /* 8018130C 0017E10C  48 00 00 94 */	b lbl_801813A0
+lbl_80181310:
 /* 80181310 0017E110  38 60 00 03 */	li r3, 3
 /* 80181314 0017E114  38 00 00 08 */	li r0, 8
 /* 80181318 0017E118  90 7F 00 00 */	stw r3, 0(r31)
@@ -454,6 +462,7 @@ NPCC_MakeStreakInfo__F12en_npcstreakP10StreakInfo:
 /* 801813EC 0017E1EC  7C 03 00 2E */	lwzx r0, r3, r0
 /* 801813F0 0017E1F0  7C 09 03 A6 */	mtctr r0
 /* 801813F4 0017E1F4  4E 80 04 20 */	bctr 
+lbl_801813F8:
 /* 801813F8 0017E1F8  C0 02 AE D4 */	lfs f0, lbl_803CF854@sda21(r2)
 /* 801813FC 0017E1FC  38 80 00 F0 */	li r4, 0xf0
 /* 80181400 0017E200  38 60 00 40 */	li r3, 0x40
@@ -468,6 +477,7 @@ NPCC_MakeStreakInfo__F12en_npcstreakP10StreakInfo:
 /* 80181424 0017E224  98 7F 00 16 */	stb r3, 0x16(r31)
 /* 80181428 0017E228  98 7F 00 17 */	stb r3, 0x17(r31)
 /* 8018142C 0017E22C  48 00 01 B0 */	b lbl_801815DC
+lbl_80181430:
 /* 80181430 0017E230  C0 02 AE D4 */	lfs f0, lbl_803CF854@sda21(r2)
 /* 80181434 0017E234  38 A0 00 00 */	li r5, 0
 /* 80181438 0017E238  38 80 00 FF */	li r4, 0xff
@@ -487,6 +497,7 @@ NPCC_MakeStreakInfo__F12en_npcstreakP10StreakInfo:
 /* 80181470 0017E270  98 7F 00 12 */	stb r3, 0x12(r31)
 /* 80181474 0017E274  98 1F 00 13 */	stb r0, 0x13(r31)
 /* 80181478 0017E278  48 00 01 64 */	b lbl_801815DC
+lbl_8018147C:
 /* 8018147C 0017E27C  38 60 00 FF */	li r3, 0xff
 /* 80181480 0017E280  38 00 00 F0 */	li r0, 0xf0
 /* 80181484 0017E284  98 7F 00 14 */	stb r3, 0x14(r31)
@@ -500,6 +511,7 @@ NPCC_MakeStreakInfo__F12en_npcstreakP10StreakInfo:
 /* 801814A4 0017E2A4  C0 02 AE E0 */	lfs f0, lbl_803CF860@sda21(r2)
 /* 801814A8 0017E2A8  D0 1F 00 00 */	stfs f0, 0(r31)
 /* 801814AC 0017E2AC  48 00 01 30 */	b lbl_801815DC
+lbl_801814B0:
 /* 801814B0 0017E2B0  38 60 00 B0 */	li r3, 0xb0
 /* 801814B4 0017E2B4  38 00 00 30 */	li r0, 0x30
 /* 801814B8 0017E2B8  98 7F 00 14 */	stb r3, 0x14(r31)
@@ -518,6 +530,7 @@ NPCC_MakeStreakInfo__F12en_npcstreakP10StreakInfo:
 /* 801814EC 0017E2EC  D0 1F 00 00 */	stfs f0, 0(r31)
 /* 801814F0 0017E2F0  90 1F 00 18 */	stw r0, 0x18(r31)
 /* 801814F4 0017E2F4  48 00 00 E8 */	b lbl_801815DC
+lbl_801814F8:
 /* 801814F8 0017E2F8  38 C0 00 66 */	li r6, 0x66
 /* 801814FC 0017E2FC  38 A0 00 20 */	li r5, 0x20
 /* 80181500 0017E300  98 DF 00 14 */	stb r6, 0x14(r31)
@@ -535,6 +548,7 @@ NPCC_MakeStreakInfo__F12en_npcstreakP10StreakInfo:
 /* 80181530 0017E330  D0 1F 00 00 */	stfs f0, 0(r31)
 /* 80181534 0017E334  90 1F 00 18 */	stw r0, 0x18(r31)
 /* 80181538 0017E338  48 00 00 A4 */	b lbl_801815DC
+lbl_8018153C:
 /* 8018153C 0017E33C  38 60 00 FF */	li r3, 0xff
 /* 80181540 0017E340  38 00 00 F0 */	li r0, 0xf0
 /* 80181544 0017E344  98 7F 00 14 */	stb r3, 0x14(r31)
@@ -548,6 +562,7 @@ NPCC_MakeStreakInfo__F12en_npcstreakP10StreakInfo:
 /* 80181564 0017E364  C0 02 AE C0 */	lfs f0, lbl_803CF840@sda21(r2)
 /* 80181568 0017E368  D0 1F 00 00 */	stfs f0, 0(r31)
 /* 8018156C 0017E36C  48 00 00 70 */	b lbl_801815DC
+lbl_80181570:
 /* 80181570 0017E370  38 80 00 FF */	li r4, 0xff
 /* 80181574 0017E374  38 60 00 40 */	li r3, 0x40
 /* 80181578 0017E378  98 9F 00 14 */	stb r4, 0x14(r31)
@@ -562,6 +577,7 @@ NPCC_MakeStreakInfo__F12en_npcstreakP10StreakInfo:
 /* 8018159C 0017E39C  C0 02 AE E4 */	lfs f0, lbl_803CF864@sda21(r2)
 /* 801815A0 0017E3A0  D0 1F 00 00 */	stfs f0, 0(r31)
 /* 801815A4 0017E3A4  48 00 00 38 */	b lbl_801815DC
+lbl_801815A8:
 /* 801815A8 0017E3A8  38 80 00 40 */	li r4, 0x40
 /* 801815AC 0017E3AC  38 60 00 FF */	li r3, 0xff
 /* 801815B0 0017E3B0  98 9F 00 14 */	stb r4, 0x14(r31)
@@ -6294,23 +6310,23 @@ lbl_80273240:
 
 .section .data
 lbl_8029B8A0:
-	.4byte 0x80180E5C
-	.4byte 0x80180F08
-	.4byte 0x80180FB4
-	.4byte 0x80181060
-	.4byte 0x80181124
-	.4byte 0x8018127C
-	.4byte 0x80181310
-	.4byte 0x801811D0
+	.4byte lbl_80180E5C /* 0x80180E5C */
+	.4byte lbl_80180F08 /* 0x80180F08 */
+	.4byte lbl_80180FB4 /* 0x80180FB4 */
+	.4byte lbl_80181060 /* 0x80181060 */
+	.4byte lbl_80181124 /* 0x80181124 */
+	.4byte lbl_8018127C /* 0x8018127C */
+	.4byte lbl_80181310 /* 0x80181310 */
+	.4byte lbl_801811D0 /* 0x801811D0 */
 lbl_8029B8C0:
-	.4byte 0x801813F8
-	.4byte 0x80181430
-	.4byte 0x801814B0
-	.4byte 0x801814F8
-	.4byte 0x8018147C
-	.4byte 0x8018153C
-	.4byte 0x80181570
-	.4byte 0x801815A8
+	.4byte lbl_801813F8 /* 0x801813F8 */
+	.4byte lbl_80181430 /* 0x80181430 */
+	.4byte lbl_801814B0 /* 0x801814B0 */
+	.4byte lbl_801814F8 /* 0x801814F8 */
+	.4byte lbl_8018147C /* 0x8018147C */
+	.4byte lbl_8018153C /* 0x8018153C */
+	.4byte lbl_80181570 /* 0x80181570 */
+	.4byte lbl_801815A8 /* 0x801815A8 */
 lbl_8029B8E0:
 	.4byte 0x00000000
 	.4byte 0x00000000

@@ -33938,7 +33938,7 @@ LogoData:
 	.4byte 0x4B4E803C
 	.4byte 0xF91B291C
 	.4byte 0xFDB3F200
-	.4byte 0x80139664
+	.4byte lbl_80139664 /* 0x80139664 */
 	.4byte 0x9CAE6F49
 	.4byte 0xD6030048
 	.4byte 0xEF1749F2
@@ -35099,7 +35099,7 @@ LogoData:
 	.4byte 0x1DBD7A56
 	.4byte 0xAB735896
 	.4byte 0xF3121BB8
-	.4byte 0x80244080
+	.4byte lbl_80244080 /* 0x80244080 */
 	.4byte 0xA73C6577
 	.4byte 0xFA1A006F
 	.4byte 0x0135CBAA
@@ -36248,7 +36248,7 @@ LogoData:
 	.4byte 0xF08DAF16
 	.4byte 0x84400864
 	.4byte 0xBBF78038
-	.4byte 0x8017F81C
+	.4byte lbl_8017F81C /* 0x8017F81C */
 	.4byte 0x77D78685
 	.4byte 0xDD73C05A
 	.4byte 0x3DAF0103
@@ -37438,7 +37438,7 @@ LogoData:
 	.4byte 0x37F159AF
 	.4byte 0xCE214EBF
 	.4byte 0x823145D6
-	.4byte 0x80036E00
+	.4byte lbl_80036E00 /* 0x80036E00 */
 	.4byte 0x603D1BDA
 	.4byte 0x205BEC12
 	.4byte 0x9EC83DF1

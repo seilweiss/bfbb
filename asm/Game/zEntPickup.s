@@ -493,6 +493,7 @@ lbl_80062E58:
 /* 80062EB4 0005FCB4  7C 05 00 2E */	lwzx r0, r5, r0
 /* 80062EB8 0005FCB8  7C 09 03 A6 */	mtctr r0
 /* 80062EBC 0005FCBC  4E 80 04 20 */	bctr 
+lbl_80062EC0:
 /* 80062EC0 0005FCC0  80 03 01 B4 */	lwz r0, 0x1b4(r3)
 /* 80062EC4 0005FCC4  60 00 00 01 */	ori r0, r0, 1
 /* 80062EC8 0005FCC8  90 03 01 B4 */	stw r0, 0x1b4(r3)
@@ -500,6 +501,7 @@ lbl_80062E58:
 /* 80062ED0 0005FCD0  60 00 00 02 */	ori r0, r0, 2
 /* 80062ED4 0005FCD4  90 03 01 B4 */	stw r0, 0x1b4(r3)
 /* 80062ED8 0005FCD8  93 A3 01 E4 */	stw r29, 0x1e4(r3)
+lbl_80062EDC:
 /* 80062EDC 0005FCDC  80 9D 00 10 */	lwz r4, 0x10(r29)
 /* 80062EE0 0005FCE0  38 84 00 20 */	addi r4, r4, 0x20
 lbl_80062EE4:
@@ -832,6 +834,7 @@ lbl_80063360:
 /* 80063388 00060188  7C 03 00 2E */	lwzx r0, r3, r0
 /* 8006338C 0006018C  7C 09 03 A6 */	mtctr r0
 /* 80063390 00060190  4E 80 04 20 */	bctr 
+lbl_80063394:
 /* 80063394 00060194  3C 60 80 3C */	lis r3, globals@ha
 /* 80063398 00060198  80 9E 16 B0 */	lwz r4, 0x16b0(r30)
 /* 8006339C 0006019C  38 63 05 58 */	addi r3, r3, globals@l
@@ -841,6 +844,7 @@ lbl_80063360:
 /* 800633AC 000601AC  7F A3 EB 78 */	mr r3, r29
 /* 800633B0 000601B0  48 00 02 19 */	bl zEntPickup_DoPickup__FP10zEntPickup
 /* 800633B4 000601B4  48 00 01 EC */	b lbl_800635A0
+lbl_800633B8:
 /* 800633B8 000601B8  3B C0 00 00 */	li r30, 0
 lbl_800633BC:
 /* 800633BC 000601BC  4B FC D8 CD */	bl xurand__Fv
@@ -861,6 +865,7 @@ lbl_800633BC:
 /* 800633F8 000601F8  7F A3 EB 78 */	mr r3, r29
 /* 800633FC 000601FC  48 00 01 CD */	bl zEntPickup_DoPickup__FP10zEntPickup
 /* 80063400 00060200  48 00 01 A0 */	b lbl_800635A0
+lbl_80063404:
 /* 80063404 00060204  48 0A F0 69 */	bl active__12bungee_stateFv
 /* 80063408 00060208  54 60 06 3F */	clrlwi. r0, r3, 0x18
 /* 8006340C 0006020C  41 82 00 18 */	beq lbl_80063424
@@ -948,6 +953,7 @@ lbl_80063500:
 /* 80063540 00060340  7F A3 EB 78 */	mr r3, r29
 /* 80063544 00060344  48 00 00 85 */	bl zEntPickup_DoPickup__FP10zEntPickup
 /* 80063548 00060348  48 00 00 58 */	b lbl_800635A0
+lbl_8006354C:
 /* 8006354C 0006034C  C0 22 8B 74 */	lfs f1, lbl_803CD4F4@sda21(r2)
 /* 80063550 00060350  C0 1F 07 74 */	lfs f0, 0x774(r31)
 /* 80063554 00060354  EC 01 00 32 */	fmuls f0, f1, f0
@@ -961,12 +967,15 @@ lbl_80063500:
 /* 80063574 00060374  7F A3 EB 78 */	mr r3, r29
 /* 80063578 00060378  48 00 00 51 */	bl zEntPickup_DoPickup__FP10zEntPickup
 /* 8006357C 0006037C  48 00 00 24 */	b lbl_800635A0
+lbl_80063580:
 /* 80063580 00060380  7F A3 EB 78 */	mr r3, r29
 /* 80063584 00060384  48 00 00 45 */	bl zEntPickup_DoPickup__FP10zEntPickup
 /* 80063588 00060388  48 00 00 18 */	b lbl_800635A0
+lbl_8006358C:
 /* 8006358C 0006038C  7F A3 EB 78 */	mr r3, r29
 /* 80063590 00060390  48 00 00 39 */	bl zEntPickup_DoPickup__FP10zEntPickup
 /* 80063594 00060394  48 00 00 0C */	b lbl_800635A0
+lbl_80063598:
 /* 80063598 00060398  7F A3 EB 78 */	mr r3, r29
 /* 8006359C 0006039C  48 00 00 2D */	bl zEntPickup_DoPickup__FP10zEntPickup
 lbl_800635A0:
@@ -1122,6 +1131,7 @@ lbl_80063794:
 /* 800637B4 000605B4  7C 03 00 2E */	lwzx r0, r3, r0
 /* 800637B8 000605B8  7C 09 03 A6 */	mtctr r0
 /* 800637BC 000605BC  4E 80 04 20 */	bctr 
+lbl_800637C0:
 /* 800637C0 000605C0  80 0D 8C 98 */	lwz r0, lbl_803CB598@sda21(r13)
 /* 800637C4 000605C4  7C 00 F8 40 */	cmplw r0, r31
 /* 800637C8 000605C8  41 82 01 28 */	beq lbl_800638F0
@@ -1131,6 +1141,7 @@ lbl_80063794:
 /* 800637D8 000605D8  38 03 00 01 */	addi r0, r3, 1
 /* 800637DC 000605DC  90 04 1B 04 */	stw r0, 0x1b04(r4)
 /* 800637E0 000605E0  48 00 01 10 */	b lbl_800638F0
+lbl_800637E4:
 /* 800637E4 000605E4  3C 60 80 3C */	lis r3, globals@ha
 /* 800637E8 000605E8  38 83 05 58 */	addi r4, r3, globals@l
 /* 800637EC 000605EC  80 64 16 B0 */	lwz r3, 0x16b0(r4)
@@ -1143,6 +1154,7 @@ lbl_80063794:
 /* 80063808 00060608  40 81 00 E8 */	ble lbl_800638F0
 /* 8006380C 0006060C  90 A4 16 B0 */	stw r5, 0x16b0(r4)
 /* 80063810 00060610  48 00 00 E0 */	b lbl_800638F0
+lbl_80063814:
 /* 80063814 00060614  3C 60 80 3C */	lis r3, globals@ha
 /* 80063818 00060618  38 83 05 58 */	addi r4, r3, globals@l
 /* 8006381C 0006061C  80 64 17 38 */	lwz r3, 0x1738(r4)
@@ -1174,6 +1186,7 @@ lbl_80063870:
 /* 80063878 00060678  38 60 00 51 */	li r3, 0x51
 /* 8006387C 0006067C  48 01 CF FD */	bl zEntPlayer_SNDPlayStream__F20_tagePlayerStreamSnd
 /* 80063880 00060680  48 00 00 70 */	b lbl_800638F0
+lbl_80063884:
 /* 80063884 00060684  3C 60 80 3C */	lis r3, globals@ha
 /* 80063888 00060688  38 63 05 58 */	addi r3, r3, globals@l
 /* 8006388C 0006068C  C0 23 08 78 */	lfs f1, 0x878(r3)
@@ -1181,12 +1194,15 @@ lbl_80063870:
 /* 80063894 00060694  D0 23 17 0C */	stfs f1, 0x170c(r3)
 /* 80063898 00060698  D0 03 16 B8 */	stfs f0, 0x16b8(r3)
 /* 8006389C 0006069C  48 00 00 54 */	b lbl_800638F0
+lbl_800638A0:
 /* 800638A0 000606A0  38 60 00 01 */	li r3, 1
 /* 800638A4 000606A4  48 01 32 39 */	bl zEntPlayer_GivePatsSocksCurrentLevel__Fi
 /* 800638A8 000606A8  48 00 00 48 */	b lbl_800638F0
+lbl_800638AC:
 /* 800638AC 000606AC  38 60 00 01 */	li r3, 1
 /* 800638B0 000606B0  48 01 29 55 */	bl zEntPlayer_setBoulderMode__FUi
 /* 800638B4 000606B4  48 00 00 3C */	b lbl_800638F0
+lbl_800638B8:
 /* 800638B8 000606B8  48 05 15 09 */	bl zSceneGetLevelIndex__Fv
 /* 800638BC 000606BC  3C 80 80 3C */	lis r4, globals@ha
 /* 800638C0 000606C0  54 65 10 3A */	slwi r5, r3, 2
@@ -1303,6 +1319,7 @@ lbl_80063A48:
 /* 80063A60 00060860  7C 03 00 2E */	lwzx r0, r3, r0
 /* 80063A64 00060864  7C 09 03 A6 */	mtctr r0
 /* 80063A68 00060868  4E 80 04 20 */	bctr 
+lbl_80063A6C:
 /* 80063A6C 0006086C  C0 22 8B 5C */	lfs f1, lbl_803CD4DC@sda21(r2)
 /* 80063A70 00060870  38 60 00 23 */	li r3, 0x23
 /* 80063A74 00060874  48 01 CD 1D */	bl zEntPlayer_SNDPlay__F14_tagePlayerSndf
@@ -1311,6 +1328,7 @@ lbl_80063A48:
 /* 80063A80 00060880  38 80 00 06 */	li r4, 6
 /* 80063A84 00060884  48 01 D0 3D */	bl zEntPlayer_SNDPlayStreamRandom__F20_tagePlayerStreamSnd20_tagePlayerStreamSndf
 /* 80063A88 00060888  48 00 00 38 */	b lbl_80063AC0
+lbl_80063A8C:
 /* 80063A8C 0006088C  4B FC D1 DD */	bl xrand__Fv
 /* 80063A90 00060890  54 60 07 BE */	clrlwi r0, r3, 0x1e
 /* 80063A94 00060894  28 00 00 03 */	cmplwi r0, 3
@@ -1320,6 +1338,7 @@ lbl_80063A48:
 /* 80063AA4 000608A4  38 80 00 03 */	li r4, 3
 /* 80063AA8 000608A8  48 01 D0 19 */	bl zEntPlayer_SNDPlayStreamRandom__F20_tagePlayerStreamSnd20_tagePlayerStreamSndf
 /* 80063AAC 000608AC  48 00 00 14 */	b lbl_80063AC0
+lbl_80063AB0:
 /* 80063AB0 000608B0  C0 22 8B 5C */	lfs f1, lbl_803CD4DC@sda21(r2)
 /* 80063AB4 000608B4  38 60 00 4D */	li r3, 0x4d
 /* 80063AB8 000608B8  38 80 00 4D */	li r4, 0x4d
@@ -4203,7 +4222,7 @@ lbl_8028C720:
 lbl_8028C7C0:
 	.4byte lbl_80062EE4 /* 0x80062EE4 */
 	.4byte lbl_80062EE4 /* 0x80062EE4 */
-	.4byte 0x80062EC0
+	.4byte lbl_80062EC0 /* 0x80062EC0 */
 	.4byte lbl_80062EE4 /* 0x80062EE4 */
 	.4byte lbl_80062EE4 /* 0x80062EE4 */
 	.4byte lbl_80062EE4 /* 0x80062EE4 */
@@ -4212,8 +4231,8 @@ lbl_8028C7C0:
 	.4byte lbl_80062EE4 /* 0x80062EE4 */
 	.4byte lbl_80062EE4 /* 0x80062EE4 */
 	.4byte lbl_80062EE4 /* 0x80062EE4 */
-	.4byte 0x80062EDC
-	.4byte 0x80062EDC
+	.4byte lbl_80062EDC /* 0x80062EDC */
+	.4byte lbl_80062EDC /* 0x80062EDC */
 	.4byte lbl_80062EE4 /* 0x80062EE4 */
 	.4byte lbl_80062EE4 /* 0x80062EE4 */
 	.4byte lbl_80062EE4 /* 0x80062EE4 */
@@ -4225,63 +4244,63 @@ lbl_8028C7C0:
 	.4byte lbl_80062EE4 /* 0x80062EE4 */
 	.4byte lbl_80062EE4 /* 0x80062EE4 */
 	.4byte lbl_80062EE4 /* 0x80062EE4 */
-	.4byte 0x80062EDC
+	.4byte lbl_80062EDC /* 0x80062EDC */
 	.4byte lbl_80062EE4 /* 0x80062EE4 */
 	.4byte lbl_80062EE4 /* 0x80062EE4 */
-	.4byte 0x80062EDC
-	.4byte lbl_80062EE4 /* 0x80062EE4 */
-	.4byte lbl_80062EE4 /* 0x80062EE4 */
-	.4byte lbl_80062EE4 /* 0x80062EE4 */
+	.4byte lbl_80062EDC /* 0x80062EDC */
 	.4byte lbl_80062EE4 /* 0x80062EE4 */
 	.4byte lbl_80062EE4 /* 0x80062EE4 */
 	.4byte lbl_80062EE4 /* 0x80062EE4 */
 	.4byte lbl_80062EE4 /* 0x80062EE4 */
-	.4byte 0x80062EDC
+	.4byte lbl_80062EE4 /* 0x80062EE4 */
+	.4byte lbl_80062EE4 /* 0x80062EE4 */
+	.4byte lbl_80062EE4 /* 0x80062EE4 */
+	.4byte lbl_80062EDC /* 0x80062EDC */
 lbl_8028C850:
-	.4byte 0x80063404
-	.4byte 0x80063394
-	.4byte 0x80063580
+	.4byte lbl_80063404 /* 0x80063404 */
+	.4byte lbl_80063394 /* 0x80063394 */
+	.4byte lbl_80063580 /* 0x80063580 */
 	.4byte lbl_800635A0 /* 0x800635A0 */
-	.4byte 0x80063580
-	.4byte 0x80063580
-	.4byte 0x800633B8
-	.4byte 0x8006354C
-	.4byte 0x8006358C
-	.4byte 0x8006358C
-	.4byte 0x80063598
-	.4byte 0x8006358C
-	.4byte 0x80063598
-	.4byte 0x80063598
-	.4byte 0x80063598
+	.4byte lbl_80063580 /* 0x80063580 */
+	.4byte lbl_80063580 /* 0x80063580 */
+	.4byte lbl_800633B8 /* 0x800633B8 */
+	.4byte lbl_8006354C /* 0x8006354C */
+	.4byte lbl_8006358C /* 0x8006358C */
+	.4byte lbl_8006358C /* 0x8006358C */
+	.4byte lbl_80063598 /* 0x80063598 */
+	.4byte lbl_8006358C /* 0x8006358C */
+	.4byte lbl_80063598 /* 0x80063598 */
+	.4byte lbl_80063598 /* 0x80063598 */
+	.4byte lbl_80063598 /* 0x80063598 */
 lbl_8028C88C:
-	.4byte 0x800637C0
-	.4byte 0x800637E4
-	.4byte 0x80063814
+	.4byte lbl_800637C0 /* 0x800637C0 */
+	.4byte lbl_800637E4 /* 0x800637E4 */
+	.4byte lbl_80063814 /* 0x80063814 */
 	.4byte lbl_800638F0 /* 0x800638F0 */
 	.4byte lbl_800638F0 /* 0x800638F0 */
-	.4byte 0x80063884
-	.4byte 0x800638A0
-	.4byte 0x800638AC
-	.4byte 0x800638B8
-	.4byte 0x800638B8
-	.4byte 0x800638B8
-	.4byte 0x800638B8
-	.4byte 0x800638B8
+	.4byte lbl_80063884 /* 0x80063884 */
+	.4byte lbl_800638A0 /* 0x800638A0 */
+	.4byte lbl_800638AC /* 0x800638AC */
+	.4byte lbl_800638B8 /* 0x800638B8 */
+	.4byte lbl_800638B8 /* 0x800638B8 */
+	.4byte lbl_800638B8 /* 0x800638B8 */
+	.4byte lbl_800638B8 /* 0x800638B8 */
+	.4byte lbl_800638B8 /* 0x800638B8 */
 	.4byte lbl_800638F0 /* 0x800638F0 */
-	.4byte 0x800638B8
+	.4byte lbl_800638B8 /* 0x800638B8 */
 lbl_8028C8C8:
 	.4byte lbl_80063AC0 /* 0x80063AC0 */
-	.4byte 0x80063A6C
+	.4byte lbl_80063A6C /* 0x80063A6C */
 	.4byte lbl_80063AC0 /* 0x80063AC0 */
 	.4byte lbl_80063AC0 /* 0x80063AC0 */
 	.4byte lbl_80063AC0 /* 0x80063AC0 */
 	.4byte lbl_80063AC0 /* 0x80063AC0 */
-	.4byte 0x80063A8C
+	.4byte lbl_80063A8C /* 0x80063A8C */
 	.4byte lbl_80063AC0 /* 0x80063AC0 */
-	.4byte 0x80063AB0
-	.4byte 0x80063AB0
+	.4byte lbl_80063AB0 /* 0x80063AB0 */
+	.4byte lbl_80063AB0 /* 0x80063AB0 */
 	.4byte lbl_80063AC0 /* 0x80063AC0 */
-	.4byte 0x80063AB0
+	.4byte lbl_80063AB0 /* 0x80063AB0 */
 /* SPECULATION: link order */
 .global zPickupAuraTable
 zPickupAuraTable:

@@ -301,27 +301,32 @@ lbl_8000A908:
 /* 8000A930 00007730  7C 03 00 2E */	lwzx r0, r3, r0
 /* 8000A934 00007734  7C 09 03 A6 */	mtctr r0
 /* 8000A938 00007738  4E 80 04 20 */	bctr 
+lbl_8000A93C:
 /* 8000A93C 0000773C  7F E5 FB 78 */	mr r5, r31
 /* 8000A940 00007740  38 7D 00 24 */	addi r3, r29, 0x24
 /* 8000A944 00007744  38 9E 00 24 */	addi r4, r30, 0x24
 /* 8000A948 00007748  48 00 48 A1 */	bl xSphereHitsSphere__FPC7xSpherePC7xSphereP7xCollis
 /* 8000A94C 0000774C  48 00 00 58 */	b lbl_8000A9A4
+lbl_8000A950:
 /* 8000A950 00007750  80 BE 00 48 */	lwz r5, 0x48(r30)
 /* 8000A954 00007754  7F E6 FB 78 */	mr r6, r31
 /* 8000A958 00007758  38 7D 00 24 */	addi r3, r29, 0x24
 /* 8000A95C 0000775C  38 9E 00 30 */	addi r4, r30, 0x30
 /* 8000A960 00007760  4B FF FF 49 */	bl xBoundSphereHitsOBB__FPC7xSpherePC4xBoxPC7xMat4x3P7xCollis
 /* 8000A964 00007764  48 00 00 40 */	b lbl_8000A9A4
+lbl_8000A968:
 /* 8000A968 00007768  7F E5 FB 78 */	mr r5, r31
 /* 8000A96C 0000776C  38 7D 00 24 */	addi r3, r29, 0x24
 /* 8000A970 00007770  38 9E 00 30 */	addi r4, r30, 0x30
 /* 8000A974 00007774  48 00 49 DD */	bl xSphereHitsBox__FPC7xSpherePC4xBoxP7xCollis
 /* 8000A978 00007778  48 00 00 2C */	b lbl_8000A9A4
+lbl_8000A97C:
 /* 8000A97C 0000777C  7F E5 FB 78 */	mr r5, r31
 /* 8000A980 00007780  38 7D 00 30 */	addi r3, r29, 0x30
 /* 8000A984 00007784  38 9E 00 24 */	addi r4, r30, 0x24
 /* 8000A988 00007788  48 00 59 95 */	bl xBoxHitsSphere__FPC4xBoxPC7xSphereP7xCollis
 /* 8000A98C 0000778C  48 00 00 18 */	b lbl_8000A9A4
+lbl_8000A990:
 /* 8000A990 00007790  80 BE 00 48 */	lwz r5, 0x48(r30)
 /* 8000A994 00007794  7F E6 FB 78 */	mr r6, r31
 /* 8000A998 00007798  38 7D 00 30 */	addi r3, r29, 0x30
@@ -1004,22 +1009,15 @@ xDrawSphere2__FPC7xSphereUi:
 
 .section .data
 lbl_8027B380:
-	.4byte 0x8000A93C
-	.4byte 0x8000A97C
+	.4byte lbl_8000A93C /* 0x8000A93C */
+	.4byte lbl_8000A97C /* 0x8000A97C */
 	.4byte lbl_8000A9A4 /* 0x8000A9A4 */
 	.4byte lbl_8000A9A4 /* 0x8000A9A4 */
 	.4byte lbl_8000A9A4 /* 0x8000A9A4 */
 	.4byte lbl_8000A9A4 /* 0x8000A9A4 */
 	.4byte lbl_8000A9A4 /* 0x8000A9A4 */
 	.4byte lbl_8000A9A4 /* 0x8000A9A4 */
-	.4byte 0x8000A968
-	.4byte lbl_8000A9A4 /* 0x8000A9A4 */
-	.4byte lbl_8000A9A4 /* 0x8000A9A4 */
-	.4byte lbl_8000A9A4 /* 0x8000A9A4 */
-	.4byte lbl_8000A9A4 /* 0x8000A9A4 */
-	.4byte lbl_8000A9A4 /* 0x8000A9A4 */
-	.4byte lbl_8000A9A4 /* 0x8000A9A4 */
-	.4byte lbl_8000A9A4 /* 0x8000A9A4 */
+	.4byte lbl_8000A968 /* 0x8000A968 */
 	.4byte lbl_8000A9A4 /* 0x8000A9A4 */
 	.4byte lbl_8000A9A4 /* 0x8000A9A4 */
 	.4byte lbl_8000A9A4 /* 0x8000A9A4 */
@@ -1028,8 +1026,15 @@ lbl_8027B380:
 	.4byte lbl_8000A9A4 /* 0x8000A9A4 */
 	.4byte lbl_8000A9A4 /* 0x8000A9A4 */
 	.4byte lbl_8000A9A4 /* 0x8000A9A4 */
-	.4byte 0x8000A950
-	.4byte 0x8000A990
+	.4byte lbl_8000A9A4 /* 0x8000A9A4 */
+	.4byte lbl_8000A9A4 /* 0x8000A9A4 */
+	.4byte lbl_8000A9A4 /* 0x8000A9A4 */
+	.4byte lbl_8000A9A4 /* 0x8000A9A4 */
+	.4byte lbl_8000A9A4 /* 0x8000A9A4 */
+	.4byte lbl_8000A9A4 /* 0x8000A9A4 */
+	.4byte lbl_8000A9A4 /* 0x8000A9A4 */
+	.4byte lbl_8000A950 /* 0x8000A950 */
+	.4byte lbl_8000A990 /* 0x8000A990 */
 	.4byte lbl_8000A9A4 /* 0x8000A9A4 */
 	.4byte lbl_8000A9A4 /* 0x8000A9A4 */
 /* SPECULATION: link order */
