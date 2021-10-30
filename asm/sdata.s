@@ -118,7 +118,7 @@ lbl_803CAE82:
 	.2byte 0x0000
 .global lbl_803CAE88
 lbl_803CAE88:
-	.4byte 0x802B40D8
+	.4byte lbl_802B40D8 /* 0x802B40D8 */
 	.4byte 0x00000000
 .global lbl_803CAE90
 lbl_803CAE90:
@@ -136,7 +136,7 @@ lbl_803CAEA4:
 	.4byte 0x00000001
 .global lbl_803CAEA8
 lbl_803CAEA8:
-	.4byte 0x801C4128
+	.4byte defaultOptionalCommandChecker /* 0x801C4128 */
 .global lbl_803CAEAC
 lbl_803CAEAC:
 	.4byte 0x6476642E
@@ -160,7 +160,7 @@ lbl_803CAEC8:
 	.4byte 0x00000000
 .global lbl_803CAED0
 lbl_803CAED0:
-	.4byte 0x802B4780
+	.4byte lbl_802B4780 /* 0x802B4780 */
 	.4byte 0x00000000
 .global lbl_803CAED8
 lbl_803CAED8:
@@ -210,7 +210,7 @@ lbl_803CAF28:
 	.4byte 0x3F800000
 .global lbl_803CAF30
 lbl_803CAF30:
-	.4byte 0x802B4FE0
+	.4byte lbl_802B4FE0 /* 0x802B4FE0 */
 .global lbl_803CAF34
 lbl_803CAF34:
 	.4byte 0x25303878
@@ -238,7 +238,7 @@ lbl_803CAF58:
 	.4byte 0x00000000
 .global lbl_803CAF60
 lbl_803CAF60:
-	.4byte 0x801D660C
+	.4byte DefaultSwitchThreadCallback /* 0x801D660C */
 	.4byte 0x00000000
 .global lbl_803CAF68
 lbl_803CAF68:
@@ -257,7 +257,7 @@ lbl_803CAF78:
 	.4byte 0x00000005
 .global lbl_803CAF7C
 lbl_803CAF7C:
-	.4byte 0x801D90B8
+	.4byte lbl_801D90B8 /* 0x801D90B8 */
 .global lbl_803CAF80
 lbl_803CAF80:
 	.4byte 0x41000000
@@ -266,11 +266,11 @@ lbl_803CAF84:
 	.4byte 0x42000000
 .global lbl_803CAF88
 lbl_803CAF88:
-	.4byte 0x802B6588
+	.4byte lbl_802B6588 /* 0x802B6588 */
 	.4byte 0x00000000
 .global lbl_803CAF90
 lbl_803CAF90:
-	.4byte 0x802B6738
+	.4byte lbl_802B6738 /* 0x802B6738 */
 .global lbl_803CAF94
 lbl_803CAF94:
 	.4byte 0x76692E63
@@ -320,10 +320,10 @@ lbl_803CAFE0:
 	.4byte 0x00000000
 .global lbl_803CAFF0
 lbl_803CAFF0:
-	.4byte 0x801ED3BC
+	.4byte dthandler__3stdFv /* 0x801ED3BC */
 .global lbl_803CAFF4
 lbl_803CAFF4:
-	.4byte 0x801ED394
+	.4byte duhandler__3stdFv /* 0x801ED394 */
 .global lbl_803CAFF8
 lbl_803CAFF8:
 	.4byte 0xFFFFFFFE

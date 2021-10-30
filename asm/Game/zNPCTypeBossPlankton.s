@@ -8688,7 +8688,7 @@ lbl_80270FA8:
 	.4byte 0x00000000
 lbl_8027110C:
 	.4byte 0x00000000
-	.4byte 0x80271464
+	.4byte lbl_80271464 /* 0x80271464 */
 	.4byte 0x00000000
 	.4byte 0x00000003
 	.4byte 0x00000000
@@ -9585,18 +9585,18 @@ lbl_8029AF30:
 	.4byte 0x00000000
 	.4byte 0x00000000
 lbl_8029AFF0:
-	.4byte 0x8016B868
+	.4byte lbl_8016B868 /* 0x8016B868 */
 	.4byte 0x8016B834
 	.4byte 0x8016B834
 	.4byte 0x8016B834
-	.4byte 0x8016B868
-	.4byte 0x8016B868
+	.4byte lbl_8016B868 /* 0x8016B868 */
+	.4byte lbl_8016B868 /* 0x8016B868 */
 	.4byte 0x8016B834
-	.4byte 0x8016B868
+	.4byte lbl_8016B868 /* 0x8016B868 */
 	.4byte 0x8016B834
 	.4byte 0x8016B834
 	.4byte 0x8016B834
-	.4byte 0x8016B868
+	.4byte lbl_8016B868 /* 0x8016B868 */
 	.4byte 0x8016B834
 lbl_8029B024:
 	.4byte 0x8016B8AC

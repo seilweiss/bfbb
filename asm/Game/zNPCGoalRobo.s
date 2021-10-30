@@ -23882,9 +23882,9 @@ lbl_802930E8:
 	.4byte 0x800D9890
 	.4byte 0x800D99A8
 	.4byte 0x800D9A20
-	.4byte 0x800D9BFC
+	.4byte lbl_800D9BFC /* 0x800D9BFC */
 	.4byte 0x800D99F8
-	.4byte 0x800D9BFC
+	.4byte lbl_800D9BFC /* 0x800D9BFC */
 	.4byte 0x800D99D0
 	.4byte 0x800D9A48
 	.4byte 0x800D9A70
@@ -23921,17 +23921,17 @@ lbl_80293234:
 	.4byte 0x3E99999A
 	.4byte 0x3E99999A
 lbl_80293240:
-	.4byte 0x800E7144
-	.4byte 0x800E7144
+	.4byte lbl_800E7144 /* 0x800E7144 */
+	.4byte lbl_800E7144 /* 0x800E7144 */
 	.4byte 0x800E70FC
 	.4byte 0x800E7114
 	.4byte 0x800E70E4
-	.4byte 0x800E7144
+	.4byte lbl_800E7144 /* 0x800E7144 */
 	.4byte 0x800E7114
-	.4byte 0x800E7144
-	.4byte 0x800E7144
-	.4byte 0x800E7144
-	.4byte 0x800E7144
+	.4byte lbl_800E7144 /* 0x800E7144 */
+	.4byte lbl_800E7144 /* 0x800E7144 */
+	.4byte lbl_800E7144 /* 0x800E7144 */
+	.4byte lbl_800E7144 /* 0x800E7144 */
 	.4byte 0x800E7114
 	.4byte 0x800E7114
 lbl_80293274:

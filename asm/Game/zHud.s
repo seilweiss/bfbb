@@ -853,43 +853,43 @@ lbl_8028FA44:
 sEffectFuncs:
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x8009EAA0
-	.4byte 0x8009EA78
-	.4byte 0x8009EAC8
-	.4byte 0x8009EAF0
-	.4byte 0x8009EAF4
-	.4byte 0x8009EAF8
-	.4byte 0x8009EAFC
-	.4byte 0x8009EB00
-	.4byte 0x8009EB04
-	.4byte 0x8009EB08
-	.4byte 0x8009EB0C
-	.4byte 0x8009EB10
-	.4byte 0x8009EB14
-	.4byte 0x8009EB18
-	.4byte 0x8009EB1C
-	.4byte 0x8009EB84
+	.4byte zLightEffectFlickerSlow__FP7_zLightf /* 0x8009EAA0 */
+	.4byte zLightEffectFlicker__FP7_zLightf /* 0x8009EA78 */
+	.4byte zLightEffectFlickerErratic__FP7_zLightf /* 0x8009EAC8 */
+	.4byte zLightEffectStrobeSlow__FP7_zLightf /* 0x8009EAF0 */
+	.4byte zLightEffectStrobe__FP7_zLightf /* 0x8009EAF4 */
+	.4byte zLightEffectStrobeFast__FP7_zLightf /* 0x8009EAF8 */
+	.4byte zLightEffectDimSlow__FP7_zLightf /* 0x8009EAFC */
+	.4byte zLightEffectDim__FP7_zLightf /* 0x8009EB00 */
+	.4byte zLightEffectDimFast__FP7_zLightf /* 0x8009EB04 */
+	.4byte zLightEffectHalfDimSlow__FP7_zLightf /* 0x8009EB08 */
+	.4byte zLightEffectHalfDim__FP7_zLightf /* 0x8009EB0C */
+	.4byte zLightEffectHalfDimFast__FP7_zLightf /* 0x8009EB10 */
+	.4byte zLightEffectRandomColSlow__FP7_zLightf /* 0x8009EB14 */
+	.4byte zLightEffectRandomCol__FP7_zLightf /* 0x8009EB18 */
+	.4byte zLightEffectRandomColFast__FP7_zLightf /* 0x8009EB1C */
+	.4byte zLightEffectCauldron__FP7_zLightf /* 0x8009EB84 */
 /* SPECULATION: link order */
 .global sEffectInitFuncs
 sEffectInitFuncs:
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x8009E8C4
-	.4byte 0x8009E8C4
-	.4byte 0x8009E8C4
-	.4byte 0x8009E8B4
-	.4byte 0x8009E8B4
-	.4byte 0x8009E8B4
-	.4byte 0x8009E8B8
-	.4byte 0x8009E8B8
-	.4byte 0x8009E8B8
-	.4byte 0x8009E8BC
-	.4byte 0x8009E8BC
-	.4byte 0x8009E8BC
-	.4byte 0x8009E8C0
-	.4byte 0x8009E8C0
-	.4byte 0x8009E8C0
-	.4byte 0x8009EB20
+	.4byte zLightEffectInitFlicker__FP7_zLight /* 0x8009E8C4 */
+	.4byte zLightEffectInitFlicker__FP7_zLight /* 0x8009E8C4 */
+	.4byte zLightEffectInitFlicker__FP7_zLight /* 0x8009E8C4 */
+	.4byte zLightEffectInitStrobe__FP7_zLight /* 0x8009E8B4 */
+	.4byte zLightEffectInitStrobe__FP7_zLight /* 0x8009E8B4 */
+	.4byte zLightEffectInitStrobe__FP7_zLight /* 0x8009E8B4 */
+	.4byte zLightEffectInitDim__FP7_zLight /* 0x8009E8B8 */
+	.4byte zLightEffectInitDim__FP7_zLight /* 0x8009E8B8 */
+	.4byte zLightEffectInitDim__FP7_zLight /* 0x8009E8B8 */
+	.4byte zLightEffectInitHalfDim__FP7_zLight /* 0x8009E8BC */
+	.4byte zLightEffectInitHalfDim__FP7_zLight /* 0x8009E8BC */
+	.4byte zLightEffectInitHalfDim__FP7_zLight /* 0x8009E8BC */
+	.4byte zLightEffectInitRandomCol__FP7_zLight /* 0x8009E8C0 */
+	.4byte zLightEffectInitRandomCol__FP7_zLight /* 0x8009E8C0 */
+	.4byte zLightEffectInitRandomCol__FP7_zLight /* 0x8009E8C0 */
+	.4byte zLightEffectInitCauldron__FP7_zLight /* 0x8009EB20 */
 
 .section .bss
 lbl_802E5710:

@@ -10237,7 +10237,7 @@ xMat3x3RMulVec__FP5xVec3PC7xMat3x3PC5xVec3:
 .section .rodata
 lbl_8026F2A0:
 	.4byte 0x00000000
-	.4byte 0x8026FC00
+	.4byte lbl_8026FC00 /* 0x8026FC00 */
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000001

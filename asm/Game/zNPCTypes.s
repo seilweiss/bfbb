@@ -68,215 +68,215 @@ lbl_800EEE18:
 .section .rodata
 lbl_802688D0:
 	.4byte 0x4E543031
-	.4byte 0x800EEE4C
-	.4byte 0x800EEEC0
+	.4byte ZNPC_Create_Common__FiP10RyzMemGrowPv /* 0x800EEE4C */
+	.4byte ZNPC_Destroy_Common__FP12xFactoryInst /* 0x800EEEC0 */
 	.4byte 0x4E545330
-	.4byte 0x8010780C
-	.4byte 0x80107950
+	.4byte ZNPC_Create_Ambient__FiP10RyzMemGrowPv /* 0x8010780C */
+	.4byte ZNPC_Destroy_Ambient__FP12xFactoryInst /* 0x80107950 */
 	.4byte 0x4E545331
-	.4byte 0x80102D2C
-	.4byte 0x80102F58
+	.4byte ZNPC_Create_Villager__FiP10RyzMemGrowPv /* 0x80102D2C */
+	.4byte ZNPC_Destroy_Villager__FP12xFactoryInst /* 0x80102F58 */
 	.4byte 0x4E545332
-	.4byte 0x800F4CD8
-	.4byte 0x800F50A0
+	.4byte ZNPC_Create_Robot__FiP10RyzMemGrowPv /* 0x800F4CD8 */
+	.4byte ZNPC_Destroy_Robot__FP12xFactoryInst /* 0x800F50A0 */
 	.4byte 0x4E545334
-	.4byte 0x80135B38
-	.4byte 0x80135BAC
+	.4byte ZNPC_Create_Test__FiP10RyzMemGrowPv /* 0x80135B38 */
+	.4byte ZNPC_Destroy_Test__FP12xFactoryInst /* 0x80135BAC */
 	.4byte 0x4E544630
-	.4byte 0x80102D2C
-	.4byte 0x80102F58
+	.4byte ZNPC_Create_Villager__FiP10RyzMemGrowPv /* 0x80102D2C */
+	.4byte ZNPC_Destroy_Villager__FP12xFactoryInst /* 0x80102F58 */
 	.4byte 0x4E544631
-	.4byte 0x80102D2C
-	.4byte 0x80102F58
+	.4byte ZNPC_Create_Villager__FiP10RyzMemGrowPv /* 0x80102D2C */
+	.4byte ZNPC_Destroy_Villager__FP12xFactoryInst /* 0x80102F58 */
 	.4byte 0x4E544632
-	.4byte 0x80102D2C
-	.4byte 0x80102F58
+	.4byte ZNPC_Create_Villager__FiP10RyzMemGrowPv /* 0x80102D2C */
+	.4byte ZNPC_Destroy_Villager__FP12xFactoryInst /* 0x80102F58 */
 	.4byte 0x4E544633
-	.4byte 0x80102D2C
-	.4byte 0x80102F58
+	.4byte ZNPC_Create_Villager__FiP10RyzMemGrowPv /* 0x80102D2C */
+	.4byte ZNPC_Destroy_Villager__FP12xFactoryInst /* 0x80102F58 */
 	.4byte 0x4E544634
-	.4byte 0x80102D2C
-	.4byte 0x80102F58
+	.4byte ZNPC_Create_Villager__FiP10RyzMemGrowPv /* 0x80102D2C */
+	.4byte ZNPC_Destroy_Villager__FP12xFactoryInst /* 0x80102F58 */
 	.4byte 0x4E544635
-	.4byte 0x80102D2C
-	.4byte 0x80102F58
+	.4byte ZNPC_Create_Villager__FiP10RyzMemGrowPv /* 0x80102D2C */
+	.4byte ZNPC_Destroy_Villager__FP12xFactoryInst /* 0x80102F58 */
 	.4byte 0x4E544636
-	.4byte 0x80102D2C
-	.4byte 0x80102F58
+	.4byte ZNPC_Create_Villager__FiP10RyzMemGrowPv /* 0x80102D2C */
+	.4byte ZNPC_Destroy_Villager__FP12xFactoryInst /* 0x80102F58 */
 	.4byte 0x4E544637
-	.4byte 0x80102D2C
-	.4byte 0x80102F58
+	.4byte ZNPC_Create_Villager__FiP10RyzMemGrowPv /* 0x80102D2C */
+	.4byte ZNPC_Destroy_Villager__FP12xFactoryInst /* 0x80102F58 */
 	.4byte 0x4E544638
-	.4byte 0x80102D2C
-	.4byte 0x80102F58
+	.4byte ZNPC_Create_Villager__FiP10RyzMemGrowPv /* 0x80102D2C */
+	.4byte ZNPC_Destroy_Villager__FP12xFactoryInst /* 0x80102F58 */
 	.4byte 0x4E54463E
-	.4byte 0x80102D2C
-	.4byte 0x80102F58
+	.4byte ZNPC_Create_Villager__FiP10RyzMemGrowPv /* 0x80102D2C */
+	.4byte ZNPC_Destroy_Villager__FP12xFactoryInst /* 0x80102F58 */
 	.4byte 0x4E54463F
-	.4byte 0x80102D2C
-	.4byte 0x80102F58
+	.4byte ZNPC_Create_Villager__FiP10RyzMemGrowPv /* 0x80102D2C */
+	.4byte ZNPC_Destroy_Villager__FP12xFactoryInst /* 0x80102F58 */
 	.4byte 0x4E544640
-	.4byte 0x80102D2C
-	.4byte 0x80102F58
+	.4byte ZNPC_Create_Villager__FiP10RyzMemGrowPv /* 0x80102D2C */
+	.4byte ZNPC_Destroy_Villager__FP12xFactoryInst /* 0x80102F58 */
 	.4byte 0x4E544641
-	.4byte 0x80102D2C
-	.4byte 0x80102F58
+	.4byte ZNPC_Create_Villager__FiP10RyzMemGrowPv /* 0x80102D2C */
+	.4byte ZNPC_Destroy_Villager__FP12xFactoryInst /* 0x80102F58 */
 	.4byte 0x4E54463D
-	.4byte 0x80102D2C
-	.4byte 0x80102F58
+	.4byte ZNPC_Create_Villager__FiP10RyzMemGrowPv /* 0x80102D2C */
+	.4byte ZNPC_Destroy_Villager__FP12xFactoryInst /* 0x80102F58 */
 	.4byte 0x4E544639
-	.4byte 0x80102D2C
-	.4byte 0x80102F58
+	.4byte ZNPC_Create_Villager__FiP10RyzMemGrowPv /* 0x80102D2C */
+	.4byte ZNPC_Destroy_Villager__FP12xFactoryInst /* 0x80102F58 */
 	.4byte 0x4E54463A
-	.4byte 0x80102D2C
-	.4byte 0x80102F58
+	.4byte ZNPC_Create_Villager__FiP10RyzMemGrowPv /* 0x80102D2C */
+	.4byte ZNPC_Destroy_Villager__FP12xFactoryInst /* 0x80102F58 */
 	.4byte 0x4E54463B
-	.4byte 0x80102D2C
-	.4byte 0x80102F58
+	.4byte ZNPC_Create_Villager__FiP10RyzMemGrowPv /* 0x80102D2C */
+	.4byte ZNPC_Destroy_Villager__FP12xFactoryInst /* 0x80102F58 */
 	.4byte 0x4E54463C
-	.4byte 0x80102D2C
-	.4byte 0x80102F58
+	.4byte ZNPC_Create_Villager__FiP10RyzMemGrowPv /* 0x80102D2C */
+	.4byte ZNPC_Destroy_Villager__FP12xFactoryInst /* 0x80102F58 */
 	.4byte 0x4E544642
-	.4byte 0x80102D2C
-	.4byte 0x80102F58
+	.4byte ZNPC_Create_Villager__FiP10RyzMemGrowPv /* 0x80102D2C */
+	.4byte ZNPC_Destroy_Villager__FP12xFactoryInst /* 0x80102F58 */
 	.4byte 0x4E544643
-	.4byte 0x80102D2C
-	.4byte 0x80102F58
+	.4byte ZNPC_Create_Villager__FiP10RyzMemGrowPv /* 0x80102D2C */
+	.4byte ZNPC_Destroy_Villager__FP12xFactoryInst /* 0x80102F58 */
 	.4byte 0x4E544644
-	.4byte 0x80102D2C
-	.4byte 0x80102F58
+	.4byte ZNPC_Create_Villager__FiP10RyzMemGrowPv /* 0x80102D2C */
+	.4byte ZNPC_Destroy_Villager__FP12xFactoryInst /* 0x80102F58 */
 	.4byte 0x4E544645
-	.4byte 0x80102D2C
-	.4byte 0x80102F58
+	.4byte ZNPC_Create_Villager__FiP10RyzMemGrowPv /* 0x80102D2C */
+	.4byte ZNPC_Destroy_Villager__FP12xFactoryInst /* 0x80102F58 */
 	.4byte 0x4E544646
-	.4byte 0x80102D2C
-	.4byte 0x80102F58
+	.4byte ZNPC_Create_Villager__FiP10RyzMemGrowPv /* 0x80102D2C */
+	.4byte ZNPC_Destroy_Villager__FP12xFactoryInst /* 0x80102F58 */
 	.4byte 0x4E544647
-	.4byte 0x80102D2C
-	.4byte 0x80102F58
+	.4byte ZNPC_Create_Villager__FiP10RyzMemGrowPv /* 0x80102D2C */
+	.4byte ZNPC_Destroy_Villager__FP12xFactoryInst /* 0x80102F58 */
 	.4byte 0x4E544648
-	.4byte 0x80102D2C
-	.4byte 0x80102F58
+	.4byte ZNPC_Create_Villager__FiP10RyzMemGrowPv /* 0x80102D2C */
+	.4byte ZNPC_Destroy_Villager__FP12xFactoryInst /* 0x80102F58 */
 	.4byte 0x4E54464A
-	.4byte 0x80102D2C
-	.4byte 0x80102F58
+	.4byte ZNPC_Create_Villager__FiP10RyzMemGrowPv /* 0x80102D2C */
+	.4byte ZNPC_Destroy_Villager__FP12xFactoryInst /* 0x80102F58 */
 	.4byte 0x4E54464B
-	.4byte 0x80102D2C
-	.4byte 0x80102F58
+	.4byte ZNPC_Create_Villager__FiP10RyzMemGrowPv /* 0x80102D2C */
+	.4byte ZNPC_Destroy_Villager__FP12xFactoryInst /* 0x80102F58 */
 	.4byte 0x4E544649
-	.4byte 0x80102D2C
-	.4byte 0x80102F58
+	.4byte ZNPC_Create_Villager__FiP10RyzMemGrowPv /* 0x80102D2C */
+	.4byte ZNPC_Destroy_Villager__FP12xFactoryInst /* 0x80102F58 */
 	.4byte 0x4E54464C
-	.4byte 0x80102D2C
-	.4byte 0x80102F58
+	.4byte ZNPC_Create_Villager__FiP10RyzMemGrowPv /* 0x80102D2C */
+	.4byte ZNPC_Destroy_Villager__FP12xFactoryInst /* 0x80102F58 */
 	.4byte 0x4E544130
-	.4byte 0x8010780C
-	.4byte 0x80107950
+	.4byte ZNPC_Create_Ambient__FiP10RyzMemGrowPv /* 0x8010780C */
+	.4byte ZNPC_Destroy_Ambient__FP12xFactoryInst /* 0x80107950 */
 	.4byte 0x4E544131
-	.4byte 0x8010780C
-	.4byte 0x80107950
+	.4byte ZNPC_Create_Ambient__FiP10RyzMemGrowPv /* 0x8010780C */
+	.4byte ZNPC_Destroy_Ambient__FP12xFactoryInst /* 0x80107950 */
 	.4byte 0x4E544132
-	.4byte 0x8010780C
-	.4byte 0x80107950
+	.4byte ZNPC_Create_Ambient__FiP10RyzMemGrowPv /* 0x8010780C */
+	.4byte ZNPC_Destroy_Ambient__FP12xFactoryInst /* 0x80107950 */
 	.4byte 0x4E544133
-	.4byte 0x8010780C
-	.4byte 0x80107950
+	.4byte ZNPC_Create_Ambient__FiP10RyzMemGrowPv /* 0x8010780C */
+	.4byte ZNPC_Destroy_Ambient__FP12xFactoryInst /* 0x80107950 */
 	.4byte 0x4E544134
-	.4byte 0x8010780C
-	.4byte 0x80107950
+	.4byte ZNPC_Create_Ambient__FiP10RyzMemGrowPv /* 0x8010780C */
+	.4byte ZNPC_Destroy_Ambient__FP12xFactoryInst /* 0x80107950 */
 	.4byte 0x4E545430
-	.4byte 0x80109FEC
-	.4byte 0x8010A088
+	.4byte ZNPC_Create_Tiki__FiP10RyzMemGrowPv /* 0x80109FEC */
+	.4byte ZNPC_Destroy_Tiki__FP12xFactoryInst /* 0x8010A088 */
 	.4byte 0x4E545431
-	.4byte 0x80109FEC
-	.4byte 0x8010A088
+	.4byte ZNPC_Create_Tiki__FiP10RyzMemGrowPv /* 0x80109FEC */
+	.4byte ZNPC_Destroy_Tiki__FP12xFactoryInst /* 0x8010A088 */
 	.4byte 0x4E545432
-	.4byte 0x80109FEC
-	.4byte 0x8010A088
+	.4byte ZNPC_Create_Tiki__FiP10RyzMemGrowPv /* 0x80109FEC */
+	.4byte ZNPC_Destroy_Tiki__FP12xFactoryInst /* 0x8010A088 */
 	.4byte 0x4E545433
-	.4byte 0x80109FEC
-	.4byte 0x8010A088
+	.4byte ZNPC_Create_Tiki__FiP10RyzMemGrowPv /* 0x80109FEC */
+	.4byte ZNPC_Destroy_Tiki__FP12xFactoryInst /* 0x8010A088 */
 	.4byte 0x4E545434
-	.4byte 0x80109FEC
-	.4byte 0x8010A088
+	.4byte ZNPC_Create_Tiki__FiP10RyzMemGrowPv /* 0x80109FEC */
+	.4byte ZNPC_Destroy_Tiki__FP12xFactoryInst /* 0x8010A088 */
 	.4byte 0x4E545230
-	.4byte 0x800F4CD8
-	.4byte 0x800F50A0
+	.4byte ZNPC_Create_Robot__FiP10RyzMemGrowPv /* 0x800F4CD8 */
+	.4byte ZNPC_Destroy_Robot__FP12xFactoryInst /* 0x800F50A0 */
 	.4byte 0x4E545231
-	.4byte 0x800F4CD8
-	.4byte 0x800F50A0
+	.4byte ZNPC_Create_Robot__FiP10RyzMemGrowPv /* 0x800F4CD8 */
+	.4byte ZNPC_Destroy_Robot__FP12xFactoryInst /* 0x800F50A0 */
 	.4byte 0x4E545232
-	.4byte 0x800F4CD8
-	.4byte 0x800F50A0
+	.4byte ZNPC_Create_Robot__FiP10RyzMemGrowPv /* 0x800F4CD8 */
+	.4byte ZNPC_Destroy_Robot__FP12xFactoryInst /* 0x800F50A0 */
 	.4byte 0x4E545233
-	.4byte 0x800F4CD8
-	.4byte 0x800F50A0
+	.4byte ZNPC_Create_Robot__FiP10RyzMemGrowPv /* 0x800F4CD8 */
+	.4byte ZNPC_Destroy_Robot__FP12xFactoryInst /* 0x800F50A0 */
 	.4byte 0x4E545234
-	.4byte 0x800F4CD8
-	.4byte 0x800F50A0
+	.4byte ZNPC_Create_Robot__FiP10RyzMemGrowPv /* 0x800F4CD8 */
+	.4byte ZNPC_Destroy_Robot__FP12xFactoryInst /* 0x800F50A0 */
 	.4byte 0x4E545235
-	.4byte 0x800F4CD8
-	.4byte 0x800F50A0
+	.4byte ZNPC_Create_Robot__FiP10RyzMemGrowPv /* 0x800F4CD8 */
+	.4byte ZNPC_Destroy_Robot__FP12xFactoryInst /* 0x800F50A0 */
 	.4byte 0x4E545236
-	.4byte 0x800F4CD8
-	.4byte 0x800F50A0
+	.4byte ZNPC_Create_Robot__FiP10RyzMemGrowPv /* 0x800F4CD8 */
+	.4byte ZNPC_Destroy_Robot__FP12xFactoryInst /* 0x800F50A0 */
 	.4byte 0x4E545237
-	.4byte 0x800F4CD8
-	.4byte 0x800F50A0
+	.4byte ZNPC_Create_Robot__FiP10RyzMemGrowPv /* 0x800F4CD8 */
+	.4byte ZNPC_Destroy_Robot__FP12xFactoryInst /* 0x800F50A0 */
 	.4byte 0x4E545238
-	.4byte 0x800F4CD8
-	.4byte 0x800F50A0
+	.4byte ZNPC_Create_Robot__FiP10RyzMemGrowPv /* 0x800F4CD8 */
+	.4byte ZNPC_Destroy_Robot__FP12xFactoryInst /* 0x800F50A0 */
 	.4byte 0x4E545239
-	.4byte 0x800F4CD8
-	.4byte 0x800F50A0
+	.4byte ZNPC_Create_Robot__FiP10RyzMemGrowPv /* 0x800F4CD8 */
+	.4byte ZNPC_Destroy_Robot__FP12xFactoryInst /* 0x800F50A0 */
 	.4byte 0x4E54523A
-	.4byte 0x800F4CD8
-	.4byte 0x800F50A0
+	.4byte ZNPC_Create_Robot__FiP10RyzMemGrowPv /* 0x800F4CD8 */
+	.4byte ZNPC_Destroy_Robot__FP12xFactoryInst /* 0x800F50A0 */
 	.4byte 0x4E54523B
-	.4byte 0x800F4CD8
-	.4byte 0x800F50A0
+	.4byte ZNPC_Create_Robot__FiP10RyzMemGrowPv /* 0x800F4CD8 */
+	.4byte ZNPC_Destroy_Robot__FP12xFactoryInst /* 0x800F50A0 */
 	.4byte 0x4E54523C
-	.4byte 0x800F4CD8
-	.4byte 0x800F50A0
+	.4byte ZNPC_Create_Robot__FiP10RyzMemGrowPv /* 0x800F4CD8 */
+	.4byte ZNPC_Destroy_Robot__FP12xFactoryInst /* 0x800F50A0 */
 	.4byte 0x4E54523D
-	.4byte 0x800F4CD8
-	.4byte 0x800F50A0
+	.4byte ZNPC_Create_Robot__FiP10RyzMemGrowPv /* 0x800F4CD8 */
+	.4byte ZNPC_Destroy_Robot__FP12xFactoryInst /* 0x800F50A0 */
 	.4byte 0x4E54523F
-	.4byte 0x800F4CD8
-	.4byte 0x800F50A0
+	.4byte ZNPC_Create_Robot__FiP10RyzMemGrowPv /* 0x800F4CD8 */
+	.4byte ZNPC_Destroy_Robot__FP12xFactoryInst /* 0x800F50A0 */
 	.4byte 0x4E54523E
-	.4byte 0x800F4CD8
-	.4byte 0x800F50A0
+	.4byte ZNPC_Create_Robot__FiP10RyzMemGrowPv /* 0x800F4CD8 */
+	.4byte ZNPC_Destroy_Robot__FP12xFactoryInst /* 0x800F50A0 */
 	.4byte 0x4E545240
-	.4byte 0x800F4CD8
-	.4byte 0x800F50A0
+	.4byte ZNPC_Create_Robot__FiP10RyzMemGrowPv /* 0x800F4CD8 */
+	.4byte ZNPC_Destroy_Robot__FP12xFactoryInst /* 0x800F50A0 */
 	.4byte 0x4E544430
-	.4byte 0x8012526C
-	.4byte 0x80125304
+	.4byte ZNPC_Create_Duplotron__FiP10RyzMemGrowPv /* 0x8012526C */
+	.4byte ZNPC_Destroy_Duplotron__FP12xFactoryInst /* 0x80125304 */
 	.4byte 0x4E544831
-	.4byte 0x80135F24
-	.4byte 0x8013602C
+	.4byte ZNPC_Create_SubBoss__FiP10RyzMemGrowPv /* 0x80135F24 */
+	.4byte ZNPC_Destroy_SubBoss__FP12xFactoryInst /* 0x8013602C */
 	.4byte 0x4E544830
-	.4byte 0x80135F24
-	.4byte 0x8013602C
+	.4byte ZNPC_Create_SubBoss__FiP10RyzMemGrowPv /* 0x80135F24 */
+	.4byte ZNPC_Destroy_SubBoss__FP12xFactoryInst /* 0x8013602C */
 	.4byte 0x4E544832
-	.4byte 0x80135F24
-	.4byte 0x8013602C
+	.4byte ZNPC_Create_SubBoss__FiP10RyzMemGrowPv /* 0x80135F24 */
+	.4byte ZNPC_Destroy_SubBoss__FP12xFactoryInst /* 0x8013602C */
 	.4byte 0x4E544230
-	.4byte 0x801361B0
-	.4byte 0x80136310
+	.4byte ZNPC_Create_Boss__FiP10RyzMemGrowPv /* 0x801361B0 */
+	.4byte ZNPC_Destroy_Boss__FP12xFactoryInst /* 0x80136310 */
 	.4byte 0x4E544231
-	.4byte 0x801361B0
-	.4byte 0x80136310
+	.4byte ZNPC_Create_Boss__FiP10RyzMemGrowPv /* 0x801361B0 */
+	.4byte ZNPC_Destroy_Boss__FP12xFactoryInst /* 0x80136310 */
 	.4byte 0x4E544232
-	.4byte 0x801361B0
-	.4byte 0x80136310
+	.4byte ZNPC_Create_Boss__FiP10RyzMemGrowPv /* 0x801361B0 */
+	.4byte ZNPC_Destroy_Boss__FP12xFactoryInst /* 0x80136310 */
 	.4byte 0x4E544233
-	.4byte 0x801361B0
-	.4byte 0x80136310
+	.4byte ZNPC_Create_Boss__FiP10RyzMemGrowPv /* 0x801361B0 */
+	.4byte ZNPC_Destroy_Boss__FP12xFactoryInst /* 0x80136310 */
 	.4byte 0x4E544234
-	.4byte 0x801361B0
-	.4byte 0x80136310
+	.4byte ZNPC_Create_Boss__FiP10RyzMemGrowPv /* 0x801361B0 */
+	.4byte ZNPC_Destroy_Boss__FP12xFactoryInst /* 0x80136310 */
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000

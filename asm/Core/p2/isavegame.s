@@ -10037,31 +10037,31 @@ lbl_80292A44:
 	.4byte 0x8026655D
 	.4byte 0x00000000
 lbl_80292A9C:
-	.4byte 0x800CEC18
+	.4byte lbl_800CEC18 /* 0x800CEC18 */
 	.4byte 0x800CEC04
 	.4byte 0x800CEC04
-	.4byte 0x800CEC18
+	.4byte lbl_800CEC18 /* 0x800CEC18 */
 	.4byte 0x800CEBF0
 	.4byte 0x800CEBF0
-	.4byte 0x800CEC10
+	.4byte lbl_800CEC10 /* 0x800CEC10 */
 	.4byte 0x800CEBE4
 	.4byte 0x800CEBE4
-	.4byte 0x800CEC18
-	.4byte 0x800CEC18
+	.4byte lbl_800CEC18 /* 0x800CEC18 */
+	.4byte lbl_800CEC18 /* 0x800CEC18 */
 lbl_80292AC8:
 	.4byte 0x800CF104
-	.4byte 0x800CF118
-	.4byte 0x800CF118
-	.4byte 0x800CF118
-	.4byte 0x800CF118
-	.4byte 0x800CF118
-	.4byte 0x800CF118
+	.4byte lbl_800CF118 /* 0x800CF118 */
+	.4byte lbl_800CF118 /* 0x800CF118 */
+	.4byte lbl_800CF118 /* 0x800CF118 */
+	.4byte lbl_800CF118 /* 0x800CF118 */
+	.4byte lbl_800CF118 /* 0x800CF118 */
+	.4byte lbl_800CF118 /* 0x800CF118 */
 	.4byte 0x800CF104
-	.4byte 0x800CF118
-	.4byte 0x800CF118
-	.4byte 0x800CF118
+	.4byte lbl_800CF118 /* 0x800CF118 */
+	.4byte lbl_800CF118 /* 0x800CF118 */
+	.4byte lbl_800CF118 /* 0x800CF118 */
 	.4byte 0x800CF110
-	.4byte 0x800CF118
+	.4byte lbl_800CF118 /* 0x800CF118 */
 	.4byte 0x800CF104
 
 .section .bss

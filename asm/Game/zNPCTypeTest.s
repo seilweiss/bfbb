@@ -283,6 +283,7 @@ AnimPick__8zNPCTestFi16en_NPC_GOAL_SPOTP5xGoal:
 /* 80135E98 00132C98  80 63 00 04 */	lwz r3, 4(r3)
 /* 80135E9C 00132C9C  4E 80 00 20 */	blr 
 .section .rodata
+.global lbl_8026CA50
 lbl_8026CA50:
 	.4byte 0x556E6B6E
 	.4byte 0x6F776E00

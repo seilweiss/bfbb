@@ -1336,6 +1336,7 @@ lbl_8026C0DC:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
+.global lbl_8026C0E8
 lbl_8026C0E8:
 	.4byte 0x556E6B6E
 	.4byte 0x6F776E00

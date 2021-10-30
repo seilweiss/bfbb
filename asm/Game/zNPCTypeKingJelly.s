@@ -10455,7 +10455,7 @@ lbl_8026D8B0:
 
 .section .data
 lbl_80299DA8:
-	.4byte 0x8026D8B0
+	.4byte lbl_8026D8B0 /* 0x8026D8B0 */
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x8026D8BF
@@ -10515,7 +10515,7 @@ lbl_80299E2C:
 	.4byte 0x00000000
 	.4byte 0x00000000
 lbl_80299E90:
-	.4byte 0x8014E814
+	.4byte on_change_fade_obstructions__13zNPCKingJellyFRC10tweak_info /* 0x8014E814 */
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -10526,7 +10526,7 @@ lbl_80299E90:
 	.4byte 0x00000000
 	.4byte 0x00000000
 lbl_80299EB8:
-	.4byte 0x8014E810
+	.4byte on_change_ambient_ring__13zNPCKingJellyFRC10tweak_info /* 0x8014E810 */
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000

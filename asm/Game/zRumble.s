@@ -296,7 +296,7 @@ zPadAddRumble__F14_tagRumbleTypefiUi:
 
 .section .data
 lbl_80290090:
-	.4byte 0x800AD01C
+	.4byte lbl_800AD01C /* 0x800AD01C */
 	.4byte 0x800ACF78
 	.4byte 0x800ACE28
 	.4byte 0x800ACE58

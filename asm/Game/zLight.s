@@ -598,7 +598,7 @@ lbl_8028FB50:
 /* SPECULATION: link order */
 .global lightning_type_names
 lightning_type_names:
-	.4byte 0x8025CD50
+	.4byte lbl_8025CD50 /* 0x8025CD50 */
 	.4byte 0x8025CD55
 	.4byte 0x8025CD5E
 	.4byte 0x8025CD63

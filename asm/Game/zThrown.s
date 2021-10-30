@@ -3316,10 +3316,10 @@ lbl_80290F08:
 	.4byte 0x41700000
 	.4byte 0x3E4CCCCD
 lbl_80290F14:
-	.4byte 0x8025F590
-	.4byte 0x800B8F84
+	.4byte lbl_8025F590 /* 0x8025F590 */
+	.4byte zThrownCollide_DestructObj__FP13zThrownStructP10xEntCollisPfPf /* 0x800B8F84 */
 	.4byte 0x803CAC18
-	.4byte 0x80290F08
+	.4byte lbl_80290F08 /* 0x80290F08 */
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -3327,9 +3327,9 @@ lbl_80290F14:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x8025F59C
-	.4byte 0x800B8F84
+	.4byte zThrownCollide_DestructObj__FP13zThrownStructP10xEntCollisPfPf /* 0x800B8F84 */
 	.4byte 0x803CAC18
-	.4byte 0x80290F08
+	.4byte lbl_80290F08 /* 0x80290F08 */
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -3337,9 +3337,9 @@ lbl_80290F14:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x8025F5A8
-	.4byte 0x800B8F84
+	.4byte zThrownCollide_DestructObj__FP13zThrownStructP10xEntCollisPfPf /* 0x800B8F84 */
 	.4byte 0x803CAC18
-	.4byte 0x80290F08
+	.4byte lbl_80290F08 /* 0x80290F08 */
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -3347,9 +3347,9 @@ lbl_80290F14:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x8025F5B6
-	.4byte 0x800B8F84
+	.4byte zThrownCollide_DestructObj__FP13zThrownStructP10xEntCollisPfPf /* 0x800B8F84 */
 	.4byte 0x803CAC18
-	.4byte 0x80290F08
+	.4byte lbl_80290F08 /* 0x80290F08 */
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -3357,9 +3357,9 @@ lbl_80290F14:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x8025F5C9
-	.4byte 0x800B8F84
+	.4byte zThrownCollide_DestructObj__FP13zThrownStructP10xEntCollisPfPf /* 0x800B8F84 */
 	.4byte 0x803CAC18
-	.4byte 0x80290F08
+	.4byte lbl_80290F08 /* 0x80290F08 */
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -3367,9 +3367,9 @@ lbl_80290F14:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x8025F5DC
-	.4byte 0x800B8F84
+	.4byte zThrownCollide_DestructObj__FP13zThrownStructP10xEntCollisPfPf /* 0x800B8F84 */
 	.4byte 0x803CAC18
-	.4byte 0x80290F08
+	.4byte lbl_80290F08 /* 0x80290F08 */
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -3377,9 +3377,9 @@ lbl_80290F14:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x8025F5EF
-	.4byte 0x800B8F84
+	.4byte zThrownCollide_DestructObj__FP13zThrownStructP10xEntCollisPfPf /* 0x800B8F84 */
 	.4byte 0x803CAC18
-	.4byte 0x80290F08
+	.4byte lbl_80290F08 /* 0x80290F08 */
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -3387,9 +3387,9 @@ lbl_80290F14:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x8025F602
-	.4byte 0x800B8F84
+	.4byte zThrownCollide_DestructObj__FP13zThrownStructP10xEntCollisPfPf /* 0x800B8F84 */
 	.4byte 0x803CAC18
-	.4byte 0x80290F08
+	.4byte lbl_80290F08 /* 0x80290F08 */
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -3397,9 +3397,9 @@ lbl_80290F14:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x8025F615
-	.4byte 0x800B8F84
+	.4byte zThrownCollide_DestructObj__FP13zThrownStructP10xEntCollisPfPf /* 0x800B8F84 */
 	.4byte 0x803CAC18
-	.4byte 0x80290F08
+	.4byte lbl_80290F08 /* 0x80290F08 */
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -3407,9 +3407,9 @@ lbl_80290F14:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x8025F628
-	.4byte 0x800B903C
+	.4byte zThrownCollide_Tiki__FP13zThrownStructP10xEntCollisPfPf /* 0x800B903C */
 	.4byte 0x803CAC18
-	.4byte 0x80290F08
+	.4byte lbl_80290F08 /* 0x80290F08 */
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -3417,9 +3417,9 @@ lbl_80290F14:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x8025F639
-	.4byte 0x800B903C
+	.4byte zThrownCollide_Tiki__FP13zThrownStructP10xEntCollisPfPf /* 0x800B903C */
 	.4byte 0x803CAC18
-	.4byte 0x80290F08
+	.4byte lbl_80290F08 /* 0x80290F08 */
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -3427,9 +3427,9 @@ lbl_80290F14:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x8025F64B
-	.4byte 0x800B90A4
+	.4byte lbl_800B90A4 /* 0x800B90A4 */
 	.4byte 0x803CAC18
-	.4byte 0x80290F08
+	.4byte lbl_80290F08 /* 0x80290F08 */
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -3437,9 +3437,9 @@ lbl_80290F14:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x8025F65B
-	.4byte 0x800B8F54
-	.4byte 0x803CAC1C
-	.4byte 0x80290F08
+	.4byte lbl_800B8F54 /* 0x800B8F54 */
+	.4byte lbl_803CAC1C /* 0x803CAC1C */
+	.4byte lbl_80290F08 /* 0x80290F08 */
 	.4byte 0x00000000
 	.4byte 0x8025F668
 	.4byte 0x3F451EB8
@@ -3447,9 +3447,9 @@ lbl_80290F14:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x8025F67E
-	.4byte 0x800B8F54
-	.4byte 0x803CAC1C
-	.4byte 0x80290F08
+	.4byte lbl_800B8F54 /* 0x800B8F54 */
+	.4byte lbl_803CAC1C /* 0x803CAC1C */
+	.4byte lbl_80290F08 /* 0x80290F08 */
 	.4byte 0x00000000
 	.4byte 0x8025F668
 	.4byte 0x3F451EB8
@@ -3457,9 +3457,9 @@ lbl_80290F14:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x8025F690
-	.4byte 0x800B8B88
-	.4byte 0x803CAC1C
-	.4byte 0x80290F08
+	.4byte zThrownCollide_ThrowFruit__FP13zThrownStructP10xEntCollisPfPf /* 0x800B8B88 */
+	.4byte lbl_803CAC1C /* 0x803CAC1C */
+	.4byte lbl_80290F08 /* 0x80290F08 */
 	.4byte 0x202080FF
 	.4byte 0x00000000
 	.4byte 0x3F6B851F
@@ -3467,9 +3467,9 @@ lbl_80290F14:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x8025F6A0
-	.4byte 0x800B8B88
-	.4byte 0x803CAC1C
-	.4byte 0x80290F08
+	.4byte zThrownCollide_ThrowFruit__FP13zThrownStructP10xEntCollisPfPf /* 0x800B8B88 */
+	.4byte lbl_803CAC1C /* 0x803CAC1C */
+	.4byte lbl_80290F08 /* 0x80290F08 */
 	.4byte 0x208020FF
 	.4byte 0x00000000
 	.4byte 0x3F6B851F
@@ -3477,9 +3477,9 @@ lbl_80290F14:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x8025F6B1
-	.4byte 0x800B8B88
-	.4byte 0x803CAC1C
-	.4byte 0x80290F08
+	.4byte zThrownCollide_ThrowFruit__FP13zThrownStructP10xEntCollisPfPf /* 0x800B8B88 */
+	.4byte lbl_803CAC1C /* 0x803CAC1C */
+	.4byte lbl_80290F08 /* 0x80290F08 */
 	.4byte 0x806020FF
 	.4byte 0x00000000
 	.4byte 0x3F6B851F
@@ -3487,9 +3487,9 @@ lbl_80290F14:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x8025F6C3
-	.4byte 0x800B8B88
-	.4byte 0x803CAC1C
-	.4byte 0x80290F08
+	.4byte zThrownCollide_ThrowFruit__FP13zThrownStructP10xEntCollisPfPf /* 0x800B8B88 */
+	.4byte lbl_803CAC1C /* 0x803CAC1C */
+	.4byte lbl_80290F08 /* 0x80290F08 */
 	.4byte 0x802020FF
 	.4byte 0x00000000
 	.4byte 0x3F6B851F
@@ -3497,9 +3497,9 @@ lbl_80290F14:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x8025F6D2
-	.4byte 0x800B8B88
-	.4byte 0x803CAC1C
-	.4byte 0x80290F08
+	.4byte zThrownCollide_ThrowFruit__FP13zThrownStructP10xEntCollisPfPf /* 0x800B8B88 */
+	.4byte lbl_803CAC1C /* 0x803CAC1C */
+	.4byte lbl_80290F08 /* 0x80290F08 */
 	.4byte 0x808020FF
 	.4byte 0x00000000
 	.4byte 0x3F6B851F
@@ -3507,9 +3507,9 @@ lbl_80290F14:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x8025F6E4
-	.4byte 0x800B8B88
-	.4byte 0x803CAC1C
-	.4byte 0x80290F08
+	.4byte zThrownCollide_ThrowFruit__FP13zThrownStructP10xEntCollisPfPf /* 0x800B8B88 */
+	.4byte lbl_803CAC1C /* 0x803CAC1C */
+	.4byte lbl_80290F08 /* 0x80290F08 */
 	.4byte 0x202020FF
 	.4byte 0x8025F6F0
 	.4byte 0x3F6B851F
@@ -3517,9 +3517,9 @@ lbl_80290F14:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x8025F705
-	.4byte 0x800B8B88
-	.4byte 0x803CAC1C
-	.4byte 0x80290F08
+	.4byte zThrownCollide_ThrowFruit__FP13zThrownStructP10xEntCollisPfPf /* 0x800B8B88 */
+	.4byte lbl_803CAC1C /* 0x803CAC1C */
+	.4byte lbl_80290F08 /* 0x80290F08 */
 	.4byte 0x202020FF
 	.4byte 0x8025F6F0
 	.4byte 0x3F6B851F
@@ -3527,9 +3527,9 @@ lbl_80290F14:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x8025F716
-	.4byte 0x800B8FEC
+	.4byte lbl_800B8FEC /* 0x800B8FEC */
 	.4byte 0x803CAC18
-	.4byte 0x80290F08
+	.4byte lbl_80290F08 /* 0x80290F08 */
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000

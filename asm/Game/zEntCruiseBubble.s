@@ -11694,7 +11694,7 @@ lbl_8028C200:
 	.4byte 0x00000000
 	.4byte 0x00000000
 lbl_8028C210:
-	.4byte 0x8025533C
+	.4byte lbl_8025533C /* 0x8025533C */
 	.4byte 0x80255343
 	.4byte 0x8025534A
 	.4byte 0x80255351
@@ -12062,7 +12062,7 @@ lbl_803D0834:
 
 .section .sdata
 lbl_803CAA80:
-	.4byte 0x802DBA80
+	.4byte lbl_802DBA80 /* 0x802DBA80 */
 	.4byte 0x00000000
 
 .section .sdata2

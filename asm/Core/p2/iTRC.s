@@ -1143,17 +1143,17 @@ lbl_80272C50:
 .section .data
 lbl_8029B868:
 	.4byte 0x80180C40
-	.4byte 0x80180C74
-	.4byte 0x80180C54
-	.4byte 0x80180C54
-	.4byte 0x80180C54
+	.4byte lbl_80180C74 /* 0x80180C74 */
+	.4byte lbl_80180C54 /* 0x80180C54 */
+	.4byte lbl_80180C54 /* 0x80180C54 */
+	.4byte lbl_80180C54 /* 0x80180C54 */
 	.4byte 0x80180BF0
 	.4byte 0x80180C18
 	.4byte 0x80180C04
-	.4byte 0x80180C54
-	.4byte 0x80180C54
-	.4byte 0x80180C54
-	.4byte 0x80180C54
+	.4byte lbl_80180C54 /* 0x80180C54 */
+	.4byte lbl_80180C54 /* 0x80180C54 */
+	.4byte lbl_80180C54 /* 0x80180C54 */
+	.4byte lbl_80180C54 /* 0x80180C54 */
 	.4byte 0x80180C2C
 	.4byte 0x00000000
 

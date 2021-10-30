@@ -562,7 +562,7 @@ lbl_80274A00:
 .section .data
 lbl_802A1B88:
 	.4byte 0x00000000
-	.4byte 0x80274A00
+	.4byte lbl_80274A00 /* 0x80274A00 */
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -576,7 +576,7 @@ lbl_802A1B88:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x80274A00
+	.4byte lbl_80274A00 /* 0x80274A00 */
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000

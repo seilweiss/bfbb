@@ -850,13 +850,13 @@ lbl_8026CA38:
 
 .section .data
 lbl_80298F80:
-	.4byte 0x80133E38
-	.4byte 0x80133E7C
-	.4byte 0x8013409C
+	.4byte render_bk_fill__22_esc__2_unnamed_esc__2_zTextBox_cpp_esc__2_FRC8ztextbox /* 0x80133E38 */
+	.4byte render_bk_tex_scale__22_esc__2_unnamed_esc__2_zTextBox_cpp_esc__2_FRC8ztextbox /* 0x80133E7C */
+	.4byte render_bk_tex_wrap__22_esc__2_unnamed_esc__2_zTextBox_cpp_esc__2_FRC8ztextbox /* 0x8013409C */
 lbl_80298F8C:
 	.4byte 0x8026CA44
 	.4byte 0x00000008
-	.4byte 0x801342A4
+	.4byte parse_tag_blahblah__22_esc__2_unnamed_esc__2_zTextBox_cpp_esc__2_FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag /* 0x801342A4 */
 	.4byte 0x00000000
 	.4byte 0x00000000
 /* SPECULATION: link order */
@@ -885,7 +885,7 @@ g_hash_testanim:
 /* SPECULATION: link order */
 .global g_strz_testanim
 g_strz_testanim:
-	.4byte 0x8026CA50
+	.4byte lbl_8026CA50 /* 0x8026CA50 */
 	.4byte 0x8026CA58
 	.4byte 0x8026CA5F
 	.4byte 0x8026CA66
@@ -980,7 +980,7 @@ g_hash_subbanim:
 /* SPECULATION: link order */
 .global g_strz_subbanim
 g_strz_subbanim:
-	.4byte 0x8026CAA8
+	.4byte lbl_8026CAA8 /* 0x8026CAA8 */
 	.4byte 0x8026CAB0
 	.4byte 0x8026CAB7
 	.4byte 0x8026CABE
@@ -1142,7 +1142,7 @@ g_hash_bossanim:
 /* SPECULATION: link order */
 .global g_strz_bossanim
 g_strz_bossanim:
-	.4byte 0x8026CBB8
+	.4byte lbl_8026CBB8 /* 0x8026CBB8 */
 	.4byte 0x8026CBC0
 	.4byte 0x8026CBC7
 	.4byte 0x8026CBCE

@@ -1529,7 +1529,7 @@ g_hash_dupoanim:
 /* SPECULATION: link order */
 .global g_strz_dupoanim
 g_strz_dupoanim:
-	.4byte 0x8026C0E8
+	.4byte lbl_8026C0E8 /* 0x8026C0E8 */
 	.4byte 0x8026C0F0
 	.4byte 0x8026C0F7
 	.4byte 0x8026C0FF

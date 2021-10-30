@@ -3235,20 +3235,20 @@ lbl_8026C170:
 
 .section .data
 lbl_80298B88:
-	.4byte 0x8026C170
-	.4byte 0x80129308
+	.4byte lbl_8026C170 /* 0x8026C170 */
+	.4byte zShrapnel_DestructObjInit__FP14zShrapnelAssetP14xModelInstanceP5xVec3PFP5zFragP10zFragAsset_v /* 0x80129308 */
 	.4byte 0x00000000
 	.4byte 0x8026C186
-	.4byte 0x801297A4
+	.4byte zShrapnel_BB03FloorInit__FP14zShrapnelAssetP14xModelInstanceP5xVec3PFP5zFragP10zFragAsset_v /* 0x801297A4 */
 	.4byte 0x00000000
 	.4byte 0x8026C19A
-	.4byte 0x80129AF8
+	.4byte zShrapnel_BB03FloorChildInit__FP14zShrapnelAssetP14xModelInstanceP5xVec3PFP5zFragP10zFragAsset_v /* 0x80129AF8 */
 	.4byte 0x00000000
 	.4byte 0x8026C1B4
-	.4byte 0x80129B20
+	.4byte zShrapnel_GlobalRobotInit__FP14zShrapnelAssetP14xModelInstanceP5xVec3PFP5zFragP10zFragAsset_v /* 0x80129B20 */
 	.4byte 0x00000000
 	.4byte 0x8026C1C7
-	.4byte 0x80129D08
+	.4byte zShrapnel_SpongebobInit__FP14zShrapnelAssetP14xModelInstanceP5xVec3PFP5zFragP10zFragAsset_v /* 0x80129D08 */
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000

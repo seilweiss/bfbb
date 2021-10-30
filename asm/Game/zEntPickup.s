@@ -4201,47 +4201,47 @@ lbl_8028C720:
 	.4byte 0x00000000
 	.4byte 0x00000000
 lbl_8028C7C0:
-	.4byte 0x80062EE4
-	.4byte 0x80062EE4
+	.4byte lbl_80062EE4 /* 0x80062EE4 */
+	.4byte lbl_80062EE4 /* 0x80062EE4 */
 	.4byte 0x80062EC0
-	.4byte 0x80062EE4
-	.4byte 0x80062EE4
-	.4byte 0x80062EE4
-	.4byte 0x80062EE4
-	.4byte 0x80062EE4
-	.4byte 0x80062EE4
-	.4byte 0x80062EE4
-	.4byte 0x80062EE4
+	.4byte lbl_80062EE4 /* 0x80062EE4 */
+	.4byte lbl_80062EE4 /* 0x80062EE4 */
+	.4byte lbl_80062EE4 /* 0x80062EE4 */
+	.4byte lbl_80062EE4 /* 0x80062EE4 */
+	.4byte lbl_80062EE4 /* 0x80062EE4 */
+	.4byte lbl_80062EE4 /* 0x80062EE4 */
+	.4byte lbl_80062EE4 /* 0x80062EE4 */
+	.4byte lbl_80062EE4 /* 0x80062EE4 */
 	.4byte 0x80062EDC
 	.4byte 0x80062EDC
-	.4byte 0x80062EE4
-	.4byte 0x80062EE4
-	.4byte 0x80062EE4
-	.4byte 0x80062EE4
-	.4byte 0x80062EE4
-	.4byte 0x80062EE4
-	.4byte 0x80062EE4
-	.4byte 0x80062EE4
-	.4byte 0x80062EE4
-	.4byte 0x80062EE4
-	.4byte 0x80062EE4
+	.4byte lbl_80062EE4 /* 0x80062EE4 */
+	.4byte lbl_80062EE4 /* 0x80062EE4 */
+	.4byte lbl_80062EE4 /* 0x80062EE4 */
+	.4byte lbl_80062EE4 /* 0x80062EE4 */
+	.4byte lbl_80062EE4 /* 0x80062EE4 */
+	.4byte lbl_80062EE4 /* 0x80062EE4 */
+	.4byte lbl_80062EE4 /* 0x80062EE4 */
+	.4byte lbl_80062EE4 /* 0x80062EE4 */
+	.4byte lbl_80062EE4 /* 0x80062EE4 */
+	.4byte lbl_80062EE4 /* 0x80062EE4 */
+	.4byte lbl_80062EE4 /* 0x80062EE4 */
 	.4byte 0x80062EDC
-	.4byte 0x80062EE4
-	.4byte 0x80062EE4
+	.4byte lbl_80062EE4 /* 0x80062EE4 */
+	.4byte lbl_80062EE4 /* 0x80062EE4 */
 	.4byte 0x80062EDC
-	.4byte 0x80062EE4
-	.4byte 0x80062EE4
-	.4byte 0x80062EE4
-	.4byte 0x80062EE4
-	.4byte 0x80062EE4
-	.4byte 0x80062EE4
-	.4byte 0x80062EE4
+	.4byte lbl_80062EE4 /* 0x80062EE4 */
+	.4byte lbl_80062EE4 /* 0x80062EE4 */
+	.4byte lbl_80062EE4 /* 0x80062EE4 */
+	.4byte lbl_80062EE4 /* 0x80062EE4 */
+	.4byte lbl_80062EE4 /* 0x80062EE4 */
+	.4byte lbl_80062EE4 /* 0x80062EE4 */
+	.4byte lbl_80062EE4 /* 0x80062EE4 */
 	.4byte 0x80062EDC
 lbl_8028C850:
 	.4byte 0x80063404
 	.4byte 0x80063394
 	.4byte 0x80063580
-	.4byte 0x800635A0
+	.4byte lbl_800635A0 /* 0x800635A0 */
 	.4byte 0x80063580
 	.4byte 0x80063580
 	.4byte 0x800633B8
@@ -4257,8 +4257,8 @@ lbl_8028C88C:
 	.4byte 0x800637C0
 	.4byte 0x800637E4
 	.4byte 0x80063814
-	.4byte 0x800638F0
-	.4byte 0x800638F0
+	.4byte lbl_800638F0 /* 0x800638F0 */
+	.4byte lbl_800638F0 /* 0x800638F0 */
 	.4byte 0x80063884
 	.4byte 0x800638A0
 	.4byte 0x800638AC
@@ -4267,20 +4267,20 @@ lbl_8028C88C:
 	.4byte 0x800638B8
 	.4byte 0x800638B8
 	.4byte 0x800638B8
-	.4byte 0x800638F0
+	.4byte lbl_800638F0 /* 0x800638F0 */
 	.4byte 0x800638B8
 lbl_8028C8C8:
-	.4byte 0x80063AC0
+	.4byte lbl_80063AC0 /* 0x80063AC0 */
 	.4byte 0x80063A6C
-	.4byte 0x80063AC0
-	.4byte 0x80063AC0
-	.4byte 0x80063AC0
-	.4byte 0x80063AC0
+	.4byte lbl_80063AC0 /* 0x80063AC0 */
+	.4byte lbl_80063AC0 /* 0x80063AC0 */
+	.4byte lbl_80063AC0 /* 0x80063AC0 */
+	.4byte lbl_80063AC0 /* 0x80063AC0 */
 	.4byte 0x80063A8C
-	.4byte 0x80063AC0
+	.4byte lbl_80063AC0 /* 0x80063AC0 */
 	.4byte 0x80063AB0
 	.4byte 0x80063AB0
-	.4byte 0x80063AC0
+	.4byte lbl_80063AC0 /* 0x80063AC0 */
 	.4byte 0x80063AB0
 /* SPECULATION: link order */
 .global zPickupAuraTable

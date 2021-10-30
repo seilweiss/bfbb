@@ -6166,7 +6166,7 @@ xDebugAddTweak__FPCcP5xVec3PC14tweak_callbackPvUi:
 .section .rodata
 lbl_8026E838:
 	.4byte 0x00000000
-	.4byte 0x8026E9F0
+	.4byte lbl_8026E9F0 /* 0x8026E9F0 */
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000

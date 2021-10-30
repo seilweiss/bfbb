@@ -10137,7 +10137,7 @@ Name__21zNPCGoalBossSandyLeapFv:
 /* 801465F8 001433F8  4E 80 00 20 */	blr 
 .section .rodata
 lbl_8026D0E8:
-	.4byte 0x8013D054
+	.4byte on_change_newsfish__FRC10tweak_info /* 0x8013D054 */
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -10148,7 +10148,7 @@ lbl_8026D0E8:
 	.4byte 0x00000000
 	.4byte 0x00000000
 lbl_8026D110:
-	.4byte 0x8013D094
+	.4byte on_change_shockwave__FRC10tweak_info /* 0x8013D094 */
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -10679,7 +10679,7 @@ lbl_80299950:
 	.4byte 0x00000000
 	.4byte 0xBF19999A
 	.4byte 0x3E99999A
-	.4byte 0x8026D19C
+	.4byte lbl_8026D19C /* 0x8026D19C */
 	.4byte 0x8026D1A4
 	.4byte 0x8026D1AC
 	.4byte 0x8026D1B4

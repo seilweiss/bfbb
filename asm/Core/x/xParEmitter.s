@@ -1363,19 +1363,19 @@ lbl_8026B008:
 
 .section .data
 lbl_80297D18:
-	.4byte 0x80117DB0
+	.4byte lbl_80117DB0 /* 0x80117DB0 */
 	.4byte 0x80117D9C
 	.4byte 0x80117D9C
-	.4byte 0x80117DB0
-	.4byte 0x80117DB0
-	.4byte 0x80117DB0
-	.4byte 0x80117DB0
+	.4byte lbl_80117DB0 /* 0x80117DB0 */
+	.4byte lbl_80117DB0 /* 0x80117DB0 */
+	.4byte lbl_80117DB0 /* 0x80117DB0 */
+	.4byte lbl_80117DB0 /* 0x80117DB0 */
 	.4byte 0x80117DA8
 	.4byte 0x80117DA8
-	.4byte 0x80117DB0
+	.4byte lbl_80117DB0 /* 0x80117DB0 */
 	.4byte 0x80117DA8
 	.4byte 0x80117DA8
-	.4byte 0x80117DB0
+	.4byte lbl_80117DB0 /* 0x80117DB0 */
 	.4byte 0x80117D9C
 	.4byte 0x80117D9C
 lbl_80297D54:
@@ -1385,7 +1385,7 @@ lbl_80297D54:
 	.4byte 0x80117F34
 	.4byte 0x80117F64
 	.4byte 0x80117F94
-	.4byte 0x80117FE8
+	.4byte lbl_80117FE8 /* 0x80117FE8 */
 	.4byte 0x80117FC4
 lbl_80297D74:
 	.4byte 0x80118638

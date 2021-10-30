@@ -24,7 +24,7 @@
 	.4byte 0x00000010
 	.4byte 0x00000000
 	.4byte 0x82000008
-	.4byte 0x801ED060
+	.4byte __dt__26__partial_array_destructorFv /* 0x801ED060 */
 	.4byte 0x18080000
 	.4byte 0x00000000
 	.4byte 0x00080000

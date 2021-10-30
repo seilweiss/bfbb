@@ -9388,55 +9388,55 @@ lbl_801F7204:
 .section .data
 .global gTRKDispatchTable
 gTRKDispatchTable:
-	.4byte 0x801F2FBC
-	.4byte 0x801F2F00
-	.4byte 0x801F2E1C
-	.4byte 0x801F2D64
-	.4byte 0x801F2A8C
-	.4byte 0x801F285C
-	.4byte 0x801F24C4
-	.4byte 0x801F2FBC
-	.4byte 0x801F2FBC
-	.4byte 0x801F2FBC
-	.4byte 0x801F2FBC
-	.4byte 0x801F2FBC
-	.4byte 0x801F2FBC
-	.4byte 0x801F2FBC
-	.4byte 0x801F2FBC
-	.4byte 0x801F2FBC
-	.4byte 0x801F20B4
-	.4byte 0x801F1C94
-	.4byte 0x801F18C8
-	.4byte 0x801F1500
-	.4byte 0x801F2FBC
-	.4byte 0x801F2FBC
-	.4byte 0x801F1208
-	.4byte 0x801F08E0
-	.4byte 0x801F10B4
-	.4byte 0x801F0B84
-	.4byte 0x801F0A84
-	.4byte 0x801F2FBC
-	.4byte 0x801F2FBC
-	.4byte 0x801F2FBC
-	.4byte 0x801F2FBC
-	.4byte 0x801F2FBC
+	.4byte TRKDoUnsupported /* 0x801F2FBC */
+	.4byte TRKDoConnect /* 0x801F2F00 */
+	.4byte TRKDoDisconnect /* 0x801F2E1C */
+	.4byte TRKDoReset /* 0x801F2D64 */
+	.4byte TRKDoVersions /* 0x801F2A8C */
+	.4byte TRKDoSupportMask /* 0x801F285C */
+	.4byte TRKDoCPUType /* 0x801F24C4 */
+	.4byte TRKDoUnsupported /* 0x801F2FBC */
+	.4byte TRKDoUnsupported /* 0x801F2FBC */
+	.4byte TRKDoUnsupported /* 0x801F2FBC */
+	.4byte TRKDoUnsupported /* 0x801F2FBC */
+	.4byte TRKDoUnsupported /* 0x801F2FBC */
+	.4byte TRKDoUnsupported /* 0x801F2FBC */
+	.4byte TRKDoUnsupported /* 0x801F2FBC */
+	.4byte TRKDoUnsupported /* 0x801F2FBC */
+	.4byte TRKDoUnsupported /* 0x801F2FBC */
+	.4byte TRKDoReadMemory /* 0x801F20B4 */
+	.4byte TRKDoWriteMemory /* 0x801F1C94 */
+	.4byte TRKDoReadRegisters /* 0x801F18C8 */
+	.4byte TRKDoWriteRegisters /* 0x801F1500 */
+	.4byte TRKDoUnsupported /* 0x801F2FBC */
+	.4byte TRKDoUnsupported /* 0x801F2FBC */
+	.4byte TRKDoFlushCache /* 0x801F1208 */
+	.4byte TRKDoSetOption /* 0x801F08E0 */
+	.4byte TRKDoContinue /* 0x801F10B4 */
+	.4byte TRKDoStep /* 0x801F0B84 */
+	.4byte TRKDoStop /* 0x801F0A84 */
+	.4byte TRKDoUnsupported /* 0x801F2FBC */
+	.4byte TRKDoUnsupported /* 0x801F2FBC */
+	.4byte TRKDoUnsupported /* 0x801F2FBC */
+	.4byte TRKDoUnsupported /* 0x801F2FBC */
+	.4byte TRKDoUnsupported /* 0x801F2FBC */
 	.4byte 0x00000000
 	.4byte 0x00000000
 .global lbl_802B75F0
 lbl_802B75F0:
 	.4byte 0x801F1FD4
-	.4byte 0x801F1FF4
+	.4byte lbl_801F1FF4 /* 0x801F1FF4 */
 	.4byte 0x801F1FCC
-	.4byte 0x801F1FF4
+	.4byte lbl_801F1FF4 /* 0x801F1FF4 */
 	.4byte 0x801F1FDC
 	.4byte 0x801F1FE4
 	.4byte 0x801F1FEC
 .global lbl_802B760C
 lbl_802B760C:
 	.4byte 0x801F23E4
-	.4byte 0x801F2404
+	.4byte lbl_801F2404 /* 0x801F2404 */
 	.4byte 0x801F23DC
-	.4byte 0x801F2404
+	.4byte lbl_801F2404 /* 0x801F2404 */
 	.4byte 0x801F23EC
 	.4byte 0x801F23F4
 	.4byte 0x801F23FC

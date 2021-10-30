@@ -1089,7 +1089,7 @@ lbl_8004D04C:
 
 .section .data
 lbl_8028A228:
-	.4byte 0x8004D04C
+	.4byte lbl_8004D04C /* 0x8004D04C */
 	.4byte 0x8004CAB0
 	.4byte 0x8004CAEC
 	.4byte 0x8004CB38

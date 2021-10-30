@@ -268,12 +268,12 @@ lbl_800ACDCC:
 
 .section .data
 lbl_80290030:
-	.4byte 0x800ACDCC
-	.4byte 0x800ACDCC
+	.4byte lbl_800ACDCC /* 0x800ACDCC */
+	.4byte lbl_800ACDCC /* 0x800ACDCC */
 	.4byte 0x800ACADC
-	.4byte 0x800ACDCC
+	.4byte lbl_800ACDCC /* 0x800ACDCC */
 	.4byte 0x800ACBD4
-	.4byte 0x800ACDCC
+	.4byte lbl_800ACDCC /* 0x800ACDCC */
 	.4byte 0x800ACB78
 	.4byte 0x800ACBC4
 	.4byte 0x800ACAB4

@@ -7044,7 +7044,7 @@ lbl_8026A5DC:
 	.4byte 0x00000000
 	.4byte 0xBF800000
 	.4byte 0x00000000
-	.4byte 0x80110B90
+	.4byte on_tweak_vertical__Q312bungee_state35_esc__2_unnamed_esc__2_zEntPlayerBungeeState_cpp_esc__2_18hanging_state_typeFRC10tweak_info /* 0x80110B90 */
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -7054,7 +7054,7 @@ lbl_8026A5DC:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x80110B20
+	.4byte on_tweak_horizontal__Q312bungee_state35_esc__2_unnamed_esc__2_zEntPlayerBungeeState_cpp_esc__2_18hanging_state_typeFRC10tweak_info /* 0x80110B20 */
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -7064,7 +7064,7 @@ lbl_8026A5DC:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x80110A0C
+	.4byte on_tweak_camera__Q312bungee_state35_esc__2_unnamed_esc__2_zEntPlayerBungeeState_cpp_esc__2_18hanging_state_typeFRC10tweak_info /* 0x80110A0C */
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -7074,7 +7074,7 @@ lbl_8026A5DC:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x80110930
+	.4byte on_tweak_collision__Q312bungee_state35_esc__2_unnamed_esc__2_zEntPlayerBungeeState_cpp_esc__2_18hanging_state_typeFRC10tweak_info /* 0x80110930 */
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -7819,38 +7819,38 @@ __vt__Q312bungee_state35_esc__2_unnamed_esc__2_zEntPlayerBungeeState_cpp_esc__2_
   .4byte update__Q312bungee_state35_esc__2_unnamed_esc__2_zEntPlayerBungeeState_cpp_esc__2_18hanging_state_typeFR6xSceneRf
   .4byte render__Q312bungee_state35_esc__2_unnamed_esc__2_zEntPlayerBungeeState_cpp_esc__2_18hanging_state_typeFv
 lbl_80297C58:
-	.4byte 0x80115514
+	.4byte lbl_80115514 /* 0x80115514 */
 	.4byte 0x8011541C
 	.4byte 0x80115458
-	.4byte 0x80115514
+	.4byte lbl_80115514 /* 0x80115514 */
 	.4byte 0x8011547C
-	.4byte 0x80115514
-	.4byte 0x80115514
-	.4byte 0x80115514
+	.4byte lbl_80115514 /* 0x80115514 */
+	.4byte lbl_80115514 /* 0x80115514 */
+	.4byte lbl_80115514 /* 0x80115514 */
 	.4byte 0x801154AC
-	.4byte 0x80115514
-	.4byte 0x80115514
-	.4byte 0x80115514
-	.4byte 0x80115514
-	.4byte 0x80115514
-	.4byte 0x80115514
-	.4byte 0x80115514
+	.4byte lbl_80115514 /* 0x80115514 */
+	.4byte lbl_80115514 /* 0x80115514 */
+	.4byte lbl_80115514 /* 0x80115514 */
+	.4byte lbl_80115514 /* 0x80115514 */
+	.4byte lbl_80115514 /* 0x80115514 */
+	.4byte lbl_80115514 /* 0x80115514 */
+	.4byte lbl_80115514 /* 0x80115514 */
 	.4byte 0x801154D0
-	.4byte 0x80115514
-	.4byte 0x80115514
-	.4byte 0x80115514
-	.4byte 0x80115514
-	.4byte 0x80115514
-	.4byte 0x80115514
-	.4byte 0x80115514
-	.4byte 0x80115514
-	.4byte 0x80115514
-	.4byte 0x80115514
-	.4byte 0x80115514
-	.4byte 0x80115514
-	.4byte 0x80115514
-	.4byte 0x80115514
-	.4byte 0x80115514
+	.4byte lbl_80115514 /* 0x80115514 */
+	.4byte lbl_80115514 /* 0x80115514 */
+	.4byte lbl_80115514 /* 0x80115514 */
+	.4byte lbl_80115514 /* 0x80115514 */
+	.4byte lbl_80115514 /* 0x80115514 */
+	.4byte lbl_80115514 /* 0x80115514 */
+	.4byte lbl_80115514 /* 0x80115514 */
+	.4byte lbl_80115514 /* 0x80115514 */
+	.4byte lbl_80115514 /* 0x80115514 */
+	.4byte lbl_80115514 /* 0x80115514 */
+	.4byte lbl_80115514 /* 0x80115514 */
+	.4byte lbl_80115514 /* 0x80115514 */
+	.4byte lbl_80115514 /* 0x80115514 */
+	.4byte lbl_80115514 /* 0x80115514 */
+	.4byte lbl_80115514 /* 0x80115514 */
 	.4byte 0x801154F4
 	.4byte 0x00000000
 

@@ -16254,6 +16254,7 @@ lbl_802696DC:
 	.4byte 0x00000000
 	.4byte 0x3F800000
 	.4byte 0x00000000
+.global lbl_802696F4
 lbl_802696F4:
 	.4byte 0x556E6B6E
 	.4byte 0x6F776E00
@@ -16503,7 +16504,7 @@ lbl_802696F4:
 
 .section .data
 lbl_8029566C:
-	.4byte 0x802696F4
+	.4byte lbl_802696F4 /* 0x802696F4 */
 	.4byte 0x802698D5
 	.4byte 0x802698E2
 lbl_80295678:
@@ -16528,35 +16529,35 @@ lbl_80295678:
 	.4byte 0x00000015
 	.4byte 0x00000016
 lbl_802956C8:
-	.4byte 0x800F84B0
+	.4byte lbl_800F84B0 /* 0x800F84B0 */
 	.4byte 0x800F8474
 	.4byte 0x800F83BC
 	.4byte 0x800F8364
 	.4byte 0x800F8364
 	.4byte 0x800F8358
-	.4byte 0x800F84B0
-	.4byte 0x800F84B0
-	.4byte 0x800F84B0
-	.4byte 0x800F84B0
-	.4byte 0x800F84B0
-	.4byte 0x800F84B0
-	.4byte 0x800F84B0
-	.4byte 0x800F84B0
-	.4byte 0x800F84B0
-	.4byte 0x800F84B0
-	.4byte 0x800F84B0
-	.4byte 0x800F84B0
-	.4byte 0x800F84B0
-	.4byte 0x800F84B0
-	.4byte 0x800F84B0
-	.4byte 0x800F84B0
-	.4byte 0x800F84B0
-	.4byte 0x800F84B0
-	.4byte 0x800F84B0
+	.4byte lbl_800F84B0 /* 0x800F84B0 */
+	.4byte lbl_800F84B0 /* 0x800F84B0 */
+	.4byte lbl_800F84B0 /* 0x800F84B0 */
+	.4byte lbl_800F84B0 /* 0x800F84B0 */
+	.4byte lbl_800F84B0 /* 0x800F84B0 */
+	.4byte lbl_800F84B0 /* 0x800F84B0 */
+	.4byte lbl_800F84B0 /* 0x800F84B0 */
+	.4byte lbl_800F84B0 /* 0x800F84B0 */
+	.4byte lbl_800F84B0 /* 0x800F84B0 */
+	.4byte lbl_800F84B0 /* 0x800F84B0 */
+	.4byte lbl_800F84B0 /* 0x800F84B0 */
+	.4byte lbl_800F84B0 /* 0x800F84B0 */
+	.4byte lbl_800F84B0 /* 0x800F84B0 */
+	.4byte lbl_800F84B0 /* 0x800F84B0 */
+	.4byte lbl_800F84B0 /* 0x800F84B0 */
+	.4byte lbl_800F84B0 /* 0x800F84B0 */
+	.4byte lbl_800F84B0 /* 0x800F84B0 */
+	.4byte lbl_800F84B0 /* 0x800F84B0 */
+	.4byte lbl_800F84B0 /* 0x800F84B0 */
 	.4byte 0x800F83E0
 	.4byte 0x800F83C8
-	.4byte 0x800F84B4
-	.4byte 0x800F84B4
+	.4byte lbl_800F84B4 /* 0x800F84B4 */
+	.4byte lbl_800F84B4 /* 0x800F84B4 */
 	.4byte 0x4E474E30
 	.4byte 0x4E474E32
 	.4byte 0x4E474E31
@@ -16579,8 +16580,8 @@ lbl_80295778:
 	.4byte 0x800FFDBC
 	.4byte 0x800FFDC4
 	.4byte 0x800FFDCC
-	.4byte 0x800FFDE4
-	.4byte 0x800FFDE4
+	.4byte lbl_800FFDE4 /* 0x800FFDE4 */
+	.4byte lbl_800FFDE4 /* 0x800FFDE4 */
 	.4byte 0x800FFDD4
 lbl_80295798:
 	.4byte 0x00000014
@@ -17600,7 +17601,7 @@ g_hash_folkanim:
 /* SPECULATION: link order */
 .global g_strz_folkanim
 g_strz_folkanim:
-	.4byte 0x80269D40
+	.4byte lbl_80269D40 /* 0x80269D40 */
 	.4byte 0x80269D48
 	.4byte 0x80269D4F
 	.4byte 0x80269D56
@@ -17748,25 +17749,25 @@ lbl_803CAC70:
 	.4byte 0x00000000
 	.4byte 0x00000000
 lbl_803CAC78:
-	.4byte 0x802696F4
+	.4byte lbl_802696F4 /* 0x802696F4 */
 	.4byte 0x802698C6
 lbl_803CAC80:
 	.4byte 0x00000000
 	.4byte 0x00000000
 lbl_803CAC88:
-	.4byte 0x802696F4
+	.4byte lbl_802696F4 /* 0x802696F4 */
 	.4byte 0x802698F1
 lbl_803CAC90:
 	.4byte 0x00000000
 	.4byte 0x00000000
 lbl_803CAC98:
-	.4byte 0x802696F4
+	.4byte lbl_802696F4 /* 0x802696F4 */
 	.4byte 0x802698FE
 lbl_803CACA0:
 	.4byte 0x00000000
 	.4byte 0x00000000
 lbl_803CACA8:
-	.4byte 0x802696F4
+	.4byte lbl_802696F4 /* 0x802696F4 */
 	.4byte 0x80269907
 /* SPECULATION: link order */
 .global uv_slice_discoLight__11zNPCFodBzzt

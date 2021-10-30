@@ -14966,6 +14966,7 @@ lbl_801E982C:
 lbl_801E983C:
 /* 801E983C 001E663C  C8 22 B5 88 */	lfd f1, lbl_803CFF08@sda21(r2)
 /* 801E9840 001E6640  48 00 01 B4 */	b lbl_801E99F4
+.global lbl_801E9844
 lbl_801E9844:
 /* 801E9844 001E6644  C8 22 B5 90 */	lfd f1, lbl_803CFF10@sda21(r2)
 /* 801E9848 001E6648  48 00 01 AC */	b lbl_801E99F4
@@ -18842,9 +18843,9 @@ lbl_802B6B08:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x801F66D4
-	.4byte 0x801E90B8
-	.4byte 0x801E90B0
+	.4byte __read_console /* 0x801F66D4 */
+	.4byte __write_console /* 0x801E90B8 */
+	.4byte __close_console /* 0x801E90B0 */
 	.4byte 0x00000000
 	.4byte 0x802B6B58
 	.4byte 0x00000001
@@ -18862,9 +18863,9 @@ lbl_802B6B08:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x801F66D4
-	.4byte 0x801E90B8
-	.4byte 0x801E90B0
+	.4byte __read_console /* 0x801F66D4 */
+	.4byte __write_console /* 0x801E90B8 */
+	.4byte __close_console /* 0x801E90B0 */
 	.4byte 0x00000000
 	.4byte 0x802B6BA8
 	.4byte 0x00000002
@@ -18882,9 +18883,9 @@ lbl_802B6B08:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x801F66D4
-	.4byte 0x801E90B8
-	.4byte 0x801E90B0
+	.4byte __read_console /* 0x801F66D4 */
+	.4byte __write_console /* 0x801E90B8 */
+	.4byte __close_console /* 0x801E90B0 */
 	.4byte 0x00000000
 	.4byte 0x802B6BF8
 	.4byte 0x00000000
@@ -18928,61 +18929,61 @@ lbl_802B6C48:
 .global lbl_802B6C88
 lbl_802B6C88:
 	.4byte 0x801E0464
-	.4byte 0x801E1900
-	.4byte 0x801E1900
-	.4byte 0x801E1900
-	.4byte 0x801E1900
-	.4byte 0x801E1900
-	.4byte 0x801E1900
-	.4byte 0x801E1900
-	.4byte 0x801E1900
-	.4byte 0x801E1900
-	.4byte 0x801E1900
+	.4byte lbl_801E1900 /* 0x801E1900 */
+	.4byte lbl_801E1900 /* 0x801E1900 */
+	.4byte lbl_801E1900 /* 0x801E1900 */
+	.4byte lbl_801E1900 /* 0x801E1900 */
+	.4byte lbl_801E1900 /* 0x801E1900 */
+	.4byte lbl_801E1900 /* 0x801E1900 */
+	.4byte lbl_801E1900 /* 0x801E1900 */
+	.4byte lbl_801E1900 /* 0x801E1900 */
+	.4byte lbl_801E1900 /* 0x801E1900 */
+	.4byte lbl_801E1900 /* 0x801E1900 */
 	.4byte 0x801E0560
-	.4byte 0x801E1900
-	.4byte 0x801E1900
-	.4byte 0x801E1900
-	.4byte 0x801E1900
-	.4byte 0x801E1900
-	.4byte 0x801E1900
-	.4byte 0x801E1900
-	.4byte 0x801E1900
-	.4byte 0x801E1900
-	.4byte 0x801E1900
-	.4byte 0x801E1900
-	.4byte 0x801E1900
-	.4byte 0x801E1900
-	.4byte 0x801E1900
-	.4byte 0x801E1900
-	.4byte 0x801E1900
-	.4byte 0x801E1900
-	.4byte 0x801E1900
-	.4byte 0x801E1900
-	.4byte 0x801E1900
+	.4byte lbl_801E1900 /* 0x801E1900 */
+	.4byte lbl_801E1900 /* 0x801E1900 */
+	.4byte lbl_801E1900 /* 0x801E1900 */
+	.4byte lbl_801E1900 /* 0x801E1900 */
+	.4byte lbl_801E1900 /* 0x801E1900 */
+	.4byte lbl_801E1900 /* 0x801E1900 */
+	.4byte lbl_801E1900 /* 0x801E1900 */
+	.4byte lbl_801E1900 /* 0x801E1900 */
+	.4byte lbl_801E1900 /* 0x801E1900 */
+	.4byte lbl_801E1900 /* 0x801E1900 */
+	.4byte lbl_801E1900 /* 0x801E1900 */
+	.4byte lbl_801E1900 /* 0x801E1900 */
+	.4byte lbl_801E1900 /* 0x801E1900 */
+	.4byte lbl_801E1900 /* 0x801E1900 */
+	.4byte lbl_801E1900 /* 0x801E1900 */
+	.4byte lbl_801E1900 /* 0x801E1900 */
+	.4byte lbl_801E1900 /* 0x801E1900 */
+	.4byte lbl_801E1900 /* 0x801E1900 */
+	.4byte lbl_801E1900 /* 0x801E1900 */
+	.4byte lbl_801E1900 /* 0x801E1900 */
 	.4byte 0x801E065C
-	.4byte 0x801E1900
-	.4byte 0x801E1900
-	.4byte 0x801E1900
-	.4byte 0x801E1900
-	.4byte 0x801E1900
-	.4byte 0x801E1900
-	.4byte 0x801E1900
-	.4byte 0x801E1900
-	.4byte 0x801E1900
-	.4byte 0x801E1900
-	.4byte 0x801E1900
-	.4byte 0x801E1900
-	.4byte 0x801E1900
-	.4byte 0x801E1900
-	.4byte 0x801E1900
+	.4byte lbl_801E1900 /* 0x801E1900 */
+	.4byte lbl_801E1900 /* 0x801E1900 */
+	.4byte lbl_801E1900 /* 0x801E1900 */
+	.4byte lbl_801E1900 /* 0x801E1900 */
+	.4byte lbl_801E1900 /* 0x801E1900 */
+	.4byte lbl_801E1900 /* 0x801E1900 */
+	.4byte lbl_801E1900 /* 0x801E1900 */
+	.4byte lbl_801E1900 /* 0x801E1900 */
+	.4byte lbl_801E1900 /* 0x801E1900 */
+	.4byte lbl_801E1900 /* 0x801E1900 */
+	.4byte lbl_801E1900 /* 0x801E1900 */
+	.4byte lbl_801E1900 /* 0x801E1900 */
+	.4byte lbl_801E1900 /* 0x801E1900 */
+	.4byte lbl_801E1900 /* 0x801E1900 */
+	.4byte lbl_801E1900 /* 0x801E1900 */
 	.4byte 0x801E0758
-	.4byte 0x801E1900
-	.4byte 0x801E1900
-	.4byte 0x801E1900
-	.4byte 0x801E1900
-	.4byte 0x801E1900
-	.4byte 0x801E1900
-	.4byte 0x801E1900
+	.4byte lbl_801E1900 /* 0x801E1900 */
+	.4byte lbl_801E1900 /* 0x801E1900 */
+	.4byte lbl_801E1900 /* 0x801E1900 */
+	.4byte lbl_801E1900 /* 0x801E1900 */
+	.4byte lbl_801E1900 /* 0x801E1900 */
+	.4byte lbl_801E1900 /* 0x801E1900 */
+	.4byte lbl_801E1900 /* 0x801E1900 */
 	.4byte 0x801E0854
 	.4byte 0x801E0950
 	.4byte 0x801E0A4C
@@ -19218,242 +19219,242 @@ lbl_802B70B0:
 .global lbl_802B70E8
 lbl_802B70E8:
 	.4byte 0x801E576C
-	.4byte 0x801E577C
-	.4byte 0x801E577C
-	.4byte 0x801E577C
-	.4byte 0x801E577C
-	.4byte 0x801E577C
-	.4byte 0x801E577C
-	.4byte 0x801E577C
-	.4byte 0x801E577C
-	.4byte 0x801E577C
-	.4byte 0x801E577C
-	.4byte 0x801E577C
+	.4byte lbl_801E577C /* 0x801E577C */
+	.4byte lbl_801E577C /* 0x801E577C */
+	.4byte lbl_801E577C /* 0x801E577C */
+	.4byte lbl_801E577C /* 0x801E577C */
+	.4byte lbl_801E577C /* 0x801E577C */
+	.4byte lbl_801E577C /* 0x801E577C */
+	.4byte lbl_801E577C /* 0x801E577C */
+	.4byte lbl_801E577C /* 0x801E577C */
+	.4byte lbl_801E577C /* 0x801E577C */
+	.4byte lbl_801E577C /* 0x801E577C */
+	.4byte lbl_801E577C /* 0x801E577C */
 	.4byte 0x801E570C
-	.4byte 0x801E577C
-	.4byte 0x801E577C
-	.4byte 0x801E577C
-	.4byte 0x801E577C
+	.4byte lbl_801E577C /* 0x801E577C */
+	.4byte lbl_801E577C /* 0x801E577C */
+	.4byte lbl_801E577C /* 0x801E577C */
+	.4byte lbl_801E577C /* 0x801E577C */
 	.4byte 0x801E570C
-	.4byte 0x801E577C
-	.4byte 0x801E577C
-	.4byte 0x801E577C
-	.4byte 0x801E577C
-	.4byte 0x801E577C
+	.4byte lbl_801E577C /* 0x801E577C */
+	.4byte lbl_801E577C /* 0x801E577C */
+	.4byte lbl_801E577C /* 0x801E577C */
+	.4byte lbl_801E577C /* 0x801E577C */
+	.4byte lbl_801E577C /* 0x801E577C */
 	.4byte 0x801E5744
-	.4byte 0x801E577C
-	.4byte 0x801E577C
-	.4byte 0x801E577C
-	.4byte 0x801E577C
-	.4byte 0x801E577C
+	.4byte lbl_801E577C /* 0x801E577C */
+	.4byte lbl_801E577C /* 0x801E577C */
+	.4byte lbl_801E577C /* 0x801E577C */
+	.4byte lbl_801E577C /* 0x801E577C */
+	.4byte lbl_801E577C /* 0x801E577C */
 	.4byte 0x801E5758
-	.4byte 0x801E577C
-	.4byte 0x801E577C
+	.4byte lbl_801E577C /* 0x801E577C */
+	.4byte lbl_801E577C /* 0x801E577C */
 	.4byte 0x801E576C
 .global lbl_802B716C
 lbl_802B716C:
 	.4byte 0x801E59F8
-	.4byte 0x801E5A04
-	.4byte 0x801E5A04
-	.4byte 0x801E5A04
-	.4byte 0x801E5A04
-	.4byte 0x801E5A04
-	.4byte 0x801E5A04
-	.4byte 0x801E5A04
-	.4byte 0x801E5A04
-	.4byte 0x801E5A04
-	.4byte 0x801E5A04
-	.4byte 0x801E5A04
+	.4byte lbl_801E5A04 /* 0x801E5A04 */
+	.4byte lbl_801E5A04 /* 0x801E5A04 */
+	.4byte lbl_801E5A04 /* 0x801E5A04 */
+	.4byte lbl_801E5A04 /* 0x801E5A04 */
+	.4byte lbl_801E5A04 /* 0x801E5A04 */
+	.4byte lbl_801E5A04 /* 0x801E5A04 */
+	.4byte lbl_801E5A04 /* 0x801E5A04 */
+	.4byte lbl_801E5A04 /* 0x801E5A04 */
+	.4byte lbl_801E5A04 /* 0x801E5A04 */
+	.4byte lbl_801E5A04 /* 0x801E5A04 */
+	.4byte lbl_801E5A04 /* 0x801E5A04 */
 	.4byte 0x801E59C0
-	.4byte 0x801E5A04
-	.4byte 0x801E5A04
-	.4byte 0x801E5A04
-	.4byte 0x801E5A04
+	.4byte lbl_801E5A04 /* 0x801E5A04 */
+	.4byte lbl_801E5A04 /* 0x801E5A04 */
+	.4byte lbl_801E5A04 /* 0x801E5A04 */
+	.4byte lbl_801E5A04 /* 0x801E5A04 */
 	.4byte 0x801E59C0
-	.4byte 0x801E5A04
-	.4byte 0x801E5A04
-	.4byte 0x801E5A04
-	.4byte 0x801E5A04
-	.4byte 0x801E5A04
+	.4byte lbl_801E5A04 /* 0x801E5A04 */
+	.4byte lbl_801E5A04 /* 0x801E5A04 */
+	.4byte lbl_801E5A04 /* 0x801E5A04 */
+	.4byte lbl_801E5A04 /* 0x801E5A04 */
+	.4byte lbl_801E5A04 /* 0x801E5A04 */
 	.4byte 0x801E59D8
-	.4byte 0x801E5A04
-	.4byte 0x801E5A04
-	.4byte 0x801E5A04
-	.4byte 0x801E5A04
-	.4byte 0x801E5A04
+	.4byte lbl_801E5A04 /* 0x801E5A04 */
+	.4byte lbl_801E5A04 /* 0x801E5A04 */
+	.4byte lbl_801E5A04 /* 0x801E5A04 */
+	.4byte lbl_801E5A04 /* 0x801E5A04 */
+	.4byte lbl_801E5A04 /* 0x801E5A04 */
 	.4byte 0x801E59E8
-	.4byte 0x801E5A04
-	.4byte 0x801E5A04
+	.4byte lbl_801E5A04 /* 0x801E5A04 */
+	.4byte lbl_801E5A04 /* 0x801E5A04 */
 	.4byte 0x801E59F8
 .global lbl_802B71F0
 lbl_802B71F0:
 	.4byte 0x801E5EFC
-	.4byte 0x801E602C
-	.4byte 0x801E602C
-	.4byte 0x801E602C
-	.4byte 0x801E5F4C
+	.4byte lbl_801E602C /* 0x801E602C */
+	.4byte lbl_801E602C /* 0x801E602C */
+	.4byte lbl_801E602C /* 0x801E602C */
+	.4byte lbl_801E5F4C /* 0x801E5F4C */
 	.4byte 0x801E5EC4
 	.4byte 0x801E5F38
-	.4byte 0x801E602C
-	.4byte 0x801E602C
-	.4byte 0x801E602C
-	.4byte 0x801E602C
-	.4byte 0x801E602C
-	.4byte 0x801E602C
-	.4byte 0x801E602C
-	.4byte 0x801E602C
-	.4byte 0x801E602C
-	.4byte 0x801E602C
-	.4byte 0x801E602C
-	.4byte 0x801E602C
-	.4byte 0x801E602C
-	.4byte 0x801E602C
-	.4byte 0x801E602C
-	.4byte 0x801E602C
+	.4byte lbl_801E602C /* 0x801E602C */
+	.4byte lbl_801E602C /* 0x801E602C */
+	.4byte lbl_801E602C /* 0x801E602C */
+	.4byte lbl_801E602C /* 0x801E602C */
+	.4byte lbl_801E602C /* 0x801E602C */
+	.4byte lbl_801E602C /* 0x801E602C */
+	.4byte lbl_801E602C /* 0x801E602C */
+	.4byte lbl_801E602C /* 0x801E602C */
+	.4byte lbl_801E602C /* 0x801E602C */
+	.4byte lbl_801E602C /* 0x801E602C */
+	.4byte lbl_801E602C /* 0x801E602C */
+	.4byte lbl_801E602C /* 0x801E602C */
+	.4byte lbl_801E602C /* 0x801E602C */
+	.4byte lbl_801E602C /* 0x801E602C */
+	.4byte lbl_801E602C /* 0x801E602C */
+	.4byte lbl_801E602C /* 0x801E602C */
 	.4byte 0x801E5E7C
-	.4byte 0x801E602C
-	.4byte 0x801E602C
-	.4byte 0x801E602C
-	.4byte 0x801E602C
-	.4byte 0x801E602C
-	.4byte 0x801E602C
-	.4byte 0x801E602C
-	.4byte 0x801E602C
+	.4byte lbl_801E602C /* 0x801E602C */
+	.4byte lbl_801E602C /* 0x801E602C */
+	.4byte lbl_801E602C /* 0x801E602C */
+	.4byte lbl_801E602C /* 0x801E602C */
+	.4byte lbl_801E602C /* 0x801E602C */
+	.4byte lbl_801E602C /* 0x801E602C */
+	.4byte lbl_801E602C /* 0x801E602C */
+	.4byte lbl_801E602C /* 0x801E602C */
 	.4byte 0x801E5EFC
-	.4byte 0x801E602C
+	.4byte lbl_801E602C /* 0x801E602C */
 	.4byte 0x801E5FB0
 	.4byte 0x801E5E7C
-	.4byte 0x801E5F4C
+	.4byte lbl_801E5F4C /* 0x801E5F4C */
 	.4byte 0x801E5EC4
 	.4byte 0x801E5F38
-	.4byte 0x801E602C
+	.4byte lbl_801E602C /* 0x801E602C */
 	.4byte 0x801E5E7C
-	.4byte 0x801E602C
-	.4byte 0x801E602C
-	.4byte 0x801E602C
-	.4byte 0x801E602C
+	.4byte lbl_801E602C /* 0x801E602C */
+	.4byte lbl_801E602C /* 0x801E602C */
+	.4byte lbl_801E602C /* 0x801E602C */
+	.4byte lbl_801E602C /* 0x801E602C */
 	.4byte 0x801E6014
 	.4byte 0x801E5E7C
 	.4byte 0x801E5F8C
-	.4byte 0x801E602C
-	.4byte 0x801E602C
+	.4byte lbl_801E602C /* 0x801E602C */
+	.4byte lbl_801E602C /* 0x801E602C */
 	.4byte 0x801E5FE8
-	.4byte 0x801E602C
+	.4byte lbl_801E602C /* 0x801E602C */
 	.4byte 0x801E5E7C
-	.4byte 0x801E602C
-	.4byte 0x801E602C
+	.4byte lbl_801E602C /* 0x801E602C */
+	.4byte lbl_801E602C /* 0x801E602C */
 	.4byte 0x801E5E7C
 .global lbl_802B72D0
 lbl_802B72D0:
 	.4byte 0x801E5C2C
-	.4byte 0x801E5C68
-	.4byte 0x801E5C68
+	.4byte lbl_801E5C68 /* 0x801E5C68 */
+	.4byte lbl_801E5C68 /* 0x801E5C68 */
 	.4byte 0x801E5C44
-	.4byte 0x801E5C68
-	.4byte 0x801E5C68
-	.4byte 0x801E5C68
-	.4byte 0x801E5C68
-	.4byte 0x801E5C68
-	.4byte 0x801E5C68
-	.4byte 0x801E5C68
+	.4byte lbl_801E5C68 /* 0x801E5C68 */
+	.4byte lbl_801E5C68 /* 0x801E5C68 */
+	.4byte lbl_801E5C68 /* 0x801E5C68 */
+	.4byte lbl_801E5C68 /* 0x801E5C68 */
+	.4byte lbl_801E5C68 /* 0x801E5C68 */
+	.4byte lbl_801E5C68 /* 0x801E5C68 */
+	.4byte lbl_801E5C68 /* 0x801E5C68 */
 	.4byte 0x801E5C20
-	.4byte 0x801E5C68
+	.4byte lbl_801E5C68 /* 0x801E5C68 */
 	.4byte 0x801E5C14
-	.4byte 0x801E5C68
-	.4byte 0x801E5C68
+	.4byte lbl_801E5C68 /* 0x801E5C68 */
+	.4byte lbl_801E5C68 /* 0x801E5C68 */
 	.4byte 0x801E5C50
 	.4byte 0x00000000
 .global lbl_802B7318
 lbl_802B7318:
 	.4byte 0x801E6F58
-	.4byte 0x801E71DC
+	.4byte lbl_801E71DC /* 0x801E71DC */
 	.4byte 0x801E6F58
-	.4byte 0x801E71DC
-	.4byte 0x801E71DC
-	.4byte 0x801E71DC
-	.4byte 0x801E71DC
-	.4byte 0x801E71DC
-	.4byte 0x801E71DC
-	.4byte 0x801E71DC
-	.4byte 0x801E71DC
-	.4byte 0x801E71DC
-	.4byte 0x801E71DC
-	.4byte 0x801E71DC
-	.4byte 0x801E71DC
-	.4byte 0x801E71DC
-	.4byte 0x801E71DC
-	.4byte 0x801E71DC
-	.4byte 0x801E71DC
+	.4byte lbl_801E71DC /* 0x801E71DC */
+	.4byte lbl_801E71DC /* 0x801E71DC */
+	.4byte lbl_801E71DC /* 0x801E71DC */
+	.4byte lbl_801E71DC /* 0x801E71DC */
+	.4byte lbl_801E71DC /* 0x801E71DC */
+	.4byte lbl_801E71DC /* 0x801E71DC */
+	.4byte lbl_801E71DC /* 0x801E71DC */
+	.4byte lbl_801E71DC /* 0x801E71DC */
+	.4byte lbl_801E71DC /* 0x801E71DC */
+	.4byte lbl_801E71DC /* 0x801E71DC */
+	.4byte lbl_801E71DC /* 0x801E71DC */
+	.4byte lbl_801E71DC /* 0x801E71DC */
+	.4byte lbl_801E71DC /* 0x801E71DC */
+	.4byte lbl_801E71DC /* 0x801E71DC */
+	.4byte lbl_801E71DC /* 0x801E71DC */
+	.4byte lbl_801E71DC /* 0x801E71DC */
 	.4byte 0x801E6F40
-	.4byte 0x801E71DC
-	.4byte 0x801E71DC
+	.4byte lbl_801E71DC /* 0x801E71DC */
+	.4byte lbl_801E71DC /* 0x801E71DC */
 	.4byte 0x801E7048
-	.4byte 0x801E71DC
-	.4byte 0x801E71DC
-	.4byte 0x801E71DC
-	.4byte 0x801E71DC
-	.4byte 0x801E71DC
+	.4byte lbl_801E71DC /* 0x801E71DC */
+	.4byte lbl_801E71DC /* 0x801E71DC */
+	.4byte lbl_801E71DC /* 0x801E71DC */
+	.4byte lbl_801E71DC /* 0x801E71DC */
+	.4byte lbl_801E71DC /* 0x801E71DC */
 	.4byte 0x801E6F58
-	.4byte 0x801E71DC
+	.4byte lbl_801E71DC /* 0x801E71DC */
 	.4byte 0x801E6FA8
 	.4byte 0x801E6F40
 	.4byte 0x801E6F58
 	.4byte 0x801E6F58
 	.4byte 0x801E6F58
-	.4byte 0x801E71DC
+	.4byte lbl_801E71DC /* 0x801E71DC */
 	.4byte 0x801E6F40
-	.4byte 0x801E71DC
-	.4byte 0x801E71DC
-	.4byte 0x801E71DC
-	.4byte 0x801E71DC
-	.4byte 0x801E71E4
+	.4byte lbl_801E71DC /* 0x801E71DC */
+	.4byte lbl_801E71DC /* 0x801E71DC */
+	.4byte lbl_801E71DC /* 0x801E71DC */
+	.4byte lbl_801E71DC /* 0x801E71DC */
+	.4byte lbl_801E71E4 /* 0x801E71E4 */
 	.4byte 0x801E6F40
 	.4byte 0x801E6F94
-	.4byte 0x801E71DC
-	.4byte 0x801E71DC
+	.4byte lbl_801E71DC /* 0x801E71DC */
+	.4byte lbl_801E71DC /* 0x801E71DC */
 	.4byte 0x801E6FD4
-	.4byte 0x801E71DC
+	.4byte lbl_801E71DC /* 0x801E71DC */
 	.4byte 0x801E6F40
-	.4byte 0x801E71DC
-	.4byte 0x801E71DC
+	.4byte lbl_801E71DC /* 0x801E71DC */
+	.4byte lbl_801E71DC /* 0x801E71DC */
 	.4byte 0x801E6F40
 .global lbl_802B73E8
 lbl_802B73E8:
-	.4byte 0x801E8CC4
+	.4byte lbl_801E8CC4 /* 0x801E8CC4 */
 	.4byte 0x801E8A0C
 	.4byte 0x801E8AAC
-	.4byte 0x801E8CC4
+	.4byte lbl_801E8CC4 /* 0x801E8CC4 */
 	.4byte 0x801E8AF4
-	.4byte 0x801E8CC4
-	.4byte 0x801E8CC4
-	.4byte 0x801E8CC4
+	.4byte lbl_801E8CC4 /* 0x801E8CC4 */
+	.4byte lbl_801E8CC4 /* 0x801E8CC4 */
+	.4byte lbl_801E8CC4 /* 0x801E8CC4 */
 	.4byte 0x801E8B44
-	.4byte 0x801E8CC4
-	.4byte 0x801E8CC4
-	.4byte 0x801E8CC4
-	.4byte 0x801E8CC4
-	.4byte 0x801E8CC4
-	.4byte 0x801E8CC4
-	.4byte 0x801E8CC4
+	.4byte lbl_801E8CC4 /* 0x801E8CC4 */
+	.4byte lbl_801E8CC4 /* 0x801E8CC4 */
+	.4byte lbl_801E8CC4 /* 0x801E8CC4 */
+	.4byte lbl_801E8CC4 /* 0x801E8CC4 */
+	.4byte lbl_801E8CC4 /* 0x801E8CC4 */
+	.4byte lbl_801E8CC4 /* 0x801E8CC4 */
+	.4byte lbl_801E8CC4 /* 0x801E8CC4 */
 	.4byte 0x801E8B44
 .global lbl_802B742C
 lbl_802B742C:
-	.4byte 0x801E9048
+	.4byte lbl_801E9048 /* 0x801E9048 */
 	.4byte 0x801E8DFC
 	.4byte 0x801E8E9C
-	.4byte 0x801E9048
+	.4byte lbl_801E9048 /* 0x801E9048 */
 	.4byte 0x801E8EE4
-	.4byte 0x801E9048
-	.4byte 0x801E9048
-	.4byte 0x801E9048
+	.4byte lbl_801E9048 /* 0x801E9048 */
+	.4byte lbl_801E9048 /* 0x801E9048 */
+	.4byte lbl_801E9048 /* 0x801E9048 */
 	.4byte 0x801E8F34
-	.4byte 0x801E9048
-	.4byte 0x801E9048
-	.4byte 0x801E9048
-	.4byte 0x801E9048
-	.4byte 0x801E9048
-	.4byte 0x801E9048
-	.4byte 0x801E9048
+	.4byte lbl_801E9048 /* 0x801E9048 */
+	.4byte lbl_801E9048 /* 0x801E9048 */
+	.4byte lbl_801E9048 /* 0x801E9048 */
+	.4byte lbl_801E9048 /* 0x801E9048 */
+	.4byte lbl_801E9048 /* 0x801E9048 */
+	.4byte lbl_801E9048 /* 0x801E9048 */
+	.4byte lbl_801E9048 /* 0x801E9048 */
 	.4byte 0x801E8F34
 .section .rodata   # 0x80255010 - 0x8027A5C0
 .global lbl_80279930

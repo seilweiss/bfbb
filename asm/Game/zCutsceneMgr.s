@@ -1306,21 +1306,21 @@ lbl_800534D8:
 
 .section .data
 lbl_8028B6B0:
-	.4byte 0x802547B8
+	.4byte lbl_802547B8 /* 0x802547B8 */
 	.4byte 0x802547C3
 	.4byte 0x00000000
 	.4byte 0x00000001
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x802547B8
+	.4byte lbl_802547B8 /* 0x802547B8 */
 	.4byte 0x802547D1
 	.4byte 0x00000000
 	.4byte 0x00000001
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x802547B8
+	.4byte lbl_802547B8 /* 0x802547B8 */
 	.4byte 0x802547E1
 	.4byte 0x00000000
 	.4byte 0x00000001
@@ -1340,63 +1340,63 @@ lbl_8028B6B0:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000001
-	.4byte 0x800277EC
+	.4byte xFXShinyRender__FP8RpAtomic /* 0x800277EC */
 	.4byte 0x80254844
 	.4byte 0x80254854
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000001
-	.4byte 0x800277EC
+	.4byte xFXShinyRender__FP8RpAtomic /* 0x800277EC */
 	.4byte 0x80254844
 	.4byte 0x8025486F
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000001
-	.4byte 0x800276AC
+	.4byte lbl_800276AC /* 0x800276AC */
 	.4byte 0x80254844
 	.4byte 0x8025488E
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000001
-	.4byte 0x800276AC
+	.4byte lbl_800276AC /* 0x800276AC */
 	.4byte 0x80254844
 	.4byte 0x802548A2
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000001
-	.4byte 0x800276AC
+	.4byte lbl_800276AC /* 0x800276AC */
 	.4byte 0x80254844
 	.4byte 0x802548B6
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000001
-	.4byte 0x800276AC
+	.4byte lbl_800276AC /* 0x800276AC */
 	.4byte 0x80254844
 	.4byte 0x802548CA
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000001
-	.4byte 0x800276AC
+	.4byte lbl_800276AC /* 0x800276AC */
 	.4byte 0x80254844
 	.4byte 0x802548DE
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000001
-	.4byte 0x800276AC
+	.4byte lbl_800276AC /* 0x800276AC */
 	.4byte 0x802548F2
 	.4byte 0x802548FC
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000001
-	.4byte 0x800277EC
+	.4byte xFXShinyRender__FP8RpAtomic /* 0x800277EC */
 	.4byte 0x8025491E
 	.4byte 0x80254926
 	.4byte 0x00000000
@@ -1417,7 +1417,7 @@ lbl_8028B6B0:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000001
-	.4byte 0x800276AC
+	.4byte lbl_800276AC /* 0x800276AC */
 	.4byte 0x8025497B
 	.4byte 0x80254983
 	.4byte 0x00000000

@@ -3975,6 +3975,7 @@ lbl_8026A308:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
+.global lbl_8026A358
 lbl_8026A358:
 	.4byte 0x556E6B6E
 	.4byte 0x6F776E00

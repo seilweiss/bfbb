@@ -369,6 +369,7 @@ __ct__9zNPCB_SB2Fi:
 /* 801365C0 001333C0  38 21 00 10 */	addi r1, r1, 0x10
 /* 801365C4 001333C4  4E 80 00 20 */	blr 
 .section .rodata
+.global lbl_8026CBB8
 lbl_8026CBB8:
 	.4byte 0x556E6B6E
 	.4byte 0x6F776E00

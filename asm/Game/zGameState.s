@@ -369,18 +369,18 @@ lbl_8028F928:
 	.4byte 0x0000008B
 	.4byte 0x0000008C
 lbl_8028F9EC:
-	.4byte 0x8009ABF4
+	.4byte lbl_8009ABF4 /* 0x8009ABF4 */
 	.4byte 0x8009AB88
 	.4byte 0x8009AB98
-	.4byte 0x8009ABF4
+	.4byte lbl_8009ABF4 /* 0x8009ABF4 */
 	.4byte 0x8009ABA8
 	.4byte 0x8009ABB8
 	.4byte 0x8009ABC8
 	.4byte 0x8009ABD8
-	.4byte 0x8009ABF4
-	.4byte 0x8009ABF4
-	.4byte 0x8009ABF4
-	.4byte 0x8009ABF4
+	.4byte lbl_8009ABF4 /* 0x8009ABF4 */
+	.4byte lbl_8009ABF4 /* 0x8009ABF4 */
+	.4byte lbl_8009ABF4 /* 0x8009ABF4 */
+	.4byte lbl_8009ABF4 /* 0x8009ABF4 */
 	.4byte 0x8009ABE8
 
 .section .sdata

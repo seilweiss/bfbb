@@ -2201,6 +2201,7 @@ lbl_8026A274:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
+.global lbl_8026A280
 lbl_8026A280:
 	.4byte 0x556E6B6E
 	.4byte 0x6F776E00

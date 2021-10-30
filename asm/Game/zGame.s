@@ -2441,6 +2441,8 @@ lbl_8025BE88:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
+.global lbl_8025BF88
+.global lbl_8025BF88
 lbl_8025BF88:
 	.4byte 0x48423032
 	.4byte 0x00484230

@@ -1193,10 +1193,10 @@ lbl_8028FEE0:
 	.4byte 0x800A73B4
 lbl_8028FF1C:
 	.4byte 0x800A74AC
-	.4byte 0x800A74C8
+	.4byte lbl_800A74C8 /* 0x800A74C8 */
 	.4byte 0x800A74C0
 	.4byte 0x800A749C
-	.4byte 0x800A74E4
+	.4byte lbl_800A74E4 /* 0x800A74E4 */
 	.4byte 0x800A749C
 	.4byte 0x800A74A4
 	.4byte 0x800A74B8

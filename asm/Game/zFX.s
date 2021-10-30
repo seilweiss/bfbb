@@ -5439,7 +5439,7 @@ lbl_8028F038:
 	.4byte 0x3FC00000
 	.4byte 0x00000000
 	.4byte 0x3FC00000
-	.4byte 0x8025BF88
+	.4byte lbl_8025BF88 /* 0x8025BF88 */
 	.4byte 0x8025BF8D
 	.4byte 0x8025BF92
 	.4byte 0x8025BF97

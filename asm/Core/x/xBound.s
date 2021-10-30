@@ -1006,32 +1006,32 @@ xDrawSphere2__FPC7xSphereUi:
 lbl_8027B380:
 	.4byte 0x8000A93C
 	.4byte 0x8000A97C
-	.4byte 0x8000A9A4
-	.4byte 0x8000A9A4
-	.4byte 0x8000A9A4
-	.4byte 0x8000A9A4
-	.4byte 0x8000A9A4
-	.4byte 0x8000A9A4
+	.4byte lbl_8000A9A4 /* 0x8000A9A4 */
+	.4byte lbl_8000A9A4 /* 0x8000A9A4 */
+	.4byte lbl_8000A9A4 /* 0x8000A9A4 */
+	.4byte lbl_8000A9A4 /* 0x8000A9A4 */
+	.4byte lbl_8000A9A4 /* 0x8000A9A4 */
+	.4byte lbl_8000A9A4 /* 0x8000A9A4 */
 	.4byte 0x8000A968
-	.4byte 0x8000A9A4
-	.4byte 0x8000A9A4
-	.4byte 0x8000A9A4
-	.4byte 0x8000A9A4
-	.4byte 0x8000A9A4
-	.4byte 0x8000A9A4
-	.4byte 0x8000A9A4
-	.4byte 0x8000A9A4
-	.4byte 0x8000A9A4
-	.4byte 0x8000A9A4
-	.4byte 0x8000A9A4
-	.4byte 0x8000A9A4
-	.4byte 0x8000A9A4
-	.4byte 0x8000A9A4
-	.4byte 0x8000A9A4
+	.4byte lbl_8000A9A4 /* 0x8000A9A4 */
+	.4byte lbl_8000A9A4 /* 0x8000A9A4 */
+	.4byte lbl_8000A9A4 /* 0x8000A9A4 */
+	.4byte lbl_8000A9A4 /* 0x8000A9A4 */
+	.4byte lbl_8000A9A4 /* 0x8000A9A4 */
+	.4byte lbl_8000A9A4 /* 0x8000A9A4 */
+	.4byte lbl_8000A9A4 /* 0x8000A9A4 */
+	.4byte lbl_8000A9A4 /* 0x8000A9A4 */
+	.4byte lbl_8000A9A4 /* 0x8000A9A4 */
+	.4byte lbl_8000A9A4 /* 0x8000A9A4 */
+	.4byte lbl_8000A9A4 /* 0x8000A9A4 */
+	.4byte lbl_8000A9A4 /* 0x8000A9A4 */
+	.4byte lbl_8000A9A4 /* 0x8000A9A4 */
+	.4byte lbl_8000A9A4 /* 0x8000A9A4 */
+	.4byte lbl_8000A9A4 /* 0x8000A9A4 */
 	.4byte 0x8000A950
 	.4byte 0x8000A990
-	.4byte 0x8000A9A4
-	.4byte 0x8000A9A4
+	.4byte lbl_8000A9A4 /* 0x8000A9A4 */
+	.4byte lbl_8000A9A4 /* 0x8000A9A4 */
 /* SPECULATION: link order */
 .global sCameraFXTable
 sCameraFXTable:
@@ -1039,10 +1039,10 @@ sCameraFXTable:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000001
-	.4byte 0x8000CE30
+	.4byte xCameraFXZoomUpdate__FP8cameraFXfPC7xMat4x3P7xMat4x3 /* 0x8000CE30 */
 	.4byte 0x00000000
 	.4byte 0x00000002
-	.4byte 0x8000D074
+	.4byte xCameraFXShakeUpdate__FP8cameraFXfPC7xMat4x3P7xMat4x3 /* 0x8000D074 */
 	.4byte 0x00000000
 	.4byte 0x00000000
 

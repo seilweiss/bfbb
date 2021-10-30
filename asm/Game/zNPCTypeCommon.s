@@ -6838,6 +6838,7 @@ lbl_80268CA4:
 	.4byte 0xBF800000
 	.4byte 0x00000000
 	.4byte 0x3F800000
+.global lbl_80268CC0
 lbl_80268CC0:
 	.4byte 0x556E6B6E
 	.4byte 0x6F776E00
@@ -7299,12 +7300,12 @@ lbl_80295054:
 	.4byte 0x00000029
 	.4byte 0x0000002A
 lbl_802950A4:
-	.4byte 0x800EFB90
+	.4byte lbl_800EFB90 /* 0x800EFB90 */
 	.4byte 0x800EFAAC
 	.4byte 0x800EFAB8
 	.4byte 0x800EFAC4
 	.4byte 0x800EFB10
-	.4byte 0x800EFB90
+	.4byte lbl_800EFB90 /* 0x800EFB90 */
 	.4byte 0x800EFB1C
 	.4byte 0x800EFB28
 	.4byte 0x800EFB34
@@ -7317,7 +7318,7 @@ lbl_802950A4:
 	.4byte 0x800EFB88
 	.4byte 0x800EFB7C
 lbl_802950E8:
-	.4byte 0x800F16E8
+	.4byte lbl_800F16E8 /* 0x800F16E8 */
 	.4byte 0x800F1534
 	.4byte 0x800F1544
 	.4byte 0x800F1480
@@ -7340,26 +7341,26 @@ lbl_802950E8:
 	.4byte 0x800F15D4
 	.4byte 0x800F15E4
 	.4byte 0x800F15F4
-	.4byte 0x800F16E8
-	.4byte 0x800F16E8
-	.4byte 0x800F16E8
-	.4byte 0x800F16E8
-	.4byte 0x800F16E8
-	.4byte 0x800F16E8
-	.4byte 0x800F16E8
-	.4byte 0x800F16E8
-	.4byte 0x800F16E8
-	.4byte 0x800F16E8
-	.4byte 0x800F16E8
-	.4byte 0x800F16E8
-	.4byte 0x800F16E8
-	.4byte 0x800F16E8
-	.4byte 0x800F16E8
-	.4byte 0x800F16E8
-	.4byte 0x800F16E8
-	.4byte 0x800F16E8
-	.4byte 0x800F16E8
-	.4byte 0x800F16E8
+	.4byte lbl_800F16E8 /* 0x800F16E8 */
+	.4byte lbl_800F16E8 /* 0x800F16E8 */
+	.4byte lbl_800F16E8 /* 0x800F16E8 */
+	.4byte lbl_800F16E8 /* 0x800F16E8 */
+	.4byte lbl_800F16E8 /* 0x800F16E8 */
+	.4byte lbl_800F16E8 /* 0x800F16E8 */
+	.4byte lbl_800F16E8 /* 0x800F16E8 */
+	.4byte lbl_800F16E8 /* 0x800F16E8 */
+	.4byte lbl_800F16E8 /* 0x800F16E8 */
+	.4byte lbl_800F16E8 /* 0x800F16E8 */
+	.4byte lbl_800F16E8 /* 0x800F16E8 */
+	.4byte lbl_800F16E8 /* 0x800F16E8 */
+	.4byte lbl_800F16E8 /* 0x800F16E8 */
+	.4byte lbl_800F16E8 /* 0x800F16E8 */
+	.4byte lbl_800F16E8 /* 0x800F16E8 */
+	.4byte lbl_800F16E8 /* 0x800F16E8 */
+	.4byte lbl_800F16E8 /* 0x800F16E8 */
+	.4byte lbl_800F16E8 /* 0x800F16E8 */
+	.4byte lbl_800F16E8 /* 0x800F16E8 */
+	.4byte lbl_800F16E8 /* 0x800F16E8 */
 	.4byte 0x800F1664
 	.4byte 0x800F1674
 	.4byte 0x800F1674
@@ -7380,7 +7381,7 @@ lbl_802950E8:
 	.4byte 0x800F16CC
 	.4byte 0x800F16DC
 lbl_802951E0:
-	.4byte 0x800F25BC
+	.4byte lbl_800F25BC /* 0x800F25BC */
 	.4byte 0x800F24D4
 	.4byte 0x800F24D4
 	.4byte 0x800F24D4
@@ -7442,13 +7443,13 @@ lbl_802951E0:
 	.4byte 0x800F24D4
 	.4byte 0x800F24D4
 	.4byte 0x800F24A4
-	.4byte 0x800F25BC
+	.4byte lbl_800F25BC /* 0x800F25BC */
 	.4byte 0x800F2570
-	.4byte 0x800F25BC
+	.4byte lbl_800F25BC /* 0x800F25BC */
 	.4byte 0x800F2594
-	.4byte 0x800F25BC
+	.4byte lbl_800F25BC /* 0x800F25BC */
 lbl_802952EC:
-	.4byte 0x800F27C4
+	.4byte lbl_800F27C4 /* 0x800F27C4 */
 	.4byte 0x800F2610
 	.4byte 0x800F261C
 	.4byte 0x800F2628
@@ -7513,7 +7514,7 @@ lbl_802952EC:
 	.4byte 0x800F27BC
 	.4byte 0x800F27B0
 	.4byte 0x800F27BC
-	.4byte 0x800F27C4
+	.4byte lbl_800F27C4 /* 0x800F27C4 */
 	.4byte 0x800F27BC
 lbl_802953F8:
 	.4byte 0x00001F00
@@ -7638,7 +7639,7 @@ g_hash_roboanim:
 /* SPECULATION: link order */
 .global g_strz_roboanim
 g_strz_roboanim:
-	.4byte 0x802696F4
+	.4byte lbl_802696F4 /* 0x802696F4 */
 	.4byte 0x802696FC
 	.4byte 0x80269703
 	.4byte 0x8026970C

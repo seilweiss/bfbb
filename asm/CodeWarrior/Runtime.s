@@ -1798,6 +1798,7 @@ lbl_801EE418:
 /* 801EE42C 001EB22C  7D 41 53 78 */	mr r1, r10
 /* 801EE430 001EB230  7C 08 03 A6 */	mtlr r0
 /* 801EE434 001EB234  4E 80 00 20 */	blr 
+.global lbl_801EE438
 lbl_801EE438:
 /* 801EE438 001EB238  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 801EE43C 001EB23C  7C 08 02 A6 */	mflr r0
@@ -2768,30 +2769,30 @@ lbl_801EF168:
 lbl_802B7470:
 	.4byte 0x803CAFE8
 	.4byte 0x00000000
-	.4byte 0x801ECE9C
-	.4byte 0x801ECF5C
+	.4byte __dt__Q23std9exceptionFv /* 0x801ECE9C */
+	.4byte what__Q23std9exceptionCFv /* 0x801ECF5C */
 .global lbl_802B7480
 lbl_802B7480:
-	.4byte 0x801EE130
-	.4byte 0x801EE128
-	.4byte 0x801EE130
-	.4byte 0x801EE130
-	.4byte 0x801EE130
-	.4byte 0x801EE130
-	.4byte 0x801EE130
-	.4byte 0x801EE130
-	.4byte 0x801EE130
-	.4byte 0x801EE130
-	.4byte 0x801EE130
-	.4byte 0x801EE130
+	.4byte lbl_801EE130 /* 0x801EE130 */
+	.4byte lbl_801EE128 /* 0x801EE128 */
+	.4byte lbl_801EE130 /* 0x801EE130 */
+	.4byte lbl_801EE130 /* 0x801EE130 */
+	.4byte lbl_801EE130 /* 0x801EE130 */
+	.4byte lbl_801EE130 /* 0x801EE130 */
+	.4byte lbl_801EE130 /* 0x801EE130 */
+	.4byte lbl_801EE130 /* 0x801EE130 */
+	.4byte lbl_801EE130 /* 0x801EE130 */
+	.4byte lbl_801EE130 /* 0x801EE130 */
+	.4byte lbl_801EE130 /* 0x801EE130 */
+	.4byte lbl_801EE130 /* 0x801EE130 */
 	.4byte 0x801EE05C
-	.4byte 0x801EE130
-	.4byte 0x801EE128
+	.4byte lbl_801EE130 /* 0x801EE130 */
+	.4byte lbl_801EE128 /* 0x801EE128 */
 	.4byte 0x801EE07C
 	.4byte 0x801EE03C
 .global lbl_802B74C4
 lbl_802B74C4:
-	.4byte 0x801EE974
+	.4byte lbl_801EE974 /* 0x801EE974 */
 	.4byte 0x801EE52C
 	.4byte 0x801EE540
 	.4byte 0x801EE56C
@@ -2805,13 +2806,13 @@ lbl_802B74C4:
 	.4byte 0x801EE864
 	.4byte 0x801EE8E0
 	.4byte 0x801EE908
-	.4byte 0x801EE974
+	.4byte lbl_801EE974 /* 0x801EE974 */
 	.4byte 0x801EE954
 	.4byte 0x801EE8F4
 .global lbl_802B7508
 lbl_802B7508:
-	.4byte 0x801EED5C
-	.4byte 0x801EED5C
+	.4byte lbl_801EED5C /* 0x801EED5C */
+	.4byte lbl_801EED5C /* 0x801EED5C */
 	.4byte 0x801EECB0
 	.4byte 0x801EECBC
 	.4byte 0x801EECC8
@@ -2824,7 +2825,7 @@ lbl_802B7508:
 	.4byte 0x801EED14
 	.4byte 0x801EED20
 	.4byte 0x801EED38
-	.4byte 0x801EED5C
+	.4byte lbl_801EED5C /* 0x801EED5C */
 	.4byte 0x801EED44
 	.4byte 0x801EED2C
 	.4byte 0x803CB000
@@ -2834,8 +2835,8 @@ lbl_802B7508:
 lbl_802B7558:
 	.4byte 0x803CB008
 	.4byte 0x00000000
-	.4byte 0x801EE438
-	.4byte 0x801EF014
+	.4byte lbl_801EE438 /* 0x801EE438 */
+	.4byte what__Q23std13bad_exceptionCFv /* 0x801EF014 */
 
 .section .rodata
 .global lbl_8027A240

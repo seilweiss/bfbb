@@ -6316,47 +6316,47 @@ lbl_8029B8E0:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x80182094
+	.4byte NPAR_Upd_OilBubble__FP8NPARMgmtf /* 0x80182094 */
 	.4byte 0x00000080
 	.4byte 0x802732E0
 	.4byte 0x00000002
-	.4byte 0x80182434
+	.4byte NPAR_Upd_TubeSpiral__FP8NPARMgmtf /* 0x80182434 */
 	.4byte 0x00000100
 	.4byte 0x802732EE
 	.4byte 0x00000002
-	.4byte 0x80182C0C
+	.4byte NPAR_Upd_TubeConfetti__FP8NPARMgmtf /* 0x80182C0C */
 	.4byte 0x00000040
 	.4byte 0x802732FF
 	.4byte 0x00000002
-	.4byte 0x8018314C
+	.4byte NPAR_Upd_GloveDust__FP8NPARMgmtf /* 0x8018314C */
 	.4byte 0x00000040
 	.4byte 0x80273317
 	.4byte 0x00000002
-	.4byte 0x8018333C
+	.4byte NPAR_Upd_MonsoonRain__FP8NPARMgmtf /* 0x8018333C */
 	.4byte 0x00000040
 	.4byte 0x80273325
 	.4byte 0x00000002
-	.4byte 0x8018371C
+	.4byte NPAR_Upd_SleepyZeez__FP8NPARMgmtf /* 0x8018371C */
 	.4byte 0x00000020
 	.4byte 0x80273335
 	.4byte 0x00000002
-	.4byte 0x80183D40
+	.4byte NPAR_Upd_ChuckSplash__FP8NPARMgmtf /* 0x80183D40 */
 	.4byte 0x00000080
 	.4byte 0x80273344
 	.4byte 0x00000002
-	.4byte 0x80184620
+	.4byte NPAR_Upd_TarTarGunk__FP8NPARMgmtf /* 0x80184620 */
 	.4byte 0x00000100
 	.4byte 0x80273356
 	.4byte 0x00000002
-	.4byte 0x80184B60
+	.4byte NPAR_Upd_DogBreath__FP8NPARMgmtf /* 0x80184B60 */
 	.4byte 0x00000040
 	.4byte 0x80273365
 	.4byte 0x00000002
-	.4byte 0x80184118
+	.4byte NPAR_Upd_VisSplash__FP8NPARMgmtf /* 0x80184118 */
 	.4byte 0x00000020
 	.4byte 0x80273377
 	.4byte 0x00000002
-	.4byte 0x80185094
+	.4byte NPAR_Upd_Fireworks__FP8NPARMgmtf /* 0x80185094 */
 	.4byte 0x00000080
 	.4byte 0x80273388
 	.4byte 0x00000000

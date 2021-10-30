@@ -1439,7 +1439,7 @@ lbl_8025CA20:
 
 .section .data
 lbl_8028F1B0:
-	.4byte 0x80099938
+	.4byte EGG_check_ExtrasFlags__FP7EGGItem /* 0x80099938 */
 	.4byte 0x8028F1A0
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -1448,19 +1448,19 @@ lbl_8028F1B0:
 	.4byte 0x00000000
 	.4byte 0x00000000
 lbl_8028F1D0:
-	.4byte 0x80099AFC
+	.4byte lbl_80099AFC /* 0x80099AFC */
 	.4byte 0x8009995C
 	.4byte 0x80099978
 	.4byte 0x80099994
 	.4byte 0x80099A00
-	.4byte 0x80099AFC
+	.4byte lbl_80099AFC /* 0x80099AFC */
 	.4byte 0x80099A1C
 	.4byte 0x80099A38
 	.4byte 0x80099A54
 	.4byte 0x80099A70
 	.4byte 0x80099A8C
 	.4byte 0x80099AE4
-	.4byte 0x80099AFC
+	.4byte lbl_80099AFC /* 0x80099AFC */
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -1799,87 +1799,87 @@ lbl_8028F1D0:
 	.4byte 0x00040000
 lbl_8028F744:
 	.4byte 0x8028F204
-	.4byte 0x8009A058
+	.4byte GEC_cb_AddShiny__Fv /* 0x8009A058 */
 	.4byte 0x00000002
 	.4byte 0x00000000
 	.4byte 0x8028F244
-	.4byte 0x8009A0E0
+	.4byte GEC_cb_AddSpatulas__Fv /* 0x8009A0E0 */
 	.4byte 0x00000001
 	.4byte 0x00000000
 	.4byte 0x8028F284
-	.4byte 0x8009A158
+	.4byte GEC_cb_BubbleBowl__Fv /* 0x8009A158 */
 	.4byte 0x00000200
 	.4byte 0x00000000
 	.4byte 0x8028F2C4
-	.4byte 0x8009A1BC
+	.4byte GEC_cb_CruiseBubble__Fv /* 0x8009A1BC */
 	.4byte 0x00000400
 	.4byte 0x00000000
 	.4byte 0x8028F304
-	.4byte 0x8009A220
+	.4byte GEC_cb_MonsterGallery__Fv /* 0x8009A220 */
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x8028F344
-	.4byte 0x8009A2C0
+	.4byte GEC_cb_UnlockArtTheatre__Fv /* 0x8009A2C0 */
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x8028F384
-	.4byte 0x8009A304
+	.4byte GEC_cb_ChaChing__Fv /* 0x8009A304 */
 	.4byte 0x00000002
 	.4byte 0x00000000
 	.4byte 0x8028F3C4
-	.4byte 0x8009A424
+	.4byte GEC_cb_ExpertMode__Fv /* 0x8009A424 */
 	.4byte 0x00000800
 	.4byte 0x00000000
 	.4byte 0x8028F404
-	.4byte 0x8009A56C
+	.4byte GEC_cb_SwapCCLR__Fv /* 0x8009A56C */
 	.4byte 0x00001000
 	.4byte 0x00000001
 	.4byte 0x8028F444
-	.4byte 0x8009A58C
+	.4byte GEC_cb_SwapCCUD__Fv /* 0x8009A58C */
 	.4byte 0x00002000
 	.4byte 0x00000001
 	.4byte 0x8028F484
-	.4byte 0x8009A380
+	.4byte GEC_cb_RestoreHealth__Fv /* 0x8009A380 */
 	.4byte 0x00000100
 	.4byte 0x00000000
 	.4byte 0x8028F4C4
-	.4byte 0x8009A444
+	.4byte GEC_cb_ShrapBobMode__Fv /* 0x8009A444 */
 	.4byte 0x02000000
 	.4byte 0x00000001
 	.4byte 0x8028F504
-	.4byte 0x8009A464
+	.4byte GEC_cb_NoPantsMode__Fv /* 0x8009A464 */
 	.4byte 0x10000000
 	.4byte 0x00000001
 	.4byte 0x8028F544
-	.4byte 0x8009A4B0
+	.4byte GEC_cb_CruiseControl__Fv /* 0x8009A4B0 */
 	.4byte 0x20000000
 	.4byte 0x00000001
 	.4byte 0x8028F584
-	.4byte 0x8009A6BC
+	.4byte GEC_cb_BigPlank__Fv /* 0x8009A6BC */
 	.4byte 0x00010000
 	.4byte 0x00000001
 	.4byte 0x8028F5C4
-	.4byte 0x8009A71C
+	.4byte GEC_cb_SmallPeep__Fv /* 0x8009A71C */
 	.4byte 0x00040000
 	.4byte 0x00000001
 	.4byte 0x8028F604
-	.4byte 0x8009A73C
+	.4byte GEC_cb_SmallCostars__Fv /* 0x8009A73C */
 	.4byte 0x00080000
 	.4byte 0x00000001
 	.4byte 0x8028F644
-	.4byte 0x8009A75C
+	.4byte GEC_cb_RichPeep__Fv /* 0x8009A75C */
 	.4byte 0x00100000
 	.4byte 0x00000000
 	.4byte 0x8028F684
-	.4byte 0x8009A77C
+	.4byte GEC_cb_PanHandle__Fv /* 0x8009A77C */
 	.4byte 0x00200000
 	.4byte 0x00000000
 	.4byte 0x8028F6C4
-	.4byte 0x8009A6DC
+	.4byte GEC_cb_Medics__Fv /* 0x8009A6DC */
 	.4byte 0x00020100
 	.4byte 0x00000000
 	.4byte 0x8028F704
-	.4byte 0x8009A6FC
+	.4byte GEC_cb_DogTrix__Fv /* 0x8009A6FC */
 	.4byte 0x00400000
 	.4byte 0x00000000
 	.4byte 0x00000000

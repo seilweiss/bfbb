@@ -5100,72 +5100,72 @@ lbl_8025EF60:
 	.4byte 0x00000031
 	.4byte 0x00000140
 	.4byte 0x01000000
-	.4byte 0x8012C3CC
+	.4byte zEntTeleportBox_Init__FR5xBaseR9xDynAssetUl /* 0x8012C3CC */
 	.4byte 0x8025F2B5
 	.4byte 0x00000032
 	.4byte 0x00000030
 	.4byte 0x00000000
-	.4byte 0x8012D888
+	.4byte zBusStop_Init__FR5xBaseR9xDynAssetUl /* 0x8012D888 */
 	.4byte 0x8025F2C9
 	.4byte 0x00000033
 	.4byte 0x000000D0
 	.4byte 0x00000000
-	.4byte 0x801348AC
+	.4byte load__8ztextboxFR5xBaseR9xDynAssetUl /* 0x801348AC */
 	.4byte 0x8025F2DE
 	.4byte 0x00000034
 	.4byte 0x0000003C
 	.4byte 0x00000000
-	.4byte 0x8013305C
+	.4byte load__8ztalkboxFR5xBaseR9xDynAssetUl /* 0x8013305C */
 	.4byte 0x8025F2F3
 	.4byte 0x00000035
 	.4byte 0x00000024
 	.4byte 0x00000000
-	.4byte 0x80134ECC
+	.4byte load__8ztaskboxFR5xBaseR9xDynAssetUl /* 0x80134ECC */
 	.4byte 0x8025F308
 	.4byte 0x00000036
 	.4byte 0x00000048
 	.4byte 0x00000000
-	.4byte 0x801210BC
+	.4byte xBoulderGenerator_Init__FR5xBaseR9xDynAssetUl /* 0x801210BC */
 	.4byte 0x8025F325
 	.4byte 0x00000039
 	.4byte 0x00000038
 	.4byte 0x00000000
-	.4byte 0x80172034
+	.4byte zTaxi_Init__FR5xBaseR9xDynAssetUl /* 0x80172034 */
 	.4byte 0x8025F336
 	.4byte 0x0000003A
 	.4byte 0x0000009C
 	.4byte 0x00000000
-	.4byte 0x8002FD10
+	.4byte load__Q24xhud12model_widgetFR5xBaseR9xDynAssetUl /* 0x8002FD10 */
 	.4byte 0x8025F340
 	.4byte 0x0000003B
 	.4byte 0x0000015C
 	.4byte 0x00000000
-	.4byte 0x8002F008
+	.4byte load__Q24xhud17font_meter_widgetFR5xBaseR9xDynAssetUl /* 0x8002F008 */
 	.4byte 0x8025F34F
 	.4byte 0x0000003C
 	.4byte 0x0000019C
 	.4byte 0x00000000
-	.4byte 0x8002FF80
+	.4byte load__Q24xhud17unit_meter_widgetFR5xBaseR9xDynAssetUl /* 0x8002FF80 */
 	.4byte 0x8025F35E
 	.4byte 0x00000047
 	.4byte 0x0000017C
 	.4byte 0x00000000
-	.4byte 0x80195428
+	.4byte load__Q24xhud11text_widgetFR5xBaseR9xDynAssetUl /* 0x80195428 */
 	.4byte 0x8025F367
 	.4byte 0x0000003D
 	.4byte 0x00000018
 	.4byte 0x00000000
-	.4byte 0x801117F8
+	.4byte load__12bungee_stateFR5xBaseR9xDynAssetUl /* 0x801117F8 */
 	.4byte 0x8025F37F
 	.4byte 0x0000003E
 	.4byte 0x00000014
 	.4byte 0x00000000
-	.4byte 0x8017C0A0
+	.4byte zCameraFly_Init__FR5xBaseR9xDynAssetUl /* 0x8017C0A0 */
 	.4byte 0x8025F396
 	.4byte 0x00000045
 	.4byte 0x00000014
 	.4byte 0x00000000
-	.4byte 0x8017F440
+	.4byte zCameraTweak_Init__FR5xBaseR9xDynAssetUl /* 0x8017F440 */
 lbl_8025F078:
 	.4byte 0x42696B69
 	.4byte 0x6E692042
@@ -5454,7 +5454,7 @@ lbl_8025F078:
 
 .section .data
 lbl_80290528:
-	.4byte 0x8025F078
+	.4byte lbl_8025F078 /* 0x8025F078 */
 	.4byte 0x8025F086
 	.4byte 0x8025F089
 	.4byte 0x8025F09A
@@ -5489,253 +5489,253 @@ lbl_802905A0:
 	.4byte 0x00000001
 	.4byte 0x54524947
 	.4byte 0x00000130
-	.4byte 0x800B0D08
-	.4byte 0x80092074
+	.4byte zSceneInitFunc_DefaultEnt__FP6zSceneP24zSceneObjectInstanceDescUi /* 0x800B0D08 */
+	.4byte zEntTriggerInit__FPvPv /* 0x80092074 */
 	.4byte 0x00000000
 	.4byte 0x8025F184
 	.4byte 0x0000000D
 	.4byte 0x4D565054
 	.4byte 0x00000030
-	.4byte 0x800B0EF0
+	.4byte zSceneInitFunc_MovePoint__FP6zSceneP24zSceneObjectInstanceDescUi /* 0x800B0EF0 */
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x8025F18F
 	.4byte 0x00000004
 	.4byte 0x504B5550
 	.4byte 0x00000268
-	.4byte 0x800B0D08
-	.4byte 0x80062A0C
+	.4byte zSceneInitFunc_DefaultEnt__FP6zSceneP24zSceneObjectInstanceDescUi /* 0x800B0D08 */
+	.4byte zEntPickupInit__FPvPv /* 0x80062A0C */
 	.4byte 0x00000000
 	.4byte 0x8025F196
 	.4byte 0x0000000B
 	.4byte 0x53494D50
 	.4byte 0x000000E4
-	.4byte 0x800B0D08
-	.4byte 0x800918C4
+	.4byte zSceneInitFunc_DefaultEnt__FP6zSceneP24zSceneObjectInstanceDescUi /* 0x800B0D08 */
+	.4byte zEntSimpleObj_Init__FPvPv /* 0x800918C4 */
 	.4byte 0x00000000
 	.4byte 0x8025F19D
 	.4byte 0x00000027
 	.4byte 0x50415253
 	.4byte 0x0000002C
-	.4byte 0x800B0E08
-	.4byte 0x80116D50
+	.4byte zSceneInitFunc_Default__FP6zSceneP24zSceneObjectInstanceDescUi /* 0x800B0E08 */
+	.4byte xParSysInit__FPvPv /* 0x80116D50 */
 	.4byte 0x00000000
 	.4byte 0x8025F1AC
 	.4byte 0x00000026
 	.4byte 0x50415245
 	.4byte 0x00000078
-	.4byte 0x800B0E08
-	.4byte 0x801177CC
+	.4byte zSceneInitFunc_Default__FP6zSceneP24zSceneObjectInstanceDescUi /* 0x800B0E08 */
+	.4byte xParEmitterInit__FPvPv /* 0x801177CC */
 	.4byte 0x00000000
 	.4byte 0x8025F1BC
 	.4byte 0x0000003F
 	.4byte 0x5452434B
 	.4byte 0x000000E4
-	.4byte 0x800B0D08
-	.4byte 0x800918A0
+	.4byte zSceneInitFunc_DefaultEnt__FP6zSceneP24zSceneObjectInstanceDescUi /* 0x800B0D08 */
+	.4byte zEntTrackPhysics_Init__FPvPv /* 0x800918A0 */
 	.4byte 0x00000000
 	.4byte 0x8025F1C2
 	.4byte 0x00000006
 	.4byte 0x504C4154
 	.4byte 0x000001E8
-	.4byte 0x800B0D08
-	.4byte 0x800A8F14
+	.4byte zSceneInitFunc_DefaultEnt__FP6zSceneP24zSceneObjectInstanceDescUi /* 0x800B0D08 */
+	.4byte zPlatform_Init__FPvPv /* 0x800A8F14 */
 	.4byte 0x00000000
 	.4byte 0x8025F1CB
 	.4byte 0x00000012
 	.4byte 0x50454E44
 	.4byte 0x0000014C
-	.4byte 0x800B0D08
-	.4byte 0x800A8868
+	.4byte zSceneInitFunc_DefaultEnt__FP6zSceneP24zSceneObjectInstanceDescUi /* 0x800B0D08 */
+	.4byte zPendulum_Init__FPvPv /* 0x800A8868 */
 	.4byte 0x00000000
 	.4byte 0x8025F1D4
 	.4byte 0x00000017
 	.4byte 0x48414E47
 	.4byte 0x0000012C
-	.4byte 0x800B0D08
-	.4byte 0x80061990
+	.4byte zSceneInitFunc_DefaultEnt__FP6zSceneP24zSceneObjectInstanceDescUi /* 0x800B0D08 */
+	.4byte zEntHangable_Init__FPvPv /* 0x80061990 */
 	.4byte 0x00000000
 	.4byte 0x8025F1DB
 	.4byte 0x0000001B
 	.4byte 0x44535452
 	.4byte 0x00000114
-	.4byte 0x800B0D08
-	.4byte 0x80060B6C
+	.4byte zSceneInitFunc_DefaultEnt__FP6zSceneP24zSceneObjectInstanceDescUi /* 0x800B0D08 */
+	.4byte zEntDestructObj_Init__FPvPv /* 0x80060B6C */
 	.4byte 0x00000000
 	.4byte 0x8025F1E7
 	.4byte 0x0000002F
 	.4byte 0x424F554C
 	.4byte 0x000001E8
-	.4byte 0x800B0D08
-	.4byte 0x8011F244
+	.4byte zSceneInitFunc_DefaultEnt__FP6zSceneP24zSceneObjectInstanceDescUi /* 0x800B0D08 */
+	.4byte xEntBoulder_Init__FPvPv /* 0x8011F244 */
 	.4byte 0x00000000
 	.4byte 0x8025F1EF
 	.4byte 0x0000002B
 	.4byte 0x56494C20
 	.4byte 0x00000000
-	.4byte 0x800B0FC4
+	.4byte zSceneInitFunc_SBNPC__FP6zSceneP24zSceneObjectInstanceDescUi /* 0x800B0FC4 */
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x8025F1F3
 	.4byte 0x00000018
 	.4byte 0x4255544E
 	.4byte 0x00000168
-	.4byte 0x800B0D08
-	.4byte 0x800564EC
+	.4byte zSceneInitFunc_DefaultEnt__FP6zSceneP24zSceneObjectInstanceDescUi /* 0x800B0D08 */
+	.4byte zEntButton_Init__FPvPv /* 0x800564EC */
 	.4byte 0x00000000
 	.4byte 0x8025F1FA
 	.4byte 0x00000003
 	.4byte 0x504C5952
 	.4byte 0x000000D4
-	.4byte 0x800B1088
+	.4byte zSceneInitFunc_Player__FP6zSceneP24zSceneObjectInstanceDescUi /* 0x800B1088 */
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x8025F201
 	.4byte 0x0000000E
 	.4byte 0x54494D52
 	.4byte 0x0000001C
-	.4byte 0x800B0E08
-	.4byte 0x8004D284
+	.4byte zSceneInitFunc_Default__FP6zSceneP24zSceneObjectInstanceDescUi /* 0x800B0E08 */
+	.4byte xTimerInit__FPvPv /* 0x8004D284 */
 	.4byte 0x00000000
 	.4byte 0x8025F207
 	.4byte 0x00000016
 	.4byte 0x434E5452
 	.4byte 0x00000018
-	.4byte 0x800B0E08
+	.4byte zSceneInitFunc_Default__FP6zSceneP24zSceneObjectInstanceDescUi /* 0x800B0E08 */
 	.4byte 0x80015B68
 	.4byte 0x00000000
 	.4byte 0x8025F20F
 	.4byte 0x00000013
 	.4byte 0x53465820
 	.4byte 0x0000001C
-	.4byte 0x800B0E08
-	.4byte 0x80044124
+	.4byte zSceneInitFunc_Default__FP6zSceneP24zSceneObjectInstanceDescUi /* 0x800B0E08 */
+	.4byte xSFXInit__FPvPv /* 0x80044124 */
 	.4byte 0x00000000
 	.4byte 0x8025F213
 	.4byte 0x00000011
 	.4byte 0x47525550
 	.4byte 0x00000020
-	.4byte 0x800B0E08
-	.4byte 0x8002CAA0
+	.4byte zSceneInitFunc_Default__FP6zSceneP24zSceneObjectInstanceDescUi /* 0x800B0E08 */
+	.4byte lbl_8002CAA0 /* 0x8002CAA0 */
 	.4byte 0x00000000
 	.4byte 0x8025F219
 	.4byte 0x00000010
 	.4byte 0x504F5254
 	.4byte 0x00000014
-	.4byte 0x800B0E08
-	.4byte 0x800AC8A0
+	.4byte zSceneInitFunc_Default__FP6zSceneP24zSceneObjectInstanceDescUi /* 0x800B0E08 */
+	.4byte zPortalInit__FPvPv /* 0x800AC8A0 */
 	.4byte 0x00000000
 	.4byte 0x8025F220
 	.4byte 0x00000007
 	.4byte 0x43414D20
 	.4byte 0x00000014
-	.4byte 0x800B116C
+	.4byte zSceneInitFunc_Camera__FP6zSceneP24zSceneObjectInstanceDescUi /* 0x800B116C */
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x8025F227
 	.4byte 0x0000001A
 	.4byte 0x53555246
 	.4byte 0x00000028
-	.4byte 0x800B1238
+	.4byte zSceneInitFunc_Surface__FP6zSceneP24zSceneObjectInstanceDescUi /* 0x800B1238 */
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x8025F22F
 	.4byte 0x0000001C
 	.4byte 0x47555354
 	.4byte 0x00000024
-	.4byte 0x800B12D4
+	.4byte zSceneInitFunc_Gust__FP6zSceneP24zSceneObjectInstanceDescUi /* 0x800B12D4 */
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x8025F234
 	.4byte 0x0000001D
 	.4byte 0x564F4C55
 	.4byte 0x00000014
-	.4byte 0x800B1374
+	.4byte zSceneInitFunc_Volume__FP6zSceneP24zSceneObjectInstanceDescUi /* 0x800B1374 */
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x8025F23B
 	.4byte 0x0000001F
 	.4byte 0x434F4E44
 	.4byte 0x00000014
-	.4byte 0x800B0E08
-	.4byte 0x80052558
+	.4byte zSceneInitFunc_Default__FP6zSceneP24zSceneObjectInstanceDescUi /* 0x800B0E08 */
+	.4byte zConditionalInit__FPvPv /* 0x80052558 */
 	.4byte 0x00000000
 	.4byte 0x8025F247
 	.4byte 0x00000023
 	.4byte 0x4C4F424D
 	.4byte 0x00000000
-	.4byte 0x800B141C
+	.4byte zSceneInitFunc_LobMaster__FP6zSceneP24zSceneObjectInstanceDescUi /* 0x800B141C */
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x8025F252
 	.4byte 0x00000005
 	.4byte 0x454E5620
 	.4byte 0x00000014
-	.4byte 0x800B0E08
-	.4byte 0x80092720
+	.4byte zSceneInitFunc_Default__FP6zSceneP24zSceneObjectInstanceDescUi /* 0x800B0E08 */
+	.4byte zEnvInit__FPvPv /* 0x80092720 */
 	.4byte 0x00000000
 	.4byte 0x8025F256
 	.4byte 0x0000001E
 	.4byte 0x44504154
 	.4byte 0x00000000
-	.4byte 0x800B1424
+	.4byte zSceneInitFunc_Dispatcher__FP6zSceneP24zSceneObjectInstanceDescUi /* 0x800B1424 */
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x8025F261
 	.4byte 0x00000020
 	.4byte 0x55492020
 	.4byte 0x000000E4
-	.4byte 0x800B0D08
-	.4byte 0x800B9C54
+	.4byte zSceneInitFunc_DefaultEnt__FP6zSceneP24zSceneObjectInstanceDescUi /* 0x800B0D08 */
+	.4byte zUI_Init__FPvPv /* 0x800B9C54 */
 	.4byte 0x00000000
 	.4byte 0x8025F264
 	.4byte 0x00000021
 	.4byte 0x55494654
 	.4byte 0x000000FC
-	.4byte 0x800B0E08
-	.4byte 0x800BC620
+	.4byte zSceneInitFunc_Default__FP6zSceneP24zSceneObjectInstanceDescUi /* 0x800B0E08 */
+	.4byte zUIFont_Init__FPvPv /* 0x800BC620 */
 	.4byte 0x00000000
 	.4byte 0x8025F26C
 	.4byte 0x00000024
 	.4byte 0x464F4720
 	.4byte 0x00000014
-	.4byte 0x800B0E08
-	.4byte 0x8001FDE4
+	.4byte zSceneInitFunc_Default__FP6zSceneP24zSceneObjectInstanceDescUi /* 0x800B0E08 */
+	.4byte xFogInit__FPvPv /* 0x8001FDE4 */
 	.4byte 0x00000000
 	.4byte 0x8025F270
 	.4byte 0x00000025
 	.4byte 0x4C495445
 	.4byte 0x00000064
-	.4byte 0x800B0E08
-	.4byte 0x8009E0C8
+	.4byte zSceneInitFunc_Default__FP6zSceneP24zSceneObjectInstanceDescUi /* 0x800B0E08 */
+	.4byte zLightInit__FPvPv /* 0x8009E0C8 */
 	.4byte 0x00000000
 	.4byte 0x8025F276
 	.4byte 0x00000028
 	.4byte 0x43534E4D
 	.4byte 0x00000024
-	.4byte 0x800B0E08
-	.4byte 0x80052874
+	.4byte zSceneInitFunc_Default__FP6zSceneP24zSceneObjectInstanceDescUi /* 0x800B0E08 */
+	.4byte zCutsceneMgrInit__FPvPv /* 0x80052874 */
 	.4byte 0x00000000
 	.4byte 0x8025F282
 	.4byte 0x00000029
 	.4byte 0x4547454E
 	.4byte 0x00000114
-	.4byte 0x800B0D08
-	.4byte 0x80054200
+	.4byte zSceneInitFunc_DefaultEnt__FP6zSceneP24zSceneObjectInstanceDescUi /* 0x800B0D08 */
+	.4byte zEGenerator_Init__FPvPv /* 0x80054200 */
 	.4byte 0x00000000
 	.4byte 0x8025F28D
 	.4byte 0x0000002A
 	.4byte 0x53435250
 	.4byte 0x0000001C
-	.4byte 0x800B0E08
-	.4byte 0x800B5228
+	.4byte zSceneInitFunc_Default__FP6zSceneP24zSceneObjectInstanceDescUi /* 0x800B0E08 */
+	.4byte zScriptInit__FPvPv /* 0x800B5228 */
 	.4byte 0x00000000
 	.4byte 0x8025F294
 	.4byte 0x00000038
 	.4byte 0x4453434F
 	.4byte 0x00000098
-	.4byte 0x800B0E08
-	.4byte 0x8013C00C
+	.4byte zSceneInitFunc_Default__FP6zSceneP24zSceneObjectInstanceDescUi /* 0x800B0E08 */
+	.4byte init__13z_disco_floorFPvPv /* 0x8013C00C */
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -5745,32 +5745,32 @@ lbl_802905A0:
 	.4byte 0x00000000
 	.4byte 0x00000000
 lbl_802909AC:
-	.4byte 0x800B2A80
+	.4byte lbl_800B2A80 /* 0x800B2A80 */
 	.4byte 0x800B28EC
-	.4byte 0x800B2A80
-	.4byte 0x800B2A80
+	.4byte lbl_800B2A80 /* 0x800B2A80 */
+	.4byte lbl_800B2A80 /* 0x800B2A80 */
 	.4byte 0x800B2910
 	.4byte 0x800B291C
 	.4byte 0x800B2940
 	.4byte 0x800B294C
-	.4byte 0x800B2A80
-	.4byte 0x800B2A80
-	.4byte 0x800B2A80
+	.4byte lbl_800B2A80 /* 0x800B2A80 */
+	.4byte lbl_800B2A80 /* 0x800B2A80 */
+	.4byte lbl_800B2A80 /* 0x800B2A80 */
 	.4byte 0x800B2958
-	.4byte 0x800B2A80
+	.4byte lbl_800B2A80 /* 0x800B2A80 */
 	.4byte 0x800B2964
 	.4byte 0x800B2970
-	.4byte 0x800B2A80
+	.4byte lbl_800B2A80 /* 0x800B2A80 */
 	.4byte 0x800B297C
 	.4byte 0x800B2988
 	.4byte 0x800B2994
 	.4byte 0x800B29A0
-	.4byte 0x800B2A80
-	.4byte 0x800B2A80
+	.4byte lbl_800B2A80 /* 0x800B2A80 */
+	.4byte lbl_800B2A80 /* 0x800B2A80 */
 	.4byte 0x800B29AC
 	.4byte 0x800B29B8
 	.4byte 0x800B29C4
-	.4byte 0x800B2A80
+	.4byte lbl_800B2A80 /* 0x800B2A80 */
 	.4byte 0x800B29D0
 	.4byte 0x800B29DC
 	.4byte 0x800B29E8
@@ -5779,69 +5779,69 @@ lbl_802909AC:
 	.4byte 0x800B2A18
 	.4byte 0x800B2A24
 	.4byte 0x800B2A30
-	.4byte 0x800B2A80
-	.4byte 0x800B2A80
+	.4byte lbl_800B2A80 /* 0x800B2A80 */
+	.4byte lbl_800B2A80 /* 0x800B2A80 */
 	.4byte 0x800B2928
 	.4byte 0x800B2934
-	.4byte 0x800B2A80
-	.4byte 0x800B2A80
-	.4byte 0x800B2A80
+	.4byte lbl_800B2A80 /* 0x800B2A80 */
+	.4byte lbl_800B2A80 /* 0x800B2A80 */
+	.4byte lbl_800B2A80 /* 0x800B2A80 */
 	.4byte 0x800B2A3C
 	.4byte 0x800B29F4
 	.4byte 0x800B28F8
-	.4byte 0x800B2A80
-	.4byte 0x800B2A80
-	.4byte 0x800B2A80
-	.4byte 0x800B2A80
-	.4byte 0x800B2A80
+	.4byte lbl_800B2A80 /* 0x800B2A80 */
+	.4byte lbl_800B2A80 /* 0x800B2A80 */
+	.4byte lbl_800B2A80 /* 0x800B2A80 */
+	.4byte lbl_800B2A80 /* 0x800B2A80 */
+	.4byte lbl_800B2A80 /* 0x800B2A80 */
 	.4byte 0x800B2A48
-	.4byte 0x800B2A80
-	.4byte 0x800B2A80
-	.4byte 0x800B2A80
+	.4byte lbl_800B2A80 /* 0x800B2A80 */
+	.4byte lbl_800B2A80 /* 0x800B2A80 */
+	.4byte lbl_800B2A80 /* 0x800B2A80 */
 	.4byte 0x800B2A54
-	.4byte 0x800B2A80
-	.4byte 0x800B2A80
-	.4byte 0x800B2A80
+	.4byte lbl_800B2A80 /* 0x800B2A80 */
+	.4byte lbl_800B2A80 /* 0x800B2A80 */
+	.4byte lbl_800B2A80 /* 0x800B2A80 */
 	.4byte 0x800B2A60
-	.4byte 0x800B2A80
-	.4byte 0x800B2A80
-	.4byte 0x800B2A80
-	.4byte 0x800B2A80
+	.4byte lbl_800B2A80 /* 0x800B2A80 */
+	.4byte lbl_800B2A80 /* 0x800B2A80 */
+	.4byte lbl_800B2A80 /* 0x800B2A80 */
+	.4byte lbl_800B2A80 /* 0x800B2A80 */
 	.4byte 0x800B2A6C
-	.4byte 0x800B2A80
-	.4byte 0x800B2A80
-	.4byte 0x800B2A80
-	.4byte 0x800B2A80
-	.4byte 0x800B2A80
-	.4byte 0x800B2A80
+	.4byte lbl_800B2A80 /* 0x800B2A80 */
+	.4byte lbl_800B2A80 /* 0x800B2A80 */
+	.4byte lbl_800B2A80 /* 0x800B2A80 */
+	.4byte lbl_800B2A80 /* 0x800B2A80 */
+	.4byte lbl_800B2A80 /* 0x800B2A80 */
+	.4byte lbl_800B2A80 /* 0x800B2A80 */
 	.4byte 0x800B2A78
 lbl_80290AC4:
-	.4byte 0x800B2F08
+	.4byte lbl_800B2F08 /* 0x800B2F08 */
 	.4byte 0x800B2D68
-	.4byte 0x800B2F08
+	.4byte lbl_800B2F08 /* 0x800B2F08 */
 	.4byte 0x800B2D8C
 	.4byte 0x800B2D98
 	.4byte 0x800B2DA4
 	.4byte 0x800B2DC8
 	.4byte 0x800B2DD4
-	.4byte 0x800B2F08
-	.4byte 0x800B2F08
-	.4byte 0x800B2F08
+	.4byte lbl_800B2F08 /* 0x800B2F08 */
+	.4byte lbl_800B2F08 /* 0x800B2F08 */
+	.4byte lbl_800B2F08 /* 0x800B2F08 */
 	.4byte 0x800B2DE0
-	.4byte 0x800B2F08
+	.4byte lbl_800B2F08 /* 0x800B2F08 */
 	.4byte 0x800B2DEC
 	.4byte 0x800B2DF8
-	.4byte 0x800B2F08
+	.4byte lbl_800B2F08 /* 0x800B2F08 */
 	.4byte 0x800B2E04
 	.4byte 0x800B2E10
 	.4byte 0x800B2E1C
 	.4byte 0x800B2E28
-	.4byte 0x800B2F08
-	.4byte 0x800B2F08
+	.4byte lbl_800B2F08 /* 0x800B2F08 */
+	.4byte lbl_800B2F08 /* 0x800B2F08 */
 	.4byte 0x800B2E34
 	.4byte 0x800B2E40
 	.4byte 0x800B2E4C
-	.4byte 0x800B2F08
+	.4byte lbl_800B2F08 /* 0x800B2F08 */
 	.4byte 0x800B2E58
 	.4byte 0x800B2E64
 	.4byte 0x800B2E70
@@ -5850,220 +5850,220 @@ lbl_80290AC4:
 	.4byte 0x800B2EA0
 	.4byte 0x800B2EAC
 	.4byte 0x800B2EB8
-	.4byte 0x800B2F08
-	.4byte 0x800B2F08
+	.4byte lbl_800B2F08 /* 0x800B2F08 */
+	.4byte lbl_800B2F08 /* 0x800B2F08 */
 	.4byte 0x800B2DB0
 	.4byte 0x800B2DBC
-	.4byte 0x800B2F08
-	.4byte 0x800B2F08
-	.4byte 0x800B2F08
+	.4byte lbl_800B2F08 /* 0x800B2F08 */
+	.4byte lbl_800B2F08 /* 0x800B2F08 */
+	.4byte lbl_800B2F08 /* 0x800B2F08 */
 	.4byte 0x800B2EC4
 	.4byte 0x800B2E7C
 	.4byte 0x800B2D74
-	.4byte 0x800B2F08
-	.4byte 0x800B2F08
-	.4byte 0x800B2F08
-	.4byte 0x800B2F08
-	.4byte 0x800B2F08
+	.4byte lbl_800B2F08 /* 0x800B2F08 */
+	.4byte lbl_800B2F08 /* 0x800B2F08 */
+	.4byte lbl_800B2F08 /* 0x800B2F08 */
+	.4byte lbl_800B2F08 /* 0x800B2F08 */
+	.4byte lbl_800B2F08 /* 0x800B2F08 */
 	.4byte 0x800B2ED0
-	.4byte 0x800B2F08
-	.4byte 0x800B2F08
-	.4byte 0x800B2F08
+	.4byte lbl_800B2F08 /* 0x800B2F08 */
+	.4byte lbl_800B2F08 /* 0x800B2F08 */
+	.4byte lbl_800B2F08 /* 0x800B2F08 */
 	.4byte 0x800B2EDC
-	.4byte 0x800B2F08
-	.4byte 0x800B2F08
-	.4byte 0x800B2F08
+	.4byte lbl_800B2F08 /* 0x800B2F08 */
+	.4byte lbl_800B2F08 /* 0x800B2F08 */
+	.4byte lbl_800B2F08 /* 0x800B2F08 */
 	.4byte 0x800B2EE8
-	.4byte 0x800B2F08
-	.4byte 0x800B2F08
-	.4byte 0x800B2F08
-	.4byte 0x800B2F08
+	.4byte lbl_800B2F08 /* 0x800B2F08 */
+	.4byte lbl_800B2F08 /* 0x800B2F08 */
+	.4byte lbl_800B2F08 /* 0x800B2F08 */
+	.4byte lbl_800B2F08 /* 0x800B2F08 */
 	.4byte 0x800B2EF4
-	.4byte 0x800B2F08
-	.4byte 0x800B2F08
-	.4byte 0x800B2F08
-	.4byte 0x800B2F08
-	.4byte 0x800B2F08
-	.4byte 0x800B2F08
+	.4byte lbl_800B2F08 /* 0x800B2F08 */
+	.4byte lbl_800B2F08 /* 0x800B2F08 */
+	.4byte lbl_800B2F08 /* 0x800B2F08 */
+	.4byte lbl_800B2F08 /* 0x800B2F08 */
+	.4byte lbl_800B2F08 /* 0x800B2F08 */
+	.4byte lbl_800B2F08 /* 0x800B2F08 */
 	.4byte 0x800B2F00
 lbl_80290BDC:
 	.4byte 0x800B3074
-	.4byte 0x800B3044
+	.4byte lbl_800B3044 /* 0x800B3044 */
 	.4byte 0x800B30CC
 	.4byte 0x800B3080
-	.4byte 0x800B3044
-	.4byte 0x800B3044
-	.4byte 0x800B3044
-	.4byte 0x800B3044
-	.4byte 0x800B3044
-	.4byte 0x800B3044
-	.4byte 0x800B3044
-	.4byte 0x800B3044
-	.4byte 0x800B3044
-	.4byte 0x800B3044
-	.4byte 0x800B3044
+	.4byte lbl_800B3044 /* 0x800B3044 */
+	.4byte lbl_800B3044 /* 0x800B3044 */
+	.4byte lbl_800B3044 /* 0x800B3044 */
+	.4byte lbl_800B3044 /* 0x800B3044 */
+	.4byte lbl_800B3044 /* 0x800B3044 */
+	.4byte lbl_800B3044 /* 0x800B3044 */
+	.4byte lbl_800B3044 /* 0x800B3044 */
+	.4byte lbl_800B3044 /* 0x800B3044 */
+	.4byte lbl_800B3044 /* 0x800B3044 */
+	.4byte lbl_800B3044 /* 0x800B3044 */
+	.4byte lbl_800B3044 /* 0x800B3044 */
 	.4byte 0x800B3090
-	.4byte 0x800B3044
-	.4byte 0x800B3044
-	.4byte 0x800B3044
+	.4byte lbl_800B3044 /* 0x800B3044 */
+	.4byte lbl_800B3044 /* 0x800B3044 */
+	.4byte lbl_800B3044 /* 0x800B3044 */
 	.4byte 0x800B3068
 	.4byte 0x800B30A0
-	.4byte 0x800B3044
-	.4byte 0x800B3044
-	.4byte 0x800B3044
-	.4byte 0x800B3044
-	.4byte 0x800B3044
-	.4byte 0x800B3044
-	.4byte 0x800B3044
-	.4byte 0x800B3044
-	.4byte 0x800B3044
-	.4byte 0x800B3044
-	.4byte 0x800B3044
+	.4byte lbl_800B3044 /* 0x800B3044 */
+	.4byte lbl_800B3044 /* 0x800B3044 */
+	.4byte lbl_800B3044 /* 0x800B3044 */
+	.4byte lbl_800B3044 /* 0x800B3044 */
+	.4byte lbl_800B3044 /* 0x800B3044 */
+	.4byte lbl_800B3044 /* 0x800B3044 */
+	.4byte lbl_800B3044 /* 0x800B3044 */
+	.4byte lbl_800B3044 /* 0x800B3044 */
+	.4byte lbl_800B3044 /* 0x800B3044 */
+	.4byte lbl_800B3044 /* 0x800B3044 */
+	.4byte lbl_800B3044 /* 0x800B3044 */
 	.4byte 0x800B30AC
-	.4byte 0x800B3044
-	.4byte 0x800B3044
-	.4byte 0x800B3044
-	.4byte 0x800B3044
-	.4byte 0x800B3044
+	.4byte lbl_800B3044 /* 0x800B3044 */
+	.4byte lbl_800B3044 /* 0x800B3044 */
+	.4byte lbl_800B3044 /* 0x800B3044 */
+	.4byte lbl_800B3044 /* 0x800B3044 */
+	.4byte lbl_800B3044 /* 0x800B3044 */
 	.4byte 0x800B30BC
 lbl_80290C78:
-	.4byte 0x800B3418
-	.4byte 0x800B3418
-	.4byte 0x800B3418
-	.4byte 0x800B3418
+	.4byte lbl_800B3418 /* 0x800B3418 */
+	.4byte lbl_800B3418 /* 0x800B3418 */
+	.4byte lbl_800B3418 /* 0x800B3418 */
+	.4byte lbl_800B3418 /* 0x800B3418 */
 	.4byte 0x800B33B0
 	.4byte 0x800B32E0
 	.4byte 0x800B3318
-	.4byte 0x800B3418
-	.4byte 0x800B3418
-	.4byte 0x800B3418
-	.4byte 0x800B3418
+	.4byte lbl_800B3418 /* 0x800B3418 */
+	.4byte lbl_800B3418 /* 0x800B3418 */
+	.4byte lbl_800B3418 /* 0x800B3418 */
+	.4byte lbl_800B3418 /* 0x800B3418 */
 	.4byte 0x800B3378
-	.4byte 0x800B3418
+	.4byte lbl_800B3418 /* 0x800B3418 */
 	.4byte 0x800B3334
-	.4byte 0x800B3418
-	.4byte 0x800B3418
-	.4byte 0x800B3418
+	.4byte lbl_800B3418 /* 0x800B3418 */
+	.4byte lbl_800B3418 /* 0x800B3418 */
+	.4byte lbl_800B3418 /* 0x800B3418 */
 	.4byte 0x800B33DC
 	.4byte 0x800B3340
-	.4byte 0x800B3418
-	.4byte 0x800B3418
-	.4byte 0x800B3418
-	.4byte 0x800B3418
-	.4byte 0x800B3418
+	.4byte lbl_800B3418 /* 0x800B3418 */
+	.4byte lbl_800B3418 /* 0x800B3418 */
+	.4byte lbl_800B3418 /* 0x800B3418 */
+	.4byte lbl_800B3418 /* 0x800B3418 */
+	.4byte lbl_800B3418 /* 0x800B3418 */
 	.4byte 0x800B335C
-	.4byte 0x800B3418
+	.4byte lbl_800B3418 /* 0x800B3418 */
 	.4byte 0x800B33CC
 	.4byte 0x800B340C
-	.4byte 0x800B3418
-	.4byte 0x800B3418
+	.4byte lbl_800B3418 /* 0x800B3418 */
+	.4byte lbl_800B3418 /* 0x800B3418 */
 	.4byte 0x800B3388
-	.4byte 0x800B3418
-	.4byte 0x800B3418
-	.4byte 0x800B3418
-	.4byte 0x800B3418
-	.4byte 0x800B3418
-	.4byte 0x800B3418
-	.4byte 0x800B3418
+	.4byte lbl_800B3418 /* 0x800B3418 */
+	.4byte lbl_800B3418 /* 0x800B3418 */
+	.4byte lbl_800B3418 /* 0x800B3418 */
+	.4byte lbl_800B3418 /* 0x800B3418 */
+	.4byte lbl_800B3418 /* 0x800B3418 */
+	.4byte lbl_800B3418 /* 0x800B3418 */
+	.4byte lbl_800B3418 /* 0x800B3418 */
 	.4byte 0x800B33D4
 	.4byte 0x800B33C4
-	.4byte 0x800B3418
+	.4byte lbl_800B3418 /* 0x800B3418 */
 	.4byte 0x800B3394
-	.4byte 0x800B3418
+	.4byte lbl_800B3418 /* 0x800B3418 */
 	.4byte 0x800B3304
-	.4byte 0x800B3418
-	.4byte 0x800B3418
-	.4byte 0x800B3418
+	.4byte lbl_800B3418 /* 0x800B3418 */
+	.4byte lbl_800B3418 /* 0x800B3418 */
+	.4byte lbl_800B3418 /* 0x800B3418 */
 	.4byte 0x800B3414
-	.4byte 0x800B3418
+	.4byte lbl_800B3418 /* 0x800B3418 */
 	.4byte 0x800B33E4
 	.4byte 0x800B33EC
-	.4byte 0x800B3418
-	.4byte 0x800B3418
-	.4byte 0x800B3418
-	.4byte 0x800B3418
-	.4byte 0x800B3418
+	.4byte lbl_800B3418 /* 0x800B3418 */
+	.4byte lbl_800B3418 /* 0x800B3418 */
+	.4byte lbl_800B3418 /* 0x800B3418 */
+	.4byte lbl_800B3418 /* 0x800B3418 */
+	.4byte lbl_800B3418 /* 0x800B3418 */
 	.4byte 0x800B33F4
 	.4byte 0x800B33FC
-	.4byte 0x800B3418
-	.4byte 0x800B3418
-	.4byte 0x800B3418
-	.4byte 0x800B3418
+	.4byte lbl_800B3418 /* 0x800B3418 */
+	.4byte lbl_800B3418 /* 0x800B3418 */
+	.4byte lbl_800B3418 /* 0x800B3418 */
+	.4byte lbl_800B3418 /* 0x800B3418 */
 	.4byte 0x800B3404
 	.4byte 0x800B3380
-	.4byte 0x800B3418
-	.4byte 0x800B3418
-	.4byte 0x800B3418
-	.4byte 0x800B3418
-	.4byte 0x800B3418
-	.4byte 0x800B3418
-	.4byte 0x800B3418
-	.4byte 0x800B3418
+	.4byte lbl_800B3418 /* 0x800B3418 */
+	.4byte lbl_800B3418 /* 0x800B3418 */
+	.4byte lbl_800B3418 /* 0x800B3418 */
+	.4byte lbl_800B3418 /* 0x800B3418 */
+	.4byte lbl_800B3418 /* 0x800B3418 */
+	.4byte lbl_800B3418 /* 0x800B3418 */
+	.4byte lbl_800B3418 /* 0x800B3418 */
+	.4byte lbl_800B3418 /* 0x800B3418 */
 lbl_80290D98:
-	.4byte 0x800B430C
+	.4byte lbl_800B430C /* 0x800B430C */
 	.4byte 0x800B41B8
-	.4byte 0x800B430C
-	.4byte 0x800B430C
+	.4byte lbl_800B430C /* 0x800B430C */
+	.4byte lbl_800B430C /* 0x800B430C */
 	.4byte 0x800B41B8
-	.4byte 0x800B430C
+	.4byte lbl_800B430C /* 0x800B430C */
 	.4byte 0x800B41B8
-	.4byte 0x800B430C
+	.4byte lbl_800B430C /* 0x800B430C */
 	.4byte 0x800B41B8
 	.4byte 0x800B41B8
 	.4byte 0x800B41B8
-	.4byte 0x800B430C
+	.4byte lbl_800B430C /* 0x800B430C */
 	.4byte 0x800B41B8
-	.4byte 0x800B430C
+	.4byte lbl_800B430C /* 0x800B430C */
 	.4byte 0x800B41E0
-	.4byte 0x800B430C
-	.4byte 0x800B430C
-	.4byte 0x800B430C
+	.4byte lbl_800B430C /* 0x800B430C */
+	.4byte lbl_800B430C /* 0x800B430C */
+	.4byte lbl_800B430C /* 0x800B430C */
 	.4byte 0x800B41B8
-	.4byte 0x800B430C
-	.4byte 0x800B430C
-	.4byte 0x800B430C
-	.4byte 0x800B430C
+	.4byte lbl_800B430C /* 0x800B430C */
+	.4byte lbl_800B430C /* 0x800B430C */
+	.4byte lbl_800B430C /* 0x800B430C */
+	.4byte lbl_800B430C /* 0x800B430C */
 	.4byte 0x800B41B8
 	.4byte 0x800B41B8
-	.4byte 0x800B430C
+	.4byte lbl_800B430C /* 0x800B430C */
 	.4byte 0x800B428C
 	.4byte 0x800B41B8
-	.4byte 0x800B430C
-	.4byte 0x800B430C
-	.4byte 0x800B430C
-	.4byte 0x800B430C
-	.4byte 0x800B430C
+	.4byte lbl_800B430C /* 0x800B430C */
+	.4byte lbl_800B430C /* 0x800B430C */
+	.4byte lbl_800B430C /* 0x800B430C */
+	.4byte lbl_800B430C /* 0x800B430C */
+	.4byte lbl_800B430C /* 0x800B430C */
 	.4byte 0x800B4170
-	.4byte 0x800B430C
-	.4byte 0x800B430C
+	.4byte lbl_800B430C /* 0x800B430C */
+	.4byte lbl_800B430C /* 0x800B430C */
 	.4byte 0x800B421C
 	.4byte 0x800B4274
 	.4byte 0x800B4234
 	.4byte 0x800B424C
-	.4byte 0x800B430C
+	.4byte lbl_800B430C /* 0x800B430C */
 	.4byte 0x800B41B8
 	.4byte 0x800B4204
 	.4byte 0x800B41B8
-	.4byte 0x800B430C
-	.4byte 0x800B430C
-	.4byte 0x800B430C
+	.4byte lbl_800B430C /* 0x800B430C */
+	.4byte lbl_800B430C /* 0x800B430C */
+	.4byte lbl_800B430C /* 0x800B430C */
 	.4byte 0x800B41B8
-	.4byte 0x800B430C
+	.4byte lbl_800B430C /* 0x800B430C */
 	.4byte 0x800B41B8
 	.4byte 0x800B42B0
-	.4byte 0x800B430C
-	.4byte 0x800B430C
-	.4byte 0x800B430C
-	.4byte 0x800B430C
-	.4byte 0x800B430C
+	.4byte lbl_800B430C /* 0x800B430C */
+	.4byte lbl_800B430C /* 0x800B430C */
+	.4byte lbl_800B430C /* 0x800B430C */
+	.4byte lbl_800B430C /* 0x800B430C */
+	.4byte lbl_800B430C /* 0x800B430C */
 	.4byte 0x800B42C8
 	.4byte 0x800B42E0
-	.4byte 0x800B430C
-	.4byte 0x800B430C
-	.4byte 0x800B430C
-	.4byte 0x800B430C
+	.4byte lbl_800B430C /* 0x800B430C */
+	.4byte lbl_800B430C /* 0x800B430C */
+	.4byte lbl_800B430C /* 0x800B430C */
+	.4byte lbl_800B430C /* 0x800B430C */
 	.4byte 0x800B42F8
-	.4byte 0x800B430C
+	.4byte lbl_800B430C /* 0x800B430C */
 	.4byte 0x800B4190
 /* SPECULATION: link order */
 .global scale

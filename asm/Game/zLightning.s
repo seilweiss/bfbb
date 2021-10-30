@@ -3325,6 +3325,7 @@ xDebugAddSelectTweak__FPCcPUiPPCcPCUiUiPC14tweak_callbackPvUi:
 xDebugAddTweak__FPCcPsssPC14tweak_callbackPvUi:
 /* 800A1D14 0009EB14  4E 80 00 20 */	blr 
 .section .rodata
+.global lbl_8025CD50
 lbl_8025CD50:
 	.4byte 0x4C696E65
 	.4byte 0x00526F74
@@ -3682,7 +3683,7 @@ lbl_803CABA8:
 /* SPECULATION: link order */
 .global xglobals
 xglobals:
-	.4byte 0x803C0558
+	.4byte globals /* 0x803C0558 */
 
 .section .sdata2
 lbl_803CDBA0:

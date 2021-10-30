@@ -2288,18 +2288,18 @@ lbl_80297DB8:
 	.4byte 0x8011A0D0
 	.4byte 0x8011A130
 lbl_80297DE4:
-	.4byte 0x8011A784
+	.4byte lbl_8011A784 /* 0x8011A784 */
 	.4byte 0x8011A37C
 	.4byte 0x8011A3F0
-	.4byte 0x8011A784
+	.4byte lbl_8011A784 /* 0x8011A784 */
 	.4byte 0x8011A474
-	.4byte 0x8011A784
-	.4byte 0x8011A784
-	.4byte 0x8011A784
-	.4byte 0x8011A784
+	.4byte lbl_8011A784 /* 0x8011A784 */
+	.4byte lbl_8011A784 /* 0x8011A784 */
+	.4byte lbl_8011A784 /* 0x8011A784 */
+	.4byte lbl_8011A784 /* 0x8011A784 */
 	.4byte 0x8011A4F4
 	.4byte 0x8011A550
-	.4byte 0x8011A784
+	.4byte lbl_8011A784 /* 0x8011A784 */
 	.4byte 0x8011A66C
 /* SPECULATION: link order */
 .global sBlendTable

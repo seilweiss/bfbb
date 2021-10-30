@@ -9345,7 +9345,7 @@ lbl_802707F0:
 	.4byte 0x00000028
 	.4byte 0x00000000
 lbl_8027084C:
-	.4byte 0x80160C14
+	.4byte on_change_newsfish__FRC10tweak_info /* 0x80160C14 */
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -9356,7 +9356,7 @@ lbl_8027084C:
 	.4byte 0x00000000
 	.4byte 0x00000000
 lbl_80270874:
-	.4byte 0x80160C68
+	.4byte on_change_recenter__FRC10tweak_info /* 0x80160C68 */
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -9852,7 +9852,7 @@ lbl_8029AA68:
 	.4byte 0x00000000
 	.4byte 0x00000000
 lbl_8029AAE0:
-	.4byte 0x8027089C
+	.4byte lbl_8027089C /* 0x8027089C */
 	.4byte 0x00000000
 	.4byte 0x802708A4
 	.4byte 0x00000000
@@ -9944,7 +9944,7 @@ lbl_8029AC30:
 	.4byte 0x8016797C
 	.4byte 0x80167F48
 	.4byte 0x80167F84
-	.4byte 0x80168058
+	.4byte lbl_80168058 /* 0x80168058 */
 /* SPECULATION: link order */
 .global __vt__20zNPCGoalBossPatFudge
 __vt__20zNPCGoalBossPatFudge:

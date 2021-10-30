@@ -1592,7 +1592,7 @@ g_hash_lassanim:
 /* SPECULATION: link order */
 .global g_strz_lassanim
 g_strz_lassanim:
-	.4byte 0x80268CC0
+	.4byte lbl_80268CC0 /* 0x80268CC0 */
 	.4byte 0x80268CC8
 	.4byte 0x80268CDA
 

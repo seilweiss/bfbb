@@ -1086,19 +1086,19 @@ lbl_8027D0A0:
 	.4byte 0x00000000
 	.4byte 0x00000000
 lbl_8027D5E0:
-	.4byte 0x8002CF7C
-	.4byte 0x8002D118
-	.4byte 0x8002D18C
-	.4byte 0x8002D2A8
-	.4byte 0x8002D3BC
-	.4byte 0x8002D774
-	.4byte 0x8002D7B0
-	.4byte 0x8002D7F8
-	.4byte 0x8002D83C
-	.4byte 0x8002D880
-	.4byte 0x8002D194
-	.4byte 0x8002D26C
-	.4byte 0x8002D6B0
+	.4byte HIPLCreate__FPCcPci /* 0x8002CF7C */
+	.4byte HIPLDestroy__FP14st_HIPLOADDATA /* 0x8002D118 */
+	.4byte HIPLBaseSector__FP14st_HIPLOADDATA /* 0x8002D18C */
+	.4byte HIPLBlockEnter__FP14st_HIPLOADDATA /* 0x8002D2A8 */
+	.4byte HIPLBlockExit__FP14st_HIPLOADDATA /* 0x8002D3BC */
+	.4byte HIPLReadBytes__FP14st_HIPLOADDATAPci /* 0x8002D774 */
+	.4byte HIPLReadShorts__FP14st_HIPLOADDATAPsi /* 0x8002D7B0 */
+	.4byte HIPLReadLongs__FP14st_HIPLOADDATAPii /* 0x8002D7F8 */
+	.4byte HIPLReadFloats__FP14st_HIPLOADDATAPfi /* 0x8002D83C */
+	.4byte HIPLReadString__FP14st_HIPLOADDATAPc /* 0x8002D880 */
+	.4byte HIPLSetBypass__FP14st_HIPLOADDATAii /* 0x8002D194 */
+	.4byte HIPLSetSpot__FP14st_HIPLOADDATAi /* 0x8002D26C */
+	.4byte HIPLPollRead__FP14st_HIPLOADDATA /* 0x8002D6B0 */
 	.4byte 0x00000000
 /* SPECULATION: link order */
 .global __vt__Q24xhud6widget

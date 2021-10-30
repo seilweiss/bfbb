@@ -70,7 +70,7 @@ ASMDIFF := ./asmdiff.sh
 INCLUDES := -Isrc/dolphin/include -Isrc/CodeWarrior -Isrc/rwsdk
 
 ASFLAGS := -mgekko -I include
-LDFLAGS := -map $(MAP) -w off -maxerrors 1 -nostdlib
+LDFLAGS := -map $(MAP) -w off -maxerrors 256 -nostdlib
 CFLAGS  := -g -Cpp_exceptions off -proc gekko -fp hard -str reuse,pool,readonly \
            -pragma "check_header_flags off" -pragma "force_active on" \
            -char unsigned -enum int -fp_contract on -nostdinc -RTTI off \

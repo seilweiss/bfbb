@@ -3252,95 +3252,95 @@ lbl_80298C7C:
 lbl_80298CA4:
 	.4byte 0x8012FB54
 	.4byte 0x8012FB54
-	.4byte 0x8012FB64
+	.4byte lbl_8012FB64 /* 0x8012FB64 */
 	.4byte 0x8012FB54
 	.4byte 0x8012FB4C
 	.4byte 0x8012FB4C
-	.4byte 0x8012FB64
-	.4byte 0x8012FB64
+	.4byte lbl_8012FB64 /* 0x8012FB64 */
+	.4byte lbl_8012FB64 /* 0x8012FB64 */
 	.4byte 0x8012FB54
 	.4byte 0x8012FB54
-	.4byte 0x8012FB64
-	.4byte 0x8012FB64
+	.4byte lbl_8012FB64 /* 0x8012FB64 */
+	.4byte lbl_8012FB64 /* 0x8012FB64 */
 	.4byte 0x8012FB54
-	.4byte 0x8012FB64
-	.4byte 0x8012FB64
+	.4byte lbl_8012FB64 /* 0x8012FB64 */
+	.4byte lbl_8012FB64 /* 0x8012FB64 */
 	.4byte 0x8012FB54
-	.4byte 0x8012FB64
-	.4byte 0x8012FB64
-	.4byte 0x8012FB64
-	.4byte 0x8012FB64
+	.4byte lbl_8012FB64 /* 0x8012FB64 */
+	.4byte lbl_8012FB64 /* 0x8012FB64 */
+	.4byte lbl_8012FB64 /* 0x8012FB64 */
+	.4byte lbl_8012FB64 /* 0x8012FB64 */
 	.4byte 0x8012FB54
 	.4byte 0x8012FB54
 	.4byte 0x8012FB54
-	.4byte 0x8012FB64
+	.4byte lbl_8012FB64 /* 0x8012FB64 */
 	.4byte 0x8012FB54
-	.4byte 0x8012FB64
+	.4byte lbl_8012FB64 /* 0x8012FB64 */
 	.4byte 0x8012FB4C
-	.4byte 0x8012FB64
-	.4byte 0x8012FB64
-	.4byte 0x8012FB64
-	.4byte 0x8012FB64
-	.4byte 0x8012FB64
-	.4byte 0x8012FB64
-	.4byte 0x8012FB64
-	.4byte 0x8012FB64
-	.4byte 0x8012FB64
-	.4byte 0x8012FB64
-	.4byte 0x8012FB64
+	.4byte lbl_8012FB64 /* 0x8012FB64 */
+	.4byte lbl_8012FB64 /* 0x8012FB64 */
+	.4byte lbl_8012FB64 /* 0x8012FB64 */
+	.4byte lbl_8012FB64 /* 0x8012FB64 */
+	.4byte lbl_8012FB64 /* 0x8012FB64 */
+	.4byte lbl_8012FB64 /* 0x8012FB64 */
+	.4byte lbl_8012FB64 /* 0x8012FB64 */
+	.4byte lbl_8012FB64 /* 0x8012FB64 */
+	.4byte lbl_8012FB64 /* 0x8012FB64 */
+	.4byte lbl_8012FB64 /* 0x8012FB64 */
+	.4byte lbl_8012FB64 /* 0x8012FB64 */
 	.4byte 0x8012FB4C
-	.4byte 0x8012FB64
+	.4byte lbl_8012FB64 /* 0x8012FB64 */
 	.4byte 0x8012FB54
-	.4byte 0x8012FB64
-	.4byte 0x8012FB64
-	.4byte 0x8012FB64
+	.4byte lbl_8012FB64 /* 0x8012FB64 */
+	.4byte lbl_8012FB64 /* 0x8012FB64 */
+	.4byte lbl_8012FB64 /* 0x8012FB64 */
 	.4byte 0x8012FB54
-	.4byte 0x8012FB68
+	.4byte lbl_8012FB68 /* 0x8012FB68 */
 lbl_80298D5C:
 	.4byte 0x8012FBE4
 	.4byte 0x8012FBE4
-	.4byte 0x8012FC00
+	.4byte lbl_8012FC00 /* 0x8012FC00 */
 	.4byte 0x8012FBE4
 	.4byte 0x8012FBC4
 	.4byte 0x8012FBDC
-	.4byte 0x8012FC00
-	.4byte 0x8012FC00
+	.4byte lbl_8012FC00 /* 0x8012FC00 */
+	.4byte lbl_8012FC00 /* 0x8012FC00 */
 	.4byte 0x8012FBE4
 	.4byte 0x8012FBE4
-	.4byte 0x8012FC00
-	.4byte 0x8012FC00
+	.4byte lbl_8012FC00 /* 0x8012FC00 */
+	.4byte lbl_8012FC00 /* 0x8012FC00 */
 	.4byte 0x8012FBE4
-	.4byte 0x8012FC00
-	.4byte 0x8012FC00
+	.4byte lbl_8012FC00 /* 0x8012FC00 */
+	.4byte lbl_8012FC00 /* 0x8012FC00 */
 	.4byte 0x8012FBE4
-	.4byte 0x8012FC00
-	.4byte 0x8012FC00
-	.4byte 0x8012FC00
-	.4byte 0x8012FC00
+	.4byte lbl_8012FC00 /* 0x8012FC00 */
+	.4byte lbl_8012FC00 /* 0x8012FC00 */
+	.4byte lbl_8012FC00 /* 0x8012FC00 */
+	.4byte lbl_8012FC00 /* 0x8012FC00 */
 	.4byte 0x8012FBE4
 	.4byte 0x8012FBE4
 	.4byte 0x8012FBE4
-	.4byte 0x8012FC00
+	.4byte lbl_8012FC00 /* 0x8012FC00 */
 	.4byte 0x8012FBE4
-	.4byte 0x8012FC00
+	.4byte lbl_8012FC00 /* 0x8012FC00 */
 	.4byte 0x8012FBDC
-	.4byte 0x8012FC00
-	.4byte 0x8012FC00
-	.4byte 0x8012FC00
-	.4byte 0x8012FC00
-	.4byte 0x8012FC00
-	.4byte 0x8012FC00
-	.4byte 0x8012FC00
-	.4byte 0x8012FC00
-	.4byte 0x8012FC00
-	.4byte 0x8012FC00
-	.4byte 0x8012FC00
+	.4byte lbl_8012FC00 /* 0x8012FC00 */
+	.4byte lbl_8012FC00 /* 0x8012FC00 */
+	.4byte lbl_8012FC00 /* 0x8012FC00 */
+	.4byte lbl_8012FC00 /* 0x8012FC00 */
+	.4byte lbl_8012FC00 /* 0x8012FC00 */
+	.4byte lbl_8012FC00 /* 0x8012FC00 */
+	.4byte lbl_8012FC00 /* 0x8012FC00 */
+	.4byte lbl_8012FC00 /* 0x8012FC00 */
+	.4byte lbl_8012FC00 /* 0x8012FC00 */
+	.4byte lbl_8012FC00 /* 0x8012FC00 */
+	.4byte lbl_8012FC00 /* 0x8012FC00 */
 	.4byte 0x8012FBDC
-	.4byte 0x8012FC00
+	.4byte lbl_8012FC00 /* 0x8012FC00 */
 	.4byte 0x8012FBE4
-	.4byte 0x8012FC00
-	.4byte 0x8012FC00
-	.4byte 0x8012FC00
+	.4byte lbl_8012FC00 /* 0x8012FC00 */
+	.4byte lbl_8012FC00 /* 0x8012FC00 */
+	.4byte lbl_8012FC00 /* 0x8012FC00 */
 	.4byte 0x8012FBE4
 	.4byte 0x8012FBF8
 lbl_80298E14:
@@ -3396,7 +3396,7 @@ g_pc_playerInvisible:
 lbl_803CAD58:
 	.4byte 0x00000000
 lbl_803CAD5C:
-	.4byte 0x8026C808
+	.4byte lbl_8026C808 /* 0x8026C808 */
 /* SPECULATION: link order */
 .global acc_thrust__8Firework
 acc_thrust__8Firework:

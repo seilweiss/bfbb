@@ -1130,10 +1130,10 @@ lbl_8028C0F8:
 	.4byte 0x800538F0
 	.4byte 0x80053924
 	.4byte 0x80053934
-	.4byte 0x80053B10
-	.4byte 0x80053B10
-	.4byte 0x80053B10
-	.4byte 0x80053B10
+	.4byte lbl_80053B10 /* 0x80053B10 */
+	.4byte lbl_80053B10 /* 0x80053B10 */
+	.4byte lbl_80053B10 /* 0x80053B10 */
+	.4byte lbl_80053B10 /* 0x80053B10 */
 	.4byte 0x80053974
 	.4byte 0x80053984
 	.4byte 0x800539A4
@@ -1146,7 +1146,7 @@ lbl_8028C0F8:
 	.4byte 0x80053AD0
 	.4byte 0x80053AEC
 	.4byte 0x80053AF8
-	.4byte 0x80053B10
+	.4byte lbl_80053B10 /* 0x80053B10 */
 	.4byte 0x00000000
 
 .section .sbss

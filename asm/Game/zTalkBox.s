@@ -4197,7 +4197,7 @@ jots__Q28xtextbox6layoutCFv:
 /* 80133E34 00130C34  4E 80 00 20 */	blr 
 .section .rodata
 lbl_8026C870:
-	.4byte 0x8026C920
+	.4byte lbl_8026C920 /* 0x8026C920 */
 	.4byte 0x00000003
 	.4byte 0x8026C924
 	.4byte 0x00000001
@@ -4319,49 +4319,49 @@ lbl_8026C920:
 lbl_80298E68:
 	.4byte 0x8026C9A7
 	.4byte 0x0000000A
-	.4byte 0x80131714
-	.4byte 0x80131780
-	.4byte 0x801317C0
+	.4byte parse_tag_allow_quit__22_esc__2_unnamed_esc__2_zTalkBox_cpp_esc__2_FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag /* 0x80131714 */
+	.4byte reset_tag_allow_quit__22_esc__2_unnamed_esc__2_zTalkBox_cpp_esc__2_FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag /* 0x80131780 */
+	.4byte trigger_allow_quit__22_esc__2_unnamed_esc__2_zTalkBox_cpp_esc__2_FRCQ28xtextbox3jot /* 0x801317C0 */
 	.4byte 0x8026C9B2
 	.4byte 0x00000002
-	.4byte 0x80131714
-	.4byte 0x80131780
-	.4byte 0x801317C0
+	.4byte parse_tag_allow_quit__22_esc__2_unnamed_esc__2_zTalkBox_cpp_esc__2_FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag /* 0x80131714 */
+	.4byte reset_tag_allow_quit__22_esc__2_unnamed_esc__2_zTalkBox_cpp_esc__2_FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag /* 0x80131780 */
+	.4byte trigger_allow_quit__22_esc__2_unnamed_esc__2_zTalkBox_cpp_esc__2_FRCQ28xtextbox3jot /* 0x801317C0 */
 	.4byte 0x8026C9B5
 	.4byte 0x00000009
-	.4byte 0x80130C9C
-	.4byte 0x80130DA8
-	.4byte 0x80130E18
+	.4byte parse_tag_auto_wait__22_esc__2_unnamed_esc__2_zTalkBox_cpp_esc__2_FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag /* 0x80130C9C */
+	.4byte reset_tag_auto_wait__22_esc__2_unnamed_esc__2_zTalkBox_cpp_esc__2_FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag /* 0x80130DA8 */
+	.4byte trigger_auto_wait__22_esc__2_unnamed_esc__2_zTalkBox_cpp_esc__2_FRCQ28xtextbox3jot /* 0x80130E18 */
 	.4byte 0x8026C9BF
 	.4byte 0x00000005
-	.4byte 0x80131704
-	.4byte 0x80131708
-	.4byte 0x8013170C
+	.4byte parse_tag_pause__22_esc__2_unnamed_esc__2_zTalkBox_cpp_esc__2_FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag /* 0x80131704 */
+	.4byte reset_tag_pause__22_esc__2_unnamed_esc__2_zTalkBox_cpp_esc__2_FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag /* 0x80131708 */
+	.4byte trigger_pause__22_esc__2_unnamed_esc__2_zTalkBox_cpp_esc__2_FRCQ28xtextbox3jot /* 0x8013170C */
 	.4byte 0x8026C9C5
 	.4byte 0x00000006
-	.4byte 0x80130E50
+	.4byte parse_tag_signal__22_esc__2_unnamed_esc__2_zTalkBox_cpp_esc__2_FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag /* 0x80130E50 */
 	.4byte 0x00000000
-	.4byte 0x80130F98
+	.4byte trigger_signal__22_esc__2_unnamed_esc__2_zTalkBox_cpp_esc__2_FRCQ28xtextbox3jot /* 0x80130F98 */
 	.4byte 0x8026C957
 	.4byte 0x00000005
-	.4byte 0x80131108
-	.4byte 0x80131440
-	.4byte 0x80131480
+	.4byte parse_tag_sound__22_esc__2_unnamed_esc__2_zTalkBox_cpp_esc__2_FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag /* 0x80131108 */
+	.4byte reset_tag_sound__22_esc__2_unnamed_esc__2_zTalkBox_cpp_esc__2_FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag /* 0x80131440 */
+	.4byte trigger_sound__22_esc__2_unnamed_esc__2_zTalkBox_cpp_esc__2_FRCQ28xtextbox3jot /* 0x80131480 */
 	.4byte 0x8026C9CC
 	.4byte 0x00000008
-	.4byte 0x801317E8
+	.4byte parse_tag_teleport__22_esc__2_unnamed_esc__2_zTalkBox_cpp_esc__2_FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag /* 0x801317E8 */
 	.4byte 0x00000000
-	.4byte 0x801319C8
+	.4byte trigger_teleport__22_esc__2_unnamed_esc__2_zTalkBox_cpp_esc__2_FRCQ28xtextbox3jot /* 0x801319C8 */
 	.4byte 0x8026C9D5
 	.4byte 0x00000004
-	.4byte 0x80131A30
-	.4byte 0x80131A9C
-	.4byte 0x80131ADC
+	.4byte parse_tag_trap__22_esc__2_unnamed_esc__2_zTalkBox_cpp_esc__2_FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag /* 0x80131A30 */
+	.4byte reset_tag_trap__22_esc__2_unnamed_esc__2_zTalkBox_cpp_esc__2_FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag /* 0x80131A9C */
+	.4byte trigger_trap__22_esc__2_unnamed_esc__2_zTalkBox_cpp_esc__2_FRCQ28xtextbox3jot /* 0x80131ADC */
 	.4byte 0x8026C945
 	.4byte 0x00000004
-	.4byte 0x80131B1C
+	.4byte lbl_80131B1C /* 0x80131B1C */
 	.4byte 0x00000000
-	.4byte 0x80131BBC
+	.4byte trigger_wait__22_esc__2_unnamed_esc__2_zTalkBox_cpp_esc__2_FRCQ28xtextbox3jot /* 0x80131BBC */
 /* SPECULATION: link order */
 .global __vt__Q222_esc__2_unnamed_esc__2_zTalkBox_cpp_esc__2_16start_state_type
 __vt__Q222_esc__2_unnamed_esc__2_zTalkBox_cpp_esc__2_16start_state_type:

@@ -1003,19 +1003,19 @@ lbl_8026AFD8:
 .section .data
 lbl_80297CE0:
 	.4byte 0x00000000
-	.4byte 0x80116C88
+	.4byte render_par_sprite__FPvP9xParGroup /* 0x80116C88 */
 	.4byte 0x00000001
-	.4byte 0x800CBD34
+	.4byte iParMgrRenderParSys_Streak__FPvP9xParGroup /* 0x800CBD34 */
 	.4byte 0x00000002
-	.4byte 0x800CC554
+	.4byte iParMgrRenderParSys_Flat__FPvP9xParGroup /* 0x800CC554 */
 	.4byte 0x00000003
-	.4byte 0x800CC148
+	.4byte iParMgrRenderParSys_Static__FPvP9xParGroup /* 0x800CC148 */
 	.4byte 0x00000004
-	.4byte 0x800CC14C
+	.4byte iParMgrRenderParSys_Ground__FPvP9xParGroup /* 0x800CC14C */
 	.4byte 0x00000005
-	.4byte 0x800CC0A4
+	.4byte iParMgrRenderParSys_QuadStreak__FPvP9xParGroup /* 0x800CC0A4 */
 	.4byte 0x00000006
-	.4byte 0x800CBEEC
+	.4byte iParMgrRenderParSys_InvStreak__FPvP9xParGroup /* 0x800CBEEC */
 
 .section .bss
 lbl_80314210:

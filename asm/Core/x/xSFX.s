@@ -623,21 +623,21 @@ xSFXStop__FP4xSFX:
 .section .data
 lbl_80288C38:
 	.4byte 0x80044324
-	.4byte 0x80044408
-	.4byte 0x80044408
-	.4byte 0x80044408
-	.4byte 0x80044408
-	.4byte 0x80044408
-	.4byte 0x80044408
-	.4byte 0x80044408
-	.4byte 0x80044408
+	.4byte lbl_80044408 /* 0x80044408 */
+	.4byte lbl_80044408 /* 0x80044408 */
+	.4byte lbl_80044408 /* 0x80044408 */
+	.4byte lbl_80044408 /* 0x80044408 */
+	.4byte lbl_80044408 /* 0x80044408 */
+	.4byte lbl_80044408 /* 0x80044408 */
+	.4byte lbl_80044408 /* 0x80044408 */
+	.4byte lbl_80044408 /* 0x80044408 */
 	.4byte 0x800443CC
-	.4byte 0x80044408
-	.4byte 0x80044408
-	.4byte 0x80044408
-	.4byte 0x80044404
+	.4byte lbl_80044408 /* 0x80044408 */
+	.4byte lbl_80044408 /* 0x80044408 */
+	.4byte lbl_80044408 /* 0x80044408 */
+	.4byte lbl_80044404 /* 0x80044404 */
 	.4byte 0x80044330
-	.4byte 0x80044408
+	.4byte lbl_80044408 /* 0x80044408 */
 	.4byte 0x8004435C
 	.4byte 0x00000000
 /* SPECULATION: link order */

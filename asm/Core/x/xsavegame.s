@@ -5606,18 +5606,18 @@ lbl_80288A80:
 	.4byte 0x00000000
 	.4byte 0x00000000
 lbl_80288AA0:
-	.4byte 0x8003DB94
-	.4byte 0x8003DB90
-	.4byte 0x8003DB90
-	.4byte 0x8003DB90
-	.4byte 0x8003DB90
+	.4byte lbl_8003DB94 /* 0x8003DB94 */
+	.4byte lbl_8003DB90 /* 0x8003DB90 */
+	.4byte lbl_8003DB90 /* 0x8003DB90 */
+	.4byte lbl_8003DB90 /* 0x8003DB90 */
+	.4byte lbl_8003DB90 /* 0x8003DB90 */
 	.4byte 0x8003DB70
 	.4byte 0x8003DB78
 	.4byte 0x8003DB80
-	.4byte 0x8003DB90
-	.4byte 0x8003DB90
+	.4byte lbl_8003DB90 /* 0x8003DB90 */
+	.4byte lbl_8003DB90 /* 0x8003DB90 */
 	.4byte 0x8003DB78
-	.4byte 0x8003DB90
+	.4byte lbl_8003DB90 /* 0x8003DB90 */
 	.4byte 0x8003DB88
 lbl_80288AD4:
 	.4byte 0x00000000

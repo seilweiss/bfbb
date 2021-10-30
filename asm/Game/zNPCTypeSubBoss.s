@@ -213,6 +213,7 @@ PhysicsFlags__11zNPCSubBossCFv:
 /* 80136124 00132F24  38 60 00 03 */	li r3, 3
 /* 80136128 00132F28  4E 80 00 20 */	blr 
 .section .rodata
+.global lbl_8026CAA8
 lbl_8026CAA8:
 	.4byte 0x556E6B6E
 	.4byte 0x6F776E00

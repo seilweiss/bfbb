@@ -4627,7 +4627,7 @@ lbl_80290100:
 zSaveLoadUITable:
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x8025E9C0
+	.4byte lbl_8025E9C0 /* 0x8025E9C0 */
 	.4byte 0x00000001
 	.4byte 0x00000000
 	.4byte 0x8025E9D2
@@ -4831,64 +4831,64 @@ thumbIconMap:
 	.4byte 0x8025ED59
 lbl_80290444:
 	.4byte 0x800AEEAC
-	.4byte 0x800AEEBC
-	.4byte 0x800AEEBC
+	.4byte lbl_800AEEBC /* 0x800AEEBC */
+	.4byte lbl_800AEEBC /* 0x800AEEBC */
 	.4byte 0x800AEE9C
-	.4byte 0x800AEEBC
+	.4byte lbl_800AEEBC /* 0x800AEEBC */
 	.4byte 0x800AEE9C
 	.4byte 0x800AEE40
 	.4byte 0x800AEE74
 	.4byte 0x800AEE84
-	.4byte 0x800AEEBC
-	.4byte 0x800AEEBC
-	.4byte 0x800AEEBC
-	.4byte 0x800AEEBC
+	.4byte lbl_800AEEBC /* 0x800AEEBC */
+	.4byte lbl_800AEEBC /* 0x800AEEBC */
+	.4byte lbl_800AEEBC /* 0x800AEEBC */
+	.4byte lbl_800AEEBC /* 0x800AEEBC */
 lbl_80290478:
 	.4byte 0x800B016C
-	.4byte 0x800B01EC
+	.4byte lbl_800B01EC /* 0x800B01EC */
 	.4byte 0x800B0164
 	.4byte 0x800B015C
-	.4byte 0x800B01EC
+	.4byte lbl_800B01EC /* 0x800B01EC */
 	.4byte 0x800B015C
 	.4byte 0x800B015C
 	.4byte 0x800B015C
 	.4byte 0x800B015C
-	.4byte 0x800B01EC
+	.4byte lbl_800B01EC /* 0x800B01EC */
 	.4byte 0x800B015C
 lbl_802904A4:
 	.4byte 0x800B00B4
 	.4byte 0x800B00E0
 	.4byte 0x800B0130
-	.4byte 0x800B01EC
-	.4byte 0x800B01EC
-	.4byte 0x800B01EC
-	.4byte 0x800B01EC
-	.4byte 0x800B01EC
+	.4byte lbl_800B01EC /* 0x800B01EC */
+	.4byte lbl_800B01EC /* 0x800B01EC */
+	.4byte lbl_800B01EC /* 0x800B01EC */
+	.4byte lbl_800B01EC /* 0x800B01EC */
+	.4byte lbl_800B01EC /* 0x800B01EC */
 	.4byte 0x800B017C
 	.4byte 0x800B0194
 lbl_802904CC:
 	.4byte 0x800B0458
-	.4byte 0x800B0520
+	.4byte lbl_800B0520 /* 0x800B0520 */
 	.4byte 0x800B0450
 	.4byte 0x800B0448
-	.4byte 0x800B0520
+	.4byte lbl_800B0520 /* 0x800B0520 */
 	.4byte 0x800B0448
 	.4byte 0x800B0448
 	.4byte 0x800B0448
 	.4byte 0x800B0448
-	.4byte 0x800B0520
+	.4byte lbl_800B0520 /* 0x800B0520 */
 	.4byte 0x800B0448
 lbl_802904F8:
 	.4byte 0x800B0280
 	.4byte 0x800B02A0
 	.4byte 0x800B0414
-	.4byte 0x800B0520
-	.4byte 0x800B0520
-	.4byte 0x800B0520
-	.4byte 0x800B0520
-	.4byte 0x800B0520
-	.4byte 0x800B0520
-	.4byte 0x800B0520
+	.4byte lbl_800B0520 /* 0x800B0520 */
+	.4byte lbl_800B0520 /* 0x800B0520 */
+	.4byte lbl_800B0520 /* 0x800B0520 */
+	.4byte lbl_800B0520 /* 0x800B0520 */
+	.4byte lbl_800B0520 /* 0x800B0520 */
+	.4byte lbl_800B0520 /* 0x800B0520 */
+	.4byte lbl_800B0520 /* 0x800B0520 */
 	.4byte 0x800B0480
 	.4byte 0x800B0468
 

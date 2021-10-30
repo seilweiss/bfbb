@@ -328,7 +328,7 @@ lbl_8004EBE4:
 
 .section .data
 lbl_8028A7B8:
-	.4byte 0x80254318
+	.4byte lbl_80254318 /* 0x80254318 */
 	.4byte 0x8025431E
 	.4byte 0x80254324
 	.4byte 0x8025432A

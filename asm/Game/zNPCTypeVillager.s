@@ -5596,6 +5596,7 @@ lbl_80269D1C:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
+.global lbl_80269D40
 lbl_80269D40:
 	.4byte 0x556E6B6E
 	.4byte 0x6F776E00
@@ -5922,21 +5923,21 @@ lbl_80296708:
 	.4byte 0x80104C90
 	.4byte 0x80104C7C
 	.4byte 0x80104C7C
-	.4byte 0x80104D1C
-	.4byte 0x80104D1C
-	.4byte 0x80104D1C
+	.4byte lbl_80104D1C /* 0x80104D1C */
+	.4byte lbl_80104D1C /* 0x80104D1C */
+	.4byte lbl_80104D1C /* 0x80104D1C */
 	.4byte 0x80104C7C
 	.4byte 0x80104C7C
 	.4byte 0x80104C7C
 	.4byte 0x80104C7C
 	.4byte 0x80104C7C
-	.4byte 0x80104D1C
-	.4byte 0x80104D1C
-	.4byte 0x80104D1C
+	.4byte lbl_80104D1C /* 0x80104D1C */
+	.4byte lbl_80104D1C /* 0x80104D1C */
+	.4byte lbl_80104D1C /* 0x80104D1C */
 	.4byte 0x80104C7C
 	.4byte 0x80104C7C
 	.4byte 0x80104C7C
-	.4byte 0x80104D1C
+	.4byte lbl_80104D1C /* 0x80104D1C */
 lbl_8029677C:
 	.4byte 0x4E474E30
 	.4byte 0x4E474E31
@@ -6493,7 +6494,7 @@ g_hash_ambianim:
 /* SPECULATION: link order */
 .global g_strz_ambianim
 g_strz_ambianim:
-	.4byte 0x8026A280
+	.4byte lbl_8026A280 /* 0x8026A280 */
 	.4byte 0x8026A288
 	.4byte 0x8026A28F
 	.4byte 0x8026A296
@@ -6906,7 +6907,7 @@ g_hash_tikianim:
 /* SPECULATION: link order */
 .global g_strz_tikianim
 g_strz_tikianim:
-	.4byte 0x8026A358
+	.4byte lbl_8026A358 /* 0x8026A358 */
 	.4byte 0x8026A360
 
 .section .sdata2

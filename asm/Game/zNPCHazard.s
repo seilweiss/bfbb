@@ -9909,7 +9909,7 @@ lbl_8029BA40:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x80273800
+	.4byte lbl_80273800 /* 0x80273800 */
 	.4byte 0x80273813
 	.4byte 0x80273825
 	.4byte 0x80273834
@@ -10100,7 +10100,7 @@ lbl_8029BD28:
 	.4byte 0x80188D1C
 	.4byte 0x80188DFC
 lbl_8029BD94:
-	.4byte 0x8018952C
+	.4byte lbl_8018952C /* 0x8018952C */
 	.4byte 0x801893A0
 	.4byte 0x801893A0
 	.4byte 0x801893B0
@@ -10128,7 +10128,7 @@ lbl_8029BD94:
 	.4byte 0x80189510
 	.4byte 0x80189520
 lbl_8029BE00:
-	.4byte 0x8018A2E8
+	.4byte lbl_8018A2E8 /* 0x8018A2E8 */
 	.4byte 0x801895C8
 	.4byte 0x801895C8
 	.4byte 0x80189614
@@ -10136,7 +10136,7 @@ lbl_8029BE00:
 	.4byte 0x801896A0
 	.4byte 0x801896E4
 	.4byte 0x80189750
-	.4byte 0x8018A2E8
+	.4byte lbl_8018A2E8 /* 0x8018A2E8 */
 	.4byte 0x8018A2D4
 	.4byte 0x80189B44
 	.4byte 0x80189BAC
@@ -10145,7 +10145,7 @@ lbl_8029BE00:
 	.4byte 0x80189F40
 	.4byte 0x8018A09C
 	.4byte 0x80189C54
-	.4byte 0x8018A2F8
+	.4byte lbl_8018A2F8 /* 0x8018A2F8 */
 	.4byte 0x80189CC4
 	.4byte 0x80189D00
 	.4byte 0x80189D70
@@ -10157,23 +10157,23 @@ lbl_8029BE00:
 	.4byte 0x8018A178
 lbl_8029BE6C:
 	.4byte 0x8018A3B4
-	.4byte 0x8018A410
-	.4byte 0x8018A410
-	.4byte 0x8018A410
-	.4byte 0x8018A410
-	.4byte 0x8018A410
+	.4byte lbl_8018A410 /* 0x8018A410 */
+	.4byte lbl_8018A410 /* 0x8018A410 */
+	.4byte lbl_8018A410 /* 0x8018A410 */
+	.4byte lbl_8018A410 /* 0x8018A410 */
+	.4byte lbl_8018A410 /* 0x8018A410 */
 	.4byte 0x8018A394
-	.4byte 0x8018A410
-	.4byte 0x8018A410
-	.4byte 0x8018A410
-	.4byte 0x8018A410
-	.4byte 0x8018A410
-	.4byte 0x8018A410
-	.4byte 0x8018A410
+	.4byte lbl_8018A410 /* 0x8018A410 */
+	.4byte lbl_8018A410 /* 0x8018A410 */
+	.4byte lbl_8018A410 /* 0x8018A410 */
+	.4byte lbl_8018A410 /* 0x8018A410 */
+	.4byte lbl_8018A410 /* 0x8018A410 */
+	.4byte lbl_8018A410 /* 0x8018A410 */
+	.4byte lbl_8018A410 /* 0x8018A410 */
 	.4byte 0x8018A394
-	.4byte 0x8018A410
-	.4byte 0x8018A410
-	.4byte 0x8018A410
+	.4byte lbl_8018A410 /* 0x8018A410 */
+	.4byte lbl_8018A410 /* 0x8018A410 */
+	.4byte lbl_8018A410 /* 0x8018A410 */
 	.4byte 0x8018A3E4
 /* SPECULATION: link order */
 .global __vt__18zNPCGoalJellyBirth
@@ -14375,8 +14375,8 @@ lbl_802A0004:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000036
-	.4byte 0x80190F80
-	.4byte 0x80194B28
+	.4byte NCIN_Par_BPLANK_JET_1_Upd__FPC12zCutsceneMgrP9NCINEntryi /* 0x80190F80 */
+	.4byte NCIN_EntityBonePar_AR__FPC12zCutsceneMgrP9NCINEntryP8RpAtomicP11RwMatrixTagUiUi /* 0x80194B28 */
 	.4byte 0x00000000
 	.4byte 0x41F55556
 	.4byte 0x4201999A
@@ -14404,8 +14404,8 @@ lbl_802A0004:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000036
-	.4byte 0x80191060
-	.4byte 0x80194B28
+	.4byte NCIN_Par_BPLANK_JET_2_Upd__FPC12zCutsceneMgrP9NCINEntryi /* 0x80191060 */
+	.4byte NCIN_EntityBonePar_AR__FPC12zCutsceneMgrP9NCINEntryP8RpAtomicP11RwMatrixTagUiUi /* 0x80194B28 */
 	.4byte 0x00000000
 	.4byte 0x41F55556
 	.4byte 0x4201999A
@@ -14433,8 +14433,8 @@ lbl_802A0004:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000035
-	.4byte 0x80194F6C
-	.4byte 0x80194FA4
+	.4byte NCIN_BubbleTrail_Upd__FPC12zCutsceneMgrP9NCINEntryi /* 0x80194F6C */
+	.4byte NCIN_BubbleTrail_AR__FPC12zCutsceneMgrP9NCINEntryP8RpAtomicP11RwMatrixTagUiUi /* 0x80194FA4 */
 	.4byte 0x00000000
 	.4byte 0x41B04445
 	.4byte 0x41B4CCCD
@@ -14462,8 +14462,8 @@ lbl_802A0004:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000035
-	.4byte 0x80194F6C
-	.4byte 0x80194FA4
+	.4byte NCIN_BubbleTrail_Upd__FPC12zCutsceneMgrP9NCINEntryi /* 0x80194F6C */
+	.4byte NCIN_BubbleTrail_AR__FPC12zCutsceneMgrP9NCINEntryP8RpAtomicP11RwMatrixTagUiUi /* 0x80194FA4 */
 	.4byte 0x00000000
 	.4byte 0x41B04445
 	.4byte 0x41B4CCCD
@@ -14520,8 +14520,8 @@ lbl_802A0004:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000036
-	.4byte 0x80191144
-	.4byte 0x80194B28
+	.4byte NCIN_Par_BPLANK_SBB_FLAMES_1_Upd__FPC12zCutsceneMgrP9NCINEntryi /* 0x80191144 */
+	.4byte NCIN_EntityBonePar_AR__FPC12zCutsceneMgrP9NCINEntryP8RpAtomicP11RwMatrixTagUiUi /* 0x80194B28 */
 	.4byte 0x00000000
 	.4byte 0x4112AAAB
 	.4byte 0x42053334
@@ -14549,8 +14549,8 @@ lbl_802A0004:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000036
-	.4byte 0x80191228
-	.4byte 0x80194B28
+	.4byte NCIN_Par_BPLANK_SBB_FLAMES_2_Upd__FPC12zCutsceneMgrP9NCINEntryi /* 0x80191228 */
+	.4byte NCIN_EntityBonePar_AR__FPC12zCutsceneMgrP9NCINEntryP8RpAtomicP11RwMatrixTagUiUi /* 0x80194B28 */
 	.4byte 0x00000000
 	.4byte 0x4112AAAB
 	.4byte 0x42053334
@@ -14578,8 +14578,8 @@ lbl_802A0004:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000036
-	.4byte 0x801914D4
-	.4byte 0x80194B28
+	.4byte NCIN_Par_BPLANK_SBB_SMOKE_1_Upd__FPC12zCutsceneMgrP9NCINEntryi /* 0x801914D4 */
+	.4byte NCIN_EntityBonePar_AR__FPC12zCutsceneMgrP9NCINEntryP8RpAtomicP11RwMatrixTagUiUi /* 0x80194B28 */
 	.4byte 0x00000000
 	.4byte 0x4112AAAB
 	.4byte 0x42053334
@@ -14607,8 +14607,8 @@ lbl_802A0004:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000036
-	.4byte 0x801915B8
-	.4byte 0x80194B28
+	.4byte NCIN_Par_BPLANK_SBB_SMOKE_2_Upd__FPC12zCutsceneMgrP9NCINEntryi /* 0x801915B8 */
+	.4byte NCIN_EntityBonePar_AR__FPC12zCutsceneMgrP9NCINEntryP8RpAtomicP11RwMatrixTagUiUi /* 0x80194B28 */
 	.4byte 0x00000000
 	.4byte 0x4112AAAB
 	.4byte 0x42053334
@@ -14636,8 +14636,8 @@ lbl_802A0004:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000036
-	.4byte 0x8019130C
-	.4byte 0x80194B28
+	.4byte NCIN_Par_BPLANK_SBB_JET_1_Upd__FPC12zCutsceneMgrP9NCINEntryi /* 0x8019130C */
+	.4byte NCIN_EntityBonePar_AR__FPC12zCutsceneMgrP9NCINEntryP8RpAtomicP11RwMatrixTagUiUi /* 0x80194B28 */
 	.4byte 0x00000000
 	.4byte 0x4112AAAB
 	.4byte 0x4218AAAB
@@ -14665,8 +14665,8 @@ lbl_802A0004:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000036
-	.4byte 0x801913F0
-	.4byte 0x80194B28
+	.4byte NCIN_Par_BPLANK_SBB_JET_2_Upd__FPC12zCutsceneMgrP9NCINEntryi /* 0x801913F0 */
+	.4byte NCIN_EntityBonePar_AR__FPC12zCutsceneMgrP9NCINEntryP8RpAtomicP11RwMatrixTagUiUi /* 0x80194B28 */
 	.4byte 0x00000000
 	.4byte 0x4112AAAB
 	.4byte 0x4218AAAB
@@ -14694,8 +14694,8 @@ lbl_802A0004:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000036
-	.4byte 0x80190F80
-	.4byte 0x80194B28
+	.4byte NCIN_Par_BPLANK_JET_1_Upd__FPC12zCutsceneMgrP9NCINEntryi /* 0x80190F80 */
+	.4byte NCIN_EntityBonePar_AR__FPC12zCutsceneMgrP9NCINEntryP8RpAtomicP11RwMatrixTagUiUi /* 0x80194B28 */
 	.4byte 0x00000000
 	.4byte 0x41B55556
 	.4byte 0x41CAAAAB
@@ -14723,8 +14723,8 @@ lbl_802A0004:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000036
-	.4byte 0x80191060
-	.4byte 0x80194B28
+	.4byte NCIN_Par_BPLANK_JET_2_Upd__FPC12zCutsceneMgrP9NCINEntryi /* 0x80191060 */
+	.4byte NCIN_EntityBonePar_AR__FPC12zCutsceneMgrP9NCINEntryP8RpAtomicP11RwMatrixTagUiUi /* 0x80194B28 */
 	.4byte 0x00000000
 	.4byte 0x41B55556
 	.4byte 0x41CAAAAB
@@ -14752,8 +14752,8 @@ lbl_802A0004:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000036
-	.4byte 0x80190F80
-	.4byte 0x80194B28
+	.4byte NCIN_Par_BPLANK_JET_1_Upd__FPC12zCutsceneMgrP9NCINEntryi /* 0x80190F80 */
+	.4byte NCIN_EntityBonePar_AR__FPC12zCutsceneMgrP9NCINEntryP8RpAtomicP11RwMatrixTagUiUi /* 0x80194B28 */
 	.4byte 0x00000000
 	.4byte 0x42480001
 	.4byte 0x42560001
@@ -14781,8 +14781,8 @@ lbl_802A0004:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000036
-	.4byte 0x80191060
-	.4byte 0x80194B28
+	.4byte NCIN_Par_BPLANK_JET_2_Upd__FPC12zCutsceneMgrP9NCINEntryi /* 0x80191060 */
+	.4byte NCIN_EntityBonePar_AR__FPC12zCutsceneMgrP9NCINEntryP8RpAtomicP11RwMatrixTagUiUi /* 0x80194B28 */
 	.4byte 0x00000000
 	.4byte 0x42480001
 	.4byte 0x42560001
@@ -14810,8 +14810,8 @@ lbl_802A0004:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000036
-	.4byte 0x8019169C
-	.4byte 0x80194B28
+	.4byte NCIN_Par_CIN_BIGDUP_SMOKE_Upd__FPC12zCutsceneMgrP9NCINEntryi /* 0x8019169C */
+	.4byte NCIN_EntityBonePar_AR__FPC12zCutsceneMgrP9NCINEntryP8RpAtomicP11RwMatrixTagUiUi /* 0x80194B28 */
 	.4byte 0x00000000
 	.4byte 0x4212AAAB
 	.4byte 0x42B40001
@@ -14839,8 +14839,8 @@ lbl_802A0004:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000036
-	.4byte 0x80191780
-	.4byte 0x80194B28
+	.4byte NCIN_Par_CIN_BIGDUP_SPAWN_Upd__FPC12zCutsceneMgrP9NCINEntryi /* 0x80191780 */
+	.4byte NCIN_EntityBonePar_AR__FPC12zCutsceneMgrP9NCINEntryP8RpAtomicP11RwMatrixTagUiUi /* 0x80194B28 */
 	.4byte 0x00000000
 	.4byte 0x425D5556
 	.4byte 0x42615556
@@ -14868,8 +14868,8 @@ lbl_802A0004:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000036
-	.4byte 0x80190F80
-	.4byte 0x80194B28
+	.4byte NCIN_Par_BPLANK_JET_1_Upd__FPC12zCutsceneMgrP9NCINEntryi /* 0x80190F80 */
+	.4byte NCIN_EntityBonePar_AR__FPC12zCutsceneMgrP9NCINEntryP8RpAtomicP11RwMatrixTagUiUi /* 0x80194B28 */
 	.4byte 0x00000000
 	.4byte 0x42600001
 	.4byte 0x426AAAAB
@@ -14897,8 +14897,8 @@ lbl_802A0004:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000036
-	.4byte 0x80191060
-	.4byte 0x80194B28
+	.4byte NCIN_Par_BPLANK_JET_2_Upd__FPC12zCutsceneMgrP9NCINEntryi /* 0x80191060 */
+	.4byte NCIN_EntityBonePar_AR__FPC12zCutsceneMgrP9NCINEntryP8RpAtomicP11RwMatrixTagUiUi /* 0x80194B28 */
 	.4byte 0x00000000
 	.4byte 0x42600001
 	.4byte 0x426AAAAB
@@ -14926,8 +14926,8 @@ lbl_802A0004:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000036
-	.4byte 0x80191780
-	.4byte 0x80194B28
+	.4byte NCIN_Par_CIN_BIGDUP_SPAWN_Upd__FPC12zCutsceneMgrP9NCINEntryi /* 0x80191780 */
+	.4byte NCIN_EntityBonePar_AR__FPC12zCutsceneMgrP9NCINEntryP8RpAtomicP11RwMatrixTagUiUi /* 0x80194B28 */
 	.4byte 0x00000000
 	.4byte 0x42813334
 	.4byte 0x42833334
@@ -14955,8 +14955,8 @@ lbl_802A0004:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000036
-	.4byte 0x80190F80
-	.4byte 0x80194B28
+	.4byte NCIN_Par_BPLANK_JET_1_Upd__FPC12zCutsceneMgrP9NCINEntryi /* 0x80190F80 */
+	.4byte NCIN_EntityBonePar_AR__FPC12zCutsceneMgrP9NCINEntryP8RpAtomicP11RwMatrixTagUiUi /* 0x80194B28 */
 	.4byte 0x00000000
 	.4byte 0x42828889
 	.4byte 0x42945556
@@ -14984,8 +14984,8 @@ lbl_802A0004:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000036
-	.4byte 0x80191060
-	.4byte 0x80194B28
+	.4byte NCIN_Par_BPLANK_JET_2_Upd__FPC12zCutsceneMgrP9NCINEntryi /* 0x80191060 */
+	.4byte NCIN_EntityBonePar_AR__FPC12zCutsceneMgrP9NCINEntryP8RpAtomicP11RwMatrixTagUiUi /* 0x80194B28 */
 	.4byte 0x00000000
 	.4byte 0x42828889
 	.4byte 0x42945556
@@ -15013,8 +15013,8 @@ lbl_802A0004:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000036
-	.4byte 0x80191780
-	.4byte 0x80194B28
+	.4byte NCIN_Par_CIN_BIGDUP_SPAWN_Upd__FPC12zCutsceneMgrP9NCINEntryi /* 0x80191780 */
+	.4byte NCIN_EntityBonePar_AR__FPC12zCutsceneMgrP9NCINEntryP8RpAtomicP11RwMatrixTagUiUi /* 0x80194B28 */
 	.4byte 0x00000000
 	.4byte 0x42895556
 	.4byte 0x428B5556
@@ -15042,8 +15042,8 @@ lbl_802A0004:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000036
-	.4byte 0x80190F80
-	.4byte 0x80194B28
+	.4byte NCIN_Par_BPLANK_JET_1_Upd__FPC12zCutsceneMgrP9NCINEntryi /* 0x80190F80 */
+	.4byte NCIN_EntityBonePar_AR__FPC12zCutsceneMgrP9NCINEntryP8RpAtomicP11RwMatrixTagUiUi /* 0x80194B28 */
 	.4byte 0x00000000
 	.4byte 0x428AAAAB
 	.4byte 0x42945556
@@ -15071,8 +15071,8 @@ lbl_802A0004:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000036
-	.4byte 0x80191060
-	.4byte 0x80194B28
+	.4byte NCIN_Par_BPLANK_JET_2_Upd__FPC12zCutsceneMgrP9NCINEntryi /* 0x80191060 */
+	.4byte NCIN_EntityBonePar_AR__FPC12zCutsceneMgrP9NCINEntryP8RpAtomicP11RwMatrixTagUiUi /* 0x80194B28 */
 	.4byte 0x00000000
 	.4byte 0x428AAAAB
 	.4byte 0x42945556
@@ -15100,8 +15100,8 @@ lbl_802A0004:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000036
-	.4byte 0x80190F80
-	.4byte 0x80194B28
+	.4byte NCIN_Par_BPLANK_JET_1_Upd__FPC12zCutsceneMgrP9NCINEntryi /* 0x80190F80 */
+	.4byte NCIN_EntityBonePar_AR__FPC12zCutsceneMgrP9NCINEntryP8RpAtomicP11RwMatrixTagUiUi /* 0x80194B28 */
 	.4byte 0x00000000
 	.4byte 0x429B5556
 	.4byte 0x42B2BBBC
@@ -15129,8 +15129,8 @@ lbl_802A0004:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000036
-	.4byte 0x80191060
-	.4byte 0x80194B28
+	.4byte NCIN_Par_BPLANK_JET_2_Upd__FPC12zCutsceneMgrP9NCINEntryi /* 0x80191060 */
+	.4byte NCIN_EntityBonePar_AR__FPC12zCutsceneMgrP9NCINEntryP8RpAtomicP11RwMatrixTagUiUi /* 0x80194B28 */
 	.4byte 0x00000000
 	.4byte 0x429B5556
 	.4byte 0x42B2BBBC
@@ -15158,8 +15158,8 @@ lbl_802A0004:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000036
-	.4byte 0x80191780
-	.4byte 0x80194B28
+	.4byte NCIN_Par_CIN_BIGDUP_SPAWN_Upd__FPC12zCutsceneMgrP9NCINEntryi /* 0x80191780 */
+	.4byte NCIN_EntityBonePar_AR__FPC12zCutsceneMgrP9NCINEntryP8RpAtomicP11RwMatrixTagUiUi /* 0x80194B28 */
 	.4byte 0x00000000
 	.4byte 0x42A7DDDE
 	.4byte 0x42A9DDDE
@@ -15187,8 +15187,8 @@ lbl_802A0004:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000036
-	.4byte 0x80190F80
-	.4byte 0x80194B28
+	.4byte NCIN_Par_BPLANK_JET_1_Upd__FPC12zCutsceneMgrP9NCINEntryi /* 0x80190F80 */
+	.4byte NCIN_EntityBonePar_AR__FPC12zCutsceneMgrP9NCINEntryP8RpAtomicP11RwMatrixTagUiUi /* 0x80194B28 */
 	.4byte 0x00000000
 	.4byte 0x42A93334
 	.4byte 0x42AF0001
@@ -15216,8 +15216,8 @@ lbl_802A0004:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000036
-	.4byte 0x80191060
-	.4byte 0x80194B28
+	.4byte NCIN_Par_BPLANK_JET_2_Upd__FPC12zCutsceneMgrP9NCINEntryi /* 0x80191060 */
+	.4byte NCIN_EntityBonePar_AR__FPC12zCutsceneMgrP9NCINEntryP8RpAtomicP11RwMatrixTagUiUi /* 0x80194B28 */
 	.4byte 0x00000000
 	.4byte 0x42A93334
 	.4byte 0x42AF0001
@@ -15245,8 +15245,8 @@ lbl_802A0004:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000035
-	.4byte 0x80194F6C
-	.4byte 0x80194FA4
+	.4byte NCIN_BubbleTrail_Upd__FPC12zCutsceneMgrP9NCINEntryi /* 0x80194F6C */
+	.4byte NCIN_BubbleTrail_AR__FPC12zCutsceneMgrP9NCINEntryP8RpAtomicP11RwMatrixTagUiUi /* 0x80194FA4 */
 	.4byte 0x00000000
 	.4byte 0x41CD5556
 	.4byte 0x41DD5556
@@ -15274,8 +15274,8 @@ lbl_802A0004:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000035
-	.4byte 0x80194F6C
-	.4byte 0x80194FA4
+	.4byte NCIN_BubbleTrail_Upd__FPC12zCutsceneMgrP9NCINEntryi /* 0x80194F6C */
+	.4byte NCIN_BubbleTrail_AR__FPC12zCutsceneMgrP9NCINEntryP8RpAtomicP11RwMatrixTagUiUi /* 0x80194FA4 */
 	.4byte 0x00000000
 	.4byte 0x41E80001
 	.4byte 0x41F2AAAB
@@ -15332,8 +15332,8 @@ lbl_802A0004:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000006
-	.4byte 0x8019203C
-	.4byte 0x8019233C
+	.4byte NCIN_Generic_Upd__FPC12zCutsceneMgrP9NCINEntryi /* 0x8019203C */
+	.4byte NCIN_BubTrailBone_AR__FPC12zCutsceneMgrP9NCINEntryP8RpAtomicP11RwMatrixTagUiUi /* 0x8019233C */
 	.4byte 0x00000000
 	.4byte 0x42611112
 	.4byte 0x4262AAAB
@@ -15361,8 +15361,8 @@ lbl_802A0004:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000036
-	.4byte 0x8019169C
-	.4byte 0x80194B28
+	.4byte NCIN_Par_CIN_BIGDUP_SMOKE_Upd__FPC12zCutsceneMgrP9NCINEntryi /* 0x8019169C */
+	.4byte NCIN_EntityBonePar_AR__FPC12zCutsceneMgrP9NCINEntryP8RpAtomicP11RwMatrixTagUiUi /* 0x80194B28 */
 	.4byte 0x00000000
 	.4byte 0x41FD5556
 	.4byte 0x42295556
@@ -15390,8 +15390,8 @@ lbl_802A0004:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000036
-	.4byte 0x80191780
-	.4byte 0x80194B28
+	.4byte NCIN_Par_CIN_BIGDUP_SPAWN_Upd__FPC12zCutsceneMgrP9NCINEntryi /* 0x80191780 */
+	.4byte NCIN_EntityBonePar_AR__FPC12zCutsceneMgrP9NCINEntryP8RpAtomicP11RwMatrixTagUiUi /* 0x80194B28 */
 	.4byte 0x00000000
 	.4byte 0x42655556
 	.4byte 0x42675556
@@ -15419,8 +15419,8 @@ lbl_802A0004:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000036
-	.4byte 0x80191780
-	.4byte 0x80194B28
+	.4byte NCIN_Par_CIN_BIGDUP_SPAWN_Upd__FPC12zCutsceneMgrP9NCINEntryi /* 0x80191780 */
+	.4byte NCIN_EntityBonePar_AR__FPC12zCutsceneMgrP9NCINEntryP8RpAtomicP11RwMatrixTagUiUi /* 0x80194B28 */
 	.4byte 0x00000000
 	.4byte 0x426A0001
 	.4byte 0x426C0001
@@ -15448,8 +15448,8 @@ lbl_802A0004:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000036
-	.4byte 0x80191780
-	.4byte 0x80194B28
+	.4byte NCIN_Par_CIN_BIGDUP_SPAWN_Upd__FPC12zCutsceneMgrP9NCINEntryi /* 0x80191780 */
+	.4byte NCIN_EntityBonePar_AR__FPC12zCutsceneMgrP9NCINEntryP8RpAtomicP11RwMatrixTagUiUi /* 0x80194B28 */
 	.4byte 0x00000000
 	.4byte 0x426CAAAB
 	.4byte 0x42700001
@@ -15477,8 +15477,8 @@ lbl_802A0004:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000036
-	.4byte 0x80191780
-	.4byte 0x80194B28
+	.4byte NCIN_Par_CIN_BIGDUP_SPAWN_Upd__FPC12zCutsceneMgrP9NCINEntryi /* 0x80191780 */
+	.4byte NCIN_EntityBonePar_AR__FPC12zCutsceneMgrP9NCINEntryP8RpAtomicP11RwMatrixTagUiUi /* 0x80194B28 */
 	.4byte 0x00000000
 	.4byte 0x426F5556
 	.4byte 0x42715556
@@ -15506,8 +15506,8 @@ lbl_802A0004:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000006
-	.4byte 0x8019203C
-	.4byte 0x8019233C
+	.4byte NCIN_Generic_Upd__FPC12zCutsceneMgrP9NCINEntryi /* 0x8019203C */
+	.4byte NCIN_BubTrailBone_AR__FPC12zCutsceneMgrP9NCINEntryP8RpAtomicP11RwMatrixTagUiUi /* 0x8019233C */
 	.4byte 0x00000000
 	.4byte 0x42640001
 	.4byte 0x426AAAAB
@@ -15535,8 +15535,8 @@ lbl_802A0004:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000006
-	.4byte 0x8019203C
-	.4byte 0x8019233C
+	.4byte NCIN_Generic_Upd__FPC12zCutsceneMgrP9NCINEntryi /* 0x8019203C */
+	.4byte NCIN_BubTrailBone_AR__FPC12zCutsceneMgrP9NCINEntryP8RpAtomicP11RwMatrixTagUiUi /* 0x8019233C */
 	.4byte 0x00000000
 	.4byte 0x426A0001
 	.4byte 0x426D5556
@@ -15564,8 +15564,8 @@ lbl_802A0004:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000006
-	.4byte 0x8019203C
-	.4byte 0x8019233C
+	.4byte NCIN_Generic_Upd__FPC12zCutsceneMgrP9NCINEntryi /* 0x8019203C */
+	.4byte NCIN_BubTrailBone_AR__FPC12zCutsceneMgrP9NCINEntryP8RpAtomicP11RwMatrixTagUiUi /* 0x8019233C */
 	.4byte 0x00000000
 	.4byte 0x426C0001
 	.4byte 0x427C0001
@@ -15593,8 +15593,8 @@ lbl_802A0004:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000006
-	.4byte 0x8019203C
-	.4byte 0x8019233C
+	.4byte NCIN_Generic_Upd__FPC12zCutsceneMgrP9NCINEntryi /* 0x8019203C */
+	.4byte NCIN_BubTrailBone_AR__FPC12zCutsceneMgrP9NCINEntryP8RpAtomicP11RwMatrixTagUiUi /* 0x8019233C */
 	.4byte 0x00000000
 	.4byte 0x42700001
 	.4byte 0x4272AAAB
@@ -15622,8 +15622,8 @@ lbl_802A0004:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000006
-	.4byte 0x8019203C
-	.4byte 0x8019233C
+	.4byte NCIN_Generic_Upd__FPC12zCutsceneMgrP9NCINEntryi /* 0x8019203C */
+	.4byte NCIN_BubTrailBone_AR__FPC12zCutsceneMgrP9NCINEntryP8RpAtomicP11RwMatrixTagUiUi /* 0x8019233C */
 	.4byte 0x00000000
 	.4byte 0x4272AAAB
 	.4byte 0x427BBBBD
@@ -15651,8 +15651,8 @@ lbl_802A0004:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000016
-	.4byte 0x80193AC0
-	.4byte 0x80193BAC
+	.4byte NCIN_FodProdBone_Upd__FPC12zCutsceneMgrP9NCINEntryi /* 0x80193AC0 */
+	.4byte NCIN_FodProdBone_AR__FPC12zCutsceneMgrP9NCINEntryP8RpAtomicP11RwMatrixTagUiUi /* 0x80193BAC */
 	.4byte 0x00000000
 	.4byte 0x4282AAAB
 	.4byte 0x428C0000
@@ -15680,8 +15680,8 @@ lbl_802A0004:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000016
-	.4byte 0x80193AC0
-	.4byte 0x80193BAC
+	.4byte NCIN_FodProdBone_Upd__FPC12zCutsceneMgrP9NCINEntryi /* 0x80193AC0 */
+	.4byte NCIN_FodProdBone_AR__FPC12zCutsceneMgrP9NCINEntryP8RpAtomicP11RwMatrixTagUiUi /* 0x80193BAC */
 	.4byte 0x00000000
 	.4byte 0x4283AAAB
 	.4byte 0x428C0000
@@ -15709,8 +15709,8 @@ lbl_802A0004:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000016
-	.4byte 0x80193AC0
-	.4byte 0x80193BAC
+	.4byte NCIN_FodProdBone_Upd__FPC12zCutsceneMgrP9NCINEntryi /* 0x80193AC0 */
+	.4byte NCIN_FodProdBone_AR__FPC12zCutsceneMgrP9NCINEntryP8RpAtomicP11RwMatrixTagUiUi /* 0x80193BAC */
 	.4byte 0x00000000
 	.4byte 0x4284AAAB
 	.4byte 0x428C0000
@@ -15738,8 +15738,8 @@ lbl_802A0004:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000016
-	.4byte 0x80193AC0
-	.4byte 0x80193BAC
+	.4byte NCIN_FodProdBone_Upd__FPC12zCutsceneMgrP9NCINEntryi /* 0x80193AC0 */
+	.4byte NCIN_FodProdBone_AR__FPC12zCutsceneMgrP9NCINEntryP8RpAtomicP11RwMatrixTagUiUi /* 0x80193BAC */
 	.4byte 0x00000000
 	.4byte 0x4285AAAB
 	.4byte 0x428C0000
@@ -15767,8 +15767,8 @@ lbl_802A0004:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000016
-	.4byte 0x80193AC0
-	.4byte 0x80193BAC
+	.4byte NCIN_FodProdBone_Upd__FPC12zCutsceneMgrP9NCINEntryi /* 0x80193AC0 */
+	.4byte NCIN_FodProdBone_AR__FPC12zCutsceneMgrP9NCINEntryP8RpAtomicP11RwMatrixTagUiUi /* 0x80193BAC */
 	.4byte 0x00000000
 	.4byte 0x4295AAAB
 	.4byte 0x42968889
@@ -15796,8 +15796,8 @@ lbl_802A0004:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000016
-	.4byte 0x80193AC0
-	.4byte 0x80193BAC
+	.4byte NCIN_FodProdBone_Upd__FPC12zCutsceneMgrP9NCINEntryi /* 0x80193AC0 */
+	.4byte NCIN_FodProdBone_AR__FPC12zCutsceneMgrP9NCINEntryP8RpAtomicP11RwMatrixTagUiUi /* 0x80193BAC */
 	.4byte 0x00000000
 	.4byte 0x42976667
 	.4byte 0x4298AAAB
@@ -15825,8 +15825,8 @@ lbl_802A0004:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000016
-	.4byte 0x80193AC0
-	.4byte 0x80193BAC
+	.4byte NCIN_FodProdBone_Upd__FPC12zCutsceneMgrP9NCINEntryi /* 0x80193AC0 */
+	.4byte NCIN_FodProdBone_AR__FPC12zCutsceneMgrP9NCINEntryP8RpAtomicP11RwMatrixTagUiUi /* 0x80193BAC */
 	.4byte 0x00000000
 	.4byte 0x4297AAAB
 	.4byte 0x42995556
@@ -15854,8 +15854,8 @@ lbl_802A0004:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000016
-	.4byte 0x80193AC0
-	.4byte 0x80193BAC
+	.4byte NCIN_FodProdBone_Upd__FPC12zCutsceneMgrP9NCINEntryi /* 0x80193AC0 */
+	.4byte NCIN_FodProdBone_AR__FPC12zCutsceneMgrP9NCINEntryP8RpAtomicP11RwMatrixTagUiUi /* 0x80193BAC */
 	.4byte 0x00000000
 	.4byte 0x429A5556
 	.4byte 0x429C0001
@@ -15883,8 +15883,8 @@ lbl_802A0004:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000016
-	.4byte 0x80193AC0
-	.4byte 0x80193BAC
+	.4byte NCIN_FodProdBone_Upd__FPC12zCutsceneMgrP9NCINEntryi /* 0x80193AC0 */
+	.4byte NCIN_FodProdBone_AR__FPC12zCutsceneMgrP9NCINEntryP8RpAtomicP11RwMatrixTagUiUi /* 0x80193BAC */
 	.4byte 0x00000000
 	.4byte 0x42AC0001
 	.4byte 0x42AF5556
@@ -15912,7 +15912,7 @@ lbl_802A0004:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000007
-	.4byte 0x801920E4
+	.4byte NCIN_BubWipe__FPC12zCutsceneMgrP9NCINEntryi /* 0x801920E4 */
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x42B6AAAB
@@ -15941,7 +15941,7 @@ lbl_802A0004:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000007
-	.4byte 0x801920E4
+	.4byte NCIN_BubWipe__FPC12zCutsceneMgrP9NCINEntryi /* 0x801920E4 */
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x42B6AAAB
@@ -15970,8 +15970,8 @@ lbl_802A0004:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000006
-	.4byte 0x8019203C
-	.4byte 0x8019233C
+	.4byte NCIN_Generic_Upd__FPC12zCutsceneMgrP9NCINEntryi /* 0x8019203C */
+	.4byte NCIN_BubTrailBone_AR__FPC12zCutsceneMgrP9NCINEntryP8RpAtomicP11RwMatrixTagUiUi /* 0x8019233C */
 	.4byte 0x00000000
 	.4byte 0x43415556
 	.4byte 0x43480001
