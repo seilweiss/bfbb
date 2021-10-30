@@ -9486,3 +9486,92 @@ gDBCommTable:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
+.section .rodata   # 0x80255010 - 0x8027A5C0
+.global lbl_8027A2D8
+lbl_8027A2D8:
+	.4byte 0x4D657472
+	.4byte 0x6F54524B
+	.4byte 0x20666F72
+	.4byte 0x2047414D
+	.4byte 0x45435542
+	.4byte 0x45207632
+	.4byte 0x2E300000
+	.4byte 0x00000000
+.global lbl_8027A2F8
+lbl_8027A2F8:
+	.4byte 0x4552524F
+	.4byte 0x52203A20
+	.4byte 0x4E6F2062
+	.4byte 0x75666665
+	.4byte 0x72206176
+	.4byte 0x61696C61
+	.4byte 0x626C650A
+	.4byte 0x00000000
+.global gTRKMemMap
+gTRKMemMap:
+	.4byte 0x00000000
+	.4byte 0xFFFFFFFF
+	.4byte 0x00000001
+	.4byte 0x00000001
+.global lbl_8027A328
+lbl_8027A328:
+	.4byte 0x60000000
+	.4byte 0x60000000
+	.4byte 0x60000000
+	.4byte 0x60000000
+	.4byte 0x60000000
+	.4byte 0x60000000
+	.4byte 0x60000000
+	.4byte 0x60000000
+	.4byte 0x60000000
+	.4byte 0x60000000
+	.4byte 0x60000000
+	.4byte 0x60000000
+	.4byte 0x60000000
+	.4byte 0x60000000
+	.4byte 0x60000000
+	.4byte 0x60000000
+	.4byte 0x60000000
+	.4byte 0x60000000
+	.4byte 0x60000000
+	.4byte 0x60000000
+.global lbl_8027A378
+lbl_8027A378:
+	.4byte 0x60000000
+	.4byte 0x60000000
+	.4byte 0x60000000
+	.4byte 0x60000000
+	.4byte 0x60000000
+	.4byte 0x60000000
+	.4byte 0x60000000
+	.4byte 0x60000000
+	.4byte 0x60000000
+	.4byte 0x60000000
+.global lbl_8027A3A0
+lbl_8027A3A0:
+	.4byte 0x00454E44
+.global lbl_8027A3A4
+lbl_8027A3A4:
+	.4byte 0x25730A00
+.global lbl_8027A3A8
+lbl_8027A3A8:
+	.4byte 0x4D657472
+	.4byte 0x6F54524B
+	.4byte 0x203A2053
+	.4byte 0x65742074
+	.4byte 0x6F204744
+	.4byte 0x45562068
+	.4byte 0x61726477
+	.4byte 0x6172650A
+	.4byte 0x00000000
+.global lbl_8027A3CC
+lbl_8027A3CC:
+	.4byte 0x4D657472
+	.4byte 0x6F54524B
+	.4byte 0x203A2053
+	.4byte 0x65742074
+	.4byte 0x6F20414D
+	.4byte 0x43204444
+	.4byte 0x48206861
+	.4byte 0x72647761
+	.4byte 0x72650A00

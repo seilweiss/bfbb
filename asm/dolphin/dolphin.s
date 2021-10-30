@@ -52187,3 +52187,10 @@ lbl_802B6AEC:
 	.4byte 0x801DCAD8
 	.4byte 0x801DCAE0
 	.4byte 0x801DCAD0
+.section .rodata   # 0x80255010 - 0x8027A5C0
+.global lbl_80279920
+lbl_80279920:
+	.4byte 0x1EB40F48
+	.4byte 0x280F3B1F
+	.4byte 0x382C0000
+	.4byte 0x00000000
