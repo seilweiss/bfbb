@@ -89,8 +89,8 @@ zCameraFlyProcessStopEvent__Fv:
 /* 8017C198 00178F98  4B ED 63 11 */	bl zCamera_FlyOnly__Fv
 /* 8017C19C 00178F9C  28 03 00 00 */	cmplwi r3, 0
 /* 8017C1A0 00178FA0  40 82 00 10 */	bne lbl_8017C1B0
-/* 8017C1A4 00178FA4  C0 22 AD D8 */	lfs f1, lbl_803CF758@sda21(r2)
-/* 8017C1A8 00178FA8  C0 42 AD DC */	lfs f2, lbl_803CF75C@sda21(r2)
+/* 8017C1A4 00178FA4  C0 22 AD D8 */	lfs f1, l_f758__esc__2_713@sda21(r2)
+/* 8017C1A8 00178FA8  C0 42 AD DC */	lfs f2, l_f75c__esc__2_714@sda21(r2)
 /* 8017C1AC 00178FAC  4B F2 BA B5 */	bl zMusicSetVolume__Fff
 lbl_8017C1B0:
 /* 8017C1B0 00178FB0  80 AD 8B BC */	lwz r5, zcam_flyasset_current@sda21(r13)
@@ -170,7 +170,7 @@ lbl_8017C29C:
 /* 8017C2B0 001790B0  4E 80 00 20 */	blr 
 
 .section .sdata2
-lbl_803CF758:
+l_f758__esc__2_713:
 	.4byte 0x3F800000
-lbl_803CF75C:
+l_f75c__esc__2_714:
 	.4byte 0x40000000

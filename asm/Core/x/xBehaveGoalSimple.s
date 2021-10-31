@@ -6,21 +6,21 @@
 xGoalSimple_RegisterTypes__FP8xFactory:
 /* 8010EB94 0010B994  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8010EB98 0010B998  7C 08 02 A6 */	mflr r0
-/* 8010EB9C 0010B99C  3C A0 80 11 */	lis r5, lbl_8010EBF8@ha
-/* 8010EBA0 0010B9A0  3C 80 80 11 */	lis r4, lbl_8010ECA4@ha
+/* 8010EB9C 0010B99C  3C A0 80 11 */	lis r5, l_ebf8_GOALCreate_Generic__FiP10RyzMemGrowPv@ha
+/* 8010EBA0 0010B9A0  3C 80 80 11 */	lis r4, l_eca4_GOALDestroy_Generic__FP12xFactoryInst@ha
 /* 8010EBA4 0010B9A4  90 01 00 14 */	stw r0, 0x14(r1)
 /* 8010EBA8 0010B9A8  3C E0 47 53 */	lis r7, 0x47534D00@ha
-/* 8010EBAC 0010B9AC  38 C4 EC A4 */	addi r6, r4, lbl_8010ECA4@l
-/* 8010EBB0 0010B9B0  38 A5 EB F8 */	addi r5, r5, lbl_8010EBF8@l
+/* 8010EBAC 0010B9AC  38 C4 EC A4 */	addi r6, r4, l_eca4_GOALDestroy_Generic__FP12xFactoryInst@l
+/* 8010EBB0 0010B9B0  38 A5 EB F8 */	addi r5, r5, l_ebf8_GOALCreate_Generic__FiP10RyzMemGrowPv@l
 /* 8010EBB4 0010B9B4  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 8010EBB8 0010B9B8  7C 7F 1B 78 */	mr r31, r3
 /* 8010EBBC 0010B9BC  38 87 4D 00 */	addi r4, r7, 0x47534D00@l
 /* 8010EBC0 0010B9C0  48 00 08 D9 */	bl RegItemType__8xFactoryFiPFiP10RyzMemGrowPv_P12xFactoryInstPFP12xFactoryInst_v
-/* 8010EBC4 0010B9C4  3C 80 80 11 */	lis r4, lbl_8010EBF8@ha
-/* 8010EBC8 0010B9C8  3C 60 80 11 */	lis r3, lbl_8010ECA4@ha
-/* 8010EBCC 0010B9CC  38 A4 EB F8 */	addi r5, r4, lbl_8010EBF8@l
+/* 8010EBC4 0010B9C4  3C 80 80 11 */	lis r4, l_ebf8_GOALCreate_Generic__FiP10RyzMemGrowPv@ha
+/* 8010EBC8 0010B9C8  3C 60 80 11 */	lis r3, l_eca4_GOALDestroy_Generic__FP12xFactoryInst@ha
+/* 8010EBCC 0010B9CC  38 A4 EB F8 */	addi r5, r4, l_ebf8_GOALCreate_Generic__FiP10RyzMemGrowPv@l
 /* 8010EBD0 0010B9D0  3C 80 47 53 */	lis r4, 0x47534D01@ha
-/* 8010EBD4 0010B9D4  38 C3 EC A4 */	addi r6, r3, lbl_8010ECA4@l
+/* 8010EBD4 0010B9D4  38 C3 EC A4 */	addi r6, r3, l_eca4_GOALDestroy_Generic__FP12xFactoryInst@l
 /* 8010EBD8 0010B9D8  7F E3 FB 78 */	mr r3, r31
 /* 8010EBDC 0010B9DC  38 84 4D 01 */	addi r4, r4, 0x47534D01@l
 /* 8010EBE0 0010B9E0  48 00 08 B9 */	bl RegItemType__8xFactoryFiPFiP10RyzMemGrowPv_P12xFactoryInstPFP12xFactoryInst_v
@@ -29,7 +29,7 @@ xGoalSimple_RegisterTypes__FP8xFactory:
 /* 8010EBEC 0010B9EC  7C 08 03 A6 */	mtlr r0
 /* 8010EBF0 0010B9F0  38 21 00 10 */	addi r1, r1, 0x10
 /* 8010EBF4 0010B9F4  4E 80 00 20 */	blr 
-lbl_8010EBF8:
+l_ebf8_GOALCreate_Generic__FiP10RyzMemGrowPv:
 /* 8010EBF8 0010B9F8  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8010EBFC 0010B9FC  7C 08 02 A6 */	mflr r0
 /* 8010EC00 0010BA00  3C C0 47 53 */	lis r6, 0x47534D01@ha
@@ -79,7 +79,7 @@ lbl_8010EC90:
 /* 8010EC98 0010BA98  7C 08 03 A6 */	mtlr r0
 /* 8010EC9C 0010BA9C  38 21 00 10 */	addi r1, r1, 0x10
 /* 8010ECA0 0010BAA0  4E 80 00 20 */	blr 
-lbl_8010ECA4:
+l_eca4_GOALDestroy_Generic__FP12xFactoryInst:
 /* 8010ECA4 0010BAA4  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8010ECA8 0010BAA8  7C 08 02 A6 */	mflr r0
 /* 8010ECAC 0010BAAC  38 80 00 01 */	li r4, 1
@@ -240,23 +240,23 @@ __ct__12xGoalGenericFi:
 /* 8010EEB0 0010BCB0  4E 80 00 20 */	blr 
 .global Name__12xGoalGenericFv
 Name__12xGoalGenericFv:
-/* 8010EEB4 0010BCB4  3C 60 80 27 */	lis r3, lbl_8026A3B0@ha
-/* 8010EEB8 0010BCB8  38 63 A3 B0 */	addi r3, r3, lbl_8026A3B0@l
+/* 8010EEB4 0010BCB4  3C 60 80 27 */	lis r3, l_a3b0__esc__2_stringBase0@ha
+/* 8010EEB8 0010BCB8  38 63 A3 B0 */	addi r3, r3, l_a3b0__esc__2_stringBase0@l
 /* 8010EEBC 0010BCBC  4E 80 00 20 */	blr 
 .global Clear__12xGoalGenericFv
 Clear__12xGoalGenericFv:
 /* 8010EEC0 0010BCC0  4E 80 00 20 */	blr 
 .global Name__10xGoalEmptyFv
 Name__10xGoalEmptyFv:
-/* 8010EEC4 0010BCC4  3C 60 80 27 */	lis r3, lbl_8026A3B0@ha
-/* 8010EEC8 0010BCC8  38 63 A3 B0 */	addi r3, r3, lbl_8026A3B0@l
+/* 8010EEC4 0010BCC4  3C 60 80 27 */	lis r3, l_a3b0__esc__2_stringBase0@ha
+/* 8010EEC8 0010BCC8  38 63 A3 B0 */	addi r3, r3, l_a3b0__esc__2_stringBase0@l
 /* 8010EECC 0010BCCC  38 63 00 0D */	addi r3, r3, 0xd
 /* 8010EED0 0010BCD0  4E 80 00 20 */	blr 
 .global Clear__10xGoalEmptyFv
 Clear__10xGoalEmptyFv:
 /* 8010EED4 0010BCD4  4E 80 00 20 */	blr 
 .section .rodata
-lbl_8026A3B0:
+l_a3b0__esc__2_stringBase0:
 	.4byte 0x78476F61
 	.4byte 0x6C47656E
 	.4byte 0x65726963

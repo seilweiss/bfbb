@@ -339,7 +339,7 @@ iTimeDiffSec__Fx:
 /* 800D4998 000D1798  80 63 00 F8 */	lwz r3, 0x800000F8@l(r3)
 /* 800D499C 000D179C  90 01 00 08 */	stw r0, 8(r1)
 /* 800D49A0 000D17A0  54 60 F0 BE */	srwi r0, r3, 2
-/* 800D49A4 000D17A4  C8 42 98 58 */	lfd f2, lbl_803CE1D8@sda21(r2)
+/* 800D49A4 000D17A4  C8 42 98 58 */	lfd f2, l_e1d8__esc__2_424@sda21(r2)
 /* 800D49A8 000D17A8  90 01 00 0C */	stw r0, 0xc(r1)
 /* 800D49AC 000D17AC  C8 01 00 08 */	lfd f0, 8(r1)
 /* 800D49B0 000D17B0  EC 00 10 28 */	fsubs f0, f0, f2
@@ -364,14 +364,14 @@ iTimeDiffSec__Fxx:
 
 .global iTimeGameAdvance__Ff
 iTimeGameAdvance__Ff:
-/* 800D49F0 000D17F0  C0 0D 93 48 */	lfs f0, lbl_803CBC48@sda21(r13)
+/* 800D49F0 000D17F0  C0 0D 93 48 */	lfs f0, l_bc48_sGameTime@sda21(r13)
 /* 800D49F4 000D17F4  EC 00 08 2A */	fadds f0, f0, f1
-/* 800D49F8 000D17F8  D0 0D 93 48 */	stfs f0, lbl_803CBC48@sda21(r13)
+/* 800D49F8 000D17F8  D0 0D 93 48 */	stfs f0, l_bc48_sGameTime@sda21(r13)
 /* 800D49FC 000D17FC  4E 80 00 20 */	blr 
 
 .global iTimeSetGame__Ff
 iTimeSetGame__Ff:
-/* 800D4A00 000D1800  D0 2D 93 48 */	stfs f1, lbl_803CBC48@sda21(r13)
+/* 800D4A00 000D1800  D0 2D 93 48 */	stfs f1, l_bc48_sGameTime@sda21(r13)
 /* 800D4A04 000D1804  4E 80 00 20 */	blr 
 
 .global iProfileClear__FUi
@@ -387,10 +387,10 @@ iFuncProfileParse__FPci:
 /* 800D4A10 000D1810  4E 80 00 20 */	blr 
 
 .section .sbss
-lbl_803CBC48:
+l_bc48_sGameTime:
 	.skip 0x8
 
 .section .sdata2
-lbl_803CE1D8:
+l_e1d8__esc__2_424:
 	.4byte 0x43300000
 	.4byte 0x00000000

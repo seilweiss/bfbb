@@ -6,9 +6,9 @@
 zNPCGoals_RegisterTypes__FP8xFactory:
 /* 800D50BC 000D1EBC  94 21 F7 90 */	stwu r1, -0x870(r1)
 /* 800D50C0 000D1EC0  7C 08 02 A6 */	mflr r0
-/* 800D50C4 000D1EC4  3C 80 80 26 */	lis r4, lbl_80266848@ha
+/* 800D50C4 000D1EC4  3C 80 80 26 */	lis r4, l_6848__esc__2_857@ha
 /* 800D50C8 000D1EC8  90 01 08 74 */	stw r0, 0x874(r1)
-/* 800D50CC 000D1ECC  38 84 68 48 */	addi r4, r4, lbl_80266848@l
+/* 800D50CC 000D1ECC  38 84 68 48 */	addi r4, r4, l_6848__esc__2_857@l
 /* 800D50D0 000D1ED0  38 00 01 0C */	li r0, 0x10c
 /* 800D50D4 000D1ED4  38 C1 00 04 */	addi r6, r1, 4
 /* 800D50D8 000D1ED8  38 A4 FF FC */	addi r5, r4, -4
@@ -28,7 +28,7 @@ lbl_800D50E0:
 /* 800D510C 000D1F0C  38 21 08 70 */	addi r1, r1, 0x870
 /* 800D5110 000D1F10  4E 80 00 20 */	blr 
 .section .rodata
-lbl_80266848:
+l_6848__esc__2_857:
 	.4byte 0x4E474E30
 	.4byte GOALCreate_Standard__FiP10RyzMemGrowPv /* 0x800D5480 */
 	.4byte GOALDestroy_Goal__FP12xFactoryInst /* 0x800D56F8 */

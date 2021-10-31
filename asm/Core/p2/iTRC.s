@@ -38,7 +38,7 @@ InitDisplay__7ROMFontFP16_GXRenderModeObj:
 /* 801800A0 0017CEA0  93 E1 00 9C */	stw r31, 0x9c(r1)
 /* 801800A4 0017CEA4  3B ED 97 F4 */	addi r31, r13, mXFBs__7ROMFont@sda21
 /* 801800A8 0017CEA8  3B FF 00 04 */	addi r31, r31, 4
-/* 801800AC 0017CEAC  80 02 C0 C0 */	lwz r0, lbl_803D0A40@sda21(r2)
+/* 801800AC 0017CEAC  80 02 C0 C0 */	lwz r0, l_0a40__esc__2_415@sda21(r2)
 /* 801800B0 0017CEB0  7F E4 FB 78 */	mr r4, r31
 /* 801800B4 0017CEB4  90 6D 98 00 */	stw r3, mRenderMode__7ROMFont@sda21(r13)
 /* 801800B8 0017CEB8  38 6D 97 F4 */	addi r3, r13, mXFBs__7ROMFont@sda21
@@ -56,16 +56,16 @@ InitDisplay__7ROMFontFP16_GXRenderModeObj:
 /* 801800E8 0017CEE8  48 04 CA 0D */	bl GXSetCopyClear
 /* 801800EC 0017CEEC  80 CD 98 00 */	lwz r6, mRenderMode__7ROMFont@sda21(r13)
 /* 801800F0 0017CEF0  3C 80 43 30 */	lis r4, 0x4330
-/* 801800F4 0017CEF4  C0 22 AE 80 */	lfs f1, lbl_803CF800@sda21(r2)
+/* 801800F4 0017CEF4  C0 22 AE 80 */	lfs f1, l_f800__esc__2_422@sda21(r2)
 /* 801800F8 0017CEF8  38 61 00 40 */	addi r3, r1, 0x40
 /* 801800FC 0017CEFC  A0 A6 00 06 */	lhz r5, 6(r6)
 /* 80180100 0017CF00  A0 06 00 04 */	lhz r0, 4(r6)
 /* 80180104 0017CF04  FC 60 08 90 */	fmr f3, f1
 /* 80180108 0017CF08  90 A1 00 84 */	stw r5, 0x84(r1)
 /* 8018010C 0017CF0C  FC A0 08 90 */	fmr f5, f1
-/* 80180110 0017CF10  C8 82 AE 88 */	lfd f4, lbl_803CF808@sda21(r2)
+/* 80180110 0017CF10  C8 82 AE 88 */	lfd f4, l_f808__esc__2_425@sda21(r2)
 /* 80180114 0017CF14  90 81 00 80 */	stw r4, 0x80(r1)
-/* 80180118 0017CF18  C0 C2 AE 84 */	lfs f6, lbl_803CF804@sda21(r2)
+/* 80180118 0017CF18  C0 C2 AE 84 */	lfs f6, l_f804__esc__2_423@sda21(r2)
 /* 8018011C 0017CF1C  C8 01 00 80 */	lfd f0, 0x80(r1)
 /* 80180120 0017CF20  90 01 00 8C */	stw r0, 0x8c(r1)
 /* 80180124 0017CF24  EC 40 20 28 */	fsubs f2, f0, f4
@@ -137,15 +137,15 @@ InitGX__7ROMFontFv:
 /* 80180220 0017D020  90 01 00 24 */	stw r0, 0x24(r1)
 /* 80180224 0017D024  93 E1 00 1C */	stw r31, 0x1c(r1)
 /* 80180228 0017D028  80 AD 98 00 */	lwz r5, mRenderMode__7ROMFont@sda21(r13)
-/* 8018022C 0017D02C  C0 22 AE 80 */	lfs f1, lbl_803CF800@sda21(r2)
+/* 8018022C 0017D02C  C0 22 AE 80 */	lfs f1, l_f800__esc__2_422@sda21(r2)
 /* 80180230 0017D030  A0 85 00 04 */	lhz r4, 4(r5)
 /* 80180234 0017D034  A0 05 00 06 */	lhz r0, 6(r5)
 /* 80180238 0017D038  FC 40 08 90 */	fmr f2, f1
 /* 8018023C 0017D03C  90 81 00 0C */	stw r4, 0xc(r1)
 /* 80180240 0017D040  FC A0 08 90 */	fmr f5, f1
-/* 80180244 0017D044  C8 82 AE 88 */	lfd f4, lbl_803CF808@sda21(r2)
+/* 80180244 0017D044  C8 82 AE 88 */	lfd f4, l_f808__esc__2_425@sda21(r2)
 /* 80180248 0017D048  90 61 00 08 */	stw r3, 8(r1)
-/* 8018024C 0017D04C  C0 C2 AE 90 */	lfs f6, lbl_803CF810@sda21(r2)
+/* 8018024C 0017D04C  C0 C2 AE 90 */	lfs f6, l_f810__esc__2_439@sda21(r2)
 /* 80180250 0017D050  C8 01 00 08 */	lfd f0, 8(r1)
 /* 80180254 0017D054  90 01 00 14 */	stw r0, 0x14(r1)
 /* 80180258 0017D058  EC 60 20 28 */	fsubs f3, f0, f4
@@ -245,15 +245,15 @@ RenderBegin__7ROMFontFv:
 /* 801803AC 0017D1AC  3C 80 43 30 */	lis r4, 0x4330
 /* 801803B0 0017D1B0  A0 1F 00 06 */	lhz r0, 6(r31)
 /* 801803B4 0017D1B4  90 A1 00 0C */	stw r5, 0xc(r1)
-/* 801803B8 0017D1B8  C0 22 AE 80 */	lfs f1, lbl_803CF800@sda21(r2)
+/* 801803B8 0017D1B8  C0 22 AE 80 */	lfs f1, l_f800__esc__2_422@sda21(r2)
 /* 801803BC 0017D1BC  90 81 00 08 */	stw r4, 8(r1)
-/* 801803C0 0017D1C0  C8 82 AE 88 */	lfd f4, lbl_803CF808@sda21(r2)
+/* 801803C0 0017D1C0  C8 82 AE 88 */	lfd f4, l_f808__esc__2_425@sda21(r2)
 /* 801803C4 0017D1C4  FC 40 08 90 */	fmr f2, f1
 /* 801803C8 0017D1C8  C8 01 00 08 */	lfd f0, 8(r1)
 /* 801803CC 0017D1CC  FC A0 08 90 */	fmr f5, f1
 /* 801803D0 0017D1D0  90 01 00 14 */	stw r0, 0x14(r1)
 /* 801803D4 0017D1D4  EC 60 20 28 */	fsubs f3, f0, f4
-/* 801803D8 0017D1D8  C0 C2 AE 90 */	lfs f6, lbl_803CF810@sda21(r2)
+/* 801803D8 0017D1D8  C0 C2 AE 90 */	lfs f6, l_f810__esc__2_439@sda21(r2)
 /* 801803DC 0017D1DC  90 81 00 10 */	stw r4, 0x10(r1)
 /* 801803E0 0017D1E0  C8 01 00 10 */	lfd f0, 0x10(r1)
 /* 801803E4 0017D1E4  EC 80 20 28 */	fsubs f4, f0, f4
@@ -264,15 +264,15 @@ lbl_801803F0:
 /* 801803F4 0017D1F4  3C 60 43 30 */	lis r3, 0x4330
 /* 801803F8 0017D1F8  A0 1F 00 06 */	lhz r0, 6(r31)
 /* 801803FC 0017D1FC  90 81 00 14 */	stw r4, 0x14(r1)
-/* 80180400 0017D200  C0 22 AE 80 */	lfs f1, lbl_803CF800@sda21(r2)
+/* 80180400 0017D200  C0 22 AE 80 */	lfs f1, l_f800__esc__2_422@sda21(r2)
 /* 80180404 0017D204  90 61 00 10 */	stw r3, 0x10(r1)
-/* 80180408 0017D208  C8 82 AE 88 */	lfd f4, lbl_803CF808@sda21(r2)
+/* 80180408 0017D208  C8 82 AE 88 */	lfd f4, l_f808__esc__2_425@sda21(r2)
 /* 8018040C 0017D20C  FC 40 08 90 */	fmr f2, f1
 /* 80180410 0017D210  C8 01 00 10 */	lfd f0, 0x10(r1)
 /* 80180414 0017D214  FC A0 08 90 */	fmr f5, f1
 /* 80180418 0017D218  90 01 00 0C */	stw r0, 0xc(r1)
 /* 8018041C 0017D21C  EC 60 20 28 */	fsubs f3, f0, f4
-/* 80180420 0017D220  C0 C2 AE 90 */	lfs f6, lbl_803CF810@sda21(r2)
+/* 80180420 0017D220  C0 C2 AE 90 */	lfs f6, l_f810__esc__2_439@sda21(r2)
 /* 80180424 0017D224  90 61 00 08 */	stw r3, 8(r1)
 /* 80180428 0017D228  C8 01 00 08 */	lfd f0, 8(r1)
 /* 8018042C 0017D22C  EC 80 20 28 */	fsubs f4, f0, f4
@@ -434,7 +434,7 @@ LoadSheet__7ROMFontFPv:
 /* 80180644 0017D444  A0 C7 00 20 */	lhz r6, 0x20(r7)
 /* 80180648 0017D448  A0 E7 00 18 */	lhz r7, 0x18(r7)
 /* 8018064C 0017D44C  48 04 D2 A1 */	bl GXInitTexObj
-/* 80180650 0017D450  C0 22 AE 80 */	lfs f1, lbl_803CF800@sda21(r2)
+/* 80180650 0017D450  C0 22 AE 80 */	lfs f1, l_f800__esc__2_422@sda21(r2)
 /* 80180654 0017D454  38 61 00 08 */	addi r3, r1, 8
 /* 80180658 0017D458  38 80 00 01 */	li r4, 1
 /* 8018065C 0017D45C  38 A0 00 01 */	li r5, 1
@@ -454,11 +454,11 @@ LoadSheet__7ROMFontFPv:
 /* 80180694 0017D494  A0 A6 00 1E */	lhz r5, 0x1e(r6)
 /* 80180698 0017D498  A0 06 00 20 */	lhz r0, 0x20(r6)
 /* 8018069C 0017D49C  90 A1 00 5C */	stw r5, 0x5c(r1)
-/* 801806A0 0017D4A0  C8 42 AE 88 */	lfd f2, lbl_803CF808@sda21(r2)
+/* 801806A0 0017D4A0  C8 42 AE 88 */	lfd f2, l_f808__esc__2_425@sda21(r2)
 /* 801806A4 0017D4A4  C8 01 00 58 */	lfd f0, 0x58(r1)
 /* 801806A8 0017D4A8  90 01 00 64 */	stw r0, 0x64(r1)
 /* 801806AC 0017D4AC  EC 20 10 28 */	fsubs f1, f0, f2
-/* 801806B0 0017D4B0  C0 62 AE 90 */	lfs f3, lbl_803CF810@sda21(r2)
+/* 801806B0 0017D4B0  C0 62 AE 90 */	lfs f3, l_f810__esc__2_439@sda21(r2)
 /* 801806B4 0017D4B4  90 81 00 60 */	stw r4, 0x60(r1)
 /* 801806B8 0017D4B8  C8 01 00 60 */	lfd f0, 0x60(r1)
 /* 801806BC 0017D4BC  EC 23 08 24 */	fdivs f1, f3, f1
@@ -584,20 +584,20 @@ DrawTextBox__7ROMFontFiiiiPc:
 /* 80180860 0017D660  7E E4 BB 78 */	mr r4, r23
 /* 80180864 0017D664  38 61 00 08 */	addi r3, r1, 8
 /* 80180868 0017D668  48 06 6E 99 */	bl strcpy
-/* 8018086C 0017D66C  3C 80 80 27 */	lis r4, lbl_80272C50@ha
+/* 8018086C 0017D66C  3C 80 80 27 */	lis r4, l_2c50__esc__2_stringBase0@ha
 /* 80180870 0017D670  38 61 00 08 */	addi r3, r1, 8
-/* 80180874 0017D674  38 84 2C 50 */	addi r4, r4, lbl_80272C50@l
+/* 80180874 0017D674  38 84 2C 50 */	addi r4, r4, l_2c50__esc__2_stringBase0@l
 /* 80180878 0017D678  48 06 6A F9 */	bl strtok
-/* 8018087C 0017D67C  3C 80 80 27 */	lis r4, lbl_80272C50@ha
+/* 8018087C 0017D67C  3C 80 80 27 */	lis r4, l_2c50__esc__2_stringBase0@ha
 /* 80180880 0017D680  7C 77 1B 78 */	mr r23, r3
-/* 80180884 0017D684  38 04 2C 50 */	addi r0, r4, lbl_80272C50@l
+/* 80180884 0017D684  38 04 2C 50 */	addi r0, r4, l_2c50__esc__2_stringBase0@l
 /* 80180888 0017D688  7C 03 03 78 */	mr r3, r0
 /* 8018088C 0017D68C  4B FF FF 49 */	bl GetWidth__7ROMFontFPc
-/* 80180890 0017D690  3C 80 80 27 */	lis r4, lbl_80272C50@ha
+/* 80180890 0017D690  3C 80 80 27 */	lis r4, l_2c50__esc__2_stringBase0@ha
 /* 80180894 0017D694  7C 7B 1B 78 */	mr r27, r3
 /* 80180898 0017D698  7F 59 D2 14 */	add r26, r25, r26
 /* 8018089C 0017D69C  7F 1C C2 14 */	add r24, r28, r24
-/* 801808A0 0017D6A0  3B A4 2C 50 */	addi r29, r4, lbl_80272C50@l
+/* 801808A0 0017D6A0  3B A4 2C 50 */	addi r29, r4, l_2c50__esc__2_stringBase0@l
 /* 801808A4 0017D6A4  48 00 00 54 */	b lbl_801808F8
 lbl_801808A8:
 /* 801808A8 0017D6A8  7E E3 BB 78 */	mr r3, r23
@@ -808,10 +808,10 @@ lbl_80180AEC:
 DisplayErrorMessage__8iTRCDiskFv:
 /* 80180B04 0017D904  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 80180B08 0017D908  7C 08 02 A6 */	mflr r0
-/* 80180B0C 0017D90C  3C 80 80 27 */	lis r4, lbl_80272C50@ha
+/* 80180B0C 0017D90C  3C 80 80 27 */	lis r4, l_2c50__esc__2_stringBase0@ha
 /* 80180B10 0017D910  3C 60 80 3D */	lis r3, mMessage__8iTRCDisk@ha
 /* 80180B14 0017D914  90 01 00 24 */	stw r0, 0x24(r1)
-/* 80180B18 0017D918  38 84 2C 50 */	addi r4, r4, lbl_80272C50@l
+/* 80180B18 0017D918  38 84 2C 50 */	addi r4, r4, l_2c50__esc__2_stringBase0@l
 /* 80180B1C 0017D91C  38 63 A7 E8 */	addi r3, r3, mMessage__8iTRCDisk@l
 /* 80180B20 0017D920  93 E1 00 1C */	stw r31, 0x1c(r1)
 /* 80180B24 0017D924  38 84 00 02 */	addi r4, r4, 2
@@ -866,39 +866,39 @@ SetDVDState__8iTRCDiskFv:
 /* 80180BCC 0017D9CC  38 1F 00 01 */	addi r0, r31, 1
 /* 80180BD0 0017D9D0  28 00 00 0C */	cmplwi r0, 0xc
 /* 80180BD4 0017D9D4  41 81 00 80 */	bgt lbl_80180C54
-/* 80180BD8 0017D9D8  3C 60 80 2A */	lis r3, lbl_8029B868@ha
+/* 80180BD8 0017D9D8  3C 60 80 2A */	lis r3, l_b868__esc__2_650@ha
 /* 80180BDC 0017D9DC  54 00 10 3A */	slwi r0, r0, 2
-/* 80180BE0 0017D9E0  38 63 B8 68 */	addi r3, r3, lbl_8029B868@l
+/* 80180BE0 0017D9E0  38 63 B8 68 */	addi r3, r3, l_b868__esc__2_650@l
 /* 80180BE4 0017D9E4  7C 03 00 2E */	lwzx r0, r3, r0
 /* 80180BE8 0017D9E8  7C 09 03 A6 */	mtctr r0
 /* 80180BEC 0017D9EC  4E 80 04 20 */	bctr 
 lbl_80180BF0:
-/* 80180BF0 0017D9F0  3C 60 80 27 */	lis r3, lbl_80272C50@ha
-/* 80180BF4 0017D9F4  38 63 2C 50 */	addi r3, r3, lbl_80272C50@l
+/* 80180BF0 0017D9F0  3C 60 80 27 */	lis r3, l_2c50__esc__2_stringBase0@ha
+/* 80180BF4 0017D9F4  38 63 2C 50 */	addi r3, r3, l_2c50__esc__2_stringBase0@l
 /* 80180BF8 0017D9F8  38 63 00 03 */	addi r3, r3, 3
 /* 80180BFC 0017D9FC  4B FF FE 35 */	bl SetErrorMessage__8iTRCDiskFPCc
 /* 80180C00 0017DA00  48 00 00 74 */	b lbl_80180C74
 lbl_80180C04:
-/* 80180C04 0017DA04  3C 60 80 27 */	lis r3, lbl_80272C50@ha
-/* 80180C08 0017DA08  38 63 2C 50 */	addi r3, r3, lbl_80272C50@l
+/* 80180C04 0017DA04  3C 60 80 27 */	lis r3, l_2c50__esc__2_stringBase0@ha
+/* 80180C08 0017DA08  38 63 2C 50 */	addi r3, r3, l_2c50__esc__2_stringBase0@l
 /* 80180C0C 0017DA0C  38 63 00 52 */	addi r3, r3, 0x52
 /* 80180C10 0017DA10  4B FF FE 21 */	bl SetErrorMessage__8iTRCDiskFPCc
 /* 80180C14 0017DA14  48 00 00 60 */	b lbl_80180C74
 lbl_80180C18:
-/* 80180C18 0017DA18  3C 60 80 27 */	lis r3, lbl_80272C50@ha
-/* 80180C1C 0017DA1C  38 63 2C 50 */	addi r3, r3, lbl_80272C50@l
+/* 80180C18 0017DA18  3C 60 80 27 */	lis r3, l_2c50__esc__2_stringBase0@ha
+/* 80180C1C 0017DA1C  38 63 2C 50 */	addi r3, r3, l_2c50__esc__2_stringBase0@l
 /* 80180C20 0017DA20  38 63 00 EE */	addi r3, r3, 0xee
 /* 80180C24 0017DA24  4B FF FE 0D */	bl SetErrorMessage__8iTRCDiskFPCc
 /* 80180C28 0017DA28  48 00 00 4C */	b lbl_80180C74
 lbl_80180C2C:
-/* 80180C2C 0017DA2C  3C 60 80 27 */	lis r3, lbl_80272C50@ha
-/* 80180C30 0017DA30  38 63 2C 50 */	addi r3, r3, lbl_80272C50@l
+/* 80180C2C 0017DA2C  3C 60 80 27 */	lis r3, l_2c50__esc__2_stringBase0@ha
+/* 80180C30 0017DA30  38 63 2C 50 */	addi r3, r3, l_2c50__esc__2_stringBase0@l
 /* 80180C34 0017DA34  38 63 01 45 */	addi r3, r3, 0x145
 /* 80180C38 0017DA38  4B FF FD F9 */	bl SetErrorMessage__8iTRCDiskFPCc
 /* 80180C3C 0017DA3C  48 00 00 38 */	b lbl_80180C74
 lbl_80180C40:
-/* 80180C40 0017DA40  3C 60 80 27 */	lis r3, lbl_80272C50@ha
-/* 80180C44 0017DA44  38 63 2C 50 */	addi r3, r3, lbl_80272C50@l
+/* 80180C40 0017DA40  3C 60 80 27 */	lis r3, l_2c50__esc__2_stringBase0@ha
+/* 80180C44 0017DA44  38 63 2C 50 */	addi r3, r3, l_2c50__esc__2_stringBase0@l
 /* 80180C48 0017DA48  38 63 01 B3 */	addi r3, r3, 0x1b3
 /* 80180C4C 0017DA4C  4B FF FD E5 */	bl SetErrorMessage__8iTRCDiskFPCc
 /* 80180C50 0017DA50  48 00 00 24 */	b lbl_80180C74
@@ -906,8 +906,8 @@ lbl_80180C54:
 /* 80180C54 0017DA54  48 04 5C D9 */	bl DVDCheckDisk
 /* 80180C58 0017DA58  2C 03 00 00 */	cmpwi r3, 0
 /* 80180C5C 0017DA5C  40 82 00 18 */	bne lbl_80180C74
-/* 80180C60 0017DA60  3C 60 80 27 */	lis r3, lbl_80272C50@ha
-/* 80180C64 0017DA64  38 63 2C 50 */	addi r3, r3, lbl_80272C50@l
+/* 80180C60 0017DA60  3C 60 80 27 */	lis r3, l_2c50__esc__2_stringBase0@ha
+/* 80180C64 0017DA64  38 63 2C 50 */	addi r3, r3, l_2c50__esc__2_stringBase0@l
 /* 80180C68 0017DA68  38 63 02 2F */	addi r3, r3, 0x22f
 /* 80180C6C 0017DA6C  4B FF FD C5 */	bl SetErrorMessage__8iTRCDiskFPCc
 /* 80180C70 0017DA70  3B E0 00 05 */	li r31, 5
@@ -979,7 +979,7 @@ lbl_80180D38:
 /* 80180D4C 0017DB4C  38 21 00 10 */	addi r1, r1, 0x10
 /* 80180D50 0017DB50  4E 80 00 20 */	blr 
 .section .rodata
-lbl_80272C50:
+l_2c50__esc__2_stringBase0:
 	.4byte 0x20000050
 	.4byte 0x6C656173
 	.4byte 0x6520696E
@@ -1146,7 +1146,7 @@ lbl_80272C50:
 	.4byte 0x00000000
 
 .section .data
-lbl_8029B868:
+l_b868__esc__2_650:
 	.4byte lbl_80180C40 /* 0x80180C40 */
 	.4byte lbl_80180C74 /* 0x80180C74 */
 	.4byte lbl_80180C54 /* 0x80180C54 */
@@ -1163,17 +1163,17 @@ lbl_8029B868:
 	.4byte 0x00000000
 
 .section .sbss2
-lbl_803D0A40:
+l_0a40__esc__2_415:
 	.skip 0x8
 
 .section .sdata2
-lbl_803CF800:
+l_f800__esc__2_422:
 	.4byte 0x00000000
-lbl_803CF804:
+l_f804__esc__2_423:
 	.4byte 0xC2C80000
-lbl_803CF808:
+l_f808__esc__2_425:
 	.4byte 0x43300000
 	.4byte 0x00000000
-lbl_803CF810:
+l_f810__esc__2_439:
 	.4byte 0x3F800000
 	.4byte 0x00000000

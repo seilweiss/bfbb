@@ -1300,7 +1300,7 @@ lbl_8011E828:
 /* 8011E838 0011B638  7C 08 03 A6 */	mtlr r0
 /* 8011E83C 0011B63C  38 21 04 C0 */	addi r1, r1, 0x4c0
 /* 8011E840 0011B640  4E 80 00 20 */	blr 
-lbl_8011E844:
+l_e844_LeafNodeLinePolyIntersect__FP21xClumpCollBSPTrianglePv:
 /* 8011E844 0011B644  94 21 FF 60 */	stwu r1, -0xa0(r1)
 /* 8011E848 0011B648  7C 08 02 A6 */	mflr r0
 /* 8011E84C 0011B64C  90 01 00 A4 */	stw r0, 0xa4(r1)
@@ -1355,7 +1355,7 @@ lbl_8011E8A8:
 /* 8011E904 0011B704  EC 4C 01 32 */	fmuls f2, f12, f4
 /* 8011E908 0011B708  C1 7E 00 14 */	lfs f11, 0x14(r30)
 /* 8011E90C 0011B70C  EC 6A 01 72 */	fmuls f3, f10, f5
-/* 8011E910 0011B710  C0 22 A0 10 */	lfs f1, lbl_803CE990@sda21(r2)
+/* 8011E910 0011B710  C0 22 A0 10 */	lfs f1, l_e990__esc__2_1186@sda21(r2)
 /* 8011E914 0011B714  EC 0B 01 B2 */	fmuls f0, f11, f6
 /* 8011E918 0011B718  ED 4A 11 B8 */	fmsubs f10, f10, f6, f2
 /* 8011E91C 0011B71C  EC CB 19 38 */	fmsubs f6, f11, f4, f3
@@ -1396,7 +1396,7 @@ lbl_8011E8A8:
 /* 8011E9A8 0011B7A8  EC 01 01 BA */	fmadds f0, f1, f6, f0
 /* 8011E9AC 0011B7AC  EC 02 02 FA */	fmadds f0, f2, f11, f0
 lbl_8011E9B0:
-/* 8011E9B0 0011B7B0  C0 22 A0 14 */	lfs f1, lbl_803CE994@sda21(r2)
+/* 8011E9B0 0011B7B0  C0 22 A0 14 */	lfs f1, l_e994__esc__2_1187@sda21(r2)
 /* 8011E9B4 0011B7B4  FC 00 08 40 */	fcmpo cr0, f0, f1
 /* 8011E9B8 0011B7B8  7C 00 00 26 */	mfcr r0
 /* 8011E9BC 0011B7BC  54 00 17 FF */	rlwinm. r0, r0, 2, 0x1f, 0x1f
@@ -1405,7 +1405,7 @@ lbl_8011E9B0:
 /* 8011E9C8 0011B7C8  FC 60 00 50 */	fneg f3, f0
 /* 8011E9CC 0011B7CC  C0 3B 00 04 */	lfs f1, 4(r27)
 /* 8011E9D0 0011B7D0  38 00 00 00 */	li r0, 0
-/* 8011E9D4 0011B7D4  C0 82 A0 18 */	lfs f4, lbl_803CE998@sda21(r2)
+/* 8011E9D4 0011B7D4  C0 82 A0 18 */	lfs f4, l_e998__esc__2_1188@sda21(r2)
 /* 8011E9D8 0011B7D8  ED 02 08 28 */	fsubs f8, f2, f1
 /* 8011E9DC 0011B7DC  C0 BE 00 00 */	lfs f5, 0(r30)
 /* 8011E9E0 0011B7E0  C0 5B 00 00 */	lfs f2, 0(r27)
@@ -1550,7 +1550,7 @@ lbl_8011EBDC:
 /* 8011EBF4 0011B9F4  7C 08 03 A6 */	mtlr r0
 /* 8011EBF8 0011B9F8  38 21 00 A0 */	addi r1, r1, 0xa0
 /* 8011EBFC 0011B9FC  4E 80 00 20 */	blr 
-lbl_8011EC00:
+l_ec00_LeafNodeSpherePolyIntersect__FP21xClumpCollBSPTrianglePv:
 /* 8011EC00 0011BA00  94 21 FF A0 */	stwu r1, -0x60(r1)
 /* 8011EC04 0011BA04  7C 08 02 A6 */	mflr r0
 /* 8011EC08 0011BA08  90 01 00 64 */	stw r0, 0x64(r1)
@@ -1618,7 +1618,7 @@ lbl_8011ECE4:
 /* 8011ECEC 0011BAEC  7C 08 03 A6 */	mtlr r0
 /* 8011ECF0 0011BAF0  38 21 00 60 */	addi r1, r1, 0x60
 /* 8011ECF4 0011BAF4  4E 80 00 20 */	blr 
-lbl_8011ECF8:
+l_ecf8_LeafNodeBoxPolyIntersect__FP21xClumpCollBSPTrianglePv:
 /* 8011ECF8 0011BAF8  94 21 FF B0 */	stwu r1, -0x50(r1)
 /* 8011ECFC 0011BAFC  7C 08 02 A6 */	mflr r0
 /* 8011ED00 0011BB00  90 01 00 54 */	stw r0, 0x54(r1)
@@ -1700,7 +1700,7 @@ lbl_8011ED4C:
 /* 8011EE24 0011BC24  93 41 00 2C */	stw r26, 0x2c(r1)
 /* 8011EE28 0011BC28  81 9D 00 04 */	lwz r12, 4(r29)
 /* 8011EE2C 0011BC2C  80 7D 00 00 */	lwz r3, 0(r29)
-/* 8011EE30 0011BC30  C0 22 A0 1C */	lfs f1, lbl_803CE99C@sda21(r2)
+/* 8011EE30 0011BC30  C0 22 A0 1C */	lfs f1, l_e99c__esc__2_1275@sda21(r2)
 /* 8011EE34 0011BC34  80 DD 00 08 */	lwz r6, 8(r29)
 /* 8011EE38 0011BC38  7D 89 03 A6 */	mtctr r12
 /* 8011EE3C 0011BC3C  4E 80 04 21 */	bctrl 
@@ -1768,11 +1768,11 @@ lbl_8011EED4:
 /* 8011EF14 0011BD14  90 01 00 B0 */	stw r0, 0xb0(r1)
 /* 8011EF18 0011BD18  D0 01 00 7C */	stfs f0, 0x7c(r1)
 /* 8011EF1C 0011BD1C  4B EF 30 15 */	bl __as__6RwLineFRC6RwLine
-/* 8011EF20 0011BD20  C0 62 A0 1C */	lfs f3, lbl_803CE99C@sda21(r2)
+/* 8011EF20 0011BD20  C0 62 A0 1C */	lfs f3, l_e99c__esc__2_1275@sda21(r2)
 /* 8011EF24 0011BD24  C0 21 00 74 */	lfs f1, 0x74(r1)
 /* 8011EF28 0011BD28  FC 03 08 00 */	fcmpu cr0, f3, f1
 /* 8011EF2C 0011BD2C  41 82 00 0C */	beq lbl_8011EF38
-/* 8011EF30 0011BD30  C0 02 A0 20 */	lfs f0, lbl_803CE9A0@sda21(r2)
+/* 8011EF30 0011BD30  C0 02 A0 20 */	lfs f0, l_e9a0__esc__2_1333@sda21(r2)
 /* 8011EF34 0011BD34  EC 60 08 24 */	fdivs f3, f0, f1
 lbl_8011EF38:
 /* 8011EF38 0011BD38  C0 41 00 78 */	lfs f2, 0x78(r1)
@@ -1782,10 +1782,10 @@ lbl_8011EF38:
 /* 8011EF48 0011BD48  EC 00 00 F2 */	fmuls f0, f0, f3
 /* 8011EF4C 0011BD4C  D0 21 00 80 */	stfs f1, 0x80(r1)
 /* 8011EF50 0011BD50  D0 01 00 84 */	stfs f0, 0x84(r1)
-/* 8011EF54 0011BD54  C0 62 A0 1C */	lfs f3, lbl_803CE99C@sda21(r2)
+/* 8011EF54 0011BD54  C0 62 A0 1C */	lfs f3, l_e99c__esc__2_1275@sda21(r2)
 /* 8011EF58 0011BD58  FC 03 10 00 */	fcmpu cr0, f3, f2
 /* 8011EF5C 0011BD5C  41 82 00 0C */	beq lbl_8011EF68
-/* 8011EF60 0011BD60  C0 02 A0 20 */	lfs f0, lbl_803CE9A0@sda21(r2)
+/* 8011EF60 0011BD60  C0 02 A0 20 */	lfs f0, l_e9a0__esc__2_1333@sda21(r2)
 /* 8011EF64 0011BD64  EC 60 10 24 */	fdivs f3, f0, f2
 lbl_8011EF68:
 /* 8011EF68 0011BD68  C0 01 00 74 */	lfs f0, 0x74(r1)
@@ -1794,16 +1794,16 @@ lbl_8011EF68:
 /* 8011EF74 0011BD74  EC 01 00 F2 */	fmuls f0, f1, f3
 /* 8011EF78 0011BD78  D0 41 00 88 */	stfs f2, 0x88(r1)
 /* 8011EF7C 0011BD7C  D0 01 00 8C */	stfs f0, 0x8c(r1)
-/* 8011EF80 0011BD80  C0 42 A0 1C */	lfs f2, lbl_803CE99C@sda21(r2)
+/* 8011EF80 0011BD80  C0 42 A0 1C */	lfs f2, l_e99c__esc__2_1275@sda21(r2)
 /* 8011EF84 0011BD84  FC 02 08 00 */	fcmpu cr0, f2, f1
 /* 8011EF88 0011BD88  41 82 00 0C */	beq lbl_8011EF94
-/* 8011EF8C 0011BD8C  C0 02 A0 20 */	lfs f0, lbl_803CE9A0@sda21(r2)
+/* 8011EF8C 0011BD8C  C0 02 A0 20 */	lfs f0, l_e9a0__esc__2_1333@sda21(r2)
 /* 8011EF90 0011BD90  EC 40 08 24 */	fdivs f2, f0, f1
 lbl_8011EF94:
 /* 8011EF94 0011BD94  C0 21 00 74 */	lfs f1, 0x74(r1)
-/* 8011EF98 0011BD98  3C 60 80 12 */	lis r3, lbl_8011E844@ha
+/* 8011EF98 0011BD98  3C 60 80 12 */	lis r3, l_e844_LeafNodeLinePolyIntersect__FP21xClumpCollBSPTrianglePv@ha
 /* 8011EF9C 0011BD9C  C0 01 00 78 */	lfs f0, 0x78(r1)
-/* 8011EFA0 0011BDA0  38 C3 E8 44 */	addi r6, r3, lbl_8011E844@l
+/* 8011EFA0 0011BDA0  38 C3 E8 44 */	addi r6, r3, l_e844_LeafNodeLinePolyIntersect__FP21xClumpCollBSPTrianglePv@l
 /* 8011EFA4 0011BDA4  EC 21 00 B2 */	fmuls f1, f1, f2
 /* 8011EFA8 0011BDA8  7F C3 F3 78 */	mr r3, r30
 /* 8011EFAC 0011BDAC  EC 00 00 B2 */	fmuls f0, f0, f2
@@ -1821,11 +1821,11 @@ lbl_8011EFCC:
 /* 8011EFD8 0011BDD8  38 61 00 4C */	addi r3, r1, 0x4c
 /* 8011EFDC 0011BDDC  4B EF 12 4D */	bl __as__5RwV3dFRC5RwV3d
 /* 8011EFE0 0011BDE0  C0 DF 00 0C */	lfs f6, 0xc(r31)
-/* 8011EFE4 0011BDE4  3C 60 80 12 */	lis r3, lbl_8011EC00@ha
+/* 8011EFE4 0011BDE4  3C 60 80 12 */	lis r3, l_ec00_LeafNodeSpherePolyIntersect__FP21xClumpCollBSPTrianglePv@ha
 /* 8011EFE8 0011BDE8  C0 41 00 4C */	lfs f2, 0x4c(r1)
 /* 8011EFEC 0011BDEC  38 81 00 40 */	addi r4, r1, 0x40
 /* 8011EFF0 0011BDF0  C0 21 00 50 */	lfs f1, 0x50(r1)
-/* 8011EFF4 0011BDF4  38 A3 EC 00 */	addi r5, r3, lbl_8011EC00@l
+/* 8011EFF4 0011BDF4  38 A3 EC 00 */	addi r5, r3, l_ec00_LeafNodeSpherePolyIntersect__FP21xClumpCollBSPTrianglePv@l
 /* 8011EFF8 0011BDF8  EC A2 30 28 */	fsubs f5, f2, f6
 /* 8011EFFC 0011BDFC  C0 01 00 54 */	lfs f0, 0x54(r1)
 /* 8011F000 0011BE00  EC 81 30 28 */	fsubs f4, f1, f6
@@ -1847,7 +1847,7 @@ lbl_8011EFCC:
 /* 8011F040 0011BE40  D0 21 00 44 */	stfs f1, 0x44(r1)
 /* 8011F044 0011BE44  D0 01 00 48 */	stfs f0, 0x48(r1)
 /* 8011F048 0011BE48  93 E1 00 08 */	stw r31, 8(r1)
-/* 8011F04C 0011BE4C  C0 02 A0 20 */	lfs f0, lbl_803CE9A0@sda21(r2)
+/* 8011F04C 0011BE4C  C0 02 A0 20 */	lfs f0, l_e9a0__esc__2_1333@sda21(r2)
 /* 8011F050 0011BE50  EC 00 30 24 */	fdivs f0, f0, f6
 /* 8011F054 0011BE54  90 E1 00 5C */	stw r7, 0x5c(r1)
 /* 8011F058 0011BE58  90 01 00 60 */	stw r0, 0x60(r1)
@@ -1859,10 +1859,10 @@ lbl_8011F06C:
 /* 8011F06C 0011BE6C  38 61 00 1C */	addi r3, r1, 0x1c
 /* 8011F070 0011BE70  4B EF 11 D5 */	bl __as__6RwBBoxFRC6RwBBox
 /* 8011F074 0011BE74  38 01 00 10 */	addi r0, r1, 0x10
-/* 8011F078 0011BE78  3C 60 80 12 */	lis r3, lbl_8011ECF8@ha
+/* 8011F078 0011BE78  3C 60 80 12 */	lis r3, l_ecf8_LeafNodeBoxPolyIntersect__FP21xClumpCollBSPTrianglePv@ha
 /* 8011F07C 0011BE7C  38 81 00 1C */	addi r4, r1, 0x1c
 /* 8011F080 0011BE80  90 01 00 3C */	stw r0, 0x3c(r1)
-/* 8011F084 0011BE84  38 A3 EC F8 */	addi r5, r3, lbl_8011ECF8@l
+/* 8011F084 0011BE84  38 A3 EC F8 */	addi r5, r3, l_ecf8_LeafNodeBoxPolyIntersect__FP21xClumpCollBSPTrianglePv@l
 /* 8011F088 0011BE88  7F C3 F3 78 */	mr r3, r30
 /* 8011F08C 0011BE8C  7C 86 23 78 */	mr r6, r4
 /* 8011F090 0011BE90  4B FF E5 69 */	bl xClumpColl_ForAllBoxLeafNodeIntersections__FP17xClumpCollBSPTreeP6RwBBoxPFP21xClumpCollBSPTrianglePv_iPv
@@ -1879,14 +1879,14 @@ lbl_8011F0A0:
 /* 8011F0B4 0011BEB4  4E 80 00 20 */	blr 
 
 .section .sdata2
-lbl_803CE990:
+l_e990__esc__2_1186:
 	.4byte 0xB22BCC77
-lbl_803CE994:
+l_e994__esc__2_1187:
 	.4byte 0x322BCC77
-lbl_803CE998:
+l_e998__esc__2_1188:
 	.4byte 0x3727C5AC
-lbl_803CE99C:
+l_e99c__esc__2_1275:
 	.4byte 0x00000000
-lbl_803CE9A0:
+l_e9a0__esc__2_1333:
 	.4byte 0x3F800000
 	.4byte 0x00000000

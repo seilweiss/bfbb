@@ -67,14 +67,14 @@ lbl_8010F38C:
 RegItemType__8xFactoryFP12XGOFTypeInfo:
 /* 8010F3A8 0010C1A8  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 8010F3AC 0010C1AC  7C 08 02 A6 */	mflr r0
-/* 8010F3B0 0010C1B0  3C C0 80 11 */	lis r6, lbl_8010F7D4@ha
-/* 8010F3B4 0010C1B4  3C A0 80 11 */	lis r5, lbl_8010F800@ha
+/* 8010F3B0 0010C1B0  3C C0 80 11 */	lis r6, l_f7d4_OrdTest_infotype__FPCvPv@ha
+/* 8010F3B4 0010C1B4  3C A0 80 11 */	lis r5, l_f800_OrdComp_infotype__FPvPv@ha
 /* 8010F3B8 0010C1B8  90 01 00 24 */	stw r0, 0x24(r1)
 /* 8010F3BC 0010C1BC  BF 61 00 0C */	stmw r27, 0xc(r1)
 /* 8010F3C0 0010C1C0  7C 7E 1B 78 */	mr r30, r3
 /* 8010F3C4 0010C1C4  7C 9F 23 78 */	mr r31, r4
-/* 8010F3C8 0010C1C8  3B 86 F7 D4 */	addi r28, r6, lbl_8010F7D4@l
-/* 8010F3CC 0010C1CC  3B A5 F8 00 */	addi r29, r5, lbl_8010F800@l
+/* 8010F3C8 0010C1C8  3B 86 F7 D4 */	addi r28, r6, l_f7d4_OrdTest_infotype__FPCvPv@l
+/* 8010F3CC 0010C1CC  3B A5 F8 00 */	addi r29, r5, l_f800_OrdComp_infotype__FPvPv@l
 /* 8010F3D0 0010C1D0  3B 60 00 00 */	li r27, 0
 /* 8010F3D4 0010C1D4  48 00 00 A0 */	b lbl_8010F474
 lbl_8010F3D8:
@@ -137,9 +137,9 @@ lbl_8010F480:
 RegItemType__8xFactoryFiPFiP10RyzMemGrowPv_P12xFactoryInstPFP12xFactoryInst_v:
 /* 8010F498 0010C298  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 8010F49C 0010C29C  7C 08 02 A6 */	mflr r0
-/* 8010F4A0 0010C2A0  3C E0 80 27 */	lis r7, lbl_8026A3C8@ha
+/* 8010F4A0 0010C2A0  3C E0 80 27 */	lis r7, l_a3c8__esc__2_444@ha
 /* 8010F4A4 0010C2A4  90 01 00 24 */	stw r0, 0x24(r1)
-/* 8010F4A8 0010C2A8  39 27 A3 C8 */	addi r9, r7, lbl_8026A3C8@l
+/* 8010F4A8 0010C2A8  39 27 A3 C8 */	addi r9, r7, l_a3c8__esc__2_444@l
 /* 8010F4AC 0010C2AC  81 09 00 00 */	lwz r8, 0(r9)
 /* 8010F4B0 0010C2B0  80 E9 00 04 */	lwz r7, 4(r9)
 /* 8010F4B4 0010C2B4  91 01 00 08 */	stw r8, 8(r1)
@@ -197,11 +197,11 @@ GrowDataDisable__8xFactoryFv:
 CreateItem__8xFactoryFiPvP10RyzMemGrow:
 /* 8010F55C 0010C35C  94 21 FF D0 */	stwu r1, -0x30(r1)
 /* 8010F560 0010C360  7C 08 02 A6 */	mflr r0
-/* 8010F564 0010C364  3D 00 80 27 */	lis r8, lbl_8026A3E0@ha
-/* 8010F568 0010C368  3C E0 80 11 */	lis r7, lbl_8010F7D4@ha
+/* 8010F564 0010C364  3D 00 80 27 */	lis r8, l_a3e0__esc__2_461@ha
+/* 8010F568 0010C368  3C E0 80 11 */	lis r7, l_f7d4_OrdTest_infotype__FPCvPv@ha
 /* 8010F56C 0010C36C  90 01 00 34 */	stw r0, 0x34(r1)
-/* 8010F570 0010C370  39 28 A3 E0 */	addi r9, r8, lbl_8026A3E0@l
-/* 8010F574 0010C374  38 07 F7 D4 */	addi r0, r7, lbl_8010F7D4@l
+/* 8010F570 0010C370  39 28 A3 E0 */	addi r9, r8, l_a3e0__esc__2_461@l
+/* 8010F574 0010C374  38 07 F7 D4 */	addi r0, r7, l_f7d4_OrdTest_infotype__FPCvPv@l
 /* 8010F578 0010C378  93 E1 00 2C */	stw r31, 0x2c(r1)
 /* 8010F57C 0010C37C  7C 7F 1B 78 */	mr r31, r3
 /* 8010F580 0010C380  93 C1 00 28 */	stw r30, 0x28(r1)
@@ -353,9 +353,9 @@ lbl_8010F76C:
 /* 8010F77C 0010C57C  90 03 00 08 */	stw r0, 8(r3)
 lbl_8010F780:
 /* 8010F780 0010C580  38 00 00 00 */	li r0, 0
-/* 8010F784 0010C584  3C 60 80 11 */	lis r3, lbl_8010F7D4@ha
+/* 8010F784 0010C584  3C 60 80 11 */	lis r3, l_f7d4_OrdTest_infotype__FPCvPv@ha
 /* 8010F788 0010C588  90 1F 00 08 */	stw r0, 8(r31)
-/* 8010F78C 0010C58C  38 A3 F7 D4 */	addi r5, r3, lbl_8010F7D4@l
+/* 8010F78C 0010C58C  38 A3 F7 D4 */	addi r5, r3, l_f7d4_OrdTest_infotype__FPCvPv@l
 /* 8010F790 0010C590  38 7E 00 04 */	addi r3, r30, 4
 /* 8010F794 0010C594  38 81 00 08 */	addi r4, r1, 8
 /* 8010F798 0010C598  90 1F 00 04 */	stw r0, 4(r31)
@@ -374,7 +374,7 @@ lbl_8010F7BC:
 /* 8010F7C8 0010C5C8  7C 08 03 A6 */	mtlr r0
 /* 8010F7CC 0010C5CC  38 21 00 20 */	addi r1, r1, 0x20
 /* 8010F7D0 0010C5D0  4E 80 00 20 */	blr 
-lbl_8010F7D4:
+l_f7d4_OrdTest_infotype__FPCvPv:
 /* 8010F7D4 0010C5D4  80 63 00 00 */	lwz r3, 0(r3)
 /* 8010F7D8 0010C5D8  80 04 00 00 */	lwz r0, 0(r4)
 /* 8010F7DC 0010C5DC  7C 03 00 00 */	cmpw r3, r0
@@ -388,7 +388,7 @@ lbl_8010F7EC:
 lbl_8010F7F8:
 /* 8010F7F8 0010C5F8  38 60 00 00 */	li r3, 0
 /* 8010F7FC 0010C5FC  4E 80 00 20 */	blr 
-lbl_8010F800:
+l_f800_OrdComp_infotype__FPvPv:
 /* 8010F800 0010C600  80 63 00 00 */	lwz r3, 0(r3)
 /* 8010F804 0010C604  80 04 00 00 */	lwz r0, 0(r4)
 /* 8010F808 0010C608  7C 03 00 00 */	cmpw r3, r0
@@ -403,14 +403,14 @@ lbl_8010F824:
 /* 8010F824 0010C624  38 60 00 00 */	li r3, 0
 /* 8010F828 0010C628  4E 80 00 20 */	blr 
 .section .rodata
-lbl_8026A3C8:
+l_a3c8__esc__2_444:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
-lbl_8026A3E0:
+l_a3e0__esc__2_461:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000

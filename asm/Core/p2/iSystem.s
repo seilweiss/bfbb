@@ -4,8 +4,8 @@
 
 .global psGetMemoryFunctions__Fv
 psGetMemoryFunctions__Fv:
-/* 800D30B4 000CFEB4  3C 60 80 31 */	lis r3, lbl_80312140@ha
-/* 800D30B8 000CFEB8  38 63 21 40 */	addi r3, r3, lbl_80312140@l
+/* 800D30B4 000CFEB4  3C 60 80 31 */	lis r3, l_2140_MemoryFunctions@ha
+/* 800D30B8 000CFEB8  38 63 21 40 */	addi r3, r3, l_2140_MemoryFunctions@l
 /* 800D30BC 000CFEBC  4E 80 00 20 */	blr 
 
 .global iVSync__Fv
@@ -20,7 +20,7 @@ iVSync__Fv:
 /* 800D30DC 000CFEDC  4E 80 00 20 */	blr 
 lbl_800D30E0:
 /* 800D30E0 000CFEE0  4E 80 00 20 */	blr 
-lbl_800D30E4:
+l_30e4_FloatingPointErrorHandler__FUsP9OSContextUlUl:
 /* 800D30E4 000CFEE4  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 800D30E8 000CFEE8  7C 08 02 A6 */	mflr r0
 /* 800D30EC 000CFEEC  90 01 00 14 */	stw r0, 0x14(r1)
@@ -34,111 +34,111 @@ lbl_800D30E4:
 /* 800D310C 000CFF0C  7F FF 00 38 */	and r31, r31, r0
 /* 800D3110 000CFF10  57 E0 00 85 */	rlwinm. r0, r31, 0, 2, 2
 /* 800D3114 000CFF14  41 82 01 14 */	beq lbl_800D3228
-/* 800D3118 000CFF18  3C 60 80 26 */	lis r3, lbl_80266610@ha
-/* 800D311C 000CFF1C  38 63 66 10 */	addi r3, r3, lbl_80266610@l
+/* 800D3118 000CFF18  3C 60 80 26 */	lis r3, l_6610__esc__2_stringBase0@ha
+/* 800D311C 000CFF1C  38 63 66 10 */	addi r3, r3, l_6610__esc__2_stringBase0@l
 /* 800D3120 000CFF20  38 63 00 1C */	addi r3, r3, 0x1c
 /* 800D3124 000CFF24  4C C6 31 82 */	crclr 6
 /* 800D3128 000CFF28  48 0F FD DD */	bl func_801D2F04
 /* 800D312C 000CFF2C  57 E0 01 CF */	rlwinm. r0, r31, 0, 7, 7
 /* 800D3130 000CFF30  41 82 00 18 */	beq lbl_800D3148
-/* 800D3134 000CFF34  3C 60 80 26 */	lis r3, lbl_80266610@ha
-/* 800D3138 000CFF38  38 63 66 10 */	addi r3, r3, lbl_80266610@l
+/* 800D3134 000CFF34  3C 60 80 26 */	lis r3, l_6610__esc__2_stringBase0@ha
+/* 800D3138 000CFF38  38 63 66 10 */	addi r3, r3, l_6610__esc__2_stringBase0@l
 /* 800D313C 000CFF3C  38 63 00 35 */	addi r3, r3, 0x35
 /* 800D3140 000CFF40  4C C6 31 82 */	crclr 6
 /* 800D3144 000CFF44  48 0F FD C1 */	bl func_801D2F04
 lbl_800D3148:
 /* 800D3148 000CFF48  57 E0 02 11 */	rlwinm. r0, r31, 0, 8, 8
 /* 800D314C 000CFF4C  41 82 00 18 */	beq lbl_800D3164
-/* 800D3150 000CFF50  3C 60 80 26 */	lis r3, lbl_80266610@ha
-/* 800D3154 000CFF54  38 63 66 10 */	addi r3, r3, lbl_80266610@l
+/* 800D3150 000CFF50  3C 60 80 26 */	lis r3, l_6610__esc__2_stringBase0@ha
+/* 800D3154 000CFF54  38 63 66 10 */	addi r3, r3, l_6610__esc__2_stringBase0@l
 /* 800D3158 000CFF58  38 63 00 3B */	addi r3, r3, 0x3b
 /* 800D315C 000CFF5C  4C C6 31 82 */	crclr 6
 /* 800D3160 000CFF60  48 0F FD A5 */	bl func_801D2F04
 lbl_800D3164:
 /* 800D3164 000CFF64  57 E0 02 53 */	rlwinm. r0, r31, 0, 9, 9
 /* 800D3168 000CFF68  41 82 00 18 */	beq lbl_800D3180
-/* 800D316C 000CFF6C  3C 60 80 26 */	lis r3, lbl_80266610@ha
-/* 800D3170 000CFF70  38 63 66 10 */	addi r3, r3, lbl_80266610@l
+/* 800D316C 000CFF6C  3C 60 80 26 */	lis r3, l_6610__esc__2_stringBase0@ha
+/* 800D3170 000CFF70  38 63 66 10 */	addi r3, r3, l_6610__esc__2_stringBase0@l
 /* 800D3174 000CFF74  38 63 00 50 */	addi r3, r3, 0x50
 /* 800D3178 000CFF78  4C C6 31 82 */	crclr 6
 /* 800D317C 000CFF7C  48 0F FD 89 */	bl func_801D2F04
 lbl_800D3180:
 /* 800D3180 000CFF80  57 E0 02 95 */	rlwinm. r0, r31, 0, 0xa, 0xa
 /* 800D3184 000CFF84  41 82 00 18 */	beq lbl_800D319C
-/* 800D3188 000CFF88  3C 60 80 26 */	lis r3, lbl_80266610@ha
-/* 800D318C 000CFF8C  38 63 66 10 */	addi r3, r3, lbl_80266610@l
+/* 800D3188 000CFF88  3C 60 80 26 */	lis r3, l_6610__esc__2_stringBase0@ha
+/* 800D318C 000CFF8C  38 63 66 10 */	addi r3, r3, l_6610__esc__2_stringBase0@l
 /* 800D3190 000CFF90  38 63 00 65 */	addi r3, r3, 0x65
 /* 800D3194 000CFF94  4C C6 31 82 */	crclr 6
 /* 800D3198 000CFF98  48 0F FD 6D */	bl func_801D2F04
 lbl_800D319C:
 /* 800D319C 000CFF9C  57 E0 02 D7 */	rlwinm. r0, r31, 0, 0xb, 0xb
 /* 800D31A0 000CFFA0  41 82 00 18 */	beq lbl_800D31B8
-/* 800D31A4 000CFFA4  3C 60 80 26 */	lis r3, lbl_80266610@ha
-/* 800D31A8 000CFFA8  38 63 66 10 */	addi r3, r3, lbl_80266610@l
+/* 800D31A4 000CFFA4  3C 60 80 26 */	lis r3, l_6610__esc__2_stringBase0@ha
+/* 800D31A8 000CFFA8  38 63 66 10 */	addi r3, r3, l_6610__esc__2_stringBase0@l
 /* 800D31AC 000CFFAC  38 63 00 6C */	addi r3, r3, 0x6c
 /* 800D31B0 000CFFB0  4C C6 31 82 */	crclr 6
 /* 800D31B4 000CFFB4  48 0F FD 51 */	bl func_801D2F04
 lbl_800D31B8:
 /* 800D31B8 000CFFB8  57 E0 03 19 */	rlwinm. r0, r31, 0, 0xc, 0xc
 /* 800D31BC 000CFFBC  41 82 00 18 */	beq lbl_800D31D4
-/* 800D31C0 000CFFC0  3C 60 80 26 */	lis r3, lbl_80266610@ha
-/* 800D31C4 000CFFC4  38 63 66 10 */	addi r3, r3, lbl_80266610@l
+/* 800D31C0 000CFFC0  3C 60 80 26 */	lis r3, l_6610__esc__2_stringBase0@ha
+/* 800D31C4 000CFFC4  38 63 66 10 */	addi r3, r3, l_6610__esc__2_stringBase0@l
 /* 800D31C8 000CFFC8  38 63 00 7A */	addi r3, r3, 0x7a
 /* 800D31CC 000CFFCC  4C C6 31 82 */	crclr 6
 /* 800D31D0 000CFFD0  48 0F FD 35 */	bl func_801D2F04
 lbl_800D31D4:
 /* 800D31D4 000CFFD4  57 E0 05 6B */	rlwinm. r0, r31, 0, 0x15, 0x15
 /* 800D31D8 000CFFD8  41 82 00 18 */	beq lbl_800D31F0
-/* 800D31DC 000CFFDC  3C 60 80 26 */	lis r3, lbl_80266610@ha
-/* 800D31E0 000CFFE0  38 63 66 10 */	addi r3, r3, lbl_80266610@l
+/* 800D31DC 000CFFDC  3C 60 80 26 */	lis r3, l_6610__esc__2_stringBase0@ha
+/* 800D31E0 000CFFE0  38 63 66 10 */	addi r3, r3, l_6610__esc__2_stringBase0@l
 /* 800D31E4 000CFFE4  38 63 00 8B */	addi r3, r3, 0x8b
 /* 800D31E8 000CFFE8  4C C6 31 82 */	crclr 6
 /* 800D31EC 000CFFEC  48 0F FD 19 */	bl func_801D2F04
 lbl_800D31F0:
 /* 800D31F0 000CFFF0  57 E0 05 AD */	rlwinm. r0, r31, 0, 0x16, 0x16
 /* 800D31F4 000CFFF4  41 82 00 18 */	beq lbl_800D320C
-/* 800D31F8 000CFFF8  3C 60 80 26 */	lis r3, lbl_80266610@ha
-/* 800D31FC 000CFFFC  38 63 66 10 */	addi r3, r3, lbl_80266610@l
+/* 800D31F8 000CFFF8  3C 60 80 26 */	lis r3, l_6610__esc__2_stringBase0@ha
+/* 800D31FC 000CFFFC  38 63 66 10 */	addi r3, r3, l_6610__esc__2_stringBase0@l
 /* 800D3200 000D0000  38 63 00 9D */	addi r3, r3, 0x9d
 /* 800D3204 000D0004  4C C6 31 82 */	crclr 6
 /* 800D3208 000D0008  48 0F FC FD */	bl func_801D2F04
 lbl_800D320C:
 /* 800D320C 000D000C  57 E0 05 EF */	rlwinm. r0, r31, 0, 0x17, 0x17
 /* 800D3210 000D0010  41 82 00 18 */	beq lbl_800D3228
-/* 800D3214 000D0014  3C 60 80 26 */	lis r3, lbl_80266610@ha
-/* 800D3218 000D0018  38 63 66 10 */	addi r3, r3, lbl_80266610@l
+/* 800D3214 000D0014  3C 60 80 26 */	lis r3, l_6610__esc__2_stringBase0@ha
+/* 800D3218 000D0018  38 63 66 10 */	addi r3, r3, l_6610__esc__2_stringBase0@l
 /* 800D321C 000D001C  38 63 00 B2 */	addi r3, r3, 0xb2
 /* 800D3220 000D0020  4C C6 31 82 */	crclr 6
 /* 800D3224 000D0024  48 0F FC E1 */	bl func_801D2F04
 lbl_800D3228:
 /* 800D3228 000D0028  57 E0 00 C7 */	rlwinm. r0, r31, 0, 3, 3
 /* 800D322C 000D002C  41 82 00 18 */	beq lbl_800D3244
-/* 800D3230 000D0030  3C 60 80 26 */	lis r3, lbl_80266610@ha
-/* 800D3234 000D0034  38 63 66 10 */	addi r3, r3, lbl_80266610@l
+/* 800D3230 000D0030  3C 60 80 26 */	lis r3, l_6610__esc__2_stringBase0@ha
+/* 800D3234 000D0034  38 63 66 10 */	addi r3, r3, l_6610__esc__2_stringBase0@l
 /* 800D3238 000D0038  38 63 00 CB */	addi r3, r3, 0xcb
 /* 800D323C 000D003C  4C C6 31 82 */	crclr 6
 /* 800D3240 000D0040  48 0F FC C5 */	bl func_801D2F04
 lbl_800D3244:
 /* 800D3244 000D0044  57 E0 01 09 */	rlwinm. r0, r31, 0, 4, 4
 /* 800D3248 000D0048  41 82 00 18 */	beq lbl_800D3260
-/* 800D324C 000D004C  3C 60 80 26 */	lis r3, lbl_80266610@ha
-/* 800D3250 000D0050  38 63 66 10 */	addi r3, r3, lbl_80266610@l
+/* 800D324C 000D004C  3C 60 80 26 */	lis r3, l_6610__esc__2_stringBase0@ha
+/* 800D3250 000D0050  38 63 66 10 */	addi r3, r3, l_6610__esc__2_stringBase0@l
 /* 800D3254 000D0054  38 63 00 DA */	addi r3, r3, 0xda
 /* 800D3258 000D0058  4C C6 31 82 */	crclr 6
 /* 800D325C 000D005C  48 0F FC A9 */	bl func_801D2F04
 lbl_800D3260:
 /* 800D3260 000D0060  57 E0 01 4B */	rlwinm. r0, r31, 0, 5, 5
 /* 800D3264 000D0064  41 82 00 18 */	beq lbl_800D327C
-/* 800D3268 000D0068  3C 60 80 26 */	lis r3, lbl_80266610@ha
-/* 800D326C 000D006C  38 63 66 10 */	addi r3, r3, lbl_80266610@l
+/* 800D3268 000D0068  3C 60 80 26 */	lis r3, l_6610__esc__2_stringBase0@ha
+/* 800D326C 000D006C  38 63 66 10 */	addi r3, r3, l_6610__esc__2_stringBase0@l
 /* 800D3270 000D0070  38 63 00 EA */	addi r3, r3, 0xea
 /* 800D3274 000D0074  4C C6 31 82 */	crclr 6
 /* 800D3278 000D0078  48 0F FC 8D */	bl func_801D2F04
 lbl_800D327C:
 /* 800D327C 000D007C  57 E0 01 8D */	rlwinm. r0, r31, 0, 6, 6
 /* 800D3280 000D0080  41 82 00 18 */	beq lbl_800D3298
-/* 800D3284 000D0084  3C 60 80 26 */	lis r3, lbl_80266610@ha
-/* 800D3288 000D0088  38 63 66 10 */	addi r3, r3, lbl_80266610@l
+/* 800D3284 000D0084  3C 60 80 26 */	lis r3, l_6610__esc__2_stringBase0@ha
+/* 800D3288 000D0088  38 63 66 10 */	addi r3, r3, l_6610__esc__2_stringBase0@l
 /* 800D328C 000D008C  38 63 00 FE */	addi r3, r3, 0xfe
 /* 800D3290 000D0090  4C C6 31 82 */	crclr 6
 /* 800D3294 000D0094  48 0F FC 71 */	bl func_801D2F04
@@ -152,7 +152,7 @@ lbl_800D3298:
 /* 800D32B0 000D00B0  7C 08 03 A6 */	mtlr r0
 /* 800D32B4 000D00B4  38 21 00 10 */	addi r1, r1, 0x10
 /* 800D32B8 000D00B8  4E 80 00 20 */	blr 
-lbl_800D32BC:
+l_32bc_MemoryProtectionErrorHandler__FUsP9OSContextUlUl:
 /* 800D32BC 000D00BC  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 800D32C0 000D00C0  7C 08 02 A6 */	mflr r0
 /* 800D32C4 000D00C4  90 01 00 14 */	stw r0, 0x14(r1)
@@ -220,23 +220,23 @@ iSystemInit__FUi:
 /* 800D33A4 000D01A4  48 0F 0D 89 */	bl DVDInit
 /* 800D33A8 000D01A8  48 10 81 61 */	bl VIInit
 /* 800D33AC 000D01AC  38 00 00 10 */	li r0, 0x10
-/* 800D33B0 000D01B0  3C 60 80 0D */	lis r3, lbl_800D30E4@ha
+/* 800D33B0 000D01B0  3C 60 80 0D */	lis r3, l_30e4_FloatingPointErrorHandler__FUsP9OSContextUlUl@ha
 /* 800D33B4 000D01B4  90 0D 86 50 */	stw r0, lbl_803CAF50@sda21(r13)
-/* 800D33B8 000D01B8  38 83 30 E4 */	addi r4, r3, lbl_800D30E4@l
+/* 800D33B8 000D01B8  38 83 30 E4 */	addi r4, r3, l_30e4_FloatingPointErrorHandler__FUsP9OSContextUlUl@l
 /* 800D33BC 000D01BC  38 60 00 10 */	li r3, 0x10
 /* 800D33C0 000D01C0  48 0F FC F1 */	bl OSSetErrorHandler
-/* 800D33C4 000D01C4  3C 80 80 0D */	lis r4, lbl_800D32BC@ha
+/* 800D33C4 000D01C4  3C 80 80 0D */	lis r4, l_32bc_MemoryProtectionErrorHandler__FUsP9OSContextUlUl@ha
 /* 800D33C8 000D01C8  38 60 00 0F */	li r3, 0xf
-/* 800D33CC 000D01CC  38 84 32 BC */	addi r4, r4, lbl_800D32BC@l
+/* 800D33CC 000D01CC  38 84 32 BC */	addi r4, r4, l_32bc_MemoryProtectionErrorHandler__FUsP9OSContextUlUl@l
 /* 800D33D0 000D01D0  48 0F FC E1 */	bl OSSetErrorHandler
-/* 800D33D4 000D01D4  3C 60 80 31 */	lis r3, lbl_80312140@ha
-/* 800D33D8 000D01D8  38 63 21 40 */	addi r3, r3, lbl_80312140@l
+/* 800D33D4 000D01D4  3C 60 80 31 */	lis r3, l_2140_MemoryFunctions@ha
+/* 800D33D8 000D01D8  38 63 21 40 */	addi r3, r3, l_2140_MemoryFunctions@l
 /* 800D33DC 000D01DC  48 00 06 29 */	bl DolphinInitMemorySystem__FP17RwMemoryFunctions
 /* 800D33E0 000D01E0  2C 03 00 00 */	cmpwi r3, 0
 /* 800D33E4 000D01E4  40 82 00 20 */	bne lbl_800D3404
-/* 800D33E8 000D01E8  3C 60 80 26 */	lis r3, lbl_80266610@ha
+/* 800D33E8 000D01E8  3C 60 80 26 */	lis r3, l_6610__esc__2_stringBase0@ha
 /* 800D33EC 000D01EC  38 80 01 CC */	li r4, 0x1cc
-/* 800D33F0 000D01F0  38 A3 66 10 */	addi r5, r3, lbl_80266610@l
+/* 800D33F0 000D01F0  38 A3 66 10 */	addi r5, r3, l_6610__esc__2_stringBase0@l
 /* 800D33F4 000D01F4  38 65 01 13 */	addi r3, r5, 0x113
 /* 800D33F8 000D01F8  38 A5 01 1F */	addi r5, r5, 0x11f
 /* 800D33FC 000D01FC  4C C6 31 82 */	crclr 6
@@ -274,9 +274,9 @@ iSystemExit__Fv:
 /* 800D346C 000D026C  4B FE FE AD */	bl iFileExit__Fv
 /* 800D3470 000D0270  48 00 14 DD */	bl iTimeExit__Fv
 /* 800D3474 000D0274  4B F6 01 A9 */	bl xMemExit__Fv
-/* 800D3478 000D0278  3C 60 80 26 */	lis r3, lbl_80266610@ha
+/* 800D3478 000D0278  3C 60 80 26 */	lis r3, l_6610__esc__2_stringBase0@ha
 /* 800D347C 000D027C  38 80 02 1D */	li r4, 0x21d
-/* 800D3480 000D0280  38 A3 66 10 */	addi r5, r3, lbl_80266610@l
+/* 800D3480 000D0280  38 A3 66 10 */	addi r5, r3, l_6610__esc__2_stringBase0@l
 /* 800D3484 000D0284  38 65 01 13 */	addi r3, r5, 0x113
 /* 800D3488 000D0288  38 A5 01 44 */	addi r5, r5, 0x144
 /* 800D348C 000D028C  4C C6 31 82 */	crclr 6
@@ -386,8 +386,8 @@ lbl_800D35C8:
 /* 800D35F0 000D03F0  38 60 00 01 */	li r3, 1
 /* 800D35F4 000D03F4  48 00 00 38 */	b lbl_800D362C
 lbl_800D35F8:
-/* 800D35F8 000D03F8  3C 60 80 0D */	lis r3, lbl_800D3664@ha
-/* 800D35FC 000D03FC  38 63 36 64 */	addi r3, r3, lbl_800D3664@l
+/* 800D35F8 000D03F8  3C 60 80 0D */	lis r3, l_3664_TextureRead__FPCcPCc@ha
+/* 800D35FC 000D03FC  38 63 36 64 */	addi r3, r3, l_3664_TextureRead__FPCcPCc@l
 /* 800D3600 000D0400  48 16 AE 51 */	bl RwTextureSetReadCallBack
 /* 800D3604 000D0404  38 60 00 14 */	li r3, 0x14
 /* 800D3608 000D0408  38 80 00 02 */	li r4, 2
@@ -416,12 +416,12 @@ RenderWareExit__Fv:
 /* 800D3658 000D0458  7C 08 03 A6 */	mtlr r0
 /* 800D365C 000D045C  38 21 00 10 */	addi r1, r1, 0x10
 /* 800D3660 000D0460  4E 80 00 20 */	blr 
-lbl_800D3664:
+l_3664_TextureRead__FPCcPCc:
 /* 800D3664 000D0464  94 21 FE E0 */	stwu r1, -0x120(r1)
 /* 800D3668 000D0468  7C 08 02 A6 */	mflr r0
-/* 800D366C 000D046C  3C A0 80 26 */	lis r5, lbl_80266610@ha
+/* 800D366C 000D046C  3C A0 80 26 */	lis r5, l_6610__esc__2_stringBase0@ha
 /* 800D3670 000D0470  90 01 01 24 */	stw r0, 0x124(r1)
-/* 800D3674 000D0474  38 C5 66 10 */	addi r6, r5, lbl_80266610@l
+/* 800D3674 000D0474  38 C5 66 10 */	addi r6, r5, l_6610__esc__2_stringBase0@l
 /* 800D3678 000D0478  93 E1 01 1C */	stw r31, 0x11c(r1)
 /* 800D367C 000D047C  93 C1 01 18 */	stw r30, 0x118(r1)
 /* 800D3680 000D0480  7C 9E 23 78 */	mr r30, r4
@@ -567,24 +567,24 @@ _rwDolphinHeapAlloc__FUl:
 /* 800D384C 000D064C  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 800D3850 000D0650  93 C1 00 08 */	stw r30, 8(r1)
 /* 800D3854 000D0654  7C 7E 1B 78 */	mr r30, r3
-/* 800D3858 000D0658  88 0D 93 2C */	lbz r0, lbl_803CBC2C@sda21(r13)
+/* 800D3858 000D0658  88 0D 93 2C */	lbz r0, l_bc2c_init_esc__6_916@sda21(r13)
 /* 800D385C 000D065C  7C 00 07 75 */	extsb. r0, r0
 /* 800D3860 000D0660  40 82 00 14 */	bne lbl_800D3874
 /* 800D3864 000D0664  38 60 00 00 */	li r3, 0
 /* 800D3868 000D0668  38 00 00 01 */	li r0, 1
-/* 800D386C 000D066C  90 6D 93 28 */	stw r3, lbl_803CBC28@sda21(r13)
-/* 800D3870 000D0670  98 0D 93 2C */	stb r0, lbl_803CBC2C@sda21(r13)
+/* 800D386C 000D066C  90 6D 93 28 */	stw r3, l_bc28_alloc_num_esc__6_915@sda21(r13)
+/* 800D3870 000D0670  98 0D 93 2C */	stb r0, l_bc2c_init_esc__6_916@sda21(r13)
 lbl_800D3874:
 /* 800D3874 000D0674  38 7E 00 20 */	addi r3, r30, 0x20
 /* 800D3878 000D0678  4B FF FE D1 */	bl malloc
 /* 800D387C 000D067C  7C 7F 1B 79 */	or. r31, r3, r3
 /* 800D3880 000D0680  41 82 00 74 */	beq lbl_800D38F4
 /* 800D3884 000D0684  93 DF 00 00 */	stw r30, 0(r31)
-/* 800D3888 000D0688  80 0D 93 28 */	lwz r0, lbl_803CBC28@sda21(r13)
+/* 800D3888 000D0688  80 0D 93 28 */	lwz r0, l_bc28_alloc_num_esc__6_915@sda21(r13)
 /* 800D388C 000D068C  90 1F 00 04 */	stw r0, 4(r31)
-/* 800D3890 000D0690  80 8D 93 28 */	lwz r4, lbl_803CBC28@sda21(r13)
+/* 800D3890 000D0690  80 8D 93 28 */	lwz r4, l_bc28_alloc_num_esc__6_915@sda21(r13)
 /* 800D3894 000D0694  38 04 00 01 */	addi r0, r4, 1
-/* 800D3898 000D0698  90 0D 93 28 */	stw r0, lbl_803CBC28@sda21(r13)
+/* 800D3898 000D0698  90 0D 93 28 */	stw r0, l_bc28_alloc_num_esc__6_915@sda21(r13)
 /* 800D389C 000D069C  80 6D 83 54 */	lwz r3, test_alloc_val@sda21(r13)
 /* 800D38A0 000D06A0  38 03 FF F6 */	addi r0, r3, -10
 /* 800D38A4 000D06A4  7C 04 00 40 */	cmplw r4, r0
@@ -617,7 +617,7 @@ lbl_800D38F4:
 /* 800D3904 000D0704  7C 08 03 A6 */	mtlr r0
 /* 800D3908 000D0708  38 21 00 10 */	addi r1, r1, 0x10
 /* 800D390C 000D070C  4E 80 00 20 */	blr 
-lbl_800D3910:
+l_3910__rwDolphinHeapCalloc__FUlUl:
 /* 800D3910 000D0710  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 800D3914 000D0714  7C 08 02 A6 */	mflr r0
 /* 800D3918 000D0718  90 01 00 14 */	stw r0, 0x14(r1)
@@ -639,7 +639,7 @@ lbl_800D3944:
 /* 800D3954 000D0754  7C 08 03 A6 */	mtlr r0
 /* 800D3958 000D0758  38 21 00 10 */	addi r1, r1, 0x10
 /* 800D395C 000D075C  4E 80 00 20 */	blr 
-lbl_800D3960:
+l_3960__rwDolphinHeapRealloc__FPvUl:
 /* 800D3960 000D0760  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 800D3964 000D0764  7C 08 02 A6 */	mflr r0
 /* 800D3968 000D0768  90 01 00 24 */	stw r0, 0x24(r1)
@@ -692,13 +692,13 @@ lbl_800D39E4:
 .global DolphinInitMemorySystem__FP17RwMemoryFunctions
 DolphinInitMemorySystem__FP17RwMemoryFunctions:
 /* 800D3A04 000D0804  3C A0 80 0D */	lis r5, _rwDolphinHeapAlloc__FUl@ha
-/* 800D3A08 000D0808  3C 80 80 0D */	lis r4, lbl_800D3910@ha
+/* 800D3A08 000D0808  3C 80 80 0D */	lis r4, l_3910__rwDolphinHeapCalloc__FUlUl@ha
 /* 800D3A0C 000D080C  38 05 38 40 */	addi r0, r5, _rwDolphinHeapAlloc__FUl@l
-/* 800D3A10 000D0810  3C A0 80 0D */	lis r5, lbl_800D3960@ha
+/* 800D3A10 000D0810  3C A0 80 0D */	lis r5, l_3960__rwDolphinHeapRealloc__FPvUl@ha
 /* 800D3A14 000D0814  90 03 00 00 */	stw r0, 0(r3)
-/* 800D3A18 000D0818  38 04 39 10 */	addi r0, r4, lbl_800D3910@l
+/* 800D3A18 000D0818  38 04 39 10 */	addi r0, r4, l_3910__rwDolphinHeapCalloc__FUlUl@l
 /* 800D3A1C 000D081C  3C 80 80 0D */	lis r4, _rwDolphinHeapFree__FPv@ha
-/* 800D3A20 000D0820  38 A5 39 60 */	addi r5, r5, lbl_800D3960@l
+/* 800D3A20 000D0820  38 A5 39 60 */	addi r5, r5, l_3960__rwDolphinHeapRealloc__FPvUl@l
 /* 800D3A24 000D0824  90 03 00 0C */	stw r0, 0xc(r3)
 /* 800D3A28 000D0828  38 04 37 C0 */	addi r0, r4, _rwDolphinHeapFree__FPv@l
 /* 800D3A2C 000D082C  90 A3 00 08 */	stw r5, 8(r3)
@@ -808,7 +808,7 @@ lbl_800D3B90:
 lbl_800D3B94:
 /* 800D3B94 000D0994  7C A3 2B 78 */	mr r3, r5
 /* 800D3B98 000D0998  4E 80 00 20 */	blr 
-lbl_800D3B9C:
+l_3b9c_dlFopen__FPCcPCc:
 /* 800D3B9C 000D099C  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 800D3BA0 000D09A0  7C 08 02 A6 */	mflr r0
 /* 800D3BA4 000D09A4  90 01 00 24 */	stw r0, 0x24(r1)
@@ -824,7 +824,7 @@ lbl_800D3B9C:
 /* 800D3BCC 000D09CC  48 00 00 E0 */	b lbl_800D3CAC
 lbl_800D3BD0:
 /* 800D3BD0 000D09D0  80 8D 9F 7C */	lwz r4, RwEngineInstance@sda21(r13)
-/* 800D3BD4 000D09D4  80 6D 93 34 */	lwz r3, lbl_803CBC34@sda21(r13)
+/* 800D3BD4 000D09D4  80 6D 93 34 */	lwz r3, l_bc34_FSModuleInfo@sda21(r13)
 /* 800D3BD8 000D09D8  81 84 01 44 */	lwz r12, 0x144(r4)
 /* 800D3BDC 000D09DC  38 03 00 2C */	addi r0, r3, 0x2c
 /* 800D3BE0 000D09E0  7C 64 00 2E */	lwzx r3, r4, r0
@@ -847,7 +847,7 @@ lbl_800D3C14:
 /* 800D3C1C 000D0A1C  40 82 00 2C */	bne lbl_800D3C48
 /* 800D3C20 000D0A20  80 AD 9F 7C */	lwz r5, RwEngineInstance@sda21(r13)
 /* 800D3C24 000D0A24  7F C4 F3 78 */	mr r4, r30
-/* 800D3C28 000D0A28  80 6D 93 34 */	lwz r3, lbl_803CBC34@sda21(r13)
+/* 800D3C28 000D0A28  80 6D 93 34 */	lwz r3, l_bc34_FSModuleInfo@sda21(r13)
 /* 800D3C2C 000D0A2C  81 85 01 48 */	lwz r12, 0x148(r5)
 /* 800D3C30 000D0A30  38 03 00 2C */	addi r0, r3, 0x2c
 /* 800D3C34 000D0A34  7C 65 00 2E */	lwzx r3, r5, r0
@@ -863,7 +863,7 @@ lbl_800D3C48:
 /* 800D3C58 000D0A58  40 82 00 2C */	bne lbl_800D3C84
 /* 800D3C5C 000D0A5C  80 AD 9F 7C */	lwz r5, RwEngineInstance@sda21(r13)
 /* 800D3C60 000D0A60  7F C4 F3 78 */	mr r4, r30
-/* 800D3C64 000D0A64  80 6D 93 34 */	lwz r3, lbl_803CBC34@sda21(r13)
+/* 800D3C64 000D0A64  80 6D 93 34 */	lwz r3, l_bc34_FSModuleInfo@sda21(r13)
 /* 800D3C68 000D0A68  81 85 01 48 */	lwz r12, 0x148(r5)
 /* 800D3C6C 000D0A6C  38 03 00 2C */	addi r0, r3, 0x2c
 /* 800D3C70 000D0A70  7C 65 00 2E */	lwzx r3, r5, r0
@@ -879,9 +879,9 @@ lbl_800D3C84:
 /* 800D3C94 000D0A94  90 BE 28 40 */	stw r5, 0x2840(r30)
 /* 800D3C98 000D0A98  90 9E 28 3C */	stw r4, 0x283c(r30)
 /* 800D3C9C 000D0A9C  90 1E 28 44 */	stw r0, 0x2844(r30)
-/* 800D3CA0 000D0AA0  80 8D 93 30 */	lwz r4, lbl_803CBC30@sda21(r13)
+/* 800D3CA0 000D0AA0  80 8D 93 30 */	lwz r4, l_bc30_FSOpenFiles@sda21(r13)
 /* 800D3CA4 000D0AA4  38 04 00 01 */	addi r0, r4, 1
-/* 800D3CA8 000D0AA8  90 0D 93 30 */	stw r0, lbl_803CBC30@sda21(r13)
+/* 800D3CA8 000D0AA8  90 0D 93 30 */	stw r0, l_bc30_FSOpenFiles@sda21(r13)
 lbl_800D3CAC:
 /* 800D3CAC 000D0AAC  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 800D3CB0 000D0AB0  83 E1 00 1C */	lwz r31, 0x1c(r1)
@@ -890,14 +890,14 @@ lbl_800D3CAC:
 /* 800D3CBC 000D0ABC  7C 08 03 A6 */	mtlr r0
 /* 800D3CC0 000D0AC0  38 21 00 20 */	addi r1, r1, 0x20
 /* 800D3CC4 000D0AC4  4E 80 00 20 */	blr 
-lbl_800D3CC8:
+l_3cc8_dlFclose__FPv:
 /* 800D3CC8 000D0AC8  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 800D3CCC 000D0ACC  7C 08 02 A6 */	mflr r0
 /* 800D3CD0 000D0AD0  90 01 00 14 */	stw r0, 0x14(r1)
 /* 800D3CD4 000D0AD4  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 800D3CD8 000D0AD8  7C 7F 1B 79 */	or. r31, r3, r3
 /* 800D3CDC 000D0ADC  41 82 00 54 */	beq lbl_800D3D30
-/* 800D3CE0 000D0AE0  80 0D 93 30 */	lwz r0, lbl_803CBC30@sda21(r13)
+/* 800D3CE0 000D0AE0  80 0D 93 30 */	lwz r0, l_bc30_FSOpenFiles@sda21(r13)
 /* 800D3CE4 000D0AE4  2C 00 00 00 */	cmpwi r0, 0
 /* 800D3CE8 000D0AE8  41 82 00 48 */	beq lbl_800D3D30
 /* 800D3CEC 000D0AEC  38 7F 28 00 */	addi r3, r31, 0x2800
@@ -906,16 +906,16 @@ lbl_800D3CC8:
 /* 800D3CF8 000D0AF8  41 82 00 38 */	beq lbl_800D3D30
 /* 800D3CFC 000D0AFC  80 AD 9F 7C */	lwz r5, RwEngineInstance@sda21(r13)
 /* 800D3D00 000D0B00  7F E4 FB 78 */	mr r4, r31
-/* 800D3D04 000D0B04  80 6D 93 34 */	lwz r3, lbl_803CBC34@sda21(r13)
+/* 800D3D04 000D0B04  80 6D 93 34 */	lwz r3, l_bc34_FSModuleInfo@sda21(r13)
 /* 800D3D08 000D0B08  81 85 01 48 */	lwz r12, 0x148(r5)
 /* 800D3D0C 000D0B0C  38 03 00 2C */	addi r0, r3, 0x2c
 /* 800D3D10 000D0B10  7C 65 00 2E */	lwzx r3, r5, r0
 /* 800D3D14 000D0B14  7D 89 03 A6 */	mtctr r12
 /* 800D3D18 000D0B18  4E 80 04 21 */	bctrl 
-/* 800D3D1C 000D0B1C  80 8D 93 30 */	lwz r4, lbl_803CBC30@sda21(r13)
+/* 800D3D1C 000D0B1C  80 8D 93 30 */	lwz r4, l_bc30_FSOpenFiles@sda21(r13)
 /* 800D3D20 000D0B20  38 60 00 00 */	li r3, 0
 /* 800D3D24 000D0B24  38 04 FF FF */	addi r0, r4, -1
-/* 800D3D28 000D0B28  90 0D 93 30 */	stw r0, lbl_803CBC30@sda21(r13)
+/* 800D3D28 000D0B28  90 0D 93 30 */	stw r0, l_bc30_FSOpenFiles@sda21(r13)
 /* 800D3D2C 000D0B2C  48 00 00 08 */	b lbl_800D3D34
 lbl_800D3D30:
 /* 800D3D30 000D0B30  38 60 FF FF */	li r3, -1
@@ -925,7 +925,7 @@ lbl_800D3D34:
 /* 800D3D3C 000D0B3C  7C 08 03 A6 */	mtlr r0
 /* 800D3D40 000D0B40  38 21 00 10 */	addi r1, r1, 0x10
 /* 800D3D44 000D0B44  4E 80 00 20 */	blr 
-lbl_800D3D48:
+l_3d48_dlFexist__FPCc:
 /* 800D3D48 000D0B48  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 800D3D4C 000D0B4C  7C 08 02 A6 */	mflr r0
 /* 800D3D50 000D0B50  90 01 00 14 */	stw r0, 0x14(r1)
@@ -933,8 +933,8 @@ lbl_800D3D48:
 /* 800D3D58 000D0B58  7C 7F 1B 78 */	mr r31, r3
 /* 800D3D5C 000D0B5C  48 15 B9 41 */	bl RwOsGetFileInterface
 /* 800D3D60 000D0B60  81 83 00 04 */	lwz r12, 4(r3)
-/* 800D3D64 000D0B64  3C 60 80 26 */	lis r3, lbl_80266610@ha
-/* 800D3D68 000D0B68  38 83 66 10 */	addi r4, r3, lbl_80266610@l
+/* 800D3D64 000D0B64  3C 60 80 26 */	lis r3, l_6610__esc__2_stringBase0@ha
+/* 800D3D68 000D0B68  38 83 66 10 */	addi r4, r3, l_6610__esc__2_stringBase0@l
 /* 800D3D6C 000D0B6C  7F E3 FB 78 */	mr r3, r31
 /* 800D3D70 000D0B70  38 84 01 93 */	addi r4, r4, 0x193
 /* 800D3D74 000D0B74  7D 89 03 A6 */	mtctr r12
@@ -1110,7 +1110,7 @@ lbl_800D3FC8:
 /* 800D3FD0 000D0DD0  7C 08 03 A6 */	mtlr r0
 /* 800D3FD4 000D0DD4  38 21 00 30 */	addi r1, r1, 0x30
 /* 800D3FD8 000D0DD8  4E 80 00 20 */	blr 
-lbl_800D3FDC:
+l_3fdc_dlFwrite__FPCvUlUlPv:
 /* 800D3FDC 000D0DDC  38 60 00 00 */	li r3, 0
 /* 800D3FE0 000D0DE0  4E 80 00 20 */	blr 
 
@@ -1230,7 +1230,7 @@ lbl_800D416C:
 /* 800D417C 000D0F7C  7C 08 03 A6 */	mtlr r0
 /* 800D4180 000D0F80  38 21 00 20 */	addi r1, r1, 0x20
 /* 800D4184 000D0F84  4E 80 00 20 */	blr 
-lbl_800D4188:
+l_4188_dlFgets__FPciPv:
 /* 800D4188 000D0F88  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 800D418C 000D0F8C  7C 08 02 A6 */	mflr r0
 /* 800D4190 000D0F90  90 01 00 24 */	stw r0, 0x24(r1)
@@ -1303,10 +1303,10 @@ lbl_800D4278:
 /* 800D4280 000D1080  7C 08 03 A6 */	mtlr r0
 /* 800D4284 000D1084  38 21 00 20 */	addi r1, r1, 0x20
 /* 800D4288 000D1088  4E 80 00 20 */	blr 
-lbl_800D428C:
+l_428c_dlFputs__FPCcPv:
 /* 800D428C 000D108C  38 60 FF FF */	li r3, -1
 /* 800D4290 000D1090  4E 80 00 20 */	blr 
-lbl_800D4294:
+l_4294_dlFeof__FPv:
 /* 800D4294 000D1094  80 83 28 3C */	lwz r4, 0x283c(r3)
 /* 800D4298 000D1098  80 63 28 40 */	lwz r3, 0x2840(r3)
 /* 800D429C 000D109C  7C 03 20 50 */	subf r0, r3, r4
@@ -1315,13 +1315,13 @@ lbl_800D4294:
 /* 800D42A8 000D10A8  7C 00 18 50 */	subf r0, r0, r3
 /* 800D42AC 000D10AC  54 03 0F FE */	srwi r3, r0, 0x1f
 /* 800D42B0 000D10B0  4E 80 00 20 */	blr 
-lbl_800D42B4:
+l_42b4_dlFflush__FPv:
 /* 800D42B4 000D10B4  38 60 00 00 */	li r3, 0
 /* 800D42B8 000D10B8  4E 80 00 20 */	blr 
-lbl_800D42BC:
+l_42bc_dlFtell__FPv:
 /* 800D42BC 000D10BC  80 63 28 3C */	lwz r3, 0x283c(r3)
 /* 800D42C0 000D10C0  4E 80 00 20 */	blr 
-lbl_800D42C4:
+l_42c4__rwDolphinFSOpen__FPvii:
 /* 800D42C4 000D10C4  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 800D42C8 000D10C8  7C 08 02 A6 */	mflr r0
 /* 800D42CC 000D10CC  38 A0 00 20 */	li r5, 0x20
@@ -1330,14 +1330,14 @@ lbl_800D42C4:
 /* 800D42D8 000D10D8  93 C1 00 08 */	stw r30, 8(r1)
 /* 800D42DC 000D10DC  7C 7E 1B 78 */	mr r30, r3
 /* 800D42E0 000D10E0  38 60 28 4C */	li r3, 0x284c
-/* 800D42E4 000D10E4  90 8D 93 34 */	stw r4, lbl_803CBC34@sda21(r13)
+/* 800D42E4 000D10E4  90 8D 93 34 */	stw r4, l_bc34_FSModuleInfo@sda21(r13)
 /* 800D42E8 000D10E8  38 80 00 05 */	li r4, 5
 /* 800D42EC 000D10EC  48 15 CF F5 */	bl RwFreeListCreate
-/* 800D42F0 000D10F0  80 8D 93 34 */	lwz r4, lbl_803CBC34@sda21(r13)
+/* 800D42F0 000D10F0  80 8D 93 34 */	lwz r4, l_bc34_FSModuleInfo@sda21(r13)
 /* 800D42F4 000D10F4  80 AD 9F 7C */	lwz r5, RwEngineInstance@sda21(r13)
 /* 800D42F8 000D10F8  38 04 00 2C */	addi r0, r4, 0x2c
 /* 800D42FC 000D10FC  7C 65 01 2E */	stwx r3, r5, r0
-/* 800D4300 000D1100  80 6D 93 34 */	lwz r3, lbl_803CBC34@sda21(r13)
+/* 800D4300 000D1100  80 6D 93 34 */	lwz r3, l_bc34_FSModuleInfo@sda21(r13)
 /* 800D4304 000D1104  80 8D 9F 7C */	lwz r4, RwEngineInstance@sda21(r13)
 /* 800D4308 000D1108  38 03 00 2C */	addi r0, r3, 0x2c
 /* 800D430C 000D110C  7C 04 00 2E */	lwzx r0, r4, r0
@@ -1349,40 +1349,40 @@ lbl_800D4320:
 /* 800D4320 000D1120  48 15 B3 7D */	bl RwOsGetFileInterface
 /* 800D4324 000D1124  80 AD 9F 7C */	lwz r5, RwEngineInstance@sda21(r13)
 /* 800D4328 000D1128  7C 7F 1B 78 */	mr r31, r3
-/* 800D432C 000D112C  80 0D 93 34 */	lwz r0, lbl_803CBC34@sda21(r13)
+/* 800D432C 000D112C  80 0D 93 34 */	lwz r0, l_bc34_FSModuleInfo@sda21(r13)
 /* 800D4330 000D1130  7F E4 FB 78 */	mr r4, r31
 /* 800D4334 000D1134  7C 65 02 14 */	add r3, r5, r0
 /* 800D4338 000D1138  48 00 00 B5 */	bl __as__15RwFileFunctionsFRC15RwFileFunctions
-/* 800D433C 000D113C  3C 80 80 0D */	lis r4, lbl_800D3D48@ha
-/* 800D4340 000D1140  3C 60 80 0D */	lis r3, lbl_800D3B9C@ha
-/* 800D4344 000D1144  38 04 3D 48 */	addi r0, r4, lbl_800D3D48@l
-/* 800D4348 000D1148  3C A0 80 0D */	lis r5, lbl_800D3CC8@ha
+/* 800D433C 000D113C  3C 80 80 0D */	lis r4, l_3d48_dlFexist__FPCc@ha
+/* 800D4340 000D1140  3C 60 80 0D */	lis r3, l_3b9c_dlFopen__FPCcPCc@ha
+/* 800D4344 000D1144  38 04 3D 48 */	addi r0, r4, l_3d48_dlFexist__FPCc@l
+/* 800D4348 000D1148  3C A0 80 0D */	lis r5, l_3cc8_dlFclose__FPv@ha
 /* 800D434C 000D114C  90 1F 00 00 */	stw r0, 0(r31)
-/* 800D4350 000D1150  38 03 3B 9C */	addi r0, r3, lbl_800D3B9C@l
+/* 800D4350 000D1150  38 03 3B 9C */	addi r0, r3, l_3b9c_dlFopen__FPCcPCc@l
 /* 800D4354 000D1154  3C 80 80 0D */	lis r4, dlFread__FPvUlUlPv@ha
-/* 800D4358 000D1158  3C 60 80 0D */	lis r3, lbl_800D3FDC@ha
+/* 800D4358 000D1158  3C 60 80 0D */	lis r3, l_3fdc_dlFwrite__FPCvUlUlPv@ha
 /* 800D435C 000D115C  90 1F 00 04 */	stw r0, 4(r31)
-/* 800D4360 000D1160  38 05 3C C8 */	addi r0, r5, lbl_800D3CC8@l
-/* 800D4364 000D1164  3D 00 80 0D */	lis r8, lbl_800D4188@ha
-/* 800D4368 000D1168  3C E0 80 0D */	lis r7, lbl_800D428C@ha
+/* 800D4360 000D1160  38 05 3C C8 */	addi r0, r5, l_3cc8_dlFclose__FPv@l
+/* 800D4364 000D1164  3D 00 80 0D */	lis r8, l_4188_dlFgets__FPciPv@ha
+/* 800D4368 000D1168  3C E0 80 0D */	lis r7, l_428c_dlFputs__FPCcPv@ha
 /* 800D436C 000D116C  90 1F 00 08 */	stw r0, 8(r31)
 /* 800D4370 000D1170  38 04 3D B8 */	addi r0, r4, dlFread__FPvUlUlPv@l
-/* 800D4374 000D1174  3C C0 80 0D */	lis r6, lbl_800D4294@ha
+/* 800D4374 000D1174  3C C0 80 0D */	lis r6, l_4294_dlFeof__FPv@ha
 /* 800D4378 000D1178  3C A0 80 0D */	lis r5, dlFseek__FPvli@ha
 /* 800D437C 000D117C  90 1F 00 0C */	stw r0, 0xc(r31)
-/* 800D4380 000D1180  38 03 3F DC */	addi r0, r3, lbl_800D3FDC@l
-/* 800D4384 000D1184  3C 80 80 0D */	lis r4, lbl_800D42B4@ha
-/* 800D4388 000D1188  3C 60 80 0D */	lis r3, lbl_800D42BC@ha
+/* 800D4380 000D1180  38 03 3F DC */	addi r0, r3, l_3fdc_dlFwrite__FPCvUlUlPv@l
+/* 800D4384 000D1184  3C 80 80 0D */	lis r4, l_42b4_dlFflush__FPv@ha
+/* 800D4388 000D1188  3C 60 80 0D */	lis r3, l_42bc_dlFtell__FPv@ha
 /* 800D438C 000D118C  90 1F 00 10 */	stw r0, 0x10(r31)
-/* 800D4390 000D1190  38 08 41 88 */	addi r0, r8, lbl_800D4188@l
-/* 800D4394 000D1194  39 07 42 8C */	addi r8, r7, lbl_800D428C@l
-/* 800D4398 000D1198  38 E6 42 94 */	addi r7, r6, lbl_800D4294@l
+/* 800D4390 000D1190  38 08 41 88 */	addi r0, r8, l_4188_dlFgets__FPciPv@l
+/* 800D4394 000D1194  39 07 42 8C */	addi r8, r7, l_428c_dlFputs__FPCcPv@l
+/* 800D4398 000D1198  38 E6 42 94 */	addi r7, r6, l_4294_dlFeof__FPv@l
 /* 800D439C 000D119C  90 1F 00 14 */	stw r0, 0x14(r31)
 /* 800D43A0 000D11A0  38 C5 3F E4 */	addi r6, r5, dlFseek__FPvli@l
-/* 800D43A4 000D11A4  38 84 42 B4 */	addi r4, r4, lbl_800D42B4@l
-/* 800D43A8 000D11A8  38 03 42 BC */	addi r0, r3, lbl_800D42BC@l
+/* 800D43A4 000D11A4  38 84 42 B4 */	addi r4, r4, l_42b4_dlFflush__FPv@l
+/* 800D43A8 000D11A8  38 03 42 BC */	addi r0, r3, l_42bc_dlFtell__FPv@l
 /* 800D43AC 000D11AC  91 1F 00 18 */	stw r8, 0x18(r31)
-/* 800D43B0 000D11B0  38 AD 93 34 */	addi r5, r13, lbl_803CBC34@sda21
+/* 800D43B0 000D11B0  38 AD 93 34 */	addi r5, r13, l_bc34_FSModuleInfo@sda21
 /* 800D43B4 000D11B4  7F C3 F3 78 */	mr r3, r30
 /* 800D43B8 000D11B8  90 FF 00 1C */	stw r7, 0x1c(r31)
 /* 800D43BC 000D11BC  90 DF 00 20 */	stw r6, 0x20(r31)
@@ -1424,7 +1424,7 @@ __as__15RwFileFunctionsFRC15RwFileFunctions:
 /* 800D443C 000D123C  90 A3 00 24 */	stw r5, 0x24(r3)
 /* 800D4440 000D1240  90 03 00 28 */	stw r0, 0x28(r3)
 /* 800D4444 000D1244  4E 80 00 20 */	blr 
-lbl_800D4448:
+l_4448__rwDolphinFSClose__FPvii:
 /* 800D4448 000D1248  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 800D444C 000D124C  7C 08 02 A6 */	mflr r0
 /* 800D4450 000D1250  90 01 00 14 */	stw r0, 0x14(r1)
@@ -1432,15 +1432,15 @@ lbl_800D4448:
 /* 800D4458 000D1258  7C 7F 1B 78 */	mr r31, r3
 /* 800D445C 000D125C  48 15 B2 41 */	bl RwOsGetFileInterface
 /* 800D4460 000D1260  80 8D 9F 7C */	lwz r4, RwEngineInstance@sda21(r13)
-/* 800D4464 000D1264  80 0D 93 34 */	lwz r0, lbl_803CBC34@sda21(r13)
+/* 800D4464 000D1264  80 0D 93 34 */	lwz r0, l_bc34_FSModuleInfo@sda21(r13)
 /* 800D4468 000D1268  7C 84 02 14 */	add r4, r4, r0
 /* 800D446C 000D126C  4B FF FF 81 */	bl __as__15RwFileFunctionsFRC15RwFileFunctions
-/* 800D4470 000D1270  80 6D 93 34 */	lwz r3, lbl_803CBC34@sda21(r13)
+/* 800D4470 000D1270  80 6D 93 34 */	lwz r3, l_bc34_FSModuleInfo@sda21(r13)
 /* 800D4474 000D1274  80 8D 9F 7C */	lwz r4, RwEngineInstance@sda21(r13)
 /* 800D4478 000D1278  38 03 00 2C */	addi r0, r3, 0x2c
 /* 800D447C 000D127C  7C 64 00 2E */	lwzx r3, r4, r0
 /* 800D4480 000D1280  48 15 CF 61 */	bl RwFreeListDestroy
-/* 800D4484 000D1284  38 AD 93 34 */	addi r5, r13, lbl_803CBC34@sda21
+/* 800D4484 000D1284  38 AD 93 34 */	addi r5, r13, l_bc34_FSModuleInfo@sda21
 /* 800D4488 000D1288  7F E3 FB 78 */	mr r3, r31
 /* 800D448C 000D128C  80 85 00 04 */	lwz r4, 4(r5)
 /* 800D4490 000D1290  38 04 FF FF */	addi r0, r4, -1
@@ -1456,11 +1456,11 @@ DolphinInstallFileSystem__Fv:
 /* 800D44B0 000D12B0  7C 08 02 A6 */	mflr r0
 /* 800D44B4 000D12B4  90 01 00 14 */	stw r0, 0x14(r1)
 /* 800D44B8 000D12B8  48 0E FC 75 */	bl DVDInit
-/* 800D44BC 000D12BC  3C 80 80 0D */	lis r4, lbl_800D42C4@ha
-/* 800D44C0 000D12C0  3C 60 80 0D */	lis r3, lbl_800D4448@ha
-/* 800D44C4 000D12C4  38 A4 42 C4 */	addi r5, r4, lbl_800D42C4@l
-/* 800D44C8 000D12C8  80 8D 83 58 */	lwz r4, lbl_803CAC58@sda21(r13)
-/* 800D44CC 000D12CC  38 C3 44 48 */	addi r6, r3, lbl_800D4448@l
+/* 800D44BC 000D12BC  3C 80 80 0D */	lis r4, l_42c4__rwDolphinFSOpen__FPvii@ha
+/* 800D44C0 000D12C0  3C 60 80 0D */	lis r3, l_4448__rwDolphinFSClose__FPvii@ha
+/* 800D44C4 000D12C4  38 A4 42 C4 */	addi r5, r4, l_42c4__rwDolphinFSOpen__FPvii@l
+/* 800D44C8 000D12C8  80 8D 83 58 */	lwz r4, l_ac58_rwID_DOLPHINDEVICEMODULE@sda21(r13)
+/* 800D44CC 000D12CC  38 C3 44 48 */	addi r6, r3, l_4448__rwDolphinFSClose__FPvii@l
 /* 800D44D0 000D12D0  38 60 00 30 */	li r3, 0x30
 /* 800D44D4 000D12D4  48 16 38 91 */	bl RwEngineRegisterPlugin
 /* 800D44D8 000D12D8  54 60 0F FE */	srwi r0, r3, 0x1f
@@ -1470,7 +1470,7 @@ DolphinInstallFileSystem__Fv:
 /* 800D44E8 000D12E8  38 21 00 10 */	addi r1, r1, 0x10
 /* 800D44EC 000D12EC  4E 80 00 20 */	blr 
 .section .rodata
-lbl_80266610:
+l_6610__esc__2_stringBase0:
 	.4byte 0x4C657665
 	.4byte 0x6C202564
 	.4byte 0x2C205761
@@ -1615,17 +1615,17 @@ lbl_80266610:
 	.4byte 0x79200000
 
 .section .bss
-lbl_80312140:
+l_2140_MemoryFunctions:
 	.skip 0x10
 
 .section .sbss
-lbl_803CBC28:
+l_bc28_alloc_num_esc__6_915:
 	.skip 0x4
-lbl_803CBC2C:
+l_bc2c_init_esc__6_916:
 	.skip 0x4
-lbl_803CBC30:
+l_bc30_FSOpenFiles:
 	.skip 0x4
-lbl_803CBC34:
+l_bc34_FSModuleInfo:
 	.skip 0xC
 /* SPECULATION: link order */
 .global sStartupTime
@@ -1637,7 +1637,7 @@ lbl_803CBC44:
 	.skip 0x4
 
 .section .sdata
-lbl_803CAC58:
+l_ac58_rwID_DOLPHINDEVICEMODULE:
 	.4byte 0x00000430
 	.4byte 0x00000000
 /* SPECULATION: link order */

@@ -39,13 +39,13 @@ ZNPC_SubBoss_Shutdown__Fv:
 .global zNPCSubBoss_ScenePrepare__Fv
 zNPCSubBoss_ScenePrepare__Fv:
 /* 80135F0C 00132D0C  38 00 00 01 */	li r0, 1
-/* 80135F10 00132D10  90 0D 96 38 */	stw r0, lbl_803CBF38@sda21(r13)
+/* 80135F10 00132D10  90 0D 96 38 */	stw r0, l_bf38_g_contract_for_hire@sda21(r13)
 /* 80135F14 00132D14  4E 80 00 20 */	blr 
 
 .global zNPCSubBoss_SceneFinish__Fv
 zNPCSubBoss_SceneFinish__Fv:
 /* 80135F18 00132D18  38 00 00 00 */	li r0, 0
-/* 80135F1C 00132D1C  90 0D 96 38 */	stw r0, lbl_803CBF38@sda21(r13)
+/* 80135F1C 00132D1C  90 0D 96 38 */	stw r0, l_bf38_g_contract_for_hire@sda21(r13)
 /* 80135F20 00132D20  4E 80 00 20 */	blr 
 .global ZNPC_Create_SubBoss__FiP10RyzMemGrowPv
 ZNPC_Create_SubBoss__FiP10RyzMemGrowPv:
@@ -144,11 +144,11 @@ Setup__11zNPCSubBossFv:
 /* 80136054 00132E54  7C 08 02 A6 */	mflr r0
 /* 80136058 00132E58  90 01 00 14 */	stw r0, 0x14(r1)
 /* 8013605C 00132E5C  4B FB 94 05 */	bl Setup__10zNPCCommonFv
-/* 80136060 00132E60  80 0D 96 38 */	lwz r0, lbl_803CBF38@sda21(r13)
+/* 80136060 00132E60  80 0D 96 38 */	lwz r0, l_bf38_g_contract_for_hire@sda21(r13)
 /* 80136064 00132E64  2C 00 00 00 */	cmpwi r0, 0
 /* 80136068 00132E68  41 82 00 10 */	beq lbl_80136078
 /* 8013606C 00132E6C  38 00 00 00 */	li r0, 0
-/* 80136070 00132E70  90 0D 96 38 */	stw r0, lbl_803CBF38@sda21(r13)
+/* 80136070 00132E70  90 0D 96 38 */	stw r0, l_bf38_g_contract_for_hire@sda21(r13)
 /* 80136074 00132E74  48 00 00 15 */	bl SUBB_InitEffects__Fv
 lbl_80136078:
 /* 80136078 00132E78  80 01 00 14 */	lwz r0, 0x14(r1)
@@ -160,14 +160,14 @@ lbl_80136078:
 SUBB_InitEffects__Fv:
 /* 80136088 00132E88  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8013608C 00132E8C  7C 08 02 A6 */	mflr r0
-/* 80136090 00132E90  3C 60 80 27 */	lis r3, lbl_8026CAA8@ha
-/* 80136094 00132E94  38 63 CA A8 */	addi r3, r3, lbl_8026CAA8@l
+/* 80136090 00132E90  3C 60 80 27 */	lis r3, l_caa8__esc__2_stringBase0@ha
+/* 80136094 00132E94  38 63 CA A8 */	addi r3, r3, l_caa8__esc__2_stringBase0@l
 /* 80136098 00132E98  90 01 00 14 */	stw r0, 0x14(r1)
 /* 8013609C 00132E9C  38 63 00 FE */	addi r3, r3, 0xfe
 /* 801360A0 00132EA0  4B F7 27 A5 */	bl zParEmitterFind__FPCc
-/* 801360A4 00132EA4  3C 80 80 32 */	lis r4, lbl_803242F8@ha
-/* 801360A8 00132EA8  90 6D 96 3C */	stw r3, lbl_803CBF3C@sda21(r13)
-/* 801360AC 00132EAC  38 64 42 F8 */	addi r3, r4, lbl_803242F8@l
+/* 801360A4 00132EA4  3C 80 80 32 */	lis r4, l_42f8_g_parf_holder@ha
+/* 801360A8 00132EA8  90 6D 96 3C */	stw r3, l_bf3c_g_pemit_holder@sda21(r13)
+/* 801360AC 00132EAC  38 64 42 F8 */	addi r3, r4, l_42f8_g_parf_holder@l
 /* 801360B0 00132EB0  38 00 01 00 */	li r0, 0x100
 /* 801360B4 00132EB4  90 03 01 38 */	stw r0, 0x138(r3)
 /* 801360B8 00132EB8  80 01 00 14 */	lwz r0, 0x14(r1)
@@ -213,8 +213,8 @@ PhysicsFlags__11zNPCSubBossCFv:
 /* 80136124 00132F24  38 60 00 03 */	li r3, 3
 /* 80136128 00132F28  4E 80 00 20 */	blr 
 .section .rodata
-.global lbl_8026CAA8
-lbl_8026CAA8:
+.global l_caa8__esc__2_stringBase0
+l_caa8__esc__2_stringBase0:
 	.4byte 0x556E6B6E
 	.4byte 0x6F776E00
 	.4byte 0x49646C65
@@ -285,11 +285,11 @@ lbl_8026CAA8:
 	.4byte 0x00000000
 
 .section .bss
-lbl_803242F8:
+l_42f8_g_parf_holder:
 	.skip 0x170
 
 .section .sbss
-lbl_803CBF38:
+l_bf38_g_contract_for_hire:
 	.skip 0x4
-lbl_803CBF3C:
+l_bf3c_g_pemit_holder:
 	.skip 0x4

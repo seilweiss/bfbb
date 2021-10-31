@@ -9,7 +9,7 @@ GetRandomizedTime__FP11xTimerAsset:
 /* 8004D1FC 00049FFC  93 E1 00 1C */	stw r31, 0x1c(r1)
 /* 8004D200 0004A000  93 C1 00 18 */	stw r30, 0x18(r1)
 /* 8004D204 0004A004  7C 7E 1B 78 */	mr r30, r3
-/* 8004D208 0004A008  C0 22 87 98 */	lfs f1, lbl_803CD118@sda21(r2)
+/* 8004D208 0004A008  C0 22 87 98 */	lfs f1, l_d118__esc__2_669@sda21(r2)
 /* 8004D20C 0004A00C  C0 03 00 0C */	lfs f0, 0xc(r3)
 /* 8004D210 0004A010  EC 21 00 32 */	fmuls f1, f1, f0
 /* 8004D214 0004A014  48 1A 01 C9 */	bl __cvt_fp2unsigned
@@ -23,8 +23,8 @@ lbl_8004D228:
 /* 8004D230 0004A030  3C 00 43 30 */	lis r0, 0x4330
 /* 8004D234 0004A034  7C 83 2B 96 */	divwu r4, r3, r5
 /* 8004D238 0004A038  90 01 00 08 */	stw r0, 8(r1)
-/* 8004D23C 0004A03C  C8 42 87 A0 */	lfd f2, lbl_803CD120@sda21(r2)
-/* 8004D240 0004A040  C0 02 87 98 */	lfs f0, lbl_803CD118@sda21(r2)
+/* 8004D23C 0004A03C  C8 42 87 A0 */	lfd f2, l_d120__esc__2_671@sda21(r2)
+/* 8004D240 0004A040  C0 02 87 98 */	lfs f0, l_d118__esc__2_669@sda21(r2)
 /* 8004D244 0004A044  C0 7E 00 08 */	lfs f3, 8(r30)
 /* 8004D248 0004A048  7C 04 29 D6 */	mullw r0, r4, r5
 /* 8004D24C 0004A04C  7C 00 18 50 */	subf r0, r0, r3
@@ -82,9 +82,9 @@ lbl_8004D2DC:
 /* 8004D300 0004A100  41 80 00 CC */	blt lbl_8004D3CC
 /* 8004D304 0004A104  2C 00 00 00 */	cmpwi r0, 0
 /* 8004D308 0004A108  41 82 00 C4 */	beq lbl_8004D3CC
-/* 8004D30C 0004A10C  3C 80 80 29 */	lis r4, lbl_8028A258@ha
+/* 8004D30C 0004A10C  3C 80 80 29 */	lis r4, l_a258_sPauseTimerHash@ha
 /* 8004D310 0004A110  38 00 00 02 */	li r0, 2
-/* 8004D314 0004A114  38 84 A2 58 */	addi r4, r4, lbl_8028A258@l
+/* 8004D314 0004A114  38 84 A2 58 */	addi r4, r4, l_a258_sPauseTimerHash@l
 /* 8004D318 0004A118  38 A0 00 00 */	li r5, 0
 /* 8004D31C 0004A11C  7C 09 03 A6 */	mtctr r0
 lbl_8004D320:
@@ -333,7 +333,7 @@ lbl_8004D660:
 /* 8004D664 0004A464  EC 00 F8 28 */	fsubs f0, f0, f31
 /* 8004D668 0004A468  D0 1F 00 18 */	stfs f0, 0x18(r31)
 /* 8004D66C 0004A46C  C0 3F 00 18 */	lfs f1, 0x18(r31)
-/* 8004D670 0004A470  C0 02 87 A8 */	lfs f0, lbl_803CD128@sda21(r2)
+/* 8004D670 0004A470  C0 02 87 A8 */	lfs f0, l_d128__esc__2_743@sda21(r2)
 /* 8004D674 0004A474  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 8004D678 0004A478  4C 40 13 82 */	cror 2, 0, 2
 /* 8004D67C 0004A47C  40 82 00 14 */	bne lbl_8004D690
@@ -351,7 +351,7 @@ lbl_8004D690:
 /* 8004D6A8 0004A4A8  4E 80 00 20 */	blr 
 
 .section .data
-lbl_8028A258:
+l_a258_sPauseTimerHash:
 	.4byte 0xBC345600
 	.4byte 0xBC345609
 	.4byte 0xBC345683
@@ -374,12 +374,12 @@ lbl_8028A258:
 	.4byte 0xBC345AA4
 
 .section .sdata2
-lbl_803CD118:
+l_d118__esc__2_669:
 	.4byte 0x447A0000
 	.4byte 0x00000000
-lbl_803CD120:
+l_d120__esc__2_671:
 	.4byte 0x43300000
 	.4byte 0x80000000
-lbl_803CD128:
+l_d128__esc__2_743:
 	.4byte 0x00000000
 	.4byte 0x00000000

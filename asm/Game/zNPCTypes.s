@@ -44,9 +44,9 @@ zNPCTypes_ShutdownTypes__Fv:
 zNPCTypes_RegisterTypes__FP8xFactory:
 /* 800EEDF4 000EBBF4  94 21 FC A0 */	stwu r1, -0x360(r1)
 /* 800EEDF8 000EBBF8  7C 08 02 A6 */	mflr r0
-/* 800EEDFC 000EBBFC  3C 80 80 27 */	lis r4, lbl_802688D0@ha
+/* 800EEDFC 000EBBFC  3C 80 80 27 */	lis r4, l_88d0__esc__2_797@ha
 /* 800EEE00 000EBC00  90 01 03 64 */	stw r0, 0x364(r1)
-/* 800EEE04 000EBC04  38 84 88 D0 */	addi r4, r4, lbl_802688D0@l
+/* 800EEE04 000EBC04  38 84 88 D0 */	addi r4, r4, l_88d0__esc__2_797@l
 /* 800EEE08 000EBC08  38 00 00 6A */	li r0, 0x6a
 /* 800EEE0C 000EBC0C  38 C1 00 04 */	addi r6, r1, 4
 /* 800EEE10 000EBC10  38 A4 FF FC */	addi r5, r4, -4
@@ -66,7 +66,7 @@ lbl_800EEE18:
 /* 800EEE44 000EBC44  38 21 03 60 */	addi r1, r1, 0x360
 /* 800EEE48 000EBC48  4E 80 00 20 */	blr 
 .section .rodata
-lbl_802688D0:
+l_88d0__esc__2_797:
 	.4byte 0x4E543031
 	.4byte ZNPC_Create_Common__FiP10RyzMemGrowPv /* 0x800EEE4C */
 	.4byte ZNPC_Destroy_Common__FP12xFactoryInst /* 0x800EEEC0 */

@@ -28,15 +28,15 @@ zVolumeInit__Fv:
 /* 800BE4BC 000BB2BC  93 E1 00 1C */	stw r31, 0x1c(r1)
 /* 800BE4C0 000BB2C0  93 C1 00 18 */	stw r30, 0x18(r1)
 /* 800BE4C4 000BB2C4  4B F8 D3 55 */	bl xSTAssetCountByType__FUi
-/* 800BE4C8 000BB2C8  B0 6D 91 74 */	sth r3, lbl_803CBA74@sda21(r13)
-/* 800BE4CC 000BB2CC  A0 0D 91 74 */	lhz r0, lbl_803CBA74@sda21(r13)
+/* 800BE4C8 000BB2C8  B0 6D 91 74 */	sth r3, l_ba74_nvols@sda21(r13)
+/* 800BE4CC 000BB2CC  A0 0D 91 74 */	lhz r0, l_ba74_nvols@sda21(r13)
 /* 800BE4D0 000BB2D0  28 00 00 00 */	cmplwi r0, 0
 /* 800BE4D4 000BB2D4  41 82 00 64 */	beq lbl_800BE538
 /* 800BE4D8 000BB2D8  1C 80 00 14 */	mulli r4, r0, 0x14
 /* 800BE4DC 000BB2DC  80 6D 89 E0 */	lwz r3, gActiveHeap@sda21(r13)
 /* 800BE4E0 000BB2E0  38 A0 00 00 */	li r5, 0
 /* 800BE4E4 000BB2E4  4B F7 54 5D */	bl xMemAlloc__FUiUii
-/* 800BE4E8 000BB2E8  90 6D 91 70 */	stw r3, lbl_803CBA70@sda21(r13)
+/* 800BE4E8 000BB2E8  90 6D 91 70 */	stw r3, l_ba70_vols@sda21(r13)
 /* 800BE4EC 000BB2EC  3B C0 00 00 */	li r30, 0
 /* 800BE4F0 000BB2F0  3F E0 56 4F */	lis r31, 0x564f
 /* 800BE4F4 000BB2F4  48 00 00 30 */	b lbl_800BE524
@@ -46,21 +46,21 @@ lbl_800BE4F8:
 /* 800BE500 000BB300  38 A1 00 08 */	addi r5, r1, 8
 /* 800BE504 000BB304  4B F8 D3 9D */	bl xSTFindAssetByType__FUiiPUi
 /* 800BE508 000BB308  57 C0 04 3E */	clrlwi r0, r30, 0x10
-/* 800BE50C 000BB30C  80 AD 91 70 */	lwz r5, lbl_803CBA70@sda21(r13)
+/* 800BE50C 000BB30C  80 AD 91 70 */	lwz r5, l_ba70_vols@sda21(r13)
 /* 800BE510 000BB310  1C 00 00 14 */	mulli r0, r0, 0x14
 /* 800BE514 000BB314  7C 64 1B 78 */	mr r4, r3
 /* 800BE518 000BB318  7C 65 02 14 */	add r3, r5, r0
 /* 800BE51C 000BB31C  4B FF FF 55 */	bl zVolumeInit__FP7zVolumeP12xVolumeAsset
 /* 800BE520 000BB320  3B DE 00 01 */	addi r30, r30, 1
 lbl_800BE524:
-/* 800BE524 000BB324  A0 0D 91 74 */	lhz r0, lbl_803CBA74@sda21(r13)
+/* 800BE524 000BB324  A0 0D 91 74 */	lhz r0, l_ba74_nvols@sda21(r13)
 /* 800BE528 000BB328  57 C3 04 3E */	clrlwi r3, r30, 0x10
 /* 800BE52C 000BB32C  7C 03 00 40 */	cmplw r3, r0
 /* 800BE530 000BB330  41 80 FF C8 */	blt lbl_800BE4F8
 /* 800BE534 000BB334  48 00 00 0C */	b lbl_800BE540
 lbl_800BE538:
 /* 800BE538 000BB338  38 00 00 00 */	li r0, 0
-/* 800BE53C 000BB33C  90 0D 91 70 */	stw r0, lbl_803CBA70@sda21(r13)
+/* 800BE53C 000BB33C  90 0D 91 70 */	stw r0, l_ba70_vols@sda21(r13)
 lbl_800BE540:
 /* 800BE540 000BB340  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 800BE544 000BB344  83 E1 00 1C */	lwz r31, 0x1c(r1)
@@ -80,7 +80,7 @@ zVolumeSetup__Fv:
 /* 800BE570 000BB370  3B C0 00 00 */	li r30, 0
 /* 800BE574 000BB374  48 00 00 20 */	b lbl_800BE594
 lbl_800BE578:
-/* 800BE578 000BB378  80 6D 91 70 */	lwz r3, lbl_803CBA70@sda21(r13)
+/* 800BE578 000BB378  80 6D 91 70 */	lwz r3, l_ba70_vols@sda21(r13)
 /* 800BE57C 000BB37C  38 1F 00 10 */	addi r0, r31, 0x10
 /* 800BE580 000BB380  7C 63 00 2E */	lwzx r3, r3, r0
 /* 800BE584 000BB384  38 63 00 0C */	addi r3, r3, 0xc
@@ -88,7 +88,7 @@ lbl_800BE578:
 /* 800BE58C 000BB38C  3B FF 00 14 */	addi r31, r31, 0x14
 /* 800BE590 000BB390  3B DE 00 01 */	addi r30, r30, 1
 lbl_800BE594:
-/* 800BE594 000BB394  A0 0D 91 74 */	lhz r0, lbl_803CBA74@sda21(r13)
+/* 800BE594 000BB394  A0 0D 91 74 */	lhz r0, l_ba74_nvols@sda21(r13)
 /* 800BE598 000BB398  7C 1E 00 40 */	cmplw r30, r0
 /* 800BE59C 000BB39C  41 80 FF DC */	blt lbl_800BE578
 /* 800BE5A0 000BB3A0  80 01 00 14 */	lwz r0, 0x14(r1)
@@ -101,7 +101,7 @@ lbl_800BE594:
 .global zVolumeGetVolume__FUs
 zVolumeGetVolume__FUs:
 /* 800BE5B8 000BB3B8  54 60 04 3E */	clrlwi r0, r3, 0x10
-/* 800BE5BC 000BB3BC  80 6D 91 70 */	lwz r3, lbl_803CBA70@sda21(r13)
+/* 800BE5BC 000BB3BC  80 6D 91 70 */	lwz r3, l_ba70_vols@sda21(r13)
 /* 800BE5C0 000BB3C0  1C 00 00 14 */	mulli r0, r0, 0x14
 /* 800BE5C4 000BB3C4  7C 63 02 14 */	add r3, r3, r0
 /* 800BE5C8 000BB3C8  4E 80 00 20 */	blr 
@@ -198,7 +198,7 @@ lbl_800BE61C:
 /* 800BE724 000BB524  FF E0 F8 50 */	fneg f31, f31
 lbl_800BE728:
 /* 800BE728 000BB528  EC 3E F8 28 */	fsubs f1, f30, f31
-/* 800BE72C 000BB52C  C0 02 96 38 */	lfs f0, lbl_803CDFB8@sda21(r2)
+/* 800BE72C 000BB52C  C0 02 96 38 */	lfs f0, l_dfb8__esc__2_761@sda21(r2)
 /* 800BE730 000BB530  FC 20 0A 10 */	fabs f1, f1
 /* 800BE734 000BB534  FC 20 08 18 */	frsp f1, f1
 /* 800BE738 000BB538  FC 01 00 40 */	fcmpo cr0, f1, f0
@@ -397,9 +397,9 @@ lbl_800BE9E4:
 /* 800BE9F0 000BB7F0  4E 80 00 20 */	blr 
 
 .section .sbss
-lbl_803CBA70:
+l_ba70_vols:
 	.skip 0x4
-lbl_803CBA74:
+l_ba74_nvols:
 	.skip 0x4
 /* SPECULATION: link order */
 .global gOccludeCount
@@ -415,6 +415,6 @@ globalCamera:
 	.skip 0x4
 
 .section .sdata2
-lbl_803CDFB8:
+l_dfb8__esc__2_761:
 	.4byte 0x3F800000
 	.4byte 0x00000000

@@ -33,8 +33,8 @@ lbl_800AD254:
 /* 800AD268 000AA068  54 00 07 BD */	rlwinm. r0, r0, 0, 0x1e, 0x1e
 /* 800AD26C 000AA06C  41 82 00 98 */	beq lbl_800AD304
 /* 800AD270 000AA070  80 0D 8F A8 */	lwz r0, gGameMode@sda21(r13)
-/* 800AD274 000AA074  3C 60 80 26 */	lis r3, lbl_8025E9C0@ha
-/* 800AD278 000AA078  38 83 E9 C0 */	addi r4, r3, lbl_8025E9C0@l
+/* 800AD274 000AA074  3C 60 80 26 */	lis r3, l_e9c0__esc__2_stringBase0@ha
+/* 800AD278 000AA078  38 83 E9 C0 */	addi r4, r3, l_e9c0__esc__2_stringBase0@l
 /* 800AD27C 000AA07C  2C 00 00 04 */	cmpwi r0, 4
 /* 800AD280 000AA080  38 64 04 44 */	addi r3, r4, 0x444
 /* 800AD284 000AA084  40 82 00 08 */	bne lbl_800AD28C
@@ -67,8 +67,8 @@ lbl_800AD28C:
 /* 800AD2EC 000AA0EC  48 00 03 69 */	bl zChangeThumbIcon__FPCc
 /* 800AD2F0 000AA0F0  48 00 00 14 */	b lbl_800AD304
 lbl_800AD2F4:
-/* 800AD2F4 000AA0F4  3C 60 80 26 */	lis r3, lbl_8025E9C0@ha
-/* 800AD2F8 000AA0F8  38 63 E9 C0 */	addi r3, r3, lbl_8025E9C0@l
+/* 800AD2F4 000AA0F4  3C 60 80 26 */	lis r3, l_e9c0__esc__2_stringBase0@ha
+/* 800AD2F8 000AA0F8  38 63 E9 C0 */	addi r3, r3, l_e9c0__esc__2_stringBase0@l
 /* 800AD2FC 000AA0FC  38 63 04 53 */	addi r3, r3, 0x453
 /* 800AD300 000AA100  48 00 03 55 */	bl zChangeThumbIcon__FPCc
 lbl_800AD304:
@@ -95,44 +95,44 @@ zSaveLoad_Tick__Fv:
 /* 800AD344 000AA144  80 63 00 F8 */	lwz r3, 0x800000F8@l(r3)
 /* 800AD348 000AA148  90 01 00 48 */	stw r0, 0x48(r1)
 /* 800AD34C 000AA14C  54 60 F0 BE */	srwi r0, r3, 2
-/* 800AD350 000AA150  C8 42 95 00 */	lfd f2, lbl_803CDE80@sda21(r2)
+/* 800AD350 000AA150  C8 42 95 00 */	lfd f2, l_de80__esc__2_852@sda21(r2)
 /* 800AD354 000AA154  90 01 00 4C */	stw r0, 0x4c(r1)
-/* 800AD358 000AA158  C0 62 94 E8 */	lfs f3, lbl_803CDE68@sda21(r2)
+/* 800AD358 000AA158  C0 62 94 E8 */	lfs f3, l_de68__esc__2_846@sda21(r2)
 /* 800AD35C 000AA15C  C8 01 00 48 */	lfd f0, 0x48(r1)
 /* 800AD360 000AA160  EC 00 10 28 */	fsubs f0, f0, f2
 /* 800AD364 000AA164  EC 03 00 24 */	fdivs f0, f3, f0
 /* 800AD368 000AA168  EC 00 00 72 */	fmuls f0, f0, f1
-/* 800AD36C 000AA16C  D0 0D 90 88 */	stfs f0, lbl_803CB988@sda21(r13)
-/* 800AD370 000AA170  C0 4D 90 88 */	lfs f2, lbl_803CB988@sda21(r13)
-/* 800AD374 000AA174  C0 0D 90 84 */	lfs f0, lbl_803CB984@sda21(r13)
+/* 800AD36C 000AA16C  D0 0D 90 88 */	stfs f0, l_b988_time_current@sda21(r13)
+/* 800AD370 000AA170  C0 4D 90 88 */	lfs f2, l_b988_time_current@sda21(r13)
+/* 800AD374 000AA174  C0 0D 90 84 */	lfs f0, l_b984_time_last@sda21(r13)
 /* 800AD378 000AA178  EC 02 00 28 */	fsubs f0, f2, f0
-/* 800AD37C 000AA17C  D0 0D 82 E8 */	stfs f0, lbl_803CABE8@sda21(r13)
-/* 800AD380 000AA180  C0 2D 82 E8 */	lfs f1, lbl_803CABE8@sda21(r13)
-/* 800AD384 000AA184  C0 02 94 EC */	lfs f0, lbl_803CDE6C@sda21(r2)
+/* 800AD37C 000AA17C  D0 0D 82 E8 */	stfs f0, l_abe8_time_elapsed@sda21(r13)
+/* 800AD380 000AA180  C0 2D 82 E8 */	lfs f1, l_abe8_time_elapsed@sda21(r13)
+/* 800AD384 000AA184  C0 02 94 EC */	lfs f0, l_de6c__esc__2_847@sda21(r2)
 /* 800AD388 000AA188  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 800AD38C 000AA18C  40 80 00 10 */	bge lbl_800AD39C
-/* 800AD390 000AA190  C0 02 94 F0 */	lfs f0, lbl_803CDE70@sda21(r2)
-/* 800AD394 000AA194  D0 0D 82 E8 */	stfs f0, lbl_803CABE8@sda21(r13)
+/* 800AD390 000AA190  C0 02 94 F0 */	lfs f0, l_de70__esc__2_848@sda21(r2)
+/* 800AD394 000AA194  D0 0D 82 E8 */	stfs f0, l_abe8_time_elapsed@sda21(r13)
 /* 800AD398 000AA198  48 00 00 18 */	b lbl_800AD3B0
 lbl_800AD39C:
-/* 800AD39C 000AA19C  C0 02 94 F4 */	lfs f0, lbl_803CDE74@sda21(r2)
+/* 800AD39C 000AA19C  C0 02 94 F4 */	lfs f0, l_de74__esc__2_849@sda21(r2)
 /* 800AD3A0 000AA1A0  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 800AD3A4 000AA1A4  40 81 00 0C */	ble lbl_800AD3B0
-/* 800AD3A8 000AA1A8  C0 02 94 F0 */	lfs f0, lbl_803CDE70@sda21(r2)
-/* 800AD3AC 000AA1AC  D0 0D 82 E8 */	stfs f0, lbl_803CABE8@sda21(r13)
+/* 800AD3A8 000AA1A8  C0 02 94 F0 */	lfs f0, l_de70__esc__2_848@sda21(r2)
+/* 800AD3AC 000AA1AC  D0 0D 82 E8 */	stfs f0, l_abe8_time_elapsed@sda21(r13)
 lbl_800AD3B0:
-/* 800AD3B0 000AA1B0  C0 2D 82 F4 */	lfs f1, lbl_803CABF4@sda21(r13)
-/* 800AD3B4 000AA1B4  C0 0D 82 E8 */	lfs f0, lbl_803CABE8@sda21(r13)
+/* 800AD3B0 000AA1B0  C0 2D 82 F4 */	lfs f1, l_abf4_dontPoll@sda21(r13)
+/* 800AD3B4 000AA1B4  C0 0D 82 E8 */	lfs f0, l_abe8_time_elapsed@sda21(r13)
 /* 800AD3B8 000AA1B8  EC 01 00 28 */	fsubs f0, f1, f0
-/* 800AD3BC 000AA1BC  D0 0D 82 F4 */	stfs f0, lbl_803CABF4@sda21(r13)
-/* 800AD3C0 000AA1C0  D0 4D 90 84 */	stfs f2, lbl_803CB984@sda21(r13)
-/* 800AD3C4 000AA1C4  80 0D 90 98 */	lwz r0, lbl_803CB998@sda21(r13)
+/* 800AD3BC 000AA1BC  D0 0D 82 F4 */	stfs f0, l_abf4_dontPoll@sda21(r13)
+/* 800AD3C0 000AA1C0  D0 4D 90 84 */	stfs f2, l_b984_time_last@sda21(r13)
+/* 800AD3C4 000AA1C4  80 0D 90 98 */	lwz r0, l_b998_t1@sda21(r13)
 /* 800AD3C8 000AA1C8  80 6D 90 9C */	lwz r3, lbl_803CB99C@sda21(r13)
 /* 800AD3CC 000AA1CC  90 6D 90 94 */	stw r3, lbl_803CB994@sda21(r13)
-/* 800AD3D0 000AA1D0  90 0D 90 90 */	stw r0, lbl_803CB990@sda21(r13)
+/* 800AD3D0 000AA1D0  90 0D 90 90 */	stw r0, l_b990_t0@sda21(r13)
 /* 800AD3D4 000AA1D4  48 02 75 7D */	bl iTimeGet__Fv
 /* 800AD3D8 000AA1D8  90 8D 90 9C */	stw r4, lbl_803CB99C@sda21(r13)
-/* 800AD3DC 000AA1DC  90 6D 90 98 */	stw r3, lbl_803CB998@sda21(r13)
+/* 800AD3DC 000AA1DC  90 6D 90 98 */	stw r3, l_b998_t1@sda21(r13)
 /* 800AD3E0 000AA1E0  48 02 75 71 */	bl iTimeGet__Fv
 /* 800AD3E4 000AA1E4  90 8D 8E CC */	stw r4, lbl_803CB7CC@sda21(r13)
 /* 800AD3E8 000AA1E8  90 6D 8E C8 */	stw r3, sTimeCurrent@sda21(r13)
@@ -149,13 +149,13 @@ lbl_800AD3B0:
 /* 800AD414 000AA214  90 8D 8E C4 */	stw r4, lbl_803CB7C4@sda21(r13)
 /* 800AD418 000AA218  90 0D 8E C0 */	stw r0, sTimeLast@sda21(r13)
 /* 800AD41C 000AA21C  88 63 06 D1 */	lbz r3, 0x6d1(r3)
-/* 800AD420 000AA220  C0 2D 82 E8 */	lfs f1, lbl_803CABE8@sda21(r13)
+/* 800AD420 000AA220  C0 2D 82 E8 */	lfs f1, l_abe8_time_elapsed@sda21(r13)
 /* 800AD424 000AA224  4B F8 8B A1 */	bl xPadUpdate__Fif
 /* 800AD428 000AA228  48 0D 38 65 */	bl CheckDVDAndResetState__8iTRCDiskFv
 /* 800AD42C 000AA22C  4B FE C2 35 */	bl xDrawBegin__Fv
-/* 800AD430 000AA230  C0 2D 82 E8 */	lfs f1, lbl_803CABE8@sda21(r13)
+/* 800AD430 000AA230  C0 2D 82 E8 */	lfs f1, l_abe8_time_elapsed@sda21(r13)
 /* 800AD434 000AA234  4B F8 B6 E9 */	bl xParMgrUpdate__Ff
-/* 800AD438 000AA238  C0 2D 82 E8 */	lfs f1, lbl_803CABE8@sda21(r13)
+/* 800AD438 000AA238  C0 2D 82 E8 */	lfs f1, l_abe8_time_elapsed@sda21(r13)
 /* 800AD43C 000AA23C  48 00 6A F9 */	bl zSceneUpdate__Ff
 /* 800AD440 000AA240  3C 60 80 3C */	lis r3, globals@ha
 /* 800AD444 000AA244  38 63 05 58 */	addi r3, r3, globals@l
@@ -198,7 +198,7 @@ lbl_800AD3B0:
 /* 800AD4D8 000AA2D8  38 60 00 00 */	li r3, 0
 /* 800AD4DC 000AA2DC  90 A1 00 40 */	stw r5, 0x40(r1)
 /* 800AD4E0 000AA2E0  90 01 00 44 */	stw r0, 0x44(r1)
-/* 800AD4E4 000AA2E4  C0 02 94 F8 */	lfs f0, lbl_803CDE78@sda21(r2)
+/* 800AD4E4 000AA2E4  C0 02 94 F8 */	lfs f0, l_de78__esc__2_850@sda21(r2)
 /* 800AD4E8 000AA2E8  EC 01 00 2A */	fadds f0, f1, f0
 /* 800AD4EC 000AA2EC  D0 01 00 3C */	stfs f0, 0x3c(r1)
 /* 800AD4F0 000AA2F0  4B F9 B4 D5 */	bl xSndSetListenerData__F19sound_listener_typePC7xMat4x3
@@ -216,7 +216,7 @@ lbl_800AD3B0:
 /* 800AD520 000AA320  4B FE E5 B1 */	bl update__4zhudFf
 lbl_800AD524:
 /* 800AD524 000AA324  3C 60 80 3C */	lis r3, globals@ha
-/* 800AD528 000AA328  C0 2D 82 E8 */	lfs f1, lbl_803CABE8@sda21(r13)
+/* 800AD528 000AA328  C0 2D 82 E8 */	lfs f1, l_abe8_time_elapsed@sda21(r13)
 /* 800AD52C 000AA32C  38 63 05 58 */	addi r3, r3, globals@l
 /* 800AD530 000AA330  4B FA 3C 2D */	bl zCameraUpdate__FP7xCameraf
 /* 800AD534 000AA334  3C 60 80 3C */	lis r3, globals@ha
@@ -228,7 +228,7 @@ lbl_800AD524:
 /* 800AD54C 000AA34C  4B F6 A8 4D */	bl xDebugUpdate__Fv
 /* 800AD550 000AA350  4B FE C0 F1 */	bl xDrawEnd__Fv
 /* 800AD554 000AA354  3C 60 80 3C */	lis r3, globals@ha
-/* 800AD558 000AA358  C0 2D 82 E8 */	lfs f1, lbl_803CABE8@sda21(r13)
+/* 800AD558 000AA358  C0 2D 82 E8 */	lfs f1, l_abe8_time_elapsed@sda21(r13)
 /* 800AD55C 000AA35C  38 63 05 58 */	addi r3, r3, globals@l
 /* 800AD560 000AA360  38 80 00 01 */	li r4, 1
 /* 800AD564 000AA364  4B F5 FE A9 */	bl xCameraEnd__FP7xCamerafi
@@ -252,19 +252,19 @@ zSaveLoad_poll__Fi:
 /* 800AD5A0 000AA3A0  90 01 00 14 */	stw r0, 0x14(r1)
 /* 800AD5A4 000AA3A4  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 800AD5A8 000AA3A8  7C 7F 1B 78 */	mr r31, r3
-/* 800AD5AC 000AA3AC  C0 2D 82 F4 */	lfs f1, lbl_803CABF4@sda21(r13)
-/* 800AD5B0 000AA3B0  C0 02 94 EC */	lfs f0, lbl_803CDE6C@sda21(r2)
+/* 800AD5AC 000AA3AC  C0 2D 82 F4 */	lfs f1, l_abf4_dontPoll@sda21(r13)
+/* 800AD5B0 000AA3B0  C0 02 94 EC */	lfs f0, l_de6c__esc__2_847@sda21(r2)
 /* 800AD5B4 000AA3B4  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 800AD5B8 000AA3B8  40 80 00 30 */	bge lbl_800AD5E8
-/* 800AD5BC 000AA3BC  C0 02 94 E8 */	lfs f0, lbl_803CDE68@sda21(r2)
-/* 800AD5C0 000AA3C0  D0 0D 82 F4 */	stfs f0, lbl_803CABF4@sda21(r13)
-/* 800AD5C4 000AA3C4  80 6D 82 EC */	lwz r3, lbl_803CABEC@sda21(r13)
+/* 800AD5BC 000AA3BC  C0 02 94 E8 */	lfs f0, l_de68__esc__2_846@sda21(r2)
+/* 800AD5C0 000AA3C0  D0 0D 82 F4 */	stfs f0, l_abf4_dontPoll@sda21(r13)
+/* 800AD5C4 000AA3C4  80 6D 82 EC */	lwz r3, l_abec_currentCard@sda21(r13)
 /* 800AD5C8 000AA3C8  48 00 0C 2D */	bl zSaveLoad_CardCheckSingle__Fi
 /* 800AD5CC 000AA3CC  2C 03 00 00 */	cmpwi r3, 0
 /* 800AD5D0 000AA3D0  40 82 00 10 */	bne lbl_800AD5E0
-/* 800AD5D4 000AA3D4  93 ED 90 A0 */	stw r31, lbl_803CB9A0@sda21(r13)
+/* 800AD5D4 000AA3D4  93 ED 90 A0 */	stw r31, l_b9a0_promptSel@sda21(r13)
 /* 800AD5D8 000AA3D8  38 00 00 00 */	li r0, 0
-/* 800AD5DC 000AA3DC  90 0D 82 F0 */	stw r0, lbl_803CABF0@sda21(r13)
+/* 800AD5DC 000AA3DC  90 0D 82 F0 */	stw r0, l_abf0_currentGame@sda21(r13)
 lbl_800AD5E0:
 /* 800AD5E0 000AA3E0  38 60 00 01 */	li r3, 1
 /* 800AD5E4 000AA3E4  48 00 00 08 */	b lbl_800AD5EC
@@ -281,9 +281,9 @@ lbl_800AD5EC:
 zSendEventToThumbIcon__FUi:
 /* 800AD600 000AA400  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 800AD604 000AA404  7C 08 02 A6 */	mflr r0
-/* 800AD608 000AA408  3C 80 80 26 */	lis r4, lbl_8025E9C0@ha
+/* 800AD608 000AA408  3C 80 80 26 */	lis r4, l_e9c0__esc__2_stringBase0@ha
 /* 800AD60C 000AA40C  90 01 00 14 */	stw r0, 0x14(r1)
-/* 800AD610 000AA410  38 84 E9 C0 */	addi r4, r4, lbl_8025E9C0@l
+/* 800AD610 000AA410  38 84 E9 C0 */	addi r4, r4, l_e9c0__esc__2_stringBase0@l
 /* 800AD614 000AA414  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 800AD618 000AA418  7C 7F 1B 78 */	mr r31, r3
 /* 800AD61C 000AA41C  38 64 04 44 */	addi r3, r4, 0x444
@@ -316,8 +316,8 @@ zChangeThumbIcon__FPCc:
 /* 800AD678 000AA478  7F E3 FB 78 */	mr r3, r31
 /* 800AD67C 000AA47C  4B F9 EB 99 */	bl xStrHash__FPCc
 /* 800AD680 000AA480  90 61 00 08 */	stw r3, 8(r1)
-/* 800AD684 000AA484  3C 60 80 26 */	lis r3, lbl_8025E9C0@ha
-/* 800AD688 000AA488  38 83 E9 C0 */	addi r4, r3, lbl_8025E9C0@l
+/* 800AD684 000AA484  3C 60 80 26 */	lis r3, l_e9c0__esc__2_stringBase0@ha
+/* 800AD688 000AA488  38 83 E9 C0 */	addi r4, r3, l_e9c0__esc__2_stringBase0@l
 /* 800AD68C 000AA48C  80 0D 8F A8 */	lwz r0, gGameMode@sda21(r13)
 /* 800AD690 000AA490  38 64 04 44 */	addi r3, r4, 0x444
 /* 800AD694 000AA494  2C 00 00 04 */	cmpwi r0, 4
@@ -491,32 +491,32 @@ lbl_800AD8B0:
 
 .global zSaveLoad_getgame__Fv
 zSaveLoad_getgame__Fv:
-/* 800AD8CC 000AA6CC  80 6D 82 F0 */	lwz r3, lbl_803CABF0@sda21(r13)
+/* 800AD8CC 000AA6CC  80 6D 82 F0 */	lwz r3, l_abf0_currentGame@sda21(r13)
 /* 800AD8D0 000AA6D0  4E 80 00 20 */	blr 
 
 .global zSaveLoad_getcard__Fv
 zSaveLoad_getcard__Fv:
-/* 800AD8D4 000AA6D4  80 6D 82 EC */	lwz r3, lbl_803CABEC@sda21(r13)
+/* 800AD8D4 000AA6D4  80 6D 82 EC */	lwz r3, l_abec_currentCard@sda21(r13)
 /* 800AD8D8 000AA6D8  4E 80 00 20 */	blr 
 
 .global zSaveLoad_getMCavailable__Fv
 zSaveLoad_getMCavailable__Fv:
-/* 800AD8DC 000AA6DC  80 6D 90 A8 */	lwz r3, lbl_803CB9A8@sda21(r13)
+/* 800AD8DC 000AA6DC  80 6D 90 A8 */	lwz r3, l_b9a8_sAvailable@sda21(r13)
 /* 800AD8E0 000AA6E0  4E 80 00 20 */	blr 
 
 .global zSaveLoad_getMCneeded__Fv
 zSaveLoad_getMCneeded__Fv:
-/* 800AD8E4 000AA6E4  80 6D 90 AC */	lwz r3, lbl_803CB9AC@sda21(r13)
+/* 800AD8E4 000AA6E4  80 6D 90 AC */	lwz r3, l_b9ac_sNeeded@sda21(r13)
 /* 800AD8E8 000AA6E8  4E 80 00 20 */	blr 
 
 .global zSaveLoad_getMCAccessType__Fv
 zSaveLoad_getMCAccessType__Fv:
-/* 800AD8EC 000AA6EC  80 6D 90 B0 */	lwz r3, lbl_803CB9B0@sda21(r13)
+/* 800AD8EC 000AA6EC  80 6D 90 B0 */	lwz r3, l_b9b0_sAccessType@sda21(r13)
 /* 800AD8F0 000AA6F0  4E 80 00 20 */	blr 
 
 .global zSaveLoadGetAutoSaveCard__Fv
 zSaveLoadGetAutoSaveCard__Fv:
-/* 800AD8F4 000AA6F4  80 6D 82 F8 */	lwz r3, lbl_803CABF8@sda21(r13)
+/* 800AD8F4 000AA6F4  80 6D 82 F8 */	lwz r3, l_abf8_autoSaveCard@sda21(r13)
 /* 800AD8F8 000AA6F8  4E 80 00 20 */	blr 
 
 .global format__Fii
@@ -707,12 +707,12 @@ lbl_800ADB70:
 /* 800ADB70 000AA970  38 80 00 5F */	li r4, 0x5f
 /* 800ADB74 000AA974  4B FF FC 1D */	bl zSaveLoad_UIEvent__FiUi
 /* 800ADB78 000AA978  38 00 FF FF */	li r0, -1
-/* 800ADB7C 000AA97C  90 0D 90 A0 */	stw r0, lbl_803CB9A0@sda21(r13)
+/* 800ADB7C 000AA97C  90 0D 90 A0 */	stw r0, l_b9a0_promptSel@sda21(r13)
 /* 800ADB80 000AA980  48 00 00 08 */	b lbl_800ADB88
 lbl_800ADB84:
 /* 800ADB84 000AA984  4B FF F7 A5 */	bl zSaveLoad_Tick__Fv
 lbl_800ADB88:
-/* 800ADB88 000AA988  80 0D 90 A0 */	lwz r0, lbl_803CB9A0@sda21(r13)
+/* 800ADB88 000AA988  80 0D 90 A0 */	lwz r0, l_b9a0_promptSel@sda21(r13)
 /* 800ADB8C 000AA98C  2C 00 FF FF */	cmpwi r0, -1
 /* 800ADB90 000AA990  41 82 FF F4 */	beq lbl_800ADB84
 /* 800ADB94 000AA994  2C 1F 00 01 */	cmpwi r31, 1
@@ -729,7 +729,7 @@ lbl_800ADBA4:
 /* 800ADBBC 000AA9BC  4B FF FB D5 */	bl zSaveLoad_UIEvent__FiUi
 lbl_800ADBC0:
 /* 800ADBC0 000AA9C0  80 01 00 14 */	lwz r0, 0x14(r1)
-/* 800ADBC4 000AA9C4  80 6D 90 A0 */	lwz r3, lbl_803CB9A0@sda21(r13)
+/* 800ADBC4 000AA9C4  80 6D 90 A0 */	lwz r3, l_b9a0_promptSel@sda21(r13)
 /* 800ADBC8 000AA9C8  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 800ADBCC 000AA9CC  7C 08 03 A6 */	mtlr r0
 /* 800ADBD0 000AA9D0  38 21 00 10 */	addi r1, r1, 0x10
@@ -760,21 +760,21 @@ lbl_800ADC14:
 /* 800ADC20 000AAA20  38 80 00 51 */	li r4, 0x51
 /* 800ADC24 000AAA24  4B FF FB 6D */	bl zSaveLoad_UIEvent__FiUi
 /* 800ADC28 000AAA28  38 00 FF FF */	li r0, -1
-/* 800ADC2C 000AAA2C  90 0D 90 A0 */	stw r0, lbl_803CB9A0@sda21(r13)
+/* 800ADC2C 000AAA2C  90 0D 90 A0 */	stw r0, l_b9a0_promptSel@sda21(r13)
 /* 800ADC30 000AAA30  48 00 00 10 */	b lbl_800ADC40
 lbl_800ADC34:
 /* 800ADC34 000AAA34  4B FF F6 F5 */	bl zSaveLoad_Tick__Fv
 /* 800ADC38 000AAA38  38 60 00 03 */	li r3, 3
 /* 800ADC3C 000AAA3C  4B FF F9 5D */	bl zSaveLoad_poll__Fi
 lbl_800ADC40:
-/* 800ADC40 000AAA40  80 0D 90 A0 */	lwz r0, lbl_803CB9A0@sda21(r13)
+/* 800ADC40 000AAA40  80 0D 90 A0 */	lwz r0, l_b9a0_promptSel@sda21(r13)
 /* 800ADC44 000AAA44  2C 00 FF FF */	cmpwi r0, -1
 /* 800ADC48 000AAA48  41 82 FF EC */	beq lbl_800ADC34
 /* 800ADC4C 000AAA4C  38 60 00 32 */	li r3, 0x32
 /* 800ADC50 000AAA50  38 80 00 5F */	li r4, 0x5f
 /* 800ADC54 000AAA54  4B FF FB 3D */	bl zSaveLoad_UIEvent__FiUi
 /* 800ADC58 000AAA58  80 01 00 14 */	lwz r0, 0x14(r1)
-/* 800ADC5C 000AAA5C  80 6D 90 A0 */	lwz r3, lbl_803CB9A0@sda21(r13)
+/* 800ADC5C 000AAA5C  80 6D 90 A0 */	lwz r3, l_b9a0_promptSel@sda21(r13)
 /* 800ADC60 000AAA60  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 800ADC64 000AAA64  7C 08 03 A6 */	mtlr r0
 /* 800ADC68 000AAA68  38 21 00 10 */	addi r1, r1, 0x10
@@ -799,21 +799,21 @@ lbl_800ADC8C:
 /* 800ADCA4 000AAAA4  38 80 00 5E */	li r4, 0x5e
 /* 800ADCA8 000AAAA8  4B FF FA E9 */	bl zSaveLoad_UIEvent__FiUi
 /* 800ADCAC 000AAAAC  38 00 FF FF */	li r0, -1
-/* 800ADCB0 000AAAB0  90 0D 90 A0 */	stw r0, lbl_803CB9A0@sda21(r13)
+/* 800ADCB0 000AAAB0  90 0D 90 A0 */	stw r0, l_b9a0_promptSel@sda21(r13)
 /* 800ADCB4 000AAAB4  48 00 00 10 */	b lbl_800ADCC4
 lbl_800ADCB8:
 /* 800ADCB8 000AAAB8  4B FF F6 71 */	bl zSaveLoad_Tick__Fv
 /* 800ADCBC 000AAABC  38 60 00 03 */	li r3, 3
 /* 800ADCC0 000AAAC0  4B FF F8 D9 */	bl zSaveLoad_poll__Fi
 lbl_800ADCC4:
-/* 800ADCC4 000AAAC4  80 0D 90 A0 */	lwz r0, lbl_803CB9A0@sda21(r13)
+/* 800ADCC4 000AAAC4  80 0D 90 A0 */	lwz r0, l_b9a0_promptSel@sda21(r13)
 /* 800ADCC8 000AAAC8  2C 00 FF FF */	cmpwi r0, -1
 /* 800ADCCC 000AAACC  41 82 FF EC */	beq lbl_800ADCB8
 /* 800ADCD0 000AAAD0  38 60 00 25 */	li r3, 0x25
 /* 800ADCD4 000AAAD4  38 80 00 5F */	li r4, 0x5f
 /* 800ADCD8 000AAAD8  4B FF FA B9 */	bl zSaveLoad_UIEvent__FiUi
 /* 800ADCDC 000AAADC  80 01 00 14 */	lwz r0, 0x14(r1)
-/* 800ADCE0 000AAAE0  80 6D 90 A0 */	lwz r3, lbl_803CB9A0@sda21(r13)
+/* 800ADCE0 000AAAE0  80 6D 90 A0 */	lwz r3, l_b9a0_promptSel@sda21(r13)
 /* 800ADCE4 000AAAE4  7C 08 03 A6 */	mtlr r0
 /* 800ADCE8 000AAAE8  38 21 00 10 */	addi r1, r1, 0x10
 /* 800ADCEC 000AAAEC  4E 80 00 20 */	blr 
@@ -837,21 +837,21 @@ lbl_800ADD0C:
 /* 800ADD24 000AAB24  38 80 00 5E */	li r4, 0x5e
 /* 800ADD28 000AAB28  4B FF FA 69 */	bl zSaveLoad_UIEvent__FiUi
 /* 800ADD2C 000AAB2C  38 00 FF FF */	li r0, -1
-/* 800ADD30 000AAB30  90 0D 90 A0 */	stw r0, lbl_803CB9A0@sda21(r13)
+/* 800ADD30 000AAB30  90 0D 90 A0 */	stw r0, l_b9a0_promptSel@sda21(r13)
 /* 800ADD34 000AAB34  48 00 00 10 */	b lbl_800ADD44
 lbl_800ADD38:
 /* 800ADD38 000AAB38  4B FF F5 F1 */	bl zSaveLoad_Tick__Fv
 /* 800ADD3C 000AAB3C  38 60 00 03 */	li r3, 3
 /* 800ADD40 000AAB40  4B FF F8 59 */	bl zSaveLoad_poll__Fi
 lbl_800ADD44:
-/* 800ADD44 000AAB44  80 0D 90 A0 */	lwz r0, lbl_803CB9A0@sda21(r13)
+/* 800ADD44 000AAB44  80 0D 90 A0 */	lwz r0, l_b9a0_promptSel@sda21(r13)
 /* 800ADD48 000AAB48  2C 00 FF FF */	cmpwi r0, -1
 /* 800ADD4C 000AAB4C  41 82 FF EC */	beq lbl_800ADD38
 /* 800ADD50 000AAB50  38 60 00 12 */	li r3, 0x12
 /* 800ADD54 000AAB54  38 80 00 5F */	li r4, 0x5f
 /* 800ADD58 000AAB58  4B FF FA 39 */	bl zSaveLoad_UIEvent__FiUi
 /* 800ADD5C 000AAB5C  80 01 00 14 */	lwz r0, 0x14(r1)
-/* 800ADD60 000AAB60  80 6D 90 A0 */	lwz r3, lbl_803CB9A0@sda21(r13)
+/* 800ADD60 000AAB60  80 6D 90 A0 */	lwz r3, l_b9a0_promptSel@sda21(r13)
 /* 800ADD64 000AAB64  7C 08 03 A6 */	mtlr r0
 /* 800ADD68 000AAB68  38 21 00 10 */	addi r1, r1, 0x10
 /* 800ADD6C 000AAB6C  4E 80 00 20 */	blr 
@@ -868,19 +868,19 @@ zSaveLoad_CardPromptGameSlotEmpty__Fv:
 /* 800ADD8C 000AAB8C  38 80 00 5E */	li r4, 0x5e
 /* 800ADD90 000AAB90  4B FF FA 01 */	bl zSaveLoad_UIEvent__FiUi
 /* 800ADD94 000AAB94  38 00 FF FF */	li r0, -1
-/* 800ADD98 000AAB98  90 0D 90 A0 */	stw r0, lbl_803CB9A0@sda21(r13)
+/* 800ADD98 000AAB98  90 0D 90 A0 */	stw r0, l_b9a0_promptSel@sda21(r13)
 /* 800ADD9C 000AAB9C  48 00 00 08 */	b lbl_800ADDA4
 lbl_800ADDA0:
 /* 800ADDA0 000AABA0  4B FF F5 89 */	bl zSaveLoad_Tick__Fv
 lbl_800ADDA4:
-/* 800ADDA4 000AABA4  80 0D 90 A0 */	lwz r0, lbl_803CB9A0@sda21(r13)
+/* 800ADDA4 000AABA4  80 0D 90 A0 */	lwz r0, l_b9a0_promptSel@sda21(r13)
 /* 800ADDA8 000AABA8  2C 00 FF FF */	cmpwi r0, -1
 /* 800ADDAC 000AABAC  41 82 FF F4 */	beq lbl_800ADDA0
 /* 800ADDB0 000AABB0  38 60 00 13 */	li r3, 0x13
 /* 800ADDB4 000AABB4  38 80 00 5F */	li r4, 0x5f
 /* 800ADDB8 000AABB8  4B FF F9 D9 */	bl zSaveLoad_UIEvent__FiUi
 /* 800ADDBC 000AABBC  80 01 00 14 */	lwz r0, 0x14(r1)
-/* 800ADDC0 000AABC0  80 6D 90 A0 */	lwz r3, lbl_803CB9A0@sda21(r13)
+/* 800ADDC0 000AABC0  80 6D 90 A0 */	lwz r3, l_b9a0_promptSel@sda21(r13)
 /* 800ADDC4 000AABC4  7C 08 03 A6 */	mtlr r0
 /* 800ADDC8 000AABC8  38 21 00 10 */	addi r1, r1, 0x10
 /* 800ADDCC 000AABCC  4E 80 00 20 */	blr 
@@ -897,21 +897,21 @@ zSaveLoad_CardPromptOverwrite__Fv:
 /* 800ADDEC 000AABEC  38 80 00 5E */	li r4, 0x5e
 /* 800ADDF0 000AABF0  4B FF F9 A1 */	bl zSaveLoad_UIEvent__FiUi
 /* 800ADDF4 000AABF4  38 00 FF FF */	li r0, -1
-/* 800ADDF8 000AABF8  90 0D 90 A0 */	stw r0, lbl_803CB9A0@sda21(r13)
+/* 800ADDF8 000AABF8  90 0D 90 A0 */	stw r0, l_b9a0_promptSel@sda21(r13)
 /* 800ADDFC 000AABFC  48 00 00 10 */	b lbl_800ADE0C
 lbl_800ADE00:
 /* 800ADE00 000AAC00  4B FF F5 29 */	bl zSaveLoad_Tick__Fv
 /* 800ADE04 000AAC04  38 60 00 05 */	li r3, 5
 /* 800ADE08 000AAC08  4B FF F7 91 */	bl zSaveLoad_poll__Fi
 lbl_800ADE0C:
-/* 800ADE0C 000AAC0C  80 0D 90 A0 */	lwz r0, lbl_803CB9A0@sda21(r13)
+/* 800ADE0C 000AAC0C  80 0D 90 A0 */	lwz r0, l_b9a0_promptSel@sda21(r13)
 /* 800ADE10 000AAC10  2C 00 FF FF */	cmpwi r0, -1
 /* 800ADE14 000AAC14  41 82 FF EC */	beq lbl_800ADE00
 /* 800ADE18 000AAC18  38 60 00 22 */	li r3, 0x22
 /* 800ADE1C 000AAC1C  38 80 00 5F */	li r4, 0x5f
 /* 800ADE20 000AAC20  4B FF F9 71 */	bl zSaveLoad_UIEvent__FiUi
 /* 800ADE24 000AAC24  80 01 00 14 */	lwz r0, 0x14(r1)
-/* 800ADE28 000AAC28  80 6D 90 A0 */	lwz r3, lbl_803CB9A0@sda21(r13)
+/* 800ADE28 000AAC28  80 6D 90 A0 */	lwz r3, l_b9a0_promptSel@sda21(r13)
 /* 800ADE2C 000AAC2C  7C 08 03 A6 */	mtlr r0
 /* 800ADE30 000AAC30  38 21 00 10 */	addi r1, r1, 0x10
 /* 800ADE34 000AAC34  4E 80 00 20 */	blr 
@@ -928,21 +928,21 @@ zSaveLoad_CardPromptOverwriteDamaged__Fv:
 /* 800ADE54 000AAC54  38 80 00 5E */	li r4, 0x5e
 /* 800ADE58 000AAC58  4B FF F9 39 */	bl zSaveLoad_UIEvent__FiUi
 /* 800ADE5C 000AAC5C  38 00 FF FF */	li r0, -1
-/* 800ADE60 000AAC60  90 0D 90 A0 */	stw r0, lbl_803CB9A0@sda21(r13)
+/* 800ADE60 000AAC60  90 0D 90 A0 */	stw r0, l_b9a0_promptSel@sda21(r13)
 /* 800ADE64 000AAC64  48 00 00 10 */	b lbl_800ADE74
 lbl_800ADE68:
 /* 800ADE68 000AAC68  4B FF F4 C1 */	bl zSaveLoad_Tick__Fv
 /* 800ADE6C 000AAC6C  38 60 00 05 */	li r3, 5
 /* 800ADE70 000AAC70  4B FF F7 29 */	bl zSaveLoad_poll__Fi
 lbl_800ADE74:
-/* 800ADE74 000AAC74  80 0D 90 A0 */	lwz r0, lbl_803CB9A0@sda21(r13)
+/* 800ADE74 000AAC74  80 0D 90 A0 */	lwz r0, l_b9a0_promptSel@sda21(r13)
 /* 800ADE78 000AAC78  2C 00 FF FF */	cmpwi r0, -1
 /* 800ADE7C 000AAC7C  41 82 FF EC */	beq lbl_800ADE68
 /* 800ADE80 000AAC80  38 60 00 23 */	li r3, 0x23
 /* 800ADE84 000AAC84  38 80 00 5F */	li r4, 0x5f
 /* 800ADE88 000AAC88  4B FF F9 09 */	bl zSaveLoad_UIEvent__FiUi
 /* 800ADE8C 000AAC8C  80 01 00 14 */	lwz r0, 0x14(r1)
-/* 800ADE90 000AAC90  80 6D 90 A0 */	lwz r3, lbl_803CB9A0@sda21(r13)
+/* 800ADE90 000AAC90  80 6D 90 A0 */	lwz r3, l_b9a0_promptSel@sda21(r13)
 /* 800ADE94 000AAC94  7C 08 03 A6 */	mtlr r0
 /* 800ADE98 000AAC98  38 21 00 10 */	addi r1, r1, 0x10
 /* 800ADE9C 000AAC9C  4E 80 00 20 */	blr 
@@ -962,12 +962,12 @@ lbl_800ADEC4:
 /* 800ADEC4 000AACC4  38 80 00 5E */	li r4, 0x5e
 /* 800ADEC8 000AACC8  4B FF F8 C9 */	bl zSaveLoad_UIEvent__FiUi
 /* 800ADECC 000AACCC  38 00 FF FF */	li r0, -1
-/* 800ADED0 000AACD0  90 0D 90 A0 */	stw r0, lbl_803CB9A0@sda21(r13)
+/* 800ADED0 000AACD0  90 0D 90 A0 */	stw r0, l_b9a0_promptSel@sda21(r13)
 /* 800ADED4 000AACD4  48 00 00 08 */	b lbl_800ADEDC
 lbl_800ADED8:
 /* 800ADED8 000AACD8  4B FF F4 51 */	bl zSaveLoad_Tick__Fv
 lbl_800ADEDC:
-/* 800ADEDC 000AACDC  80 0D 90 A0 */	lwz r0, lbl_803CB9A0@sda21(r13)
+/* 800ADEDC 000AACDC  80 0D 90 A0 */	lwz r0, l_b9a0_promptSel@sda21(r13)
 /* 800ADEE0 000AACE0  2C 00 FF FF */	cmpwi r0, -1
 /* 800ADEE4 000AACE4  41 82 FF F4 */	beq lbl_800ADED8
 /* 800ADEE8 000AACE8  2C 1F 00 01 */	cmpwi r31, 1
@@ -978,7 +978,7 @@ lbl_800ADEF8:
 /* 800ADEF8 000AACF8  38 80 00 5F */	li r4, 0x5f
 /* 800ADEFC 000AACFC  4B FF F8 95 */	bl zSaveLoad_UIEvent__FiUi
 /* 800ADF00 000AAD00  80 01 00 14 */	lwz r0, 0x14(r1)
-/* 800ADF04 000AAD04  80 6D 90 A0 */	lwz r3, lbl_803CB9A0@sda21(r13)
+/* 800ADF04 000AAD04  80 6D 90 A0 */	lwz r3, l_b9a0_promptSel@sda21(r13)
 /* 800ADF08 000AAD08  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 800ADF0C 000AAD0C  7C 08 03 A6 */	mtlr r0
 /* 800ADF10 000AAD10  38 21 00 10 */	addi r1, r1, 0x10
@@ -993,19 +993,19 @@ zSaveLoad_DamagedSaveGameErrorPrompt__Fi:
 /* 800ADF28 000AAD28  90 01 00 14 */	stw r0, 0x14(r1)
 /* 800ADF2C 000AAD2C  4B FF F8 65 */	bl zSaveLoad_UIEvent__FiUi
 /* 800ADF30 000AAD30  38 00 FF FF */	li r0, -1
-/* 800ADF34 000AAD34  90 0D 90 A0 */	stw r0, lbl_803CB9A0@sda21(r13)
+/* 800ADF34 000AAD34  90 0D 90 A0 */	stw r0, l_b9a0_promptSel@sda21(r13)
 /* 800ADF38 000AAD38  48 00 00 08 */	b lbl_800ADF40
 lbl_800ADF3C:
 /* 800ADF3C 000AAD3C  4B FF F3 ED */	bl zSaveLoad_Tick__Fv
 lbl_800ADF40:
-/* 800ADF40 000AAD40  80 0D 90 A0 */	lwz r0, lbl_803CB9A0@sda21(r13)
+/* 800ADF40 000AAD40  80 0D 90 A0 */	lwz r0, l_b9a0_promptSel@sda21(r13)
 /* 800ADF44 000AAD44  2C 00 FF FF */	cmpwi r0, -1
 /* 800ADF48 000AAD48  41 82 FF F4 */	beq lbl_800ADF3C
 /* 800ADF4C 000AAD4C  38 60 00 3C */	li r3, 0x3c
 /* 800ADF50 000AAD50  38 80 00 5F */	li r4, 0x5f
 /* 800ADF54 000AAD54  4B FF F8 3D */	bl zSaveLoad_UIEvent__FiUi
 /* 800ADF58 000AAD58  80 01 00 14 */	lwz r0, 0x14(r1)
-/* 800ADF5C 000AAD5C  80 6D 90 A0 */	lwz r3, lbl_803CB9A0@sda21(r13)
+/* 800ADF5C 000AAD5C  80 6D 90 A0 */	lwz r3, l_b9a0_promptSel@sda21(r13)
 /* 800ADF60 000AAD60  7C 08 03 A6 */	mtlr r0
 /* 800ADF64 000AAD64  38 21 00 10 */	addi r1, r1, 0x10
 /* 800ADF68 000AAD68  4E 80 00 20 */	blr 
@@ -1025,12 +1025,12 @@ lbl_800ADF90:
 /* 800ADF90 000AAD90  38 80 00 5E */	li r4, 0x5e
 /* 800ADF94 000AAD94  4B FF F7 FD */	bl zSaveLoad_UIEvent__FiUi
 /* 800ADF98 000AAD98  38 00 FF FF */	li r0, -1
-/* 800ADF9C 000AAD9C  90 0D 90 A0 */	stw r0, lbl_803CB9A0@sda21(r13)
+/* 800ADF9C 000AAD9C  90 0D 90 A0 */	stw r0, l_b9a0_promptSel@sda21(r13)
 /* 800ADFA0 000AADA0  48 00 00 08 */	b lbl_800ADFA8
 lbl_800ADFA4:
 /* 800ADFA4 000AADA4  4B FF F3 85 */	bl zSaveLoad_Tick__Fv
 lbl_800ADFA8:
-/* 800ADFA8 000AADA8  80 0D 90 A0 */	lwz r0, lbl_803CB9A0@sda21(r13)
+/* 800ADFA8 000AADA8  80 0D 90 A0 */	lwz r0, l_b9a0_promptSel@sda21(r13)
 /* 800ADFAC 000AADAC  2C 00 FF FF */	cmpwi r0, -1
 /* 800ADFB0 000AADB0  41 82 FF F4 */	beq lbl_800ADFA4
 /* 800ADFB4 000AADB4  2C 1F 00 01 */	cmpwi r31, 1
@@ -1041,7 +1041,7 @@ lbl_800ADFC4:
 /* 800ADFC4 000AADC4  38 80 00 5F */	li r4, 0x5f
 /* 800ADFC8 000AADC8  4B FF F7 C9 */	bl zSaveLoad_UIEvent__FiUi
 /* 800ADFCC 000AADCC  80 01 00 14 */	lwz r0, 0x14(r1)
-/* 800ADFD0 000AADD0  80 6D 90 A0 */	lwz r3, lbl_803CB9A0@sda21(r13)
+/* 800ADFD0 000AADD0  80 6D 90 A0 */	lwz r3, l_b9a0_promptSel@sda21(r13)
 /* 800ADFD4 000AADD4  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 800ADFD8 000AADD8  7C 08 03 A6 */	mtlr r0
 /* 800ADFDC 000AADDC  38 21 00 10 */	addi r1, r1, 0x10
@@ -1062,12 +1062,12 @@ lbl_800AE008:
 /* 800AE008 000AAE08  38 80 00 5E */	li r4, 0x5e
 /* 800AE00C 000AAE0C  4B FF F7 85 */	bl zSaveLoad_UIEvent__FiUi
 /* 800AE010 000AAE10  38 00 FF FF */	li r0, -1
-/* 800AE014 000AAE14  90 0D 90 A0 */	stw r0, lbl_803CB9A0@sda21(r13)
+/* 800AE014 000AAE14  90 0D 90 A0 */	stw r0, l_b9a0_promptSel@sda21(r13)
 /* 800AE018 000AAE18  48 00 00 08 */	b lbl_800AE020
 lbl_800AE01C:
 /* 800AE01C 000AAE1C  4B FF F3 0D */	bl zSaveLoad_Tick__Fv
 lbl_800AE020:
-/* 800AE020 000AAE20  80 0D 90 A0 */	lwz r0, lbl_803CB9A0@sda21(r13)
+/* 800AE020 000AAE20  80 0D 90 A0 */	lwz r0, l_b9a0_promptSel@sda21(r13)
 /* 800AE024 000AAE24  2C 00 FF FF */	cmpwi r0, -1
 /* 800AE028 000AAE28  41 82 FF F4 */	beq lbl_800AE01C
 /* 800AE02C 000AAE2C  2C 1F 00 01 */	cmpwi r31, 1
@@ -1078,7 +1078,7 @@ lbl_800AE03C:
 /* 800AE03C 000AAE3C  38 80 00 5F */	li r4, 0x5f
 /* 800AE040 000AAE40  4B FF F7 51 */	bl zSaveLoad_UIEvent__FiUi
 /* 800AE044 000AAE44  80 01 00 14 */	lwz r0, 0x14(r1)
-/* 800AE048 000AAE48  80 6D 90 A0 */	lwz r3, lbl_803CB9A0@sda21(r13)
+/* 800AE048 000AAE48  80 6D 90 A0 */	lwz r3, l_b9a0_promptSel@sda21(r13)
 /* 800AE04C 000AAE4C  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 800AE050 000AAE50  7C 08 03 A6 */	mtlr r0
 /* 800AE054 000AAE54  38 21 00 10 */	addi r1, r1, 0x10
@@ -1093,19 +1093,19 @@ zSaveLoad_SaveDamagedErrorPrompt__Fi:
 /* 800AE06C 000AAE6C  90 01 00 14 */	stw r0, 0x14(r1)
 /* 800AE070 000AAE70  4B FF F7 21 */	bl zSaveLoad_UIEvent__FiUi
 /* 800AE074 000AAE74  38 00 FF FF */	li r0, -1
-/* 800AE078 000AAE78  90 0D 90 A0 */	stw r0, lbl_803CB9A0@sda21(r13)
+/* 800AE078 000AAE78  90 0D 90 A0 */	stw r0, l_b9a0_promptSel@sda21(r13)
 /* 800AE07C 000AAE7C  48 00 00 08 */	b lbl_800AE084
 lbl_800AE080:
 /* 800AE080 000AAE80  4B FF F2 A9 */	bl zSaveLoad_Tick__Fv
 lbl_800AE084:
-/* 800AE084 000AAE84  80 0D 90 A0 */	lwz r0, lbl_803CB9A0@sda21(r13)
+/* 800AE084 000AAE84  80 0D 90 A0 */	lwz r0, l_b9a0_promptSel@sda21(r13)
 /* 800AE088 000AAE88  2C 00 FF FF */	cmpwi r0, -1
 /* 800AE08C 000AAE8C  41 82 FF F4 */	beq lbl_800AE080
 /* 800AE090 000AAE90  38 60 00 35 */	li r3, 0x35
 /* 800AE094 000AAE94  38 80 00 5F */	li r4, 0x5f
 /* 800AE098 000AAE98  4B FF F6 F9 */	bl zSaveLoad_UIEvent__FiUi
 /* 800AE09C 000AAE9C  80 01 00 14 */	lwz r0, 0x14(r1)
-/* 800AE0A0 000AAEA0  80 6D 90 A0 */	lwz r3, lbl_803CB9A0@sda21(r13)
+/* 800AE0A0 000AAEA0  80 6D 90 A0 */	lwz r3, l_b9a0_promptSel@sda21(r13)
 /* 800AE0A4 000AAEA4  7C 08 03 A6 */	mtlr r0
 /* 800AE0A8 000AAEA8  38 21 00 10 */	addi r1, r1, 0x10
 /* 800AE0AC 000AAEAC  4E 80 00 20 */	blr 
@@ -1119,19 +1119,19 @@ zSaveLoad_CardYankedErrorPrompt__Fi:
 /* 800AE0C0 000AAEC0  90 01 00 14 */	stw r0, 0x14(r1)
 /* 800AE0C4 000AAEC4  4B FF F6 CD */	bl zSaveLoad_UIEvent__FiUi
 /* 800AE0C8 000AAEC8  38 00 FF FF */	li r0, -1
-/* 800AE0CC 000AAECC  90 0D 90 A0 */	stw r0, lbl_803CB9A0@sda21(r13)
+/* 800AE0CC 000AAECC  90 0D 90 A0 */	stw r0, l_b9a0_promptSel@sda21(r13)
 /* 800AE0D0 000AAED0  48 00 00 08 */	b lbl_800AE0D8
 lbl_800AE0D4:
 /* 800AE0D4 000AAED4  4B FF F2 55 */	bl zSaveLoad_Tick__Fv
 lbl_800AE0D8:
-/* 800AE0D8 000AAED8  80 0D 90 A0 */	lwz r0, lbl_803CB9A0@sda21(r13)
+/* 800AE0D8 000AAED8  80 0D 90 A0 */	lwz r0, l_b9a0_promptSel@sda21(r13)
 /* 800AE0DC 000AAEDC  2C 00 FF FF */	cmpwi r0, -1
 /* 800AE0E0 000AAEE0  41 82 FF F4 */	beq lbl_800AE0D4
 /* 800AE0E4 000AAEE4  38 60 00 36 */	li r3, 0x36
 /* 800AE0E8 000AAEE8  38 80 00 5F */	li r4, 0x5f
 /* 800AE0EC 000AAEEC  4B FF F6 A5 */	bl zSaveLoad_UIEvent__FiUi
 /* 800AE0F0 000AAEF0  80 01 00 14 */	lwz r0, 0x14(r1)
-/* 800AE0F4 000AAEF4  80 6D 90 A0 */	lwz r3, lbl_803CB9A0@sda21(r13)
+/* 800AE0F4 000AAEF4  80 6D 90 A0 */	lwz r3, l_b9a0_promptSel@sda21(r13)
 /* 800AE0F8 000AAEF8  7C 08 03 A6 */	mtlr r0
 /* 800AE0FC 000AAEFC  38 21 00 10 */	addi r1, r1, 0x10
 /* 800AE100 000AAF00  4E 80 00 20 */	blr 
@@ -1151,12 +1151,12 @@ lbl_800AE128:
 /* 800AE128 000AAF28  38 80 00 5E */	li r4, 0x5e
 /* 800AE12C 000AAF2C  4B FF F6 65 */	bl zSaveLoad_UIEvent__FiUi
 /* 800AE130 000AAF30  38 00 FF FF */	li r0, -1
-/* 800AE134 000AAF34  90 0D 90 A0 */	stw r0, lbl_803CB9A0@sda21(r13)
+/* 800AE134 000AAF34  90 0D 90 A0 */	stw r0, l_b9a0_promptSel@sda21(r13)
 /* 800AE138 000AAF38  48 00 00 08 */	b lbl_800AE140
 lbl_800AE13C:
 /* 800AE13C 000AAF3C  4B FF F1 ED */	bl zSaveLoad_Tick__Fv
 lbl_800AE140:
-/* 800AE140 000AAF40  80 0D 90 A0 */	lwz r0, lbl_803CB9A0@sda21(r13)
+/* 800AE140 000AAF40  80 0D 90 A0 */	lwz r0, l_b9a0_promptSel@sda21(r13)
 /* 800AE144 000AAF44  2C 00 FF FF */	cmpwi r0, -1
 /* 800AE148 000AAF48  41 82 FF F4 */	beq lbl_800AE13C
 /* 800AE14C 000AAF4C  2C 1F 00 01 */	cmpwi r31, 1
@@ -1188,12 +1188,12 @@ lbl_800AE1A0:
 /* 800AE1A0 000AAFA0  38 80 00 5E */	li r4, 0x5e
 /* 800AE1A4 000AAFA4  4B FF F5 ED */	bl zSaveLoad_UIEvent__FiUi
 /* 800AE1A8 000AAFA8  38 00 FF FF */	li r0, -1
-/* 800AE1AC 000AAFAC  90 0D 90 A0 */	stw r0, lbl_803CB9A0@sda21(r13)
+/* 800AE1AC 000AAFAC  90 0D 90 A0 */	stw r0, l_b9a0_promptSel@sda21(r13)
 /* 800AE1B0 000AAFB0  48 00 00 08 */	b lbl_800AE1B8
 lbl_800AE1B4:
 /* 800AE1B4 000AAFB4  4B FF F1 75 */	bl zSaveLoad_Tick__Fv
 lbl_800AE1B8:
-/* 800AE1B8 000AAFB8  80 0D 90 A0 */	lwz r0, lbl_803CB9A0@sda21(r13)
+/* 800AE1B8 000AAFB8  80 0D 90 A0 */	lwz r0, l_b9a0_promptSel@sda21(r13)
 /* 800AE1BC 000AAFBC  2C 00 FF FF */	cmpwi r0, -1
 /* 800AE1C0 000AAFC0  41 82 FF F4 */	beq lbl_800AE1B4
 /* 800AE1C4 000AAFC4  2C 1F 00 01 */	cmpwi r31, 1
@@ -1412,8 +1412,8 @@ lbl_800AE470:
 /* 800AE498 000AB298  7F E4 FB 78 */	mr r4, r31
 /* 800AE49C 000AB29C  38 C0 FF FF */	li r6, -1
 /* 800AE4A0 000AB2A0  38 A5 CC 00 */	addi r5, r5, 0x0000CC00@l
-/* 800AE4A4 000AB2A4  38 ED 90 AC */	addi r7, r13, lbl_803CB9AC@sda21
-/* 800AE4A8 000AB2A8  39 0D 90 A8 */	addi r8, r13, lbl_803CB9A8@sda21
+/* 800AE4A4 000AB2A4  38 ED 90 AC */	addi r7, r13, l_b9ac_sNeeded@sda21
+/* 800AE4A8 000AB2A8  39 0D 90 A8 */	addi r8, r13, l_b9a8_sAvailable@sda21
 /* 800AE4AC 000AB2AC  39 20 00 00 */	li r9, 0
 /* 800AE4B0 000AB2B0  4B F8 EB F5 */	bl xSGTgtHaveRoom__FP17st_XSAVEGAME_DATAiiiPiPiPi
 /* 800AE4B4 000AB2B4  48 00 00 28 */	b lbl_800AE4DC
@@ -1423,8 +1423,8 @@ lbl_800AE4B8:
 /* 800AE4C0 000AB2C0  7F E4 FB 78 */	mr r4, r31
 /* 800AE4C4 000AB2C4  38 C0 FF FF */	li r6, -1
 /* 800AE4C8 000AB2C8  38 A5 CC 00 */	addi r5, r5, 0x0000CC00@l
-/* 800AE4CC 000AB2CC  38 ED 90 AC */	addi r7, r13, lbl_803CB9AC@sda21
-/* 800AE4D0 000AB2D0  39 0D 90 A8 */	addi r8, r13, lbl_803CB9A8@sda21
+/* 800AE4CC 000AB2CC  38 ED 90 AC */	addi r7, r13, l_b9ac_sNeeded@sda21
+/* 800AE4D0 000AB2D0  39 0D 90 A8 */	addi r8, r13, l_b9a8_sAvailable@sda21
 /* 800AE4D4 000AB2D4  39 20 00 00 */	li r9, 0
 /* 800AE4D8 000AB2D8  4B F8 EB CD */	bl xSGTgtHaveRoom__FP17st_XSAVEGAME_DATAiiiPiPiPi
 lbl_800AE4DC:
@@ -1531,8 +1531,8 @@ lbl_800AE62C:
 /* 800AE634 000AB434  7F E4 FB 78 */	mr r4, r31
 /* 800AE638 000AB438  38 C0 FF FF */	li r6, -1
 /* 800AE63C 000AB43C  38 A5 CC 00 */	addi r5, r5, 0x0000CC00@l
-/* 800AE640 000AB440  38 ED 90 AC */	addi r7, r13, lbl_803CB9AC@sda21
-/* 800AE644 000AB444  39 0D 90 A8 */	addi r8, r13, lbl_803CB9A8@sda21
+/* 800AE640 000AB440  38 ED 90 AC */	addi r7, r13, l_b9ac_sNeeded@sda21
+/* 800AE644 000AB444  39 0D 90 A8 */	addi r8, r13, l_b9a8_sAvailable@sda21
 /* 800AE648 000AB448  39 20 00 00 */	li r9, 0
 /* 800AE64C 000AB44C  4B F8 EA 59 */	bl xSGTgtHaveRoom__FP17st_XSAVEGAME_DATAiiiPiPiPi
 /* 800AE650 000AB450  2C 03 00 00 */	cmpwi r3, 0
@@ -1763,7 +1763,7 @@ zSaveLoad_CardCheck__Fii:
 /* 800AE948 000AB748  3B E0 00 01 */	li r31, 1
 /* 800AE94C 000AB74C  48 00 00 30 */	b lbl_800AE97C
 lbl_800AE950:
-/* 800AE950 000AB750  93 ED 90 A4 */	stw r31, lbl_803CB9A4@sda21(r13)
+/* 800AE950 000AB750  93 ED 90 A4 */	stw r31, l_b9a4_badCard@sda21(r13)
 /* 800AE954 000AB754  7F C3 F3 78 */	mr r3, r30
 /* 800AE958 000AB758  4B FF F1 AD */	bl zSaveLoad_CardPrompt__Fi
 /* 800AE95C 000AB75C  2C 03 00 02 */	cmpwi r3, 2
@@ -1805,7 +1805,7 @@ zSaveLoad_CardCheckFormatted__Fii:
 lbl_800AE9D0:
 /* 800AE9D0 000AB7D0  38 00 00 01 */	li r0, 1
 /* 800AE9D4 000AB7D4  7F C3 F3 78 */	mr r3, r30
-/* 800AE9D8 000AB7D8  90 0D 90 A4 */	stw r0, lbl_803CB9A4@sda21(r13)
+/* 800AE9D8 000AB7D8  90 0D 90 A4 */	stw r0, l_b9a4_badCard@sda21(r13)
 /* 800AE9DC 000AB7DC  4B FF F9 25 */	bl zSaveLoad_CardCheckFormattedSingle__Fi
 /* 800AE9E0 000AB7E0  2C 03 FF FF */	cmpwi r3, -1
 /* 800AE9E4 000AB7E4  40 82 00 0C */	bne lbl_800AE9F0
@@ -1829,12 +1829,12 @@ lbl_800AEA18:
 lbl_800AEA20:
 /* 800AEA20 000AB820  38 00 00 03 */	li r0, 3
 /* 800AEA24 000AB824  7F C3 F3 78 */	mr r3, r30
-/* 800AEA28 000AB828  90 0D 90 B0 */	stw r0, lbl_803CB9B0@sda21(r13)
+/* 800AEA28 000AB828  90 0D 90 B0 */	stw r0, l_b9b0_sAccessType@sda21(r13)
 /* 800AEA2C 000AB82C  7F E4 FB 78 */	mr r4, r31
 /* 800AEA30 000AB830  4B FF EE CD */	bl format__Fii
 /* 800AEA34 000AB834  38 00 00 02 */	li r0, 2
 /* 800AEA38 000AB838  2C 03 00 01 */	cmpwi r3, 1
-/* 800AEA3C 000AB83C  90 0D 90 B0 */	stw r0, lbl_803CB9B0@sda21(r13)
+/* 800AEA3C 000AB83C  90 0D 90 B0 */	stw r0, l_b9b0_sAccessType@sda21(r13)
 /* 800AEA40 000AB840  38 00 00 0B */	li r0, 0xb
 /* 800AEA44 000AB844  41 82 00 08 */	beq lbl_800AEA4C
 /* 800AEA48 000AB848  7C 60 1B 78 */	mr r0, r3
@@ -1884,7 +1884,7 @@ zSaveLoad_CardCheckSpace__Fii:
 /* 800AEACC 000AB8CC  4B FF FA 35 */	bl zSaveLoad_CardCheckSpaceSingle__Fi
 /* 800AEAD0 000AB8D0  48 00 00 4C */	b lbl_800AEB1C
 lbl_800AEAD4:
-/* 800AEAD4 000AB8D4  93 ED 90 A4 */	stw r31, lbl_803CB9A4@sda21(r13)
+/* 800AEAD4 000AB8D4  93 ED 90 A4 */	stw r31, l_b9a4_badCard@sda21(r13)
 /* 800AEAD8 000AB8D8  7F A3 EB 78 */	mr r3, r29
 /* 800AEADC 000AB8DC  4B FF FA 25 */	bl zSaveLoad_CardCheckSpaceSingle__Fi
 /* 800AEAE0 000AB8E0  2C 03 FF FF */	cmpwi r3, -1
@@ -1932,7 +1932,7 @@ zSaveLoad_CardCheckGames__Fii:
 /* 800AEB68 000AB968  4B FF FB 0D */	bl zSaveLoad_CardCheckGamesSingle__Fi
 /* 800AEB6C 000AB96C  48 00 00 4C */	b lbl_800AEBB8
 lbl_800AEB70:
-/* 800AEB70 000AB970  93 ED 90 A4 */	stw r31, lbl_803CB9A4@sda21(r13)
+/* 800AEB70 000AB970  93 ED 90 A4 */	stw r31, l_b9a4_badCard@sda21(r13)
 /* 800AEB74 000AB974  7F A3 EB 78 */	mr r3, r29
 /* 800AEB78 000AB978  4B FF FA FD */	bl zSaveLoad_CardCheckGamesSingle__Fi
 /* 800AEB7C 000AB97C  2C 03 FF FF */	cmpwi r3, -1
@@ -2090,8 +2090,8 @@ zSaveLoad_CardPick__Fi:
 /* 800AED58 000ABB58  7C 7E 1B 78 */	mr r30, r3
 /* 800AED5C 000ABB5C  2C 1E 00 01 */	cmpwi r30, 1
 /* 800AED60 000ABB60  38 60 00 16 */	li r3, 0x16
-/* 800AED64 000ABB64  90 0D 82 EC */	stw r0, lbl_803CABEC@sda21(r13)
-/* 800AED68 000ABB68  90 0D 90 A0 */	stw r0, lbl_803CB9A0@sda21(r13)
+/* 800AED64 000ABB64  90 0D 82 EC */	stw r0, l_abec_currentCard@sda21(r13)
+/* 800AED68 000ABB68  90 0D 90 A0 */	stw r0, l_b9a0_promptSel@sda21(r13)
 /* 800AED6C 000ABB6C  40 82 00 08 */	bne lbl_800AED74
 /* 800AED70 000ABB70  38 60 00 01 */	li r3, 1
 lbl_800AED74:
@@ -2106,7 +2106,7 @@ lbl_800AED8C:
 /* 800AED90 000ABB90  4B FF EA 01 */	bl zSaveLoad_UIEvent__FiUi
 /* 800AED94 000ABB94  48 00 01 A4 */	b lbl_800AEF38
 lbl_800AED98:
-/* 800AED98 000ABB98  80 6D 82 EC */	lwz r3, lbl_803CABEC@sda21(r13)
+/* 800AED98 000ABB98  80 6D 82 EC */	lwz r3, l_abec_currentCard@sda21(r13)
 /* 800AED9C 000ABB9C  2C 03 FF FF */	cmpwi r3, -1
 /* 800AEDA0 000ABBA0  41 82 01 94 */	beq lbl_800AEF34
 /* 800AEDA4 000ABBA4  7F C4 F3 78 */	mr r4, r30
@@ -2124,74 +2124,74 @@ lbl_800AEDC8:
 /* 800AEDD0 000ABBD0  48 00 00 3C */	b lbl_800AEE0C
 lbl_800AEDD4:
 /* 800AEDD4 000ABBD4  38 00 FF FF */	li r0, -1
-/* 800AEDD8 000ABBD8  90 0D 82 EC */	stw r0, lbl_803CABEC@sda21(r13)
-/* 800AEDDC 000ABBDC  90 0D 90 A0 */	stw r0, lbl_803CB9A0@sda21(r13)
+/* 800AEDD8 000ABBD8  90 0D 82 EC */	stw r0, l_abec_currentCard@sda21(r13)
+/* 800AEDDC 000ABBDC  90 0D 90 A0 */	stw r0, l_b9a0_promptSel@sda21(r13)
 /* 800AEDE0 000ABBE0  48 00 01 58 */	b lbl_800AEF38
 lbl_800AEDE4:
 /* 800AEDE4 000ABBE4  38 00 FF FF */	li r0, -1
 /* 800AEDE8 000ABBE8  3B E0 00 00 */	li r31, 0
-/* 800AEDEC 000ABBEC  90 0D 90 A0 */	stw r0, lbl_803CB9A0@sda21(r13)
+/* 800AEDEC 000ABBEC  90 0D 90 A0 */	stw r0, l_b9a0_promptSel@sda21(r13)
 /* 800AEDF0 000ABBF0  48 00 01 48 */	b lbl_800AEF38
 lbl_800AEDF4:
 /* 800AEDF4 000ABBF4  7F C3 F3 78 */	mr r3, r30
 /* 800AEDF8 000ABBF8  4B FF F1 75 */	bl zSaveLoad_CardWrongDeviceErrorPrompt__Fi
 /* 800AEDFC 000ABBFC  38 00 FF FF */	li r0, -1
 /* 800AEE00 000ABC00  3B E0 FF FF */	li r31, -1
-/* 800AEE04 000ABC04  90 0D 90 A0 */	stw r0, lbl_803CB9A0@sda21(r13)
+/* 800AEE04 000ABC04  90 0D 90 A0 */	stw r0, l_b9a0_promptSel@sda21(r13)
 /* 800AEE08 000ABC08  48 00 01 30 */	b lbl_800AEF38
 lbl_800AEE0C:
-/* 800AEE0C 000ABC0C  80 6D 82 EC */	lwz r3, lbl_803CABEC@sda21(r13)
+/* 800AEE0C 000ABC0C  80 6D 82 EC */	lwz r3, l_abec_currentCard@sda21(r13)
 /* 800AEE10 000ABC10  7F C4 F3 78 */	mr r4, r30
 /* 800AEE14 000ABC14  4B FF FB 9D */	bl zSaveLoad_CardCheckFormatted__Fii
 /* 800AEE18 000ABC18  7C 7F 1B 78 */	mr r31, r3
 /* 800AEE1C 000ABC1C  38 1F 00 01 */	addi r0, r31, 1
 /* 800AEE20 000ABC20  28 00 00 0C */	cmplwi r0, 0xc
 /* 800AEE24 000ABC24  41 81 00 98 */	bgt lbl_800AEEBC
-/* 800AEE28 000ABC28  3C 60 80 29 */	lis r3, lbl_80290444@ha
+/* 800AEE28 000ABC28  3C 60 80 29 */	lis r3, l_0444__esc__2_1523@ha
 /* 800AEE2C 000ABC2C  54 00 10 3A */	slwi r0, r0, 2
-/* 800AEE30 000ABC30  38 63 04 44 */	addi r3, r3, lbl_80290444@l
+/* 800AEE30 000ABC30  38 63 04 44 */	addi r3, r3, l_0444__esc__2_1523@l
 /* 800AEE34 000ABC34  7C 03 00 2E */	lwzx r0, r3, r0
 /* 800AEE38 000ABC38  7C 09 03 A6 */	mtctr r0
 /* 800AEE3C 000ABC3C  4E 80 04 20 */	bctr 
 lbl_800AEE40:
-/* 800AEE40 000ABC40  80 0D 90 A0 */	lwz r0, lbl_803CB9A0@sda21(r13)
+/* 800AEE40 000ABC40  80 0D 90 A0 */	lwz r0, l_b9a0_promptSel@sda21(r13)
 /* 800AEE44 000ABC44  3B E0 00 00 */	li r31, 0
 /* 800AEE48 000ABC48  2C 00 00 03 */	cmpwi r0, 3
 /* 800AEE4C 000ABC4C  40 82 00 10 */	bne lbl_800AEE5C
 /* 800AEE50 000ABC50  38 00 FF FF */	li r0, -1
-/* 800AEE54 000ABC54  90 0D 90 A0 */	stw r0, lbl_803CB9A0@sda21(r13)
+/* 800AEE54 000ABC54  90 0D 90 A0 */	stw r0, l_b9a0_promptSel@sda21(r13)
 /* 800AEE58 000ABC58  48 00 00 E0 */	b lbl_800AEF38
 lbl_800AEE5C:
 /* 800AEE5C 000ABC5C  2C 00 00 04 */	cmpwi r0, 4
 /* 800AEE60 000ABC60  40 82 00 5C */	bne lbl_800AEEBC
 /* 800AEE64 000ABC64  38 00 FF FF */	li r0, -1
 /* 800AEE68 000ABC68  38 60 FF FF */	li r3, -1
-/* 800AEE6C 000ABC6C  90 0D 82 EC */	stw r0, lbl_803CABEC@sda21(r13)
+/* 800AEE6C 000ABC6C  90 0D 82 EC */	stw r0, l_abec_currentCard@sda21(r13)
 /* 800AEE70 000ABC70  48 00 01 18 */	b lbl_800AEF88
 lbl_800AEE74:
 /* 800AEE74 000ABC74  38 00 FF FF */	li r0, -1
 /* 800AEE78 000ABC78  3B E0 00 00 */	li r31, 0
-/* 800AEE7C 000ABC7C  90 0D 90 A0 */	stw r0, lbl_803CB9A0@sda21(r13)
+/* 800AEE7C 000ABC7C  90 0D 90 A0 */	stw r0, l_b9a0_promptSel@sda21(r13)
 /* 800AEE80 000ABC80  48 00 00 B8 */	b lbl_800AEF38
 lbl_800AEE84:
 /* 800AEE84 000ABC84  7F C3 F3 78 */	mr r3, r30
 /* 800AEE88 000ABC88  4B FF F1 5D */	bl zSaveLoad_CardDamagedErrorPrompt__Fi
 /* 800AEE8C 000ABC8C  38 00 FF FF */	li r0, -1
 /* 800AEE90 000ABC90  3B E0 FF FF */	li r31, -1
-/* 800AEE94 000ABC94  90 0D 90 A0 */	stw r0, lbl_803CB9A0@sda21(r13)
+/* 800AEE94 000ABC94  90 0D 90 A0 */	stw r0, l_b9a0_promptSel@sda21(r13)
 /* 800AEE98 000ABC98  48 00 00 A0 */	b lbl_800AEF38
 lbl_800AEE9C:
 /* 800AEE9C 000ABC9C  38 00 FF FF */	li r0, -1
-/* 800AEEA0 000ABCA0  90 0D 82 EC */	stw r0, lbl_803CABEC@sda21(r13)
-/* 800AEEA4 000ABCA4  90 0D 90 A0 */	stw r0, lbl_803CB9A0@sda21(r13)
+/* 800AEEA0 000ABCA0  90 0D 82 EC */	stw r0, l_abec_currentCard@sda21(r13)
+/* 800AEEA4 000ABCA4  90 0D 90 A0 */	stw r0, l_b9a0_promptSel@sda21(r13)
 /* 800AEEA8 000ABCA8  48 00 00 90 */	b lbl_800AEF38
 lbl_800AEEAC:
 /* 800AEEAC 000ABCAC  38 00 FF FF */	li r0, -1
 /* 800AEEB0 000ABCB0  3B E0 00 00 */	li r31, 0
-/* 800AEEB4 000ABCB4  90 0D 90 A0 */	stw r0, lbl_803CB9A0@sda21(r13)
+/* 800AEEB4 000ABCB4  90 0D 90 A0 */	stw r0, l_b9a0_promptSel@sda21(r13)
 /* 800AEEB8 000ABCB8  48 00 00 80 */	b lbl_800AEF38
 lbl_800AEEBC:
-/* 800AEEBC 000ABCBC  80 6D 82 EC */	lwz r3, lbl_803CABEC@sda21(r13)
+/* 800AEEBC 000ABCBC  80 6D 82 EC */	lwz r3, l_abec_currentCard@sda21(r13)
 /* 800AEEC0 000ABCC0  7F C4 F3 78 */	mr r4, r30
 /* 800AEEC4 000ABCC4  4B FF FB B9 */	bl zSaveLoad_CardCheckValid__Fii
 /* 800AEEC8 000ABCC8  7C 7F 1B 78 */	mr r31, r3
@@ -2213,24 +2213,24 @@ lbl_800AEEF0:
 lbl_800AEF04:
 /* 800AEF04 000ABD04  38 00 FF FF */	li r0, -1
 /* 800AEF08 000ABD08  3B E0 00 00 */	li r31, 0
-/* 800AEF0C 000ABD0C  90 0D 90 A0 */	stw r0, lbl_803CB9A0@sda21(r13)
+/* 800AEF0C 000ABD0C  90 0D 90 A0 */	stw r0, l_b9a0_promptSel@sda21(r13)
 /* 800AEF10 000ABD10  48 00 00 28 */	b lbl_800AEF38
 lbl_800AEF14:
 /* 800AEF14 000ABD14  38 00 FF FF */	li r0, -1
-/* 800AEF18 000ABD18  90 0D 90 A0 */	stw r0, lbl_803CB9A0@sda21(r13)
-/* 800AEF1C 000ABD1C  90 0D 82 F0 */	stw r0, lbl_803CABF0@sda21(r13)
+/* 800AEF18 000ABD18  90 0D 90 A0 */	stw r0, l_b9a0_promptSel@sda21(r13)
+/* 800AEF1C 000ABD1C  90 0D 82 F0 */	stw r0, l_abf0_currentGame@sda21(r13)
 /* 800AEF20 000ABD20  48 00 00 14 */	b lbl_800AEF34
 lbl_800AEF24:
 /* 800AEF24 000ABD24  38 00 FF FF */	li r0, -1
 /* 800AEF28 000ABD28  3B E0 00 00 */	li r31, 0
-/* 800AEF2C 000ABD2C  90 0D 90 A0 */	stw r0, lbl_803CB9A0@sda21(r13)
+/* 800AEF2C 000ABD2C  90 0D 90 A0 */	stw r0, l_b9a0_promptSel@sda21(r13)
 /* 800AEF30 000ABD30  48 00 00 08 */	b lbl_800AEF38
 lbl_800AEF34:
 /* 800AEF34 000ABD34  4B FF E3 F5 */	bl zSaveLoad_Tick__Fv
 lbl_800AEF38:
 /* 800AEF38 000ABD38  2C 1F 00 00 */	cmpwi r31, 0
 /* 800AEF3C 000ABD3C  40 82 00 10 */	bne lbl_800AEF4C
-/* 800AEF40 000ABD40  80 0D 90 A0 */	lwz r0, lbl_803CB9A0@sda21(r13)
+/* 800AEF40 000ABD40  80 0D 90 A0 */	lwz r0, l_b9a0_promptSel@sda21(r13)
 /* 800AEF44 000ABD44  2C 00 FF FF */	cmpwi r0, -1
 /* 800AEF48 000ABD48  41 82 FE 50 */	beq lbl_800AED98
 lbl_800AEF4C:
@@ -2246,7 +2246,7 @@ lbl_800AEF5C:
 /* 800AEF6C 000ABD6C  7F E3 FB 78 */	mr r3, r31
 /* 800AEF70 000ABD70  48 00 00 18 */	b lbl_800AEF88
 lbl_800AEF74:
-/* 800AEF74 000ABD74  80 0D 90 A0 */	lwz r0, lbl_803CB9A0@sda21(r13)
+/* 800AEF74 000ABD74  80 0D 90 A0 */	lwz r0, l_b9a0_promptSel@sda21(r13)
 /* 800AEF78 000ABD78  7F E3 FB 78 */	mr r3, r31
 /* 800AEF7C 000ABD7C  2C 00 FF FF */	cmpwi r0, -1
 /* 800AEF80 000ABD80  41 82 00 08 */	beq lbl_800AEF88
@@ -2262,9 +2262,9 @@ lbl_800AEF88:
 IsValidName__FPc:
 /* 800AEFA0 000ABDA0  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 800AEFA4 000ABDA4  7C 08 02 A6 */	mflr r0
-/* 800AEFA8 000ABDA8  3C 80 80 26 */	lis r4, lbl_8025E9C0@ha
+/* 800AEFA8 000ABDA8  3C 80 80 26 */	lis r4, l_e9c0__esc__2_stringBase0@ha
 /* 800AEFAC 000ABDAC  90 01 00 14 */	stw r0, 0x14(r1)
-/* 800AEFB0 000ABDB0  38 84 E9 C0 */	addi r4, r4, lbl_8025E9C0@l
+/* 800AEFB0 000ABDB0  38 84 E9 C0 */	addi r4, r4, l_e9c0__esc__2_stringBase0@l
 /* 800AEFB4 000ABDB4  38 84 04 53 */	addi r4, r4, 0x453
 /* 800AEFB8 000ABDB8  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 800AEFBC 000ABDBC  7C 7F 1B 78 */	mr r31, r3
@@ -2310,13 +2310,13 @@ lbl_800AF028:
 BuildIt__FPci:
 /* 800AF03C 000ABE3C  94 21 FE 80 */	stwu r1, -0x180(r1)
 /* 800AF040 000ABE40  7C 08 02 A6 */	mflr r0
-/* 800AF044 000ABE44  3C A0 80 26 */	lis r5, lbl_8025E8A0@ha
-/* 800AF048 000ABE48  3C C0 80 26 */	lis r6, lbl_8025E880@ha
+/* 800AF044 000ABE44  3C A0 80 26 */	lis r5, l_e8a0__esc__2_1546@ha
+/* 800AF048 000ABE48  3C C0 80 26 */	lis r6, l_e880__esc__2_1545@ha
 /* 800AF04C 000ABE4C  90 01 01 84 */	stw r0, 0x184(r1)
-/* 800AF050 000ABE50  38 A5 E8 A0 */	addi r5, r5, lbl_8025E8A0@l
+/* 800AF050 000ABE50  38 A5 E8 A0 */	addi r5, r5, l_e8a0__esc__2_1546@l
 /* 800AF054 000ABE54  38 00 00 20 */	li r0, 0x20
 /* 800AF058 000ABE58  93 E1 01 7C */	stw r31, 0x17c(r1)
-/* 800AF05C 000ABE5C  3B E6 E8 80 */	addi r31, r6, lbl_8025E880@l
+/* 800AF05C 000ABE5C  3B E6 E8 80 */	addi r31, r6, l_e880__esc__2_1545@l
 /* 800AF060 000ABE60  38 C1 00 64 */	addi r6, r1, 0x64
 /* 800AF064 000ABE64  38 A5 FF FC */	addi r5, r5, -4
 /* 800AF068 000ABE68  93 C1 01 78 */	stw r30, 0x178(r1)
@@ -2354,9 +2354,9 @@ lbl_800AF0BC:
 /* 800AF0E4 000ABEE4  4B FF FE BD */	bl IsValidName__FPc
 /* 800AF0E8 000ABEE8  54 60 06 3F */	clrlwi. r0, r3, 0x18
 /* 800AF0EC 000ABEEC  40 82 00 1C */	bne lbl_800AF108
-/* 800AF0F0 000ABEF0  3C 80 80 26 */	lis r4, lbl_8025E9C0@ha
+/* 800AF0F0 000ABEF0  3C 80 80 26 */	lis r4, l_e9c0__esc__2_stringBase0@ha
 /* 800AF0F4 000ABEF4  7F A3 EB 78 */	mr r3, r29
-/* 800AF0F8 000ABEF8  38 84 E9 C0 */	addi r4, r4, lbl_8025E9C0@l
+/* 800AF0F8 000ABEF8  38 84 E9 C0 */	addi r4, r4, l_e9c0__esc__2_stringBase0@l
 /* 800AF0FC 000ABEFC  38 84 04 54 */	addi r4, r4, 0x454
 /* 800AF100 000ABF00  48 13 86 01 */	bl strcpy
 /* 800AF104 000ABF04  48 00 01 08 */	b lbl_800AF20C
@@ -2368,10 +2368,10 @@ lbl_800AF108:
 /* 800AF118 000ABF18  3C 60 80 3C */	lis r3, zSaveLoadGameTable@ha
 /* 800AF11C 000ABF1C  38 A0 00 2F */	li r5, 0x2f
 /* 800AF120 000ABF20  38 03 25 20 */	addi r0, r3, zSaveLoadGameTable@l
-/* 800AF124 000ABF24  3C 80 80 26 */	lis r4, lbl_8025E9C0@ha
+/* 800AF124 000ABF24  3C 80 80 26 */	lis r4, l_e9c0__esc__2_stringBase0@ha
 /* 800AF128 000ABF28  7C 60 F2 14 */	add r3, r0, r30
 /* 800AF12C 000ABF2C  98 A1 00 4A */	stb r5, 0x4a(r1)
-/* 800AF130 000ABF30  38 84 E9 C0 */	addi r4, r4, lbl_8025E9C0@l
+/* 800AF130 000ABF30  38 84 E9 C0 */	addi r4, r4, l_e9c0__esc__2_stringBase0@l
 /* 800AF134 000ABF34  88 C3 00 48 */	lbz r6, 0x48(r3)
 /* 800AF138 000ABF38  88 E3 00 49 */	lbz r7, 0x49(r3)
 /* 800AF13C 000ABF3C  38 61 00 68 */	addi r3, r1, 0x68
@@ -2395,25 +2395,25 @@ lbl_800AF108:
 /* 800AF184 000ABF84  84 1C 00 64 */	lwzu r0, 0x64(r28)
 /* 800AF188 000ABF88  28 00 00 01 */	cmplwi r0, 1
 /* 800AF18C 000ABF8C  40 82 00 1C */	bne lbl_800AF1A8
-/* 800AF190 000ABF90  3C 80 80 26 */	lis r4, lbl_8025E9C0@ha
+/* 800AF190 000ABF90  3C 80 80 26 */	lis r4, l_e9c0__esc__2_stringBase0@ha
 /* 800AF194 000ABF94  38 61 00 08 */	addi r3, r1, 8
-/* 800AF198 000ABF98  38 84 E9 C0 */	addi r4, r4, lbl_8025E9C0@l
+/* 800AF198 000ABF98  38 84 E9 C0 */	addi r4, r4, l_e9c0__esc__2_stringBase0@l
 /* 800AF19C 000ABF9C  38 84 04 70 */	addi r4, r4, 0x470
 /* 800AF1A0 000ABFA0  48 13 85 61 */	bl strcpy
 /* 800AF1A4 000ABFA4  48 00 00 18 */	b lbl_800AF1BC
 lbl_800AF1A8:
-/* 800AF1A8 000ABFA8  3C 80 80 26 */	lis r4, lbl_8025E9C0@ha
+/* 800AF1A8 000ABFA8  3C 80 80 26 */	lis r4, l_e9c0__esc__2_stringBase0@ha
 /* 800AF1AC 000ABFAC  38 61 00 08 */	addi r3, r1, 8
-/* 800AF1B0 000ABFB0  38 84 E9 C0 */	addi r4, r4, lbl_8025E9C0@l
+/* 800AF1B0 000ABFB0  38 84 E9 C0 */	addi r4, r4, l_e9c0__esc__2_stringBase0@l
 /* 800AF1B4 000ABFB4  38 84 04 76 */	addi r4, r4, 0x476
 /* 800AF1B8 000ABFB8  48 13 85 49 */	bl strcpy
 lbl_800AF1BC:
 /* 800AF1BC 000ABFBC  3C 60 80 3C */	lis r3, zSaveLoadGameTable@ha
-/* 800AF1C0 000ABFC0  3C 80 80 26 */	lis r4, lbl_8025E9C0@ha
+/* 800AF1C0 000ABFC0  3C 80 80 26 */	lis r4, l_e9c0__esc__2_stringBase0@ha
 /* 800AF1C4 000ABFC4  38 03 25 20 */	addi r0, r3, zSaveLoadGameTable@l
 /* 800AF1C8 000ABFC8  80 FC 00 00 */	lwz r7, 0(r28)
 /* 800AF1CC 000ABFCC  7C 60 F2 14 */	add r3, r0, r30
-/* 800AF1D0 000ABFD0  38 84 E9 C0 */	addi r4, r4, lbl_8025E9C0@l
+/* 800AF1D0 000ABFD0  38 84 E9 C0 */	addi r4, r4, l_e9c0__esc__2_stringBase0@l
 /* 800AF1D4 000ABFD4  80 A3 00 60 */	lwz r5, 0x60(r3)
 /* 800AF1D8 000ABFD8  7F E9 FB 78 */	mr r9, r31
 /* 800AF1DC 000ABFDC  38 61 00 68 */	addi r3, r1, 0x68
@@ -2450,9 +2450,9 @@ zSaveLoad_BuildName__FPci:
 /* 800AF248 000AC048  4B FF FD F5 */	bl BuildIt__FPci
 /* 800AF24C 000AC04C  1C 1A 00 6C */	mulli r0, r26, 0x6c
 /* 800AF250 000AC050  3C 80 80 3C */	lis r4, zSaveLoadGameTable@ha
-/* 800AF254 000AC054  3C 60 80 26 */	lis r3, lbl_8025E9C0@ha
+/* 800AF254 000AC054  3C 60 80 26 */	lis r3, l_e9c0__esc__2_stringBase0@ha
 /* 800AF258 000AC058  3B C4 25 20 */	addi r30, r4, zSaveLoadGameTable@l
-/* 800AF25C 000AC05C  3B E3 E9 C0 */	addi r31, r3, lbl_8025E9C0@l
+/* 800AF25C 000AC05C  3B E3 E9 C0 */	addi r31, r3, l_e9c0__esc__2_stringBase0@l
 /* 800AF260 000AC060  3B 80 00 00 */	li r28, 0
 /* 800AF264 000AC064  7F BE 02 14 */	add r29, r30, r0
 /* 800AF268 000AC068  3B 60 00 00 */	li r27, 0
@@ -2480,9 +2480,9 @@ lbl_800AF2B0:
 /* 800AF2B4 000AC0B4  41 80 FF BC */	blt lbl_800AF270
 /* 800AF2B8 000AC0B8  2C 1C 00 00 */	cmpwi r28, 0
 /* 800AF2BC 000AC0BC  40 81 00 30 */	ble lbl_800AF2EC
-/* 800AF2C0 000AC0C0  3C 80 80 26 */	lis r4, lbl_8025E9C0@ha
+/* 800AF2C0 000AC0C0  3C 80 80 26 */	lis r4, l_e9c0__esc__2_stringBase0@ha
 /* 800AF2C4 000AC0C4  7F 23 CB 78 */	mr r3, r25
-/* 800AF2C8 000AC0C8  38 84 E9 C0 */	addi r4, r4, lbl_8025E9C0@l
+/* 800AF2C8 000AC0C8  38 84 E9 C0 */	addi r4, r4, l_e9c0__esc__2_stringBase0@l
 /* 800AF2CC 000AC0CC  7F 86 E3 78 */	mr r6, r28
 /* 800AF2D0 000AC0D0  38 84 04 94 */	addi r4, r4, 0x494
 /* 800AF2D4 000AC0D4  38 A1 00 88 */	addi r5, r1, 0x88
@@ -2513,13 +2513,13 @@ zSaveLoad_GameSelect__Fi:
 /* 800AF324 000AC124  7C 79 1B 78 */	mr r25, r3
 /* 800AF328 000AC128  3B E4 25 20 */	addi r31, r4, zSaveLoadGameTable@l
 /* 800AF32C 000AC12C  3B A0 00 00 */	li r29, 0
-/* 800AF330 000AC130  90 0D 90 A4 */	stw r0, lbl_803CB9A4@sda21(r13)
+/* 800AF330 000AC130  90 0D 90 A4 */	stw r0, l_b9a4_badCard@sda21(r13)
 /* 800AF334 000AC134  48 00 04 0C */	b lbl_800AF740
 lbl_800AF338:
 /* 800AF338 000AC138  38 00 FF FF */	li r0, -1
-/* 800AF33C 000AC13C  90 0D 82 F0 */	stw r0, lbl_803CABF0@sda21(r13)
-/* 800AF340 000AC140  90 0D 90 A0 */	stw r0, lbl_803CB9A0@sda21(r13)
-/* 800AF344 000AC144  80 6D 82 EC */	lwz r3, lbl_803CABEC@sda21(r13)
+/* 800AF33C 000AC13C  90 0D 82 F0 */	stw r0, l_abf0_currentGame@sda21(r13)
+/* 800AF340 000AC140  90 0D 90 A0 */	stw r0, l_b9a0_promptSel@sda21(r13)
+/* 800AF344 000AC144  80 6D 82 EC */	lwz r3, l_abec_currentCard@sda21(r13)
 /* 800AF348 000AC148  4B FF E7 1D */	bl CardtoTgt__Fi
 /* 800AF34C 000AC14C  2C 19 00 01 */	cmpwi r25, 1
 /* 800AF350 000AC150  7C 7A 1B 78 */	mr r26, r3
@@ -2558,14 +2558,14 @@ lbl_800AF394:
 /* 800AF3C8 000AC1C8  38 80 00 02 */	li r4, 2
 /* 800AF3CC 000AC1CC  4B FF E3 C5 */	bl zSaveLoad_UIEvent__FiUi
 lbl_800AF3D0:
-/* 800AF3D0 000AC1D0  3C 80 80 26 */	lis r4, lbl_8025E9C0@ha
+/* 800AF3D0 000AC1D0  3C 80 80 26 */	lis r4, l_e9c0__esc__2_stringBase0@ha
 /* 800AF3D4 000AC1D4  7F C3 F3 78 */	mr r3, r30
-/* 800AF3D8 000AC1D8  38 84 E9 C0 */	addi r4, r4, lbl_8025E9C0@l
+/* 800AF3D8 000AC1D8  38 84 E9 C0 */	addi r4, r4, l_e9c0__esc__2_stringBase0@l
 /* 800AF3DC 000AC1DC  38 84 04 9C */	addi r4, r4, 0x49c
 /* 800AF3E0 000AC1E0  48 13 83 21 */	bl strcpy
-/* 800AF3E4 000AC1E4  3C 80 80 26 */	lis r4, lbl_8025E9C0@ha
+/* 800AF3E4 000AC1E4  3C 80 80 26 */	lis r4, l_e9c0__esc__2_stringBase0@ha
 /* 800AF3E8 000AC1E8  38 7E 00 40 */	addi r3, r30, 0x40
-/* 800AF3EC 000AC1EC  38 84 E9 C0 */	addi r4, r4, lbl_8025E9C0@l
+/* 800AF3EC 000AC1EC  38 84 E9 C0 */	addi r4, r4, l_e9c0__esc__2_stringBase0@l
 /* 800AF3F0 000AC1F0  38 84 04 9C */	addi r4, r4, 0x49c
 /* 800AF3F4 000AC1F4  48 13 83 0D */	bl strcpy
 /* 800AF3F8 000AC1F8  38 60 00 00 */	li r3, 0
@@ -2625,9 +2625,9 @@ lbl_800AF460:
 /* 800AF4C8 000AC2C8  7F 63 DB 78 */	mr r3, r27
 /* 800AF4CC 000AC2CC  7F 84 E3 78 */	mr r4, r28
 /* 800AF4D0 000AC2D0  4B F8 DF 51 */	bl xSGGameThumbIndex__FP17st_XSAVEGAME_DATAi
-/* 800AF4D4 000AC2D4  3C 80 80 26 */	lis r4, lbl_8025E9C0@ha
+/* 800AF4D4 000AC2D4  3C 80 80 26 */	lis r4, l_e9c0__esc__2_stringBase0@ha
 /* 800AF4D8 000AC2D8  98 7E 00 68 */	stb r3, 0x68(r30)
-/* 800AF4DC 000AC2DC  38 84 E9 C0 */	addi r4, r4, lbl_8025E9C0@l
+/* 800AF4DC 000AC2DC  38 84 E9 C0 */	addi r4, r4, l_e9c0__esc__2_stringBase0@l
 /* 800AF4E0 000AC2E0  7F C3 F3 78 */	mr r3, r30
 /* 800AF4E4 000AC2E4  38 84 04 53 */	addi r4, r4, 0x453
 /* 800AF4E8 000AC2E8  48 13 D7 5D */	bl strcmpi
@@ -2668,21 +2668,21 @@ lbl_800AF550:
 /* 800AF564 000AC364  4B FF E2 2D */	bl zSaveLoad_UIEvent__FiUi
 lbl_800AF568:
 /* 800AF568 000AC368  38 00 00 00 */	li r0, 0
-/* 800AF56C 000AC36C  90 0D 90 A4 */	stw r0, lbl_803CB9A4@sda21(r13)
+/* 800AF56C 000AC36C  90 0D 90 A4 */	stw r0, l_b9a4_badCard@sda21(r13)
 /* 800AF570 000AC370  48 00 01 BC */	b lbl_800AF72C
 lbl_800AF574:
 /* 800AF574 000AC374  4B FF DD B5 */	bl zSaveLoad_Tick__Fv
 /* 800AF578 000AC378  38 60 00 03 */	li r3, 3
 /* 800AF57C 000AC37C  4B FF E0 1D */	bl zSaveLoad_poll__Fi
-/* 800AF580 000AC380  80 0D 90 A0 */	lwz r0, lbl_803CB9A0@sda21(r13)
+/* 800AF580 000AC380  80 0D 90 A0 */	lwz r0, l_b9a0_promptSel@sda21(r13)
 /* 800AF584 000AC384  2C 00 00 04 */	cmpwi r0, 4
 /* 800AF588 000AC388  40 82 00 08 */	bne lbl_800AF590
 /* 800AF58C 000AC38C  7C 1D 03 78 */	mr r29, r0
 lbl_800AF590:
-/* 800AF590 000AC390  80 0D 82 F0 */	lwz r0, lbl_803CABF0@sda21(r13)
+/* 800AF590 000AC390  80 0D 82 F0 */	lwz r0, l_abf0_currentGame@sda21(r13)
 /* 800AF594 000AC394  2C 00 FF FF */	cmpwi r0, -1
 /* 800AF598 000AC398  41 82 01 94 */	beq lbl_800AF72C
-/* 800AF59C 000AC39C  80 6D 82 EC */	lwz r3, lbl_803CABEC@sda21(r13)
+/* 800AF59C 000AC39C  80 6D 82 EC */	lwz r3, l_abec_currentCard@sda21(r13)
 /* 800AF5A0 000AC3A0  7F 24 CB 78 */	mr r4, r25
 /* 800AF5A4 000AC3A4  4B FF F3 81 */	bl zSaveLoad_CardCheck__Fii
 /* 800AF5A8 000AC3A8  7C 7D 1B 78 */	mr r29, r3
@@ -2690,16 +2690,16 @@ lbl_800AF590:
 /* 800AF5B0 000AC3B0  41 82 00 2C */	beq lbl_800AF5DC
 /* 800AF5B4 000AC3B4  38 00 FF FF */	li r0, -1
 /* 800AF5B8 000AC3B8  2C 1D 00 09 */	cmpwi r29, 9
-/* 800AF5BC 000AC3BC  90 0D 82 F0 */	stw r0, lbl_803CABF0@sda21(r13)
+/* 800AF5BC 000AC3BC  90 0D 82 F0 */	stw r0, l_abf0_currentGame@sda21(r13)
 /* 800AF5C0 000AC3C0  38 00 00 00 */	li r0, 0
-/* 800AF5C4 000AC3C4  90 0D 90 A4 */	stw r0, lbl_803CB9A4@sda21(r13)
+/* 800AF5C4 000AC3C4  90 0D 90 A4 */	stw r0, l_b9a4_badCard@sda21(r13)
 /* 800AF5C8 000AC3C8  40 82 01 78 */	bne lbl_800AF740
 /* 800AF5CC 000AC3CC  7F 23 CB 78 */	mr r3, r25
 /* 800AF5D0 000AC3D0  4B FF E9 9D */	bl zSaveLoad_CardWrongDeviceErrorPrompt__Fi
 /* 800AF5D4 000AC3D4  3B A0 00 09 */	li r29, 9
 /* 800AF5D8 000AC3D8  48 00 01 68 */	b lbl_800AF740
 lbl_800AF5DC:
-/* 800AF5DC 000AC3DC  80 6D 82 EC */	lwz r3, lbl_803CABEC@sda21(r13)
+/* 800AF5DC 000AC3DC  80 6D 82 EC */	lwz r3, l_abec_currentCard@sda21(r13)
 /* 800AF5E0 000AC3E0  7F 24 CB 78 */	mr r4, r25
 /* 800AF5E4 000AC3E4  4B FF F3 CD */	bl zSaveLoad_CardCheckFormatted__Fii
 /* 800AF5E8 000AC3E8  7C 7D 1B 78 */	mr r29, r3
@@ -2718,25 +2718,25 @@ lbl_800AF60C:
 lbl_800AF618:
 /* 800AF618 000AC418  38 00 FF FF */	li r0, -1
 /* 800AF61C 000AC41C  3B A0 00 00 */	li r29, 0
-/* 800AF620 000AC420  90 0D 90 A0 */	stw r0, lbl_803CB9A0@sda21(r13)
+/* 800AF620 000AC420  90 0D 90 A0 */	stw r0, l_b9a0_promptSel@sda21(r13)
 /* 800AF624 000AC424  48 00 01 08 */	b lbl_800AF72C
 lbl_800AF628:
 /* 800AF628 000AC428  7F 23 CB 78 */	mr r3, r25
 /* 800AF62C 000AC42C  4B FF E9 B9 */	bl zSaveLoad_CardDamagedErrorPrompt__Fi
 /* 800AF630 000AC430  38 60 FF FF */	li r3, -1
 /* 800AF634 000AC434  38 00 00 00 */	li r0, 0
-/* 800AF638 000AC438  90 6D 90 A0 */	stw r3, lbl_803CB9A0@sda21(r13)
+/* 800AF638 000AC438  90 6D 90 A0 */	stw r3, l_b9a0_promptSel@sda21(r13)
 /* 800AF63C 000AC43C  3B A0 00 07 */	li r29, 7
-/* 800AF640 000AC440  90 0D 90 A4 */	stw r0, lbl_803CB9A4@sda21(r13)
+/* 800AF640 000AC440  90 0D 90 A4 */	stw r0, l_b9a4_badCard@sda21(r13)
 /* 800AF644 000AC444  48 00 00 E8 */	b lbl_800AF72C
 lbl_800AF648:
 /* 800AF648 000AC448  38 60 FF FF */	li r3, -1
 /* 800AF64C 000AC44C  38 00 00 00 */	li r0, 0
-/* 800AF650 000AC450  90 6D 82 F0 */	stw r3, lbl_803CABF0@sda21(r13)
-/* 800AF654 000AC454  90 0D 90 A4 */	stw r0, lbl_803CB9A4@sda21(r13)
+/* 800AF650 000AC450  90 6D 82 F0 */	stw r3, l_abf0_currentGame@sda21(r13)
+/* 800AF654 000AC454  90 0D 90 A4 */	stw r0, l_b9a4_badCard@sda21(r13)
 /* 800AF658 000AC458  48 00 00 D4 */	b lbl_800AF72C
 lbl_800AF65C:
-/* 800AF65C 000AC45C  80 6D 82 EC */	lwz r3, lbl_803CABEC@sda21(r13)
+/* 800AF65C 000AC45C  80 6D 82 EC */	lwz r3, l_abec_currentCard@sda21(r13)
 /* 800AF660 000AC460  7F 24 CB 78 */	mr r4, r25
 /* 800AF664 000AC464  4B FF F4 19 */	bl zSaveLoad_CardCheckValid__Fii
 /* 800AF668 000AC468  7C 7D 1B 78 */	mr r29, r3
@@ -2752,22 +2752,22 @@ lbl_800AF688:
 /* 800AF68C 000AC48C  40 80 00 2C */	bge lbl_800AF6B8
 /* 800AF690 000AC490  38 00 FF FF */	li r0, -1
 /* 800AF694 000AC494  3B A0 00 00 */	li r29, 0
-/* 800AF698 000AC498  90 0D 90 A0 */	stw r0, lbl_803CB9A0@sda21(r13)
+/* 800AF698 000AC498  90 0D 90 A0 */	stw r0, l_b9a0_promptSel@sda21(r13)
 /* 800AF69C 000AC49C  48 00 00 90 */	b lbl_800AF72C
 lbl_800AF6A0:
 /* 800AF6A0 000AC4A0  38 60 FF FF */	li r3, -1
 /* 800AF6A4 000AC4A4  38 00 00 00 */	li r0, 0
-/* 800AF6A8 000AC4A8  90 6D 90 A0 */	stw r3, lbl_803CB9A0@sda21(r13)
-/* 800AF6AC 000AC4AC  90 6D 82 F0 */	stw r3, lbl_803CABF0@sda21(r13)
-/* 800AF6B0 000AC4B0  90 0D 90 A4 */	stw r0, lbl_803CB9A4@sda21(r13)
+/* 800AF6A8 000AC4A8  90 6D 90 A0 */	stw r3, l_b9a0_promptSel@sda21(r13)
+/* 800AF6AC 000AC4AC  90 6D 82 F0 */	stw r3, l_abf0_currentGame@sda21(r13)
+/* 800AF6B0 000AC4B0  90 0D 90 A4 */	stw r0, l_b9a4_badCard@sda21(r13)
 /* 800AF6B4 000AC4B4  48 00 00 78 */	b lbl_800AF72C
 lbl_800AF6B8:
-/* 800AF6B8 000AC4B8  80 0D 90 A4 */	lwz r0, lbl_803CB9A4@sda21(r13)
+/* 800AF6B8 000AC4B8  80 0D 90 A4 */	lwz r0, l_b9a4_badCard@sda21(r13)
 /* 800AF6BC 000AC4BC  2C 00 00 00 */	cmpwi r0, 0
 /* 800AF6C0 000AC4C0  40 82 00 60 */	bne lbl_800AF720
-/* 800AF6C4 000AC4C4  80 6D 82 EC */	lwz r3, lbl_803CABEC@sda21(r13)
+/* 800AF6C4 000AC4C4  80 6D 82 EC */	lwz r3, l_abec_currentCard@sda21(r13)
 /* 800AF6C8 000AC4C8  7F 25 CB 78 */	mr r5, r25
-/* 800AF6CC 000AC4CC  80 8D 82 F0 */	lwz r4, lbl_803CABF0@sda21(r13)
+/* 800AF6CC 000AC4CC  80 8D 82 F0 */	lwz r4, l_abf0_currentGame@sda21(r13)
 /* 800AF6D0 000AC4D0  4B FF F5 15 */	bl zSaveLoad_CardCheckGameSlot__Fiii
 /* 800AF6D4 000AC4D4  7C 7D 1B 78 */	mr r29, r3
 /* 800AF6D8 000AC4D8  2C 1D 00 01 */	cmpwi r29, 1
@@ -2785,24 +2785,24 @@ lbl_800AF6F8:
 lbl_800AF704:
 /* 800AF704 000AC504  38 00 FF FF */	li r0, -1
 /* 800AF708 000AC508  3B A0 00 00 */	li r29, 0
-/* 800AF70C 000AC50C  90 0D 90 A0 */	stw r0, lbl_803CB9A0@sda21(r13)
+/* 800AF70C 000AC50C  90 0D 90 A0 */	stw r0, l_b9a0_promptSel@sda21(r13)
 /* 800AF710 000AC510  48 00 00 1C */	b lbl_800AF72C
 lbl_800AF714:
 /* 800AF714 000AC514  38 00 FF FF */	li r0, -1
-/* 800AF718 000AC518  90 0D 82 F0 */	stw r0, lbl_803CABF0@sda21(r13)
+/* 800AF718 000AC518  90 0D 82 F0 */	stw r0, l_abf0_currentGame@sda21(r13)
 /* 800AF71C 000AC51C  48 00 00 10 */	b lbl_800AF72C
 lbl_800AF720:
 /* 800AF720 000AC520  38 00 FF FF */	li r0, -1
 /* 800AF724 000AC524  3B A0 00 00 */	li r29, 0
-/* 800AF728 000AC528  90 0D 82 F0 */	stw r0, lbl_803CABF0@sda21(r13)
+/* 800AF728 000AC528  90 0D 82 F0 */	stw r0, l_abf0_currentGame@sda21(r13)
 lbl_800AF72C:
 /* 800AF72C 000AC52C  2C 1D 00 00 */	cmpwi r29, 0
 /* 800AF730 000AC530  40 82 00 10 */	bne lbl_800AF740
-/* 800AF734 000AC534  80 0D 90 A0 */	lwz r0, lbl_803CB9A0@sda21(r13)
+/* 800AF734 000AC534  80 0D 90 A0 */	lwz r0, l_b9a0_promptSel@sda21(r13)
 /* 800AF738 000AC538  2C 00 FF FF */	cmpwi r0, -1
 /* 800AF73C 000AC53C  41 82 FE 38 */	beq lbl_800AF574
 lbl_800AF740:
-/* 800AF740 000AC540  80 0D 90 A4 */	lwz r0, lbl_803CB9A4@sda21(r13)
+/* 800AF740 000AC540  80 0D 90 A4 */	lwz r0, l_b9a4_badCard@sda21(r13)
 /* 800AF744 000AC544  2C 00 00 00 */	cmpwi r0, 0
 /* 800AF748 000AC548  40 82 FB F0 */	bne lbl_800AF338
 /* 800AF74C 000AC54C  2C 19 00 01 */	cmpwi r25, 1
@@ -2827,7 +2827,7 @@ lbl_800AF770:
 
 .global zSaveLoadGetPreAutoSave__Fv
 zSaveLoadGetPreAutoSave__Fv:
-/* 800AF790 000AC590  88 6D 90 B4 */	lbz r3, lbl_803CB9B4@sda21(r13)
+/* 800AF790 000AC590  88 6D 90 B4 */	lbz r3, l_b9b4_preAutoSaving@sda21(r13)
 /* 800AF794 000AC594  4E 80 00 20 */	blr 
 
 .global zSaveLoadPreAutoSave__Fb
@@ -2836,7 +2836,7 @@ zSaveLoadPreAutoSave__Fb:
 /* 800AF79C 000AC59C  7C 08 02 A6 */	mflr r0
 /* 800AF7A0 000AC5A0  90 01 00 14 */	stw r0, 0x14(r1)
 /* 800AF7A4 000AC5A4  54 60 06 3F */	clrlwi. r0, r3, 0x18
-/* 800AF7A8 000AC5A8  98 6D 90 B4 */	stb r3, lbl_803CB9B4@sda21(r13)
+/* 800AF7A8 000AC5A8  98 6D 90 B4 */	stb r3, l_b9b4_preAutoSaving@sda21(r13)
 /* 800AF7AC 000AC5AC  41 82 00 0C */	beq lbl_800AF7B8
 /* 800AF7B0 000AC5B0  48 0D 11 7D */	bl DisableReset__11ResetButtonFv
 /* 800AF7B4 000AC5B4  48 00 00 08 */	b lbl_800AF7BC
@@ -2864,14 +2864,14 @@ zSaveLoadAutoSaveUpdate__Fv:
 /* 800AF7F8 000AC5F8  40 82 00 08 */	bne lbl_800AF800
 /* 800AF7FC 000AC5FC  48 00 00 C4 */	b lbl_800AF8C0
 lbl_800AF800:
-/* 800AF800 000AC600  88 0D 90 B4 */	lbz r0, lbl_803CB9B4@sda21(r13)
+/* 800AF800 000AC600  88 0D 90 B4 */	lbz r0, l_b9b4_preAutoSaving@sda21(r13)
 /* 800AF804 000AC604  28 00 00 00 */	cmplwi r0, 0
 /* 800AF808 000AC608  41 82 00 B8 */	beq lbl_800AF8C0
 /* 800AF80C 000AC60C  4B F8 F9 1D */	bl xSGAutoSave_GetCache__Fv
 /* 800AF810 000AC610  48 00 12 01 */	bl LastPhysicalSlot__11XSGAutoDataFv
 /* 800AF814 000AC614  2C 03 00 00 */	cmpwi r3, 0
 /* 800AF818 000AC618  41 80 00 A8 */	blt lbl_800AF8C0
-/* 800AF81C 000AC61C  90 6D 82 F8 */	stw r3, lbl_803CABF8@sda21(r13)
+/* 800AF81C 000AC61C  90 6D 82 F8 */	stw r3, l_abf8_autoSaveCard@sda21(r13)
 /* 800AF820 000AC620  38 81 00 0C */	addi r4, r1, 0xc
 /* 800AF824 000AC624  38 A1 00 08 */	addi r5, r1, 8
 /* 800AF828 000AC628  48 10 F5 3D */	bl CARDProbeEx
@@ -2881,8 +2881,8 @@ lbl_800AF800:
 /* 800AF838 000AC638  40 80 00 08 */	bge lbl_800AF840
 /* 800AF83C 000AC63C  48 00 00 2C */	b lbl_800AF868
 lbl_800AF840:
-/* 800AF840 000AC640  3C 60 80 26 */	lis r3, lbl_8025E9C0@ha
-/* 800AF844 000AC644  38 63 E9 C0 */	addi r3, r3, lbl_8025E9C0@l
+/* 800AF840 000AC640  3C 60 80 26 */	lis r3, l_e9c0__esc__2_stringBase0@ha
+/* 800AF844 000AC644  38 63 E9 C0 */	addi r3, r3, l_e9c0__esc__2_stringBase0@l
 /* 800AF848 000AC648  38 63 04 A2 */	addi r3, r3, 0x4a2
 /* 800AF84C 000AC64C  4B F9 C9 C9 */	bl xStrHash__FPCc
 /* 800AF850 000AC650  48 00 51 ED */	bl zSceneFindObject__FUi
@@ -2892,8 +2892,8 @@ lbl_800AF840:
 /* 800AF860 000AC660  4B F6 FD 91 */	bl zEntEvent__FP5xBaseUi
 /* 800AF864 000AC664  48 00 00 5C */	b lbl_800AF8C0
 lbl_800AF868:
-/* 800AF868 000AC668  3C 60 80 26 */	lis r3, lbl_8025E9C0@ha
-/* 800AF86C 000AC66C  38 63 E9 C0 */	addi r3, r3, lbl_8025E9C0@l
+/* 800AF868 000AC668  3C 60 80 26 */	lis r3, l_e9c0__esc__2_stringBase0@ha
+/* 800AF86C 000AC66C  38 63 E9 C0 */	addi r3, r3, l_e9c0__esc__2_stringBase0@l
 /* 800AF870 000AC670  38 63 04 A2 */	addi r3, r3, 0x4a2
 /* 800AF874 000AC674  4B F9 C9 A1 */	bl xStrHash__FPCc
 /* 800AF878 000AC678  48 00 51 C5 */	bl zSceneFindObject__FUi
@@ -2902,8 +2902,8 @@ lbl_800AF868:
 /* 800AF884 000AC684  38 80 00 04 */	li r4, 4
 /* 800AF888 000AC688  4B F6 FD 69 */	bl zEntEvent__FP5xBaseUi
 lbl_800AF88C:
-/* 800AF88C 000AC68C  3C 60 80 26 */	lis r3, lbl_8025E9C0@ha
-/* 800AF890 000AC690  38 63 E9 C0 */	addi r3, r3, lbl_8025E9C0@l
+/* 800AF88C 000AC68C  3C 60 80 26 */	lis r3, l_e9c0__esc__2_stringBase0@ha
+/* 800AF890 000AC690  38 63 E9 C0 */	addi r3, r3, l_e9c0__esc__2_stringBase0@l
 /* 800AF894 000AC694  38 63 04 B6 */	addi r3, r3, 0x4b6
 /* 800AF898 000AC698  4B F9 C9 7D */	bl xStrHash__FPCc
 /* 800AF89C 000AC69C  48 00 51 A1 */	bl zSceneFindObject__FUi
@@ -3125,15 +3125,15 @@ zSaveLoad_SaveGame__Fv:
 /* 800AFB94 000AC994  3B 40 00 00 */	li r26, 0
 /* 800AFB98 000AC998  3B A0 00 01 */	li r29, 1
 /* 800AFB9C 000AC99C  3B 80 00 00 */	li r28, 0
-/* 800AFBA0 000AC9A0  80 6D 82 EC */	lwz r3, lbl_803CABEC@sda21(r13)
+/* 800AFBA0 000AC9A0  80 6D 82 EC */	lwz r3, l_abec_currentCard@sda21(r13)
 /* 800AFBA4 000AC9A4  4B FF DE C1 */	bl CardtoTgt__Fi
-/* 800AFBA8 000AC9A8  80 0D 82 EC */	lwz r0, lbl_803CABEC@sda21(r13)
+/* 800AFBA8 000AC9A8  80 0D 82 EC */	lwz r0, l_abec_currentCard@sda21(r13)
 /* 800AFBAC 000AC9AC  7C 7F 1B 78 */	mr r31, r3
 /* 800AFBB0 000AC9B0  38 60 00 0B */	li r3, 0xb
-/* 800AFBB4 000AC9B4  90 0D 82 F8 */	stw r0, lbl_803CABF8@sda21(r13)
-/* 800AFBB8 000AC9B8  83 CD 82 F0 */	lwz r30, lbl_803CABF0@sda21(r13)
+/* 800AFBB4 000AC9B4  90 0D 82 F8 */	stw r0, l_abf8_autoSaveCard@sda21(r13)
+/* 800AFBB8 000AC9B8  83 CD 82 F0 */	lwz r30, l_abf0_currentGame@sda21(r13)
 /* 800AFBBC 000AC9BC  4B FF DC 1D */	bl zSaveLoadSGInit__F16en_SAVEGAME_MODE
-/* 800AFBC0 000AC9C0  80 8D 82 EC */	lwz r4, lbl_803CABEC@sda21(r13)
+/* 800AFBC0 000AC9C0  80 8D 82 EC */	lwz r4, l_abec_currentCard@sda21(r13)
 /* 800AFBC4 000AC9C4  7C 7B 1B 78 */	mr r27, r3
 /* 800AFBC8 000AC9C8  4B F8 D6 8D */	bl xSGCheckMemoryCard__FP17st_XSAVEGAME_DATAi
 /* 800AFBCC 000AC9CC  54 60 06 3F */	clrlwi. r0, r3, 0x18
@@ -3258,7 +3258,7 @@ lbl_800AFD68:
 /* 800AFD7C 000ACB7C  40 82 00 08 */	bne lbl_800AFD84
 /* 800AFD80 000ACB80  3B A0 00 00 */	li r29, 0
 lbl_800AFD84:
-/* 800AFD84 000ACB84  80 8D 82 EC */	lwz r4, lbl_803CABEC@sda21(r13)
+/* 800AFD84 000ACB84  80 8D 82 EC */	lwz r4, l_abec_currentCard@sda21(r13)
 /* 800AFD88 000ACB88  7F 63 DB 78 */	mr r3, r27
 /* 800AFD8C 000ACB8C  4B F8 D4 C9 */	bl xSGCheckMemoryCard__FP17st_XSAVEGAME_DATAi
 /* 800AFD90 000ACB90  54 60 06 3F */	clrlwi. r0, r3, 0x18
@@ -3334,17 +3334,17 @@ zSaveLoad_LoadGame__Fv:
 /* 800AFE7C 000ACC7C  3B A0 00 00 */	li r29, 0
 /* 800AFE80 000ACC80  3B 80 00 01 */	li r28, 1
 /* 800AFE84 000ACC84  3B 60 00 00 */	li r27, 0
-/* 800AFE88 000ACC88  80 6D 82 EC */	lwz r3, lbl_803CABEC@sda21(r13)
+/* 800AFE88 000ACC88  80 6D 82 EC */	lwz r3, l_abec_currentCard@sda21(r13)
 /* 800AFE8C 000ACC8C  4B FF DB D9 */	bl CardtoTgt__Fi
-/* 800AFE90 000ACC90  80 0D 82 EC */	lwz r0, lbl_803CABEC@sda21(r13)
+/* 800AFE90 000ACC90  80 0D 82 EC */	lwz r0, l_abec_currentCard@sda21(r13)
 /* 800AFE94 000ACC94  7C 7F 1B 78 */	mr r31, r3
 /* 800AFE98 000ACC98  38 60 00 0A */	li r3, 0xa
-/* 800AFE9C 000ACC9C  90 0D 82 F8 */	stw r0, lbl_803CABF8@sda21(r13)
+/* 800AFE9C 000ACC9C  90 0D 82 F8 */	stw r0, l_abf8_autoSaveCard@sda21(r13)
 /* 800AFEA0 000ACCA0  4B FF D9 39 */	bl zSaveLoadSGInit__F16en_SAVEGAME_MODE
 /* 800AFEA4 000ACCA4  7F E4 FB 78 */	mr r4, r31
 /* 800AFEA8 000ACCA8  7C 7A 1B 78 */	mr r26, r3
 /* 800AFEAC 000ACCAC  4B F8 D1 5D */	bl xSGTgtSelect__FP17st_XSAVEGAME_DATAi
-/* 800AFEB0 000ACCB0  80 8D 82 F0 */	lwz r4, lbl_803CABF0@sda21(r13)
+/* 800AFEB0 000ACCB0  80 8D 82 F0 */	lwz r4, l_abf0_currentGame@sda21(r13)
 /* 800AFEB4 000ACCB4  7F 43 D3 78 */	mr r3, r26
 /* 800AFEB8 000ACCB8  4B F8 D3 C1 */	bl xSGGameSet__FP17st_XSAVEGAME_DATAi
 /* 800AFEBC 000ACCBC  28 1A 00 00 */	cmplwi r26, 0
@@ -3434,7 +3434,7 @@ lbl_800AFFD4:
 /* 800AFFE0 000ACDE0  41 82 00 4C */	beq lbl_800B002C
 /* 800AFFE4 000ACDE4  2C 1C 00 00 */	cmpwi r28, 0
 /* 800AFFE8 000ACDE8  41 82 00 44 */	beq lbl_800B002C
-/* 800AFFEC 000ACDEC  83 8D 82 F0 */	lwz r28, lbl_803CABF0@sda21(r13)
+/* 800AFFEC 000ACDEC  83 8D 82 F0 */	lwz r28, l_abf0_currentGame@sda21(r13)
 /* 800AFFF0 000ACDF0  7F 43 D3 78 */	mr r3, r26
 /* 800AFFF4 000ACDF4  7F E4 FB 78 */	mr r4, r31
 /* 800AFFF8 000ACDF8  4B F8 CF 49 */	bl xSGTgtPhysSlotIdx__FP17st_XSAVEGAME_DATAi
@@ -3479,16 +3479,16 @@ zSaveLoad_LoadLoop__Fv:
 /* 800B0078 000ACE78  4B FF D6 51 */	bl zSaveLoadInit__Fv
 /* 800B007C 000ACE7C  38 00 00 01 */	li r0, 1
 /* 800B0080 000ACE80  3C 60 80 3C */	lis r3, globals@ha
-/* 800B0084 000ACE84  90 0D 90 B0 */	stw r0, lbl_803CB9B0@sda21(r13)
+/* 800B0084 000ACE84  90 0D 90 B0 */	stw r0, l_b9b0_sAccessType@sda21(r13)
 /* 800B0088 000ACE88  3B E3 05 58 */	addi r31, r3, globals@l
 /* 800B008C 000ACE8C  3B C0 00 00 */	li r30, 0
 /* 800B0090 000ACE90  48 00 01 5C */	b lbl_800B01EC
 lbl_800B0094:
 /* 800B0094 000ACE94  28 1E 00 09 */	cmplwi r30, 9
 /* 800B0098 000ACE98  41 81 01 54 */	bgt lbl_800B01EC
-/* 800B009C 000ACE9C  3C 60 80 29 */	lis r3, lbl_802904A4@ha
+/* 800B009C 000ACE9C  3C 60 80 29 */	lis r3, l_04a4__esc__2_1904@ha
 /* 800B00A0 000ACEA0  57 C0 10 3A */	slwi r0, r30, 2
-/* 800B00A4 000ACEA4  38 63 04 A4 */	addi r3, r3, lbl_802904A4@l
+/* 800B00A4 000ACEA4  38 63 04 A4 */	addi r3, r3, l_04a4__esc__2_1904@l
 /* 800B00A8 000ACEA8  7C 03 00 2E */	lwzx r0, r3, r0
 /* 800B00AC 000ACEAC  7C 09 03 A6 */	mtctr r0
 /* 800B00B0 000ACEB0  4E 80 04 20 */	bctr 
@@ -3537,9 +3537,9 @@ lbl_800B0130:
 /* 800B0138 000ACF38  38 03 00 01 */	addi r0, r3, 1
 /* 800B013C 000ACF3C  28 00 00 0A */	cmplwi r0, 0xa
 /* 800B0140 000ACF40  41 81 00 AC */	bgt lbl_800B01EC
-/* 800B0144 000ACF44  3C 60 80 29 */	lis r3, lbl_80290478@ha
+/* 800B0144 000ACF44  3C 60 80 29 */	lis r3, l_0478__esc__2_1905@ha
 /* 800B0148 000ACF48  54 00 10 3A */	slwi r0, r0, 2
-/* 800B014C 000ACF4C  38 63 04 78 */	addi r3, r3, lbl_80290478@l
+/* 800B014C 000ACF4C  38 63 04 78 */	addi r3, r3, l_0478__esc__2_1905@l
 /* 800B0150 000ACF50  7C 03 00 2E */	lwzx r0, r3, r0
 /* 800B0154 000ACF54  7C 09 03 A6 */	mtctr r0
 /* 800B0158 000ACF58  4E 80 04 20 */	bctr 
@@ -3592,9 +3592,9 @@ lbl_800B01EC:
 /* 800B01F0 000ACFF0  40 82 FE A4 */	bne lbl_800B0094
 /* 800B01F4 000ACFF4  38 60 00 04 */	li r3, 4
 /* 800B01F8 000ACFF8  4B FF D4 09 */	bl zSendEventToThumbIcon__FUi
-/* 800B01FC 000ACFFC  3C 60 80 29 */	lis r3, lbl_80290100@ha
+/* 800B01FC 000ACFFC  3C 60 80 29 */	lis r3, l_0100_sceneRead@ha
 /* 800B0200 000AD000  83 E1 00 0C */	lwz r31, 0xc(r1)
-/* 800B0204 000AD004  38 A3 01 00 */	addi r5, r3, lbl_80290100@l
+/* 800B0204 000AD004  38 A3 01 00 */	addi r5, r3, l_0100_sceneRead@l
 /* 800B0208 000AD008  83 C1 00 08 */	lwz r30, 8(r1)
 /* 800B020C 000AD00C  88 05 00 01 */	lbz r0, 1(r5)
 /* 800B0210 000AD010  88 65 00 00 */	lbz r3, 0(r5)
@@ -3618,14 +3618,14 @@ zSaveLoad_SaveLoop__Fv:
 /* 800B024C 000AD04C  4B FF D4 7D */	bl zSaveLoadInit__Fv
 /* 800B0250 000AD050  38 00 00 00 */	li r0, 0
 /* 800B0254 000AD054  3B E0 00 00 */	li r31, 0
-/* 800B0258 000AD058  90 0D 90 80 */	stw r0, lbl_803CB980@sda21(r13)
+/* 800B0258 000AD058  90 0D 90 80 */	stw r0, l_b980_saveSuccess@sda21(r13)
 /* 800B025C 000AD05C  48 00 02 C4 */	b lbl_800B0520
 lbl_800B0260:
 /* 800B0260 000AD060  28 1F 00 0B */	cmplwi r31, 0xb
 /* 800B0264 000AD064  41 81 02 BC */	bgt lbl_800B0520
-/* 800B0268 000AD068  3C 60 80 29 */	lis r3, lbl_802904F8@ha
+/* 800B0268 000AD068  3C 60 80 29 */	lis r3, l_04f8__esc__2_1960@ha
 /* 800B026C 000AD06C  57 E0 10 3A */	slwi r0, r31, 2
-/* 800B0270 000AD070  38 63 04 F8 */	addi r3, r3, lbl_802904F8@l
+/* 800B0270 000AD070  38 63 04 F8 */	addi r3, r3, l_04f8__esc__2_1960@l
 /* 800B0274 000AD074  7C 03 00 2E */	lwzx r0, r3, r0
 /* 800B0278 000AD078  7C 09 03 A6 */	mtctr r0
 /* 800B027C 000AD07C  4E 80 04 20 */	bctr 
@@ -3661,8 +3661,8 @@ lbl_800B02D4:
 /* 800B02D8 000AD0D8  2C 00 00 00 */	cmpwi r0, 0
 /* 800B02DC 000AD0DC  41 82 00 84 */	beq lbl_800B0360
 /* 800B02E0 000AD0E0  38 00 00 07 */	li r0, 7
-/* 800B02E4 000AD0E4  3C 60 80 26 */	lis r3, lbl_8025E9C0@ha
-/* 800B02E8 000AD0E8  38 63 E9 C0 */	addi r3, r3, lbl_8025E9C0@l
+/* 800B02E4 000AD0E4  3C 60 80 26 */	lis r3, l_e9c0__esc__2_stringBase0@ha
+/* 800B02E8 000AD0E8  38 63 E9 C0 */	addi r3, r3, l_e9c0__esc__2_stringBase0@l
 /* 800B02EC 000AD0EC  90 0D 8F A8 */	stw r0, gGameMode@sda21(r13)
 /* 800B02F0 000AD0F0  38 63 04 CC */	addi r3, r3, 0x4cc
 /* 800B02F4 000AD0F4  3B E0 00 06 */	li r31, 6
@@ -3670,22 +3670,22 @@ lbl_800B02D4:
 /* 800B02FC 000AD0FC  48 00 47 41 */	bl zSceneFindObject__FUi
 /* 800B0300 000AD100  38 80 00 5E */	li r4, 0x5e
 /* 800B0304 000AD104  4B F6 F2 ED */	bl zEntEvent__FP5xBaseUi
-/* 800B0308 000AD108  3C 60 80 26 */	lis r3, lbl_8025E9C0@ha
-/* 800B030C 000AD10C  38 63 E9 C0 */	addi r3, r3, lbl_8025E9C0@l
+/* 800B0308 000AD108  3C 60 80 26 */	lis r3, l_e9c0__esc__2_stringBase0@ha
+/* 800B030C 000AD10C  38 63 E9 C0 */	addi r3, r3, l_e9c0__esc__2_stringBase0@l
 /* 800B0310 000AD110  38 63 04 E4 */	addi r3, r3, 0x4e4
 /* 800B0314 000AD114  4B F9 BF 01 */	bl xStrHash__FPCc
 /* 800B0318 000AD118  48 00 47 25 */	bl zSceneFindObject__FUi
 /* 800B031C 000AD11C  38 80 00 51 */	li r4, 0x51
 /* 800B0320 000AD120  4B F6 F2 D1 */	bl zEntEvent__FP5xBaseUi
-/* 800B0324 000AD124  3C 60 80 26 */	lis r3, lbl_8025E9C0@ha
-/* 800B0328 000AD128  38 63 E9 C0 */	addi r3, r3, lbl_8025E9C0@l
+/* 800B0324 000AD124  3C 60 80 26 */	lis r3, l_e9c0__esc__2_stringBase0@ha
+/* 800B0328 000AD128  38 63 E9 C0 */	addi r3, r3, l_e9c0__esc__2_stringBase0@l
 /* 800B032C 000AD12C  38 63 04 F8 */	addi r3, r3, 0x4f8
 /* 800B0330 000AD130  4B F9 BE E5 */	bl xStrHash__FPCc
 /* 800B0334 000AD134  48 00 47 09 */	bl zSceneFindObject__FUi
 /* 800B0338 000AD138  38 80 00 5E */	li r4, 0x5e
 /* 800B033C 000AD13C  4B F6 F2 B5 */	bl zEntEvent__FP5xBaseUi
-/* 800B0340 000AD140  3C 60 80 26 */	lis r3, lbl_8025E9C0@ha
-/* 800B0344 000AD144  38 63 E9 C0 */	addi r3, r3, lbl_8025E9C0@l
+/* 800B0340 000AD140  3C 60 80 26 */	lis r3, l_e9c0__esc__2_stringBase0@ha
+/* 800B0344 000AD144  38 63 E9 C0 */	addi r3, r3, l_e9c0__esc__2_stringBase0@l
 /* 800B0348 000AD148  38 63 05 0D */	addi r3, r3, 0x50d
 /* 800B034C 000AD14C  4B F9 BE C9 */	bl xStrHash__FPCc
 /* 800B0350 000AD150  48 00 46 ED */	bl zSceneFindObject__FUi
@@ -3694,8 +3694,8 @@ lbl_800B02D4:
 /* 800B035C 000AD15C  48 00 01 C4 */	b lbl_800B0520
 lbl_800B0360:
 /* 800B0360 000AD160  38 00 00 02 */	li r0, 2
-/* 800B0364 000AD164  3C 60 80 26 */	lis r3, lbl_8025E9C0@ha
-/* 800B0368 000AD168  38 63 E9 C0 */	addi r3, r3, lbl_8025E9C0@l
+/* 800B0364 000AD164  3C 60 80 26 */	lis r3, l_e9c0__esc__2_stringBase0@ha
+/* 800B0368 000AD168  38 63 E9 C0 */	addi r3, r3, l_e9c0__esc__2_stringBase0@l
 /* 800B036C 000AD16C  90 0D 8F A8 */	stw r0, gGameMode@sda21(r13)
 /* 800B0370 000AD170  38 63 05 23 */	addi r3, r3, 0x523
 /* 800B0374 000AD174  3B E0 00 06 */	li r31, 6
@@ -3703,29 +3703,29 @@ lbl_800B0360:
 /* 800B037C 000AD17C  48 00 46 C1 */	bl zSceneFindObject__FUi
 /* 800B0380 000AD180  38 80 00 51 */	li r4, 0x51
 /* 800B0384 000AD184  4B F6 F2 6D */	bl zEntEvent__FP5xBaseUi
-/* 800B0388 000AD188  3C 60 80 26 */	lis r3, lbl_8025E9C0@ha
-/* 800B038C 000AD18C  38 63 E9 C0 */	addi r3, r3, lbl_8025E9C0@l
+/* 800B0388 000AD188  3C 60 80 26 */	lis r3, l_e9c0__esc__2_stringBase0@ha
+/* 800B038C 000AD18C  38 63 E9 C0 */	addi r3, r3, l_e9c0__esc__2_stringBase0@l
 /* 800B0390 000AD190  38 63 05 23 */	addi r3, r3, 0x523
 /* 800B0394 000AD194  4B F9 BE 81 */	bl xStrHash__FPCc
 /* 800B0398 000AD198  48 00 46 A5 */	bl zSceneFindObject__FUi
 /* 800B039C 000AD19C  38 80 00 50 */	li r4, 0x50
 /* 800B03A0 000AD1A0  4B F6 F2 51 */	bl zEntEvent__FP5xBaseUi
-/* 800B03A4 000AD1A4  3C 60 80 26 */	lis r3, lbl_8025E9C0@ha
-/* 800B03A8 000AD1A8  38 63 E9 C0 */	addi r3, r3, lbl_8025E9C0@l
+/* 800B03A4 000AD1A4  3C 60 80 26 */	lis r3, l_e9c0__esc__2_stringBase0@ha
+/* 800B03A8 000AD1A8  38 63 E9 C0 */	addi r3, r3, l_e9c0__esc__2_stringBase0@l
 /* 800B03AC 000AD1AC  38 63 05 41 */	addi r3, r3, 0x541
 /* 800B03B0 000AD1B0  4B F9 BE 65 */	bl xStrHash__FPCc
 /* 800B03B4 000AD1B4  48 00 46 89 */	bl zSceneFindObject__FUi
 /* 800B03B8 000AD1B8  38 80 00 5E */	li r4, 0x5e
 /* 800B03BC 000AD1BC  4B F6 F2 35 */	bl zEntEvent__FP5xBaseUi
-/* 800B03C0 000AD1C0  3C 60 80 26 */	lis r3, lbl_8025E9C0@ha
-/* 800B03C4 000AD1C4  38 63 E9 C0 */	addi r3, r3, lbl_8025E9C0@l
+/* 800B03C0 000AD1C0  3C 60 80 26 */	lis r3, l_e9c0__esc__2_stringBase0@ha
+/* 800B03C4 000AD1C4  38 63 E9 C0 */	addi r3, r3, l_e9c0__esc__2_stringBase0@l
 /* 800B03C8 000AD1C8  38 63 05 60 */	addi r3, r3, 0x560
 /* 800B03CC 000AD1CC  4B F9 BE 49 */	bl xStrHash__FPCc
 /* 800B03D0 000AD1D0  48 00 46 6D */	bl zSceneFindObject__FUi
 /* 800B03D4 000AD1D4  38 80 00 51 */	li r4, 0x51
 /* 800B03D8 000AD1D8  4B F6 F2 19 */	bl zEntEvent__FP5xBaseUi
-/* 800B03DC 000AD1DC  3C 60 80 26 */	lis r3, lbl_8025E9C0@ha
-/* 800B03E0 000AD1E0  38 63 E9 C0 */	addi r3, r3, lbl_8025E9C0@l
+/* 800B03DC 000AD1DC  3C 60 80 26 */	lis r3, l_e9c0__esc__2_stringBase0@ha
+/* 800B03E0 000AD1E0  38 63 E9 C0 */	addi r3, r3, l_e9c0__esc__2_stringBase0@l
 /* 800B03E4 000AD1E4  38 63 05 7B */	addi r3, r3, 0x57b
 /* 800B03E8 000AD1E8  4B F9 BE 2D */	bl xStrHash__FPCc
 /* 800B03EC 000AD1EC  48 00 46 51 */	bl zSceneFindObject__FUi
@@ -3735,7 +3735,7 @@ lbl_800B0360:
 lbl_800B03FC:
 /* 800B03FC 000AD1FC  38 00 00 00 */	li r0, 0
 /* 800B0400 000AD200  3B E0 00 0A */	li r31, 0xa
-/* 800B0404 000AD204  90 0D 82 F0 */	stw r0, lbl_803CABF0@sda21(r13)
+/* 800B0404 000AD204  90 0D 82 F0 */	stw r0, l_abf0_currentGame@sda21(r13)
 /* 800B0408 000AD208  48 00 01 18 */	b lbl_800B0520
 lbl_800B040C:
 /* 800B040C 000AD20C  3B E0 00 00 */	li r31, 0
@@ -3743,14 +3743,14 @@ lbl_800B040C:
 lbl_800B0414:
 /* 800B0414 000AD214  38 00 00 02 */	li r0, 2
 /* 800B0418 000AD218  38 60 00 00 */	li r3, 0
-/* 800B041C 000AD21C  90 0D 90 B0 */	stw r0, lbl_803CB9B0@sda21(r13)
+/* 800B041C 000AD21C  90 0D 90 B0 */	stw r0, l_b9b0_sAccessType@sda21(r13)
 /* 800B0420 000AD220  4B FF EE ED */	bl zSaveLoad_GameSelect__Fi
 /* 800B0424 000AD224  38 03 00 01 */	addi r0, r3, 1
 /* 800B0428 000AD228  28 00 00 0A */	cmplwi r0, 0xa
 /* 800B042C 000AD22C  41 81 00 F4 */	bgt lbl_800B0520
-/* 800B0430 000AD230  3C 60 80 29 */	lis r3, lbl_802904CC@ha
+/* 800B0430 000AD230  3C 60 80 29 */	lis r3, l_04cc__esc__2_1961@ha
 /* 800B0434 000AD234  54 00 10 3A */	slwi r0, r0, 2
-/* 800B0438 000AD238  38 63 04 CC */	addi r3, r3, lbl_802904CC@l
+/* 800B0438 000AD238  38 63 04 CC */	addi r3, r3, l_04cc__esc__2_1961@l
 /* 800B043C 000AD23C  7C 03 00 2E */	lwzx r0, r3, r0
 /* 800B0440 000AD240  7C 09 03 A6 */	mtctr r0
 /* 800B0444 000AD244  4E 80 04 20 */	bctr 
@@ -3781,9 +3781,9 @@ lbl_800B0480:
 /* 800B0494 000AD294  38 60 00 01 */	li r3, 1
 /* 800B0498 000AD298  4B FE A6 95 */	bl zGameStateSwitch__Fi
 /* 800B049C 000AD29C  38 00 00 01 */	li r0, 1
-/* 800B04A0 000AD2A0  3C 60 80 26 */	lis r3, lbl_8025E9C0@ha
-/* 800B04A4 000AD2A4  38 63 E9 C0 */	addi r3, r3, lbl_8025E9C0@l
-/* 800B04A8 000AD2A8  90 0D 90 80 */	stw r0, lbl_803CB980@sda21(r13)
+/* 800B04A0 000AD2A0  3C 60 80 26 */	lis r3, l_e9c0__esc__2_stringBase0@ha
+/* 800B04A4 000AD2A4  38 63 E9 C0 */	addi r3, r3, l_e9c0__esc__2_stringBase0@l
+/* 800B04A8 000AD2A8  90 0D 90 80 */	stw r0, l_b980_saveSuccess@sda21(r13)
 /* 800B04AC 000AD2AC  38 63 05 8B */	addi r3, r3, 0x58b
 /* 800B04B0 000AD2B0  3B E0 00 06 */	li r31, 6
 /* 800B04B4 000AD2B4  4B F9 BD 61 */	bl xStrHash__FPCc
@@ -3824,8 +3824,8 @@ lbl_800B0520:
 /* 800B0520 000AD320  2C 1F 00 06 */	cmpwi r31, 6
 /* 800B0524 000AD324  40 82 FD 3C */	bne lbl_800B0260
 /* 800B0528 000AD328  38 00 00 00 */	li r0, 0
-/* 800B052C 000AD32C  90 0D 90 B0 */	stw r0, lbl_803CB9B0@sda21(r13)
-/* 800B0530 000AD330  80 6D 90 80 */	lwz r3, lbl_803CB980@sda21(r13)
+/* 800B052C 000AD32C  90 0D 90 B0 */	stw r0, l_b9b0_sAccessType@sda21(r13)
+/* 800B0530 000AD330  80 6D 90 80 */	lwz r3, l_b980_saveSuccess@sda21(r13)
 /* 800B0534 000AD334  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 800B0538 000AD338  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 800B053C 000AD33C  7C 08 03 A6 */	mtlr r0
@@ -3854,11 +3854,11 @@ lbl_800B057C:
 /* 800B0588 000AD388  48 00 00 60 */	b lbl_800B05E8
 lbl_800B058C:
 /* 800B058C 000AD38C  38 00 00 04 */	li r0, 4
-/* 800B0590 000AD390  90 0D 90 A0 */	stw r0, lbl_803CB9A0@sda21(r13)
+/* 800B0590 000AD390  90 0D 90 A0 */	stw r0, l_b9a0_promptSel@sda21(r13)
 /* 800B0594 000AD394  48 00 00 74 */	b lbl_800B0608
 lbl_800B0598:
 /* 800B0598 000AD398  38 00 00 03 */	li r0, 3
-/* 800B059C 000AD39C  90 0D 90 A0 */	stw r0, lbl_803CB9A0@sda21(r13)
+/* 800B059C 000AD39C  90 0D 90 A0 */	stw r0, l_b9a0_promptSel@sda21(r13)
 /* 800B05A0 000AD3A0  48 00 00 68 */	b lbl_800B0608
 lbl_800B05A4:
 /* 800B05A4 000AD3A4  C0 04 00 00 */	lfs f0, 0(r4)
@@ -3866,14 +3866,14 @@ lbl_800B05A4:
 /* 800B05AC 000AD3AC  FC 00 00 1E */	fctiwz f0, f0
 /* 800B05B0 000AD3B0  D8 01 00 08 */	stfd f0, 8(r1)
 /* 800B05B4 000AD3B4  80 01 00 0C */	lwz r0, 0xc(r1)
-/* 800B05B8 000AD3B8  90 0D 82 EC */	stw r0, lbl_803CABEC@sda21(r13)
+/* 800B05B8 000AD3B8  90 0D 82 EC */	stw r0, l_abec_currentCard@sda21(r13)
 /* 800B05BC 000AD3BC  80 0D 8F A8 */	lwz r0, gGameMode@sda21(r13)
 /* 800B05C0 000AD3C0  2C 00 00 06 */	cmpwi r0, 6
 /* 800B05C4 000AD3C4  40 82 00 08 */	bne lbl_800B05CC
 /* 800B05C8 000AD3C8  38 60 00 0B */	li r3, 0xb
 lbl_800B05CC:
 /* 800B05CC 000AD3CC  4B F8 C7 0D */	bl xSGInit__F16en_SAVEGAME_MODE
-/* 800B05D0 000AD3D0  80 8D 82 EC */	lwz r4, lbl_803CABEC@sda21(r13)
+/* 800B05D0 000AD3D0  80 8D 82 EC */	lwz r4, l_abec_currentCard@sda21(r13)
 /* 800B05D4 000AD3D4  7C 7F 1B 78 */	mr r31, r3
 /* 800B05D8 000AD3D8  4B FF DE 65 */	bl zSaveLoad_CardCheckSpaceSingle_doCheck__FP17st_XSAVEGAME_DATAi
 /* 800B05DC 000AD3DC  7F E3 FB 78 */	mr r3, r31
@@ -3884,11 +3884,11 @@ lbl_800B05E8:
 /* 800B05EC 000AD3EC  FC 00 00 1E */	fctiwz f0, f0
 /* 800B05F0 000AD3F0  D8 01 00 08 */	stfd f0, 8(r1)
 /* 800B05F4 000AD3F4  80 01 00 0C */	lwz r0, 0xc(r1)
-/* 800B05F8 000AD3F8  90 0D 82 F0 */	stw r0, lbl_803CABF0@sda21(r13)
+/* 800B05F8 000AD3F8  90 0D 82 F0 */	stw r0, l_abf0_currentGame@sda21(r13)
 /* 800B05FC 000AD3FC  48 00 00 0C */	b lbl_800B0608
 lbl_800B0600:
 /* 800B0600 000AD400  38 00 00 03 */	li r0, 3
-/* 800B0604 000AD404  90 0D 90 A0 */	stw r0, lbl_803CB9A0@sda21(r13)
+/* 800B0604 000AD404  90 0D 90 A0 */	stw r0, l_b9a0_promptSel@sda21(r13)
 lbl_800B0608:
 /* 800B0608 000AD408  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 800B060C 000AD40C  83 E1 00 1C */	lwz r31, 0x1c(r1)
@@ -3898,9 +3898,9 @@ lbl_800B0608:
 lbl_800B061C:
 /* 800B061C 000AD41C  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 800B0620 000AD420  7C 08 02 A6 */	mflr r0
-/* 800B0624 000AD424  3C 60 80 29 */	lis r3, lbl_802900E0@ha
+/* 800B0624 000AD424  3C 60 80 29 */	lis r3, l_00e0_currSceneStr@ha
 /* 800B0628 000AD428  90 01 00 14 */	stw r0, 0x14(r1)
-/* 800B062C 000AD42C  38 63 00 E0 */	addi r3, r3, lbl_802900E0@l
+/* 800B062C 000AD42C  38 63 00 E0 */	addi r3, r3, l_00e0_currSceneStr@l
 /* 800B0630 000AD430  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 800B0634 000AD434  7C DF 33 78 */	mr r31, r6
 /* 800B0638 000AD438  93 C1 00 08 */	stw r30, 8(r1)
@@ -3936,25 +3936,25 @@ lbl_800B0670:
 /* 800B06AC 000AD4AC  38 80 00 00 */	li r4, 0
 /* 800B06B0 000AD4B0  38 63 30 31 */	addi r3, r3, 0x48423031@l
 /* 800B06B4 000AD4B4  4B F9 D5 E1 */	bl xUtil_idtag2string__FUii
-/* 800B06B8 000AD4B8  3C A0 80 29 */	lis r5, lbl_802900E0@ha
+/* 800B06B8 000AD4B8  3C A0 80 29 */	lis r5, l_00e0_currSceneStr@ha
 /* 800B06BC 000AD4BC  7C 64 1B 78 */	mr r4, r3
-/* 800B06C0 000AD4C0  38 65 00 E0 */	addi r3, r5, lbl_802900E0@l
+/* 800B06C0 000AD4C0  38 65 00 E0 */	addi r3, r5, l_00e0_currSceneStr@l
 /* 800B06C4 000AD4C4  48 13 70 3D */	bl strcpy
 /* 800B06C8 000AD4C8  48 00 00 1C */	b lbl_800B06E4
 lbl_800B06CC:
 /* 800B06CC 000AD4CC  38 80 00 00 */	li r4, 0
 /* 800B06D0 000AD4D0  4B F9 D5 C5 */	bl xUtil_idtag2string__FUii
-/* 800B06D4 000AD4D4  3C A0 80 29 */	lis r5, lbl_802900E0@ha
+/* 800B06D4 000AD4D4  3C A0 80 29 */	lis r5, l_00e0_currSceneStr@ha
 /* 800B06D8 000AD4D8  7C 64 1B 78 */	mr r4, r3
-/* 800B06DC 000AD4DC  38 65 00 E0 */	addi r3, r5, lbl_802900E0@l
+/* 800B06DC 000AD4DC  38 65 00 E0 */	addi r3, r5, l_00e0_currSceneStr@l
 /* 800B06E0 000AD4E0  48 13 70 21 */	bl strcpy
 lbl_800B06E4:
-/* 800B06E4 000AD4E4  3C 60 80 29 */	lis r3, lbl_802900E0@ha
-/* 800B06E8 000AD4E8  38 63 00 E0 */	addi r3, r3, lbl_802900E0@l
+/* 800B06E4 000AD4E4  3C 60 80 29 */	lis r3, l_00e0_currSceneStr@ha
+/* 800B06E8 000AD4E8  38 63 00 E0 */	addi r3, r3, l_00e0_currSceneStr@l
 /* 800B06EC 000AD4EC  48 13 70 CD */	bl strlen
-/* 800B06F0 000AD4F0  3C 80 80 29 */	lis r4, lbl_802900E0@ha
+/* 800B06F0 000AD4F0  3C 80 80 29 */	lis r4, l_00e0_currSceneStr@ha
 /* 800B06F4 000AD4F4  7C 67 1B 78 */	mr r7, r3
-/* 800B06F8 000AD4F8  38 A4 00 E0 */	addi r5, r4, lbl_802900E0@l
+/* 800B06F8 000AD4F8  38 A4 00 E0 */	addi r5, r4, l_00e0_currSceneStr@l
 /* 800B06FC 000AD4FC  7F E3 FB 78 */	mr r3, r31
 /* 800B0700 000AD500  7F C4 F3 78 */	mr r4, r30
 /* 800B0704 000AD504  38 C0 00 01 */	li r6, 1
@@ -4025,11 +4025,11 @@ lbl_800B0744:
 lbl_800B0800:
 /* 800B0800 000AD600  94 21 FF C0 */	stwu r1, -0x40(r1)
 /* 800B0804 000AD604  7C 08 02 A6 */	mflr r0
-/* 800B0808 000AD608  3C C0 80 26 */	lis r6, lbl_8025E9A0@ha
-/* 800B080C 000AD60C  3C 60 80 29 */	lis r3, lbl_802900E0@ha
+/* 800B0808 000AD608  3C C0 80 26 */	lis r6, l_e9a0__esc__2_2012@ha
+/* 800B080C 000AD60C  3C 60 80 29 */	lis r3, l_00e0_currSceneStr@ha
 /* 800B0810 000AD610  90 01 00 44 */	stw r0, 0x44(r1)
-/* 800B0814 000AD614  39 66 E9 A0 */	addi r11, r6, lbl_8025E9A0@l
-/* 800B0818 000AD618  38 63 00 E0 */	addi r3, r3, lbl_802900E0@l
+/* 800B0814 000AD614  39 66 E9 A0 */	addi r11, r6, l_e9a0__esc__2_2012@l
+/* 800B0818 000AD618  38 63 00 E0 */	addi r3, r3, l_00e0_currSceneStr@l
 /* 800B081C 000AD61C  93 E1 00 3C */	stw r31, 0x3c(r1)
 /* 800B0820 000AD620  7C BF 2B 78 */	mr r31, r5
 /* 800B0824 000AD624  93 C1 00 38 */	stw r30, 0x38(r1)
@@ -4061,9 +4061,9 @@ lbl_800B0800:
 /* 800B088C 000AD68C  4B F8 D7 05 */	bl xSGReadData__FP17st_XSAVEGAME_DATAP24st_XSAVEGAME_READCONTEXTPcii
 /* 800B0890 000AD690  38 61 00 08 */	addi r3, r1, 8
 /* 800B0894 000AD694  48 13 6F 25 */	bl strlen
-/* 800B0898 000AD698  3C 80 80 29 */	lis r4, lbl_802900E0@ha
+/* 800B0898 000AD698  3C 80 80 29 */	lis r4, l_00e0_currSceneStr@ha
 /* 800B089C 000AD69C  7C 7F 1B 78 */	mr r31, r3
-/* 800B08A0 000AD6A0  38 64 00 E0 */	addi r3, r4, lbl_802900E0@l
+/* 800B08A0 000AD6A0  38 64 00 E0 */	addi r3, r4, l_00e0_currSceneStr@l
 /* 800B08A4 000AD6A4  48 13 6F 15 */	bl strlen
 /* 800B08A8 000AD6A8  7C 03 F8 40 */	cmplw r3, r31
 /* 800B08AC 000AD6AC  41 82 00 08 */	beq lbl_800B08B4
@@ -4071,9 +4071,9 @@ lbl_800B0800:
 lbl_800B08B4:
 /* 800B08B4 000AD6B4  2C 1E 00 00 */	cmpwi r30, 0
 /* 800B08B8 000AD6B8  40 82 00 14 */	bne lbl_800B08CC
-/* 800B08BC 000AD6BC  3C 60 80 29 */	lis r3, lbl_80290100@ha
+/* 800B08BC 000AD6BC  3C 60 80 29 */	lis r3, l_0100_sceneRead@ha
 /* 800B08C0 000AD6C0  38 81 00 08 */	addi r4, r1, 8
-/* 800B08C4 000AD6C4  38 63 01 00 */	addi r3, r3, lbl_80290100@l
+/* 800B08C4 000AD6C4  38 63 01 00 */	addi r3, r3, l_0100_sceneRead@l
 /* 800B08C8 000AD6C8  48 13 6E 39 */	bl strcpy
 lbl_800B08CC:
 /* 800B08CC 000AD6CC  7F C0 00 34 */	cntlzw r0, r30
@@ -4151,9 +4151,9 @@ zSaveLoad_slotIsEmpty__FUi:
 /* 800B09D4 000AD7D4  1C A3 00 6C */	mulli r5, r3, 0x6c
 /* 800B09D8 000AD7D8  3C 80 80 3C */	lis r4, zSaveLoadGameTable@ha
 /* 800B09DC 000AD7DC  90 01 00 14 */	stw r0, 0x14(r1)
-/* 800B09E0 000AD7E0  3C 60 80 26 */	lis r3, lbl_8025E9C0@ha
+/* 800B09E0 000AD7E0  3C 60 80 26 */	lis r3, l_e9c0__esc__2_stringBase0@ha
 /* 800B09E4 000AD7E4  38 04 25 20 */	addi r0, r4, zSaveLoadGameTable@l
-/* 800B09E8 000AD7E8  38 83 E9 C0 */	addi r4, r3, lbl_8025E9C0@l
+/* 800B09E8 000AD7E8  38 83 E9 C0 */	addi r4, r3, l_e9c0__esc__2_stringBase0@l
 /* 800B09EC 000AD7EC  7C 60 2A 14 */	add r3, r0, r5
 /* 800B09F0 000AD7F0  38 84 04 9C */	addi r4, r4, 0x49c
 /* 800B09F4 000AD7F4  48 13 6B 29 */	bl strcmp
@@ -4179,7 +4179,7 @@ LastTarget__11XSGAutoDataFv:
 /* 800B0A20 000AD820  80 63 00 04 */	lwz r3, 4(r3)
 /* 800B0A24 000AD824  4E 80 00 20 */	blr 
 .section .rodata
-lbl_8025E880:
+l_e880__esc__2_1545:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -4188,7 +4188,7 @@ lbl_8025E880:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
-lbl_8025E8A0:
+l_e8a0__esc__2_1546:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -4253,7 +4253,7 @@ lbl_8025E8A0:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
-lbl_8025E9A0:
+l_e9a0__esc__2_2012:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -4262,7 +4262,7 @@ lbl_8025E9A0:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
-lbl_8025E9C0:
+l_e9c0__esc__2_stringBase0:
 	.4byte 0x6C642067
 	.4byte 0x616D6573
 	.4byte 0x6C6F7420
@@ -4625,7 +4625,7 @@ lbl_8025E9C0:
 	.4byte 0x45440000
 
 .section .data
-lbl_802900E0:
+l_00e0_currSceneStr:
 	.4byte 0x54454D50
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -4634,7 +4634,7 @@ lbl_802900E0:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
-lbl_80290100:
+l_0100_sceneRead:
 	.4byte 0x30303030
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -4648,7 +4648,7 @@ lbl_80290100:
 zSaveLoadUITable:
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte lbl_8025E9C0 /* 0x8025E9C0 */
+	.4byte l_e9c0__esc__2_stringBase0 /* 0x8025E9C0 */
 	.4byte 0x00000001
 	.4byte 0x00000000
 	.4byte 0x8025E9D2
@@ -4850,7 +4850,7 @@ thumbIconMap:
 	.4byte 0x8025EDE9
 	.4byte 0x8025ED59
 	.4byte 0x8025ED59
-lbl_80290444:
+l_0444__esc__2_1523:
 	.4byte lbl_800AEEAC /* 0x800AEEAC */
 	.4byte lbl_800AEEBC /* 0x800AEEBC */
 	.4byte lbl_800AEEBC /* 0x800AEEBC */
@@ -4864,7 +4864,7 @@ lbl_80290444:
 	.4byte lbl_800AEEBC /* 0x800AEEBC */
 	.4byte lbl_800AEEBC /* 0x800AEEBC */
 	.4byte lbl_800AEEBC /* 0x800AEEBC */
-lbl_80290478:
+l_0478__esc__2_1905:
 	.4byte lbl_800B016C /* 0x800B016C */
 	.4byte lbl_800B01EC /* 0x800B01EC */
 	.4byte lbl_800B0164 /* 0x800B0164 */
@@ -4876,7 +4876,7 @@ lbl_80290478:
 	.4byte lbl_800B015C /* 0x800B015C */
 	.4byte lbl_800B01EC /* 0x800B01EC */
 	.4byte lbl_800B015C /* 0x800B015C */
-lbl_802904A4:
+l_04a4__esc__2_1904:
 	.4byte lbl_800B00B4 /* 0x800B00B4 */
 	.4byte lbl_800B00E0 /* 0x800B00E0 */
 	.4byte lbl_800B0130 /* 0x800B0130 */
@@ -4887,7 +4887,7 @@ lbl_802904A4:
 	.4byte lbl_800B01EC /* 0x800B01EC */
 	.4byte lbl_800B017C /* 0x800B017C */
 	.4byte lbl_800B0194 /* 0x800B0194 */
-lbl_802904CC:
+l_04cc__esc__2_1961:
 	.4byte lbl_800B0458 /* 0x800B0458 */
 	.4byte lbl_800B0520 /* 0x800B0520 */
 	.4byte lbl_800B0450 /* 0x800B0450 */
@@ -4899,7 +4899,7 @@ lbl_802904CC:
 	.4byte lbl_800B0448 /* 0x800B0448 */
 	.4byte lbl_800B0520 /* 0x800B0520 */
 	.4byte lbl_800B0448 /* 0x800B0448 */
-lbl_802904F8:
+l_04f8__esc__2_1960:
 	.4byte lbl_800B0280 /* 0x800B0280 */
 	.4byte lbl_800B02A0 /* 0x800B02A0 */
 	.4byte lbl_800B0414 /* 0x800B0414 */
@@ -4914,35 +4914,35 @@ lbl_802904F8:
 	.4byte lbl_800B0468 /* 0x800B0468 */
 
 .section .sbss
-lbl_803CB980:
+l_b980_saveSuccess:
 	.skip 0x4
-lbl_803CB984:
+l_b984_time_last:
 	.skip 0x4
-lbl_803CB988:
+l_b988_time_current:
 	.skip 0x8
-lbl_803CB990:
+l_b990_t0:
 	.skip 0x4
 /* SPECULATION: link order */
 .global lbl_803CB994
 lbl_803CB994:
 	.skip 0x4
-lbl_803CB998:
+l_b998_t1:
 	.skip 0x4
 /* SPECULATION: link order */
 .global lbl_803CB99C
 lbl_803CB99C:
 	.skip 0x4
-lbl_803CB9A0:
+l_b9a0_promptSel:
 	.skip 0x4
-lbl_803CB9A4:
+l_b9a4_badCard:
 	.skip 0x4
-lbl_803CB9A8:
+l_b9a8_sAvailable:
 	.skip 0x4
-lbl_803CB9AC:
+l_b9ac_sNeeded:
 	.skip 0x4
-lbl_803CB9B0:
+l_b9b0_sAccessType:
 	.skip 0x4
-lbl_803CB9B4:
+l_b9b4_preAutoSaving:
 	.skip 0x4
 /* SPECULATION: link order */
 .global HACK_BASETYPE
@@ -4950,30 +4950,30 @@ HACK_BASETYPE:
 	.skip 0x4
 
 .section .sdata
-lbl_803CABE8:
+l_abe8_time_elapsed:
 	.4byte 0x3C23D70A
-lbl_803CABEC:
+l_abec_currentCard:
 	.4byte 0xFFFFFFFF
-lbl_803CABF0:
+l_abf0_currentGame:
 	.4byte 0xFFFFFFFF
-lbl_803CABF4:
+l_abf4_dontPoll:
 	.4byte 0x3F800000
-lbl_803CABF8:
+l_abf8_autoSaveCard:
 	.4byte 0xFFFFFFFF
 	.4byte 0x00000000
 
 .section .sdata2
-lbl_803CDE68:
+l_de68__esc__2_846:
 	.4byte 0x3F800000
-lbl_803CDE6C:
+l_de6c__esc__2_847:
 	.4byte 0x00000000
-lbl_803CDE70:
+l_de70__esc__2_848:
 	.4byte 0x3C888889
-lbl_803CDE74:
+l_de74__esc__2_849:
 	.4byte 0x3DCCCCCD
-lbl_803CDE78:
+l_de78__esc__2_850:
 	.4byte 0x3F19999A
 	.4byte 0x00000000
-lbl_803CDE80:
+l_de80__esc__2_852:
 	.4byte 0x43300000
 	.4byte 0x00000000

@@ -7,12 +7,12 @@ zPickupTableInit__Fv:
 /* 800A8DF0 000A5BF0  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 800A8DF4 000A5BF4  7C 08 02 A6 */	mflr r0
 /* 800A8DF8 000A5BF8  3C 80 80 3C */	lis r4, globals@ha
-/* 800A8DFC 000A5BFC  3C 60 80 29 */	lis r3, lbl_8028FF40@ha
+/* 800A8DFC 000A5BFC  3C 60 80 29 */	lis r3, l_ff40_ptranstbl@ha
 /* 800A8E00 000A5C00  90 01 00 24 */	stw r0, 0x24(r1)
 /* 800A8E04 000A5C04  93 E1 00 1C */	stw r31, 0x1c(r1)
 /* 800A8E08 000A5C08  3B E4 05 58 */	addi r31, r4, globals@l
 /* 800A8E0C 000A5C0C  93 C1 00 18 */	stw r30, 0x18(r1)
-/* 800A8E10 000A5C10  3B C3 FF 40 */	addi r30, r3, lbl_8028FF40@l
+/* 800A8E10 000A5C10  3B C3 FF 40 */	addi r30, r3, l_ff40_ptranstbl@l
 /* 800A8E14 000A5C14  93 A1 00 14 */	stw r29, 0x14(r1)
 /* 800A8E18 000A5C18  93 81 00 10 */	stw r28, 0x10(r1)
 /* 800A8E1C 000A5C1C  3B 80 00 00 */	li r28, 0
@@ -52,7 +52,7 @@ lbl_800A8E94:
 /* 800A8E94 000A5C94  3B DE 00 0C */	addi r30, r30, 0xc
 /* 800A8E98 000A5C98  3B 9C 00 01 */	addi r28, r28, 1
 lbl_800A8E9C:
-/* 800A8E9C 000A5C9C  80 0D 82 E0 */	lwz r0, lbl_803CABE0@sda21(r13)
+/* 800A8E9C 000A5C9C  80 0D 82 E0 */	lwz r0, l_abe0_ptranstbl_size@sda21(r13)
 /* 800A8EA0 000A5CA0  7C 1C 00 40 */	cmplw r28, r0
 /* 800A8EA4 000A5CA4  41 80 FF 88 */	blt lbl_800A8E2C
 /* 800A8EA8 000A5CA8  80 01 00 24 */	lwz r0, 0x24(r1)
@@ -65,7 +65,7 @@ lbl_800A8E9C:
 /* 800A8EC4 000A5CC4  4E 80 00 20 */	blr 
 
 .section .data
-lbl_8028FF40:
+l_ff40_ptranstbl:
 	.4byte 0x8025E710
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -131,6 +131,6 @@ lbl_80290000:
 	.4byte 0x010E0000
 
 .section .sdata
-lbl_803CABE0:
+l_abe0_ptranstbl_size:
 	.4byte 0x00000014
 	.4byte 0x00000000

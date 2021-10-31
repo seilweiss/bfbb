@@ -201,13 +201,13 @@ __as__10iColor_tagFRC10iColor_tag:
 
 .global NSCREENY__Ff
 NSCREENY__Ff:
-/* 80017FBC 00014DBC  C0 02 82 20 */	lfs f0, lbl_803CCBA0@sda21(r2)
+/* 80017FBC 00014DBC  C0 02 82 20 */	lfs f0, l_cba0__esc__2_781@sda21(r2)
 /* 80017FC0 00014DC0  EC 20 00 72 */	fmuls f1, f0, f1
 /* 80017FC4 00014DC4  4E 80 00 20 */	blr 
 
 .global NSCREENX__Ff
 NSCREENX__Ff:
-/* 80017FC8 00014DC8  C0 02 82 24 */	lfs f0, lbl_803CCBA4@sda21(r2)
+/* 80017FC8 00014DC8  C0 02 82 24 */	lfs f0, l_cba4__esc__2_783@sda21(r2)
 /* 80017FCC 00014DCC  EC 20 00 72 */	fmuls f1, f0, f1
 /* 80017FD0 00014DD0  4E 80 00 20 */	blr 
 
@@ -260,7 +260,7 @@ __as__13basic_rect_esc__0_f_esc__1_FRC13basic_rect_esc__0_f_esc__1_:
 /* 80018060 00014E60  4E 80 00 20 */	blr 
 
 .section .sdata2
-lbl_803CCBA0:
+l_cba0__esc__2_781:
 	.4byte 0x3B088889
-lbl_803CCBA4:
+l_cba4__esc__2_783:
 	.4byte 0x3ACCCCCD

@@ -70,29 +70,29 @@ lbl_800C4BA8:
 /* 800C4BC4 000C19C4  48 17 44 01 */	bl RwFrameUpdateObjects
 /* 800C4BC8 000C19C8  93 DD 00 00 */	stw r30, 0(r29)
 /* 800C4BCC 000C19CC  7F A3 EB 78 */	mr r3, r29
-/* 800C4BD0 000C19D0  C0 02 97 30 */	lfs f0, lbl_803CE0B0@sda21(r2)
+/* 800C4BD0 000C19D0  C0 02 97 30 */	lfs f0, l_e0b0__esc__2_535@sda21(r2)
 /* 800C4BD4 000C19D4  D0 1D 00 08 */	stfs f0, 8(r29)
-/* 800C4BD8 000C19D8  C0 02 97 30 */	lfs f0, lbl_803CE0B0@sda21(r2)
+/* 800C4BD8 000C19D8  C0 02 97 30 */	lfs f0, l_e0b0__esc__2_535@sda21(r2)
 /* 800C4BDC 000C19DC  D0 1D 00 0C */	stfs f0, 0xc(r29)
-/* 800C4BE0 000C19E0  C0 02 97 30 */	lfs f0, lbl_803CE0B0@sda21(r2)
+/* 800C4BE0 000C19E0  C0 02 97 30 */	lfs f0, l_e0b0__esc__2_535@sda21(r2)
 /* 800C4BE4 000C19E4  D0 1D 00 10 */	stfs f0, 0x10(r29)
-/* 800C4BE8 000C19E8  C0 02 97 30 */	lfs f0, lbl_803CE0B0@sda21(r2)
+/* 800C4BE8 000C19E8  C0 02 97 30 */	lfs f0, l_e0b0__esc__2_535@sda21(r2)
 /* 800C4BEC 000C19EC  D0 1D 00 14 */	stfs f0, 0x14(r29)
-/* 800C4BF0 000C19F0  C0 02 97 34 */	lfs f0, lbl_803CE0B4@sda21(r2)
+/* 800C4BF0 000C19F0  C0 02 97 34 */	lfs f0, l_e0b4__esc__2_536@sda21(r2)
 /* 800C4BF4 000C19F4  D0 1D 00 1C */	stfs f0, 0x1c(r29)
-/* 800C4BF8 000C19F8  C0 02 97 34 */	lfs f0, lbl_803CE0B4@sda21(r2)
+/* 800C4BF8 000C19F8  C0 02 97 34 */	lfs f0, l_e0b4__esc__2_536@sda21(r2)
 /* 800C4BFC 000C19FC  D0 1D 00 20 */	stfs f0, 0x20(r29)
-/* 800C4C00 000C1A00  C0 02 97 34 */	lfs f0, lbl_803CE0B4@sda21(r2)
+/* 800C4C00 000C1A00  C0 02 97 34 */	lfs f0, l_e0b4__esc__2_536@sda21(r2)
 /* 800C4C04 000C1A04  D0 1D 00 24 */	stfs f0, 0x24(r29)
-/* 800C4C08 000C1A08  C0 02 97 34 */	lfs f0, lbl_803CE0B4@sda21(r2)
+/* 800C4C08 000C1A08  C0 02 97 34 */	lfs f0, l_e0b4__esc__2_536@sda21(r2)
 /* 800C4C0C 000C1A0C  D0 1D 00 28 */	stfs f0, 0x28(r29)
-/* 800C4C10 000C1A10  C0 02 97 30 */	lfs f0, lbl_803CE0B0@sda21(r2)
+/* 800C4C10 000C1A10  C0 02 97 30 */	lfs f0, l_e0b0__esc__2_535@sda21(r2)
 /* 800C4C14 000C1A14  D0 1D 00 2C */	stfs f0, 0x2c(r29)
-/* 800C4C18 000C1A18  C0 02 97 30 */	lfs f0, lbl_803CE0B0@sda21(r2)
+/* 800C4C18 000C1A18  C0 02 97 30 */	lfs f0, l_e0b0__esc__2_535@sda21(r2)
 /* 800C4C1C 000C1A1C  D0 1D 00 30 */	stfs f0, 0x30(r29)
-/* 800C4C20 000C1A20  C0 02 97 34 */	lfs f0, lbl_803CE0B4@sda21(r2)
+/* 800C4C20 000C1A20  C0 02 97 34 */	lfs f0, l_e0b4__esc__2_536@sda21(r2)
 /* 800C4C24 000C1A24  D0 1D 00 34 */	stfs f0, 0x34(r29)
-/* 800C4C28 000C1A28  C0 02 97 30 */	lfs f0, lbl_803CE0B0@sda21(r2)
+/* 800C4C28 000C1A28  C0 02 97 30 */	lfs f0, l_e0b0__esc__2_535@sda21(r2)
 /* 800C4C2C 000C1A2C  D0 1D 00 38 */	stfs f0, 0x38(r29)
 lbl_800C4C30:
 /* 800C4C30 000C1A30  80 01 00 24 */	lwz r0, 0x24(r1)
@@ -259,7 +259,7 @@ lbl_800C4E40:
 /* 800C4E48 000C1C48  4E 80 00 20 */	blr 
 
 .section .sdata2
-lbl_803CE0B0:
+l_e0b0__esc__2_535:
 	.4byte 0x00000000
-lbl_803CE0B4:
+l_e0b4__esc__2_536:
 	.4byte 0x3F800000

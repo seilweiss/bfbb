@@ -15,9 +15,9 @@ GOALCreate_SubBoss__FiP10RyzMemGrowPv:
 /* 80138CC0 00135AC0  38 84 B2 D0 */	addi r4, r4, -19760
 /* 80138CC4 00135AC4  28 04 00 0C */	cmplwi r4, 0xc
 /* 80138CC8 00135AC8  41 81 02 20 */	bgt lbl_80138EE8
-/* 80138CCC 00135ACC  3C 60 80 2A */	lis r3, lbl_80299860@ha
+/* 80138CCC 00135ACC  3C 60 80 2A */	lis r3, l_9860__esc__2_863@ha
 /* 80138CD0 00135AD0  54 84 10 3A */	slwi r4, r4, 2
-/* 80138CD4 00135AD4  38 63 98 60 */	addi r3, r3, lbl_80299860@l
+/* 80138CD4 00135AD4  38 63 98 60 */	addi r3, r3, l_9860__esc__2_863@l
 /* 80138CD8 00135AD8  7C 03 20 2E */	lwzx r0, r3, r4
 /* 80138CDC 00135ADC  7C 09 03 A6 */	mtctr r0
 /* 80138CE0 00135AE0  4E 80 04 20 */	bctr 
@@ -423,7 +423,7 @@ __ct__12zNPCGoalHereFi:
 /* 80139214 00136014  4E 80 00 20 */	blr 
 
 .section .data
-lbl_80299860:
+l_9860__esc__2_863:
 	.4byte lbl_80138CE4 /* 0x80138CE4 */
 	.4byte lbl_80138D0C /* 0x80138D0C */
 	.4byte lbl_80138D34 /* 0x80138D34 */

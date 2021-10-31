@@ -60,7 +60,7 @@ Enter__17zNPCGoalDuploLiveFfPv:
 /* 8012A068 00126E68  90 01 00 14 */	stw r0, 0x14(r1)
 /* 8012A06C 00126E6C  38 00 00 00 */	li r0, 0
 /* 8012A070 00126E70  90 03 00 54 */	stw r0, 0x54(r3)
-/* 8012A074 00126E74  C0 02 A1 D8 */	lfs f0, lbl_803CEB58@sda21(r2)
+/* 8012A074 00126E74  C0 02 A1 D8 */	lfs f0, l_eb58__esc__2_816@sda21(r2)
 /* 8012A078 00126E78  D0 03 00 4C */	stfs f0, 0x4c(r3)
 /* 8012A07C 00126E7C  4B FA B0 99 */	bl Enter__14zNPCGoalCommonFfPv
 /* 8012A080 00126E80  80 01 00 14 */	lwz r0, 0x14(r1)
@@ -94,14 +94,14 @@ Process__17zNPCGoalDuploLiveFP11en_trantypefPvP6xScene:
 /* 8012A0E8 00126EE8  48 00 00 84 */	b lbl_8012A16C
 lbl_8012A0EC:
 /* 8012A0EC 00126EEC  C0 3A 00 4C */	lfs f1, 0x4c(r26)
-/* 8012A0F0 00126EF0  C0 02 A1 DC */	lfs f0, lbl_803CEB5C@sda21(r2)
+/* 8012A0F0 00126EF0  C0 02 A1 DC */	lfs f0, l_eb5c__esc__2_840@sda21(r2)
 /* 8012A0F4 00126EF4  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 8012A0F8 00126EF8  40 80 00 0C */	bge lbl_8012A104
 /* 8012A0FC 00126EFC  7F 43 D3 78 */	mr r3, r26
 /* 8012A100 00126F00  48 00 00 DD */	bl CheckPlayer__17zNPCGoalDuploLiveFv
 lbl_8012A104:
 /* 8012A104 00126F04  C0 1A 00 4C */	lfs f0, 0x4c(r26)
-/* 8012A108 00126F08  C0 22 A1 E0 */	lfs f1, lbl_803CEB60@sda21(r2)
+/* 8012A108 00126F08  C0 22 A1 E0 */	lfs f1, l_eb60__esc__2_841@sda21(r2)
 /* 8012A10C 00126F0C  EC 00 F8 28 */	fsubs f0, f0, f31
 /* 8012A110 00126F10  FC 01 00 40 */	fcmpo cr0, f1, f0
 /* 8012A114 00126F14  40 81 00 08 */	ble lbl_8012A11C
@@ -175,11 +175,11 @@ CheckPlayer__17zNPCGoalDuploLiveFv:
 /* 8012A200 00127000  80 63 00 18 */	lwz r3, 0x18(r3)
 /* 8012A204 00127004  83 C3 00 00 */	lwz r30, 0(r3)
 /* 8012A208 00127008  4B F0 6A 81 */	bl xurand__Fv
-/* 8012A20C 0012700C  C0 02 A1 EC */	lfs f0, lbl_803CEB6C@sda21(r2)
+/* 8012A20C 0012700C  C0 02 A1 EC */	lfs f0, l_eb6c__esc__2_853@sda21(r2)
 /* 8012A210 00127010  7F C3 F3 78 */	mr r3, r30
-/* 8012A214 00127014  C0 42 A1 E8 */	lfs f2, lbl_803CEB68@sda21(r2)
+/* 8012A214 00127014  C0 42 A1 E8 */	lfs f2, l_eb68__esc__2_852@sda21(r2)
 /* 8012A218 00127018  EC 21 00 28 */	fsubs f1, f1, f0
-/* 8012A21C 0012701C  C0 02 A1 E4 */	lfs f0, lbl_803CEB64@sda21(r2)
+/* 8012A21C 0012701C  C0 02 A1 E4 */	lfs f0, l_eb64__esc__2_851@sda21(r2)
 /* 8012A220 00127020  EC 02 00 7A */	fmadds f0, f2, f1, f0
 /* 8012A224 00127024  D0 1D 00 4C */	stfs f0, 0x4c(r29)
 /* 8012A228 00127028  4B FC 8D D9 */	bl AnimCurStateID__10zNPCCommonFv
@@ -379,12 +379,12 @@ lbl_8012A4CC:
 /* 8012A4D4 001272D4  90 01 00 08 */	stw r0, 8(r1)
 /* 8012A4D8 001272D8  FC 20 F8 90 */	fmr f1, f31
 /* 8012A4DC 001272DC  6C 60 80 00 */	xoris r0, r3, 0x8000
-/* 8012A4E0 001272E0  C8 62 A1 F8 */	lfd f3, lbl_803CEB78@sda21(r2)
+/* 8012A4E0 001272E0  C8 62 A1 F8 */	lfd f3, l_eb78__esc__2_905@sda21(r2)
 /* 8012A4E4 001272E4  90 01 00 0C */	stw r0, 0xc(r1)
 /* 8012A4E8 001272E8  7F E3 FB 78 */	mr r3, r31
-/* 8012A4EC 001272EC  C0 02 A1 F0 */	lfs f0, lbl_803CEB70@sda21(r2)
+/* 8012A4EC 001272EC  C0 02 A1 F0 */	lfs f0, l_eb70__esc__2_903@sda21(r2)
 /* 8012A4F0 001272F0  C8 41 00 08 */	lfd f2, 8(r1)
-/* 8012A4F4 001272F4  C0 82 A1 E4 */	lfs f4, lbl_803CEB64@sda21(r2)
+/* 8012A4F4 001272F4  C0 82 A1 E4 */	lfs f4, l_eb64__esc__2_851@sda21(r2)
 /* 8012A4F8 001272F8  EC 42 18 28 */	fsubs f2, f2, f3
 /* 8012A4FC 001272FC  EC 02 00 24 */	fdivs f0, f2, f0
 /* 8012A500 00127300  EC 44 00 28 */	fsubs f2, f4, f0
@@ -418,14 +418,14 @@ SDS_StartExplode__17zNPCGoalDuploLiveFv:
 /* 8012A564 00127364  83 C3 00 00 */	lwz r30, 0(r3)
 /* 8012A568 00127368  7F C3 F3 78 */	mr r3, r30
 /* 8012A56C 0012736C  4B EF 12 C5 */	bl xEntGetCenter__FPC4xEnt
-/* 8012A570 00127370  C0 82 A1 E4 */	lfs f4, lbl_803CEB64@sda21(r2)
+/* 8012A570 00127370  C0 82 A1 E4 */	lfs f4, l_eb64__esc__2_851@sda21(r2)
 /* 8012A574 00127374  38 80 00 00 */	li r4, 0
-/* 8012A578 00127378  C0 22 A2 00 */	lfs f1, lbl_803CEB80@sda21(r2)
+/* 8012A578 00127378  C0 22 A2 00 */	lfs f1, l_eb80__esc__2_923@sda21(r2)
 /* 8012A57C 0012737C  FC A0 20 90 */	fmr f5, f4
-/* 8012A580 00127380  C0 42 A2 04 */	lfs f2, lbl_803CEB84@sda21(r2)
+/* 8012A580 00127380  C0 42 A2 04 */	lfs f2, l_eb84__esc__2_924@sda21(r2)
 /* 8012A584 00127384  FC E0 20 90 */	fmr f7, f4
-/* 8012A588 00127388  C0 62 A2 08 */	lfs f3, lbl_803CEB88@sda21(r2)
-/* 8012A58C 0012738C  C0 C2 A2 0C */	lfs f6, lbl_803CEB8C@sda21(r2)
+/* 8012A588 00127388  C0 62 A2 08 */	lfs f3, l_eb88__esc__2_925@sda21(r2)
+/* 8012A58C 0012738C  C0 C2 A2 0C */	lfs f6, l_eb8c__esc__2_926@sda21(r2)
 /* 8012A590 00127390  4B F1 7E 61 */	bl xScrFXGlareAdd__FP5xVec3fffffffP8RwRaster
 /* 8012A594 00127394  48 05 DC 09 */	bl HAZ_Acquire__Fv
 /* 8012A598 00127398  7C 7F 1B 79 */	or. r31, r3, r3
@@ -437,7 +437,7 @@ SDS_StartExplode__17zNPCGoalDuploLiveFv:
 /* 8012A5B0 001273B0  4B FC 25 09 */	bl SetNPCOwner__9NPCHazardFP10zNPCCommon
 /* 8012A5B4 001273B4  7F C3 F3 78 */	mr r3, r30
 /* 8012A5B8 001273B8  4B EF 12 79 */	bl xEntGetCenter__FPC4xEnt
-/* 8012A5BC 001273BC  C0 22 A1 E0 */	lfs f1, lbl_803CEB60@sda21(r2)
+/* 8012A5BC 001273BC  C0 22 A1 E0 */	lfs f1, l_eb60__esc__2_841@sda21(r2)
 /* 8012A5C0 001273C0  7C 64 1B 78 */	mr r4, r3
 /* 8012A5C4 001273C4  7F E3 FB 78 */	mr r3, r31
 /* 8012A5C8 001273C8  48 05 EC 71 */	bl Start__9NPCHazardFPC5xVec3f
@@ -454,11 +454,11 @@ SDS_StartExplode__17zNPCGoalDuploLiveFv:
 /* 8012A5F4 001273F4  4B FC 24 C5 */	bl SetNPCOwner__9NPCHazardFP10zNPCCommon
 /* 8012A5F8 001273F8  C0 3F 00 64 */	lfs f1, 0x64(r31)
 /* 8012A5FC 001273FC  7F C3 F3 78 */	mr r3, r30
-/* 8012A600 00127400  C0 02 A1 EC */	lfs f0, lbl_803CEB6C@sda21(r2)
+/* 8012A600 00127400  C0 02 A1 EC */	lfs f0, l_eb6c__esc__2_853@sda21(r2)
 /* 8012A604 00127404  EC 01 00 32 */	fmuls f0, f1, f0
 /* 8012A608 00127408  D0 1F 00 64 */	stfs f0, 0x64(r31)
 /* 8012A60C 0012740C  4B EF 12 25 */	bl xEntGetCenter__FPC4xEnt
-/* 8012A610 00127410  C0 22 A1 E0 */	lfs f1, lbl_803CEB60@sda21(r2)
+/* 8012A610 00127410  C0 22 A1 E0 */	lfs f1, l_eb60__esc__2_841@sda21(r2)
 /* 8012A614 00127414  7C 64 1B 78 */	mr r4, r3
 /* 8012A618 00127418  7F E3 FB 78 */	mr r3, r31
 /* 8012A61C 0012741C  48 05 EC 1D */	bl Start__9NPCHazardFPC5xVec3f
@@ -469,7 +469,7 @@ SDS_StartExplode__17zNPCGoalDuploLiveFv:
 /* 8012A630 00127430  48 05 DC E5 */	bl ConfigHelper__9NPCHazardF9en_npchaz
 /* 8012A634 00127434  7F C3 F3 78 */	mr r3, r30
 /* 8012A638 00127438  4B EF 11 F9 */	bl xEntGetCenter__FPC4xEnt
-/* 8012A63C 0012743C  C0 22 A1 E0 */	lfs f1, lbl_803CEB60@sda21(r2)
+/* 8012A63C 0012743C  C0 22 A1 E0 */	lfs f1, l_eb60__esc__2_841@sda21(r2)
 /* 8012A640 00127440  7C 64 1B 78 */	mr r4, r3
 /* 8012A644 00127444  7F E3 FB 78 */	mr r3, r31
 /* 8012A648 00127448  48 05 EB F1 */	bl Start__9NPCHazardFPC5xVec3f
@@ -538,29 +538,29 @@ __ct__17zNPCGoalDuploLiveFi:
 /* 8012A724 00127524  4E 80 00 20 */	blr 
 
 .section .sdata2
-lbl_803CEB58:
+l_eb58__esc__2_816:
 	.4byte 0x41A00000
-lbl_803CEB5C:
+l_eb5c__esc__2_840:
 	.4byte 0x00000000
-lbl_803CEB60:
+l_eb60__esc__2_841:
 	.4byte 0xBF800000
-lbl_803CEB64:
+l_eb64__esc__2_851:
 	.4byte 0x3F800000
-lbl_803CEB68:
+l_eb68__esc__2_852:
 	.4byte 0x3E800000
-lbl_803CEB6C:
+l_eb6c__esc__2_853:
 	.4byte 0x3F000000
-lbl_803CEB70:
+l_eb70__esc__2_903:
 	.4byte 0x43340000
 	.4byte 0x00000000
-lbl_803CEB78:
+l_eb78__esc__2_905:
 	.4byte 0x43300000
 	.4byte 0x80000000
-lbl_803CEB80:
+l_eb80__esc__2_923:
 	.4byte 0x3FC00000
-lbl_803CEB84:
+l_eb84__esc__2_924:
 	.4byte 0x3ECCCCCD
-lbl_803CEB88:
+l_eb88__esc__2_925:
 	.4byte 0x41200000
-lbl_803CEB8C:
+l_eb8c__esc__2_926:
 	.4byte 0x3F400000

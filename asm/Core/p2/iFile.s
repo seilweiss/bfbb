@@ -4,11 +4,11 @@
 
 .global iFileInit__Fv
 iFileInit__Fv:
-/* 800C3300 000C0100  3C 60 80 30 */	lis r3, lbl_802FAE60@ha
-/* 800C3304 000C0104  38 63 AE 60 */	addi r3, r3, lbl_802FAE60@l
+/* 800C3300 000C0100  3C 60 80 30 */	lis r3, l_ae60_tbuffer@ha
+/* 800C3304 000C0104  38 63 AE 60 */	addi r3, r3, l_ae60_tbuffer@l
 /* 800C3308 000C0108  38 03 00 1F */	addi r0, r3, 0x1f
 /* 800C330C 000C010C  54 00 00 34 */	rlwinm r0, r0, 0, 0, 0x1a
-/* 800C3310 000C0110  90 0D 91 C0 */	stw r0, lbl_803CBAC0@sda21(r13)
+/* 800C3310 000C0110  90 0D 91 C0 */	stw r0, l_bac0_buffer32@sda21(r13)
 /* 800C3314 000C0114  4E 80 00 20 */	blr 
 
 .global iFileExit__Fv
@@ -166,7 +166,7 @@ lbl_800C3504:
 /* 800C3510 000C0310  7C 08 03 A6 */	mtlr r0
 /* 800C3514 000C0314  38 21 00 10 */	addi r1, r1, 0x10
 /* 800C3518 000C0318  4E 80 00 20 */	blr 
-lbl_800C351C:
+l_351c_ifilereadCB__FP9tag_xFile:
 /* 800C351C 000C031C  38 00 00 00 */	li r0, 0
 /* 800C3520 000C0320  90 0D 91 C4 */	stw r0, iFileSyncAsyncReadActive@sda21(r13)
 /* 800C3524 000C0324  4E 80 00 20 */	blr 
@@ -186,9 +186,9 @@ iFileRead__FP9tag_xFilePvUi:
 /* 800C3550 000C0350  80 83 01 0C */	lwz r4, 0x10c(r3)
 /* 800C3554 000C0354  4B FF FF 25 */	bl iFileSeek__FP9tag_xFileii
 /* 800C3558 000C0358  38 00 00 01 */	li r0, 1
-/* 800C355C 000C035C  3C 60 80 0C */	lis r3, lbl_800C351C@ha
+/* 800C355C 000C035C  3C 60 80 0C */	lis r3, l_351c_ifilereadCB__FP9tag_xFile@ha
 /* 800C3560 000C0360  90 0D 91 C4 */	stw r0, iFileSyncAsyncReadActive@sda21(r13)
-/* 800C3564 000C0364  38 C3 35 1C */	addi r6, r3, lbl_800C351C@l
+/* 800C3564 000C0364  38 C3 35 1C */	addi r6, r3, l_351c_ifilereadCB__FP9tag_xFile@l
 /* 800C3568 000C0368  7F A3 EB 78 */	mr r3, r29
 /* 800C356C 000C036C  7F C4 F3 78 */	mr r4, r30
 /* 800C3570 000C0370  7F E5 FB 78 */	mr r5, r31
@@ -209,7 +209,7 @@ lbl_800C3584:
 /* 800C35A4 000C03A4  7C 08 03 A6 */	mtlr r0
 /* 800C35A8 000C03A8  38 21 00 20 */	addi r1, r1, 0x20
 /* 800C35AC 000C03AC  4E 80 00 20 */	blr 
-lbl_800C35B0:
+l_35b0_async_cb__FlP11DVDFileInfo:
 /* 800C35B0 000C03B0  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 800C35B4 000C03B4  7C 08 02 A6 */	mflr r0
 /* 800C35B8 000C03B8  2C 03 FF FE */	cmpwi r3, -2
@@ -306,8 +306,8 @@ lbl_800C36D8:
 /* 800C3700 000C0500  54 A5 00 34 */	rlwinm r5, r5, 0, 0, 0x1a
 lbl_800C3704:
 /* 800C3704 000C0504  80 9F 00 04 */	lwz r4, 4(r31)
-/* 800C3708 000C0508  3C 60 80 0C */	lis r3, lbl_800C35B0@ha
-/* 800C370C 000C050C  38 E3 35 B0 */	addi r7, r3, lbl_800C35B0@l
+/* 800C3708 000C0508  3C 60 80 0C */	lis r3, l_35b0_async_cb__FlP11DVDFileInfo@ha
+/* 800C370C 000C050C  38 E3 35 B0 */	addi r7, r3, l_35b0_async_cb__FlP11DVDFileInfo@l
 /* 800C3710 000C0510  7C 84 32 14 */	add r4, r4, r6
 /* 800C3714 000C0514  38 68 00 A8 */	addi r3, r8, 0xa8
 /* 800C3718 000C0518  7C C9 32 14 */	add r6, r9, r6
@@ -330,12 +330,12 @@ iFileReadAsync__FP9tag_xFilePvUiPFP9tag_xFile_vi:
 /* 800C374C 000C054C  7C 7E 1B 78 */	mr r30, r3
 /* 800C3750 000C0550  93 A1 00 14 */	stw r29, 0x14(r1)
 /* 800C3754 000C0554  93 81 00 10 */	stw r28, 0x10(r1)
-/* 800C3758 000C0558  88 0D 91 CC */	lbz r0, lbl_803CBACC@sda21(r13)
+/* 800C3758 000C0558  88 0D 91 CC */	lbz r0, l_bacc_init_esc__6_504@sda21(r13)
 /* 800C375C 000C055C  7C 00 07 75 */	extsb. r0, r0
 /* 800C3760 000C0560  40 82 00 10 */	bne lbl_800C3770
 /* 800C3764 000C0564  38 00 00 01 */	li r0, 1
-/* 800C3768 000C0568  90 0D 91 C8 */	stw r0, lbl_803CBAC8@sda21(r13)
-/* 800C376C 000C056C  98 0D 91 CC */	stb r0, lbl_803CBACC@sda21(r13)
+/* 800C3768 000C0568  90 0D 91 C8 */	stw r0, l_bac8_fopcount_esc__6_503@sda21(r13)
+/* 800C376C 000C056C  98 0D 91 CC */	stb r0, l_bacc_init_esc__6_504@sda21(r13)
 lbl_800C3770:
 /* 800C3770 000C0570  3C 60 80 3C */	lis r3, file_queue@ha
 /* 800C3774 000C0574  38 00 00 04 */	li r0, 4
@@ -348,12 +348,12 @@ lbl_800C3784:
 /* 800C378C 000C058C  41 82 00 94 */	beq lbl_800C3820
 /* 800C3790 000C0590  2C 00 00 01 */	cmpwi r0, 1
 /* 800C3794 000C0594  41 82 00 8C */	beq lbl_800C3820
-/* 800C3798 000C0598  81 0D 91 C8 */	lwz r8, lbl_803CBAC8@sda21(r13)
+/* 800C3798 000C0598  81 0D 91 C8 */	lwz r8, l_bac8_fopcount_esc__6_503@sda21(r13)
 /* 800C379C 000C059C  3C E0 80 3C */	lis r7, file_queue@ha
 /* 800C37A0 000C05A0  1D 3F 00 1C */	mulli r9, r31, 0x1c
 /* 800C37A4 000C05A4  38 60 00 00 */	li r3, 0
 /* 800C37A8 000C05A8  38 08 00 01 */	addi r0, r8, 1
-/* 800C37AC 000C05AC  90 0D 91 C8 */	stw r0, lbl_803CBAC8@sda21(r13)
+/* 800C37AC 000C05AC  90 0D 91 C8 */	stw r0, l_bac8_fopcount_esc__6_503@sda21(r13)
 /* 800C37B0 000C05B0  38 E7 35 F0 */	addi r7, r7, file_queue@l
 /* 800C37B4 000C05B4  55 1C 10 3A */	slwi r28, r8, 2
 /* 800C37B8 000C05B8  7F C7 49 2E */	stwx r30, r7, r9
@@ -373,8 +373,8 @@ lbl_800C3784:
 /* 800C37F0 000C05F0  55 08 00 3A */	rlwinm r8, r8, 0, 0, 0x1d
 lbl_800C37F4:
 /* 800C37F4 000C05F4  93 FE 00 D4 */	stw r31, 0xd4(r30)
-/* 800C37F8 000C05F8  3C 60 80 0C */	lis r3, lbl_800C35B0@ha
-/* 800C37FC 000C05FC  38 E3 35 B0 */	addi r7, r3, lbl_800C35B0@l
+/* 800C37F8 000C05F8  3C 60 80 0C */	lis r3, l_35b0_async_cb__FlP11DVDFileInfo@ha
+/* 800C37FC 000C05FC  38 E3 35 B0 */	addi r7, r3, l_35b0_async_cb__FlP11DVDFileInfo@l
 /* 800C3800 000C0600  7D 05 43 78 */	mr r5, r8
 /* 800C3804 000C0604  80 DE 01 0C */	lwz r6, 0x10c(r30)
 /* 800C3808 000C0608  38 7E 00 A8 */	addi r3, r30, 0xa8
@@ -510,17 +510,17 @@ lbl_800C3984:
 /* 800C3994 000C0794  4E 80 00 20 */	blr 
 
 .section .bss
-lbl_802FAE60:
+l_ae60_tbuffer:
 	.skip 0x1020
 
 .section .sbss
-lbl_803CBAC0:
+l_bac0_buffer32:
 	.skip 0x4
 /* SPECULATION: link order */
 .global iFileSyncAsyncReadActive
 iFileSyncAsyncReadActive:
 	.skip 0x4
-lbl_803CBAC8:
+l_bac8_fopcount_esc__6_503:
 	.skip 0x4
-lbl_803CBACC:
+l_bacc_init_esc__6_504:
 	.skip 0x4

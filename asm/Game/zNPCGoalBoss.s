@@ -15,9 +15,9 @@ GOALCreate_Boss__FiP10RyzMemGrowPv:
 /* 8014EC9C 0014BA9C  38 84 BD D0 */	addi r4, r4, -16944
 /* 8014ECA0 0014BAA0  28 04 00 33 */	cmplwi r4, 0x33
 /* 8014ECA4 0014BAA4  41 81 04 50 */	bgt lbl_8014F0F4
-/* 8014ECA8 0014BAA8  3C 60 80 2A */	lis r3, lbl_8029A138@ha
+/* 8014ECA8 0014BAA8  3C 60 80 2A */	lis r3, l_a138__esc__2_887@ha
 /* 8014ECAC 0014BAAC  54 84 10 3A */	slwi r4, r4, 2
-/* 8014ECB0 0014BAB0  38 63 A1 38 */	addi r3, r3, lbl_8029A138@l
+/* 8014ECB0 0014BAB0  38 63 A1 38 */	addi r3, r3, l_a138__esc__2_887@l
 /* 8014ECB4 0014BAB4  7C 03 20 2E */	lwzx r0, r3, r4
 /* 8014ECB8 0014BAB8  7C 09 03 A6 */	mtctr r0
 /* 8014ECBC 0014BABC  4E 80 04 20 */	bctr 
@@ -843,7 +843,7 @@ __ct__13zNPCGoalExistFi:
 /* 8014F768 0014C568  4E 80 00 20 */	blr 
 
 .section .data
-lbl_8029A138:
+l_a138__esc__2_887:
 	.4byte lbl_8014ECC0 /* 0x8014ECC0 */
 	.4byte lbl_8014ECE8 /* 0x8014ECE8 */
 	.4byte lbl_8014ED10 /* 0x8014ED10 */

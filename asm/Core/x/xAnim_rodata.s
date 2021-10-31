@@ -1,7 +1,7 @@
 .section .rodata   # 0x80251D80 - 0x80251E48
 
-.global lbl_80251D80
-lbl_80251D80:
+.global l_1d80__esc__2_638
+l_1d80__esc__2_638:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -34,8 +34,8 @@ lbl_80251D80:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
-.global lbl_80251E00
-lbl_80251E00:
+.global l_1e00__esc__2_stringBase0
+l_1e00__esc__2_stringBase0:
 	.4byte 0x7B7D2829
 	.4byte 0x3C3E0020
 	.4byte 0x2C090A0D
