@@ -844,6 +844,7 @@ l_ca38_xjlookup_esc__6_739:
 	.4byte 0x00000000
 	.4byte 0x00000002
 	.4byte 0x00000001
+l_ca44__esc__2_stringBase0:
 	.4byte 0x626C6168
 	.4byte 0x626C6168
 	.4byte 0x00000000

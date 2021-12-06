@@ -601,6 +601,7 @@ l_bb60__esc__2_739:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
+l_bbe0__esc__2_stringBase0:
 	.4byte 0x4C697374
 	.4byte 0x456E6400
 	.4byte 0x456E636F
@@ -657,6 +658,7 @@ l_bb60__esc__2_739:
 	.4byte 0x696E6572
 	.4byte 0x546F6F00
 	.4byte 0x00000000
+l_bcc0__esc__2_stringBase0:
 	.4byte 0x6261645F
 	.4byte 0x6E6F7465
 	.4byte 0x735F6163

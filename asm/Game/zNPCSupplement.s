@@ -6261,6 +6261,7 @@ l_3240_g_parm_fahrwerkz:
 	.4byte 0x3F800000
 	.4byte 0x3F800000
 	.4byte 0x00010150
+l_32e0__esc__2_stringBase0:
 	.4byte 0x66785F6F
 	.4byte 0x696C5F62
 	.4byte 0x7562626C

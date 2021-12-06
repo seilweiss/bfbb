@@ -710,6 +710,7 @@ l_cb8c_model_widget_index__Q24zhud18_esc__2_unnamed_esc__2_zHud_cpp_esc__2_:
 	.4byte 0x00000003
 	.4byte 0x00000006
 	.4byte 0x00000008
+l_cba0__esc__2_stringBase0:
 	.4byte 0x4855445F
 	.4byte 0x494E545F
 	.4byte 0x4D455445

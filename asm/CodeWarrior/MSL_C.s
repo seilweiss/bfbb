@@ -19579,6 +19579,7 @@ l_9948__esc__2_stringBase0:
 	.4byte 0x00313238
 	.4byte 0x00323536
 	.4byte 0x00000000
+l_9a28__esc__2_stringBase0:
 	.4byte 0x2E000043
 	.4byte 0x00000000
 .global l_9a30__esc__2_stringBase0
@@ -19613,6 +19614,7 @@ l_9a80__esc__2_212:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
+l_9aa0__esc__2_stringBase0:
 	.4byte 0x00417267
 	.4byte 0x756D656E
 	.4byte 0x74206C69

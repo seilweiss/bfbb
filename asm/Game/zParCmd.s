@@ -804,6 +804,7 @@ l_e6f8__esc__2_stringBase0:
 	.4byte 0x505F2564
 	.4byte 0x00000000
 	.4byte 0x00000000
+l_e710__esc__2_stringBase0:
 	.4byte 0x50757270
 	.4byte 0x6C655368
 	.4byte 0x696E7900
