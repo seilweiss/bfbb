@@ -9847,14 +9847,17 @@ l_aa68_sBone:
 	.4byte 0x00000028
 	.4byte 0x0000002D
 	.4byte 0x0000002E
+l_aa90_sBoundBone:
 	.4byte 0x00000006
 	.4byte 0x00000007
 	.4byte 0x00000008
 	.4byte 0x00000009
+l_aaa0_sBoundRadius:
 	.4byte 0x3F800000
 	.4byte 0x3F666666
 	.4byte 0x3F800000
 	.4byte 0x3F000000
+l_aab0_sBoneOffset:
 	.4byte 0xBE4CCCCD
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -10374,6 +10377,3 @@ l_f474__esc__2_2885:
 l_f478__esc__2_2994:
 	.4byte 0x40F00000
 	.4byte 0x00000000
-	.4byte 0x00000017
-	.4byte 0x00000018
-	.4byte 0x00000046

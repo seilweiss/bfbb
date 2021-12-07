@@ -1450,7 +1450,7 @@ l_ca20__esc__2_stringBase0:
 .section .data
 l_f1b0_g_eggBasket:
 	.4byte EGG_check_ExtrasFlags__FP7EGGItem /* 0x80099938 */
-	.4byte 0x8028F1A0
+	.4byte l_f1a0_EGGEmpty /* 0x8028F1A0 */
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000

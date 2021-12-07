@@ -6931,15 +6931,19 @@ l_a408__esc__2_405:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
+l_a414__esc__2_406:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
+l_a420__esc__2_410:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
+l_a42c__esc__2_441:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
+l_a438__esc__2_624:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -6950,6 +6954,7 @@ l_a408__esc__2_405:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
+l_a460__esc__2_625:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -6960,6 +6965,7 @@ l_a408__esc__2_405:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
+l_a488__esc__2_626:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -6970,6 +6976,7 @@ l_a408__esc__2_405:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
+l_a4b0__esc__2_627:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -6980,6 +6987,7 @@ l_a408__esc__2_405:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
+l_a4d8__esc__2_628:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -6990,6 +6998,7 @@ l_a408__esc__2_405:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
+l_a500__esc__2_629:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -7000,6 +7009,7 @@ l_a408__esc__2_405:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
+l_a528__esc__2_630:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -7010,10 +7020,12 @@ l_a408__esc__2_405:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
+l_a550_screen_bounds:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x3F800000
 	.4byte 0x3F800000
+l_a560_default_adjust:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x3F800000
@@ -7050,6 +7062,7 @@ l_a5dc__esc__2_1502:
 	.4byte 0x00000000
 	.4byte 0xBF800000
 	.4byte 0x00000000
+l_a5e8_vertical_cb_esc__6_1766:
 	.4byte on_tweak_vertical__Q312bungee_state35_esc__2_unnamed_esc__2_zEntPlayerBungeeState_cpp_esc__2_18hanging_state_typeFRC10tweak_info /* 0x80110B90 */
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -7060,6 +7073,7 @@ l_a5dc__esc__2_1502:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
+l_a610_horizontal_cb_esc__6_1767:
 	.4byte on_tweak_horizontal__Q312bungee_state35_esc__2_unnamed_esc__2_zEntPlayerBungeeState_cpp_esc__2_18hanging_state_typeFRC10tweak_info /* 0x80110B20 */
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -7070,6 +7084,7 @@ l_a5dc__esc__2_1502:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
+l_a638_camera_cb_esc__6_1768:
 	.4byte on_tweak_camera__Q312bungee_state35_esc__2_unnamed_esc__2_zEntPlayerBungeeState_cpp_esc__2_18hanging_state_typeFRC10tweak_info /* 0x80110A0C */
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -7080,6 +7095,7 @@ l_a5dc__esc__2_1502:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
+l_a660_collision_cb_esc__6_1769:
 	.4byte on_tweak_collision__Q312bungee_state35_esc__2_unnamed_esc__2_zEntPlayerBungeeState_cpp_esc__2_18hanging_state_typeFRC10tweak_info /* 0x80110930 */
 	.4byte 0x00000000
 	.4byte 0x00000000

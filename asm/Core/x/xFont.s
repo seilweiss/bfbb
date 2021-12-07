@@ -325,6 +325,7 @@ l_29d4__esc__2_stringBase0:
 
 .section .text  # 0x8001FFB0 - 0x800266C8
 
+l_2b90__esc__2_1168:
 /* find_bounds__19@unnamed@xFont_cpp@FPC10iColor_tagRC13basic_rect<i>i */
 find_bounds__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FPC10iColor_tagRC13basic_rect_esc__0_i_esc__1_i:
 /* 8001FFB0 0001CDB0  94 21 FF D0 */	stwu r1, -0x30(r1)
@@ -9522,6 +9523,9 @@ l_bbf8_format_tags_buffer__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
+.global l_cff8_defaultBFX
+.global l_cff8_defaultBFX
+l_cff8_defaultBFX:
 	.4byte 0xE00000C0
 	.4byte 0xFFFFFFFF
 	.4byte 0xB8C2351E
@@ -9550,6 +9554,7 @@ l_7ba8_entry_buffer_esc__6_1612:
 	.skip 0x140
 
 .section .sbss
+l_7ce8_alpha_count0__17_esc__2_unnamed_esc__2_xFX_cpp_esc__2_:
 .balign 8
 l_b210_active_fonts_size__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_:
 	.skip 0x4

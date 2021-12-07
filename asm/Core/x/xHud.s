@@ -7,23 +7,29 @@ l_2d18__esc__2_405:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
+l_2d24__esc__2_406:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
+l_2d30__esc__2_410:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
+l_2d3c__esc__2_441:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
+l_2d48_screen_bounds:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x3F800000
 	.4byte 0x3F800000
+l_2d58_default_adjust:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x3F800000
 	.4byte 0x3F800000
+l_2d68__esc__2_594:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -34,6 +40,7 @@ l_2d18__esc__2_405:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
+l_2d90__esc__2_595:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -44,6 +51,7 @@ l_2d18__esc__2_405:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
+l_2db8__esc__2_596:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -54,6 +62,7 @@ l_2d18__esc__2_405:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
+l_2de0__esc__2_597:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -64,6 +73,7 @@ l_2d18__esc__2_405:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
+l_2e08__esc__2_598:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -74,6 +84,7 @@ l_2d18__esc__2_405:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
+l_2e30__esc__2_599:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -84,6 +95,7 @@ l_2d18__esc__2_405:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
+l_2e58__esc__2_600:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -94,6 +106,7 @@ l_2d18__esc__2_405:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
+l_2e80__esc__2_713:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -108,13 +121,16 @@ l_2e90_known_types__Q24xhud18_esc__2_unnamed_esc__2_xHud_cpp_esc__2_:
 	.4byte 0x0000015C
 	.4byte 0x47000000
 	.4byte 0x0000017C
+l_2eb0__esc__2_1227:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
+l_2ec0__esc__2_1228:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x3F800000
+l_2ecc__esc__2_1229:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000

@@ -83,19 +83,19 @@ l_ae40_cursize:
 	.4byte 0x00000000
 .global lbl_803CAE48
 lbl_803CAE48:
-	.4byte 0x802B03C0
+	.4byte l_03c0__esc__2_1 /* 0x802B03C0 */
 	.4byte 0x00000000
 .global lbl_803CAE50
 lbl_803CAE50:
-	.4byte 0x802B0408
+	.4byte l_0408__esc__2_1 /* 0x802B0408 */
 	.4byte 0x00000000
 .global lbl_803CAE58
 lbl_803CAE58:
-	.4byte 0x802B0450
+	.4byte l_0450__esc__2_1 /* 0x802B0450 */
 	.4byte 0x00000000
 .global lbl_803CAE60
 lbl_803CAE60:
-	.4byte 0x802B0498
+	.4byte l_0498__esc__2_1 /* 0x802B0498 */
 	.4byte 0x00000000
 .global lbl_803CAE68
 lbl_803CAE68:
@@ -103,7 +103,7 @@ lbl_803CAE68:
 	.4byte 0x00000000
 .global lbl_803CAE70
 lbl_803CAE70:
-	.4byte 0x802B3EC0
+	.4byte l_3ec0__esc__2_1 /* 0x802B3EC0 */
 	.4byte 0x00000000
 .global l_ae78_next
 l_ae78_next:
@@ -130,7 +130,7 @@ l_ae98__esc__2_118:
 	.4byte 0x732E6300
 .global lbl_803CAEA0
 lbl_803CAEA0:
-	.4byte 0x802B4428
+	.4byte l_4428__esc__2_1 /* 0x802B4428 */
 .global l_aea4_autoInvalidation
 l_aea4_autoInvalidation:
 	.4byte 0x00000001
@@ -156,7 +156,7 @@ l_aec0__esc__2_43:
 	.4byte 0x00000000
 .global lbl_803CAEC8
 lbl_803CAEC8:
-	.4byte 0x802B4660
+	.4byte l_4660__esc__2_1 /* 0x802B4660 */
 	.4byte 0x00000000
 .global lbl_803CAED0
 lbl_803CAED0:
@@ -242,7 +242,7 @@ l_af60_SwitchThreadCallback:
 	.4byte 0x00000000
 .global lbl_803CAF68
 lbl_803CAF68:
-	.4byte 0x802B6530
+	.4byte l_6530__esc__2_1 /* 0x802B6530 */
 .global l_af6c_ResettingChan
 l_af6c_ResettingChan:
 	.4byte 0x00000020
@@ -316,7 +316,9 @@ lbl_803CAFD8:
 lbl_803CAFE0:
 	.4byte 0x7FEFFFFF
 	.4byte 0xFFFFFFFF
-	.4byte 0x8027A190
+.global l_afe8___RTTI__Q23std9exception
+l_afe8___RTTI__Q23std9exception:
+	.4byte l_a190__esc__2_223 /* 0x8027A190 */
 	.4byte 0x00000000
 .global l_aff0_thandler__3std
 l_aff0_thandler__3std:
@@ -328,10 +330,14 @@ l_aff4_uhandler__3std:
 l_aff8_fragmentID:
 	.4byte 0xFFFFFFFE
 	.4byte 0x00000000
-	.4byte 0x8027A230
+.global l_b000___RTTI__Q23std9exception
+l_b000___RTTI__Q23std9exception:
+	.4byte l_a230__esc__2_904 /* 0x8027A230 */
 	.4byte 0x00000000
-	.4byte 0x8027A21C
-	.4byte 0x802B754C
+.global l_b008___RTTI__Q23std13bad_exception
+l_b008___RTTI__Q23std13bad_exception:
+	.4byte l_a21c__esc__2_902 /* 0x8027A21C */
+	.4byte l_754c__esc__2_903 /* 0x802B754C */
 .global l_b010_SendCount
 l_b010_SendCount:
 	.4byte 0x80000000

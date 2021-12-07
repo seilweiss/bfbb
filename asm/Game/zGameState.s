@@ -339,6 +339,7 @@ l_f928_sGameMode_DispatchTable:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
+l_f95c_sGameState_DispatchTable:
 	.4byte 0x00000083
 	.4byte 0x00000084
 	.4byte 0x00000085
@@ -347,16 +348,20 @@ l_f928_sGameMode_DispatchTable:
 	.4byte 0x00000088
 	.4byte 0x00000000
 	.4byte 0x00000000
+l_f97c_sSaveState_DispatchTable:
 	.4byte 0x0000007C
 	.4byte 0x0000007D
 	.4byte 0x0000007E
+l_f988_sLoadState_DispatchTable:
 	.4byte 0x00000076
 	.4byte 0x00000077
 	.4byte 0x00000078
+l_f994_sIntroState_DispatchTable:
 	.4byte 0x0000006E
 	.4byte 0x0000006F
 	.4byte 0x00000070
 	.4byte 0x00000071
+l_f9a4_sGameState_DoDispatchTable:
 	.4byte 0x0000009E
 	.4byte 0x0000009F
 	.4byte 0x000000A0
@@ -365,12 +370,15 @@ l_f928_sGameMode_DispatchTable:
 	.4byte 0x000000A2
 	.4byte 0x000000A3
 	.4byte 0x000000A6
+l_f9c4_sSaveState_DoDispatchTable:
 	.4byte 0x00000097
 	.4byte 0x00000098
 	.4byte 0x00000099
+l_f9d0_sLoadState_DoDispatchTable:
 	.4byte 0x00000091
 	.4byte 0x00000092
 	.4byte 0x00000093
+l_f9dc_sIntroState_DoDispatchTable:
 	.4byte 0x00000089
 	.4byte 0x0000008A
 	.4byte 0x0000008B

@@ -3483,6 +3483,7 @@ l_b570__esc__2_1412:
 	.4byte lbl_8001EA28 /* 0x8001EA28 */
 
 .section .sbss
+l_b590_default_font_texture__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_:
 .balign 8
 l_b1d8_dbg_xems:
 	.skip 0x4

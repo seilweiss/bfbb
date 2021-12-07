@@ -3508,9 +3508,11 @@ l_12f8_Index:
 	.4byte 0x00000001
 	.4byte 0x00020000
 	.4byte 0x00020003
+l_1304_from_esc__6_1259:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0xBF800000
+l_1310_to_esc__6_1260:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000

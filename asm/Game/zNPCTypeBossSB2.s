@@ -10782,19 +10782,23 @@ l_fae0_slug_hooks__29_esc__2_unnamed_esc__2_zNPCTypeBossSB2_cpp_esc__2_:
 	.4byte l_fc00__esc__2_stringBase0 + 529
 	.4byte l_fc00__esc__2_stringBase0 + 541
 	.4byte l_fc00__esc__2_stringBase0 + 553
+l_faec_say_hit_player__29_esc__2_unnamed_esc__2_zNPCTypeBossSB2_cpp_esc__2_:
 	.4byte 0x0000001E
 	.4byte 0x0000001F
 	.4byte 0x00000020
 	.4byte 0x00000021
 	.4byte 0x00000022
 	.4byte 0x00000023
+l_fb04_say_hit_boss_1__29_esc__2_unnamed_esc__2_zNPCTypeBossSB2_cpp_esc__2_:
 	.4byte 0x0000002A
 	.4byte 0x0000002B
 	.4byte 0x00000034
 	.4byte 0x00000035
+l_fb14_say_hit_boss_2__29_esc__2_unnamed_esc__2_zNPCTypeBossSB2_cpp_esc__2_:
 	.4byte 0x0000002B
 	.4byte 0x00000035
 	.4byte 0x00000041
+l_fb20_say_vuln__29_esc__2_unnamed_esc__2_zNPCTypeBossSB2_cpp_esc__2_:
 	.4byte 0x00000036
 	.4byte 0x00000037
 	.4byte 0x00000038
@@ -10802,36 +10806,37 @@ l_fae0_slug_hooks__29_esc__2_unnamed_esc__2_zNPCTypeBossSB2_cpp_esc__2_:
 	.4byte 0x0000003A
 	.4byte 0x00000042
 	.4byte 0x00000043
+l_fb3c_say_stun__29_esc__2_unnamed_esc__2_zNPCTypeBossSB2_cpp_esc__2_:
 	.4byte 0x0000003D
 	.4byte 0x0000003E
 	.4byte 0x0000003F
 	.4byte 0x00000040
 l_fb4c_say_set__29_esc__2_unnamed_esc__2_zNPCTypeBossSB2_cpp_esc__2_:
-	.4byte 0x803CF218
+	.4byte l_f218_say_intro__29_esc__2_unnamed_esc__2_zNPCTypeBossSB2_cpp_esc__2_ /* 0x803CF218 */
 	.4byte 0x00000001
-	.4byte 0x8026FAEC
+	.4byte l_faec_say_hit_player__29_esc__2_unnamed_esc__2_zNPCTypeBossSB2_cpp_esc__2_ /* 0x8026FAEC */
 	.4byte 0x00000006
-	.4byte 0x8026FB04
+	.4byte l_fb04_say_hit_boss_1__29_esc__2_unnamed_esc__2_zNPCTypeBossSB2_cpp_esc__2_ /* 0x8026FB04 */
 	.4byte 0x00000004
-	.4byte 0x8026FB14
+	.4byte l_fb14_say_hit_boss_2__29_esc__2_unnamed_esc__2_zNPCTypeBossSB2_cpp_esc__2_ /* 0x8026FB14 */
 	.4byte 0x00000003
-	.4byte 0x803CF21C
+	.4byte l_f21c_say_hit_boss_3__29_esc__2_unnamed_esc__2_zNPCTypeBossSB2_cpp_esc__2_ /* 0x803CF21C */
 	.4byte 0x00000001
-	.4byte 0x803CF220
+	.4byte l_f220_say_hit_fail__29_esc__2_unnamed_esc__2_zNPCTypeBossSB2_cpp_esc__2_ /* 0x803CF220 */
 	.4byte 0x00000001
-	.4byte 0x803CF224
+	.4byte l_f224_say_hit_last__29_esc__2_unnamed_esc__2_zNPCTypeBossSB2_cpp_esc__2_ /* 0x803CF224 */
 	.4byte 0x00000001
-	.4byte 0x803CF228
+	.4byte l_f228_say_spun__29_esc__2_unnamed_esc__2_zNPCTypeBossSB2_cpp_esc__2_ /* 0x803CF228 */
 	.4byte 0x00000002
-	.4byte 0x8026FB20
+	.4byte l_fb20_say_vuln__29_esc__2_unnamed_esc__2_zNPCTypeBossSB2_cpp_esc__2_ /* 0x8026FB20 */
 	.4byte 0x00000007
-	.4byte 0x8026FB3C
+	.4byte l_fb3c_say_stun__29_esc__2_unnamed_esc__2_zNPCTypeBossSB2_cpp_esc__2_ /* 0x8026FB3C */
 	.4byte 0x00000004
-	.4byte 0x803CF230
+	.4byte l_f230_say_return__29_esc__2_unnamed_esc__2_zNPCTypeBossSB2_cpp_esc__2_ /* 0x803CF230 */
 	.4byte 0x00000001
-	.4byte 0x803CF234
+	.4byte l_f234_say_tactics__29_esc__2_unnamed_esc__2_zNPCTypeBossSB2_cpp_esc__2_ /* 0x803CF234 */
 	.4byte 0x00000001
-	.4byte 0x803CF238
+	.4byte l_f238_say_fall__29_esc__2_unnamed_esc__2_zNPCTypeBossSB2_cpp_esc__2_ /* 0x803CF238 */
 	.4byte 0x00000001
 l_fbb4_idle_table_esc__6_2324:
 	.4byte 0x0000000A
@@ -11423,6 +11428,23 @@ lbl_803D0934:
 	.skip 0x4
 
 .section .sdata2
+l_f218_say_intro__29_esc__2_unnamed_esc__2_zNPCTypeBossSB2_cpp_esc__2_:
+	.4byte 0x00000045
+l_f21c_say_hit_boss_3__29_esc__2_unnamed_esc__2_zNPCTypeBossSB2_cpp_esc__2_:
+	.4byte 0x00000033
+l_f220_say_hit_fail__29_esc__2_unnamed_esc__2_zNPCTypeBossSB2_cpp_esc__2_:
+	.4byte 0x0000003C
+l_f224_say_hit_last__29_esc__2_unnamed_esc__2_zNPCTypeBossSB2_cpp_esc__2_:
+	.4byte 0x00000046
+l_f228_say_spun__29_esc__2_unnamed_esc__2_zNPCTypeBossSB2_cpp_esc__2_:
+	.4byte 0x00000044
+	.4byte 0x0000002F
+l_f230_say_return__29_esc__2_unnamed_esc__2_zNPCTypeBossSB2_cpp_esc__2_:
+	.4byte 0x00000030
+l_f234_say_tactics__29_esc__2_unnamed_esc__2_zNPCTypeBossSB2_cpp_esc__2_:
+	.4byte 0x0000003B
+l_f238_say_fall__29_esc__2_unnamed_esc__2_zNPCTypeBossSB2_cpp_esc__2_:
+	.4byte 0x00000032
 l_f23c__esc__2_1854:
 	.4byte 0x3F800000
 l_f240__esc__2_1855:

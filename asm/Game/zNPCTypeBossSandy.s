@@ -10629,14 +10629,17 @@ l_98c8_sBone:
 	.4byte 0x0000002B
 	.4byte 0x0000002E
 	.4byte 0x00000030
+l_98fc_sLeftHandBones:
 	.4byte 0x00000014
 	.4byte 0x00000015
 	.4byte 0x00000016
 	.4byte 0x00000017
+l_990c_sRightHandBones:
 	.4byte 0x0000001B
 	.4byte 0x0000001C
 	.4byte 0x0000001D
 	.4byte 0x0000001E
+l_991c_sBoundRadius:
 	.4byte 0x3FB33333
 	.4byte 0x3FA66666
 	.4byte 0xBF800000
@@ -10690,6 +10693,7 @@ l_9950_sBoneOffset:
 	.4byte 0x00000000
 	.4byte 0xBF19999A
 	.4byte 0x3E99999A
+l_99ec_sNFSoundLabel:
 	.4byte l_d19c__esc__2_stringBase0 /* 0x8026D19C */
 	.4byte l_d19c__esc__2_stringBase0 + 8
 	.4byte l_d19c__esc__2_stringBase0 + 16

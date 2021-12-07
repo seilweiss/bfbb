@@ -8609,15 +8609,19 @@ l_0fa8__esc__2_405:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
+l_0fb4__esc__2_406:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
+l_0fc0__esc__2_410:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
+l_0fcc__esc__2_441:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
+l_0fd8__esc__2_607:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -8628,6 +8632,7 @@ l_0fa8__esc__2_405:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
+l_1000__esc__2_608:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -8638,6 +8643,7 @@ l_0fa8__esc__2_405:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
+l_1028__esc__2_609:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -8648,6 +8654,7 @@ l_0fa8__esc__2_405:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
+l_1050__esc__2_610:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -8658,6 +8665,7 @@ l_0fa8__esc__2_405:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
+l_1078__esc__2_611:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -8668,6 +8676,7 @@ l_0fa8__esc__2_405:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
+l_10a0__esc__2_612:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -8678,6 +8687,7 @@ l_0fa8__esc__2_405:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
+l_10c8__esc__2_613:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -8688,9 +8698,11 @@ l_0fa8__esc__2_405:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
+l_10f0__esc__2_781:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
+l_10fc__esc__2_842:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -8812,6 +8824,7 @@ l_110c_sound_assets__34_esc__2_unnamed_esc__2_zNPCTypeBossPlankton_cpp_esc__2_:
 	.4byte l_1464__esc__2_stringBase0 + 373
 	.4byte 0x00000000
 	.4byte 0x00000000
+l_12dc__esc__2_896:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -8832,28 +8845,34 @@ l_1300_beam_glow_curve__34_esc__2_unnamed_esc__2_zNPCTypeBossPlankton_cpp_esc__2
 	.4byte 0x3F800000
 	.4byte 0xFF000000
 	.4byte 0x40C00000
+l_1324_say_fuse_near__34_esc__2_unnamed_esc__2_zNPCTypeBossPlankton_cpp_esc__2_:
 	.4byte 0x00000019
 	.4byte 0x00000043
 	.4byte 0x00000038
 	.4byte 0x00000039
+l_1334_say_fuse_hit__34_esc__2_unnamed_esc__2_zNPCTypeBossPlankton_cpp_esc__2_:
 	.4byte 0x0000001A
 	.4byte 0x0000002A
 	.4byte 0x00000033
+l_1340_say_hit_boss_1__34_esc__2_unnamed_esc__2_zNPCTypeBossPlankton_cpp_esc__2_:
 	.4byte 0x0000002A
 	.4byte 0x0000002B
 	.4byte 0x00000034
 	.4byte 0x00000035
 	.4byte 0x00000041
 	.4byte 0x0000003E
+l_1358_say_hit_boss_2__34_esc__2_unnamed_esc__2_zNPCTypeBossPlankton_cpp_esc__2_:
 	.4byte 0x0000001B
 	.4byte 0x0000001C
 	.4byte 0x0000001D
+l_1364_say_hit_boss_3__34_esc__2_unnamed_esc__2_zNPCTypeBossPlankton_cpp_esc__2_:
 	.4byte 0x0000001B
 	.4byte 0x0000001C
 	.4byte 0x0000001D
 	.4byte 0x00000036
 	.4byte 0x00000037
 	.4byte 0x0000003A
+l_137c_say_hit_player__34_esc__2_unnamed_esc__2_zNPCTypeBossPlankton_cpp_esc__2_:
 	.4byte 0x0000001E
 	.4byte 0x0000001F
 	.4byte 0x00000020
@@ -8861,21 +8880,21 @@ l_1300_beam_glow_curve__34_esc__2_unnamed_esc__2_zNPCTypeBossPlankton_cpp_esc__2
 	.4byte 0x00000022
 	.4byte 0x00000023
 l_1394_say_set__34_esc__2_unnamed_esc__2_zNPCTypeBossPlankton_cpp_esc__2_:
-	.4byte 0x803CF480
+	.4byte l_f480_say_intro__34_esc__2_unnamed_esc__2_zNPCTypeBossPlankton_cpp_esc__2_ /* 0x803CF480 */
 	.4byte 0x00000002
-	.4byte 0x80271324
+	.4byte l_1324_say_fuse_near__34_esc__2_unnamed_esc__2_zNPCTypeBossPlankton_cpp_esc__2_ /* 0x80271324 */
 	.4byte 0x00000004
-	.4byte 0x80271334
+	.4byte l_1334_say_fuse_hit__34_esc__2_unnamed_esc__2_zNPCTypeBossPlankton_cpp_esc__2_ /* 0x80271334 */
 	.4byte 0x00000003
-	.4byte 0x80271340
+	.4byte l_1340_say_hit_boss_1__34_esc__2_unnamed_esc__2_zNPCTypeBossPlankton_cpp_esc__2_ /* 0x80271340 */
 	.4byte 0x00000006
-	.4byte 0x80271358
+	.4byte l_1358_say_hit_boss_2__34_esc__2_unnamed_esc__2_zNPCTypeBossPlankton_cpp_esc__2_ /* 0x80271358 */
 	.4byte 0x00000003
-	.4byte 0x80271364
+	.4byte l_1364_say_hit_boss_3__34_esc__2_unnamed_esc__2_zNPCTypeBossPlankton_cpp_esc__2_ /* 0x80271364 */
 	.4byte 0x00000006
-	.4byte 0x803CF488
+	.4byte l_f488_say_hit_boss_4__34_esc__2_unnamed_esc__2_zNPCTypeBossPlankton_cpp_esc__2_ /* 0x803CF488 */
 	.4byte 0x00000001
-	.4byte 0x8027137C
+	.4byte l_137c_say_hit_player__34_esc__2_unnamed_esc__2_zNPCTypeBossPlankton_cpp_esc__2_ /* 0x8027137C */
 	.4byte 0x00000006
 l_13d4__esc__2_2120:
 	.4byte 0x00000000
@@ -8885,24 +8904,31 @@ l_13e0__esc__2_2125:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
+l_13ec__esc__2_2143:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
+l_13f8__esc__2_2144:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
+l_1404__esc__2_2145:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
+l_1410__esc__2_2146:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
+l_141c__esc__2_2236:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
+l_1428__esc__2_2239:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
+l_1434__esc__2_2244:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -8910,9 +8936,11 @@ l_1440__esc__2_2381:
 	.4byte 0xBF800000
 	.4byte 0x00000000
 	.4byte 0x00000000
+l_144c__esc__2_2633:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
+l_1458__esc__2_2634:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -9557,12 +9585,14 @@ l_af30_beam_launch_effect__34_esc__2_unnamed_esc__2_zNPCTypeBossPlankton_cpp_esc
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
+l_af60_beam_head_effect__34_esc__2_unnamed_esc__2_zNPCTypeBossPlankton_cpp_esc__2_:
 	.4byte 0x00000002
 	.4byte 0x00000001
 	.4byte 0x40400000
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
+l_af78_beam_impact_effect__34_esc__2_unnamed_esc__2_zNPCTypeBossPlankton_cpp_esc__2_:
 	.4byte 0x00000000
 	.4byte 0x00000003
 	.4byte 0x00000000
@@ -9581,12 +9611,14 @@ l_af30_beam_launch_effect__34_esc__2_unnamed_esc__2_zNPCTypeBossPlankton_cpp_esc
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
+l_afc0_beam_death_effect__34_esc__2_unnamed_esc__2_zNPCTypeBossPlankton_cpp_esc__2_:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
+l_afd8_beam_kill_effect__34_esc__2_unnamed_esc__2_zNPCTypeBossPlankton_cpp_esc__2_:
 	.4byte 0x00000003
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -10028,6 +10060,11 @@ lbl_803D09A4:
 	.skip 0x4
 
 .section .sdata2
+l_f480_say_intro__34_esc__2_unnamed_esc__2_zNPCTypeBossPlankton_cpp_esc__2_:
+	.4byte 0x00000017
+	.4byte 0x00000018
+l_f488_say_hit_boss_4__34_esc__2_unnamed_esc__2_zNPCTypeBossPlankton_cpp_esc__2_:
+	.4byte 0x00000046
 l_f48c__esc__2_1585:
 	.4byte 0x3F800000
 l_f490__esc__2_1586:

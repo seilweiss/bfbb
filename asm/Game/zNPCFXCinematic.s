@@ -4901,15 +4901,19 @@ l_3b40__esc__2_405:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
+l_3b4c__esc__2_406:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
+l_3b58__esc__2_410:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
+l_3b64__esc__2_441:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
+l_3b70__esc__2_612:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -4920,6 +4924,7 @@ l_3b40__esc__2_405:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
+l_3b98__esc__2_613:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -4930,6 +4935,7 @@ l_3b40__esc__2_405:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
+l_3bc0__esc__2_614:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -4940,6 +4946,7 @@ l_3b40__esc__2_405:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
+l_3be8__esc__2_615:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -4950,6 +4957,7 @@ l_3b40__esc__2_405:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
+l_3c10__esc__2_616:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -4960,6 +4968,7 @@ l_3b40__esc__2_405:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
+l_3c38__esc__2_617:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -4970,6 +4979,7 @@ l_3b40__esc__2_405:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
+l_3c60__esc__2_618:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -4988,20 +4998,25 @@ l_3c94_vel_wall_esc__6_1290:
 	.4byte 0x3F800000
 	.4byte 0x3F000000
 	.4byte 0x3F000000
+l_3ca0__esc__2_1397:
 	.4byte 0x00000017
 	.4byte 0x0000001A
 	.4byte 0x00000019
 	.4byte 0x00000016
+l_3cb0__esc__2_1596:
 	.4byte 0x3F800000
 	.4byte 0x3F800000
 	.4byte 0x3F2147AE
+l_3cbc__esc__2_1597:
 	.4byte 0x3F000000
 	.4byte 0x00000000
 	.4byte 0x00000000
+l_3cc8_tym_anger_esc__6_1601:
 	.4byte 0x409AAAAB
 	.4byte 0x40AAAAAB
 	.4byte 0x41300001
 	.4byte 0x413AAAAB
+l_3cd8__esc__2_1756:
 	.4byte 0x3E800000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -5849,73 +5864,73 @@ l_3d08__esc__2_stringBase0:
 .section .data
 l_19f8_g_cutmap:
 	.4byte l_3d08__esc__2_stringBase0 + 2758
-	.4byte 0x8029BF58
+	.4byte l_bf58_g_JF01_cin_fodder /* 0x8029BF58 */
 	.4byte 0x00000000
 	.4byte l_3d08__esc__2_stringBase0 + 2769
-	.4byte 0x8029C284
+	.4byte l_c284_g_JF01_cin_hammer /* 0x8029C284 */
 	.4byte 0x00000000
 	.4byte l_3d08__esc__2_stringBase0 + 2780
-	.4byte 0x8029C624
+	.4byte l_c624_g_JF03_cin_tartar /* 0x8029C624 */
 	.4byte 0x00000000
 	.4byte l_3d08__esc__2_stringBase0 + 2791
-	.4byte 0x8029CAAC
+	.4byte l_caac_g_BB01_cin_glove /* 0x8029CAAC */
 	.4byte 0x00000000
 	.4byte l_3d08__esc__2_stringBase0 + 2801
-	.4byte 0x8029CD64
+	.4byte l_cd64_g_GL01_cin_monsoon /* 0x8029CD64 */
 	.4byte 0x00000000
 	.4byte l_3d08__esc__2_stringBase0 + 2813
-	.4byte 0x8029CE4C
+	.4byte l_ce4c_g_RB01_cin_sleepytime /* 0x8029CE4C */
 	.4byte 0x00000000
 	.4byte l_3d08__esc__2_stringBase0 + 2834
-	.4byte 0x8029CFA8
+	.4byte l_cfa8_g_BC01_cin_arfarf /* 0x8029CFA8 */
 	.4byte 0x00000000
 	.4byte l_3d08__esc__2_stringBase0 + 2848
-	.4byte 0x8029D3BC
+	.4byte l_d3bc_g_BB01_cin_chuck /* 0x8029D3BC */
 	.4byte 0x00000000
 	.4byte l_3d08__esc__2_stringBase0 + 2858
-	.4byte 0x8029D518
+	.4byte l_d518_g_KF01_cin_tubelet /* 0x8029D518 */
 	.4byte 0x00000000
 	.4byte l_3d08__esc__2_stringBase0 + 2875
-	.4byte 0x8029D75C
+	.4byte l_d75c_g_GY01_cin_slick /* 0x8029D75C */
 	.4byte 0x00000000
 	.4byte l_3d08__esc__2_stringBase0 + 2885
-	.4byte 0x8029D9A0
+	.4byte l_d9a0_g_GY01_cin_gy_open /* 0x8029D9A0 */
 	.4byte 0x00000000
 	.4byte l_3d08__esc__2_stringBase0 + 2902
-	.4byte 0x8029DA88
+	.4byte l_da88_g_GY01_cin_gy_end /* 0x8029DA88 */
 	.4byte 0x00000000
 	.4byte l_3d08__esc__2_stringBase0 + 2918
-	.4byte 0x8029DB70
+	.4byte l_db70_g_B101_b1_open /* 0x8029DB70 */
 	.4byte 0x00000000
 	.4byte l_3d08__esc__2_stringBase0 + 2926
-	.4byte 0x8029DD40
+	.4byte l_dd40_g_B101_b1_round2 /* 0x8029DD40 */
 	.4byte 0x00000000
 	.4byte l_3d08__esc__2_stringBase0 + 2936
-	.4byte 0x8029DF10
+	.4byte l_df10_g_B101_b1_ending /* 0x8029DF10 */
 	.4byte 0x00000000
 	.4byte l_3d08__esc__2_stringBase0 + 2946
-	.4byte 0x8029E398
+	.4byte l_e398_g_B201_b2_open /* 0x8029E398 */
 	.4byte 0x00000000
 	.4byte l_3d08__esc__2_stringBase0 + 2954
-	.4byte 0x8029E480
+	.4byte l_e480_g_B201_b2_round2 /* 0x8029E480 */
 	.4byte 0x00000000
 	.4byte l_3d08__esc__2_stringBase0 + 2964
-	.4byte 0x8029E650
+	.4byte l_e650_g_B201_b2_round3 /* 0x8029E650 */
 	.4byte 0x00000000
 	.4byte l_3d08__esc__2_stringBase0 + 2974
-	.4byte 0x8029E738
+	.4byte l_e738_g_B201_b2_ending /* 0x8029E738 */
 	.4byte 0x00000000
 	.4byte l_3d08__esc__2_stringBase0 + 2984
-	.4byte 0x8029E820
+	.4byte l_e820_g_B302_begin /* 0x8029E820 */
 	.4byte 0x00000000
 	.4byte l_3d08__esc__2_stringBase0 + 2992
-	.4byte 0x8029F45C
+	.4byte l_f45c_g_B302_end /* 0x8029F45C */
 	.4byte 0x00000000
 	.4byte l_3d08__esc__2_stringBase0 + 3006
-	.4byte 0x802A0268
+	.4byte l_0268_g_B303_end /* 0x802A0268 */
 	.4byte 0x00000000
 	.4byte l_3d08__esc__2_stringBase0 + 3022
-	.4byte 0x802A0F18
+	.4byte l_0f18_g_HB00_prologue /* 0x802A0F18 */
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000

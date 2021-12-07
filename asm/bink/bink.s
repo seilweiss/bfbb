@@ -48480,22 +48480,24 @@ l_02b8_invertbins:
 	.4byte 0x00000000
 .global l_0380_huff4decodes
 l_0380_huff4decodes:
-	.4byte 0x80274E60
-	.4byte 0x80274E70
-	.4byte 0x80274E90
-	.4byte 0x80274EB0
-	.4byte 0x80274ED0
-	.4byte 0x80274EF0
-	.4byte 0x80274F10
-	.4byte 0x80274F30
-	.4byte 0x80274F70
-	.4byte 0x80274FB0
-	.4byte 0x80274FF0
-	.4byte 0x80275030
-	.4byte 0x80275070
-	.4byte 0x802750B0
-	.4byte 0x80275130
-	.4byte 0x802751B0
+	.4byte l_4e60_huff4decode00 /* 0x80274E60 */
+	.4byte l_4e70_huff4decode01 /* 0x80274E70 */
+	.4byte l_4e90_huff4decode02 /* 0x80274E90 */
+	.4byte l_4eb0_huff4decode03 /* 0x80274EB0 */
+	.4byte l_4ed0_huff4decode04 /* 0x80274ED0 */
+	.4byte l_4ef0_huff4decode05 /* 0x80274EF0 */
+	.4byte l_4f10_huff4decode06 /* 0x80274F10 */
+	.4byte l_4f30_huff4decode07 /* 0x80274F30 */
+	.4byte l_4f70_huff4decode08 /* 0x80274F70 */
+	.4byte l_4fb0_huff4decode09 /* 0x80274FB0 */
+	.4byte l_4ff0_huff4decode10 /* 0x80274FF0 */
+	.4byte l_5030_huff4decode11 /* 0x80275030 */
+	.4byte l_5070_huff4decode12 /* 0x80275070 */
+	.4byte l_50b0_huff4decode13 /* 0x802750B0 */
+	.4byte l_5130_huff4decode14 /* 0x80275130 */
+	.4byte l_51b0_huff4decode15 /* 0x802751B0 */
+.global l_03c0__esc__2_1
+l_03c0__esc__2_1:
 	.4byte 0x3C3C2044
 	.4byte 0x6F6C7068
 	.4byte 0x696E2053
@@ -48514,6 +48516,8 @@ l_0380_huff4decodes:
 	.4byte 0x33303129
 	.4byte 0x203E3E00
 	.4byte 0x00000000
+.global l_0408__esc__2_1
+l_0408__esc__2_1:
 	.4byte 0x3C3C2044
 	.4byte 0x6F6C7068
 	.4byte 0x696E2053
@@ -48532,6 +48536,8 @@ l_0380_huff4decodes:
 	.4byte 0x33303129
 	.4byte 0x203E3E00
 	.4byte 0x00000000
+.global l_0450__esc__2_1
+l_0450__esc__2_1:
 	.4byte 0x3C3C2044
 	.4byte 0x6F6C7068
 	.4byte 0x696E2053
@@ -48550,6 +48556,8 @@ l_0380_huff4decodes:
 	.4byte 0x32333031
 	.4byte 0x29203E3E
 	.4byte 0x00000000
+.global l_0498__esc__2_1
+l_0498__esc__2_1:
 	.4byte 0x3C3C2044
 	.4byte 0x6F6C7068
 	.4byte 0x696E2053
@@ -48689,10 +48697,12 @@ lbl_80274E50:
 lbl_80274E58:
 	.4byte 0x40000000
 	.4byte 0x00000000
+l_4e60_huff4decode00:
 	.4byte 0x40414243
 	.4byte 0x44454647
 	.4byte 0x48494A4B
 	.4byte 0x4C4D4E4F
+l_4e70_huff4decode01:
 	.4byte 0x10411052
 	.4byte 0x10531054
 	.4byte 0x10551056
@@ -48701,6 +48711,7 @@ lbl_80274E58:
 	.4byte 0x105A105B
 	.4byte 0x105C105D
 	.4byte 0x105E105F
+l_4e90_huff4decode02:
 	.4byte 0x20422158
 	.4byte 0x2054215C
 	.4byte 0x2043215A
@@ -48709,6 +48720,7 @@ lbl_80274E58:
 	.4byte 0x2055215D
 	.4byte 0x2043215B
 	.4byte 0x2057215F
+l_4eb0_huff4decode03:
 	.4byte 0x20433158
 	.4byte 0x2045325C
 	.4byte 0x2044315A
@@ -48717,6 +48729,7 @@ lbl_80274E58:
 	.4byte 0x2045325D
 	.4byte 0x2044315B
 	.4byte 0x2057325F
+l_4ed0_huff4decode04:
 	.4byte 0x30443258
 	.4byte 0x3146335C
 	.4byte 0x3045325A
@@ -48725,6 +48738,7 @@ lbl_80274E58:
 	.4byte 0x3146335D
 	.4byte 0x3045325B
 	.4byte 0x3147335F
+l_4ef0_huff4decode05:
 	.4byte 0x3046424A
 	.4byte 0x3148445C
 	.4byte 0x3047434B
@@ -48733,6 +48747,7 @@ lbl_80274E58:
 	.4byte 0x3148445D
 	.4byte 0x3047434B
 	.4byte 0x3149455F
+l_4f10_huff4decode06:
 	.4byte 0x20454149
 	.4byte 0x2047435C
 	.4byte 0x2046425A
@@ -48741,6 +48756,7 @@ lbl_80274E58:
 	.4byte 0x2047435D
 	.4byte 0x2046425B
 	.4byte 0x2048445F
+l_4f30_huff4decode07:
 	.4byte 0x10311053
 	.4byte 0x10321068
 	.4byte 0x10311055
@@ -48757,6 +48773,7 @@ lbl_80274E58:
 	.4byte 0x1032106B
 	.4byte 0x10311067
 	.4byte 0x1032106F
+l_4f70_huff4decode08:
 	.4byte 0x10211052
 	.4byte 0x10211068
 	.4byte 0x10211064
@@ -48773,6 +48790,7 @@ lbl_80274E58:
 	.4byte 0x1021106B
 	.4byte 0x10211067
 	.4byte 0x1021106F
+l_4fb0_huff4decode09:
 	.4byte 0x10311054
 	.4byte 0x10421068
 	.4byte 0x10311056
@@ -48789,6 +48807,7 @@ lbl_80274E58:
 	.4byte 0x1042106B
 	.4byte 0x10311057
 	.4byte 0x1043106F
+l_4ff0_huff4decode10:
 	.4byte 0x20322155
 	.4byte 0x20432159
 	.4byte 0x20322157
@@ -48805,6 +48824,7 @@ lbl_80274E58:
 	.4byte 0x2043216B
 	.4byte 0x20322158
 	.4byte 0x2044216F
+l_5030_huff4decode11:
 	.4byte 0x10411055
 	.4byte 0x10431059
 	.4byte 0x10421057
@@ -48821,6 +48841,7 @@ lbl_80274E58:
 	.4byte 0x1043106B
 	.4byte 0x10421058
 	.4byte 0x1044106F
+l_5070_huff4decode12:
 	.4byte 0x20222153
 	.4byte 0x20222168
 	.4byte 0x20222155
@@ -48837,6 +48858,7 @@ lbl_80274E58:
 	.4byte 0x2022216B
 	.4byte 0x20222167
 	.4byte 0x2022216F
+l_50b0_huff4decode13:
 	.4byte 0x10311033
 	.4byte 0x10321064
 	.4byte 0x10311033
@@ -48869,6 +48891,7 @@ lbl_80274E58:
 	.4byte 0x10321067
 	.4byte 0x10311033
 	.4byte 0x1032107F
+l_5130_huff4decode14:
 	.4byte 0x10311033
 	.4byte 0x10321054
 	.4byte 0x10311033
@@ -48901,6 +48924,7 @@ lbl_80274E58:
 	.4byte 0x10321077
 	.4byte 0x10311033
 	.4byte 0x1032107F
+l_51b0_huff4decode15:
 	.4byte 0x20322134
 	.4byte 0x20332165
 	.4byte 0x20322134
@@ -50181,6 +50205,7 @@ l_54e0_ifiquantlevels8:
 	.4byte 0x002921F4
 	.4byte 0x001C5528
 	.4byte 0x00115FDF
+l_64e0_ifquantlevels8:
 	.4byte 0x00080000
 	.4byte 0x0005C487
 	.4byte 0x00061F79
@@ -52231,6 +52256,7 @@ l_74e0_ifimquantlevels8:
 	.4byte 0x00127AD9
 	.4byte 0x000CBAAA
 	.4byte 0x0006E86E
+l_84e0_ifmquantlevels8:
 	.4byte 0x00080000
 	.4byte 0x00056DAC
 	.4byte 0x0005C344
@@ -53533,6 +53559,7 @@ patterns:
 	.4byte 0x0E0F0607
 
 .section .bss
+l_9920_ClampRegion:
 /* SPECULATION: link order */
 .global lbl_80363088
 lbl_80363088:

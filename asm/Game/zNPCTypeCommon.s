@@ -6879,12 +6879,15 @@ l_8c28__esc__2_911:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
+l_8c34__esc__2_1315:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
+l_8c40__esc__2_1316:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
+l_8c4c__esc__2_1632:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -6907,6 +6910,7 @@ l_8c74__esc__2_2609:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
+l_8c98__esc__2_2610:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -7760,6 +7764,7 @@ g_strz_roboanim:
 	.4byte l_96f4__esc__2_stringBase0 + 430
 	.4byte l_96f4__esc__2_stringBase0 + 438
 	.4byte l_96f4__esc__2_stringBase0 + 451
+l_5660_g_hash_cloudanim:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000

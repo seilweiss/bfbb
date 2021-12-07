@@ -9933,6 +9933,7 @@ l_2678_g_isgdata_MAIN:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
+l_28f8_g_legalSectSize:
 	.4byte 0x00002000
 	.4byte 0x00000000
 	.4byte 0xFFFFFFFF

@@ -5084,6 +5084,19 @@ l_ba30__esc__2_446:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
+l_ba3c__esc__2_447:
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+l_ba48__esc__2_451:
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+l_ba54__esc__2_482:
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte 0x00000000
+l_ba60__esc__2_553:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -5094,6 +5107,7 @@ l_ba30__esc__2_446:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
+l_ba88__esc__2_554:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -5104,6 +5118,7 @@ l_ba30__esc__2_446:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
+l_bab0__esc__2_555:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -5114,6 +5129,7 @@ l_ba30__esc__2_446:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
+l_bad8__esc__2_556:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -5124,15 +5140,7 @@ l_ba30__esc__2_446:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x00000000
-	.4byte 0x00000000
-	.4byte 0x00000000
-	.4byte 0x00000000
-	.4byte 0x00000000
-	.4byte 0x00000000
-	.4byte 0x00000000
-	.4byte 0x00000000
-	.4byte 0x00000000
+l_bb00__esc__2_557:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -5154,6 +5162,7 @@ l_bb28__esc__2_558:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
+l_bb50__esc__2_559:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -5164,10 +5173,12 @@ l_bb28__esc__2_558:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
+l_bb78_screen_bounds:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x3F800000
 	.4byte 0x3F800000
+l_bb88_default_adjust:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x3F800000
@@ -5218,6 +5229,7 @@ l_bb98_sPatrickStunRing:
 	.4byte 0x3F3F3F3F
 	.4byte 0x00200101
 	.4byte 0x00000000
+l_bc4c_sThunderRing:
 	.4byte 0x741B0566
 	.4byte 0x3F000000
 	.4byte 0x00000000
@@ -5318,12 +5330,15 @@ l_bdb0__esc__2_1505:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
+l_bdbc__esc__2_1558:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
+l_bdc8__esc__2_1559:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
+l_bdd4__esc__2_1560:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -5497,6 +5512,9 @@ l_f038_entrail_types__17_esc__2_unnamed_esc__2_zFX_cpp_esc__2_:
 	.4byte l_bf88__esc__2_stringBase0 + 250
 	.4byte 0x00000000
 	.4byte 0x00000000
+.global l_f1a0_EGGEmpty
+.global l_f1a0_EGGEmpty
+l_f1a0_EGGEmpty:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000

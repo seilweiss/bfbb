@@ -2096,6 +2096,7 @@ l_b1a0_g_xtraload:
 	.4byte 0x00000000
 
 .section .sbss
+l_b380__esc__2_700:
 .balign 8
 l_b168_g_async_context:
 	.skip 0x8

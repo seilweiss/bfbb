@@ -19594,6 +19594,7 @@ l_9a30__esc__2_stringBase0:
 	.4byte 0x004E414E
 	.4byte 0x006E616E
 	.4byte 0x00000000
+l_9a58__esc__2_48:
 	.4byte 0x00000000
 	.4byte 0x7FFFFFFF
 	.4byte 0x00000000
@@ -19860,10 +19861,12 @@ l_9e48_halF:
 	.4byte 0x00000000
 	.4byte 0xBFE00000
 	.4byte 0x00000000
+l_9e58_ln2HI:
 	.4byte 0x3FE62E42
 	.4byte 0xFEE00000
 	.4byte 0xBFE62E42
 	.4byte 0xFEE00000
+l_9e68_ln2LO:
 	.4byte 0x3DEA39EF
 	.4byte 0x35793C76
 	.4byte 0xBDEA39EF
@@ -19880,10 +19883,12 @@ l_9e88_bp:
 	.4byte 0x00000000
 	.4byte 0x3FF80000
 	.4byte 0x00000000
+l_9e98_dp_h:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x3FE2B803
 	.4byte 0x40000000
+l_9ea8_dp_l:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x3E4CFDEB
@@ -20052,6 +20057,7 @@ l_a0f8_atanhi:
 	.4byte 0xD281F69B
 	.4byte 0x3FF921FB
 	.4byte 0x54442D18
+l_a118_atanlo:
 	.4byte 0x3C7A2B7F
 	.4byte 0x222F65E2
 	.4byte 0x3C81A626
@@ -20060,6 +20066,7 @@ l_a0f8_atanhi:
 	.4byte 0x7AF0CBBD
 	.4byte 0x3C91A626
 	.4byte 0x33145C07
+l_a138_aT:
 	.4byte 0x3FD55555
 	.4byte 0x5555550D
 	.4byte 0xBFC99999
@@ -20082,6 +20089,8 @@ l_a0f8_atanhi:
 	.4byte 0x2C6A6C2F
 	.4byte 0x3F90AD3A
 	.4byte 0xE322DA11
+.global l_a190__esc__2_223
+l_a190__esc__2_223:
 	.4byte 0x7374643A
 	.4byte 0x3A657863
 	.4byte 0x65707469
@@ -20107,6 +20116,7 @@ l_a1c8__esc__2_504:
 	.4byte 0x65707469
 	.4byte 0x6F6E2121
 	.4byte 0x00000000
+l_a1dc__esc__2_505:
 	.4byte 0x21737464
 	.4byte 0x3A3A6578
 	.4byte 0x63657074
@@ -20117,17 +20127,22 @@ l_a1c8__esc__2_504:
 	.4byte 0x63657074
 	.4byte 0x696F6E21
 	.4byte 0x21000000
+l_a204__esc__2_506:
 	.4byte 0x21737464
 	.4byte 0x3A3A6261
 	.4byte 0x645F6578
 	.4byte 0x63657074
 	.4byte 0x696F6E21
 	.4byte 0x21000000
+.global l_a21c__esc__2_902
+l_a21c__esc__2_902:
 	.4byte 0x7374643A
 	.4byte 0x3A626164
 	.4byte 0x5F657863
 	.4byte 0x65707469
 	.4byte 0x6F6E0000
+.global l_a230__esc__2_904
+l_a230__esc__2_904:
 	.4byte 0x7374643A
 	.4byte 0x3A657863
 	.4byte 0x65707469

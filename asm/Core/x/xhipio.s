@@ -1115,6 +1115,7 @@ __vt__Q24xhud6widget:
   .4byte dispatch__Q24xhud6widgetFP5xBaseUiPCfP5xBase
 
 .section .sbss
+l_d640_format_text_esc__6_709:
 .balign 8
 l_b290_g_loadlock:
 	.skip 0x8

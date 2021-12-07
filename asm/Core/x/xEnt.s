@@ -71,6 +71,7 @@ l_2194__esc__2_stringBase0:
 
 .section .text  # 0x80018064 - 0x8001BB54
 
+l_2280__esc__2_886:
 /* reset__Q218@unnamed@xEnt_cpp@9anim_collFR4xEnt */
 reset__Q218_esc__2_unnamed_esc__2_xEnt_cpp_esc__2_9anim_collFR4xEnt:
 /* 80018064 00014E64  94 21 FF C0 */	stwu r1, -0x40(r1)
@@ -4439,6 +4440,7 @@ l_8da0_all_ents_box:
 	.skip 0x18
 
 .section .sbss
+l_8db8_active_fonts__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_:
 .balign 8
 l_b1b8_sEntityTimePassed:
 	.skip 0x4

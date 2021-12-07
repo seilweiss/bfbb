@@ -49978,6 +49978,7 @@ l_c9b0_sPlayerSnd:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
+l_cbe4_sPlayerSndRand:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -50261,6 +50262,7 @@ l_ce18_sPlayerSndID:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
+l_d04c_sPlayerSndFxVolume:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -50308,6 +50310,7 @@ l_ce18_sPlayerSndID:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
+l_d108_sPlayerStreamSnd:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -50662,6 +50665,7 @@ l_ce18_sPlayerSndID:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
+l_d690_sPlayerStreamSndRand:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -51016,6 +51020,7 @@ l_ce18_sPlayerSndID:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
+l_dc18_sPlayerSndStreamVolume:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -51645,16 +51650,19 @@ l_e558__esc__2_9200:
 	.4byte lbl_8007C9B0 /* 0x8007C9B0 */
 	.4byte lbl_8007C9B0 /* 0x8007C9B0 */
 	.4byte lbl_8007C9A4 /* 0x8007C9A4 */
+l_e5c8_checkVec_esc__6_9441:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x3E99999A
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0xBE99999A
+l_e5e0_bbstate_esc__6_10043:
 	.4byte l_6118__esc__2_stringBase0 + 422
 	.4byte l_6118__esc__2_stringBase0 + 435
 	.4byte l_6118__esc__2_stringBase0 + 8511
 	.4byte l_6118__esc__2_stringBase0 + 449
+l_e5f0_bbadjust_esc__6_10044:
 	.4byte 0x00000000
 	.4byte 0xBF0CCCCD
 	.4byte 0xBF0CCCCD
@@ -51663,10 +51671,12 @@ l_e558__esc__2_9200:
 	.4byte 0xBF0CCCCD
 	.4byte 0xBF0CCCCD
 	.4byte 0xBF0CCCCD
+l_e610_bbspeed_esc__6_10045:
 	.4byte 0x3F800000
 	.4byte 0x3F75C28F
 	.4byte 0x3F75C28F
 	.4byte 0x3F6B851F
+l_e620_sEventTable:
 /* SPECULATION: link order */
 .global sEventTable
 sEventTable:

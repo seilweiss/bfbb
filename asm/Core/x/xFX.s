@@ -7373,6 +7373,7 @@ l_82e0_sAura:
 	.skip 0x480
 
 .section .sbss
+l_8760_ba_esc__6_784:
 .balign 8
 l_b238_num_fx_atomics:
 	.skip 0x4
@@ -7421,7 +7422,7 @@ l_b28c_gAuraTex:
 
 .section .sdata
 l_a93c_BFX:
-	.4byte 0x8027CFF8
+	.4byte l_cff8_defaultBFX /* 0x8027CFF8 */
 /* SPECULATION: link order */
 .global xFXanimUVRotMat0
 xFXanimUVRotMat0:

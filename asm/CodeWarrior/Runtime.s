@@ -2802,7 +2802,7 @@ lbl_801EF168:
 .section .data
 .global lbl_802B7470
 lbl_802B7470:
-	.4byte 0x803CAFE8
+	.4byte l_afe8___RTTI__Q23std9exception /* 0x803CAFE8 */
 	.4byte 0x00000000
 	.4byte __dt__Q23std9exceptionFv /* 0x801ECE9C */
 	.4byte what__Q23std9exceptionCFv /* 0x801ECF5C */
@@ -2863,12 +2863,14 @@ l_7508__esc__2_814:
 	.4byte lbl_801EED5C /* 0x801EED5C */
 	.4byte lbl_801EED44 /* 0x801EED44 */
 	.4byte lbl_801EED2C /* 0x801EED2C */
-	.4byte 0x803CB000
+.global l_754c__esc__2_903
+l_754c__esc__2_903:
+	.4byte l_b000___RTTI__Q23std9exception /* 0x803CB000 */
 	.4byte 0x00000000
 	.4byte 0x00000000
 .global lbl_802B7558
 lbl_802B7558:
-	.4byte 0x803CB008
+	.4byte l_b008___RTTI__Q23std13bad_exception /* 0x803CB008 */
 	.4byte 0x00000000
 	.4byte lbl_801EE438 /* 0x801EE438 */
 	.4byte what__Q23std13bad_exceptionCFv /* 0x801EF014 */
@@ -2880,6 +2882,7 @@ l_a240__esc__2_906:
 	.4byte 0x65786365
 	.4byte 0x7074696F
 	.4byte 0x6E000000
+l_a250__esc__2_908:
 	.4byte 0x65786365
 	.4byte 0x7074696F
 	.4byte 0x6E000000

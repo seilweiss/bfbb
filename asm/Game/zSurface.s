@@ -1532,6 +1532,8 @@ l_b9f4_sMapperCount:
 l_ac10_sMapper:
 	.4byte 0x00000000
 	.4byte 0x00000000
+.global l_ac18_c_normal
+l_ac18_c_normal:
 	.4byte 0x00000000
 
 .section .sdata2

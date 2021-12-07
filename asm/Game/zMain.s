@@ -5033,117 +5033,146 @@ l_fb70_g_xser_sizeinfo:
 	.4byte 0x000001E0
 	.4byte 0x00000000
 	.4byte 0x00000000
+l_fb88___FUNCTION___esc__6_854:
 	.4byte 0x7A4D6169
 	.4byte 0x6E4F7574
 	.4byte 0x7075744D
 	.4byte 0x67725365
 	.4byte 0x74757000
+l_fb9c___FUNCTION___esc__6_897:
 	.4byte 0x7A4D6169
 	.4byte 0x6E496E69
 	.4byte 0x74476C6F
 	.4byte 0x62616C73
 	.4byte 0x00000000
+l_fbb0_fbuf_esc__6_915:
 	.4byte 0x3F19999A
 	.4byte 0x40400000
 	.4byte 0x40E00000
 	.4byte 0x3DCCCCCD
 	.4byte 0x3F000000
 	.4byte 0x3F800000
+l_fbc8_fbuf_esc__6_916:
 	.4byte 0x3FC00000
 	.4byte 0x3F000000
 	.4byte 0x3FC00000
+l_fbd4_fbuf_esc__6_917:
 	.4byte 0x40400000
 	.4byte 0x3F000000
 	.4byte 0x40200000
+l_fbe0_fbuf_esc__6_918:
 	.4byte 0x40400000
 	.4byte 0x3F000000
 	.4byte 0x40200000
+l_fbec_fbuf_esc__6_919:
 	.4byte 0x40000000
 	.4byte 0x3F333333
 	.4byte 0x3EB33333
 	.4byte 0x00000000
+l_fbfc_fbuf_esc__6_920:
 	.4byte 0x3F800000
 	.4byte 0x3F333333
 	.4byte 0x3EB33333
 	.4byte 0x00000000
+l_fc0c_fbuf_esc__6_921:
 	.4byte 0x3FC00000
 	.4byte 0x3E4CCCCD
 	.4byte 0x3E4CCCCD
 	.4byte 0x00000000
+l_fc1c_fbuf_esc__6_922:
 	.4byte 0x40400000
 	.4byte 0x3E4CCCCD
 	.4byte 0x3E4CCCCD
 	.4byte 0x00000000
+l_fc2c_fbuf_esc__6_923:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
+l_fc3c_fbuf_esc__6_924:
 	.4byte 0x3F19999A
 	.4byte 0x40400000
 	.4byte 0x40E00000
 	.4byte 0x3DCCCCCD
 	.4byte 0x3F000000
 	.4byte 0x3F800000
+l_fc54_fbuf_esc__6_925:
 	.4byte 0x3FC00000
 	.4byte 0x3F000000
 	.4byte 0x3FC00000
+l_fc60_fbuf_esc__6_926:
 	.4byte 0x40400000
 	.4byte 0x3F000000
 	.4byte 0x40200000
+l_fc6c_fbuf_esc__6_927:
 	.4byte 0x40400000
 	.4byte 0x3F000000
 	.4byte 0x40200000
+l_fc78_fbuf_esc__6_928:
 	.4byte 0x40000000
 	.4byte 0x3F333333
 	.4byte 0x3EB33333
 	.4byte 0x00000000
+l_fc88_fbuf_esc__6_929:
 	.4byte 0x3F800000
 	.4byte 0x3F333333
 	.4byte 0x3EB33333
 	.4byte 0x00000000
+l_fc98_fbuf_esc__6_930:
 	.4byte 0x3FC00000
 	.4byte 0x3E4CCCCD
 	.4byte 0x3E4CCCCD
 	.4byte 0x00000000
+l_fca8_fbuf_esc__6_931:
 	.4byte 0x40400000
 	.4byte 0x3E4CCCCD
 	.4byte 0x3E4CCCCD
 	.4byte 0x00000000
+l_fcb8_fbuf_esc__6_932:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
+l_fcc8_fbuf_esc__6_933:
 	.4byte 0x3F19999A
 	.4byte 0x40400000
 	.4byte 0x40E00000
 	.4byte 0x3DCCCCCD
 	.4byte 0x3F000000
 	.4byte 0x3F800000
+l_fce0_fbuf_esc__6_934:
 	.4byte 0x3FC00000
 	.4byte 0x3F000000
 	.4byte 0x3FC00000
+l_fcec_fbuf_esc__6_935:
 	.4byte 0x40400000
 	.4byte 0x3F000000
 	.4byte 0x40200000
+l_fcf8_fbuf_esc__6_936:
 	.4byte 0x40400000
 	.4byte 0x3F000000
 	.4byte 0x40200000
+l_fd04_fbuf_esc__6_937:
 	.4byte 0x40000000
 	.4byte 0x3F333333
 	.4byte 0x3EB33333
 	.4byte 0x00000000
+l_fd14_fbuf_esc__6_938:
 	.4byte 0x3F800000
 	.4byte 0x3F333333
 	.4byte 0x3EB33333
 	.4byte 0x00000000
+l_fd24_fbuf_esc__6_939:
 	.4byte 0x3FC00000
 	.4byte 0x3E4CCCCD
 	.4byte 0x3E4CCCCD
 	.4byte 0x00000000
+l_fd34_fbuf_esc__6_940:
 	.4byte 0x40400000
 	.4byte 0x3E4CCCCD
 	.4byte 0x3E4CCCCD
 	.4byte 0x00000000
+l_fd44_fbuf_esc__6_941:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -5155,6 +5184,7 @@ l_fd54_preinit_bubble_matfx_esc__6_1073:
 	.4byte 0x0CF9267A
 	.4byte 0x5C009D14
 	.4byte 0x00000000
+l_fd6c___FUNCTION___esc__6_1143:
 	.4byte 0x7A4D6169
 	.4byte 0x6E526561
 	.4byte 0x64494E49

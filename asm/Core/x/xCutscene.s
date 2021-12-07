@@ -2182,6 +2182,7 @@ l_8a40_sCutsceneFakeModel:
 	.skip 0x360
 
 .section .sbss
+l_8da0_all_ents_box:
 .balign 8
 l_b1a8_sCutTocCount:
 	.skip 0x4

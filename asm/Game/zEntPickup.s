@@ -4195,6 +4195,7 @@ l_c720_sPickupOrientation:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
+l_c760_sKeyShake:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000

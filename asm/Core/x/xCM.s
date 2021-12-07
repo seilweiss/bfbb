@@ -615,15 +615,19 @@ l_4b38__esc__2_454:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
+l_4b44__esc__2_455:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
+l_4b50__esc__2_459:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
+l_4b5c__esc__2_490:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
+l_4b68__esc__2_563:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -634,6 +638,7 @@ l_4b38__esc__2_454:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
+l_4b90__esc__2_564:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -644,6 +649,7 @@ l_4b38__esc__2_454:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
+l_4bb8__esc__2_565:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -654,6 +660,7 @@ l_4b38__esc__2_454:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
+l_4be0__esc__2_566:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -664,6 +671,7 @@ l_4b38__esc__2_454:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
+l_4c08__esc__2_567:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -674,6 +682,7 @@ l_4b38__esc__2_454:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
+l_4c30__esc__2_568:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -684,6 +693,7 @@ l_4b38__esc__2_454:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
+l_4c58__esc__2_569:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -694,22 +704,27 @@ l_4b38__esc__2_454:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
+l_4c80_screen_bounds:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x3F800000
 	.4byte 0x3F800000
+l_4c90_default_adjust:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x3F800000
 	.4byte 0x3F800000
+l_4ca0__esc__2_799:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
+l_4cb0__esc__2_811:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
+l_4cc0__esc__2_814:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -821,7 +836,9 @@ l_fc0c__esc__2_880:
 l_fc10__esc__2_927:
 	.4byte 0x461C4000
 	.4byte 0x00000000
+l_fc18_huff4decode00align:
 	.4byte 0x00000000
 	.4byte 0x00000000
+l_fc20_huff4decodesalign:
 	.4byte 0x00000000
 	.4byte 0x00000000

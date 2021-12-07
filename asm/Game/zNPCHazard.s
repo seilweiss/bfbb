@@ -9531,12 +9531,15 @@ l_34b8__esc__2_446:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
+l_34c4__esc__2_447:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
+l_34d0__esc__2_451:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
+l_34dc__esc__2_461:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -9547,6 +9550,7 @@ l_34b8__esc__2_446:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
+l_3504__esc__2_462:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -9557,6 +9561,7 @@ l_34b8__esc__2_446:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
+l_352c__esc__2_463:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -9567,6 +9572,7 @@ l_34b8__esc__2_446:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
+l_3554__esc__2_464:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -9577,6 +9583,7 @@ l_34b8__esc__2_446:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
+l_357c__esc__2_465:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -9587,6 +9594,7 @@ l_34b8__esc__2_446:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
+l_35a4__esc__2_466:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -9597,6 +9605,7 @@ l_34b8__esc__2_446:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
+l_35cc__esc__2_467:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -9607,6 +9616,7 @@ l_34b8__esc__2_446:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
+l_35f4__esc__2_499:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -9618,57 +9628,75 @@ l_360c__esc__2_1457:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
+l_3618__esc__2_1587:
 	.4byte 0x3F800000
 	.4byte 0x3F800000
 	.4byte 0x3F800000
+l_3624_scale_esc__6_1603:
 	.4byte 0x3F800000
 	.4byte 0x3FC00000
 	.4byte 0x3F800000
+l_3630_scl_tallish_esc__6_1617:
 	.4byte 0x3F800000
 	.4byte 0x40000000
 	.4byte 0x3F800000
+l_363c_wider_esc__6_1623:
 	.4byte 0x3F800000
 	.4byte 0x3F333333
 	.4byte 0x3F800000
+l_3648_taller_esc__6_1624:
 	.4byte 0x3F000000
 	.4byte 0x40000000
 	.4byte 0x3F000000
+l_3654__esc__2_1634:
 	.4byte 0x3F800000
 	.4byte 0x40000000
 	.4byte 0x3F800000
+l_3660_tallish_esc__6_1640:
 	.4byte 0x3F800000
 	.4byte 0x3FE00000
 	.4byte 0x3F800000
+l_366c__esc__2_1717:
 	.4byte 0x3F400000
 	.4byte 0x3F000000
 	.4byte 0x3F400000
+l_3678__esc__2_1750:
 	.4byte 0x3F800000
 	.4byte 0x3F800000
 	.4byte 0x3F800000
+l_3684__esc__2_1763:
 	.4byte 0x3F400000
 	.4byte 0x3DCCCCCD
 	.4byte 0x3F000000
+l_3690__esc__2_1764:
 	.4byte 0x3E800000
 	.4byte 0x3FC00000
 	.4byte 0x3E800000
+l_369c__esc__2_1765:
 	.4byte 0x3FC00000
 	.4byte 0x3F400000
 	.4byte 0x3FC00000
+l_36a8__esc__2_1790:
 	.4byte 0x40000000
 	.4byte 0x00000000
 	.4byte 0x40000000
+l_36b4__esc__2_1802:
 	.4byte 0x3F800000
 	.4byte 0x00000000
 	.4byte 0x3F800000
+l_36c0_scale_cl_esc__6_1817:
 	.4byte 0x40000000
 	.4byte 0x40600000
 	.4byte 0x40000000
+l_36cc_scale_rb_esc__6_1829:
 	.4byte 0x3F800000
 	.4byte 0x3F800000
 	.4byte 0x3F800000
+l_36d8__esc__2_1841:
 	.4byte 0x40000000
 	.4byte 0x00000000
 	.4byte 0x40000000
+l_36e4__esc__2_1853:
 	.4byte 0x3F800000
 	.4byte 0x00000000
 	.4byte 0x3F800000
@@ -9685,36 +9713,47 @@ l_3710__esc__2_2353:
 	.4byte 0x00000001
 	.4byte 0x00000002
 	.4byte 0x00000000
+l_371c_pos_offset_esc__6_2368:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
+l_3728__esc__2_2381:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
+l_3734__esc__2_2382:
 	.4byte 0x40000000
 	.4byte 0x40000000
 	.4byte 0x40000000
+l_3740__esc__2_2401:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
+l_374c__esc__2_2452:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
+l_3758_pos_spread_esc__6_2474:
 	.4byte 0x3DCCCCCD
 	.4byte 0x40000000
 	.4byte 0x3DCCCCCD
+l_3764_vel_spread_esc__6_2475:
 	.4byte 0x40000000
 	.4byte 0x41400000
 	.4byte 0x40000000
+l_3770_pos_offsetFirst_esc__6_2476:
 	.4byte 0x00000000
 	.4byte 0xBF000000
 	.4byte 0x00000000
+l_377c_pos_offsetLater_esc__6_2484:
 	.4byte 0x00000000
 	.4byte 0xBF800000
 	.4byte 0x00000000
+l_3788__esc__2_2499:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
+l_3794__esc__2_2512:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -9726,6 +9765,7 @@ l_37ac__esc__2_2578:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
+l_37b8__esc__2_2586:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -9987,6 +10027,7 @@ l_ba40_g_hazard_rawModel:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
+l_bab8_g_strz_hazModel:
 	.4byte l_3800__esc__2_stringBase0 /* 0x80273800 */
 	.4byte l_3800__esc__2_stringBase0 + 19
 	.4byte l_3800__esc__2_stringBase0 + 37
@@ -10053,6 +10094,7 @@ l_bb48_g_haz_uvAnimQue:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
+l_bbb4_g_haz_uvModelTypes:
 	.4byte 0x00000005
 	.4byte 0x00000008
 	.4byte 0x0000000D
@@ -10302,6 +10344,8 @@ __vt__19zNPCGoalJellyBumped:
   .4byte NPCMessage__14zNPCGoalCommonFP6NPCMsg
   .4byte CollReview__14zNPCGoalCommonFPv
   .4byte 0
+.global l_bf58_g_JF01_cin_fodder
+l_bf58_g_JF01_cin_fodder:
   .4byte 0x8
   .4byte NCIN_Zapper__FPC12zCutsceneMgrP9NCINEntryi
   .4byte 0
@@ -10505,6 +10549,8 @@ __vt__19zNPCGoalJellyBumped:
   .4byte 0
   .4byte 0
   .4byte 0
+.global l_c284_g_JF01_cin_hammer
+l_c284_g_JF01_cin_hammer:
   .4byte 0x1b
   .4byte NCIN_HammerShock__FPC12zCutsceneMgrP9NCINEntryi
   .4byte 0
@@ -10737,6 +10783,8 @@ __vt__19zNPCGoalJellyBumped:
   .4byte 0
   .4byte 0
   .4byte 0
+.global l_c624_g_JF03_cin_tartar
+l_c624_g_JF03_cin_tartar:
   .4byte 0xa
   .4byte NCIN_HazProjShoot__FPC12zCutsceneMgrP9NCINEntryi
   .4byte 0
@@ -11027,6 +11075,8 @@ __vt__19zNPCGoalJellyBumped:
   .4byte 0
   .4byte 0
   .4byte 0
+.global l_caac_g_BB01_cin_glove
+l_caac_g_BB01_cin_glove:
   .4byte 0x2
   .4byte NCIN_BubSlam__FPC12zCutsceneMgrP9NCINEntryi
   .4byte 0
@@ -11201,6 +11251,8 @@ __vt__19zNPCGoalJellyBumped:
   .4byte 0
   .4byte 0
   .4byte 0
+.global l_cd64_g_GL01_cin_monsoon
+l_cd64_g_GL01_cin_monsoon:
   .4byte 0x1d
   .4byte NCIN_Zapper__FPC12zCutsceneMgrP9NCINEntryi
   .4byte 0
@@ -11259,6 +11311,8 @@ __vt__19zNPCGoalJellyBumped:
   .4byte 0
   .4byte 0
   .4byte 0
+.global l_ce4c_g_RB01_cin_sleepytime
+l_ce4c_g_RB01_cin_sleepytime:
   .4byte 0x23
   .4byte NCIN_SleepyLamp_Upd__FPC12zCutsceneMgrP9NCINEntryi
   .4byte NCIN_SleepyLamp_AR__FPC12zCutsceneMgrP9NCINEntryP8RpAtomicP11RwMatrixTagUiUi
@@ -11346,6 +11400,8 @@ __vt__19zNPCGoalJellyBumped:
   .4byte 0
   .4byte 0
   .4byte 0
+.global l_cfa8_g_BC01_cin_arfarf
+l_cfa8_g_BC01_cin_arfarf:
   .4byte 0x11
   .4byte NCIN_ArfDogBoom__FPC12zCutsceneMgrP9NCINEntryi
   .4byte 0
@@ -11607,6 +11663,8 @@ __vt__19zNPCGoalJellyBumped:
   .4byte 0
   .4byte 0
   .4byte 0
+.global l_d3bc_g_BB01_cin_chuck
+l_d3bc_g_BB01_cin_chuck:
   .4byte 0x9
   .4byte NCIN_WaterSplash__FPC12zCutsceneMgrP9NCINEntryi
   .4byte 0
@@ -11694,6 +11752,8 @@ __vt__19zNPCGoalJellyBumped:
   .4byte 0
   .4byte 0
   .4byte 0
+.global l_d518_g_KF01_cin_tubelet
+l_d518_g_KF01_cin_tubelet:
   .4byte 0x22
   .4byte NCIN_FireSpiral_Upd__FPC12zCutsceneMgrP9NCINEntryi
   .4byte NCIN_FireSpiral_AR__FPC12zCutsceneMgrP9NCINEntryP8RpAtomicP11RwMatrixTagUiUi
@@ -11839,6 +11899,8 @@ __vt__19zNPCGoalJellyBumped:
   .4byte 0
   .4byte 0
   .4byte 0
+.global l_d75c_g_GY01_cin_slick
+l_d75c_g_GY01_cin_slick:
   .4byte 0x12
   .4byte NCIN_ShieldPop__FPC12zCutsceneMgrP9NCINEntryi
   .4byte 0
@@ -11984,6 +12046,8 @@ __vt__19zNPCGoalJellyBumped:
   .4byte 0
   .4byte 0
   .4byte 0
+.global l_d9a0_g_GY01_cin_gy_open
+l_d9a0_g_GY01_cin_gy_open:
   .4byte 0x14
   .4byte NCIN_SpatGlow_Upd__FPC12zCutsceneMgrP9NCINEntryi
   .4byte NCIN_SpatGlow_AR__FPC12zCutsceneMgrP9NCINEntryP8RpAtomicP11RwMatrixTagUiUi
@@ -12042,6 +12106,8 @@ __vt__19zNPCGoalJellyBumped:
   .4byte 0
   .4byte 0
   .4byte 0
+.global l_da88_g_GY01_cin_gy_end
+l_da88_g_GY01_cin_gy_end:
   .4byte 0x14
   .4byte NCIN_SpatGlow_Upd__FPC12zCutsceneMgrP9NCINEntryi
   .4byte NCIN_SpatGlow_AR__FPC12zCutsceneMgrP9NCINEntryP8RpAtomicP11RwMatrixTagUiUi
@@ -12100,6 +12166,8 @@ __vt__19zNPCGoalJellyBumped:
   .4byte 0
   .4byte 0
   .4byte 0
+.global l_db70_g_B101_b1_open
+l_db70_g_B101_b1_open:
   .4byte 0x25
   .4byte NCIN_BubHit__FPC12zCutsceneMgrP9NCINEntryi
   .4byte 0
@@ -12216,6 +12284,8 @@ __vt__19zNPCGoalJellyBumped:
   .4byte 0
   .4byte 0
   .4byte 0
+.global l_dd40_g_B101_b1_round2
+l_dd40_g_B101_b1_round2:
   .4byte 0x28
   .4byte NCIN_LightninBone_Upd__FPC12zCutsceneMgrP9NCINEntryi
   .4byte NCIN_LightninBone_AR__FPC12zCutsceneMgrP9NCINEntryP8RpAtomicP11RwMatrixTagUiUi
@@ -12332,6 +12402,8 @@ __vt__19zNPCGoalJellyBumped:
   .4byte 0
   .4byte 0
   .4byte 0
+.global l_df10_g_B101_b1_ending
+l_df10_g_B101_b1_ending:
   .4byte 0x2b
   .4byte NCIN_Lightnin2Bones_Upd__FPC12zCutsceneMgrP9NCINEntryi
   .4byte NCIN_Lightnin2Bones_AR__FPC12zCutsceneMgrP9NCINEntryP8RpAtomicP11RwMatrixTagUiUi
@@ -12622,6 +12694,8 @@ __vt__19zNPCGoalJellyBumped:
   .4byte 0
   .4byte 0
   .4byte 0
+.global l_e398_g_B201_b2_open
+l_e398_g_B201_b2_open:
   .4byte 0x30
   .4byte NCIN_FreezeBreath_Upd__FPC12zCutsceneMgrP9NCINEntryi
   .4byte NCIN_FreezeBreath_AR__FPC12zCutsceneMgrP9NCINEntryP8RpAtomicP11RwMatrixTagUiUi
@@ -12680,6 +12754,8 @@ __vt__19zNPCGoalJellyBumped:
   .4byte 0
   .4byte 0
   .4byte 0
+.global l_e480_g_B201_b2_round2
+l_e480_g_B201_b2_round2:
   .4byte 0x32
   .4byte NCIN_B201HideBelt_Upd__FPC12zCutsceneMgrP9NCINEntryi
   .4byte 0
@@ -12796,6 +12872,8 @@ __vt__19zNPCGoalJellyBumped:
   .4byte 0
   .4byte 0
   .4byte 0
+.global l_e650_g_B201_b2_round3
+l_e650_g_B201_b2_round3:
   .4byte 0x33
   .4byte NCIN_GooLever_Upd__FPC12zCutsceneMgrP9NCINEntryi
   .4byte NCIN_GooLever_AR__FPC12zCutsceneMgrP9NCINEntryP8RpAtomicP11RwMatrixTagUiUi
@@ -12854,6 +12932,8 @@ __vt__19zNPCGoalJellyBumped:
   .4byte 0
   .4byte 0
   .4byte 0
+.global l_e738_g_B201_b2_ending
+l_e738_g_B201_b2_ending:
   .4byte 0x34
   .4byte NCIN_PatBossShrapnel_Upd__FPC12zCutsceneMgrP9NCINEntryi
   .4byte NCIN_PatBossShrapnel_AR__FPC12zCutsceneMgrP9NCINEntryP8RpAtomicP11RwMatrixTagUiUi
@@ -12912,6 +12992,8 @@ __vt__19zNPCGoalJellyBumped:
   .4byte 0
   .4byte 0
   .4byte 0
+.global l_e820_g_B302_begin
+l_e820_g_B302_begin:
   .4byte 0x36
   .4byte NCIN_Par_BPLANK_SBB_FLAMES_1_Upd__FPC12zCutsceneMgrP9NCINEntryi
   .4byte NCIN_EntityBonePar_AR__FPC12zCutsceneMgrP9NCINEntryP8RpAtomicP11RwMatrixTagUiUi
@@ -13695,6 +13777,8 @@ __vt__19zNPCGoalJellyBumped:
   .4byte 0
   .4byte 0
   .4byte 0
+.global l_f45c_g_B302_end
+l_f45c_g_B302_end:
   .4byte 0x36
   .4byte NCIN_Par_BPLANK_SBB_JET_1_Upd__FPC12zCutsceneMgrP9NCINEntryi
   .4byte NCIN_EntityBonePar_AR__FPC12zCutsceneMgrP9NCINEntryP8RpAtomicP11RwMatrixTagUiUi
@@ -14597,6 +14681,8 @@ lbl_802A0004:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
+.global l_0268_g_B303_end
+l_0268_g_B303_end:
 	.4byte 0x00000036
 	.4byte NCIN_Par_BPLANK_SBB_FLAMES_1_Upd__FPC12zCutsceneMgrP9NCINEntryi /* 0x80191144 */
 	.4byte NCIN_EntityBonePar_AR__FPC12zCutsceneMgrP9NCINEntryP8RpAtomicP11RwMatrixTagUiUi /* 0x80194B28 */
@@ -15409,6 +15495,8 @@ lbl_802A0004:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
+.global l_0f18_g_HB00_prologue
+l_0f18_g_HB00_prologue:
 	.4byte 0x00000006
 	.4byte NCIN_Generic_Upd__FPC12zCutsceneMgrP9NCINEntryi /* 0x8019203C */
 	.4byte NCIN_BubTrailBone_AR__FPC12zCutsceneMgrP9NCINEntryP8RpAtomicP11RwMatrixTagUiUi /* 0x8019233C */

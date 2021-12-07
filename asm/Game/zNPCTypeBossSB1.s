@@ -2467,12 +2467,3 @@ l_f210__esc__2_1209:
 	.4byte 0x3F444444
 l_f214__esc__2_1223:
 	.4byte 0x3D4CCCCD
-	.4byte 0x00000045
-	.4byte 0x00000033
-	.4byte 0x0000003C
-	.4byte 0x00000046
-	.4byte 0x00000044
-	.4byte 0x0000002F
-	.4byte 0x00000030
-	.4byte 0x0000003B
-	.4byte 0x00000032

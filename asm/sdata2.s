@@ -7,12 +7,16 @@ l_fc28_rlelens:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
+l_fc40_ifiquantlevels8align:
 	.4byte 0x00000000
 	.4byte 0x00000000
+l_fc48_ifquantlevels8align:
 	.4byte 0x00000000
 	.4byte 0x00000000
+l_fc50_ifimquantlevels8align:
 	.4byte 0x00000000
 	.4byte 0x00000000
+l_fc58_ifmquantlevels8align:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
