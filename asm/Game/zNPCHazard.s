@@ -10364,7 +10364,7 @@ l_bf58_g_JF01_cin_fodder:
   .4byte 0x41b17cee
   .4byte 0x3fee76c9
   .4byte 0x4294b22d
-  .4byte 0x80273df4
+	.4byte l_3d08__esc__2_stringBase0 + 236
   .4byte 0
   .4byte 0
   .4byte 0
@@ -10393,7 +10393,7 @@ l_bf58_g_JF01_cin_fodder:
   .4byte 0x41b04fdf
   .4byte 0x3fee76c9
   .4byte 0x42954189
-  .4byte 0x80273e04
+	.4byte l_3d08__esc__2_stringBase0 + 252
   .4byte 0
   .4byte 0
   .4byte 0
@@ -10422,7 +10422,7 @@ l_bf58_g_JF01_cin_fodder:
   .4byte 0x41b14189
   .4byte 0x3fee76c9
   .4byte 0x4295fd71
-  .4byte 0x80273e14
+	.4byte l_3d08__esc__2_stringBase0 + 268
   .4byte 0
   .4byte 0
   .4byte 0
@@ -10451,7 +10451,7 @@ l_bf58_g_JF01_cin_fodder:
   .4byte 0
   .4byte 0
   .4byte 0
-  .4byte 0x80273e24
+	.4byte l_3d08__esc__2_stringBase0 + 284
   .4byte 0
   .4byte 0
   .4byte 0
@@ -10480,7 +10480,7 @@ l_bf58_g_JF01_cin_fodder:
   .4byte 0
   .4byte 0
   .4byte 0
-  .4byte 0x80273e2f
+	.4byte l_3d08__esc__2_stringBase0 + 295
   .4byte 0
   .4byte 0
   .4byte 0
@@ -10509,7 +10509,7 @@ l_bf58_g_JF01_cin_fodder:
   .4byte 0
   .4byte 0
   .4byte 0
-  .4byte 0x80273e3c
+	.4byte l_3d08__esc__2_stringBase0 + 308
   .4byte 0
   .4byte 0
   .4byte 0
@@ -10569,7 +10569,7 @@ l_c284_g_JF01_cin_hammer:
   .4byte 0
   .4byte 0
   .4byte 0
-  .4byte 0x80273e49
+	.4byte l_3d08__esc__2_stringBase0 + 321
   .4byte 0
   .4byte 0
   .4byte 0
@@ -10598,7 +10598,7 @@ l_c284_g_JF01_cin_hammer:
   .4byte 0
   .4byte 0
   .4byte 0
-  .4byte 0x80273e24
+	.4byte l_3d08__esc__2_stringBase0 + 284
   .4byte 0
   .4byte 0
   .4byte 0
@@ -10627,7 +10627,7 @@ l_c284_g_JF01_cin_hammer:
   .4byte 0
   .4byte 0
   .4byte 0
-  .4byte 0x80273e52
+	.4byte l_3d08__esc__2_stringBase0 + 330
   .4byte 0
   .4byte 0
   .4byte 0
@@ -10656,7 +10656,7 @@ l_c284_g_JF01_cin_hammer:
   .4byte 0
   .4byte 0
   .4byte 0
-  .4byte 0x80273e5e
+	.4byte l_3d08__esc__2_stringBase0 + 342
   .4byte 0
   .4byte 0
   .4byte 0
@@ -10685,7 +10685,7 @@ l_c284_g_JF01_cin_hammer:
   .4byte 0
   .4byte 0
   .4byte 0
-  .4byte 0x80273e6a
+	.4byte l_3d08__esc__2_stringBase0 + 354
   .4byte 0
   .4byte 0
   .4byte 0
@@ -10714,7 +10714,7 @@ l_c284_g_JF01_cin_hammer:
   .4byte 0
   .4byte 0
   .4byte 0
-  .4byte 0x80273e76
+	.4byte l_3d08__esc__2_stringBase0 + 366
   .4byte 0
   .4byte 0
   .4byte 0
@@ -10743,7 +10743,7 @@ l_c284_g_JF01_cin_hammer:
   .4byte 0
   .4byte 0
   .4byte 0
-  .4byte 0x80273e83
+	.4byte l_3d08__esc__2_stringBase0 + 379
   .4byte 0
   .4byte 0
   .4byte 0
@@ -10803,7 +10803,7 @@ l_c624_g_JF03_cin_tartar:
   .4byte 0
   .4byte 0
   .4byte 0
-  .4byte 0x80273e90
+	.4byte l_3d08__esc__2_stringBase0 + 392
   .4byte 0
   .4byte 0
   .4byte 0
@@ -10832,7 +10832,7 @@ l_c624_g_JF03_cin_tartar:
   .4byte 0
   .4byte 0
   .4byte 0
-  .4byte 0x80273e9e
+	.4byte l_3d08__esc__2_stringBase0 + 406
   .4byte 0
   .4byte 0
   .4byte 0
@@ -10861,7 +10861,7 @@ l_c624_g_JF03_cin_tartar:
   .4byte 0
   .4byte 0
   .4byte 0
-  .4byte 0x80273eac
+	.4byte l_3d08__esc__2_stringBase0 + 420
   .4byte 0
   .4byte 0
   .4byte 0
@@ -10890,7 +10890,7 @@ l_c624_g_JF03_cin_tartar:
   .4byte 0
   .4byte 0
   .4byte 0
-  .4byte 0x80273eba
+	.4byte l_3d08__esc__2_stringBase0 + 434
   .4byte 0
   .4byte 0
   .4byte 0
@@ -10919,7 +10919,7 @@ l_c624_g_JF03_cin_tartar:
   .4byte 0
   .4byte 0
   .4byte 0
-  .4byte 0x80273ec8
+	.4byte l_3d08__esc__2_stringBase0 + 448
   .4byte 0
   .4byte 0
   .4byte 0
@@ -10948,7 +10948,7 @@ l_c624_g_JF03_cin_tartar:
   .4byte 0
   .4byte 0
   .4byte 0
-  .4byte 0x80273ed6
+	.4byte l_3d08__esc__2_stringBase0 + 462
   .4byte 0
   .4byte 0
   .4byte 0
@@ -10977,7 +10977,7 @@ l_c624_g_JF03_cin_tartar:
   .4byte 0
   .4byte 0
   .4byte 0
-  .4byte 0x80273ee4
+	.4byte l_3d08__esc__2_stringBase0 + 476
   .4byte 0
   .4byte 0
   .4byte 0
@@ -11006,7 +11006,7 @@ l_c624_g_JF03_cin_tartar:
   .4byte 0
   .4byte 0
   .4byte 0
-  .4byte 0x80273ef2
+	.4byte l_3d08__esc__2_stringBase0 + 490
   .4byte 0
   .4byte 0
   .4byte 0
@@ -11035,7 +11035,7 @@ l_c624_g_JF03_cin_tartar:
   .4byte 0
   .4byte 0
   .4byte 0
-  .4byte 0x80273f00
+	.4byte l_3d08__esc__2_stringBase0 + 504
   .4byte 0
   .4byte 0
   .4byte 0
@@ -11095,7 +11095,7 @@ l_caac_g_BB01_cin_glove:
   .4byte 0
   .4byte 0
   .4byte 0
-  .4byte 0x80273f11
+	.4byte l_3d08__esc__2_stringBase0 + 521
   .4byte 0
   .4byte 0
   .4byte 0
@@ -11124,7 +11124,7 @@ l_caac_g_BB01_cin_glove:
   .4byte 0
   .4byte 0
   .4byte 0
-  .4byte 0x80273f1e
+	.4byte l_3d08__esc__2_stringBase0 + 534
   .4byte 0
   .4byte 0
   .4byte 0
@@ -11153,7 +11153,7 @@ l_caac_g_BB01_cin_glove:
   .4byte 0
   .4byte 0
   .4byte 0
-  .4byte 0x80273f2b
+	.4byte l_3d08__esc__2_stringBase0 + 547
   .4byte 0
   .4byte 0
   .4byte 0
@@ -11182,7 +11182,7 @@ l_caac_g_BB01_cin_glove:
   .4byte 0
   .4byte 0
   .4byte 0
-  .4byte 0x80273f38
+	.4byte l_3d08__esc__2_stringBase0 + 560
   .4byte 0
   .4byte 0
   .4byte 0
@@ -11211,7 +11211,7 @@ l_caac_g_BB01_cin_glove:
   .4byte 0
   .4byte 0
   .4byte 0
-  .4byte 0x80273f44
+	.4byte l_3d08__esc__2_stringBase0 + 572
   .4byte 0
   .4byte 0
   .4byte 0
@@ -11271,7 +11271,7 @@ l_cd64_g_GL01_cin_monsoon:
   .4byte 0x43557cee
   .4byte 0x40d3ced9
   .4byte 0x420079db
-  .4byte 0x80273f4c
+	.4byte l_3d08__esc__2_stringBase0 + 580
   .4byte 0
   .4byte 0
   .4byte 0
@@ -11331,7 +11331,7 @@ l_ce4c_g_RB01_cin_sleepytime:
   .4byte 0
   .4byte 0
   .4byte 0
-  .4byte 0x80273f55
+	.4byte l_3d08__esc__2_stringBase0 + 589
   .4byte 0
   .4byte 0
   .4byte 0
@@ -11360,7 +11360,7 @@ l_ce4c_g_RB01_cin_sleepytime:
   .4byte 0
   .4byte 0
   .4byte 0
-  .4byte 0x80273f60
+	.4byte l_3d08__esc__2_stringBase0 + 600
   .4byte 0
   .4byte 0
   .4byte 0
@@ -11420,7 +11420,7 @@ l_cfa8_g_BC01_cin_arfarf:
   .4byte 0
   .4byte 0
   .4byte 0
-  .4byte 0x80273f6b
+	.4byte l_3d08__esc__2_stringBase0 + 611
   .4byte 0
   .4byte 0
   .4byte 0
@@ -11449,7 +11449,7 @@ l_cfa8_g_BC01_cin_arfarf:
   .4byte 0
   .4byte 0
   .4byte 0
-  .4byte 0x80273f78
+	.4byte l_3d08__esc__2_stringBase0 + 624
   .4byte 0
   .4byte 0
   .4byte 0
@@ -11478,7 +11478,7 @@ l_cfa8_g_BC01_cin_arfarf:
   .4byte 0
   .4byte 0
   .4byte 0
-  .4byte 0x80273f85
+	.4byte l_3d08__esc__2_stringBase0 + 637
   .4byte 0
   .4byte 0
   .4byte 0
@@ -11507,7 +11507,7 @@ l_cfa8_g_BC01_cin_arfarf:
   .4byte 0
   .4byte 0
   .4byte 0
-  .4byte 0x80273f92
+	.4byte l_3d08__esc__2_stringBase0 + 650
   .4byte 0
   .4byte 0
   .4byte 0
@@ -11536,7 +11536,7 @@ l_cfa8_g_BC01_cin_arfarf:
   .4byte 0
   .4byte 0
   .4byte 0
-  .4byte 0x80273f9c
+	.4byte l_3d08__esc__2_stringBase0 + 660
   .4byte 0
   .4byte 0
   .4byte 0
@@ -11565,7 +11565,7 @@ l_cfa8_g_BC01_cin_arfarf:
   .4byte 0
   .4byte 0
   .4byte 0
-  .4byte 0x80273fa9
+	.4byte l_3d08__esc__2_stringBase0 + 673
   .4byte 0
   .4byte 0
   .4byte 0
@@ -11594,7 +11594,7 @@ l_cfa8_g_BC01_cin_arfarf:
   .4byte 0
   .4byte 0
   .4byte 0
-  .4byte 0x80273fb6
+	.4byte l_3d08__esc__2_stringBase0 + 686
   .4byte 0
   .4byte 0
   .4byte 0
@@ -11683,7 +11683,7 @@ l_d3bc_g_BB01_cin_chuck:
   .4byte 0
   .4byte 0
   .4byte 0
-  .4byte 0x80273fc3
+	.4byte l_3d08__esc__2_stringBase0 + 699
   .4byte 0
   .4byte 0
   .4byte 0
@@ -11712,7 +11712,7 @@ l_d3bc_g_BB01_cin_chuck:
   .4byte 0
   .4byte 0
   .4byte 0
-  .4byte 0x80273fcf
+	.4byte l_3d08__esc__2_stringBase0 + 711
   .4byte 0
   .4byte 0
   .4byte 0
@@ -11772,7 +11772,7 @@ l_d518_g_KF01_cin_tubelet:
   .4byte 0
   .4byte 0
   .4byte 0
-  .4byte 0x80273fd9
+	.4byte l_3d08__esc__2_stringBase0 + 721
   .4byte 0
   .4byte 0
   .4byte 0
@@ -11801,7 +11801,7 @@ l_d518_g_KF01_cin_tubelet:
   .4byte 0
   .4byte 0
   .4byte 0
-  .4byte 0x80273fe4
+	.4byte l_3d08__esc__2_stringBase0 + 732
   .4byte 0
   .4byte 0
   .4byte 0
@@ -11830,7 +11830,7 @@ l_d518_g_KF01_cin_tubelet:
   .4byte 0
   .4byte 0
   .4byte 0
-  .4byte 0x80273fed
+	.4byte l_3d08__esc__2_stringBase0 + 741
   .4byte 0
   .4byte 0
   .4byte 0
@@ -11859,7 +11859,7 @@ l_d518_g_KF01_cin_tubelet:
   .4byte 0
   .4byte 0
   .4byte 0
-  .4byte 0x80273e24
+	.4byte l_3d08__esc__2_stringBase0 + 284
   .4byte 0
   .4byte 0
   .4byte 0
@@ -11919,7 +11919,7 @@ l_d75c_g_GY01_cin_slick:
   .4byte 0
   .4byte 0
   .4byte 0
-  .4byte 0x80273ff6
+	.4byte l_3d08__esc__2_stringBase0 + 750
   .4byte 0
   .4byte 0
   .4byte 0
@@ -11948,7 +11948,7 @@ l_d75c_g_GY01_cin_slick:
   .4byte 0
   .4byte 0
   .4byte 0
-  .4byte 0x80274000
+	.4byte l_3d08__esc__2_stringBase0 + 760
   .4byte 0
   .4byte 0
   .4byte 0
@@ -11977,7 +11977,7 @@ l_d75c_g_GY01_cin_slick:
   .4byte 0
   .4byte 0
   .4byte 0
-  .4byte 0x80274009
+	.4byte l_3d08__esc__2_stringBase0 + 769
   .4byte 0
   .4byte 0
   .4byte 0
@@ -12006,7 +12006,7 @@ l_d75c_g_GY01_cin_slick:
   .4byte 0
   .4byte 0
   .4byte 0
-  .4byte 0x80274013
+	.4byte l_3d08__esc__2_stringBase0 + 779
   .4byte 0
   .4byte 0
   .4byte 0
@@ -12066,7 +12066,7 @@ l_d9a0_g_GY01_cin_gy_open:
   .4byte 0x43000000
   .4byte 0x40000000
   .4byte 0
-  .4byte 0x8027401e
+	.4byte l_3d08__esc__2_stringBase0 + 790
   .4byte 0
   .4byte 0
   .4byte 0
@@ -12126,7 +12126,7 @@ l_da88_g_GY01_cin_gy_end:
   .4byte 0x43000000
   .4byte 0x40600000
   .4byte 0
-  .4byte 0x8027401e
+	.4byte l_3d08__esc__2_stringBase0 + 790
   .4byte 0
   .4byte 0
   .4byte 0
@@ -12186,7 +12186,7 @@ l_db70_g_B101_b1_open:
   .4byte 0
   .4byte 0
   .4byte 0
-  .4byte 0x8027402b
+	.4byte l_3d08__esc__2_stringBase0 + 803
   .4byte 0
   .4byte 0
   .4byte 0
@@ -12215,7 +12215,7 @@ l_db70_g_B101_b1_open:
   .4byte 0
   .4byte 0
   .4byte 0
-  .4byte 0x80274038
+	.4byte l_3d08__esc__2_stringBase0 + 816
   .4byte 0
   .4byte 0
   .4byte 0
@@ -12244,7 +12244,7 @@ l_db70_g_B101_b1_open:
   .4byte 0
   .4byte 0
   .4byte 0
-  .4byte 0x80274046
+	.4byte l_3d08__esc__2_stringBase0 + 830
   .4byte 0
   .4byte 0
   .4byte 0
@@ -12304,7 +12304,7 @@ l_dd40_g_B101_b1_round2:
   .4byte 0xc0200000
   .4byte 0xc0000000
   .4byte 0xc0200000
-  .4byte 0x80274059
+	.4byte l_3d08__esc__2_stringBase0 + 849
   .4byte 0
   .4byte 0
   .4byte 0
@@ -12333,7 +12333,7 @@ l_dd40_g_B101_b1_round2:
   .4byte 0xc0200000
   .4byte 0xc0200000
   .4byte 0x40000000
-  .4byte 0x8027406b
+	.4byte l_3d08__esc__2_stringBase0 + 867
   .4byte 0
   .4byte 0
   .4byte 0
@@ -12362,7 +12362,7 @@ l_dd40_g_B101_b1_round2:
   .4byte 0x3dcccccd
   .4byte 0x4101999a
   .4byte 0
-  .4byte 0x8027407d
+	.4byte l_3d08__esc__2_stringBase0 + 885
   .4byte 0
   .4byte 0
   .4byte 0
@@ -12422,7 +12422,7 @@ l_df10_g_B101_b1_ending:
   .4byte 0x40066666
   .4byte 0x40a33333
   .4byte 0
-  .4byte 0x8027408f
+	.4byte l_3d08__esc__2_stringBase0 + 903
   .4byte 0
   .4byte 0
   .4byte 0
@@ -12451,7 +12451,7 @@ l_df10_g_B101_b1_ending:
   .4byte 0x40066666
   .4byte 0x40a33333
   .4byte 0
-  .4byte 0x8027409c
+	.4byte l_3d08__esc__2_stringBase0 + 916
   .4byte 0
   .4byte 0
   .4byte 0
@@ -12480,7 +12480,7 @@ l_df10_g_B101_b1_ending:
   .4byte 0xbf000000
   .4byte 0xbf000000
   .4byte 0xbf800000
-  .4byte 0x802740a9
+	.4byte l_3d08__esc__2_stringBase0 + 929
   .4byte 0
   .4byte 0
   .4byte 0
@@ -12509,7 +12509,7 @@ l_df10_g_B101_b1_ending:
   .4byte 0xbfc00000
   .4byte 0xbfc00000
   .4byte 0xbfc00000
-  .4byte 0x802740bd
+	.4byte l_3d08__esc__2_stringBase0 + 949
   .4byte 0
   .4byte 0
   .4byte 0
@@ -12538,7 +12538,7 @@ l_df10_g_B101_b1_ending:
   .4byte 0x3f000000
   .4byte 0xbf000000
   .4byte 0xbf800000
-  .4byte 0x802740cf
+	.4byte l_3d08__esc__2_stringBase0 + 967
   .4byte 0
   .4byte 0
   .4byte 0
@@ -12567,7 +12567,7 @@ l_df10_g_B101_b1_ending:
   .4byte 0
   .4byte 0
   .4byte 0
-  .4byte 0x802740e4
+	.4byte l_3d08__esc__2_stringBase0 + 988
   .4byte 0
   .4byte 0
   .4byte 0
@@ -12596,7 +12596,7 @@ l_df10_g_B101_b1_ending:
   .4byte 0xbf000000
   .4byte 0xbf000000
   .4byte 0xbf800000
-  .4byte 0x802740f9
+	.4byte l_3d08__esc__2_stringBase0 + 1009
   .4byte 0
   .4byte 0
   .4byte 0
@@ -12625,7 +12625,7 @@ l_df10_g_B101_b1_ending:
   .4byte 0xbf800000
   .4byte 0xbf800000
   .4byte 0xbf800000
-  .4byte 0x8027410f
+	.4byte l_3d08__esc__2_stringBase0 + 1031
   .4byte 0
   .4byte 0
   .4byte 0
@@ -12654,7 +12654,7 @@ l_df10_g_B101_b1_ending:
   .4byte 0x43000000
   .4byte 0x3f800000
   .4byte 0
-  .4byte 0x8027401e
+	.4byte l_3d08__esc__2_stringBase0 + 790
   .4byte 0
   .4byte 0
   .4byte 0
@@ -12714,7 +12714,7 @@ l_e398_g_B201_b2_open:
   .4byte 0
   .4byte 0
   .4byte 0
-  .4byte 0x80274123
+	.4byte l_3d08__esc__2_stringBase0 + 1051
   .4byte 0
   .4byte 0
   .4byte 0
@@ -12774,7 +12774,7 @@ l_e480_g_B201_b2_round2:
   .4byte 0
   .4byte 0
   .4byte 0
-  .4byte 0x8027413a
+	.4byte l_3d08__esc__2_stringBase0 + 1074
   .4byte 0
   .4byte 0
   .4byte 0
@@ -12803,7 +12803,7 @@ l_e480_g_B201_b2_round2:
   .4byte 0
   .4byte 0
   .4byte 0
-  .4byte 0x8027414a
+	.4byte l_3d08__esc__2_stringBase0 + 1090
   .4byte 0
   .4byte 0
   .4byte 0
@@ -12832,7 +12832,7 @@ l_e480_g_B201_b2_round2:
   .4byte 0
   .4byte 0
   .4byte 0
-  .4byte 0x80274160
+	.4byte l_3d08__esc__2_stringBase0 + 1112
   .4byte 0
   .4byte 0
   .4byte 0
@@ -12892,7 +12892,7 @@ l_e650_g_B201_b2_round3:
   .4byte 0
   .4byte 0
   .4byte 0
-  .4byte 0x80274170
+	.4byte l_3d08__esc__2_stringBase0 + 1128
   .4byte 0
   .4byte 0
   .4byte 0
@@ -12952,7 +12952,7 @@ l_e738_g_B201_b2_ending:
   .4byte 0
   .4byte 0
   .4byte 0
-  .4byte 0x8027417a
+	.4byte l_3d08__esc__2_stringBase0 + 1138
   .4byte 0
   .4byte 0
   .4byte 0
@@ -13012,7 +13012,7 @@ l_e820_g_B302_begin:
   .4byte 0
   .4byte 0
   .4byte 0
-  .4byte 0x80274185
+	.4byte l_3d08__esc__2_stringBase0 + 1149
   .4byte 0
   .4byte 0
   .4byte 0
@@ -13041,7 +13041,7 @@ l_e820_g_B302_begin:
   .4byte 0
   .4byte 0
   .4byte 0
-  .4byte 0x80274194
+	.4byte l_3d08__esc__2_stringBase0 + 1164
   .4byte 0
   .4byte 0
   .4byte 0
@@ -13070,7 +13070,7 @@ l_e820_g_B302_begin:
   .4byte 0
   .4byte 0
   .4byte 0
-  .4byte 0x802741a3
+	.4byte l_3d08__esc__2_stringBase0 + 1179
   .4byte 0
   .4byte 0
   .4byte 0
@@ -13099,7 +13099,7 @@ l_e820_g_B302_begin:
   .4byte 0
   .4byte 0
   .4byte 0
-  .4byte 0x802741af
+	.4byte l_3d08__esc__2_stringBase0 + 1191
   .4byte 0
   .4byte 0
   .4byte 0
@@ -13128,7 +13128,7 @@ l_e820_g_B302_begin:
   .4byte 0
   .4byte 0
   .4byte 0
-  .4byte 0x802741bb
+	.4byte l_3d08__esc__2_stringBase0 + 1203
   .4byte 0
   .4byte 0
   .4byte 0
@@ -13157,7 +13157,7 @@ l_e820_g_B302_begin:
   .4byte 0
   .4byte 0
   .4byte 0
-  .4byte 0x802741c9
+	.4byte l_3d08__esc__2_stringBase0 + 1217
   .4byte 0
   .4byte 0
   .4byte 0
@@ -13186,7 +13186,7 @@ l_e820_g_B302_begin:
   .4byte 0
   .4byte 0
   .4byte 0
-  .4byte 0x802741d7
+	.4byte l_3d08__esc__2_stringBase0 + 1231
   .4byte 0
   .4byte 0
   .4byte 0
@@ -13215,7 +13215,7 @@ l_e820_g_B302_begin:
   .4byte 0
   .4byte 0
   .4byte 0
-  .4byte 0x802741ea
+	.4byte l_3d08__esc__2_stringBase0 + 1250
   .4byte 0
   .4byte 0
   .4byte 0
@@ -13244,7 +13244,7 @@ l_e820_g_B302_begin:
   .4byte 0
   .4byte 0
   .4byte 0
-  .4byte 0x802741f9
+	.4byte l_3d08__esc__2_stringBase0 + 1265
   .4byte 0
   .4byte 0
   .4byte 0
@@ -13273,7 +13273,7 @@ l_e820_g_B302_begin:
   .4byte 0
   .4byte 0
   .4byte 0
-  .4byte 0x80274208
+	.4byte l_3d08__esc__2_stringBase0 + 1280
   .4byte 0
   .4byte 0
   .4byte 0
@@ -13302,7 +13302,7 @@ l_e820_g_B302_begin:
   .4byte 0
   .4byte 0
   .4byte 0
-  .4byte 0x80274217
+	.4byte l_3d08__esc__2_stringBase0 + 1295
   .4byte 0
   .4byte 0
   .4byte 0
@@ -13331,7 +13331,7 @@ l_e820_g_B302_begin:
   .4byte 0
   .4byte 0
   .4byte 0
-  .4byte 0x80274226
+	.4byte l_3d08__esc__2_stringBase0 + 1310
   .4byte 0
   .4byte 0
   .4byte 0
@@ -13360,7 +13360,7 @@ l_e820_g_B302_begin:
   .4byte 0
   .4byte 0
   .4byte 0
-  .4byte 0x80274232
+	.4byte l_3d08__esc__2_stringBase0 + 1322
   .4byte 0
   .4byte 0
   .4byte 0
@@ -13389,7 +13389,7 @@ l_e820_g_B302_begin:
   .4byte 0
   .4byte 0
   .4byte 0
-  .4byte 0x8027423e
+	.4byte l_3d08__esc__2_stringBase0 + 1334
   .4byte 0
   .4byte 0
   .4byte 0
@@ -13418,7 +13418,7 @@ l_e820_g_B302_begin:
   .4byte 0
   .4byte 0
   .4byte 0
-  .4byte 0x8027424c
+	.4byte l_3d08__esc__2_stringBase0 + 1348
   .4byte 0
   .4byte 0
   .4byte 0
@@ -13447,7 +13447,7 @@ l_e820_g_B302_begin:
   .4byte 0
   .4byte 0
   .4byte 0
-  .4byte 0x8027425a
+	.4byte l_3d08__esc__2_stringBase0 + 1362
   .4byte 0
   .4byte 0
   .4byte 0
@@ -13476,7 +13476,7 @@ l_e820_g_B302_begin:
   .4byte 0
   .4byte 0
   .4byte 0
-  .4byte 0x80274269
+	.4byte l_3d08__esc__2_stringBase0 + 1377
   .4byte 0
   .4byte 0
   .4byte 0
@@ -13505,7 +13505,7 @@ l_e820_g_B302_begin:
   .4byte 0
   .4byte 0
   .4byte 0
-  .4byte 0x80274278
+	.4byte l_3d08__esc__2_stringBase0 + 1392
   .4byte 0
   .4byte 0
   .4byte 0
@@ -13534,7 +13534,7 @@ l_e820_g_B302_begin:
   .4byte 0
   .4byte 0
   .4byte 0
-  .4byte 0x80274287
+	.4byte l_3d08__esc__2_stringBase0 + 1407
   .4byte 0
   .4byte 0
   .4byte 0
@@ -13563,7 +13563,7 @@ l_e820_g_B302_begin:
   .4byte 0
   .4byte 0
   .4byte 0
-  .4byte 0x80274296
+	.4byte l_3d08__esc__2_stringBase0 + 1422
   .4byte 0
   .4byte 0
   .4byte 0
@@ -13592,7 +13592,7 @@ l_e820_g_B302_begin:
   .4byte 0
   .4byte 0
   .4byte 0
-  .4byte 0x802742a2
+	.4byte l_3d08__esc__2_stringBase0 + 1434
   .4byte 0
   .4byte 0
   .4byte 0
@@ -13621,7 +13621,7 @@ l_e820_g_B302_begin:
   .4byte 0
   .4byte 0
   .4byte 0
-  .4byte 0x802742ae
+	.4byte l_3d08__esc__2_stringBase0 + 1446
   .4byte 0
   .4byte 0
   .4byte 0
@@ -13650,7 +13650,7 @@ l_e820_g_B302_begin:
   .4byte 0
   .4byte 0
   .4byte 0
-  .4byte 0x802742bc
+	.4byte l_3d08__esc__2_stringBase0 + 1460
   .4byte 0
   .4byte 0
   .4byte 0
@@ -13679,7 +13679,7 @@ l_e820_g_B302_begin:
   .4byte 0
   .4byte 0
   .4byte 0
-  .4byte 0x802742ca
+	.4byte l_3d08__esc__2_stringBase0 + 1474
   .4byte 0
   .4byte 0
   .4byte 0
@@ -13708,7 +13708,7 @@ l_e820_g_B302_begin:
   .4byte 0
   .4byte 0
   .4byte 0
-  .4byte 0x802742d9
+	.4byte l_3d08__esc__2_stringBase0 + 1489
   .4byte 0
   .4byte 0
   .4byte 0
@@ -13737,7 +13737,7 @@ l_e820_g_B302_begin:
   .4byte 0
   .4byte 0
   .4byte 0
-  .4byte 0x802742e8
+	.4byte l_3d08__esc__2_stringBase0 + 1504
   .4byte 0
   .4byte 0
   .4byte 0
@@ -13797,7 +13797,7 @@ l_f45c_g_B302_end:
   .4byte 0
   .4byte 0
   .4byte 0
-  .4byte 0x802741a3
+	.4byte l_3d08__esc__2_stringBase0 + 1179
   .4byte 0
   .4byte 0
   .4byte 0
@@ -13826,7 +13826,7 @@ l_f45c_g_B302_end:
   .4byte 0
   .4byte 0
   .4byte 0
-  .4byte 0x802741af
+	.4byte l_3d08__esc__2_stringBase0 + 1191
   .4byte 0
   .4byte 0
   .4byte 0
@@ -13855,7 +13855,7 @@ l_f45c_g_B302_end:
   .4byte 0
   .4byte 0
   .4byte 0
-  .4byte 0x802742f2
+	.4byte l_3d08__esc__2_stringBase0 + 1514
   .4byte 0
   .4byte 0
   .4byte 0
@@ -13884,7 +13884,7 @@ l_f45c_g_B302_end:
   .4byte 0
   .4byte 0
   .4byte 0
-  .4byte 0x80274309
+	.4byte l_3d08__esc__2_stringBase0 + 1537
   .4byte 0
   .4byte 0
   .4byte 0
@@ -13913,7 +13913,7 @@ l_f45c_g_B302_end:
   .4byte 0
   .4byte 0
   .4byte 0
-  .4byte 0x80274320
+	.4byte l_3d08__esc__2_stringBase0 + 1560
   .4byte 0
   .4byte 0
   .4byte 0
@@ -13942,7 +13942,7 @@ l_f45c_g_B302_end:
   .4byte 0
   .4byte 0
   .4byte 0
-  .4byte 0x80274337
+	.4byte l_3d08__esc__2_stringBase0 + 1583
   .4byte 0
   .4byte 0
   .4byte 0
@@ -13971,7 +13971,7 @@ l_f45c_g_B302_end:
   .4byte 0
   .4byte 0
   .4byte 0
-  .4byte 0x8027434e
+	.4byte l_3d08__esc__2_stringBase0 + 1606
   .4byte 0
   .4byte 0
   .4byte 0
@@ -14000,7 +14000,7 @@ l_f45c_g_B302_end:
   .4byte 0
   .4byte 0
   .4byte 0
-  .4byte 0x80274365
+	.4byte l_3d08__esc__2_stringBase0 + 1629
   .4byte 0
   .4byte 0
   .4byte 0
@@ -14029,7 +14029,7 @@ l_f45c_g_B302_end:
   .4byte 0
   .4byte 0
   .4byte 0
-  .4byte 0x8027437c
+	.4byte l_3d08__esc__2_stringBase0 + 1652
   .4byte 0
   .4byte 0
   .4byte 0
@@ -14058,7 +14058,7 @@ l_f45c_g_B302_end:
   .4byte 0
   .4byte 0
   .4byte 0
-  .4byte 0x80274393
+	.4byte l_3d08__esc__2_stringBase0 + 1675
   .4byte 0
   .4byte 0
   .4byte 0
@@ -14087,7 +14087,7 @@ l_f45c_g_B302_end:
   .4byte 0
   .4byte 0
   .4byte 0
-  .4byte 0x802743aa
+	.4byte l_3d08__esc__2_stringBase0 + 1698
   .4byte 0
   .4byte 0
   .4byte 0
@@ -14116,7 +14116,7 @@ l_f45c_g_B302_end:
   .4byte 0
   .4byte 0
   .4byte 0
-  .4byte 0x802743c1
+	.4byte l_3d08__esc__2_stringBase0 + 1721
   .4byte 0
   .4byte 0
   .4byte 0
@@ -14145,7 +14145,7 @@ l_f45c_g_B302_end:
   .4byte 0
   .4byte 0
   .4byte 0
-  .4byte 0x802743d8
+	.4byte l_3d08__esc__2_stringBase0 + 1744
   .4byte 0
   .4byte 0
   .4byte 0
@@ -14174,7 +14174,7 @@ l_f45c_g_B302_end:
   .4byte 0
   .4byte 0
   .4byte 0
-  .4byte 0x802743ef
+	.4byte l_3d08__esc__2_stringBase0 + 1767
   .4byte 0
   .4byte 0
   .4byte 0
@@ -14203,7 +14203,7 @@ l_f45c_g_B302_end:
   .4byte 0
   .4byte 0
   .4byte 0
-  .4byte 0x80274406
+	.4byte l_3d08__esc__2_stringBase0 + 1790
   .4byte 0
   .4byte 0
   .4byte 0
@@ -14232,7 +14232,7 @@ l_f45c_g_B302_end:
   .4byte 0
   .4byte 0
   .4byte 0
-  .4byte 0x8027441d
+	.4byte l_3d08__esc__2_stringBase0 + 1813
   .4byte 0
   .4byte 0
   .4byte 0
@@ -14261,7 +14261,7 @@ l_f45c_g_B302_end:
   .4byte 0
   .4byte 0
   .4byte 0
-  .4byte 0x80274434
+	.4byte l_3d08__esc__2_stringBase0 + 1836
   .4byte 0
   .4byte 0
   .4byte 0
@@ -14290,7 +14290,7 @@ l_f45c_g_B302_end:
   .4byte 0
   .4byte 0
   .4byte 0
-  .4byte 0x8027444b
+	.4byte l_3d08__esc__2_stringBase0 + 1859
   .4byte 0
   .4byte 0
   .4byte 0
@@ -14319,7 +14319,7 @@ l_f45c_g_B302_end:
   .4byte 0
   .4byte 0
   .4byte 0
-  .4byte 0x80274462
+	.4byte l_3d08__esc__2_stringBase0 + 1882
   .4byte 0
   .4byte 0
   .4byte 0
@@ -14348,7 +14348,7 @@ l_f45c_g_B302_end:
   .4byte 0
   .4byte 0
   .4byte 0
-  .4byte 0x80274471
+	.4byte l_3d08__esc__2_stringBase0 + 1897
   .4byte 0
   .4byte 0
   .4byte 0
@@ -14377,7 +14377,7 @@ l_f45c_g_B302_end:
   .4byte 0
   .4byte 0
   .4byte 0
-  .4byte 0x80274480
+	.4byte l_3d08__esc__2_stringBase0 + 1912
   .4byte 0
   .4byte 0
   .4byte 0
@@ -14406,7 +14406,7 @@ l_f45c_g_B302_end:
   .4byte 0
   .4byte 0
   .4byte 0
-  .4byte 0x8027448e
+	.4byte l_3d08__esc__2_stringBase0 + 1926
   .4byte 0
   .4byte 0
   .4byte 0
@@ -14435,7 +14435,7 @@ l_f45c_g_B302_end:
   .4byte 0
   .4byte 0
   .4byte 0
-  .4byte 0x8027449c
+	.4byte l_3d08__esc__2_stringBase0 + 1940
   .4byte 0
   .4byte 0
   .4byte 0
@@ -14464,7 +14464,7 @@ l_f45c_g_B302_end:
   .4byte 0
   .4byte 0
   .4byte 0
-  .4byte 0x802744ab
+	.4byte l_3d08__esc__2_stringBase0 + 1955
   .4byte 0
   .4byte 0
   .4byte 0
@@ -14493,7 +14493,7 @@ l_f45c_g_B302_end:
   .4byte 0
   .4byte 0
   .4byte 0
-  .4byte 0x8027425a
+	.4byte l_3d08__esc__2_stringBase0 + 1362
   .4byte 0
   .4byte 0
   .4byte 0
@@ -14522,7 +14522,7 @@ l_f45c_g_B302_end:
   .4byte 0
   .4byte 0
   .4byte 0
-  .4byte 0x80274269
+	.4byte l_3d08__esc__2_stringBase0 + 1377
   .4byte 0
   .4byte 0
 /* SPECULATION: link order */
