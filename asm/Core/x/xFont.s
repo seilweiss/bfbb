@@ -7830,6 +7830,8 @@ lbl_800266AC:
 l_b590_default_font_texture__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_:
 	.4byte l_29d4__esc__2_stringBase0 /* 0x802529D4 */
 	.4byte l_29d4__esc__2_stringBase0 + 8
+.global gCurXEnv
+gCurXEnv:
 	.4byte l_29d4__esc__2_stringBase0 + 17
 l_b59c_default_font_assets__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_:
 	.4byte 0x00000001

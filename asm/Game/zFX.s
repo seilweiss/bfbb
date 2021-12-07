@@ -5454,6 +5454,8 @@ l_f038_entrail_types__17_esc__2_unnamed_esc__2_zFX_cpp_esc__2_:
 	.4byte 0x3FC00000
 	.4byte 0x00000000
 	.4byte 0x3FC00000
+.global soaklevels_gameorder
+soaklevels_gameorder:
 	.4byte l_bf88__esc__2_stringBase0 /* 0x8025BF88 */
 	.4byte l_bf88__esc__2_stringBase0 + 5
 	.4byte l_bf88__esc__2_stringBase0 + 10

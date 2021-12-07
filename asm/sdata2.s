@@ -3,8 +3,12 @@
 l_fc28_rlelens:
 	.4byte 0x04080C20
 	.4byte 0x00000000
+.global VarBitsLensalign
+VarBitsLensalign:
 	.4byte 0x00000000
 	.4byte 0x00000000
+.global _bitlevelsalign
+_bitlevelsalign:
 	.4byte 0x00000000
 	.4byte 0x00000000
 l_fc40_ifiquantlevels8align:
@@ -19,8 +23,12 @@ l_fc50_ifimquantlevels8align:
 l_fc58_ifmquantlevels8align:
 	.4byte 0x00000000
 	.4byte 0x00000000
+.global zigzagalign
+zigzagalign:
 	.4byte 0x00000000
 	.4byte 0x00000000
+.global patternsalign
+patternsalign:
 	.4byte 0x00000000
 	.4byte 0x00000000
 .global l_fc70__esc__2_239
@@ -1175,6 +1183,8 @@ l_0490__esc__2_389:
 .global l_0494__esc__2_390
 l_0494__esc__2_390:
 	.4byte 0x437F0000
+.global _rwNnumber1
+_rwNnumber1:
 	.4byte 0x3F000000
 	.4byte 0xBF000000
 .global _rwFifo

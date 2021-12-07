@@ -10125,6 +10125,8 @@ l_bc10_g_data_hazshrap:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
+.global g_strz_hazshrap
+g_strz_hazshrap:
 	.4byte l_3800__esc__2_stringBase0 + 607
 	.4byte l_3800__esc__2_stringBase0 + 608
 	.4byte l_3800__esc__2_stringBase0 + 623
@@ -10161,6 +10163,8 @@ l_bc38_g_rast_hazshad:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
+.global g_strz_hazshad
+g_strz_hazshad:
 	.4byte l_3800__esc__2_stringBase0 + 607
 	.4byte l_3800__esc__2_stringBase0 + 607
 	.4byte l_3800__esc__2_stringBase0 + 607

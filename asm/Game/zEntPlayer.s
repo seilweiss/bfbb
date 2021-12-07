@@ -51376,6 +51376,8 @@ l_ddf0_sPlayerStreamSndTimer:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
+.global sBowlBlendLabels
+sBowlBlendLabels:
 	.4byte l_6118__esc__2_stringBase0 /* 0x80256118 */
 	.4byte l_6118__esc__2_stringBase0 + 10
 	.4byte l_6118__esc__2_stringBase0 + 19

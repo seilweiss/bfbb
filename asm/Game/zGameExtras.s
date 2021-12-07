@@ -1471,6 +1471,8 @@ l_f1d0__esc__2_1050:
 	.4byte lbl_80099A8C /* 0x80099A8C */
 	.4byte lbl_80099AE4 /* 0x80099AE4 */
 	.4byte lbl_80099AFC /* 0x80099AFC */
+.global sCheatAddShiny
+sCheatAddShiny:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -1487,6 +1489,8 @@ l_f1d0__esc__2_1050:
 	.4byte 0x00020000
 	.4byte 0x00020000
 	.4byte 0x00040000
+.global sCheatAddSpatulas
+sCheatAddSpatulas:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -1503,6 +1507,8 @@ l_f1d0__esc__2_1050:
 	.4byte 0x00040000
 	.4byte 0x00040000
 	.4byte 0x00020000
+.global sCheatBubbleBowl
+sCheatBubbleBowl:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -1519,6 +1525,8 @@ l_f1d0__esc__2_1050:
 	.4byte 0x00020000
 	.4byte 0x00040000
 	.4byte 0x00040000
+.global sCheatCruiseBubble
+sCheatCruiseBubble:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -1535,6 +1543,8 @@ l_f1d0__esc__2_1050:
 	.4byte 0x00040000
 	.4byte 0x00020000
 	.4byte 0x00020000
+.global sCheatMonsterGallery
+sCheatMonsterGallery:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -1551,6 +1561,8 @@ l_f1d0__esc__2_1050:
 	.4byte 0x00020000
 	.4byte 0x00040000
 	.4byte 0x00020000
+.global sCheatArtTheatre
+sCheatArtTheatre:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -1567,6 +1579,8 @@ l_f1d0__esc__2_1050:
 	.4byte 0x00040000
 	.4byte 0x00020000
 	.4byte 0x00040000
+.global sCheatChaChing
+sCheatChaChing:
 	.4byte 0x00040000
 	.4byte 0x00020000
 	.4byte 0x00040000
@@ -1583,6 +1597,8 @@ l_f1d0__esc__2_1050:
 	.4byte 0x00020000
 	.4byte 0x00020000
 	.4byte 0x00040000
+.global sCheatExpertMode
+sCheatExpertMode:
 	.4byte 0x00020000
 	.4byte 0x00020000
 	.4byte 0x00020000
@@ -1599,6 +1615,8 @@ l_f1d0__esc__2_1050:
 	.4byte 0x00020000
 	.4byte 0x00040000
 	.4byte 0x00040000
+.global sCheatSwapCCLR
+sCheatSwapCCLR:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -1615,6 +1633,8 @@ l_f1d0__esc__2_1050:
 	.4byte 0x00020000
 	.4byte 0x00040000
 	.4byte 0x00040000
+.global sCheatSwapCCUD
+sCheatSwapCCUD:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -1631,6 +1651,8 @@ l_f1d0__esc__2_1050:
 	.4byte 0x00020000
 	.4byte 0x00020000
 	.4byte 0x00040000
+.global sCheatRestoreHealth
+sCheatRestoreHealth:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -1647,6 +1669,8 @@ l_f1d0__esc__2_1050:
 	.4byte 0x00040000
 	.4byte 0x00040000
 	.4byte 0x00040000
+.global sCheatShrapBob
+sCheatShrapBob:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -1663,6 +1687,8 @@ l_f1d0__esc__2_1050:
 	.4byte 0x00020000
 	.4byte 0x00020000
 	.4byte 0x00040000
+.global sCheatNoPants
+sCheatNoPants:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -1679,6 +1705,8 @@ l_f1d0__esc__2_1050:
 	.4byte 0x00040000
 	.4byte 0x00040000
 	.4byte 0x00020000
+.global sCheatCruiseControl
+sCheatCruiseControl:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -1695,6 +1723,8 @@ l_f1d0__esc__2_1050:
 	.4byte 0x00020000
 	.4byte 0x00040000
 	.4byte 0x00040000
+.global sCheatBigPlank
+sCheatBigPlank:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -1711,6 +1741,8 @@ l_f1d0__esc__2_1050:
 	.4byte 0x00020000
 	.4byte 0x00020000
 	.4byte 0x00020000
+.global sCheatSmallPeep
+sCheatSmallPeep:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -1727,6 +1759,8 @@ l_f1d0__esc__2_1050:
 	.4byte 0x00020000
 	.4byte 0x00040000
 	.4byte 0x00020000
+.global sCheatSmallCoStars
+sCheatSmallCoStars:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -1743,6 +1777,8 @@ l_f1d0__esc__2_1050:
 	.4byte 0x00040000
 	.4byte 0x00040000
 	.4byte 0x00040000
+.global sCheatRichPeep
+sCheatRichPeep:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -1759,6 +1795,8 @@ l_f1d0__esc__2_1050:
 	.4byte 0x00040000
 	.4byte 0x00020000
 	.4byte 0x00040000
+.global sCheatPanHandle
+sCheatPanHandle:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -1775,6 +1813,8 @@ l_f1d0__esc__2_1050:
 	.4byte 0x00040000
 	.4byte 0x00020000
 	.4byte 0x00020000
+.global sCheatMedics
+sCheatMedics:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -1791,6 +1831,8 @@ l_f1d0__esc__2_1050:
 	.4byte 0x00020000
 	.4byte 0x00040000
 	.4byte 0x00040000
+.global sCheatDogTrix
+sCheatDogTrix:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000

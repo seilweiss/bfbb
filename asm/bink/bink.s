@@ -49073,6 +49073,8 @@ lbl_80275310:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
+.global _bitlevels
+_bitlevels:
 	.4byte 0x00010202
 	.4byte 0x03030303
 	.4byte 0x04040404

@@ -2504,6 +2504,8 @@ __MIXVolumeTable:
 	.4byte 0xF3E6F6B9
 	.4byte 0xF994FC78
 	.4byte 0xFF640000
+.global __MIXPanTable
+__MIXPanTable:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0xFFFFFFFF
@@ -2632,6 +2634,8 @@ __MIXVolumeTable:
 	.4byte 0xFFFFFF4C
 	.4byte 0xFFFFFF2E
 	.4byte 0xFFFFFC78
+.global __MIX_DPL2_front
+__MIX_DPL2_front:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -2696,6 +2700,8 @@ __MIXVolumeTable:
 	.4byte 0xFF0FFEFB
 	.4byte 0xFEE2FEBF
 	.4byte 0xFE83FC40
+.global __MIX_DPL2_rear
+__MIX_DPL2_rear:
 	.4byte 0xFFC3FFC3
 	.4byte 0xFFC4FFC5
 	.4byte 0xFFC5FFC6
