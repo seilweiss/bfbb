@@ -1470,6 +1470,7 @@ DolphinInstallFileSystem__Fv:
 /* 800D44E8 000D12E8  38 21 00 10 */	addi r1, r1, 0x10
 /* 800D44EC 000D12EC  4E 80 00 20 */	blr 
 .section .rodata
+.global l_6610__esc__2_stringBase0
 l_6610__esc__2_stringBase0:
 	.4byte 0x4C657665
 	.4byte 0x6C202564

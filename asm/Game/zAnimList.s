@@ -329,25 +329,25 @@ lbl_8004EBE4:
 .section .data
 l_a7b8_astnames:
 	.4byte l_4318__esc__2_stringBase0 /* 0x80254318 */
-	.4byte 0x8025431E
-	.4byte 0x80254324
-	.4byte 0x8025432A
-	.4byte 0x80254330
-	.4byte 0x80254336
-	.4byte 0x8025433C
-	.4byte 0x80254342
-	.4byte 0x80254348
-	.4byte 0x8025434E
-	.4byte 0x80254354
-	.4byte 0x8025435A
-	.4byte 0x80254360
-	.4byte 0x80254366
-	.4byte 0x8025436C
-	.4byte 0x80254372
-	.4byte 0x80254378
-	.4byte 0x8025437E
-	.4byte 0x80254384
-	.4byte 0x8025438A
+	.4byte l_4318__esc__2_stringBase0 + 6
+	.4byte l_4318__esc__2_stringBase0 + 12
+	.4byte l_4318__esc__2_stringBase0 + 18
+	.4byte l_4318__esc__2_stringBase0 + 24
+	.4byte l_4318__esc__2_stringBase0 + 30
+	.4byte l_4318__esc__2_stringBase0 + 36
+	.4byte l_4318__esc__2_stringBase0 + 42
+	.4byte l_4318__esc__2_stringBase0 + 48
+	.4byte l_4318__esc__2_stringBase0 + 54
+	.4byte l_4318__esc__2_stringBase0 + 60
+	.4byte l_4318__esc__2_stringBase0 + 66
+	.4byte l_4318__esc__2_stringBase0 + 72
+	.4byte l_4318__esc__2_stringBase0 + 78
+	.4byte l_4318__esc__2_stringBase0 + 84
+	.4byte l_4318__esc__2_stringBase0 + 90
+	.4byte l_4318__esc__2_stringBase0 + 96
+	.4byte l_4318__esc__2_stringBase0 + 102
+	.4byte l_4318__esc__2_stringBase0 + 108
+	.4byte l_4318__esc__2_stringBase0 + 114
 
 .section .sbss
 l_b440_nals:

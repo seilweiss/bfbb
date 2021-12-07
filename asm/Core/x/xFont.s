@@ -7828,8 +7828,8 @@ lbl_800266AC:
 .section .data
 l_b590_default_font_texture__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_:
 	.4byte l_29d4__esc__2_stringBase0 /* 0x802529D4 */
-	.4byte 0x802529DC
-	.4byte 0x802529E5
+	.4byte l_29d4__esc__2_stringBase0 + 8
+	.4byte l_29d4__esc__2_stringBase0 + 17
 l_b59c_default_font_assets__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_:
 	.4byte 0x00000001
 	.4byte 0x00000000
@@ -8242,242 +8242,242 @@ text_cb__8xtextbox:
 	.4byte 0x00000000
 	.4byte 0x00000000
 l_bbf8_format_tags_buffer__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_:
-	.4byte 0x80252AAB
+	.4byte l_29d4__esc__2_stringBase0 + 215
 	.4byte 0x00000000
 	.4byte parse_tag_open_curly__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag /* 0x800250B0 */
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x80252AAC
+	.4byte l_29d4__esc__2_stringBase0 + 216
 	.4byte 0x00000001
 	.4byte parse_tag_alpha__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag /* 0x80023C6C */
 	.4byte reset_tag_alpha__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag /* 0x80023D9C */
 	.4byte 0x00000000
-	.4byte 0x80252AAE
+	.4byte l_29d4__esc__2_stringBase0 + 218
 	.4byte 0x00000003
 	.4byte 0x00000000
 	.4byte reset_tag_all__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag /* 0x80024A00 */
 	.4byte 0x00000000
-	.4byte 0x80252AB2
+	.4byte l_29d4__esc__2_stringBase0 + 222
 	.4byte 0x00000005
 	.4byte parse_tag_alpha__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag /* 0x80023C6C */
 	.4byte reset_tag_alpha__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag /* 0x80023D9C */
 	.4byte 0x00000000
-	.4byte 0x80252AB8
+	.4byte l_29d4__esc__2_stringBase0 + 228
 	.4byte 0x00000001
 	.4byte parse_tag_blue__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag /* 0x800240D4 */
 	.4byte reset_tag_blue__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag /* 0x80024204 */
 	.4byte 0x00000000
-	.4byte 0x80252ABA
+	.4byte l_29d4__esc__2_stringBase0 + 230
 	.4byte 0x00000004
 	.4byte parse_tag_blue__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag /* 0x800240D4 */
 	.4byte reset_tag_blue__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag /* 0x80024204 */
 	.4byte 0x00000000
-	.4byte 0x80252ABF
+	.4byte l_29d4__esc__2_stringBase0 + 235
 	.4byte 0x00000001
 	.4byte parse_tag_color__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag /* 0x80024A64 */
 	.4byte reset_tag_color__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag /* 0x80024C30 */
 	.4byte 0x00000000
-	.4byte 0x80252AC1
+	.4byte l_29d4__esc__2_stringBase0 + 237
 	.4byte 0x00000005
 	.4byte parse_tag_color__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag /* 0x80024A64 */
 	.4byte reset_tag_color__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag /* 0x80024C30 */
 	.4byte 0x00000000
-	.4byte 0x80252AC7
+	.4byte l_29d4__esc__2_stringBase0 + 243
 	.4byte 0x00000001
 	.4byte parse_tag_font__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag /* 0x80024C58 */
 	.4byte reset_tag_font__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag /* 0x80024CD4 */
 	.4byte 0x00000000
-	.4byte 0x80252A1F
+	.4byte l_29d4__esc__2_stringBase0 + 75
 	.4byte 0x00000004
 	.4byte parse_tag_font__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag /* 0x80024C58 */
 	.4byte reset_tag_font__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag /* 0x80024CD4 */
 	.4byte 0x00000000
-	.4byte 0x80252AC9
+	.4byte l_29d4__esc__2_stringBase0 + 245
 	.4byte 0x00000001
 	.4byte parse_tag_green__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag /* 0x80023F5C */
 	.4byte reset_tag_green__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag /* 0x8002408C */
 	.4byte 0x00000000
-	.4byte 0x80252ACB
+	.4byte l_29d4__esc__2_stringBase0 + 247
 	.4byte 0x00000005
 	.4byte parse_tag_green__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag /* 0x80023F5C */
 	.4byte reset_tag_green__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag /* 0x8002408C */
 	.4byte 0x00000000
-	.4byte 0x80252AD1
+	.4byte l_29d4__esc__2_stringBase0 + 253
 	.4byte 0x00000001
 	.4byte parse_tag_height__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag /* 0x80024348 */
 	.4byte reset_tag_height__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag /* 0x8002443C */
 	.4byte 0x00000000
-	.4byte 0x80252AD3
+	.4byte l_29d4__esc__2_stringBase0 + 255
 	.4byte 0x00000006
 	.4byte parse_tag_height__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag /* 0x80024348 */
 	.4byte reset_tag_height__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag /* 0x8002443C */
 	.4byte 0x00000000
-	.4byte 0x80252ADA
+	.4byte l_29d4__esc__2_stringBase0 + 262
 	.4byte 0x00000001
 	.4byte parse_tag_insert__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag /* 0x800258A8 */
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x80252ADC
+	.4byte l_29d4__esc__2_stringBase0 + 264
 	.4byte 0x00000002
 	.4byte parse_tag_insert_hash__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag /* 0x80025968 */
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x80252ADF
+	.4byte l_29d4__esc__2_stringBase0 + 267
 	.4byte 0x00000006
 	.4byte parse_tag_insert__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag /* 0x800258A8 */
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x80252AE6
+	.4byte l_29d4__esc__2_stringBase0 + 274
 	.4byte 0x0000000B
 	.4byte parse_tag_left_indent__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag /* 0x80024464 */
 	.4byte reset_tag_left_indent__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag /* 0x80024558 */
 	.4byte 0x00000000
-	.4byte 0x80252AF2
+	.4byte l_29d4__esc__2_stringBase0 + 286
 	.4byte 0x00000002
 	.4byte parse_tag_left_indent__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag /* 0x80024464 */
 	.4byte reset_tag_left_indent__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag /* 0x80024558 */
 	.4byte 0x00000000
-	.4byte 0x80252AF5
+	.4byte l_29d4__esc__2_stringBase0 + 289
 	.4byte 0x00000005
 	.4byte parse_tag_model__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag /* 0x80025364 */
 	.4byte reset_tag_model__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag /* 0x800254BC */
 	.4byte 0x00000000
-	.4byte 0x80252AFB
+	.4byte l_29d4__esc__2_stringBase0 + 295
 	.4byte 0x00000001
 	.4byte parse_tag_newline__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag /* 0x80025134 */
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x80252AFD
+	.4byte l_29d4__esc__2_stringBase0 + 297
 	.4byte 0x00000007
 	.4byte parse_tag_newline__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag /* 0x80025134 */
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x80252B05
+	.4byte l_29d4__esc__2_stringBase0 + 305
 	.4byte 0x0000000A
 	.4byte parse_tag_page_break__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag /* 0x800251BC */
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x80252B10
+	.4byte l_29d4__esc__2_stringBase0 + 316
 	.4byte 0x00000002
 	.4byte parse_tag_page_break__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag /* 0x800251BC */
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x80252B13
+	.4byte l_29d4__esc__2_stringBase0 + 319
 	.4byte 0x00000003
 	.4byte parse_tag_pop__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag /* 0x80025A28 */
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x80252B17
+	.4byte l_29d4__esc__2_stringBase0 + 323
 	.4byte 0x00000001
 	.4byte parse_tag_red__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag /* 0x80023DE4 */
 	.4byte reset_tag_red__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag /* 0x80023F14 */
 	.4byte 0x00000000
-	.4byte 0x80252B19
+	.4byte l_29d4__esc__2_stringBase0 + 325
 	.4byte 0x00000003
 	.4byte parse_tag_red__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag /* 0x80023DE4 */
 	.4byte reset_tag_red__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag /* 0x80023F14 */
 	.4byte 0x00000000
-	.4byte 0x80252B1D
+	.4byte l_29d4__esc__2_stringBase0 + 329
 	.4byte 0x00000002
 	.4byte parse_tag_right_indent__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag /* 0x80024580 */
 	.4byte reset_tag_right_indent__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag /* 0x80024674 */
 	.4byte 0x00000000
-	.4byte 0x80252B20
+	.4byte l_29d4__esc__2_stringBase0 + 332
 	.4byte 0x0000000C
 	.4byte parse_tag_right_indent__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag /* 0x80024580 */
 	.4byte reset_tag_right_indent__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag /* 0x80024674 */
 	.4byte 0x00000000
-	.4byte 0x80252B2D
+	.4byte l_29d4__esc__2_stringBase0 + 345
 	.4byte 0x00000001
 	.4byte parse_tag_tab__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag /* 0x80025194 */
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x80252B2F
+	.4byte l_29d4__esc__2_stringBase0 + 347
 	.4byte 0x00000003
 	.4byte parse_tag_tab__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag /* 0x80025194 */
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x80252B33
+	.4byte l_29d4__esc__2_stringBase0 + 351
 	.4byte 0x00000008
 	.4byte parse_tag_tab_stop__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag /* 0x8002469C */
 	.4byte reset_tag_tab_stop__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag /* 0x80024790 */
 	.4byte 0x00000000
-	.4byte 0x80252B3C
+	.4byte l_29d4__esc__2_stringBase0 + 360
 	.4byte 0x00000003
 	.4byte parse_tag_tex__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag /* 0x80025584 */
 	.4byte reset_tag_tex__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag /* 0x80025880 */
 	.4byte 0x00000000
-	.4byte 0x80252B40
+	.4byte l_29d4__esc__2_stringBase0 + 364
 	.4byte 0x00000005
 	.4byte parse_tag_timer__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag /* 0x80025A50 */
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x80252B46
+	.4byte l_29d4__esc__2_stringBase0 + 370
 	.4byte 0x00000002
 	.4byte parse_tag_tab_stop__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag /* 0x8002469C */
 	.4byte reset_tag_tab_stop__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag /* 0x80024790 */
 	.4byte 0x00000000
-	.4byte 0x80252B49
+	.4byte l_29d4__esc__2_stringBase0 + 373
 	.4byte 0x00000001
 	.4byte parse_tag_width__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag /* 0x8002422C */
 	.4byte reset_tag_width__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag /* 0x80024320 */
 	.4byte 0x00000000
-	.4byte 0x80252B4B
+	.4byte l_29d4__esc__2_stringBase0 + 375
 	.4byte 0x00000002
 	.4byte parse_tag_word_break__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag /* 0x800251A8 */
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x80252B4E
+	.4byte l_29d4__esc__2_stringBase0 + 378
 	.4byte 0x00000005
 	.4byte parse_tag_width__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag /* 0x8002422C */
 	.4byte reset_tag_width__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag /* 0x80024320 */
 	.4byte 0x00000000
-	.4byte 0x80252B54
+	.4byte l_29d4__esc__2_stringBase0 + 384
 	.4byte 0x0000000A
 	.4byte parse_tag_word_break__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag /* 0x800251A8 */
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x80252B5F
+	.4byte l_29d4__esc__2_stringBase0 + 395
 	.4byte 0x00000004
 	.4byte parse_tag_wrap__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag /* 0x80024D0C */
 	.4byte reset_tag_wrap__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag /* 0x80024E00 */
 	.4byte 0x00000000
-	.4byte 0x80252B64
+	.4byte l_29d4__esc__2_stringBase0 + 400
 	.4byte 0x00000002
 	.4byte parse_tag_xjustify__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag /* 0x80024E38 */
 	.4byte reset_tag_xjustify__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag /* 0x80024F50 */
 	.4byte 0x00000000
-	.4byte 0x80252B67
+	.4byte l_29d4__esc__2_stringBase0 + 403
 	.4byte 0x00000008
 	.4byte parse_tag_xjustify__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag /* 0x80024E38 */
 	.4byte reset_tag_xjustify__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag /* 0x80024F50 */
 	.4byte 0x00000000
-	.4byte 0x80252B70
+	.4byte l_29d4__esc__2_stringBase0 + 412
 	.4byte 0x00000002
 	.4byte parse_tag_xspace__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag /* 0x800247B8 */
 	.4byte reset_tag_xspace__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag /* 0x800248AC */
 	.4byte 0x00000000
-	.4byte 0x80252B73
+	.4byte l_29d4__esc__2_stringBase0 + 415
 	.4byte 0x00000006
 	.4byte parse_tag_xspace__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag /* 0x800247B8 */
 	.4byte reset_tag_xspace__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag /* 0x800248AC */
 	.4byte 0x00000000
-	.4byte 0x80252B7A
+	.4byte l_29d4__esc__2_stringBase0 + 422
 	.4byte 0x00000002
 	.4byte parse_tag_yjustify__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag /* 0x80024F88 */
 	.4byte reset_tag_yjustify__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag /* 0x800250A0 */
 	.4byte 0x00000000
-	.4byte 0x80252B7D
+	.4byte l_29d4__esc__2_stringBase0 + 425
 	.4byte 0x00000008
 	.4byte parse_tag_yjustify__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag /* 0x80024F88 */
 	.4byte reset_tag_yjustify__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag /* 0x800250A0 */
 	.4byte 0x00000000
-	.4byte 0x80252B86
+	.4byte l_29d4__esc__2_stringBase0 + 434
 	.4byte 0x00000002
 	.4byte parse_tag_yspace__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag /* 0x800248D4 */
 	.4byte reset_tag_yspace__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag /* 0x800249C8 */
 	.4byte 0x00000000
-	.4byte 0x80252B89
+	.4byte l_29d4__esc__2_stringBase0 + 437
 	.4byte 0x00000006
 	.4byte parse_tag_yspace__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag /* 0x800248D4 */
 	.4byte reset_tag_yspace__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag /* 0x800249C8 */
@@ -9619,16 +9619,16 @@ l_cc7c__esc__2_904:
 l_cc80__esc__2_1027:
 	.4byte 0x7E967699
 l_cc84_text_delims__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_:
-	.4byte 0x802529F2
+	.4byte l_29d4__esc__2_stringBase0 + 30
 	.4byte 0x0000000B
 l_cc8c__esc__2_1615:
-	.4byte 0x80252A62
+	.4byte l_29d4__esc__2_stringBase0 + 142
 /* SPECULATION: link order */
 .global lbl_803CCC90
 lbl_803CCC90:
 	.4byte 0x00000006
 l_cc94__esc__2_1616:
-	.4byte 0x80252A69
+	.4byte l_29d4__esc__2_stringBase0 + 149
 /* SPECULATION: link order */
 .global lbl_803CCC98
 lbl_803CCC98:

@@ -11034,19 +11034,19 @@ l_202c_sound_assets__30_esc__2_unnamed_esc__2_zNPCTypeDutchman_cpp_esc__2_:
 	.4byte l_20f0__esc__2_stringBase0 /* 0x802720F0 */
 	.4byte 0x00000000
 	.4byte 0x00000001
-	.4byte 0x80272100
+	.4byte l_20f0__esc__2_stringBase0 + 16
 	.4byte 0x00000000
 	.4byte 0x00000001
-	.4byte 0x8027210E
+	.4byte l_20f0__esc__2_stringBase0 + 30
 	.4byte 0x00000000
 	.4byte 0x00000001
-	.4byte 0x8027211C
+	.4byte l_20f0__esc__2_stringBase0 + 44
 	.4byte 0x00000000
 	.4byte 0x00000001
-	.4byte 0x8027212A
+	.4byte l_20f0__esc__2_stringBase0 + 58
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x80272131
+	.4byte l_20f0__esc__2_stringBase0 + 65
 	.4byte 0x00000000
 	.4byte 0x00000000
 l_2074__esc__2_1674:
@@ -12282,11 +12282,11 @@ l_f64c__esc__2_1689:
 l_f650__esc__2_1690:
 	.4byte 0x3DCCCCCD
 l_f654__esc__2_1713:
-	.4byte 0x80272148
+	.4byte l_20f0__esc__2_stringBase0 + 88
 /* SPECULATION: link order */
 .global lbl_803CF658
 lbl_803CF658:
-	.4byte 0x8027215B
+	.4byte l_20f0__esc__2_stringBase0 + 107
 l_f65c__esc__2_1753:
 	.4byte 0x40A00000
 l_f660__esc__2_1772:

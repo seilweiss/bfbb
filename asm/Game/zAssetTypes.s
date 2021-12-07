@@ -2229,111 +2229,111 @@ l_b438_hackRadiusTable:
 	.4byte 0xED21A1C6
 	.4byte 0x42480000
 l_b450_jsp_shadow_hack_textures:
-	.4byte 0x802543E5
-	.4byte 0x802543F1
-	.4byte 0x8025440B
-	.4byte 0x80254425
-	.4byte 0x80254432
+	.4byte l_43a4__esc__2_stringBase0 + 65
+	.4byte l_43a4__esc__2_stringBase0 + 77
+	.4byte l_43a4__esc__2_stringBase0 + 103
+	.4byte l_43a4__esc__2_stringBase0 + 129
+	.4byte l_43a4__esc__2_stringBase0 + 142
 /* SPECULATION: link order */
 .global animTable
 animTable:
-	.4byte 0x80254444
+	.4byte l_43a4__esc__2_stringBase0 + 160
 	.4byte ZNPC_AnimTable_Test__Fv /* 0x80135BD0 */
 	.4byte 0x00000000
-	.4byte 0x80254458
+	.4byte l_43a4__esc__2_stringBase0 + 180
 	.4byte ZNPC_AnimTable_Dutchman__Fv /* 0x80172990 */
 	.4byte 0x00000000
-	.4byte 0x80254470
+	.4byte l_43a4__esc__2_stringBase0 + 204
 	.4byte ZNPC_AnimTable_Duplotron__Fv /* 0x80125328 */
 	.4byte 0x00000000
-	.4byte 0x80254489
+	.4byte l_43a4__esc__2_stringBase0 + 229
 	.4byte ZNPC_AnimTable_Common__Fv /* 0x800F4248 */
 	.4byte 0x00000000
-	.4byte 0x8025449F
+	.4byte l_43a4__esc__2_stringBase0 + 251
 	.4byte ZNPC_AnimTable_BossPlankton__Fv /* 0x80168ED0 */
 	.4byte 0x00000000
-	.4byte 0x802544BB
+	.4byte l_43a4__esc__2_stringBase0 + 279
 	.4byte ZNPC_AnimTable_BossSandy__Fv /* 0x8013D100 */
 	.4byte 0x00000000
-	.4byte 0x802544D4
+	.4byte l_43a4__esc__2_stringBase0 + 304
 	.4byte ZNPC_AnimTable_SleepyTime__Fv /* 0x800F6A14 */
 	.4byte 0x00000000
-	.4byte 0x802544EE
+	.4byte l_43a4__esc__2_stringBase0 + 330
 	.4byte ZNPC_AnimTable_BossSandyHead__Fv /* 0x8013D8F4 */
 	.4byte 0x00000000
-	.4byte 0x8025450B
+	.4byte l_43a4__esc__2_stringBase0 + 359
 	.4byte ZNPC_AnimTable_Hammer__Fv /* 0x800F5D70 */
 	.4byte 0x00000000
-	.4byte 0x80254521
+	.4byte l_43a4__esc__2_stringBase0 + 381
 	.4byte ZNPC_AnimTable_TTSauce__Fv /* 0x800F6244 */
 	.4byte 0x00000000
-	.4byte 0x80254538
+	.4byte l_43a4__esc__2_stringBase0 + 404
 	.4byte ZNPC_AnimTable_KingJelly__Fv /* 0x80147188 */
 	.4byte 0x00000000
-	.4byte 0x80254551
+	.4byte l_43a4__esc__2_stringBase0 + 429
 	.4byte ZNPC_AnimTable_Slick__Fv /* 0x800F7744 */
 	.4byte 0x00000000
-	.4byte 0x80254566
+	.4byte l_43a4__esc__2_stringBase0 + 450
 	.4byte ZNPC_AnimTable_TarTar__Fv /* 0x800F6000 */
 	.4byte 0x00000000
-	.4byte 0x8025457C
+	.4byte l_43a4__esc__2_stringBase0 + 472
 	.4byte ZNPC_AnimTable_Villager__Fv /* 0x80102F7C */
 	.4byte 0x00000000
-	.4byte 0x80254594
+	.4byte l_43a4__esc__2_stringBase0 + 496
 	.4byte ZNPC_AnimTable_BalloonBoy__Fv /* 0x8010336C */
 	.4byte 0x00000000
-	.4byte 0x802545AE
+	.4byte l_43a4__esc__2_stringBase0 + 522
 	.4byte ZNPC_AnimTable_Fodder__Fv /* 0x800F5728 */
 	.4byte 0x00000000
-	.4byte 0x802545C4
+	.4byte l_43a4__esc__2_stringBase0 + 544
 	.4byte ZNPC_AnimTable_Prawn__Fv /* 0x801502A4 */
 	.4byte 0x00000000
-	.4byte 0x802545D9
+	.4byte l_43a4__esc__2_stringBase0 + 565
 	.4byte ZNPC_AnimTable_Neptune__Fv /* 0x80107C28 */
 	.4byte 0x00000000
-	.4byte 0x802545F0
+	.4byte l_43a4__esc__2_stringBase0 + 588
 	.4byte ZNPC_AnimTable_BossSB1__Fv /* 0x80154DD8 */
 	.4byte 0x00000000
-	.4byte 0x80254607
+	.4byte l_43a4__esc__2_stringBase0 + 611
 	.4byte ZNPC_AnimTable_BossSBobbyArm__Fv /* 0x80136334 */
 	.4byte 0x00000000
-	.4byte 0x80254624
+	.4byte l_43a4__esc__2_stringBase0 + 640
 	.4byte ZNPC_AnimTable_Monsoon__Fv /* 0x800F6640 */
 	.4byte 0x00000000
-	.4byte 0x8025463B
+	.4byte l_43a4__esc__2_stringBase0 + 663
 	.4byte ZNPC_AnimTable_ArfDog__Fv /* 0x800F6B30 */
 	.4byte 0x00000000
-	.4byte 0x80254651
+	.4byte l_43a4__esc__2_stringBase0 + 685
 	.4byte ZNPC_AnimTable_ArfArf__Fv /* 0x800F7080 */
 	.4byte 0x00000000
-	.4byte 0x80254667
+	.4byte l_43a4__esc__2_stringBase0 + 707
 	.4byte ZNPC_AnimTable_BossSB2__Fv /* 0x801575E4 */
 	.4byte 0x00000000
-	.4byte 0x8025467E
+	.4byte l_43a4__esc__2_stringBase0 + 730
 	.4byte ZNPC_AnimTable_Tiki__Fv /* 0x8010A0AC */
 	.4byte 0x00000000
-	.4byte 0x80254692
+	.4byte l_43a4__esc__2_stringBase0 + 750
 	.4byte ZNPC_AnimTable_Tubelet__Fv /* 0x800F7574 */
 	.4byte 0x00000000
-	.4byte 0x802546A9
+	.4byte l_43a4__esc__2_stringBase0 + 773
 	.4byte ZNPC_AnimTable_Ambient__Fv /* 0x80107974 */
 	.4byte 0x00000000
-	.4byte 0x802546C0
+	.4byte l_43a4__esc__2_stringBase0 + 796
 	.4byte ZNPC_AnimTable_GLove__Fv /* 0x800F62CC */
 	.4byte 0x00000000
-	.4byte 0x802546D5
+	.4byte l_43a4__esc__2_stringBase0 + 817
 	.4byte ZNPC_AnimTable_LassoGuide__Fv /* 0x800F42D4 */
 	.4byte 0x00000000
-	.4byte 0x802546EF
+	.4byte l_43a4__esc__2_stringBase0 + 843
 	.4byte ZNPC_AnimTable_Chuck__Fv /* 0x800F7338 */
 	.4byte 0x00000000
-	.4byte 0x80254704
+	.4byte l_43a4__esc__2_stringBase0 + 864
 	.4byte ZNPC_AnimTable_Jelly__Fv /* 0x80107A00 */
 	.4byte 0x00000000
-	.4byte 0x80254719
+	.4byte l_43a4__esc__2_stringBase0 + 885
 	.4byte ZNPC_AnimTable_SuperFriend__Fv /* 0x80103668 */
 	.4byte 0x00000000
-	.4byte 0x80254734
+	.4byte l_43a4__esc__2_stringBase0 + 912
 	.4byte ZNPC_AnimTable_BossPatrick__Fv /* 0x80160144 */
 	.4byte 0x00000000
 l_b5f0_tableFuncList:

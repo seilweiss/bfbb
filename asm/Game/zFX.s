@@ -5407,7 +5407,7 @@ bubbletrail_vel_rnd:
 	.4byte 0x3E800000
 	.4byte 0x3E800000
 l_f038_entrail_types__17_esc__2_unnamed_esc__2_zFX_cpp_esc__2_:
-	.4byte 0x8025BE37
+	.4byte l_be04__esc__2_stringBase0 + 51
 	.4byte 0x00000000
 	.4byte 0x428C0000
 	.4byte 0x41C80000
@@ -5423,7 +5423,7 @@ l_f038_entrail_types__17_esc__2_unnamed_esc__2_zFX_cpp_esc__2_:
 	.4byte 0x3FC00000
 	.4byte 0x00000000
 	.4byte 0x3FC00000
-	.4byte 0x8025BE54
+	.4byte l_be04__esc__2_stringBase0 + 80
 	.4byte 0x00000000
 	.4byte 0x428C0000
 	.4byte 0x41C80000
@@ -5440,61 +5440,61 @@ l_f038_entrail_types__17_esc__2_unnamed_esc__2_zFX_cpp_esc__2_:
 	.4byte 0x00000000
 	.4byte 0x3FC00000
 	.4byte l_bf88__esc__2_stringBase0 /* 0x8025BF88 */
-	.4byte 0x8025BF8D
-	.4byte 0x8025BF92
-	.4byte 0x8025BF97
-	.4byte 0x8025BF9C
-	.4byte 0x8025BFA1
-	.4byte 0x8025BFA6
-	.4byte 0x8025BFAB
-	.4byte 0x8025BF9C
-	.4byte 0x8025BFB0
-	.4byte 0x8025BFB5
-	.4byte 0x8025BFBA
-	.4byte 0x8025BFBF
-	.4byte 0x8025BFC4
-	.4byte 0x8025BFC9
-	.4byte 0x8025BFCE
-	.4byte 0x8025BFD3
-	.4byte 0x8025BF8D
-	.4byte 0x8025BFD8
-	.4byte 0x8025BFDD
-	.4byte 0x8025BFE2
-	.4byte 0x8025BFE7
-	.4byte 0x8025BFEC
-	.4byte 0x8025BFF1
-	.4byte 0x8025BFF6
-	.4byte 0x8025BFFB
-	.4byte 0x8025BFE2
-	.4byte 0x8025C000
-	.4byte 0x8025C005
-	.4byte 0x8025C00A
-	.4byte 0x8025BFE2
-	.4byte 0x8025C00F
-	.4byte 0x8025C014
-	.4byte 0x8025C019
-	.4byte 0x8025C01E
-	.4byte 0x8025C023
-	.4byte 0x8025BF8D
-	.4byte 0x8025C028
-	.4byte 0x8025C02D
-	.4byte 0x8025C032
-	.4byte 0x8025C037
-	.4byte 0x8025C03C
-	.4byte 0x8025C041
-	.4byte 0x8025C046
-	.4byte 0x8025C04B
-	.4byte 0x8025C050
-	.4byte 0x8025C055
-	.4byte 0x8025C05A
-	.4byte 0x8025C05F
-	.4byte 0x8025C064
-	.4byte 0x8025C069
-	.4byte 0x8025C06E
-	.4byte 0x8025C073
-	.4byte 0x8025C078
-	.4byte 0x8025C07D
-	.4byte 0x8025C082
+	.4byte l_bf88__esc__2_stringBase0 + 5
+	.4byte l_bf88__esc__2_stringBase0 + 10
+	.4byte l_bf88__esc__2_stringBase0 + 15
+	.4byte l_bf88__esc__2_stringBase0 + 20
+	.4byte l_bf88__esc__2_stringBase0 + 25
+	.4byte l_bf88__esc__2_stringBase0 + 30
+	.4byte l_bf88__esc__2_stringBase0 + 35
+	.4byte l_bf88__esc__2_stringBase0 + 20
+	.4byte l_bf88__esc__2_stringBase0 + 40
+	.4byte l_bf88__esc__2_stringBase0 + 45
+	.4byte l_bf88__esc__2_stringBase0 + 50
+	.4byte l_bf88__esc__2_stringBase0 + 55
+	.4byte l_bf88__esc__2_stringBase0 + 60
+	.4byte l_bf88__esc__2_stringBase0 + 65
+	.4byte l_bf88__esc__2_stringBase0 + 70
+	.4byte l_bf88__esc__2_stringBase0 + 75
+	.4byte l_bf88__esc__2_stringBase0 + 5
+	.4byte l_bf88__esc__2_stringBase0 + 80
+	.4byte l_bf88__esc__2_stringBase0 + 85
+	.4byte l_bf88__esc__2_stringBase0 + 90
+	.4byte l_bf88__esc__2_stringBase0 + 95
+	.4byte l_bf88__esc__2_stringBase0 + 100
+	.4byte l_bf88__esc__2_stringBase0 + 105
+	.4byte l_bf88__esc__2_stringBase0 + 110
+	.4byte l_bf88__esc__2_stringBase0 + 115
+	.4byte l_bf88__esc__2_stringBase0 + 90
+	.4byte l_bf88__esc__2_stringBase0 + 120
+	.4byte l_bf88__esc__2_stringBase0 + 125
+	.4byte l_bf88__esc__2_stringBase0 + 130
+	.4byte l_bf88__esc__2_stringBase0 + 90
+	.4byte l_bf88__esc__2_stringBase0 + 135
+	.4byte l_bf88__esc__2_stringBase0 + 140
+	.4byte l_bf88__esc__2_stringBase0 + 145
+	.4byte l_bf88__esc__2_stringBase0 + 150
+	.4byte l_bf88__esc__2_stringBase0 + 155
+	.4byte l_bf88__esc__2_stringBase0 + 5
+	.4byte l_bf88__esc__2_stringBase0 + 160
+	.4byte l_bf88__esc__2_stringBase0 + 165
+	.4byte l_bf88__esc__2_stringBase0 + 170
+	.4byte l_bf88__esc__2_stringBase0 + 175
+	.4byte l_bf88__esc__2_stringBase0 + 180
+	.4byte l_bf88__esc__2_stringBase0 + 185
+	.4byte l_bf88__esc__2_stringBase0 + 190
+	.4byte l_bf88__esc__2_stringBase0 + 195
+	.4byte l_bf88__esc__2_stringBase0 + 200
+	.4byte l_bf88__esc__2_stringBase0 + 205
+	.4byte l_bf88__esc__2_stringBase0 + 210
+	.4byte l_bf88__esc__2_stringBase0 + 215
+	.4byte l_bf88__esc__2_stringBase0 + 220
+	.4byte l_bf88__esc__2_stringBase0 + 225
+	.4byte l_bf88__esc__2_stringBase0 + 230
+	.4byte l_bf88__esc__2_stringBase0 + 235
+	.4byte l_bf88__esc__2_stringBase0 + 240
+	.4byte l_bf88__esc__2_stringBase0 + 245
+	.4byte l_bf88__esc__2_stringBase0 + 250
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000

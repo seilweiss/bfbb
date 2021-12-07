@@ -9988,43 +9988,43 @@ l_ba40_g_hazard_rawModel:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte l_3800__esc__2_stringBase0 /* 0x80273800 */
-	.4byte 0x80273813
-	.4byte 0x80273825
-	.4byte 0x80273834
-	.4byte 0x80273849
-	.4byte 0x80273860
-	.4byte 0x80273872
-	.4byte 0x80273885
-	.4byte 0x80273899
-	.4byte 0x802738A6
-	.4byte 0x802738BA
-	.4byte 0x802738CE
-	.4byte 0x802738E2
-	.4byte 0x802738F3
-	.4byte 0x8027390C
-	.4byte 0x8027391E
-	.4byte 0x8027392F
-	.4byte 0x8027393F
-	.4byte 0x80273951
-	.4byte 0x80273965
-	.4byte 0x8027397F
-	.4byte 0x80273995
-	.4byte 0x802739AB
-	.4byte 0x802739C0
-	.4byte 0x802739DC
-	.4byte 0x802739F7
-	.4byte 0x80273849
-	.4byte 0x80273A0D
-	.4byte 0x80273A1D
-	.4byte 0x80273A33
+	.4byte l_3800__esc__2_stringBase0 + 19
+	.4byte l_3800__esc__2_stringBase0 + 37
+	.4byte l_3800__esc__2_stringBase0 + 52
+	.4byte l_3800__esc__2_stringBase0 + 73
+	.4byte l_3800__esc__2_stringBase0 + 96
+	.4byte l_3800__esc__2_stringBase0 + 114
+	.4byte l_3800__esc__2_stringBase0 + 133
+	.4byte l_3800__esc__2_stringBase0 + 153
+	.4byte l_3800__esc__2_stringBase0 + 166
+	.4byte l_3800__esc__2_stringBase0 + 186
+	.4byte l_3800__esc__2_stringBase0 + 206
+	.4byte l_3800__esc__2_stringBase0 + 226
+	.4byte l_3800__esc__2_stringBase0 + 243
+	.4byte l_3800__esc__2_stringBase0 + 268
+	.4byte l_3800__esc__2_stringBase0 + 286
+	.4byte l_3800__esc__2_stringBase0 + 303
+	.4byte l_3800__esc__2_stringBase0 + 319
+	.4byte l_3800__esc__2_stringBase0 + 337
+	.4byte l_3800__esc__2_stringBase0 + 357
+	.4byte l_3800__esc__2_stringBase0 + 383
+	.4byte l_3800__esc__2_stringBase0 + 405
+	.4byte l_3800__esc__2_stringBase0 + 427
+	.4byte l_3800__esc__2_stringBase0 + 448
+	.4byte l_3800__esc__2_stringBase0 + 476
+	.4byte l_3800__esc__2_stringBase0 + 503
+	.4byte l_3800__esc__2_stringBase0 + 73
+	.4byte l_3800__esc__2_stringBase0 + 525
+	.4byte l_3800__esc__2_stringBase0 + 541
+	.4byte l_3800__esc__2_stringBase0 + 563
 l_bb30_g_hash_hazanim:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
 l_bb3c_g_strz_hazanim:
-	.4byte 0x80273A47
-	.4byte 0x80273A4F
-	.4byte 0x80273A56
+	.4byte l_3800__esc__2_stringBase0 + 583
+	.4byte l_3800__esc__2_stringBase0 + 591
+	.4byte l_3800__esc__2_stringBase0 + 598
 l_bb48_g_haz_uvAnimQue:
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -10083,11 +10083,11 @@ l_bc10_g_data_hazshrap:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x80273A5F
-	.4byte 0x80273A60
-	.4byte 0x80273A6F
-	.4byte 0x80273A7F
-	.4byte 0x80273A8E
+	.4byte l_3800__esc__2_stringBase0 + 607
+	.4byte l_3800__esc__2_stringBase0 + 608
+	.4byte l_3800__esc__2_stringBase0 + 623
+	.4byte l_3800__esc__2_stringBase0 + 639
+	.4byte l_3800__esc__2_stringBase0 + 654
 l_bc38_g_rast_hazshad:
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -10119,36 +10119,36 @@ l_bc38_g_rast_hazshad:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x80273A5F
-	.4byte 0x80273A5F
-	.4byte 0x80273A5F
-	.4byte 0x80273A5F
-	.4byte 0x80273A5F
-	.4byte 0x80273A5F
-	.4byte 0x80273A5F
-	.4byte 0x80273A5F
-	.4byte 0x80273A5F
-	.4byte 0x80273A5F
-	.4byte 0x80273A5F
-	.4byte 0x80273A5F
-	.4byte 0x80273A5F
-	.4byte 0x80273A5F
-	.4byte 0x80273A5F
-	.4byte 0x80273A5F
-	.4byte 0x80273A5F
-	.4byte 0x80273AA4
-	.4byte 0x80273A5F
-	.4byte 0x80273A5F
-	.4byte 0x80273A5F
-	.4byte 0x80273A5F
-	.4byte 0x80273A5F
-	.4byte 0x80273A5F
-	.4byte 0x80273A5F
-	.4byte 0x80273A5F
-	.4byte 0x80273A5F
-	.4byte 0x80273A5F
-	.4byte 0x80273A5F
-	.4byte 0x80273A5F
+	.4byte l_3800__esc__2_stringBase0 + 607
+	.4byte l_3800__esc__2_stringBase0 + 607
+	.4byte l_3800__esc__2_stringBase0 + 607
+	.4byte l_3800__esc__2_stringBase0 + 607
+	.4byte l_3800__esc__2_stringBase0 + 607
+	.4byte l_3800__esc__2_stringBase0 + 607
+	.4byte l_3800__esc__2_stringBase0 + 607
+	.4byte l_3800__esc__2_stringBase0 + 607
+	.4byte l_3800__esc__2_stringBase0 + 607
+	.4byte l_3800__esc__2_stringBase0 + 607
+	.4byte l_3800__esc__2_stringBase0 + 607
+	.4byte l_3800__esc__2_stringBase0 + 607
+	.4byte l_3800__esc__2_stringBase0 + 607
+	.4byte l_3800__esc__2_stringBase0 + 607
+	.4byte l_3800__esc__2_stringBase0 + 607
+	.4byte l_3800__esc__2_stringBase0 + 607
+	.4byte l_3800__esc__2_stringBase0 + 607
+	.4byte l_3800__esc__2_stringBase0 + 676
+	.4byte l_3800__esc__2_stringBase0 + 607
+	.4byte l_3800__esc__2_stringBase0 + 607
+	.4byte l_3800__esc__2_stringBase0 + 607
+	.4byte l_3800__esc__2_stringBase0 + 607
+	.4byte l_3800__esc__2_stringBase0 + 607
+	.4byte l_3800__esc__2_stringBase0 + 607
+	.4byte l_3800__esc__2_stringBase0 + 607
+	.4byte l_3800__esc__2_stringBase0 + 607
+	.4byte l_3800__esc__2_stringBase0 + 607
+	.4byte l_3800__esc__2_stringBase0 + 607
+	.4byte l_3800__esc__2_stringBase0 + 607
+	.4byte l_3800__esc__2_stringBase0 + 607
 l_bd28__esc__2_1425:
 	.4byte lbl_80188354 /* 0x80188354 */
 	.4byte lbl_8018835C /* 0x8018835C */
@@ -14470,7 +14470,7 @@ lbl_802A0004:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x802744BA
+	.4byte l_3d08__esc__2_stringBase0 + 1970
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -14499,7 +14499,7 @@ lbl_802A0004:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x802744C9
+	.4byte l_3d08__esc__2_stringBase0 + 1985
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -14528,7 +14528,7 @@ lbl_802A0004:
 	.4byte 0x40400000
 	.4byte 0x41A00000
 	.4byte 0x40800000
-	.4byte 0x802744D8
+	.4byte l_3d08__esc__2_stringBase0 + 2000
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -14557,7 +14557,7 @@ lbl_802A0004:
 	.4byte 0x40400000
 	.4byte 0x41A00000
 	.4byte 0x40800000
-	.4byte 0x802744E9
+	.4byte l_3d08__esc__2_stringBase0 + 2017
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -14615,7 +14615,7 @@ lbl_802A0004:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x802744FB
+	.4byte l_3d08__esc__2_stringBase0 + 2035
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -14644,7 +14644,7 @@ lbl_802A0004:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x8027450B
+	.4byte l_3d08__esc__2_stringBase0 + 2051
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -14673,7 +14673,7 @@ lbl_802A0004:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x8027451B
+	.4byte l_3d08__esc__2_stringBase0 + 2067
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -14702,7 +14702,7 @@ lbl_802A0004:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x8027452A
+	.4byte l_3d08__esc__2_stringBase0 + 2082
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -14731,7 +14731,7 @@ lbl_802A0004:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x80274539
+	.4byte l_3d08__esc__2_stringBase0 + 2097
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -14760,7 +14760,7 @@ lbl_802A0004:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x80274546
+	.4byte l_3d08__esc__2_stringBase0 + 2110
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -14789,7 +14789,7 @@ lbl_802A0004:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x80274553
+	.4byte l_3d08__esc__2_stringBase0 + 2123
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -14818,7 +14818,7 @@ lbl_802A0004:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x80274563
+	.4byte l_3d08__esc__2_stringBase0 + 2139
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -14847,7 +14847,7 @@ lbl_802A0004:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x80274573
+	.4byte l_3d08__esc__2_stringBase0 + 2155
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -14876,7 +14876,7 @@ lbl_802A0004:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x80274583
+	.4byte l_3d08__esc__2_stringBase0 + 2171
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -14905,7 +14905,7 @@ lbl_802A0004:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x80274593
+	.4byte l_3d08__esc__2_stringBase0 + 2187
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -14934,7 +14934,7 @@ lbl_802A0004:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x802745A7
+	.4byte l_3d08__esc__2_stringBase0 + 2207
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -14963,7 +14963,7 @@ lbl_802A0004:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x802745BB
+	.4byte l_3d08__esc__2_stringBase0 + 2227
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -14992,7 +14992,7 @@ lbl_802A0004:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x802745CB
+	.4byte l_3d08__esc__2_stringBase0 + 2243
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -15021,7 +15021,7 @@ lbl_802A0004:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x802745DB
+	.4byte l_3d08__esc__2_stringBase0 + 2259
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -15050,7 +15050,7 @@ lbl_802A0004:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x802745EF
+	.4byte l_3d08__esc__2_stringBase0 + 2279
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -15079,7 +15079,7 @@ lbl_802A0004:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x802745FF
+	.4byte l_3d08__esc__2_stringBase0 + 2295
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -15108,7 +15108,7 @@ lbl_802A0004:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x8027460F
+	.4byte l_3d08__esc__2_stringBase0 + 2311
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -15137,7 +15137,7 @@ lbl_802A0004:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x80274623
+	.4byte l_3d08__esc__2_stringBase0 + 2331
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -15166,7 +15166,7 @@ lbl_802A0004:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x80274633
+	.4byte l_3d08__esc__2_stringBase0 + 2347
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -15195,7 +15195,7 @@ lbl_802A0004:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x80274643
+	.4byte l_3d08__esc__2_stringBase0 + 2363
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -15224,7 +15224,7 @@ lbl_802A0004:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x80274653
+	.4byte l_3d08__esc__2_stringBase0 + 2379
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -15253,7 +15253,7 @@ lbl_802A0004:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x80274663
+	.4byte l_3d08__esc__2_stringBase0 + 2395
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -15282,7 +15282,7 @@ lbl_802A0004:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x80274677
+	.4byte l_3d08__esc__2_stringBase0 + 2415
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -15311,7 +15311,7 @@ lbl_802A0004:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x80274687
+	.4byte l_3d08__esc__2_stringBase0 + 2431
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -15340,7 +15340,7 @@ lbl_802A0004:
 	.4byte 0x3F000000
 	.4byte 0x41200000
 	.4byte 0x40800000
-	.4byte 0x802744D8
+	.4byte l_3d08__esc__2_stringBase0 + 2000
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -15369,7 +15369,7 @@ lbl_802A0004:
 	.4byte 0x3F000000
 	.4byte 0x41200000
 	.4byte 0x40800000
-	.4byte 0x802744E9
+	.4byte l_3d08__esc__2_stringBase0 + 2017
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -15427,7 +15427,7 @@ lbl_802A0004:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x80274697
+	.4byte l_3d08__esc__2_stringBase0 + 2447
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -15456,7 +15456,7 @@ lbl_802A0004:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x802746A9
+	.4byte l_3d08__esc__2_stringBase0 + 2465
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -15485,7 +15485,7 @@ lbl_802A0004:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x802746BC
+	.4byte l_3d08__esc__2_stringBase0 + 2484
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -15514,7 +15514,7 @@ lbl_802A0004:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x802746D0
+	.4byte l_3d08__esc__2_stringBase0 + 2504
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -15543,7 +15543,7 @@ lbl_802A0004:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x802746E4
+	.4byte l_3d08__esc__2_stringBase0 + 2524
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -15572,7 +15572,7 @@ lbl_802A0004:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x802746F8
+	.4byte l_3d08__esc__2_stringBase0 + 2544
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -15601,7 +15601,7 @@ lbl_802A0004:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x8027470C
+	.4byte l_3d08__esc__2_stringBase0 + 2564
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -15630,7 +15630,7 @@ lbl_802A0004:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x8027471E
+	.4byte l_3d08__esc__2_stringBase0 + 2582
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -15659,7 +15659,7 @@ lbl_802A0004:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x80274730
+	.4byte l_3d08__esc__2_stringBase0 + 2600
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -15688,7 +15688,7 @@ lbl_802A0004:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x80274742
+	.4byte l_3d08__esc__2_stringBase0 + 2618
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -15717,7 +15717,7 @@ lbl_802A0004:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x80274742
+	.4byte l_3d08__esc__2_stringBase0 + 2618
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -15746,7 +15746,7 @@ lbl_802A0004:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x80273E2F
+	.4byte l_3d08__esc__2_stringBase0 + 295
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -15775,7 +15775,7 @@ lbl_802A0004:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x80273E3C
+	.4byte l_3d08__esc__2_stringBase0 + 308
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -15804,7 +15804,7 @@ lbl_802A0004:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x80274754
+	.4byte l_3d08__esc__2_stringBase0 + 2636
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -15833,7 +15833,7 @@ lbl_802A0004:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x80274761
+	.4byte l_3d08__esc__2_stringBase0 + 2649
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -15862,7 +15862,7 @@ lbl_802A0004:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x8027476E
+	.4byte l_3d08__esc__2_stringBase0 + 2662
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -15891,7 +15891,7 @@ lbl_802A0004:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x8027476E
+	.4byte l_3d08__esc__2_stringBase0 + 2662
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -15920,7 +15920,7 @@ lbl_802A0004:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x8027477B
+	.4byte l_3d08__esc__2_stringBase0 + 2675
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -15949,7 +15949,7 @@ lbl_802A0004:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x80274788
+	.4byte l_3d08__esc__2_stringBase0 + 2688
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -15978,7 +15978,7 @@ lbl_802A0004:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x80274795
+	.4byte l_3d08__esc__2_stringBase0 + 2701
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -16007,7 +16007,7 @@ lbl_802A0004:
 	.4byte 0x3F800000
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x802747A2
+	.4byte l_3d08__esc__2_stringBase0 + 2714
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -16036,7 +16036,7 @@ lbl_802A0004:
 	.4byte 0x3F800000
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x802747AF
+	.4byte l_3d08__esc__2_stringBase0 + 2727
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -16065,7 +16065,7 @@ lbl_802A0004:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x802747BC
+	.4byte l_3d08__esc__2_stringBase0 + 2740
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000

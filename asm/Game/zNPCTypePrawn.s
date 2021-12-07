@@ -6170,55 +6170,55 @@ l_e838_sound_assets__27_esc__2_unnamed_esc__2_zNPCTypePrawn_cpp_esc__2_:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x8026E9FA
+	.4byte l_e9f0__esc__2_stringBase0 + 10
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000001
-	.4byte 0x8026EA07
+	.4byte l_e9f0__esc__2_stringBase0 + 23
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000001
-	.4byte 0x8026E9FA
+	.4byte l_e9f0__esc__2_stringBase0 + 10
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000001
-	.4byte 0x8026EA14
+	.4byte l_e9f0__esc__2_stringBase0 + 36
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000001
-	.4byte 0x8026EA1C
+	.4byte l_e9f0__esc__2_stringBase0 + 44
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000001
-	.4byte 0x8026EA20
+	.4byte l_e9f0__esc__2_stringBase0 + 48
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000002
-	.4byte 0x8026EA2A
+	.4byte l_e9f0__esc__2_stringBase0 + 58
 	.4byte 0x00000000
 	.4byte 0x00000003
 	.4byte 0x00000002
-	.4byte 0x8026EA38
+	.4byte l_e9f0__esc__2_stringBase0 + 72
 	.4byte 0x00000000
 	.4byte 0x00000003
 	.4byte 0x00000002
-	.4byte 0x8026EA47
+	.4byte l_e9f0__esc__2_stringBase0 + 87
 	.4byte 0x00000000
 	.4byte 0x00000003
 	.4byte 0x00000002
-	.4byte 0x8026EA59
+	.4byte l_e9f0__esc__2_stringBase0 + 105
 	.4byte 0x00000000
 	.4byte 0x00000003
 	.4byte 0x00000002
-	.4byte 0x8026EA67
+	.4byte l_e9f0__esc__2_stringBase0 + 119
 	.4byte 0x00000000
 	.4byte 0x00000003
 	.4byte 0x00000003
-	.4byte 0x8026EA38
+	.4byte l_e9f0__esc__2_stringBase0 + 72
 	.4byte 0x00000000
 	.4byte 0x00000001
 	.4byte 0x00000003
-	.4byte 0x8026EA47
+	.4byte l_e9f0__esc__2_stringBase0 + 87
 	.4byte 0x00000000
 	.4byte 0x00000001
 l_e918__esc__2_1446:

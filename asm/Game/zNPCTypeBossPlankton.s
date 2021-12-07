@@ -8701,115 +8701,115 @@ l_110c_sound_assets__34_esc__2_unnamed_esc__2_zNPCTypeBossPlankton_cpp_esc__2_:
 	.4byte 0x00000000
 	.4byte 0x00000003
 	.4byte 0x00000000
-	.4byte 0x80271472
+	.4byte l_1464__esc__2_stringBase0 + 14
 	.4byte 0x00000000
 	.4byte 0x00000003
 	.4byte 0x00000000
-	.4byte 0x8027147B
+	.4byte l_1464__esc__2_stringBase0 + 23
 	.4byte 0x00000000
 	.4byte 0x00000003
 	.4byte 0x00000000
-	.4byte 0x8027148C
+	.4byte l_1464__esc__2_stringBase0 + 40
 	.4byte 0x00000000
 	.4byte 0x00000003
 	.4byte 0x00000000
-	.4byte 0x8027149A
+	.4byte l_1464__esc__2_stringBase0 + 54
 	.4byte 0x00000000
 	.4byte 0x00000003
 	.4byte 0x00000000
-	.4byte 0x802714A9
+	.4byte l_1464__esc__2_stringBase0 + 69
 	.4byte 0x00000000
 	.4byte 0x00000003
 	.4byte 0x00000000
-	.4byte 0x802714B5
+	.4byte l_1464__esc__2_stringBase0 + 81
 	.4byte 0x00000000
 	.4byte 0x00000003
 	.4byte 0x00000001
-	.4byte 0x802714C3
+	.4byte l_1464__esc__2_stringBase0 + 95
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000001
-	.4byte 0x802714D0
+	.4byte l_1464__esc__2_stringBase0 + 108
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000001
-	.4byte 0x802714DA
+	.4byte l_1464__esc__2_stringBase0 + 118
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000001
-	.4byte 0x802714EA
+	.4byte l_1464__esc__2_stringBase0 + 134
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000001
-	.4byte 0x802714F9
+	.4byte l_1464__esc__2_stringBase0 + 149
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000001
-	.4byte 0x80271502
+	.4byte l_1464__esc__2_stringBase0 + 158
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000001
-	.4byte 0x8027150C
+	.4byte l_1464__esc__2_stringBase0 + 168
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000001
-	.4byte 0x80271515
+	.4byte l_1464__esc__2_stringBase0 + 177
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000002
-	.4byte 0x80271524
+	.4byte l_1464__esc__2_stringBase0 + 192
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000003
-	.4byte 0x80271531
+	.4byte l_1464__esc__2_stringBase0 + 205
 	.4byte 0x00000000
 	.4byte 0x00000001
 	.4byte 0x00000003
-	.4byte 0x8027153F
+	.4byte l_1464__esc__2_stringBase0 + 219
 	.4byte 0x00000000
 	.4byte 0x00000001
 	.4byte 0x00000003
-	.4byte 0x8027154D
+	.4byte l_1464__esc__2_stringBase0 + 233
 	.4byte 0x00000000
 	.4byte 0x00000001
 	.4byte 0x00000003
-	.4byte 0x80271561
+	.4byte l_1464__esc__2_stringBase0 + 253
 	.4byte 0x00000000
 	.4byte 0x00000001
 	.4byte 0x00000004
-	.4byte 0x80271574
+	.4byte l_1464__esc__2_stringBase0 + 272
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000004
-	.4byte 0x80271583
+	.4byte l_1464__esc__2_stringBase0 + 287
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000004
-	.4byte 0x80271591
+	.4byte l_1464__esc__2_stringBase0 + 301
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000004
-	.4byte 0x802715A0
+	.4byte l_1464__esc__2_stringBase0 + 316
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000004
-	.4byte 0x802715A8
+	.4byte l_1464__esc__2_stringBase0 + 324
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000005
-	.4byte 0x802715B2
+	.4byte l_1464__esc__2_stringBase0 + 334
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000005
-	.4byte 0x802715C2
+	.4byte l_1464__esc__2_stringBase0 + 350
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000005
-	.4byte 0x802715CF
+	.4byte l_1464__esc__2_stringBase0 + 363
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000005
-	.4byte 0x802715D9
+	.4byte l_1464__esc__2_stringBase0 + 373
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000

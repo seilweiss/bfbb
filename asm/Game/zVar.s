@@ -1770,18 +1770,18 @@ l_fcb0__esc__2_stringBase0:
 
 .section .data
 l_16e0_state_text_esc__6_908:
-	.4byte 0x8025FCED
-	.4byte 0x8025FCF7
-	.4byte 0x8025FD04
-	.4byte 0x8025FD10
+	.4byte l_fcb0__esc__2_stringBase0 + 61
+	.4byte l_fcb0__esc__2_stringBase0 + 71
+	.4byte l_fcb0__esc__2_stringBase0 + 84
+	.4byte l_fcb0__esc__2_stringBase0 + 96
 l_16f0_text_esc__6_938:
-	.4byte 0x8025FD27
-	.4byte 0x8025FD27
-	.4byte 0x8025FD3A
+	.4byte l_fcb0__esc__2_stringBase0 + 119
+	.4byte l_fcb0__esc__2_stringBase0 + 119
+	.4byte l_fcb0__esc__2_stringBase0 + 138
 l_16fc_text_esc__6_943:
-	.4byte 0x8025FD4E
-	.4byte 0x8025FD66
-	.4byte 0x8025FD7C
+	.4byte l_fcb0__esc__2_stringBase0 + 158
+	.4byte l_fcb0__esc__2_stringBase0 + 182
+	.4byte l_fcb0__esc__2_stringBase0 + 204
 l_1708_buffer_esc__6_965:
 	.4byte 0x34303030
 	.4byte 0x30303030
@@ -1800,125 +1800,125 @@ l_1708_buffer_esc__6_965:
 	.4byte 0x00000000
 	.4byte 0x00000000
 l_1748_vars__18_esc__2_unnamed_esc__2_zVar_cpp_esc__2_:
-	.4byte 0x8025FDEF
+	.4byte l_fcb0__esc__2_stringBase0 + 319
 	.4byte 0x00000009
 	.4byte var_text_ActivePad__18_esc__2_unnamed_esc__2_zVar_cpp_esc__2_Fv /* 0x800BD1B0 */
-	.4byte 0x8025FDF9
+	.4byte l_fcb0__esc__2_stringBase0 + 329
 	.4byte 0x00000007
 	.4byte var_text_BadCard__18_esc__2_unnamed_esc__2_zVar_cpp_esc__2_Fv /* 0x800BD1FC */
-	.4byte 0x8025FE01
+	.4byte l_fcb0__esc__2_stringBase0 + 337
 	.4byte 0x00000010
 	.4byte var_text_BadCardAvailable__18_esc__2_unnamed_esc__2_zVar_cpp_esc__2_Fv /* 0x800BD26C */
-	.4byte 0x8025FE12
+	.4byte l_fcb0__esc__2_stringBase0 + 354
 	.4byte 0x0000000D
 	.4byte var_text_BadCardNeeded__18_esc__2_unnamed_esc__2_zVar_cpp_esc__2_Fv /* 0x800BD2AC */
-	.4byte 0x8025FE20
+	.4byte l_fcb0__esc__2_stringBase0 + 368
 	.4byte 0x0000000F
 	.4byte var_text_CorruptFileName__18_esc__2_unnamed_esc__2_zVar_cpp_esc__2_Fv /* 0x800BD2EC */
-	.4byte 0x8025FE30
+	.4byte l_fcb0__esc__2_stringBase0 + 384
 	.4byte 0x0000000B
 	.4byte var_text_CurrentArea__18_esc__2_unnamed_esc__2_zVar_cpp_esc__2_Fv /* 0x800BD380 */
-	.4byte 0x8025FE3C
+	.4byte l_fcb0__esc__2_stringBase0 + 396
 	.4byte 0x0000000B
 	.4byte var_text_CurrentDate__18_esc__2_unnamed_esc__2_zVar_cpp_esc__2_Fv /* 0x800BD3B0 */
-	.4byte 0x8025FE48
+	.4byte l_fcb0__esc__2_stringBase0 + 408
 	.4byte 0x00000017
 	.4byte var_text_CurrentLevelCollectable__18_esc__2_unnamed_esc__2_zVar_cpp_esc__2_Fv /* 0x800BD3E0 */
-	.4byte 0x8025FE60
+	.4byte l_fcb0__esc__2_stringBase0 + 432
 	.4byte 0x00000015
 	.4byte var_text_CurrentLevelPatsSocks__18_esc__2_unnamed_esc__2_zVar_cpp_esc__2_Fv /* 0x800BD428 */
-	.4byte 0x8025FE76
+	.4byte l_fcb0__esc__2_stringBase0 + 454
 	.4byte 0x0000000C
 	.4byte var_text_CurrentScene__18_esc__2_unnamed_esc__2_zVar_cpp_esc__2_Fv /* 0x800BD470 */
-	.4byte 0x8025FE83
+	.4byte l_fcb0__esc__2_stringBase0 + 467
 	.4byte 0x0000000B
 	.4byte var_text_CurrentTime__18_esc__2_unnamed_esc__2_zVar_cpp_esc__2_Fv /* 0x800BD4CC */
-	.4byte 0x8025FE8F
+	.4byte l_fcb0__esc__2_stringBase0 + 479
 	.4byte 0x00000009
 	.4byte var_text_GameSlot0__18_esc__2_unnamed_esc__2_zVar_cpp_esc__2_Fv /* 0x800BD7B8 */
-	.4byte 0x8025FE99
+	.4byte l_fcb0__esc__2_stringBase0 + 489
 	.4byte 0x00000009
 	.4byte var_text_GameSlot1__18_esc__2_unnamed_esc__2_zVar_cpp_esc__2_Fv /* 0x800BD7E8 */
-	.4byte 0x8025FEA3
+	.4byte l_fcb0__esc__2_stringBase0 + 499
 	.4byte 0x00000009
 	.4byte var_text_GameSlot2__18_esc__2_unnamed_esc__2_zVar_cpp_esc__2_Fv /* 0x800BD818 */
-	.4byte 0x8025FEAD
+	.4byte l_fcb0__esc__2_stringBase0 + 509
 	.4byte 0x00000009
 	.4byte var_text_GameSlot3__18_esc__2_unnamed_esc__2_zVar_cpp_esc__2_Fv /* 0x800BD848 */
-	.4byte 0x8025FEB7
+	.4byte l_fcb0__esc__2_stringBase0 + 519
 	.4byte 0x00000009
 	.4byte var_text_GameSlot4__18_esc__2_unnamed_esc__2_zVar_cpp_esc__2_Fv /* 0x800BD878 */
-	.4byte 0x8025FEC1
+	.4byte l_fcb0__esc__2_stringBase0 + 529
 	.4byte 0x00000009
 	.4byte var_text_GameSlot5__18_esc__2_unnamed_esc__2_zVar_cpp_esc__2_Fv /* 0x800BD8A8 */
-	.4byte 0x8025FECB
+	.4byte l_fcb0__esc__2_stringBase0 + 539
 	.4byte 0x00000009
 	.4byte var_text_GameSlot6__18_esc__2_unnamed_esc__2_zVar_cpp_esc__2_Fv /* 0x800BD8D8 */
-	.4byte 0x8025FED5
+	.4byte l_fcb0__esc__2_stringBase0 + 549
 	.4byte 0x00000009
 	.4byte var_text_GameSlot7__18_esc__2_unnamed_esc__2_zVar_cpp_esc__2_Fv /* 0x800BD908 */
-	.4byte 0x8025FEDF
+	.4byte l_fcb0__esc__2_stringBase0 + 559
 	.4byte 0x0000000C
 	.4byte var_text_MCAccessType__18_esc__2_unnamed_esc__2_zVar_cpp_esc__2_Fv /* 0x800BD938 */
-	.4byte 0x8025FEEC
+	.4byte l_fcb0__esc__2_stringBase0 + 572
 	.4byte 0x0000000E
 	.4byte var_text_MCAutoSaveCard__18_esc__2_unnamed_esc__2_zVar_cpp_esc__2_Fv /* 0x800BD968 */
-	.4byte 0x8025FEFB
+	.4byte l_fcb0__esc__2_stringBase0 + 587
 	.4byte 0x00000006
 	.4byte var_text_MCName__18_esc__2_unnamed_esc__2_zVar_cpp_esc__2_Fv /* 0x800BDE68 */
-	.4byte 0x8025FF02
+	.4byte l_fcb0__esc__2_stringBase0 + 594
 	.4byte 0x0000000D
 	.4byte var_text_MCPS2MaxSpace__18_esc__2_unnamed_esc__2_zVar_cpp_esc__2_Fv /* 0x800BD9B4 */
-	.4byte 0x8025FF10
+	.4byte l_fcb0__esc__2_stringBase0 + 608
 	.4byte 0x0000000D
 	.4byte var_text_MCPS2MinSpace__18_esc__2_unnamed_esc__2_zVar_cpp_esc__2_Fv /* 0x800BD9F4 */
-	.4byte 0x8025FF1E
+	.4byte l_fcb0__esc__2_stringBase0 + 622
 	.4byte 0x0000000E
 	.4byte var_text_MCSelectedCard__18_esc__2_unnamed_esc__2_zVar_cpp_esc__2_Fv /* 0x800BDA34 */
-	.4byte 0x8025FF2D
+	.4byte l_fcb0__esc__2_stringBase0 + 637
 	.4byte 0x0000000E
 	.4byte var_text_MCSelectedGame__18_esc__2_unnamed_esc__2_zVar_cpp_esc__2_Fv /* 0x800BDA80 */
-	.4byte 0x8025FF3C
+	.4byte l_fcb0__esc__2_stringBase0 + 652
 	.4byte 0x0000000B
 	.4byte var_text_PlayerHeShe__18_esc__2_unnamed_esc__2_zVar_cpp_esc__2_Fv /* 0x800BDAC8 */
-	.4byte 0x8025FF48
+	.4byte l_fcb0__esc__2_stringBase0 + 664
 	.4byte 0x0000000A
 	.4byte var_text_PlayerName__18_esc__2_unnamed_esc__2_zVar_cpp_esc__2_Fv /* 0x800BDAE0 */
-	.4byte 0x8025FF53
+	.4byte l_fcb0__esc__2_stringBase0 + 675
 	.4byte 0x0000000E
 	.4byte var_text_PlayerPosition__18_esc__2_unnamed_esc__2_zVar_cpp_esc__2_Fv /* 0x800BDAF8 */
-	.4byte 0x8025FF62
+	.4byte l_fcb0__esc__2_stringBase0 + 690
 	.4byte 0x0000000C
 	.4byte var_text_SelectedArea__18_esc__2_unnamed_esc__2_zVar_cpp_esc__2_Fv /* 0x800BDB74 */
-	.4byte 0x8025FF6F
+	.4byte l_fcb0__esc__2_stringBase0 + 703
 	.4byte 0x0000000A
 	.4byte var_text_ShinyCount__18_esc__2_unnamed_esc__2_zVar_cpp_esc__2_Fv /* 0x800BDB98 */
-	.4byte 0x8025FF7A
+	.4byte l_fcb0__esc__2_stringBase0 + 714
 	.4byte 0x0000000E
 	.4byte var_text_ShinyCountText__18_esc__2_unnamed_esc__2_zVar_cpp_esc__2_Fv /* 0x800BDBE0 */
-	.4byte 0x8025FF89
+	.4byte l_fcb0__esc__2_stringBase0 + 729
 	.4byte 0x0000000D
 	.4byte var_text_SoundFXVolume__18_esc__2_unnamed_esc__2_zVar_cpp_esc__2_Fv /* 0x800BDC74 */
-	.4byte 0x8025FF97
+	.4byte l_fcb0__esc__2_stringBase0 + 743
 	.4byte 0x00000010
 	.4byte var_text_SoundMusicVolume__18_esc__2_unnamed_esc__2_zVar_cpp_esc__2_Fv /* 0x800BDCBC */
-	.4byte 0x8025FFA8
+	.4byte l_fcb0__esc__2_stringBase0 + 760
 	.4byte 0x0000000E
 	.4byte var_text_SpaceAvailable__18_esc__2_unnamed_esc__2_zVar_cpp_esc__2_Fv /* 0x800BDD04 */
-	.4byte 0x8025FFB7
+	.4byte l_fcb0__esc__2_stringBase0 + 775
 	.4byte 0x00000014
 	.4byte var_text_SpaceAvailableString__18_esc__2_unnamed_esc__2_zVar_cpp_esc__2_Fv /* 0x800BDD48 */
-	.4byte 0x8025FFCC
+	.4byte l_fcb0__esc__2_stringBase0 + 796
 	.4byte 0x0000000B
 	.4byte var_text_SpaceNeeded__18_esc__2_unnamed_esc__2_zVar_cpp_esc__2_Fv /* 0x800BDDDC */
-	.4byte 0x8025FFCC
+	.4byte l_fcb0__esc__2_stringBase0 + 796
 	.4byte 0x0000000B
 	.4byte var_text_SpaceNeeded__18_esc__2_unnamed_esc__2_zVar_cpp_esc__2_Fv /* 0x800BDDDC */
-	.4byte 0x8025FFD8
+	.4byte l_fcb0__esc__2_stringBase0 + 808
 	.4byte 0x0000000E
 	.4byte var_text_TotalPatsSocks__18_esc__2_unnamed_esc__2_zVar_cpp_esc__2_Fv /* 0x800BDE20 */
 l_191c_var_tag_esc__6_1042:
-	.4byte 0x8025FFE7
+	.4byte l_fcb0__esc__2_stringBase0 + 823
 	.4byte 0x00000003
 	.4byte parse_tag_var__18_esc__2_unnamed_esc__2_zVar_cpp_esc__2_FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag /* 0x800BDF80 */
 	.4byte 0x00000000
@@ -1928,75 +1928,75 @@ l_191c_var_tag_esc__6_1042:
 zVarEntryTable:
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x8025FFEB
+	.4byte l_fcb0__esc__2_stringBase0 + 827
 	.4byte zVarEntryCB_SndMode__FPv /* 0x800BE0DC */
 	.4byte 0x00000001
 	.4byte 0x00000000
-	.4byte 0x8025FFF6
+	.4byte l_fcb0__esc__2_stringBase0 + 838
 	.4byte zVarEntryCB_SndMusicVol__FPv /* 0x800BE0EC */
 	.4byte 0x00000002
 	.4byte 0x00000000
-	.4byte 0x80260003
+	.4byte l_fcb0__esc__2_stringBase0 + 851
 	.4byte zVarEntryCB_SndFXVol__FPv /* 0x800BE128 */
 	.4byte 0x00000003
 	.4byte 0x00000000
-	.4byte 0x8026000E
+	.4byte l_fcb0__esc__2_stringBase0 + 862
 	.4byte zVarEntryCB_MCAvailable__FPv /* 0x800BE164 */
 	.4byte 0x00000004
 	.4byte 0x00000000
-	.4byte 0x80260024
+	.4byte l_fcb0__esc__2_stringBase0 + 884
 	.4byte zVarEntryCB_VibrationOn__FPv /* 0x800BE21C */
 	.4byte 0x00000005
 	.4byte 0x00000000
-	.4byte 0x80260034
+	.4byte l_fcb0__esc__2_stringBase0 + 900
 	.4byte zVarEntryCB_CurrentSceneLetter__FPv /* 0x800BE230 */
 	.4byte 0x00000006
 	.4byte 0x00000000
-	.4byte 0x80260044
+	.4byte l_fcb0__esc__2_stringBase0 + 916
 	.4byte zVarEntryCB_CurrentRoom__FPv /* 0x800BE2AC */
 	.4byte 0x00000007
 	.4byte 0x00000000
-	.4byte 0x80260049
+	.4byte l_fcb0__esc__2_stringBase0 + 921
 	.4byte zVarEntryCB_CurrentLevelPickup__FPv /* 0x800BE348 */
 	.4byte 0x00000008
 	.4byte 0x00000000
-	.4byte 0x80260063
+	.4byte l_fcb0__esc__2_stringBase0 + 947
 	.4byte zVarEntryCB_CurrentLevelPSocks__FPv /* 0x800BE358 */
 	.4byte 0x00000009
 	.4byte 0x00000000
-	.4byte 0x8026006F
+	.4byte l_fcb0__esc__2_stringBase0 + 959
 	.4byte zVarEntryCB_TotalPSocks__FPv /* 0x800BE368 */
 	.4byte 0x0000000A
 	.4byte 0x00000000
-	.4byte 0x80260081
+	.4byte l_fcb0__esc__2_stringBase0 + 977
 	.4byte zVarEntryCB_Shinies__FPv /* 0x800BE378 */
 	.4byte 0x0000000B
 	.4byte 0x00000000
-	.4byte 0x8026008F
+	.4byte l_fcb0__esc__2_stringBase0 + 991
 	.4byte zVarEntryCB_Spatulas__FPv /* 0x800BE388 */
 	.4byte 0x0000000C
 	.4byte 0x00000000
-	.4byte 0x8026009F
+	.4byte l_fcb0__esc__2_stringBase0 + 1007
 	.4byte zVarEntryCB_Date__FPv /* 0x800BE398 */
 	.4byte 0x0000000D
 	.4byte 0x00000000
-	.4byte 0x802600AC
+	.4byte l_fcb0__esc__2_stringBase0 + 1020
 	.4byte zVarEntryCB_Hour__FPv /* 0x800BE3CC */
 	.4byte 0x0000000E
 	.4byte 0x00000000
-	.4byte 0x802600B9
+	.4byte l_fcb0__esc__2_stringBase0 + 1033
 	.4byte zVarEntryCB_Minute__FPv /* 0x800BE3EC */
 	.4byte 0x0000000F
 	.4byte 0x00000000
-	.4byte 0x802600C8
+	.4byte l_fcb0__esc__2_stringBase0 + 1048
 	.4byte zVarEntryCB_CounterValue__FPv /* 0x800BE40C */
 	.4byte 0x00000010
 	.4byte 0x00000000
-	.4byte 0x802600D6
+	.4byte l_fcb0__esc__2_stringBase0 + 1062
 	.4byte zVarEntryCB_IsEnabled__FPv /* 0x800BE414 */
 	.4byte 0x00000011
 	.4byte 0x00000000
-	.4byte 0x802600EF
+	.4byte l_fcb0__esc__2_stringBase0 + 1087
 	.4byte zVarEntryCB_IsVisible__FPv /* 0x800BE444 */
 	.4byte 0x00000000
 	.4byte 0x00000000

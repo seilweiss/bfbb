@@ -10691,35 +10691,35 @@ l_9950_sBoneOffset:
 	.4byte 0xBF19999A
 	.4byte 0x3E99999A
 	.4byte l_d19c__esc__2_stringBase0 /* 0x8026D19C */
-	.4byte 0x8026D1A4
-	.4byte 0x8026D1AC
-	.4byte 0x8026D1B4
-	.4byte 0x8026D1BC
-	.4byte 0x8026D1C4
-	.4byte 0x8026D1CC
-	.4byte 0x8026D1D4
-	.4byte 0x8026D1DC
-	.4byte 0x8026D1E4
-	.4byte 0x8026D1EC
-	.4byte 0x8026D1F4
-	.4byte 0x8026D1FC
-	.4byte 0x8026D204
-	.4byte 0x8026D20C
-	.4byte 0x8026D214
-	.4byte 0x8026D21C
-	.4byte 0x8026D224
-	.4byte 0x8026D22C
-	.4byte 0x8026D234
-	.4byte 0x8026D23C
-	.4byte 0x8026D244
-	.4byte 0x8026D24C
-	.4byte 0x8026D254
-	.4byte 0x8026D25C
-	.4byte 0x8026D264
-	.4byte 0x8026D26C
-	.4byte 0x8026D274
-	.4byte 0x8026D27E
-	.4byte 0x8026D288
+	.4byte l_d19c__esc__2_stringBase0 + 8
+	.4byte l_d19c__esc__2_stringBase0 + 16
+	.4byte l_d19c__esc__2_stringBase0 + 24
+	.4byte l_d19c__esc__2_stringBase0 + 32
+	.4byte l_d19c__esc__2_stringBase0 + 40
+	.4byte l_d19c__esc__2_stringBase0 + 48
+	.4byte l_d19c__esc__2_stringBase0 + 56
+	.4byte l_d19c__esc__2_stringBase0 + 64
+	.4byte l_d19c__esc__2_stringBase0 + 72
+	.4byte l_d19c__esc__2_stringBase0 + 80
+	.4byte l_d19c__esc__2_stringBase0 + 88
+	.4byte l_d19c__esc__2_stringBase0 + 96
+	.4byte l_d19c__esc__2_stringBase0 + 104
+	.4byte l_d19c__esc__2_stringBase0 + 112
+	.4byte l_d19c__esc__2_stringBase0 + 120
+	.4byte l_d19c__esc__2_stringBase0 + 128
+	.4byte l_d19c__esc__2_stringBase0 + 136
+	.4byte l_d19c__esc__2_stringBase0 + 144
+	.4byte l_d19c__esc__2_stringBase0 + 152
+	.4byte l_d19c__esc__2_stringBase0 + 160
+	.4byte l_d19c__esc__2_stringBase0 + 168
+	.4byte l_d19c__esc__2_stringBase0 + 176
+	.4byte l_d19c__esc__2_stringBase0 + 184
+	.4byte l_d19c__esc__2_stringBase0 + 192
+	.4byte l_d19c__esc__2_stringBase0 + 200
+	.4byte l_d19c__esc__2_stringBase0 + 208
+	.4byte l_d19c__esc__2_stringBase0 + 216
+	.4byte l_d19c__esc__2_stringBase0 + 226
+	.4byte l_d19c__esc__2_stringBase0 + 236
 l_9a64__esc__2_1281:
 	.4byte lbl_8013F228 /* 0x8013F228 */
 	.4byte lbl_8013F230 /* 0x8013F230 */

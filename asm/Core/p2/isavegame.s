@@ -10019,27 +10019,27 @@ l_2a04_datestr_esc__6_1055:
 	.4byte 0x00000000
 	.4byte 0x00000000
 l_2a44_errmsgs_esc__6_1241:
-	.4byte 0x8026626F
-	.4byte 0x80266280
-	.4byte 0x8026629C
-	.4byte 0x802662C5
-	.4byte 0x802662D1
-	.4byte 0x802662F6
-	.4byte 0x80266321
-	.4byte 0x8026635F
-	.4byte 0x8026638F
-	.4byte 0x802663D0
-	.4byte 0x802663EF
-	.4byte 0x8026641F
-	.4byte 0x8026644F
-	.4byte 0x80266469
-	.4byte 0x80266483
-	.4byte 0x802664B3
-	.4byte 0x802664CC
-	.4byte 0x802664E6
-	.4byte 0x80266505
-	.4byte 0x8026652D
-	.4byte 0x8026655D
+	.4byte l_6120__esc__2_stringBase0 + 335
+	.4byte l_6120__esc__2_stringBase0 + 352
+	.4byte l_6120__esc__2_stringBase0 + 380
+	.4byte l_6120__esc__2_stringBase0 + 421
+	.4byte l_6120__esc__2_stringBase0 + 433
+	.4byte l_6120__esc__2_stringBase0 + 470
+	.4byte l_6120__esc__2_stringBase0 + 513
+	.4byte l_6120__esc__2_stringBase0 + 575
+	.4byte l_6120__esc__2_stringBase0 + 623
+	.4byte l_6120__esc__2_stringBase0 + 688
+	.4byte l_6120__esc__2_stringBase0 + 719
+	.4byte l_6120__esc__2_stringBase0 + 767
+	.4byte l_6120__esc__2_stringBase0 + 815
+	.4byte l_6120__esc__2_stringBase0 + 841
+	.4byte l_6120__esc__2_stringBase0 + 867
+	.4byte l_6120__esc__2_stringBase0 + 915
+	.4byte l_6120__esc__2_stringBase0 + 940
+	.4byte l_6120__esc__2_stringBase0 + 966
+	.4byte l_6120__esc__2_stringBase0 + 997
+	.4byte l_6120__esc__2_stringBase0 + 1037
+	.4byte l_6120__esc__2_stringBase0 + 1085
 	.4byte 0x00000000
 l_2a9c__esc__2_1876:
 	.4byte lbl_800CEC18 /* 0x800CEC18 */

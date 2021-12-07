@@ -3238,16 +3238,16 @@ l_8b88_sShrapnelTable:
 	.4byte l_c170__esc__2_stringBase0 /* 0x8026C170 */
 	.4byte zShrapnel_DestructObjInit__FP14zShrapnelAssetP14xModelInstanceP5xVec3PFP5zFragP10zFragAsset_v /* 0x80129308 */
 	.4byte 0x00000000
-	.4byte 0x8026C186
+	.4byte l_c170__esc__2_stringBase0 + 22
 	.4byte zShrapnel_BB03FloorInit__FP14zShrapnelAssetP14xModelInstanceP5xVec3PFP5zFragP10zFragAsset_v /* 0x801297A4 */
 	.4byte 0x00000000
-	.4byte 0x8026C19A
+	.4byte l_c170__esc__2_stringBase0 + 42
 	.4byte zShrapnel_BB03FloorChildInit__FP14zShrapnelAssetP14xModelInstanceP5xVec3PFP5zFragP10zFragAsset_v /* 0x80129AF8 */
 	.4byte 0x00000000
-	.4byte 0x8026C1B4
+	.4byte l_c170__esc__2_stringBase0 + 68
 	.4byte zShrapnel_GlobalRobotInit__FP14zShrapnelAssetP14xModelInstanceP5xVec3PFP5zFragP10zFragAsset_v /* 0x80129B20 */
 	.4byte 0x00000000
-	.4byte 0x8026C1C7
+	.4byte l_c170__esc__2_stringBase0 + 87
 	.4byte zShrapnel_SpongebobInit__FP14zShrapnelAssetP14xModelInstanceP5xVec3PFP5zFragP10zFragAsset_v /* 0x80129D08 */
 	.4byte 0x00000000
 	.4byte 0x00000000

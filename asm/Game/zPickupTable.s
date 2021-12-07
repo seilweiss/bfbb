@@ -66,67 +66,67 @@ lbl_800A8E9C:
 
 .section .data
 l_ff40_ptranstbl:
-	.4byte 0x8025E710
+	.4byte l_e710__esc__2_stringBase0 + 0
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x8025E71C
+	.4byte l_e710__esc__2_stringBase0 + 12
 	.4byte 0x00000000
 	.4byte 0x00010000
-	.4byte 0x8025E726
+	.4byte l_e710__esc__2_stringBase0 + 22
 	.4byte 0x00000000
 	.4byte 0x00020000
-	.4byte 0x8025E731
+	.4byte l_e710__esc__2_stringBase0 + 33
 	.4byte 0x00000000
 	.4byte 0x00030000
-	.4byte 0x8025E73D
+	.4byte l_e710__esc__2_stringBase0 + 45
 	.4byte 0x00000000
 	.4byte 0x00040000
-	.4byte 0x8025E746
+	.4byte l_e710__esc__2_stringBase0 + 54
 	.4byte 0x00000000
 	.4byte 0x01000000
-	.4byte 0x8025E754
+	.4byte l_e710__esc__2_stringBase0 + 68
 	.4byte 0x00000000
 	.4byte 0x01010000
-	.4byte 0x8025E75E
+	.4byte l_e710__esc__2_stringBase0 + 78
 	.4byte 0x00000000
 	.4byte 0x01020000
-	.4byte 0x8025E76E
+	.4byte l_e710__esc__2_stringBase0 + 94
 	.4byte 0x00000000
 	.4byte 0x01060000
-	.4byte 0x8025E777
+	.4byte l_e710__esc__2_stringBase0 + 103
 	.4byte 0x00000000
 	.4byte 0x01030000
-	.4byte 0x8025E781
+	.4byte l_e710__esc__2_stringBase0 + 113
 	.4byte 0x00000000
 	.4byte 0x01040000
-	.4byte 0x8025E78A
+	.4byte l_e710__esc__2_stringBase0 + 122
 	.4byte 0x00000000
 	.4byte 0x01050000
-	.4byte 0x8025E791
+	.4byte l_e710__esc__2_stringBase0 + 129
 	.4byte 0x00000000
 	.4byte 0x01070000
-	.4byte 0x8025E79C
+	.4byte l_e710__esc__2_stringBase0 + 140
 	.4byte 0x00000000
 	.4byte 0x01080000
-	.4byte 0x8025E7A7
+	.4byte l_e710__esc__2_stringBase0 + 151
 	.4byte 0x00000000
 	.4byte 0x01090000
-	.4byte 0x8025E7B7
+	.4byte l_e710__esc__2_stringBase0 + 167
 	.4byte 0x00000000
 	.4byte 0x010A0000
 /* SPECULATION: link order */
 .global lbl_80290000
 lbl_80290000:
-	.4byte 0x8025E7C1
+	.4byte l_e710__esc__2_stringBase0 + 177
 	.4byte 0x00000000
 	.4byte 0x010B0000
-	.4byte 0x8025E7CD
+	.4byte l_e710__esc__2_stringBase0 + 189
 	.4byte 0x00000000
 	.4byte 0x010C0000
-	.4byte 0x8025E7D8
+	.4byte l_e710__esc__2_stringBase0 + 200
 	.4byte 0x00000000
 	.4byte 0x010D0000
-	.4byte 0x8025E7E2
+	.4byte l_e710__esc__2_stringBase0 + 210
 	.4byte 0x00000000
 	.4byte 0x010E0000
 

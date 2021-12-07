@@ -16520,8 +16520,8 @@ l_96f4__esc__2_stringBase0:
 .section .data
 l_566c_g_strz_cloudanim:
 	.4byte l_96f4__esc__2_stringBase0 /* 0x802696F4 */
-	.4byte 0x802698D5
-	.4byte 0x802698E2
+	.4byte l_96f4__esc__2_stringBase0 + 481
+	.4byte l_96f4__esc__2_stringBase0 + 494
 l_5678__esc__2_1265:
 	.4byte lbl_800F7B90 /* 0x800F7B90 */
 	.4byte lbl_800F7B90 /* 0x800F7B90 */
@@ -17617,31 +17617,31 @@ g_hash_folkanim:
 .global g_strz_folkanim
 g_strz_folkanim:
 	.4byte l_9d40__esc__2_stringBase0 /* 0x80269D40 */
-	.4byte 0x80269D48
-	.4byte 0x80269D4F
-	.4byte 0x80269D56
-	.4byte 0x80269D5D
-	.4byte 0x80269D64
-	.4byte 0x80269D6B
-	.4byte 0x80269D72
-	.4byte 0x80269D79
-	.4byte 0x80269D80
-	.4byte 0x80269D87
-	.4byte 0x80269D91
-	.4byte 0x80269D98
-	.4byte 0x80269D9F
-	.4byte 0x80269DA6
-	.4byte 0x80269DAD
-	.4byte 0x80269DB4
-	.4byte 0x80269DBB
-	.4byte 0x80269DC2
-	.4byte 0x80269DC9
-	.4byte 0x80269DD0
-	.4byte 0x80269DD7
-	.4byte 0x80269DDE
-	.4byte 0x80269DE5
-	.4byte 0x80269DEC
-	.4byte 0x80269DF3
+	.4byte l_9d40__esc__2_stringBase0 + 8
+	.4byte l_9d40__esc__2_stringBase0 + 15
+	.4byte l_9d40__esc__2_stringBase0 + 22
+	.4byte l_9d40__esc__2_stringBase0 + 29
+	.4byte l_9d40__esc__2_stringBase0 + 36
+	.4byte l_9d40__esc__2_stringBase0 + 43
+	.4byte l_9d40__esc__2_stringBase0 + 50
+	.4byte l_9d40__esc__2_stringBase0 + 57
+	.4byte l_9d40__esc__2_stringBase0 + 64
+	.4byte l_9d40__esc__2_stringBase0 + 71
+	.4byte l_9d40__esc__2_stringBase0 + 81
+	.4byte l_9d40__esc__2_stringBase0 + 88
+	.4byte l_9d40__esc__2_stringBase0 + 95
+	.4byte l_9d40__esc__2_stringBase0 + 102
+	.4byte l_9d40__esc__2_stringBase0 + 109
+	.4byte l_9d40__esc__2_stringBase0 + 116
+	.4byte l_9d40__esc__2_stringBase0 + 123
+	.4byte l_9d40__esc__2_stringBase0 + 130
+	.4byte l_9d40__esc__2_stringBase0 + 137
+	.4byte l_9d40__esc__2_stringBase0 + 144
+	.4byte l_9d40__esc__2_stringBase0 + 151
+	.4byte l_9d40__esc__2_stringBase0 + 158
+	.4byte l_9d40__esc__2_stringBase0 + 165
+	.4byte l_9d40__esc__2_stringBase0 + 172
+	.4byte l_9d40__esc__2_stringBase0 + 179
 	.4byte 0x00000001
 	.4byte 0x00000011
 	.4byte 0x00000012
@@ -17765,25 +17765,25 @@ l_ac70_g_hash_ttsanim:
 	.4byte 0x00000000
 l_ac78_g_strz_ttsanim:
 	.4byte l_96f4__esc__2_stringBase0 /* 0x802696F4 */
-	.4byte 0x802698C6
+	.4byte l_96f4__esc__2_stringBase0 + 466
 l_ac80_g_hash_nytlytanim:
 	.4byte 0x00000000
 	.4byte 0x00000000
 l_ac88_g_strz_nytlytanim:
 	.4byte l_96f4__esc__2_stringBase0 /* 0x802696F4 */
-	.4byte 0x802698F1
+	.4byte l_96f4__esc__2_stringBase0 + 509
 l_ac90_g_hash_flotanim:
 	.4byte 0x00000000
 	.4byte 0x00000000
 l_ac98_g_strz_flotanim:
 	.4byte l_96f4__esc__2_stringBase0 /* 0x802696F4 */
-	.4byte 0x802698FE
+	.4byte l_96f4__esc__2_stringBase0 + 522
 l_aca0_g_hash_shieldanim:
 	.4byte 0x00000000
 	.4byte 0x00000000
 l_aca8_g_strz_shieldanim:
 	.4byte l_96f4__esc__2_stringBase0 /* 0x802696F4 */
-	.4byte 0x80269907
+	.4byte l_96f4__esc__2_stringBase0 + 531
 /* SPECULATION: link order */
 .global uv_slice_discoLight__11zNPCFodBzzt
 uv_slice_discoLight__11zNPCFodBzzt:

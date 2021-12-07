@@ -808,37 +808,37 @@ l_cba0__esc__2_stringBase0:
 
 .section .data
 l_fa20_widget_resources__Q24zhud18_esc__2_unnamed_esc__2_zHud_cpp_esc__2_:
-	.4byte 0x8025CBA0
-	.4byte 0x8025CBB4
-	.4byte 0x8025CBCA
-	.4byte 0x8025CBDA
-	.4byte 0x8025CBEC
-	.4byte 0x8025CC02
-	.4byte 0x8025CC19
-	.4byte 0x8025CC2C
-	.4byte 0x8025CC42
+	.4byte l_cba0__esc__2_stringBase0 + 0
+	.4byte l_cba0__esc__2_stringBase0 + 20
+	.4byte l_cba0__esc__2_stringBase0 + 42
+	.4byte l_cba0__esc__2_stringBase0 + 58
+	.4byte l_cba0__esc__2_stringBase0 + 76
+	.4byte l_cba0__esc__2_stringBase0 + 98
+	.4byte l_cba0__esc__2_stringBase0 + 121
+	.4byte l_cba0__esc__2_stringBase0 + 140
+	.4byte l_cba0__esc__2_stringBase0 + 162
 l_fa44_level_specials__Q24zhud18_esc__2_unnamed_esc__2_zHud_cpp_esc__2_:
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x8025CC54
+	.4byte l_cba0__esc__2_stringBase0 + 180
 	.4byte 0x00000001
-	.4byte 0x8025CC6A
+	.4byte l_cba0__esc__2_stringBase0 + 202
 	.4byte 0x0000000B
-	.4byte 0x8025CC85
+	.4byte l_cba0__esc__2_stringBase0 + 229
 	.4byte 0x00000005
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x8025CC9A
+	.4byte l_cba0__esc__2_stringBase0 + 250
 	.4byte 0x00000006
-	.4byte 0x8025CCB1
+	.4byte l_cba0__esc__2_stringBase0 + 273
 	.4byte 0x00000004
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x8025CCCE
+	.4byte l_cba0__esc__2_stringBase0 + 302
 	.4byte 0x00000006
-	.4byte 0x8025CCE9
+	.4byte l_cba0__esc__2_stringBase0 + 329
 	.4byte 0x00000004
 	.4byte 0x00000000
 	.4byte 0x00000000

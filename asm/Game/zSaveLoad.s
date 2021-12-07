@@ -4651,205 +4651,205 @@ zSaveLoadUITable:
 	.4byte l_e9c0__esc__2_stringBase0 /* 0x8025E9C0 */
 	.4byte 0x00000001
 	.4byte 0x00000000
-	.4byte 0x8025E9D2
+	.4byte l_e9c0__esc__2_stringBase0 + 18
 	.4byte 0x00000002
 	.4byte 0x00000000
-	.4byte 0x8025E9E4
+	.4byte l_e9c0__esc__2_stringBase0 + 36
 	.4byte 0x00000003
 	.4byte 0x00000000
-	.4byte 0x8025E9FB
+	.4byte l_e9c0__esc__2_stringBase0 + 59
 	.4byte 0x00000004
 	.4byte 0x00000000
-	.4byte 0x8025EA0F
+	.4byte l_e9c0__esc__2_stringBase0 + 79
 	.4byte 0x00000005
 	.4byte 0x00000000
-	.4byte 0x8025EA1B
+	.4byte l_e9c0__esc__2_stringBase0 + 91
 	.4byte 0x00000006
 	.4byte 0x00000000
-	.4byte 0x8025EA27
+	.4byte l_e9c0__esc__2_stringBase0 + 103
 	.4byte 0x00000007
 	.4byte 0x00000000
-	.4byte 0x8025EA35
+	.4byte l_e9c0__esc__2_stringBase0 + 117
 	.4byte 0x00000008
 	.4byte 0x00000000
-	.4byte 0x8025EA43
+	.4byte l_e9c0__esc__2_stringBase0 + 131
 	.4byte 0x00000009
 	.4byte 0x00000000
-	.4byte 0x8025EA51
+	.4byte l_e9c0__esc__2_stringBase0 + 145
 	.4byte 0x0000000A
 	.4byte 0x00000000
-	.4byte 0x8025EA5F
+	.4byte l_e9c0__esc__2_stringBase0 + 159
 	.4byte 0x0000000B
 	.4byte 0x00000000
-	.4byte 0x8025EA6D
+	.4byte l_e9c0__esc__2_stringBase0 + 173
 	.4byte 0x0000000C
 	.4byte 0x00000000
-	.4byte 0x8025EA7B
+	.4byte l_e9c0__esc__2_stringBase0 + 187
 	.4byte 0x0000000D
 	.4byte 0x00000000
-	.4byte 0x8025EA89
+	.4byte l_e9c0__esc__2_stringBase0 + 201
 	.4byte 0x0000000E
 	.4byte 0x00000000
-	.4byte 0x8025EA97
+	.4byte l_e9c0__esc__2_stringBase0 + 215
 	.4byte 0x0000000F
 	.4byte 0x00000000
-	.4byte 0x8025EAA8
+	.4byte l_e9c0__esc__2_stringBase0 + 232
 	.4byte 0x00000010
 	.4byte 0x00000000
-	.4byte 0x8025EAB6
+	.4byte l_e9c0__esc__2_stringBase0 + 246
 	.4byte 0x00000011
 	.4byte 0x00000000
-	.4byte 0x8025EAC3
+	.4byte l_e9c0__esc__2_stringBase0 + 259
 	.4byte 0x00000012
 	.4byte 0x00000000
-	.4byte 0x8025EAD1
+	.4byte l_e9c0__esc__2_stringBase0 + 273
 	.4byte 0x00000013
 	.4byte 0x00000000
-	.4byte 0x8025EAD1
+	.4byte l_e9c0__esc__2_stringBase0 + 273
 	.4byte 0x00000014
 	.4byte 0x00000000
-	.4byte 0x8025EADC
+	.4byte l_e9c0__esc__2_stringBase0 + 284
 	.4byte 0x00000015
 	.4byte 0x00000000
-	.4byte 0x8025EAED
+	.4byte l_e9c0__esc__2_stringBase0 + 301
 	.4byte 0x00000016
 	.4byte 0x00000000
-	.4byte 0x8025EAFF
+	.4byte l_e9c0__esc__2_stringBase0 + 319
 	.4byte 0x00000017
 	.4byte 0x00000000
-	.4byte 0x8025EB11
+	.4byte l_e9c0__esc__2_stringBase0 + 337
 	.4byte 0x00000018
 	.4byte 0x00000000
-	.4byte 0x8025EB18
+	.4byte l_e9c0__esc__2_stringBase0 + 344
 	.4byte 0x00000019
 	.4byte 0x00000000
-	.4byte 0x8025EB1F
+	.4byte l_e9c0__esc__2_stringBase0 + 351
 	.4byte 0x0000001A
 	.4byte 0x00000000
-	.4byte 0x8025EB2D
+	.4byte l_e9c0__esc__2_stringBase0 + 365
 	.4byte 0x0000001B
 	.4byte 0x00000000
-	.4byte 0x8025EB3B
+	.4byte l_e9c0__esc__2_stringBase0 + 379
 	.4byte 0x0000001C
 	.4byte 0x00000000
-	.4byte 0x8025EB49
+	.4byte l_e9c0__esc__2_stringBase0 + 393
 	.4byte 0x0000001D
 	.4byte 0x00000000
-	.4byte 0x8025EB57
+	.4byte l_e9c0__esc__2_stringBase0 + 407
 	.4byte 0x0000001E
 	.4byte 0x00000000
-	.4byte 0x8025EB65
+	.4byte l_e9c0__esc__2_stringBase0 + 421
 	.4byte 0x0000001F
 	.4byte 0x00000000
-	.4byte 0x8025EB73
+	.4byte l_e9c0__esc__2_stringBase0 + 435
 	.4byte 0x00000020
 	.4byte 0x00000000
-	.4byte 0x8025EB81
+	.4byte l_e9c0__esc__2_stringBase0 + 449
 	.4byte 0x00000021
 	.4byte 0x00000000
-	.4byte 0x8025EB8F
+	.4byte l_e9c0__esc__2_stringBase0 + 463
 	.4byte 0x00000022
 	.4byte 0x00000000
-	.4byte 0x8025EBA0
+	.4byte l_e9c0__esc__2_stringBase0 + 480
 	.4byte 0x00000023
 	.4byte 0x00000000
-	.4byte 0x8025EBAD
+	.4byte l_e9c0__esc__2_stringBase0 + 493
 	.4byte 0x00000024
 	.4byte 0x00000000
-	.4byte 0x8025EBC2
+	.4byte l_e9c0__esc__2_stringBase0 + 514
 	.4byte 0x00000025
 	.4byte 0x00000000
-	.4byte 0x8025EBD0
+	.4byte l_e9c0__esc__2_stringBase0 + 528
 	.4byte 0x00000026
 	.4byte 0x00000000
-	.4byte 0x8025EBDB
+	.4byte l_e9c0__esc__2_stringBase0 + 539
 	.4byte 0x00000027
 	.4byte 0x00000000
-	.4byte 0x8025EBEA
+	.4byte l_e9c0__esc__2_stringBase0 + 554
 	.4byte 0x00000028
 	.4byte 0x00000000
-	.4byte 0x8025EBFB
+	.4byte l_e9c0__esc__2_stringBase0 + 571
 	.4byte 0x00000029
 	.4byte 0x00000000
-	.4byte 0x8025EC0C
+	.4byte l_e9c0__esc__2_stringBase0 + 588
 	.4byte 0x0000002A
 	.4byte 0x00000000
-	.4byte 0x8025EC1F
+	.4byte l_e9c0__esc__2_stringBase0 + 607
 	.4byte 0x0000002B
 	.4byte 0x00000000
-	.4byte 0x8025EC2A
+	.4byte l_e9c0__esc__2_stringBase0 + 618
 	.4byte 0x0000002C
 	.4byte 0x00000000
-	.4byte 0x8025EC35
+	.4byte l_e9c0__esc__2_stringBase0 + 629
 	.4byte 0x0000002D
 	.4byte 0x00000000
-	.4byte 0x8025EC44
+	.4byte l_e9c0__esc__2_stringBase0 + 644
 	.4byte 0x0000002E
 	.4byte 0x00000000
-	.4byte 0x8025EC59
+	.4byte l_e9c0__esc__2_stringBase0 + 665
 	.4byte 0x0000002F
 	.4byte 0x00000000
-	.4byte 0x8025EC68
+	.4byte l_e9c0__esc__2_stringBase0 + 680
 	.4byte 0x00000030
 	.4byte 0x00000000
-	.4byte 0x8025EC7D
+	.4byte l_e9c0__esc__2_stringBase0 + 701
 	.4byte 0x00000031
 	.4byte 0x00000000
-	.4byte 0x8025EC91
+	.4byte l_e9c0__esc__2_stringBase0 + 721
 	.4byte 0x00000032
 	.4byte 0x00000000
-	.4byte 0x8025ECA5
+	.4byte l_e9c0__esc__2_stringBase0 + 741
 	.4byte 0x00000033
 	.4byte 0x00000000
-	.4byte 0x8025ECB5
+	.4byte l_e9c0__esc__2_stringBase0 + 757
 	.4byte 0x00000034
 	.4byte 0x00000000
-	.4byte 0x8025ECC4
+	.4byte l_e9c0__esc__2_stringBase0 + 772
 	.4byte 0x00000035
 	.4byte 0x00000000
-	.4byte 0x8025ECD3
+	.4byte l_e9c0__esc__2_stringBase0 + 787
 	.4byte 0x00000036
 	.4byte 0x00000000
-	.4byte 0x8025ECE3
+	.4byte l_e9c0__esc__2_stringBase0 + 803
 	.4byte 0x00000037
 	.4byte 0x00000000
-	.4byte 0x8025ECF4
+	.4byte l_e9c0__esc__2_stringBase0 + 820
 	.4byte 0x00000038
 	.4byte 0x00000000
-	.4byte 0x8025ED04
+	.4byte l_e9c0__esc__2_stringBase0 + 836
 	.4byte 0x00000039
 	.4byte 0x00000000
-	.4byte 0x8025ED14
+	.4byte l_e9c0__esc__2_stringBase0 + 852
 	.4byte 0x0000003A
 	.4byte 0x00000000
-	.4byte 0x8025ED24
+	.4byte l_e9c0__esc__2_stringBase0 + 868
 	.4byte 0x0000003B
 	.4byte 0x00000000
-	.4byte 0x8025ED34
+	.4byte l_e9c0__esc__2_stringBase0 + 884
 	.4byte 0x0000003C
 	.4byte 0x00000000
-	.4byte 0x8025ED44
+	.4byte l_e9c0__esc__2_stringBase0 + 900
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
 /* SPECULATION: link order */
 .global thumbIconMap
 thumbIconMap:
-	.4byte 0x8025ED59
-	.4byte 0x8025ED65
-	.4byte 0x8025ED71
-	.4byte 0x8025ED7D
-	.4byte 0x8025ED89
-	.4byte 0x8025ED95
-	.4byte 0x8025EDA1
-	.4byte 0x8025EDAD
-	.4byte 0x8025EDB9
-	.4byte 0x8025EDC5
-	.4byte 0x8025EDD1
-	.4byte 0x8025EDDD
-	.4byte 0x8025EDE9
-	.4byte 0x8025ED59
-	.4byte 0x8025ED59
+	.4byte l_e9c0__esc__2_stringBase0 + 921
+	.4byte l_e9c0__esc__2_stringBase0 + 933
+	.4byte l_e9c0__esc__2_stringBase0 + 945
+	.4byte l_e9c0__esc__2_stringBase0 + 957
+	.4byte l_e9c0__esc__2_stringBase0 + 969
+	.4byte l_e9c0__esc__2_stringBase0 + 981
+	.4byte l_e9c0__esc__2_stringBase0 + 993
+	.4byte l_e9c0__esc__2_stringBase0 + 1005
+	.4byte l_e9c0__esc__2_stringBase0 + 1017
+	.4byte l_e9c0__esc__2_stringBase0 + 1029
+	.4byte l_e9c0__esc__2_stringBase0 + 1041
+	.4byte l_e9c0__esc__2_stringBase0 + 1053
+	.4byte l_e9c0__esc__2_stringBase0 + 1065
+	.4byte l_e9c0__esc__2_stringBase0 + 921
+	.4byte l_e9c0__esc__2_stringBase0 + 921
 l_0444__esc__2_1523:
 	.4byte lbl_800AEEAC /* 0x800AEEAC */
 	.4byte lbl_800AEEBC /* 0x800AEEBC */

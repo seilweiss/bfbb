@@ -22409,6 +22409,7 @@ l_73b4__esc__2_stringBase0:
 	.4byte 0x54455220
 	.4byte 0x30310000
 	.4byte 0x00000000
+.global l_73d8__esc__2_stringBase0
 l_73d8__esc__2_stringBase0:
 	.4byte 0x4E50435F
 	.4byte 0x54595045

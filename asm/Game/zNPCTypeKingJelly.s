@@ -10465,34 +10465,34 @@ l_9da8_sound_name__31_esc__2_unnamed_esc__2_zNPCTypeKingJelly_cpp_esc__2_:
 	.4byte l_d8b0__esc__2_stringBase0 /* 0x8026D8B0 */
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x8026D8BF
+	.4byte l_d8b0__esc__2_stringBase0 + 15
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x8026D8C8
+	.4byte l_d8b0__esc__2_stringBase0 + 24
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x8026D8D2
+	.4byte l_d8b0__esc__2_stringBase0 + 34
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x8026D8BF
+	.4byte l_d8b0__esc__2_stringBase0 + 15
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x8026D8DB
-	.4byte 0x8026D8E4
+	.4byte l_d8b0__esc__2_stringBase0 + 43
+	.4byte l_d8b0__esc__2_stringBase0 + 52
 	.4byte 0x00000000
-	.4byte 0x8026D8ED
-	.4byte 0x00000000
-	.4byte 0x00000000
-	.4byte 0x8026D8F4
+	.4byte l_d8b0__esc__2_stringBase0 + 61
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x8026D8FB
+	.4byte l_d8b0__esc__2_stringBase0 + 68
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x8026D903
+	.4byte l_d8b0__esc__2_stringBase0 + 75
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x8026D90C
+	.4byte l_d8b0__esc__2_stringBase0 + 83
+	.4byte 0x00000000
+	.4byte 0x00000000
+	.4byte l_d8b0__esc__2_stringBase0 + 92
 	.4byte 0x00000000
 	.4byte 0x00000000
 l_9e2c_boss_cam__31_esc__2_unnamed_esc__2_zNPCTypeKingJelly_cpp_esc__2_:

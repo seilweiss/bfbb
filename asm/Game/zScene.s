@@ -5207,72 +5207,72 @@ xQuickCullInit__FPC4xBox:
 /* 800B5224 000B2024  4E 80 00 20 */	blr 
 .section .rodata
 l_ef60_dynamic_types__20_esc__2_unnamed_esc__2_zScene_cpp_esc__2_:
-	.4byte 0x8025F2A0
+	.4byte l_f078__esc__2_stringBase0 + 552
 	.4byte 0x00000031
 	.4byte 0x00000140
 	.4byte 0x01000000
 	.4byte zEntTeleportBox_Init__FR5xBaseR9xDynAssetUl /* 0x8012C3CC */
-	.4byte 0x8025F2B5
+	.4byte l_f078__esc__2_stringBase0 + 573
 	.4byte 0x00000032
 	.4byte 0x00000030
 	.4byte 0x00000000
 	.4byte zBusStop_Init__FR5xBaseR9xDynAssetUl /* 0x8012D888 */
-	.4byte 0x8025F2C9
+	.4byte l_f078__esc__2_stringBase0 + 593
 	.4byte 0x00000033
 	.4byte 0x000000D0
 	.4byte 0x00000000
 	.4byte load__8ztextboxFR5xBaseR9xDynAssetUl /* 0x801348AC */
-	.4byte 0x8025F2DE
+	.4byte l_f078__esc__2_stringBase0 + 614
 	.4byte 0x00000034
 	.4byte 0x0000003C
 	.4byte 0x00000000
 	.4byte load__8ztalkboxFR5xBaseR9xDynAssetUl /* 0x8013305C */
-	.4byte 0x8025F2F3
+	.4byte l_f078__esc__2_stringBase0 + 635
 	.4byte 0x00000035
 	.4byte 0x00000024
 	.4byte 0x00000000
 	.4byte load__8ztaskboxFR5xBaseR9xDynAssetUl /* 0x80134ECC */
-	.4byte 0x8025F308
+	.4byte l_f078__esc__2_stringBase0 + 656
 	.4byte 0x00000036
 	.4byte 0x00000048
 	.4byte 0x00000000
 	.4byte xBoulderGenerator_Init__FR5xBaseR9xDynAssetUl /* 0x801210BC */
-	.4byte 0x8025F325
+	.4byte l_f078__esc__2_stringBase0 + 685
 	.4byte 0x00000039
 	.4byte 0x00000038
 	.4byte 0x00000000
 	.4byte zTaxi_Init__FR5xBaseR9xDynAssetUl /* 0x80172034 */
-	.4byte 0x8025F336
+	.4byte l_f078__esc__2_stringBase0 + 702
 	.4byte 0x0000003A
 	.4byte 0x0000009C
 	.4byte 0x00000000
 	.4byte load__Q24xhud12model_widgetFR5xBaseR9xDynAssetUl /* 0x8002FD10 */
-	.4byte 0x8025F340
+	.4byte l_f078__esc__2_stringBase0 + 712
 	.4byte 0x0000003B
 	.4byte 0x0000015C
 	.4byte 0x00000000
 	.4byte load__Q24xhud17font_meter_widgetFR5xBaseR9xDynAssetUl /* 0x8002F008 */
-	.4byte 0x8025F34F
+	.4byte l_f078__esc__2_stringBase0 + 727
 	.4byte 0x0000003C
 	.4byte 0x0000019C
 	.4byte 0x00000000
 	.4byte load__Q24xhud17unit_meter_widgetFR5xBaseR9xDynAssetUl /* 0x8002FF80 */
-	.4byte 0x8025F35E
+	.4byte l_f078__esc__2_stringBase0 + 742
 	.4byte 0x00000047
 	.4byte 0x0000017C
 	.4byte 0x00000000
 	.4byte load__Q24xhud11text_widgetFR5xBaseR9xDynAssetUl /* 0x80195428 */
-	.4byte 0x8025F367
+	.4byte l_f078__esc__2_stringBase0 + 751
 	.4byte 0x0000003D
 	.4byte 0x00000018
 	.4byte 0x00000000
 	.4byte load__12bungee_stateFR5xBaseR9xDynAssetUl /* 0x801117F8 */
-	.4byte 0x8025F37F
+	.4byte l_f078__esc__2_stringBase0 + 775
 	.4byte 0x0000003E
 	.4byte 0x00000014
 	.4byte 0x00000000
 	.4byte zCameraFly_Init__FR5xBaseR9xDynAssetUl /* 0x8017C0A0 */
-	.4byte 0x8025F396
+	.4byte l_f078__esc__2_stringBase0 + 798
 	.4byte 0x00000045
 	.4byte 0x00000014
 	.4byte 0x00000000
@@ -5566,282 +5566,282 @@ l_f078__esc__2_stringBase0:
 .section .data
 l_0528_sLevelTable:
 	.4byte l_f078__esc__2_stringBase0 /* 0x8025F078 */
-	.4byte 0x8025F086
-	.4byte 0x8025F089
-	.4byte 0x8025F09A
-	.4byte 0x8025F09D
-	.4byte 0x8025F0B4
-	.4byte 0x8025F0B7
-	.4byte 0x8025F0C2
-	.4byte 0x8025F0C5
-	.4byte 0x8025F0CF
-	.4byte 0x8025F0D2
-	.4byte 0x8025F0DE
-	.4byte 0x8025F0E1
-	.4byte 0x8025F0EB
-	.4byte 0x8025F0EE
-	.4byte 0x8025F0FC
-	.4byte 0x8025F0FF
-	.4byte 0x8025F10F
-	.4byte 0x8025F112
-	.4byte 0x8025F11E
-	.4byte 0x8025F121
-	.4byte 0x8025F13D
-	.4byte 0x8025F140
-	.4byte 0x8025F152
-	.4byte 0x8025F155
-	.4byte 0x8025F165
-	.4byte 0x8025F168
-	.4byte 0x8025F173
-	.4byte 0x8025F176
-	.4byte 0x8025F17C
+	.4byte l_f078__esc__2_stringBase0 + 14
+	.4byte l_f078__esc__2_stringBase0 + 17
+	.4byte l_f078__esc__2_stringBase0 + 34
+	.4byte l_f078__esc__2_stringBase0 + 37
+	.4byte l_f078__esc__2_stringBase0 + 60
+	.4byte l_f078__esc__2_stringBase0 + 63
+	.4byte l_f078__esc__2_stringBase0 + 74
+	.4byte l_f078__esc__2_stringBase0 + 77
+	.4byte l_f078__esc__2_stringBase0 + 87
+	.4byte l_f078__esc__2_stringBase0 + 90
+	.4byte l_f078__esc__2_stringBase0 + 102
+	.4byte l_f078__esc__2_stringBase0 + 105
+	.4byte l_f078__esc__2_stringBase0 + 115
+	.4byte l_f078__esc__2_stringBase0 + 118
+	.4byte l_f078__esc__2_stringBase0 + 132
+	.4byte l_f078__esc__2_stringBase0 + 135
+	.4byte l_f078__esc__2_stringBase0 + 151
+	.4byte l_f078__esc__2_stringBase0 + 154
+	.4byte l_f078__esc__2_stringBase0 + 166
+	.4byte l_f078__esc__2_stringBase0 + 169
+	.4byte l_f078__esc__2_stringBase0 + 197
+	.4byte l_f078__esc__2_stringBase0 + 200
+	.4byte l_f078__esc__2_stringBase0 + 218
+	.4byte l_f078__esc__2_stringBase0 + 221
+	.4byte l_f078__esc__2_stringBase0 + 237
+	.4byte l_f078__esc__2_stringBase0 + 240
+	.4byte l_f078__esc__2_stringBase0 + 251
+	.4byte l_f078__esc__2_stringBase0 + 254
+	.4byte l_f078__esc__2_stringBase0 + 260
 l_05a0_sInitTable:
-	.4byte 0x8025F17F
+	.4byte l_f078__esc__2_stringBase0 + 263
 	.4byte 0x00000001
 	.4byte 0x54524947
 	.4byte 0x00000130
 	.4byte zSceneInitFunc_DefaultEnt__FP6zSceneP24zSceneObjectInstanceDescUi /* 0x800B0D08 */
 	.4byte zEntTriggerInit__FPvPv /* 0x80092074 */
 	.4byte 0x00000000
-	.4byte 0x8025F184
+	.4byte l_f078__esc__2_stringBase0 + 268
 	.4byte 0x0000000D
 	.4byte 0x4D565054
 	.4byte 0x00000030
 	.4byte zSceneInitFunc_MovePoint__FP6zSceneP24zSceneObjectInstanceDescUi /* 0x800B0EF0 */
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x8025F18F
+	.4byte l_f078__esc__2_stringBase0 + 279
 	.4byte 0x00000004
 	.4byte 0x504B5550
 	.4byte 0x00000268
 	.4byte zSceneInitFunc_DefaultEnt__FP6zSceneP24zSceneObjectInstanceDescUi /* 0x800B0D08 */
 	.4byte zEntPickupInit__FPvPv /* 0x80062A0C */
 	.4byte 0x00000000
-	.4byte 0x8025F196
+	.4byte l_f078__esc__2_stringBase0 + 286
 	.4byte 0x0000000B
 	.4byte 0x53494D50
 	.4byte 0x000000E4
 	.4byte zSceneInitFunc_DefaultEnt__FP6zSceneP24zSceneObjectInstanceDescUi /* 0x800B0D08 */
 	.4byte zEntSimpleObj_Init__FPvPv /* 0x800918C4 */
 	.4byte 0x00000000
-	.4byte 0x8025F19D
+	.4byte l_f078__esc__2_stringBase0 + 293
 	.4byte 0x00000027
 	.4byte 0x50415253
 	.4byte 0x0000002C
 	.4byte zSceneInitFunc_Default__FP6zSceneP24zSceneObjectInstanceDescUi /* 0x800B0E08 */
 	.4byte xParSysInit__FPvPv /* 0x80116D50 */
 	.4byte 0x00000000
-	.4byte 0x8025F1AC
+	.4byte l_f078__esc__2_stringBase0 + 308
 	.4byte 0x00000026
 	.4byte 0x50415245
 	.4byte 0x00000078
 	.4byte zSceneInitFunc_Default__FP6zSceneP24zSceneObjectInstanceDescUi /* 0x800B0E08 */
 	.4byte xParEmitterInit__FPvPv /* 0x801177CC */
 	.4byte 0x00000000
-	.4byte 0x8025F1BC
+	.4byte l_f078__esc__2_stringBase0 + 324
 	.4byte 0x0000003F
 	.4byte 0x5452434B
 	.4byte 0x000000E4
 	.4byte zSceneInitFunc_DefaultEnt__FP6zSceneP24zSceneObjectInstanceDescUi /* 0x800B0D08 */
 	.4byte zEntTrackPhysics_Init__FPvPv /* 0x800918A0 */
 	.4byte 0x00000000
-	.4byte 0x8025F1C2
+	.4byte l_f078__esc__2_stringBase0 + 330
 	.4byte 0x00000006
 	.4byte 0x504C4154
 	.4byte 0x000001E8
 	.4byte zSceneInitFunc_DefaultEnt__FP6zSceneP24zSceneObjectInstanceDescUi /* 0x800B0D08 */
 	.4byte zPlatform_Init__FPvPv /* 0x800A8F14 */
 	.4byte 0x00000000
-	.4byte 0x8025F1CB
+	.4byte l_f078__esc__2_stringBase0 + 339
 	.4byte 0x00000012
 	.4byte 0x50454E44
 	.4byte 0x0000014C
 	.4byte zSceneInitFunc_DefaultEnt__FP6zSceneP24zSceneObjectInstanceDescUi /* 0x800B0D08 */
 	.4byte zPendulum_Init__FPvPv /* 0x800A8868 */
 	.4byte 0x00000000
-	.4byte 0x8025F1D4
+	.4byte l_f078__esc__2_stringBase0 + 348
 	.4byte 0x00000017
 	.4byte 0x48414E47
 	.4byte 0x0000012C
 	.4byte zSceneInitFunc_DefaultEnt__FP6zSceneP24zSceneObjectInstanceDescUi /* 0x800B0D08 */
 	.4byte zEntHangable_Init__FPvPv /* 0x80061990 */
 	.4byte 0x00000000
-	.4byte 0x8025F1DB
+	.4byte l_f078__esc__2_stringBase0 + 355
 	.4byte 0x0000001B
 	.4byte 0x44535452
 	.4byte 0x00000114
 	.4byte zSceneInitFunc_DefaultEnt__FP6zSceneP24zSceneObjectInstanceDescUi /* 0x800B0D08 */
 	.4byte zEntDestructObj_Init__FPvPv /* 0x80060B6C */
 	.4byte 0x00000000
-	.4byte 0x8025F1E7
+	.4byte l_f078__esc__2_stringBase0 + 367
 	.4byte 0x0000002F
 	.4byte 0x424F554C
 	.4byte 0x000001E8
 	.4byte zSceneInitFunc_DefaultEnt__FP6zSceneP24zSceneObjectInstanceDescUi /* 0x800B0D08 */
 	.4byte xEntBoulder_Init__FPvPv /* 0x8011F244 */
 	.4byte 0x00000000
-	.4byte 0x8025F1EF
+	.4byte l_f078__esc__2_stringBase0 + 375
 	.4byte 0x0000002B
 	.4byte 0x56494C20
 	.4byte 0x00000000
 	.4byte zSceneInitFunc_SBNPC__FP6zSceneP24zSceneObjectInstanceDescUi /* 0x800B0FC4 */
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x8025F1F3
+	.4byte l_f078__esc__2_stringBase0 + 379
 	.4byte 0x00000018
 	.4byte 0x4255544E
 	.4byte 0x00000168
 	.4byte zSceneInitFunc_DefaultEnt__FP6zSceneP24zSceneObjectInstanceDescUi /* 0x800B0D08 */
 	.4byte zEntButton_Init__FPvPv /* 0x800564EC */
 	.4byte 0x00000000
-	.4byte 0x8025F1FA
+	.4byte l_f078__esc__2_stringBase0 + 386
 	.4byte 0x00000003
 	.4byte 0x504C5952
 	.4byte 0x000000D4
 	.4byte zSceneInitFunc_Player__FP6zSceneP24zSceneObjectInstanceDescUi /* 0x800B1088 */
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x8025F201
+	.4byte l_f078__esc__2_stringBase0 + 393
 	.4byte 0x0000000E
 	.4byte 0x54494D52
 	.4byte 0x0000001C
 	.4byte zSceneInitFunc_Default__FP6zSceneP24zSceneObjectInstanceDescUi /* 0x800B0E08 */
 	.4byte xTimerInit__FPvPv /* 0x8004D284 */
 	.4byte 0x00000000
-	.4byte 0x8025F207
+	.4byte l_f078__esc__2_stringBase0 + 399
 	.4byte 0x00000016
 	.4byte 0x434E5452
 	.4byte 0x00000018
 	.4byte zSceneInitFunc_Default__FP6zSceneP24zSceneObjectInstanceDescUi /* 0x800B0E08 */
 	.4byte 0x80015B68
 	.4byte 0x00000000
-	.4byte 0x8025F20F
+	.4byte l_f078__esc__2_stringBase0 + 407
 	.4byte 0x00000013
 	.4byte 0x53465820
 	.4byte 0x0000001C
 	.4byte zSceneInitFunc_Default__FP6zSceneP24zSceneObjectInstanceDescUi /* 0x800B0E08 */
 	.4byte xSFXInit__FPvPv /* 0x80044124 */
 	.4byte 0x00000000
-	.4byte 0x8025F213
+	.4byte l_f078__esc__2_stringBase0 + 411
 	.4byte 0x00000011
 	.4byte 0x47525550
 	.4byte 0x00000020
 	.4byte zSceneInitFunc_Default__FP6zSceneP24zSceneObjectInstanceDescUi /* 0x800B0E08 */
 	.4byte lbl_8002CAA0 /* 0x8002CAA0 */
 	.4byte 0x00000000
-	.4byte 0x8025F219
+	.4byte l_f078__esc__2_stringBase0 + 417
 	.4byte 0x00000010
 	.4byte 0x504F5254
 	.4byte 0x00000014
 	.4byte zSceneInitFunc_Default__FP6zSceneP24zSceneObjectInstanceDescUi /* 0x800B0E08 */
 	.4byte zPortalInit__FPvPv /* 0x800AC8A0 */
 	.4byte 0x00000000
-	.4byte 0x8025F220
+	.4byte l_f078__esc__2_stringBase0 + 424
 	.4byte 0x00000007
 	.4byte 0x43414D20
 	.4byte 0x00000014
 	.4byte zSceneInitFunc_Camera__FP6zSceneP24zSceneObjectInstanceDescUi /* 0x800B116C */
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x8025F227
+	.4byte l_f078__esc__2_stringBase0 + 431
 	.4byte 0x0000001A
 	.4byte 0x53555246
 	.4byte 0x00000028
 	.4byte zSceneInitFunc_Surface__FP6zSceneP24zSceneObjectInstanceDescUi /* 0x800B1238 */
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x8025F22F
+	.4byte l_f078__esc__2_stringBase0 + 439
 	.4byte 0x0000001C
 	.4byte 0x47555354
 	.4byte 0x00000024
 	.4byte zSceneInitFunc_Gust__FP6zSceneP24zSceneObjectInstanceDescUi /* 0x800B12D4 */
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x8025F234
+	.4byte l_f078__esc__2_stringBase0 + 444
 	.4byte 0x0000001D
 	.4byte 0x564F4C55
 	.4byte 0x00000014
 	.4byte zSceneInitFunc_Volume__FP6zSceneP24zSceneObjectInstanceDescUi /* 0x800B1374 */
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x8025F23B
+	.4byte l_f078__esc__2_stringBase0 + 451
 	.4byte 0x0000001F
 	.4byte 0x434F4E44
 	.4byte 0x00000014
 	.4byte zSceneInitFunc_Default__FP6zSceneP24zSceneObjectInstanceDescUi /* 0x800B0E08 */
 	.4byte zConditionalInit__FPvPv /* 0x80052558 */
 	.4byte 0x00000000
-	.4byte 0x8025F247
+	.4byte l_f078__esc__2_stringBase0 + 463
 	.4byte 0x00000023
 	.4byte 0x4C4F424D
 	.4byte 0x00000000
 	.4byte zSceneInitFunc_LobMaster__FP6zSceneP24zSceneObjectInstanceDescUi /* 0x800B141C */
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x8025F252
+	.4byte l_f078__esc__2_stringBase0 + 474
 	.4byte 0x00000005
 	.4byte 0x454E5620
 	.4byte 0x00000014
 	.4byte zSceneInitFunc_Default__FP6zSceneP24zSceneObjectInstanceDescUi /* 0x800B0E08 */
 	.4byte zEnvInit__FPvPv /* 0x80092720 */
 	.4byte 0x00000000
-	.4byte 0x8025F256
+	.4byte l_f078__esc__2_stringBase0 + 478
 	.4byte 0x0000001E
 	.4byte 0x44504154
 	.4byte 0x00000000
 	.4byte zSceneInitFunc_Dispatcher__FP6zSceneP24zSceneObjectInstanceDescUi /* 0x800B1424 */
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x8025F261
+	.4byte l_f078__esc__2_stringBase0 + 489
 	.4byte 0x00000020
 	.4byte 0x55492020
 	.4byte 0x000000E4
 	.4byte zSceneInitFunc_DefaultEnt__FP6zSceneP24zSceneObjectInstanceDescUi /* 0x800B0D08 */
 	.4byte zUI_Init__FPvPv /* 0x800B9C54 */
 	.4byte 0x00000000
-	.4byte 0x8025F264
+	.4byte l_f078__esc__2_stringBase0 + 492
 	.4byte 0x00000021
 	.4byte 0x55494654
 	.4byte 0x000000FC
 	.4byte zSceneInitFunc_Default__FP6zSceneP24zSceneObjectInstanceDescUi /* 0x800B0E08 */
 	.4byte zUIFont_Init__FPvPv /* 0x800BC620 */
 	.4byte 0x00000000
-	.4byte 0x8025F26C
+	.4byte l_f078__esc__2_stringBase0 + 500
 	.4byte 0x00000024
 	.4byte 0x464F4720
 	.4byte 0x00000014
 	.4byte zSceneInitFunc_Default__FP6zSceneP24zSceneObjectInstanceDescUi /* 0x800B0E08 */
 	.4byte xFogInit__FPvPv /* 0x8001FDE4 */
 	.4byte 0x00000000
-	.4byte 0x8025F270
+	.4byte l_f078__esc__2_stringBase0 + 504
 	.4byte 0x00000025
 	.4byte 0x4C495445
 	.4byte 0x00000064
 	.4byte zSceneInitFunc_Default__FP6zSceneP24zSceneObjectInstanceDescUi /* 0x800B0E08 */
 	.4byte zLightInit__FPvPv /* 0x8009E0C8 */
 	.4byte 0x00000000
-	.4byte 0x8025F276
+	.4byte l_f078__esc__2_stringBase0 + 510
 	.4byte 0x00000028
 	.4byte 0x43534E4D
 	.4byte 0x00000024
 	.4byte zSceneInitFunc_Default__FP6zSceneP24zSceneObjectInstanceDescUi /* 0x800B0E08 */
 	.4byte zCutsceneMgrInit__FPvPv /* 0x80052874 */
 	.4byte 0x00000000
-	.4byte 0x8025F282
+	.4byte l_f078__esc__2_stringBase0 + 522
 	.4byte 0x00000029
 	.4byte 0x4547454E
 	.4byte 0x00000114
 	.4byte zSceneInitFunc_DefaultEnt__FP6zSceneP24zSceneObjectInstanceDescUi /* 0x800B0D08 */
 	.4byte zEGenerator_Init__FPvPv /* 0x80054200 */
 	.4byte 0x00000000
-	.4byte 0x8025F28D
+	.4byte l_f078__esc__2_stringBase0 + 533
 	.4byte 0x0000002A
 	.4byte 0x53435250
 	.4byte 0x0000001C
 	.4byte zSceneInitFunc_Default__FP6zSceneP24zSceneObjectInstanceDescUi /* 0x800B0E08 */
 	.4byte zScriptInit__FPvPv /* 0x800B5228 */
 	.4byte 0x00000000
-	.4byte 0x8025F294
+	.4byte l_f078__esc__2_stringBase0 + 540
 	.4byte 0x00000038
 	.4byte 0x4453434F
 	.4byte 0x00000098

@@ -599,9 +599,9 @@ l_fb50_sDefaultShadowVec:
 .global lightning_type_names
 lightning_type_names:
 	.4byte l_cd50__esc__2_stringBase0 /* 0x8025CD50 */
-	.4byte 0x8025CD55
-	.4byte 0x8025CD5E
-	.4byte 0x8025CD63
+	.4byte l_cd50__esc__2_stringBase0 + 5
+	.4byte l_cd50__esc__2_stringBase0 + 14
+	.4byte l_cd50__esc__2_stringBase0 + 19
 
 .section .bss
 l_8f88_sLight:

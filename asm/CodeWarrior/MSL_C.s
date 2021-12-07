@@ -19258,18 +19258,18 @@ lbl_802B6FB0:
 	.4byte 0xFCFDFEFF
 .global lbl_802B70B0
 lbl_802B70B0:
-	.4byte 0x80279A28
-	.4byte 0x80279A2A
-	.4byte 0x80279A2A
-	.4byte 0x80279A2A
-	.4byte 0x80279A2A
-	.4byte 0x80279A2A
-	.4byte 0x80279A2A
-	.4byte 0x80279A2A
-	.4byte 0x80279A2A
+	.4byte l_9a28__esc__2_stringBase0 + 0
+	.4byte l_9a28__esc__2_stringBase0 + 2
+	.4byte l_9a28__esc__2_stringBase0 + 2
+	.4byte l_9a28__esc__2_stringBase0 + 2
+	.4byte l_9a28__esc__2_stringBase0 + 2
+	.4byte l_9a28__esc__2_stringBase0 + 2
+	.4byte l_9a28__esc__2_stringBase0 + 2
+	.4byte l_9a28__esc__2_stringBase0 + 2
+	.4byte l_9a28__esc__2_stringBase0 + 2
 	.4byte 0x7F7F7F7F
 	.4byte 0x7F7F7F00
-	.4byte 0x80279A2A
+	.4byte l_9a28__esc__2_stringBase0 + 2
 	.4byte 0x7F7F7F7F
 	.4byte 0x7F7F7F00
 .global l_70e8__esc__2_1249
@@ -19614,6 +19614,7 @@ l_9a80__esc__2_212:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
+.global l_9aa0__esc__2_stringBase0
 l_9aa0__esc__2_stringBase0:
 	.4byte 0x00417267
 	.4byte 0x756D656E

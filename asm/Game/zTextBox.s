@@ -855,7 +855,7 @@ l_8f80_render_bk_table__22_esc__2_unnamed_esc__2_zTextBox_cpp_esc__2_:
 	.4byte render_bk_tex_scale__22_esc__2_unnamed_esc__2_zTextBox_cpp_esc__2_FRC8ztextbox /* 0x80133E7C */
 	.4byte render_bk_tex_wrap__22_esc__2_unnamed_esc__2_zTextBox_cpp_esc__2_FRC8ztextbox /* 0x8013409C */
 l_8f8c_new_tags__22_esc__2_unnamed_esc__2_zTextBox_cpp_esc__2_:
-	.4byte 0x8026CA44
+	.4byte l_ca44__esc__2_stringBase0 + 0
 	.4byte 0x00000008
 	.4byte parse_tag_blahblah__22_esc__2_unnamed_esc__2_zTextBox_cpp_esc__2_FRQ28xtextbox3jotRC8xtextboxRC8xtextboxRCQ28xtextbox9split_tag /* 0x801342A4 */
 	.4byte 0x00000000
@@ -887,16 +887,16 @@ g_hash_testanim:
 .global g_strz_testanim
 g_strz_testanim:
 	.4byte l_ca50__esc__2_stringBase0 /* 0x8026CA50 */
-	.4byte 0x8026CA58
-	.4byte 0x8026CA5F
-	.4byte 0x8026CA66
-	.4byte 0x8026CA6D
-	.4byte 0x8026CA74
-	.4byte 0x8026CA7B
-	.4byte 0x8026CA82
-	.4byte 0x8026CA89
-	.4byte 0x8026CA90
-	.4byte 0x8026CA97
+	.4byte l_ca50__esc__2_stringBase0 + 8
+	.4byte l_ca50__esc__2_stringBase0 + 15
+	.4byte l_ca50__esc__2_stringBase0 + 22
+	.4byte l_ca50__esc__2_stringBase0 + 29
+	.4byte l_ca50__esc__2_stringBase0 + 36
+	.4byte l_ca50__esc__2_stringBase0 + 43
+	.4byte l_ca50__esc__2_stringBase0 + 50
+	.4byte l_ca50__esc__2_stringBase0 + 57
+	.4byte l_ca50__esc__2_stringBase0 + 64
+	.4byte l_ca50__esc__2_stringBase0 + 71
 /* SPECULATION: link order */
 .global __vt__8zNPCTest
 __vt__8zNPCTest:
@@ -982,28 +982,28 @@ g_hash_subbanim:
 .global g_strz_subbanim
 g_strz_subbanim:
 	.4byte l_caa8__esc__2_stringBase0 /* 0x8026CAA8 */
-	.4byte 0x8026CAB0
-	.4byte 0x8026CAB7
-	.4byte 0x8026CABE
-	.4byte 0x8026CAC5
-	.4byte 0x8026CACE
-	.4byte 0x8026CAD7
-	.4byte 0x8026CAE0
-	.4byte 0x8026CAE8
-	.4byte 0x8026CAF1
-	.4byte 0x8026CAFA
-	.4byte 0x8026CB03
-	.4byte 0x8026CB0B
-	.4byte 0x8026CB1A
-	.4byte 0x8026CB27
-	.4byte 0x8026CB33
-	.4byte 0x8026CB3F
-	.4byte 0x8026CB50
-	.4byte 0x8026CB5F
-	.4byte 0x8026CB6D
-	.4byte 0x8026CB79
-	.4byte 0x8026CB89
-	.4byte 0x8026CB9A
+	.4byte l_caa8__esc__2_stringBase0 + 8
+	.4byte l_caa8__esc__2_stringBase0 + 15
+	.4byte l_caa8__esc__2_stringBase0 + 22
+	.4byte l_caa8__esc__2_stringBase0 + 29
+	.4byte l_caa8__esc__2_stringBase0 + 38
+	.4byte l_caa8__esc__2_stringBase0 + 47
+	.4byte l_caa8__esc__2_stringBase0 + 56
+	.4byte l_caa8__esc__2_stringBase0 + 64
+	.4byte l_caa8__esc__2_stringBase0 + 73
+	.4byte l_caa8__esc__2_stringBase0 + 82
+	.4byte l_caa8__esc__2_stringBase0 + 91
+	.4byte l_caa8__esc__2_stringBase0 + 99
+	.4byte l_caa8__esc__2_stringBase0 + 114
+	.4byte l_caa8__esc__2_stringBase0 + 127
+	.4byte l_caa8__esc__2_stringBase0 + 139
+	.4byte l_caa8__esc__2_stringBase0 + 151
+	.4byte l_caa8__esc__2_stringBase0 + 168
+	.4byte l_caa8__esc__2_stringBase0 + 183
+	.4byte l_caa8__esc__2_stringBase0 + 197
+	.4byte l_caa8__esc__2_stringBase0 + 209
+	.4byte l_caa8__esc__2_stringBase0 + 225
+	.4byte l_caa8__esc__2_stringBase0 + 242
 /* SPECULATION: link order */
 .global __vt__11zNPCSubBoss
 __vt__11zNPCSubBoss:
@@ -1144,83 +1144,83 @@ g_hash_bossanim:
 .global g_strz_bossanim
 g_strz_bossanim:
 	.4byte l_cbb8__esc__2_stringBase0 /* 0x8026CBB8 */
-	.4byte 0x8026CBC0
-	.4byte 0x8026CBC7
-	.4byte 0x8026CBCE
-	.4byte 0x8026CBD6
-	.4byte 0x8026CBDC
-	.4byte 0x8026CBE3
-	.4byte 0x8026CBEB
-	.4byte 0x8026CBF1
-	.4byte 0x8026CBF7
-	.4byte 0x8026CBFF
-	.4byte 0x8026CC07
-	.4byte 0x8026CC13
-	.4byte 0x8026CC1A
-	.4byte 0x8026CC21
-	.4byte 0x8026CC28
-	.4byte 0x8026CC2F
-	.4byte 0x8026CC35
-	.4byte 0x8026CC40
-	.4byte 0x8026CC4A
-	.4byte 0x8026CC53
-	.4byte 0x8026CC5B
-	.4byte 0x8026CC68
-	.4byte 0x8026CC77
-	.4byte 0x8026CC85
-	.4byte 0x8026CC94
-	.4byte 0x8026CCA2
-	.4byte 0x8026CCB2
-	.4byte 0x8026CCBE
-	.4byte 0x8026CCC7
-	.4byte 0x8026CCD3
-	.4byte 0x8026CCDF
-	.4byte 0x8026CCEB
-	.4byte 0x8026CCF2
-	.4byte 0x8026CCF9
-	.4byte 0x8026CD00
-	.4byte 0x8026CD08
-	.4byte 0x8026CD14
-	.4byte 0x8026CD1F
-	.4byte 0x8026CD2A
-	.4byte 0x8026CD36
-	.4byte 0x8026CD41
-	.4byte 0x8026CD4C
-	.4byte 0x8026CD56
-	.4byte 0x8026CD5F
-	.4byte 0x8026CD6B
-	.4byte 0x8026CD78
-	.4byte 0x8026CD85
-	.4byte 0x8026CD93
-	.4byte 0x8026CD9F
-	.4byte 0x8026CDAC
-	.4byte 0x8026CDBA
-	.4byte 0x8026CDC7
-	.4byte 0x8026CDD3
-	.4byte 0x8026CDE2
-	.4byte 0x8026CDF0
-	.4byte 0x8026CDFD
-	.4byte 0x8026CE0C
-	.4byte 0x8026CE1A
-	.4byte 0x8026CE27
-	.4byte 0x8026CE37
-	.4byte 0x8026CE46
-	.4byte 0x8026CE54
-	.4byte 0x8026CE61
-	.4byte 0x8026CE6D
-	.4byte 0x8026CE78
-	.4byte 0x8026CE82
-	.4byte 0x8026CE87
-	.4byte 0x8026CE92
-	.4byte 0x8026CE9C
-	.4byte 0x8026CEA5
-	.4byte 0x8026CEB7
-	.4byte 0x8026CEC8
-	.4byte 0x8026CED8
-	.4byte 0x8026CEEA
-	.4byte 0x8026CEFB
-	.4byte 0x8026CF0B
-	.4byte 0x8026CF19
+	.4byte l_cbb8__esc__2_stringBase0 + 8
+	.4byte l_cbb8__esc__2_stringBase0 + 15
+	.4byte l_cbb8__esc__2_stringBase0 + 22
+	.4byte l_cbb8__esc__2_stringBase0 + 30
+	.4byte l_cbb8__esc__2_stringBase0 + 36
+	.4byte l_cbb8__esc__2_stringBase0 + 43
+	.4byte l_cbb8__esc__2_stringBase0 + 51
+	.4byte l_cbb8__esc__2_stringBase0 + 57
+	.4byte l_cbb8__esc__2_stringBase0 + 63
+	.4byte l_cbb8__esc__2_stringBase0 + 71
+	.4byte l_cbb8__esc__2_stringBase0 + 79
+	.4byte l_cbb8__esc__2_stringBase0 + 91
+	.4byte l_cbb8__esc__2_stringBase0 + 98
+	.4byte l_cbb8__esc__2_stringBase0 + 105
+	.4byte l_cbb8__esc__2_stringBase0 + 112
+	.4byte l_cbb8__esc__2_stringBase0 + 119
+	.4byte l_cbb8__esc__2_stringBase0 + 125
+	.4byte l_cbb8__esc__2_stringBase0 + 136
+	.4byte l_cbb8__esc__2_stringBase0 + 146
+	.4byte l_cbb8__esc__2_stringBase0 + 155
+	.4byte l_cbb8__esc__2_stringBase0 + 163
+	.4byte l_cbb8__esc__2_stringBase0 + 176
+	.4byte l_cbb8__esc__2_stringBase0 + 191
+	.4byte l_cbb8__esc__2_stringBase0 + 205
+	.4byte l_cbb8__esc__2_stringBase0 + 220
+	.4byte l_cbb8__esc__2_stringBase0 + 234
+	.4byte l_cbb8__esc__2_stringBase0 + 250
+	.4byte l_cbb8__esc__2_stringBase0 + 262
+	.4byte l_cbb8__esc__2_stringBase0 + 271
+	.4byte l_cbb8__esc__2_stringBase0 + 283
+	.4byte l_cbb8__esc__2_stringBase0 + 295
+	.4byte l_cbb8__esc__2_stringBase0 + 307
+	.4byte l_cbb8__esc__2_stringBase0 + 314
+	.4byte l_cbb8__esc__2_stringBase0 + 321
+	.4byte l_cbb8__esc__2_stringBase0 + 328
+	.4byte l_cbb8__esc__2_stringBase0 + 336
+	.4byte l_cbb8__esc__2_stringBase0 + 348
+	.4byte l_cbb8__esc__2_stringBase0 + 359
+	.4byte l_cbb8__esc__2_stringBase0 + 370
+	.4byte l_cbb8__esc__2_stringBase0 + 382
+	.4byte l_cbb8__esc__2_stringBase0 + 393
+	.4byte l_cbb8__esc__2_stringBase0 + 404
+	.4byte l_cbb8__esc__2_stringBase0 + 414
+	.4byte l_cbb8__esc__2_stringBase0 + 423
+	.4byte l_cbb8__esc__2_stringBase0 + 435
+	.4byte l_cbb8__esc__2_stringBase0 + 448
+	.4byte l_cbb8__esc__2_stringBase0 + 461
+	.4byte l_cbb8__esc__2_stringBase0 + 475
+	.4byte l_cbb8__esc__2_stringBase0 + 487
+	.4byte l_cbb8__esc__2_stringBase0 + 500
+	.4byte l_cbb8__esc__2_stringBase0 + 514
+	.4byte l_cbb8__esc__2_stringBase0 + 527
+	.4byte l_cbb8__esc__2_stringBase0 + 539
+	.4byte l_cbb8__esc__2_stringBase0 + 554
+	.4byte l_cbb8__esc__2_stringBase0 + 568
+	.4byte l_cbb8__esc__2_stringBase0 + 581
+	.4byte l_cbb8__esc__2_stringBase0 + 596
+	.4byte l_cbb8__esc__2_stringBase0 + 610
+	.4byte l_cbb8__esc__2_stringBase0 + 623
+	.4byte l_cbb8__esc__2_stringBase0 + 639
+	.4byte l_cbb8__esc__2_stringBase0 + 654
+	.4byte l_cbb8__esc__2_stringBase0 + 668
+	.4byte l_cbb8__esc__2_stringBase0 + 681
+	.4byte l_cbb8__esc__2_stringBase0 + 693
+	.4byte l_cbb8__esc__2_stringBase0 + 704
+	.4byte l_cbb8__esc__2_stringBase0 + 714
+	.4byte l_cbb8__esc__2_stringBase0 + 719
+	.4byte l_cbb8__esc__2_stringBase0 + 730
+	.4byte l_cbb8__esc__2_stringBase0 + 740
+	.4byte l_cbb8__esc__2_stringBase0 + 749
+	.4byte l_cbb8__esc__2_stringBase0 + 767
+	.4byte l_cbb8__esc__2_stringBase0 + 784
+	.4byte l_cbb8__esc__2_stringBase0 + 800
+	.4byte l_cbb8__esc__2_stringBase0 + 818
+	.4byte l_cbb8__esc__2_stringBase0 + 835
+	.4byte l_cbb8__esc__2_stringBase0 + 851
+	.4byte l_cbb8__esc__2_stringBase0 + 865
 /* SPECULATION: link order */
 .global __vt__8zNPCBoss
 __vt__8zNPCBoss:

@@ -1849,11 +1849,11 @@ g_hash_xentanim:
 /* SPECULATION: link order */
 .global g_strz_xentanim
 g_strz_xentanim:
-	.4byte 0x80255062
-	.4byte 0x80255069
-	.4byte 0x80255070
-	.4byte 0x80255077
-	.4byte 0x8025507E
+	.4byte l_5024__esc__2_stringBase0 + 62
+	.4byte l_5024__esc__2_stringBase0 + 69
+	.4byte l_5024__esc__2_stringBase0 + 76
+	.4byte l_5024__esc__2_stringBase0 + 83
+	.4byte l_5024__esc__2_stringBase0 + 90
 l_c1a0__esc__2_1125:
 	.4byte lbl_80055C84 /* 0x80055C84 */
 	.4byte lbl_80055C84 /* 0x80055C84 */

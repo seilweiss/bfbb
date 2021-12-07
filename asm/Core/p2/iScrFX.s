@@ -479,28 +479,28 @@ l_2b00_sMBD:
 /* SPECULATION: link order */
 .global months
 months:
-	.4byte 0x802667A5
-	.4byte 0x802667AE
-	.4byte 0x802667B8
-	.4byte 0x802667BF
-	.4byte 0x802667C6
-	.4byte 0x802667CB
-	.4byte 0x802667D1
-	.4byte 0x802667D7
-	.4byte 0x802667DF
-	.4byte 0x802667EA
-	.4byte 0x802667F3
-	.4byte 0x802667FD
+	.4byte l_6610__esc__2_stringBase0 + 405
+	.4byte l_6610__esc__2_stringBase0 + 414
+	.4byte l_6610__esc__2_stringBase0 + 424
+	.4byte l_6610__esc__2_stringBase0 + 431
+	.4byte l_6610__esc__2_stringBase0 + 438
+	.4byte l_6610__esc__2_stringBase0 + 443
+	.4byte l_6610__esc__2_stringBase0 + 449
+	.4byte l_6610__esc__2_stringBase0 + 455
+	.4byte l_6610__esc__2_stringBase0 + 463
+	.4byte l_6610__esc__2_stringBase0 + 474
+	.4byte l_6610__esc__2_stringBase0 + 483
+	.4byte l_6610__esc__2_stringBase0 + 493
 /* SPECULATION: link order */
 .global dotw
 dotw:
-	.4byte 0x80266807
-	.4byte 0x8026680F
-	.4byte 0x80266817
-	.4byte 0x80266820
-	.4byte 0x8026682B
-	.4byte 0x80266835
-	.4byte 0x8026683D
+	.4byte l_6610__esc__2_stringBase0 + 503
+	.4byte l_6610__esc__2_stringBase0 + 511
+	.4byte l_6610__esc__2_stringBase0 + 519
+	.4byte l_6610__esc__2_stringBase0 + 528
+	.4byte l_6610__esc__2_stringBase0 + 539
+	.4byte l_6610__esc__2_stringBase0 + 549
+	.4byte l_6610__esc__2_stringBase0 + 557
 	.4byte 0x00000000
 /* SPECULATION: link order */
 .global __vt__14zNPCGoalCommon

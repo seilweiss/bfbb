@@ -11695,42 +11695,42 @@ l_c200_base__Q213cruise_bubble30_esc__2_unnamed_esc__2_zEntCruiseBubble_cpp_esc_
 	.4byte 0x00000000
 l_c210_start_anim_states__Q213cruise_bubble30_esc__2_unnamed_esc__2_zEntCruiseBubble_cpp_esc__2_:
 	.4byte l_533c__esc__2_stringBase0 /* 0x8025533C */
-	.4byte 0x80255343
-	.4byte 0x8025534A
-	.4byte 0x80255351
-	.4byte 0x80255358
-	.4byte 0x8025535F
-	.4byte 0x80255366
-	.4byte 0x8025536D
-	.4byte 0x80255374
-	.4byte 0x8025537B
-	.4byte 0x80255382
-	.4byte 0x80255389
-	.4byte 0x80255390
-	.4byte 0x80255397
-	.4byte 0x802553A2
-	.4byte 0x802553AD
-	.4byte 0x802553B8
-	.4byte 0x802553C3
-	.4byte 0x802553CE
-	.4byte 0x802553D9
-	.4byte 0x802553E4
-	.4byte 0x802553EF
-	.4byte 0x802553FA
-	.4byte 0x80255405
-	.4byte 0x80255410
-	.4byte 0x80255417
-	.4byte 0x8025541D
-	.4byte 0x80255423
-	.4byte 0x80255429
-	.4byte 0x80255430
-	.4byte 0x8025543A
-	.4byte 0x80255445
-	.4byte 0x80255450
-	.4byte 0x80255456
-	.4byte 0x8025545C
-	.4byte 0x80255462
-	.4byte 0x80255468
+	.4byte l_533c__esc__2_stringBase0 + 7
+	.4byte l_533c__esc__2_stringBase0 + 14
+	.4byte l_533c__esc__2_stringBase0 + 21
+	.4byte l_533c__esc__2_stringBase0 + 28
+	.4byte l_533c__esc__2_stringBase0 + 35
+	.4byte l_533c__esc__2_stringBase0 + 42
+	.4byte l_533c__esc__2_stringBase0 + 49
+	.4byte l_533c__esc__2_stringBase0 + 56
+	.4byte l_533c__esc__2_stringBase0 + 63
+	.4byte l_533c__esc__2_stringBase0 + 70
+	.4byte l_533c__esc__2_stringBase0 + 77
+	.4byte l_533c__esc__2_stringBase0 + 84
+	.4byte l_533c__esc__2_stringBase0 + 91
+	.4byte l_533c__esc__2_stringBase0 + 102
+	.4byte l_533c__esc__2_stringBase0 + 113
+	.4byte l_533c__esc__2_stringBase0 + 124
+	.4byte l_533c__esc__2_stringBase0 + 135
+	.4byte l_533c__esc__2_stringBase0 + 146
+	.4byte l_533c__esc__2_stringBase0 + 157
+	.4byte l_533c__esc__2_stringBase0 + 168
+	.4byte l_533c__esc__2_stringBase0 + 179
+	.4byte l_533c__esc__2_stringBase0 + 190
+	.4byte l_533c__esc__2_stringBase0 + 201
+	.4byte l_533c__esc__2_stringBase0 + 212
+	.4byte l_533c__esc__2_stringBase0 + 219
+	.4byte l_533c__esc__2_stringBase0 + 225
+	.4byte l_533c__esc__2_stringBase0 + 231
+	.4byte l_533c__esc__2_stringBase0 + 237
+	.4byte l_533c__esc__2_stringBase0 + 244
+	.4byte l_533c__esc__2_stringBase0 + 254
+	.4byte l_533c__esc__2_stringBase0 + 265
+	.4byte l_533c__esc__2_stringBase0 + 276
+	.4byte l_533c__esc__2_stringBase0 + 282
+	.4byte l_533c__esc__2_stringBase0 + 288
+	.4byte l_533c__esc__2_stringBase0 + 294
+	.4byte l_533c__esc__2_stringBase0 + 300
 l_c2a4_shared__Q213cruise_bubble30_esc__2_unnamed_esc__2_zEntCruiseBubble_cpp_esc__2_:
 	.4byte 0x00000001
 	.4byte 0x00000000
@@ -11832,7 +11832,7 @@ l_c2a4_shared__Q213cruise_bubble30_esc__2_unnamed_esc__2_zEntCruiseBubble_cpp_es
 	.4byte 0x00000000
 	.4byte 0x00000000
 l_c430_sounds__Q213cruise_bubble30_esc__2_unnamed_esc__2_zEntCruiseBubble_cpp_esc__2_:
-	.4byte 0x8025546E
+	.4byte l_533c__esc__2_stringBase0 + 306
 	.4byte 0x3F800000
 	.4byte 0x40A00000
 	.4byte 0x41A00000
@@ -11842,7 +11842,7 @@ l_c430_sounds__Q213cruise_bubble30_esc__2_unnamed_esc__2_zEntCruiseBubble_cpp_es
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x8025547E
+	.4byte l_533c__esc__2_stringBase0 + 322
 	.4byte 0x3F800000
 	.4byte 0x41700000
 	.4byte 0x42700000
@@ -11852,7 +11852,7 @@ l_c430_sounds__Q213cruise_bubble30_esc__2_unnamed_esc__2_zEntCruiseBubble_cpp_es
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x8025548C
+	.4byte l_533c__esc__2_stringBase0 + 336
 	.4byte 0x3F800000
 	.4byte 0x00000000
 	.4byte 0x41200000

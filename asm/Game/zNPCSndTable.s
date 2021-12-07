@@ -947,32 +947,32 @@ l_82c8_g_tmrz_sndplay:
 	.4byte 0x00000000
 	.4byte 0x00000000
 l_8330_g_strz_sndgroup:
-	.4byte 0x8026BBE0
-	.4byte 0x8026BBE8
-	.4byte 0x8026BBF2
-	.4byte 0x8026BBFB
-	.4byte 0x8026BC03
-	.4byte 0x8026BC08
-	.4byte 0x8026BC11
-	.4byte 0x8026BC19
-	.4byte 0x8026BC1F
-	.4byte 0x8026BC25
-	.4byte 0x8026BC2B
-	.4byte 0x8026BC31
-	.4byte 0x8026BC38
-	.4byte 0x8026BC3E
-	.4byte 0x8026BC48
-	.4byte 0x8026BC52
-	.4byte 0x8026BC5B
-	.4byte 0x8026BC61
-	.4byte 0x8026BC6C
-	.4byte 0x8026BC73
-	.4byte 0x8026BC7C
-	.4byte 0x8026BC86
-	.4byte 0x8026BC92
-	.4byte 0x8026BC9E
-	.4byte 0x8026BCA7
-	.4byte 0x8026BCB0
+	.4byte l_bbe0__esc__2_stringBase0 + 0
+	.4byte l_bbe0__esc__2_stringBase0 + 8
+	.4byte l_bbe0__esc__2_stringBase0 + 18
+	.4byte l_bbe0__esc__2_stringBase0 + 27
+	.4byte l_bbe0__esc__2_stringBase0 + 35
+	.4byte l_bbe0__esc__2_stringBase0 + 40
+	.4byte l_bbe0__esc__2_stringBase0 + 49
+	.4byte l_bbe0__esc__2_stringBase0 + 57
+	.4byte l_bbe0__esc__2_stringBase0 + 63
+	.4byte l_bbe0__esc__2_stringBase0 + 69
+	.4byte l_bbe0__esc__2_stringBase0 + 75
+	.4byte l_bbe0__esc__2_stringBase0 + 81
+	.4byte l_bbe0__esc__2_stringBase0 + 88
+	.4byte l_bbe0__esc__2_stringBase0 + 94
+	.4byte l_bbe0__esc__2_stringBase0 + 104
+	.4byte l_bbe0__esc__2_stringBase0 + 114
+	.4byte l_bbe0__esc__2_stringBase0 + 123
+	.4byte l_bbe0__esc__2_stringBase0 + 129
+	.4byte l_bbe0__esc__2_stringBase0 + 140
+	.4byte l_bbe0__esc__2_stringBase0 + 147
+	.4byte l_bbe0__esc__2_stringBase0 + 156
+	.4byte l_bbe0__esc__2_stringBase0 + 166
+	.4byte l_bbe0__esc__2_stringBase0 + 178
+	.4byte l_bbe0__esc__2_stringBase0 + 190
+	.4byte l_bbe0__esc__2_stringBase0 + 199
+	.4byte l_bbe0__esc__2_stringBase0 + 208
 /* SPECULATION: link order */
 .global g_sndProps
 g_sndProps:
@@ -1043,82 +1043,82 @@ g_sndTrax_General:
 .global g_sndTrax_Villager
 g_sndTrax_Villager:
 	.4byte 0x00000003
-	.4byte 0x8026BCC0
+	.4byte l_bcc0__esc__2_stringBase0 + 0
 	.4byte 0x00000000
 	.4byte 0x00000003
-	.4byte 0x8026BCD5
+	.4byte l_bcc0__esc__2_stringBase0 + 21
 	.4byte 0x00000000
 	.4byte 0x00000003
-	.4byte 0x8026BCEA
+	.4byte l_bcc0__esc__2_stringBase0 + 42
 	.4byte 0x00000000
 	.4byte 0x00000003
-	.4byte 0x8026BCFB
+	.4byte l_bcc0__esc__2_stringBase0 + 59
 	.4byte 0x00000000
 	.4byte 0x00000003
-	.4byte 0x8026BD0C
+	.4byte l_bcc0__esc__2_stringBase0 + 76
 	.4byte 0x00000000
 	.4byte 0x00000003
-	.4byte 0x8026BD1D
+	.4byte l_bcc0__esc__2_stringBase0 + 93
 	.4byte 0x00000000
 	.4byte 0x00000003
-	.4byte 0x8026BD30
+	.4byte l_bcc0__esc__2_stringBase0 + 112
 	.4byte 0x00000000
 	.4byte 0x00000003
-	.4byte 0x8026BD43
+	.4byte l_bcc0__esc__2_stringBase0 + 131
 	.4byte 0x00000000
 	.4byte 0x00000003
-	.4byte 0x8026BD56
+	.4byte l_bcc0__esc__2_stringBase0 + 150
 	.4byte 0x00000000
 	.4byte 0x00000003
-	.4byte 0x8026BD67
+	.4byte l_bcc0__esc__2_stringBase0 + 167
 	.4byte 0x00000000
 	.4byte 0x00000003
-	.4byte 0x8026BD78
+	.4byte l_bcc0__esc__2_stringBase0 + 184
 	.4byte 0x00000000
 	.4byte 0x00000003
-	.4byte 0x8026BD89
+	.4byte l_bcc0__esc__2_stringBase0 + 201
 	.4byte 0x00000000
 	.4byte 0x00000003
-	.4byte 0x8026BD9A
+	.4byte l_bcc0__esc__2_stringBase0 + 218
 	.4byte 0x00000000
 	.4byte 0x00000003
-	.4byte 0x8026BDAD
+	.4byte l_bcc0__esc__2_stringBase0 + 237
 	.4byte 0x00000000
 	.4byte 0x00000003
-	.4byte 0x8026BDC0
+	.4byte l_bcc0__esc__2_stringBase0 + 256
 	.4byte 0x00000000
 	.4byte 0x00000003
-	.4byte 0x8026BDD3
+	.4byte l_bcc0__esc__2_stringBase0 + 275
 	.4byte 0x00000000
 	.4byte 0x00000003
-	.4byte 0x8026BDE5
+	.4byte l_bcc0__esc__2_stringBase0 + 293
 	.4byte 0x00000000
 	.4byte 0x00000003
-	.4byte 0x8026BDF7
+	.4byte l_bcc0__esc__2_stringBase0 + 311
 	.4byte 0x00000000
 	.4byte 0x00000003
-	.4byte 0x8026BE09
+	.4byte l_bcc0__esc__2_stringBase0 + 329
 	.4byte 0x00000000
 	.4byte 0x00000003
-	.4byte 0x8026BE0F
+	.4byte l_bcc0__esc__2_stringBase0 + 335
 	.4byte 0x00000000
 	.4byte 0x00000003
-	.4byte 0x8026BE14
+	.4byte l_bcc0__esc__2_stringBase0 + 340
 	.4byte 0x00000000
 	.4byte 0x00000003
-	.4byte 0x8026BE1A
+	.4byte l_bcc0__esc__2_stringBase0 + 346
 	.4byte 0x00000000
 	.4byte 0x00000003
-	.4byte 0x8026BE21
+	.4byte l_bcc0__esc__2_stringBase0 + 353
 	.4byte 0x00000000
 	.4byte 0x00000003
-	.4byte 0x8026BE28
+	.4byte l_bcc0__esc__2_stringBase0 + 360
 	.4byte 0x00000000
 	.4byte 0x00000003
-	.4byte 0x8026BE2F
+	.4byte l_bcc0__esc__2_stringBase0 + 367
 	.4byte 0x00000000
 	.4byte 0x00000003
-	.4byte 0x8026BE36
+	.4byte l_bcc0__esc__2_stringBase0 + 374
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -1127,19 +1127,19 @@ g_sndTrax_Villager:
 .global g_sndTrax_Squidward
 g_sndTrax_Squidward:
 	.4byte 0x00000003
-	.4byte 0x8026BE3D
+	.4byte l_bcc0__esc__2_stringBase0 + 381
 	.4byte 0x00000000
 	.4byte 0x00000003
-	.4byte 0x8026BE48
+	.4byte l_bcc0__esc__2_stringBase0 + 392
 	.4byte 0x00000000
 	.4byte 0x00000003
-	.4byte 0x8026BE53
+	.4byte l_bcc0__esc__2_stringBase0 + 403
 	.4byte 0x00000000
 	.4byte 0x00000003
-	.4byte 0x8026BE5E
+	.4byte l_bcc0__esc__2_stringBase0 + 414
 	.4byte 0x00000000
 	.4byte 0x00000003
-	.4byte 0x8026BE69
+	.4byte l_bcc0__esc__2_stringBase0 + 425
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -1148,49 +1148,49 @@ g_sndTrax_Squidward:
 .global g_sndTrax_VillagerCoStar
 g_sndTrax_VillagerCoStar:
 	.4byte 0x00000003
-	.4byte 0x8026BE74
+	.4byte l_bcc0__esc__2_stringBase0 + 436
 	.4byte 0x00000000
 	.4byte 0x00000003
-	.4byte 0x8026BE7B
+	.4byte l_bcc0__esc__2_stringBase0 + 443
 	.4byte 0x00000000
 	.4byte 0x00000003
-	.4byte 0x8026BE89
+	.4byte l_bcc0__esc__2_stringBase0 + 457
 	.4byte 0x00000000
 	.4byte 0x00000003
-	.4byte 0x8026BE94
+	.4byte l_bcc0__esc__2_stringBase0 + 468
 	.4byte 0x00000000
 	.4byte 0x00000003
-	.4byte 0x8026BE9E
+	.4byte l_bcc0__esc__2_stringBase0 + 478
 	.4byte 0x00000000
 	.4byte 0x00000003
-	.4byte 0x8026BEA8
+	.4byte l_bcc0__esc__2_stringBase0 + 488
 	.4byte 0x00000000
 	.4byte 0x00000003
-	.4byte 0x8026BEB5
+	.4byte l_bcc0__esc__2_stringBase0 + 501
 	.4byte 0x00000000
 	.4byte 0x00000003
-	.4byte 0x8026BEBE
+	.4byte l_bcc0__esc__2_stringBase0 + 510
 	.4byte 0x00000000
 	.4byte 0x00000003
-	.4byte 0x8026BEC5
+	.4byte l_bcc0__esc__2_stringBase0 + 517
 	.4byte 0x00000000
 	.4byte 0x00000003
-	.4byte 0x8026BECF
+	.4byte l_bcc0__esc__2_stringBase0 + 527
 	.4byte 0x00000000
 	.4byte 0x00000003
-	.4byte 0x8026BEDE
+	.4byte l_bcc0__esc__2_stringBase0 + 542
 	.4byte 0x00000000
 	.4byte 0x00000003
-	.4byte 0x8026BEEA
+	.4byte l_bcc0__esc__2_stringBase0 + 554
 	.4byte 0x00000000
 	.4byte 0x00000003
-	.4byte 0x8026BEF1
+	.4byte l_bcc0__esc__2_stringBase0 + 561
 	.4byte 0x00000000
 	.4byte 0x00000003
-	.4byte 0x8026BEF9
+	.4byte l_bcc0__esc__2_stringBase0 + 569
 	.4byte 0x00000000
 	.4byte 0x00000003
-	.4byte 0x8026BF02
+	.4byte l_bcc0__esc__2_stringBase0 + 578
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -1223,7 +1223,7 @@ g_sndTrax_VillagerEldess:
 .global g_sndTrax_VillagerBoy
 g_sndTrax_VillagerBoy:
 	.4byte 0x00000005
-	.4byte 0x8026BF0F
+	.4byte l_bcc0__esc__2_stringBase0 + 591
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -1232,7 +1232,7 @@ g_sndTrax_VillagerBoy:
 .global g_sndTrax_VillagerGirl
 g_sndTrax_VillagerGirl:
 	.4byte 0x00000005
-	.4byte 0x8026BF0F
+	.4byte l_bcc0__esc__2_stringBase0 + 591
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -1247,13 +1247,13 @@ g_sndTrax_Neptune:
 .global g_sndTrax_Jelly
 g_sndTrax_Jelly:
 	.4byte 0x00000004
-	.4byte 0x8026BF15
+	.4byte l_bcc0__esc__2_stringBase0 + 597
 	.4byte 0x00000000
 	.4byte 0x00000011
-	.4byte 0x8026BF1F
+	.4byte l_bcc0__esc__2_stringBase0 + 607
 	.4byte 0x00000000
 	.4byte 0x00000001
-	.4byte 0x8026BF2B
+	.4byte l_bcc0__esc__2_stringBase0 + 619
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -1262,10 +1262,10 @@ g_sndTrax_Jelly:
 .global g_sndTrax_TikiShared
 g_sndTrax_TikiShared:
 	.4byte 0x00000014
-	.4byte 0x8026BF3C
+	.4byte l_bcc0__esc__2_stringBase0 + 636
 	.4byte 0x00000000
 	.4byte 0x00000015
-	.4byte 0x8026BF4A
+	.4byte l_bcc0__esc__2_stringBase0 + 650
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -1274,7 +1274,7 @@ g_sndTrax_TikiShared:
 .global g_sndTrax_TikiThunder
 g_sndTrax_TikiThunder:
 	.4byte 0x00000016
-	.4byte 0x8026BF57
+	.4byte l_bcc0__esc__2_stringBase0 + 663
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -1283,10 +1283,10 @@ g_sndTrax_TikiThunder:
 .global g_sndTrax_Duplotron
 g_sndTrax_Duplotron:
 	.4byte 0x0000000F
-	.4byte 0x8026BF65
+	.4byte l_bcc0__esc__2_stringBase0 + 677
 	.4byte 0x00000000
 	.4byte 0x00000002
-	.4byte 0x8026BF70
+	.4byte l_bcc0__esc__2_stringBase0 + 688
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -1295,7 +1295,7 @@ g_sndTrax_Duplotron:
 .global g_sndTrax_Robot
 g_sndTrax_Robot:
 	.4byte 0x0000000A
-	.4byte 0x8026BF7B
+	.4byte l_bcc0__esc__2_stringBase0 + 699
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -1304,10 +1304,10 @@ g_sndTrax_Robot:
 .global g_sndTrax_Fodder
 g_sndTrax_Fodder:
 	.4byte 0x00000004
-	.4byte 0x8026BF87
+	.4byte l_bcc0__esc__2_stringBase0 + 711
 	.4byte 0x00000000
 	.4byte 0x00000007
-	.4byte 0x8026BF8F
+	.4byte l_bcc0__esc__2_stringBase0 + 719
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -1316,19 +1316,19 @@ g_sndTrax_Fodder:
 .global g_sndTrax_FodBomb
 g_sndTrax_FodBomb:
 	.4byte 0x00000010
-	.4byte 0x8026BF99
+	.4byte l_bcc0__esc__2_stringBase0 + 729
 	.4byte 0x00000000
 	.4byte 0x00000007
-	.4byte 0x8026BFA5
+	.4byte l_bcc0__esc__2_stringBase0 + 741
 	.4byte 0x00000000
 	.4byte 0x0000000F
-	.4byte 0x8026BFA5
+	.4byte l_bcc0__esc__2_stringBase0 + 741
 	.4byte 0x00000000
 	.4byte 0x0000000B
-	.4byte 0x8026BFB0
+	.4byte l_bcc0__esc__2_stringBase0 + 752
 	.4byte 0x00000000
 	.4byte 0x00000004
-	.4byte 0x8026BF87
+	.4byte l_bcc0__esc__2_stringBase0 + 711
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -1337,10 +1337,10 @@ g_sndTrax_FodBomb:
 .global g_sndTrax_FodBzzt
 g_sndTrax_FodBzzt:
 	.4byte 0x00000004
-	.4byte 0x8026BF87
+	.4byte l_bcc0__esc__2_stringBase0 + 711
 	.4byte 0x00000000
 	.4byte 0x00000007
-	.4byte 0x8026BFBC
+	.4byte l_bcc0__esc__2_stringBase0 + 764
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -1349,13 +1349,13 @@ g_sndTrax_FodBzzt:
 .global g_sndTrax_Chomper
 g_sndTrax_Chomper:
 	.4byte 0x00000004
-	.4byte 0x8026BF87
+	.4byte l_bcc0__esc__2_stringBase0 + 711
 	.4byte 0x00000000
 	.4byte 0x00000007
-	.4byte 0x8026BFC7
+	.4byte l_bcc0__esc__2_stringBase0 + 775
 	.4byte 0x00000000
 	.4byte 0x0000000B
-	.4byte 0x8026BFD3
+	.4byte l_bcc0__esc__2_stringBase0 + 787
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -1364,10 +1364,10 @@ g_sndTrax_Chomper:
 .global g_sndTrax_Hammer
 g_sndTrax_Hammer:
 	.4byte 0x00000007
-	.4byte 0x8026BFDF
+	.4byte l_bcc0__esc__2_stringBase0 + 799
 	.4byte 0x00000000
 	.4byte 0x00000004
-	.4byte 0x8026BFE9
+	.4byte l_bcc0__esc__2_stringBase0 + 809
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -1376,13 +1376,13 @@ g_sndTrax_Hammer:
 .global g_sndTrax_TarTar
 g_sndTrax_TarTar:
 	.4byte 0x00000007
-	.4byte 0x8026BFF2
+	.4byte l_bcc0__esc__2_stringBase0 + 818
 	.4byte 0x00000000
 	.4byte 0x00000004
-	.4byte 0x8026BFFC
+	.4byte l_bcc0__esc__2_stringBase0 + 828
 	.4byte 0x00000000
 	.4byte 0x00000008
-	.4byte 0x8026BFFC
+	.4byte l_bcc0__esc__2_stringBase0 + 828
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -1391,7 +1391,7 @@ g_sndTrax_TarTar:
 .global g_sndTrax_Glove
 g_sndTrax_Glove:
 	.4byte 0x00000007
-	.4byte 0x8026C007
+	.4byte l_bcc0__esc__2_stringBase0 + 839
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -1400,10 +1400,10 @@ g_sndTrax_Glove:
 .global g_sndTrax_Monsoon
 g_sndTrax_Monsoon:
 	.4byte 0x00000007
-	.4byte 0x8026C013
+	.4byte l_bcc0__esc__2_stringBase0 + 851
 	.4byte 0x00000000
 	.4byte 0x0000000E
-	.4byte 0x8026C01D
+	.4byte l_bcc0__esc__2_stringBase0 + 861
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -1412,10 +1412,10 @@ g_sndTrax_Monsoon:
 .global g_sndTrax_Sleepy
 g_sndTrax_Sleepy:
 	.4byte 0x0000000B
-	.4byte 0x8026C027
+	.4byte l_bcc0__esc__2_stringBase0 + 871
 	.4byte 0x00000000
 	.4byte 0x00000004
-	.4byte 0x8026C031
+	.4byte l_bcc0__esc__2_stringBase0 + 881
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -1424,16 +1424,16 @@ g_sndTrax_Sleepy:
 .global g_sndTrax_Chuck
 g_sndTrax_Chuck:
 	.4byte 0x00000007
-	.4byte 0x8026C038
+	.4byte l_bcc0__esc__2_stringBase0 + 888
 	.4byte 0x00000000
 	.4byte 0x0000000D
-	.4byte 0x8026C042
+	.4byte l_bcc0__esc__2_stringBase0 + 898
 	.4byte 0x00000000
 	.4byte 0x0000000B
-	.4byte 0x8026C04B
+	.4byte l_bcc0__esc__2_stringBase0 + 907
 	.4byte 0x00000000
 	.4byte 0x00000004
-	.4byte 0x8026BF87
+	.4byte l_bcc0__esc__2_stringBase0 + 711
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -1442,10 +1442,10 @@ g_sndTrax_Chuck:
 .global g_sndTrax_ArfArf
 g_sndTrax_ArfArf:
 	.4byte 0x00000008
-	.4byte 0x8026C055
+	.4byte l_bcc0__esc__2_stringBase0 + 917
 	.4byte 0x00000000
 	.4byte 0x0000000C
-	.4byte 0x8026C060
+	.4byte l_bcc0__esc__2_stringBase0 + 928
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -1454,13 +1454,13 @@ g_sndTrax_ArfArf:
 .global g_sndTrax_ArfDog
 g_sndTrax_ArfDog:
 	.4byte 0x00000004
-	.4byte 0x8026C06C
+	.4byte l_bcc0__esc__2_stringBase0 + 940
 	.4byte 0x00000000
 	.4byte 0x0000000F
-	.4byte 0x8026BFB0
+	.4byte l_bcc0__esc__2_stringBase0 + 752
 	.4byte 0x00000000
 	.4byte 0x00000010
-	.4byte 0x8026BF87
+	.4byte l_bcc0__esc__2_stringBase0 + 711
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -1469,16 +1469,16 @@ g_sndTrax_ArfDog:
 .global g_sndTrax_Tubelet
 g_sndTrax_Tubelet:
 	.4byte 0x00000007
-	.4byte 0x8026C079
+	.4byte l_bcc0__esc__2_stringBase0 + 953
 	.4byte 0x00000000
 	.4byte 0x00000013
-	.4byte 0x8026C084
+	.4byte l_bcc0__esc__2_stringBase0 + 964
 	.4byte 0x00000000
 	.4byte 0x00000012
-	.4byte 0x8026C08F
+	.4byte l_bcc0__esc__2_stringBase0 + 975
 	.4byte 0x00000000
 	.4byte 0x0000000F
-	.4byte 0x8026C08F
+	.4byte l_bcc0__esc__2_stringBase0 + 975
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -1487,16 +1487,16 @@ g_sndTrax_Tubelet:
 .global g_sndTrax_Slick
 g_sndTrax_Slick:
 	.4byte 0x00000007
-	.4byte 0x8026C098
+	.4byte l_bcc0__esc__2_stringBase0 + 984
 	.4byte 0x00000000
 	.4byte 0x00000008
-	.4byte 0x8026C0A3
+	.4byte l_bcc0__esc__2_stringBase0 + 995
 	.4byte 0x00000000
 	.4byte 0x00000004
-	.4byte 0x8026C0AC
+	.4byte l_bcc0__esc__2_stringBase0 + 1004
 	.4byte 0x00000000
 	.4byte 0x0000000B
-	.4byte 0x8026C0B5
+	.4byte l_bcc0__esc__2_stringBase0 + 1013
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -1532,10 +1532,10 @@ g_hash_dupoanim:
 .global g_strz_dupoanim
 g_strz_dupoanim:
 	.4byte l_c0e8__esc__2_stringBase0 /* 0x8026C0E8 */
-	.4byte 0x8026C0F0
-	.4byte 0x8026C0F7
-	.4byte 0x8026C0FF
-	.4byte 0x8026C108
+	.4byte l_c0e8__esc__2_stringBase0 + 8
+	.4byte l_c0e8__esc__2_stringBase0 + 15
+	.4byte l_c0e8__esc__2_stringBase0 + 23
+	.4byte l_c0e8__esc__2_stringBase0 + 32
 
 .section .bss
 l_4c50_g_hash_sndgroup:

@@ -598,7 +598,7 @@ l_1b88_comboReward:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000002
-	.4byte 0x80274A18
+	.4byte l_4a00__esc__2_stringBase0 + 24
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -612,7 +612,7 @@ l_1b88_comboReward:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000003
-	.4byte 0x80274A25
+	.4byte l_4a00__esc__2_stringBase0 + 37
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -626,7 +626,7 @@ l_1b88_comboReward:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000003
-	.4byte 0x80274A25
+	.4byte l_4a00__esc__2_stringBase0 + 37
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -640,7 +640,7 @@ l_1b88_comboReward:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000005
-	.4byte 0x80274A32
+	.4byte l_4a00__esc__2_stringBase0 + 50
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -654,7 +654,7 @@ l_1b88_comboReward:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x0000000A
-	.4byte 0x80274A3F
+	.4byte l_4a00__esc__2_stringBase0 + 63
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -668,7 +668,7 @@ l_1b88_comboReward:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x0000000F
-	.4byte 0x80274A4C
+	.4byte l_4a00__esc__2_stringBase0 + 76
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -682,7 +682,7 @@ l_1b88_comboReward:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000014
-	.4byte 0x80274A59
+	.4byte l_4a00__esc__2_stringBase0 + 89
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -696,7 +696,7 @@ l_1b88_comboReward:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000019
-	.4byte 0x80274A66
+	.4byte l_4a00__esc__2_stringBase0 + 102
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -710,7 +710,7 @@ l_1b88_comboReward:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x0000001E
-	.4byte 0x80274A73
+	.4byte l_4a00__esc__2_stringBase0 + 115
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -724,7 +724,7 @@ l_1b88_comboReward:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000028
-	.4byte 0x80274A80
+	.4byte l_4a00__esc__2_stringBase0 + 128
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -738,7 +738,7 @@ l_1b88_comboReward:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000032
-	.4byte 0x80274A8D
+	.4byte l_4a00__esc__2_stringBase0 + 141
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -752,7 +752,7 @@ l_1b88_comboReward:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x0000003C
-	.4byte 0x80274A9A
+	.4byte l_4a00__esc__2_stringBase0 + 154
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -766,7 +766,7 @@ l_1b88_comboReward:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x0000004B
-	.4byte 0x80274AA7
+	.4byte l_4a00__esc__2_stringBase0 + 167
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -780,7 +780,7 @@ l_1b88_comboReward:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000064
-	.4byte 0x80274AB4
+	.4byte l_4a00__esc__2_stringBase0 + 180
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000

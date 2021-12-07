@@ -3326,7 +3326,7 @@ l_0f14_zThrowableModels:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x8025F59C
+	.4byte l_f590__esc__2_stringBase0 + 12
 	.4byte zThrownCollide_DestructObj__FP13zThrownStructP10xEntCollisPfPf /* 0x800B8F84 */
 	.4byte 0x803CAC18
 	.4byte l_0f08_l_normal /* 0x80290F08 */
@@ -3336,7 +3336,7 @@ l_0f14_zThrowableModels:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x8025F5A8
+	.4byte l_f590__esc__2_stringBase0 + 24
 	.4byte zThrownCollide_DestructObj__FP13zThrownStructP10xEntCollisPfPf /* 0x800B8F84 */
 	.4byte 0x803CAC18
 	.4byte l_0f08_l_normal /* 0x80290F08 */
@@ -3346,7 +3346,7 @@ l_0f14_zThrowableModels:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x8025F5B6
+	.4byte l_f590__esc__2_stringBase0 + 38
 	.4byte zThrownCollide_DestructObj__FP13zThrownStructP10xEntCollisPfPf /* 0x800B8F84 */
 	.4byte 0x803CAC18
 	.4byte l_0f08_l_normal /* 0x80290F08 */
@@ -3356,7 +3356,7 @@ l_0f14_zThrowableModels:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x8025F5C9
+	.4byte l_f590__esc__2_stringBase0 + 57
 	.4byte zThrownCollide_DestructObj__FP13zThrownStructP10xEntCollisPfPf /* 0x800B8F84 */
 	.4byte 0x803CAC18
 	.4byte l_0f08_l_normal /* 0x80290F08 */
@@ -3366,7 +3366,7 @@ l_0f14_zThrowableModels:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x8025F5DC
+	.4byte l_f590__esc__2_stringBase0 + 76
 	.4byte zThrownCollide_DestructObj__FP13zThrownStructP10xEntCollisPfPf /* 0x800B8F84 */
 	.4byte 0x803CAC18
 	.4byte l_0f08_l_normal /* 0x80290F08 */
@@ -3376,7 +3376,7 @@ l_0f14_zThrowableModels:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x8025F5EF
+	.4byte l_f590__esc__2_stringBase0 + 95
 	.4byte zThrownCollide_DestructObj__FP13zThrownStructP10xEntCollisPfPf /* 0x800B8F84 */
 	.4byte 0x803CAC18
 	.4byte l_0f08_l_normal /* 0x80290F08 */
@@ -3386,7 +3386,7 @@ l_0f14_zThrowableModels:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x8025F602
+	.4byte l_f590__esc__2_stringBase0 + 114
 	.4byte zThrownCollide_DestructObj__FP13zThrownStructP10xEntCollisPfPf /* 0x800B8F84 */
 	.4byte 0x803CAC18
 	.4byte l_0f08_l_normal /* 0x80290F08 */
@@ -3396,7 +3396,7 @@ l_0f14_zThrowableModels:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x8025F615
+	.4byte l_f590__esc__2_stringBase0 + 133
 	.4byte zThrownCollide_DestructObj__FP13zThrownStructP10xEntCollisPfPf /* 0x800B8F84 */
 	.4byte 0x803CAC18
 	.4byte l_0f08_l_normal /* 0x80290F08 */
@@ -3406,7 +3406,7 @@ l_0f14_zThrowableModels:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x8025F628
+	.4byte l_f590__esc__2_stringBase0 + 152
 	.4byte zThrownCollide_Tiki__FP13zThrownStructP10xEntCollisPfPf /* 0x800B903C */
 	.4byte 0x803CAC18
 	.4byte l_0f08_l_normal /* 0x80290F08 */
@@ -3416,7 +3416,7 @@ l_0f14_zThrowableModels:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x8025F639
+	.4byte l_f590__esc__2_stringBase0 + 169
 	.4byte zThrownCollide_Tiki__FP13zThrownStructP10xEntCollisPfPf /* 0x800B903C */
 	.4byte 0x803CAC18
 	.4byte l_0f08_l_normal /* 0x80290F08 */
@@ -3426,7 +3426,7 @@ l_0f14_zThrowableModels:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x8025F64B
+	.4byte l_f590__esc__2_stringBase0 + 187
 	.4byte l_90a4_zThrownCollide_StoneTiki__FP13zThrownStructP10xEntCollisPfPf /* 0x800B90A4 */
 	.4byte 0x803CAC18
 	.4byte l_0f08_l_normal /* 0x80290F08 */
@@ -3436,27 +3436,27 @@ l_0f14_zThrowableModels:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x8025F65B
+	.4byte l_f590__esc__2_stringBase0 + 203
 	.4byte l_8f54_zThrownCollide_ThrowFreeze__FP13zThrownStructP10xEntCollisPfPf /* 0x800B8F54 */
 	.4byte l_ac1c_c_fruit /* 0x803CAC1C */
 	.4byte l_0f08_l_normal /* 0x80290F08 */
 	.4byte 0x00000000
-	.4byte 0x8025F668
+	.4byte l_f590__esc__2_stringBase0 + 216
 	.4byte 0x3F451EB8
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x8025F67E
+	.4byte l_f590__esc__2_stringBase0 + 238
 	.4byte l_8f54_zThrownCollide_ThrowFreeze__FP13zThrownStructP10xEntCollisPfPf /* 0x800B8F54 */
 	.4byte l_ac1c_c_fruit /* 0x803CAC1C */
 	.4byte l_0f08_l_normal /* 0x80290F08 */
 	.4byte 0x00000000
-	.4byte 0x8025F668
+	.4byte l_f590__esc__2_stringBase0 + 216
 	.4byte 0x3F451EB8
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x8025F690
+	.4byte l_f590__esc__2_stringBase0 + 256
 	.4byte zThrownCollide_ThrowFruit__FP13zThrownStructP10xEntCollisPfPf /* 0x800B8B88 */
 	.4byte l_ac1c_c_fruit /* 0x803CAC1C */
 	.4byte l_0f08_l_normal /* 0x80290F08 */
@@ -3466,7 +3466,7 @@ l_0f14_zThrowableModels:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x8025F6A0
+	.4byte l_f590__esc__2_stringBase0 + 272
 	.4byte zThrownCollide_ThrowFruit__FP13zThrownStructP10xEntCollisPfPf /* 0x800B8B88 */
 	.4byte l_ac1c_c_fruit /* 0x803CAC1C */
 	.4byte l_0f08_l_normal /* 0x80290F08 */
@@ -3476,7 +3476,7 @@ l_0f14_zThrowableModels:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x8025F6B1
+	.4byte l_f590__esc__2_stringBase0 + 289
 	.4byte zThrownCollide_ThrowFruit__FP13zThrownStructP10xEntCollisPfPf /* 0x800B8B88 */
 	.4byte l_ac1c_c_fruit /* 0x803CAC1C */
 	.4byte l_0f08_l_normal /* 0x80290F08 */
@@ -3486,7 +3486,7 @@ l_0f14_zThrowableModels:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x8025F6C3
+	.4byte l_f590__esc__2_stringBase0 + 307
 	.4byte zThrownCollide_ThrowFruit__FP13zThrownStructP10xEntCollisPfPf /* 0x800B8B88 */
 	.4byte l_ac1c_c_fruit /* 0x803CAC1C */
 	.4byte l_0f08_l_normal /* 0x80290F08 */
@@ -3496,7 +3496,7 @@ l_0f14_zThrowableModels:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x8025F6D2
+	.4byte l_f590__esc__2_stringBase0 + 322
 	.4byte zThrownCollide_ThrowFruit__FP13zThrownStructP10xEntCollisPfPf /* 0x800B8B88 */
 	.4byte l_ac1c_c_fruit /* 0x803CAC1C */
 	.4byte l_0f08_l_normal /* 0x80290F08 */
@@ -3506,27 +3506,27 @@ l_0f14_zThrowableModels:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x8025F6E4
+	.4byte l_f590__esc__2_stringBase0 + 340
 	.4byte zThrownCollide_ThrowFruit__FP13zThrownStructP10xEntCollisPfPf /* 0x800B8B88 */
 	.4byte l_ac1c_c_fruit /* 0x803CAC1C */
 	.4byte l_0f08_l_normal /* 0x80290F08 */
 	.4byte 0x202020FF
-	.4byte 0x8025F6F0
+	.4byte l_f590__esc__2_stringBase0 + 352
 	.4byte 0x3F6B851F
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x8025F705
+	.4byte l_f590__esc__2_stringBase0 + 373
 	.4byte zThrownCollide_ThrowFruit__FP13zThrownStructP10xEntCollisPfPf /* 0x800B8B88 */
 	.4byte l_ac1c_c_fruit /* 0x803CAC1C */
 	.4byte l_0f08_l_normal /* 0x80290F08 */
 	.4byte 0x202020FF
-	.4byte 0x8025F6F0
+	.4byte l_f590__esc__2_stringBase0 + 352
 	.4byte 0x3F6B851F
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x8025F716
+	.4byte l_f590__esc__2_stringBase0 + 390
 	.4byte l_8fec_zThrownCollide_BSandyHead__FP13zThrownStructP10xEntCollisPfPf /* 0x800B8FEC */
 	.4byte 0x803CAC18
 	.4byte l_0f08_l_normal /* 0x80290F08 */

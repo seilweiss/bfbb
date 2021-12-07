@@ -10249,47 +10249,47 @@ l_f2a0_sound_assets__29_esc__2_unnamed_esc__2_zNPCTypeBossSB2_cpp_esc__2_:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000001
-	.4byte 0x8026FC0A
+	.4byte l_fc00__esc__2_stringBase0 + 10
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000002
-	.4byte 0x8026FC12
+	.4byte l_fc00__esc__2_stringBase0 + 18
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000003
-	.4byte 0x8026FC22
+	.4byte l_fc00__esc__2_stringBase0 + 34
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000004
-	.4byte 0x8026FC31
+	.4byte l_fc00__esc__2_stringBase0 + 49
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000005
-	.4byte 0x8026FC3B
+	.4byte l_fc00__esc__2_stringBase0 + 59
 	.4byte 0x00000000
 	.4byte 0x00000001
 	.4byte 0x00000006
-	.4byte 0x8026FC49
+	.4byte l_fc00__esc__2_stringBase0 + 73
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000006
-	.4byte 0x8026FC55
+	.4byte l_fc00__esc__2_stringBase0 + 85
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000007
-	.4byte 0x8026FC49
+	.4byte l_fc00__esc__2_stringBase0 + 73
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000007
-	.4byte 0x8026FC55
+	.4byte l_fc00__esc__2_stringBase0 + 85
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000008
-	.4byte 0x8026FC61
+	.4byte l_fc00__esc__2_stringBase0 + 97
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000009
-	.4byte 0x8026FC6E
+	.4byte l_fc00__esc__2_stringBase0 + 110
 	.4byte 0x00000000
 	.4byte 0x00000000
 l_f360_scale_curve__29_esc__2_unnamed_esc__2_zNPCTypeBossSB2_cpp_esc__2_:
@@ -10595,7 +10595,7 @@ l_f800_dizzy_round__29_esc__2_unnamed_esc__2_zNPCTypeBossSB2_cpp_esc__2_:
 	.4byte 0x00010000
 	.4byte 0x01000000
 l_f80c_node_hooks__29_esc__2_unnamed_esc__2_zNPCTypeBossSB2_cpp_esc__2_:
-	.4byte 0x8026FC7E
+	.4byte l_fc00__esc__2_stringBase0 + 126
 	.4byte 0x00000003
 	.4byte 0x00000000
 	.4byte 0x00000003
@@ -10608,7 +10608,7 @@ l_f80c_node_hooks__29_esc__2_unnamed_esc__2_zNPCTypeBossSB2_cpp_esc__2_:
 	.4byte 0x4063851F
 	.4byte 0x410A1893
 	.4byte 0x4003B646
-	.4byte 0x8026FC89
+	.4byte l_fc00__esc__2_stringBase0 + 137
 	.4byte 0x00000003
 	.4byte 0x01000000
 	.4byte 0x00000003
@@ -10621,7 +10621,7 @@ l_f80c_node_hooks__29_esc__2_unnamed_esc__2_zNPCTypeBossSB2_cpp_esc__2_:
 	.4byte 0x40798937
 	.4byte 0x416F2F1B
 	.4byte 0x4001374C
-	.4byte 0x8026FC94
+	.4byte l_fc00__esc__2_stringBase0 + 148
 	.4byte 0x00000003
 	.4byte 0x00000000
 	.4byte 0x00000002
@@ -10634,7 +10634,7 @@ l_f80c_node_hooks__29_esc__2_unnamed_esc__2_zNPCTypeBossSB2_cpp_esc__2_:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x8026FC9F
+	.4byte l_fc00__esc__2_stringBase0 + 159
 	.4byte 0x00000001
 	.4byte 0x00000000
 	.4byte 0x00000002
@@ -10647,7 +10647,7 @@ l_f80c_node_hooks__29_esc__2_unnamed_esc__2_zNPCTypeBossSB2_cpp_esc__2_:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x8026FCAA
+	.4byte l_fc00__esc__2_stringBase0 + 170
 	.4byte 0x00000003
 	.4byte 0x00000000
 	.4byte 0x00000003
@@ -10660,7 +10660,7 @@ l_f80c_node_hooks__29_esc__2_unnamed_esc__2_zNPCTypeBossSB2_cpp_esc__2_:
 	.4byte 0xC01F8D50
 	.4byte 0x40F2147B
 	.4byte 0x40034396
-	.4byte 0x8026FCB5
+	.4byte l_fc00__esc__2_stringBase0 + 181
 	.4byte 0x00000003
 	.4byte 0x01000000
 	.4byte 0x00000003
@@ -10673,7 +10673,7 @@ l_f80c_node_hooks__29_esc__2_unnamed_esc__2_zNPCTypeBossSB2_cpp_esc__2_:
 	.4byte 0xC0591687
 	.4byte 0x4166B852
 	.4byte 0x40070A3D
-	.4byte 0x8026FCC0
+	.4byte l_fc00__esc__2_stringBase0 + 192
 	.4byte 0x00000003
 	.4byte 0x00000000
 	.4byte 0x00000002
@@ -10686,7 +10686,7 @@ l_f80c_node_hooks__29_esc__2_unnamed_esc__2_zNPCTypeBossSB2_cpp_esc__2_:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x8026FCCB
+	.4byte l_fc00__esc__2_stringBase0 + 203
 	.4byte 0x00000002
 	.4byte 0x00000000
 	.4byte 0x00000002
@@ -10699,7 +10699,7 @@ l_f80c_node_hooks__29_esc__2_unnamed_esc__2_zNPCTypeBossSB2_cpp_esc__2_:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x8026FCD6
+	.4byte l_fc00__esc__2_stringBase0 + 214
 	.4byte 0x00000003
 	.4byte 0x00000000
 	.4byte 0x00000002
@@ -10762,26 +10762,26 @@ l_f9e0_hand_hooks__29_esc__2_unnamed_esc__2_zNPCTypeBossSB2_cpp_esc__2_:
 	.4byte 0x41013333
 	.4byte 0x40109375
 l_faa0_platform_hooks__29_esc__2_unnamed_esc__2_zNPCTypeBossSB2_cpp_esc__2_:
-	.4byte 0x8026FCE1
-	.4byte 0x8026FCF4
-	.4byte 0x8026FD07
-	.4byte 0x8026FD1A
-	.4byte 0x8026FD2D
-	.4byte 0x8026FD40
-	.4byte 0x8026FD53
-	.4byte 0x8026FD66
-	.4byte 0x8026FD79
-	.4byte 0x8026FD8C
-	.4byte 0x8026FD9F
-	.4byte 0x8026FDB2
-	.4byte 0x8026FDC5
-	.4byte 0x8026FDD8
-	.4byte 0x8026FDEB
-	.4byte 0x8026FDFE
+	.4byte l_fc00__esc__2_stringBase0 + 225
+	.4byte l_fc00__esc__2_stringBase0 + 244
+	.4byte l_fc00__esc__2_stringBase0 + 263
+	.4byte l_fc00__esc__2_stringBase0 + 282
+	.4byte l_fc00__esc__2_stringBase0 + 301
+	.4byte l_fc00__esc__2_stringBase0 + 320
+	.4byte l_fc00__esc__2_stringBase0 + 339
+	.4byte l_fc00__esc__2_stringBase0 + 358
+	.4byte l_fc00__esc__2_stringBase0 + 377
+	.4byte l_fc00__esc__2_stringBase0 + 396
+	.4byte l_fc00__esc__2_stringBase0 + 415
+	.4byte l_fc00__esc__2_stringBase0 + 434
+	.4byte l_fc00__esc__2_stringBase0 + 453
+	.4byte l_fc00__esc__2_stringBase0 + 472
+	.4byte l_fc00__esc__2_stringBase0 + 491
+	.4byte l_fc00__esc__2_stringBase0 + 510
 l_fae0_slug_hooks__29_esc__2_unnamed_esc__2_zNPCTypeBossSB2_cpp_esc__2_:
-	.4byte 0x8026FE11
-	.4byte 0x8026FE1D
-	.4byte 0x8026FE29
+	.4byte l_fc00__esc__2_stringBase0 + 529
+	.4byte l_fc00__esc__2_stringBase0 + 541
+	.4byte l_fc00__esc__2_stringBase0 + 553
 	.4byte 0x0000001E
 	.4byte 0x0000001F
 	.4byte 0x00000020

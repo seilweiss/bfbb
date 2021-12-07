@@ -5017,6 +5017,7 @@ l_3cfc__esc__2_2327:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
+.global l_3d08__esc__2_stringBase0
 l_3d08__esc__2_stringBase0:
 	.4byte 0x50415245
 	.4byte 0x4D49545F
@@ -5847,73 +5848,73 @@ l_3d08__esc__2_stringBase0:
 
 .section .data
 l_19f8_g_cutmap:
-	.4byte 0x802747CE
+	.4byte l_3d08__esc__2_stringBase0 + 2758
 	.4byte 0x8029BF58
 	.4byte 0x00000000
-	.4byte 0x802747D9
+	.4byte l_3d08__esc__2_stringBase0 + 2769
 	.4byte 0x8029C284
 	.4byte 0x00000000
-	.4byte 0x802747E4
+	.4byte l_3d08__esc__2_stringBase0 + 2780
 	.4byte 0x8029C624
 	.4byte 0x00000000
-	.4byte 0x802747EF
+	.4byte l_3d08__esc__2_stringBase0 + 2791
 	.4byte 0x8029CAAC
 	.4byte 0x00000000
-	.4byte 0x802747F9
+	.4byte l_3d08__esc__2_stringBase0 + 2801
 	.4byte 0x8029CD64
 	.4byte 0x00000000
-	.4byte 0x80274805
+	.4byte l_3d08__esc__2_stringBase0 + 2813
 	.4byte 0x8029CE4C
 	.4byte 0x00000000
-	.4byte 0x8027481A
+	.4byte l_3d08__esc__2_stringBase0 + 2834
 	.4byte 0x8029CFA8
 	.4byte 0x00000000
-	.4byte 0x80274828
+	.4byte l_3d08__esc__2_stringBase0 + 2848
 	.4byte 0x8029D3BC
 	.4byte 0x00000000
-	.4byte 0x80274832
+	.4byte l_3d08__esc__2_stringBase0 + 2858
 	.4byte 0x8029D518
 	.4byte 0x00000000
-	.4byte 0x80274843
+	.4byte l_3d08__esc__2_stringBase0 + 2875
 	.4byte 0x8029D75C
 	.4byte 0x00000000
-	.4byte 0x8027484D
+	.4byte l_3d08__esc__2_stringBase0 + 2885
 	.4byte 0x8029D9A0
 	.4byte 0x00000000
-	.4byte 0x8027485E
+	.4byte l_3d08__esc__2_stringBase0 + 2902
 	.4byte 0x8029DA88
 	.4byte 0x00000000
-	.4byte 0x8027486E
+	.4byte l_3d08__esc__2_stringBase0 + 2918
 	.4byte 0x8029DB70
 	.4byte 0x00000000
-	.4byte 0x80274876
+	.4byte l_3d08__esc__2_stringBase0 + 2926
 	.4byte 0x8029DD40
 	.4byte 0x00000000
-	.4byte 0x80274880
+	.4byte l_3d08__esc__2_stringBase0 + 2936
 	.4byte 0x8029DF10
 	.4byte 0x00000000
-	.4byte 0x8027488A
+	.4byte l_3d08__esc__2_stringBase0 + 2946
 	.4byte 0x8029E398
 	.4byte 0x00000000
-	.4byte 0x80274892
+	.4byte l_3d08__esc__2_stringBase0 + 2954
 	.4byte 0x8029E480
 	.4byte 0x00000000
-	.4byte 0x8027489C
+	.4byte l_3d08__esc__2_stringBase0 + 2964
 	.4byte 0x8029E650
 	.4byte 0x00000000
-	.4byte 0x802748A6
+	.4byte l_3d08__esc__2_stringBase0 + 2974
 	.4byte 0x8029E738
 	.4byte 0x00000000
-	.4byte 0x802748B0
+	.4byte l_3d08__esc__2_stringBase0 + 2984
 	.4byte 0x8029E820
 	.4byte 0x00000000
-	.4byte 0x802748B8
+	.4byte l_3d08__esc__2_stringBase0 + 2992
 	.4byte 0x8029F45C
 	.4byte 0x00000000
-	.4byte 0x802748C6
+	.4byte l_3d08__esc__2_stringBase0 + 3006
 	.4byte 0x802A0268
 	.4byte 0x00000000
-	.4byte 0x802748D6
+	.4byte l_3d08__esc__2_stringBase0 + 3022
 	.4byte 0x802A0F18
 	.4byte 0x00000000
 	.4byte 0x00000000

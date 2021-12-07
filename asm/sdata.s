@@ -286,10 +286,10 @@ l_afa8_next:
 	.4byte 0x00000000
 .global l_afb0_n_esc__6_210
 l_afb0_n_esc__6_210:
-	.4byte 0x80279AA0
+	.4byte l_9aa0__esc__2_stringBase0 + 0
 .global l_afb4_s_esc__6_211
 l_afb4_s_esc__6_211:
-	.4byte 0x80279AA0
+	.4byte l_9aa0__esc__2_stringBase0 + 0
 .global lbl_803CAFB8
 lbl_803CAFB8:
 	.4byte 0x7FFFFFFF

@@ -1512,16 +1512,16 @@ l_33f8__esc__2_stringBase0:
 
 .section .data
 l_b9c8_g_strz_glyphmodel:
-	.4byte 0x802733F8
-	.4byte 0x80273400
-	.4byte 0x80273415
-	.4byte 0x80273428
-	.4byte 0x8027343C
-	.4byte 0x80273451
-	.4byte 0x80273466
-	.4byte 0x80273474
-	.4byte 0x80273487
-	.4byte 0x80273497
+	.4byte l_33f8__esc__2_stringBase0 + 0
+	.4byte l_33f8__esc__2_stringBase0 + 8
+	.4byte l_33f8__esc__2_stringBase0 + 29
+	.4byte l_33f8__esc__2_stringBase0 + 48
+	.4byte l_33f8__esc__2_stringBase0 + 68
+	.4byte l_33f8__esc__2_stringBase0 + 89
+	.4byte l_33f8__esc__2_stringBase0 + 110
+	.4byte l_33f8__esc__2_stringBase0 + 124
+	.4byte l_33f8__esc__2_stringBase0 + 143
+	.4byte l_33f8__esc__2_stringBase0 + 159
 l_b9f0_g_cnt_activeGlyphs:
 	.4byte 0x00000000
 	.4byte 0x00000000

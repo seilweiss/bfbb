@@ -415,9 +415,9 @@ render__5xfontCFPCcff:
 
 .section .data
 l_d640_format_text_esc__6_709:
-	.4byte 0x80252F1F
-	.4byte 0x80252F22
-	.4byte 0x80252F28
+	.4byte l_2f10__esc__2_stringBase0 + 15
+	.4byte l_2f10__esc__2_stringBase0 + 18
+	.4byte l_2f10__esc__2_stringBase0 + 24
 /* SPECULATION: link order */
 .global __vt__Q24xhud17font_meter_widget
 __vt__Q24xhud17font_meter_widget:
