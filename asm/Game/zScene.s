@@ -5713,7 +5713,7 @@ l_05a0_sInitTable:
 	.4byte 0x434E5452
 	.4byte 0x00000018
 	.4byte zSceneInitFunc_Default__FP6zSceneP24zSceneObjectInstanceDescUi /* 0x800B0E08 */
-	.4byte 0x80015B68
+	.4byte xCounterInit__FPvPv /* 0x80015B68 */
 	.4byte 0x00000000
 	.4byte l_f078__esc__2_stringBase0 + 407
 	.4byte 0x00000013

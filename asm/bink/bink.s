@@ -35099,7 +35099,7 @@ LogoData:
 	.4byte 0x1DBD7A56
 	.4byte 0xAB735896
 	.4byte 0xF3121BB8
-	.4byte lbl_80244080 /* 0x80244080 */
+	.4byte lbl_80244080 /* 0x80244080 */ /* FAKE */
 	.4byte 0xA73C6577
 	.4byte 0xFA1A006F
 	.4byte 0x0135CBAA

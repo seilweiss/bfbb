@@ -51406,8 +51406,8 @@ l_e1cc__esc__2_1475:
 l_e200_sStreakInfo:
 	.4byte 0x00000000
 	.4byte 0x0000DEAD
-	.4byte 0x802DE91C
-	.4byte 0x802DE89C
+	.4byte l_e91c_sSpongeBobLHand /* 0x802DE91C */
+	.4byte l_e89c_sSpongeBobLElbow /* 0x802DE89C */
 	.4byte 0x3F333333
 	.4byte 0x00000001
 	.4byte 0xFFFF80FF
@@ -51420,8 +51420,8 @@ l_e200_sStreakInfo:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x0000DEAD
-	.4byte 0x802DE93C
-	.4byte 0x802DE8BC
+	.4byte l_e93c_sSpongeBobRHand /* 0x802DE93C */
+	.4byte l_e8bc_sSpongeBobRElbow /* 0x802DE8BC */
 	.4byte 0x3F333333
 	.4byte 0x00000001
 	.4byte 0xFFFF80FF
@@ -51434,8 +51434,8 @@ l_e200_sStreakInfo:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x0000DEAD
-	.4byte 0x802DE8DC
-	.4byte 0x802DE85C
+	.4byte l_e8dc_sSpongeBobLFoot /* 0x802DE8DC */
+	.4byte l_e85c_sSpongeBobLKnee /* 0x802DE85C */
 	.4byte 0x3F333333
 	.4byte 0x00000001
 	.4byte 0xFFFF80FF
@@ -51448,8 +51448,8 @@ l_e200_sStreakInfo:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x0000DEAD
-	.4byte 0x802DE8FC
-	.4byte 0x802DE87C
+	.4byte l_e8fc_sSpongeBobRFoot /* 0x802DE8FC */
+	.4byte l_e87c_sSpongeBobRKnee /* 0x802DE87C */
 	.4byte 0x3F333333
 	.4byte 0x00000001
 	.4byte 0xFFFF80FF
@@ -51462,8 +51462,8 @@ l_e200_sStreakInfo:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x0000DEAD
-	.4byte 0x802DE79C
-	.4byte 0x802DE81C
+	.4byte l_e79c_sSandyLHand /* 0x802DE79C */
+	.4byte l_e81c_sSandyLElbow /* 0x802DE81C */
 	.4byte 0x3F4CCCCD
 	.4byte 0x00000001
 	.4byte 0xC0C0FFFF
@@ -51476,8 +51476,8 @@ l_e200_sStreakInfo:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x0000DEAD
-	.4byte 0x802DE7BC
-	.4byte 0x802DE83C
+	.4byte l_e7bc_sSandyRHand /* 0x802DE7BC */
+	.4byte l_e83c_sSandyRElbow /* 0x802DE83C */
 	.4byte 0x3F4CCCCD
 	.4byte 0x00000001
 	.4byte 0xC0C0FFFF
@@ -51490,8 +51490,8 @@ l_e200_sStreakInfo:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x0000DEAD
-	.4byte 0x802DE75C
-	.4byte 0x802DE7DC
+	.4byte l_e75c_sSandyLFoot /* 0x802DE75C */
+	.4byte l_e7dc_sSandyLKnee /* 0x802DE7DC */
 	.4byte 0x3F4CCCCD
 	.4byte 0x00000001
 	.4byte 0xC0C0FFFF
@@ -51504,8 +51504,8 @@ l_e200_sStreakInfo:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x0000DEAD
-	.4byte 0x802DE77C
-	.4byte 0x802DE7FC
+	.4byte l_e77c_sSandyRFoot /* 0x802DE77C */
+	.4byte l_e7fc_sSandyRKnee /* 0x802DE7FC */
 	.4byte 0x3F4CCCCD
 	.4byte 0x00000001
 	.4byte 0xC0C0FFFF
@@ -51518,8 +51518,8 @@ l_e200_sStreakInfo:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x0000DEAD
-	.4byte 0x802DE99C
-	.4byte 0x802DEA1C
+	.4byte l_e99c_sPatrickLHand /* 0x802DE99C */
+	.4byte l_ea1c_sPatrickLElbow /* 0x802DEA1C */
 	.4byte 0x3F19999A
 	.4byte 0x00000001
 	.4byte 0xFF8585FF
@@ -51532,8 +51532,8 @@ l_e200_sStreakInfo:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x0000DEAD
-	.4byte 0x802DE9BC
-	.4byte 0x802DEA3C
+	.4byte l_e9bc_sPatrickRHand /* 0x802DE9BC */
+	.4byte l_ea3c_sPatrickRElbow /* 0x802DEA3C */
 	.4byte 0x3F19999A
 	.4byte 0x00000001
 	.4byte 0xFF8585FF
@@ -51546,8 +51546,8 @@ l_e200_sStreakInfo:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x0000DEAD
-	.4byte 0x802DE95C
-	.4byte 0x802DE9DC
+	.4byte l_e95c_sPatrickLFoot /* 0x802DE95C */
+	.4byte l_e9dc_sPatrickLKnee /* 0x802DE9DC */
 	.4byte 0x3F19999A
 	.4byte 0x00000001
 	.4byte 0xFF8585FF
@@ -51560,8 +51560,8 @@ l_e200_sStreakInfo:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x0000DEAD
-	.4byte 0x802DE97C
-	.4byte 0x802DE9FC
+	.4byte l_e97c_sPatrickRFoot /* 0x802DE97C */
+	.4byte l_e9fc_sPatrickRKnee /* 0x802DE9FC */
 	.4byte 0x3F19999A
 	.4byte 0x00000001
 	.4byte 0xFF8585FF
@@ -52245,7 +52245,57 @@ l_e734_last_center:
 l_e740_sWallNormal:
 	.skip 0xC
 l_e74c_player_talk__24_esc__2_unnamed_esc__2_zEntPlayer_cpp_esc__2_:
-	.skip 0xCE4
+    .skip 0x10
+l_e75c_sSandyLFoot:
+    .skip 0x20
+l_e77c_sSandyRFoot:
+    .skip 0x20
+l_e79c_sSandyLHand:
+    .skip 0x20
+l_e7bc_sSandyRHand:
+    .skip 0x20
+l_e7dc_sSandyLKnee:
+    .skip 0x20
+l_e7fc_sSandyRKnee:
+    .skip 0x20
+l_e81c_sSandyLElbow:
+    .skip 0x20
+l_e83c_sSandyRElbow:
+    .skip 0x20
+l_e85c_sSpongeBobLKnee:
+    .skip 0x20
+l_e87c_sSpongeBobRKnee:
+    .skip 0x20
+l_e89c_sSpongeBobLElbow:
+    .skip 0x20
+l_e8bc_sSpongeBobRElbow:
+    .skip 0x20
+l_e8dc_sSpongeBobLFoot:
+    .skip 0x20
+l_e8fc_sSpongeBobRFoot:
+    .skip 0x20
+l_e91c_sSpongeBobLHand:
+    .skip 0x20
+l_e93c_sSpongeBobRHand:
+    .skip 0x20
+l_e95c_sPatrickLFoot:
+    .skip 0x20
+l_e97c_sPatrickRFoot:
+    .skip 0x20
+l_e99c_sPatrickLHand:
+    .skip 0x20
+l_e9bc_sPatrickRHand:
+    .skip 0x20
+l_e9dc_sPatrickLKnee:
+    .skip 0x20
+l_e9fc_sPatrickRKnee:
+    .skip 0x20
+l_ea1c_sPatrickLElbow:
+    .skip 0x20
+l_ea3c_sPatrickRElbow:
+    .skip 0x20
+l_ea5c_sPatrickMelee:
+	.skip 0x9D4
 
 .section .sbss
 l_b5a0_sHackStuckTimer:

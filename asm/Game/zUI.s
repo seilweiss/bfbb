@@ -3842,7 +3842,7 @@ l_ac2c_patsock_prev_count:
 /* SPECULATION: link order */
 .global giAnimScratch
 giAnimScratch:
-	.4byte 0x802F8A80
+	.4byte l_8a80_scratchBuffer /* 0x802F8A80 */
 	.4byte 0x00000000
 /* SPECULATION: link order */
 .global sCameraNearClip

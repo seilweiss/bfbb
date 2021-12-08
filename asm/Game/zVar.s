@@ -2847,7 +2847,10 @@ l_8a44_buffer_esc__6_997:
 l_8a50_buffer_esc__6_1002:
 	.skip 0xC
 l_8a5c_buffer_esc__6_1007:
-	.skip 0x23C4
+    .skip 0x24
+.global l_8a80_scratchBuffer
+l_8a80_scratchBuffer:
+	.skip 0x23A0
 
 .section .sbss
 l_ba68_selSceneID__18_esc__2_unnamed_esc__2_zVar_cpp_esc__2_:

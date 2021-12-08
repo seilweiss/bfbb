@@ -4,9 +4,6 @@ INIT_O_FILES :=                                     \
 EXTAB_O_FILES :=                                    \
     $(OBJ_DIR)/asm/extab.o
 
-EXTABINDEX_O_FILES :=                               \
-    $(OBJ_DIR)/asm/extabindex.o
-
 TEXT_O_FILES :=                                     \
     $(OBJ_DIR)/asm/Core/x/xAnim.o                   \
     $(OBJ_DIR)/src/Core/x/xBase.o                   \

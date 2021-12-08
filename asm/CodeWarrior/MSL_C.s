@@ -18903,7 +18903,8 @@ lbl_802B6B08:
 	.4byte __write_console /* 0x801E90B8 */
 	.4byte __close_console /* 0x801E90B0 */
 	.4byte 0x00000000
-	.4byte 0x802B6B58
+	.4byte lbl_802B6B58 /* literally the next line */
+lbl_802B6B58:
 	.4byte 0x00000001
 	.4byte 0x12800000
 	.4byte 0x00000000
@@ -18923,7 +18924,8 @@ lbl_802B6B08:
 	.4byte __write_console /* 0x801E90B8 */
 	.4byte __close_console /* 0x801E90B0 */
 	.4byte 0x00000000
-	.4byte 0x802B6BA8
+	.4byte lbl_802B6BA8
+lbl_802B6BA8:
 	.4byte 0x00000002
 	.4byte 0x10800000
 	.4byte 0x00000000
@@ -18943,7 +18945,8 @@ lbl_802B6B08:
 	.4byte __write_console /* 0x801E90B8 */
 	.4byte __close_console /* 0x801E90B0 */
 	.4byte 0x00000000
-	.4byte 0x802B6BF8
+	.4byte lbl_802B6BF8
+lbl_802B6BF8:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
