@@ -1850,87 +1850,87 @@ sCheatDogTrix:
 	.4byte 0x00020000
 	.4byte 0x00040000
 l_f744_cheatList:
-	.4byte 0x8028F204
+	.4byte sCheatAddShiny /* 0x8028F204 */
 	.4byte GEC_cb_AddShiny__Fv /* 0x8009A058 */
 	.4byte 0x00000002
 	.4byte 0x00000000
-	.4byte 0x8028F244
+	.4byte sCheatAddSpatulas /* 0x8028F244 */
 	.4byte GEC_cb_AddSpatulas__Fv /* 0x8009A0E0 */
 	.4byte 0x00000001
 	.4byte 0x00000000
-	.4byte 0x8028F284
+	.4byte sCheatBubbleBowl /* 0x8028F284 */
 	.4byte GEC_cb_BubbleBowl__Fv /* 0x8009A158 */
 	.4byte 0x00000200
 	.4byte 0x00000000
-	.4byte 0x8028F2C4
+	.4byte sCheatCruiseBubble /* 0x8028F2C4 */
 	.4byte GEC_cb_CruiseBubble__Fv /* 0x8009A1BC */
 	.4byte 0x00000400
 	.4byte 0x00000000
-	.4byte 0x8028F304
+	.4byte sCheatMonsterGallery /* 0x8028F304 */
 	.4byte GEC_cb_MonsterGallery__Fv /* 0x8009A220 */
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x8028F344
+	.4byte sCheatArtTheatre /* 0x8028F344 */
 	.4byte GEC_cb_UnlockArtTheatre__Fv /* 0x8009A2C0 */
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x8028F384
+	.4byte sCheatChaChing /* 0x8028F384 */
 	.4byte GEC_cb_ChaChing__Fv /* 0x8009A304 */
 	.4byte 0x00000002
 	.4byte 0x00000000
-	.4byte 0x8028F3C4
+	.4byte sCheatExpertMode /* 0x8028F3C4 */
 	.4byte GEC_cb_ExpertMode__Fv /* 0x8009A424 */
 	.4byte 0x00000800
 	.4byte 0x00000000
-	.4byte 0x8028F404
+	.4byte sCheatSwapCCLR /* 0x8028F404 */
 	.4byte GEC_cb_SwapCCLR__Fv /* 0x8009A56C */
 	.4byte 0x00001000
 	.4byte 0x00000001
-	.4byte 0x8028F444
+	.4byte sCheatSwapCCUD /* 0x8028F444 */
 	.4byte GEC_cb_SwapCCUD__Fv /* 0x8009A58C */
 	.4byte 0x00002000
 	.4byte 0x00000001
-	.4byte 0x8028F484
+	.4byte sCheatRestoreHealth /* 0x8028F484 */
 	.4byte GEC_cb_RestoreHealth__Fv /* 0x8009A380 */
 	.4byte 0x00000100
 	.4byte 0x00000000
-	.4byte 0x8028F4C4
+	.4byte sCheatShrapBob /* 0x8028F4C4 */
 	.4byte GEC_cb_ShrapBobMode__Fv /* 0x8009A444 */
 	.4byte 0x02000000
 	.4byte 0x00000001
-	.4byte 0x8028F504
+	.4byte sCheatNoPants /* 0x8028F504 */
 	.4byte GEC_cb_NoPantsMode__Fv /* 0x8009A464 */
 	.4byte 0x10000000
 	.4byte 0x00000001
-	.4byte 0x8028F544
+	.4byte sCheatCruiseControl /* 0x8028F544 */
 	.4byte GEC_cb_CruiseControl__Fv /* 0x8009A4B0 */
 	.4byte 0x20000000
 	.4byte 0x00000001
-	.4byte 0x8028F584
+	.4byte sCheatBigPlank /* 0x8028F584 */
 	.4byte GEC_cb_BigPlank__Fv /* 0x8009A6BC */
 	.4byte 0x00010000
 	.4byte 0x00000001
-	.4byte 0x8028F5C4
+	.4byte sCheatSmallPeep /* 0x8028F5C4 */
 	.4byte GEC_cb_SmallPeep__Fv /* 0x8009A71C */
 	.4byte 0x00040000
 	.4byte 0x00000001
-	.4byte 0x8028F604
+	.4byte sCheatSmallCoStars /* 0x8028F604 */
 	.4byte GEC_cb_SmallCostars__Fv /* 0x8009A73C */
 	.4byte 0x00080000
 	.4byte 0x00000001
-	.4byte 0x8028F644
+	.4byte sCheatRichPeep /* 0x8028F644 */
 	.4byte GEC_cb_RichPeep__Fv /* 0x8009A75C */
 	.4byte 0x00100000
 	.4byte 0x00000000
-	.4byte 0x8028F684
+	.4byte sCheatPanHandle /* 0x8028F684 */
 	.4byte GEC_cb_PanHandle__Fv /* 0x8009A77C */
 	.4byte 0x00200000
 	.4byte 0x00000000
-	.4byte 0x8028F6C4
+	.4byte sCheatMedics /* 0x8028F6C4 */
 	.4byte GEC_cb_Medics__Fv /* 0x8009A6DC */
 	.4byte 0x00020100
 	.4byte 0x00000000
-	.4byte 0x8028F704
+	.4byte sCheatDogTrix /* 0x8028F704 */
 	.4byte GEC_cb_DogTrix__Fv /* 0x8009A6FC */
 	.4byte 0x00400000
 	.4byte 0x00000000

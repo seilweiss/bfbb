@@ -1012,12 +1012,8 @@ l_b380__esc__2_700:
 	.4byte lbl_8000A93C /* 0x8000A93C */
 	.4byte lbl_8000A97C /* 0x8000A97C */
 	.4byte lbl_8000A9A4 /* 0x8000A9A4 */
-.global xcam_collis_owner_disable
-xcam_collis_owner_disable:
 	.4byte lbl_8000A9A4 /* 0x8000A9A4 */
 	.4byte lbl_8000A9A4 /* 0x8000A9A4 */
-.global gCameraLastFov
-gCameraLastFov:
 	.4byte lbl_8000A9A4 /* 0x8000A9A4 */
 	.4byte lbl_8000A9A4 /* 0x8000A9A4 */
 	.4byte lbl_8000A9A4 /* 0x8000A9A4 */
@@ -1031,21 +1027,15 @@ gCameraLastFov:
 	.4byte lbl_8000A9A4 /* 0x8000A9A4 */
 	.4byte lbl_8000A9A4 /* 0x8000A9A4 */
 	.4byte lbl_8000A9A4 /* 0x8000A9A4 */
-.global gFrameCount
-gFrameCount:
 	.4byte lbl_8000A9A4 /* 0x8000A9A4 */
 	.4byte lbl_8000A9A4 /* 0x8000A9A4 */
 	.4byte lbl_8000A9A4 /* 0x8000A9A4 */
 	.4byte lbl_8000A9A4 /* 0x8000A9A4 */
 	.4byte lbl_8000A9A4 /* 0x8000A9A4 */
 	.4byte lbl_8000A9A4 /* 0x8000A9A4 */
-.global sSetPipeline
-sSetPipeline:
 	.4byte lbl_8000A950 /* 0x8000A950 */
 	.4byte lbl_8000A990 /* 0x8000A990 */
 	.4byte lbl_8000A9A4 /* 0x8000A9A4 */
-.global xent_entent
-xent_entent:
 	.4byte lbl_8000A9A4 /* 0x8000A9A4 */
 /* SPECULATION: link order */
 .global sCameraFXTable

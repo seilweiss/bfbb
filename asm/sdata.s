@@ -360,10 +360,10 @@ l_b02c__rpMatFXMaterialDataFreeListPreallocBlocks:
 	.4byte 0x00000001
 .global _rwPNumber1
 _rwPNumber1:
-	.4byte 0x803D0498
+	.4byte _rwNnumber1 /* 0x803D0498 */
 .global _rwConst
 _rwConst:
-	.4byte 0x8027A478
+	.4byte _rwConstants /* 0x8027A478 */
 .global l_b038__rpSkinFreeListBlockSize
 l_b038__rpSkinFreeListBlockSize:
 	.4byte 0x00000014

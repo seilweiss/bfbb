@@ -5578,7 +5578,7 @@ clear:
 /* SPECULATION: link order */
 .global soaklevels
 soaklevels:
-	.4byte 0x8028F0B8
+	.4byte soaklevels_gameorder /* 0x8028F0B8 */
 /* SPECULATION: link order */
 .global soaktime
 soaktime:
