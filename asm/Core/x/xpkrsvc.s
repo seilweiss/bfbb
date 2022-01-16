@@ -6551,9 +6551,6 @@ l_d930_g_readdatainst:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
-/* SPECULATION: link order */
-.global lbl_80280004
-lbl_80280004:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000

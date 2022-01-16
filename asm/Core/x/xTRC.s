@@ -712,6 +712,8 @@ l_a310_tb_esc__6_895:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
+.global lbl_8028A350
+lbl_8028A350:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000

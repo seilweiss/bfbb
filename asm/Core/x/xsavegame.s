@@ -5591,6 +5591,8 @@ l_8978_g_leaders:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
+.global lbl_80288A5C
+lbl_80288A5C:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
