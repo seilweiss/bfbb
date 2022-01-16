@@ -341,8 +341,8 @@ l_c40c_MaxEntryNum:
 .global l_c410_currentDirectory
 l_c410_currentDirectory:
 	.skip 0x4
-.global lbl_803CC414
-lbl_803CC414:
+.global __DVDLongFileNameFlag
+__DVDLongFileNameFlag:
 	.skip 0x4
 .global lbl_803CC418
 lbl_803CC418:
@@ -497,8 +497,8 @@ l_c4f4_FinishQueue:
 .global l_c500_BootInfo
 l_c500_BootInfo:
 	.skip 0x4
-.global l_c504_BI2DebugFlag
-l_c504_BI2DebugFlag:
+.global BI2DebugFlag
+BI2DebugFlag:
 	.skip 0x4
 .global l_c508_BI2DebugFlagHolder
 l_c508_BI2DebugFlagHolder:
@@ -512,8 +512,8 @@ l_c510_ZeroF:
 .global l_c518_ZeroPS
 l_c518_ZeroPS:
 	.skip 0x8
-.global l_c520_AreWeInitialized
-l_c520_AreWeInitialized:
+.global AreWeInitialized
+AreWeInitialized:
 	.skip 0x4
 .global l_c524_OSExceptionTable
 l_c524_OSExceptionTable:

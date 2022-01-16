@@ -16365,7 +16365,7 @@ lbl_801C3874:
 /* 801C387C 001C067C  7F 43 D3 78 */	mr r3, r26
 /* 801C3880 001C0680  48 00 02 1C */	b lbl_801C3A9C
 lbl_801C3884:
-/* 801C3884 001C0684  80 0D 9B 14 */	lwz r0, lbl_803CC414@sda21(r13)
+/* 801C3884 001C0684  80 0D 9B 14 */	lwz r0, __DVDLongFileNameFlag@sda21(r13)
 /* 801C3888 001C0688  28 00 00 00 */	cmplwi r0, 0
 /* 801C388C 001C068C  40 82 00 AC */	bne lbl_801C3938
 /* 801C3890 001C0690  3B 97 00 00 */	addi r28, r23, 0
@@ -31858,8 +31858,8 @@ l_0db4_InquiryCallback:
 /* 801D0DBC 001CDBBC  41 82 00 08 */	beq lbl_801D0DC4
 /* 801D0DC0 001CDBC0  48 00 00 20 */	b lbl_801D0DE0
 lbl_801D0DC4:
-/* 801D0DC4 001CDBC4  3C 60 80 38 */	lis r3, l_dfc0_DriveInfo@ha
-/* 801D0DC8 001CDBC8  38 63 DF C0 */	addi r3, r3, l_dfc0_DriveInfo@l
+/* 801D0DC4 001CDBC4  3C 60 80 38 */	lis r3, DriveInfo@ha
+/* 801D0DC8 001CDBC8  38 63 DF C0 */	addi r3, r3, DriveInfo@l
 /* 801D0DCC 001CDBCC  A0 03 00 02 */	lhz r0, 2(r3)
 /* 801D0DD0 001CDBD0  3C 60 80 00 */	lis r3, 0x800030E6@ha
 /* 801D0DD4 001CDBD4  60 00 80 00 */	ori r0, r0, 0x8000
@@ -31880,15 +31880,15 @@ OSInit:
 /* 801D0DFC 001CDBFC  93 E1 00 14 */	stw r31, 0x14(r1)
 /* 801D0E00 001CDC00  93 C1 00 10 */	stw r30, 0x10(r1)
 /* 801D0E04 001CDC04  93 A1 00 0C */	stw r29, 0xc(r1)
-/* 801D0E08 001CDC08  80 0D 9C 20 */	lwz r0, l_c520_AreWeInitialized@sda21(r13)
-/* 801D0E0C 001CDC0C  3C 60 80 38 */	lis r3, l_dfc0_DriveInfo@ha
-/* 801D0E10 001CDC10  3B C3 DF C0 */	addi r30, r3, l_dfc0_DriveInfo@l
+/* 801D0E08 001CDC08  80 0D 9C 20 */	lwz r0, AreWeInitialized@sda21(r13)
+/* 801D0E0C 001CDC0C  3C 60 80 38 */	lis r3, DriveInfo@ha
+/* 801D0E10 001CDC10  3B C3 DF C0 */	addi r30, r3, DriveInfo@l
 /* 801D0E14 001CDC14  2C 00 00 00 */	cmpwi r0, 0
 /* 801D0E18 001CDC18  3C 60 80 2B */	lis r3, l_4fe0__esc__2_1@ha
 /* 801D0E1C 001CDC1C  3B E3 4F E0 */	addi r31, r3, l_4fe0__esc__2_1@l
 /* 801D0E20 001CDC20  40 82 03 8C */	bne lbl_801D11AC
 /* 801D0E24 001CDC24  38 00 00 01 */	li r0, 1
-/* 801D0E28 001CDC28  90 0D 9C 20 */	stw r0, l_c520_AreWeInitialized@sda21(r13)
+/* 801D0E28 001CDC28  90 0D 9C 20 */	stw r0, AreWeInitialized@sda21(r13)
 /* 801D0E2C 001CDC2C  48 00 67 41 */	bl __OSGetSystemTime
 /* 801D0E30 001CDC30  90 8D 9C 3C */	stw r4, lbl_803CC53C@sda21(r13)
 /* 801D0E34 001CDC34  90 6D 9C 38 */	stw r3, lbl_803CC538@sda21(r13)
@@ -31909,16 +31909,16 @@ OSInit:
 /* 801D0E70 001CDC70  4B FE 9F 0D */	bl PPCSetFpNonIEEEMode
 /* 801D0E74 001CDC74  38 00 00 00 */	li r0, 0
 /* 801D0E78 001CDC78  3C 80 80 00 */	lis r4, 0x800000F4@ha
-/* 801D0E7C 001CDC7C  90 0D 9C 04 */	stw r0, l_c504_BI2DebugFlag@sda21(r13)
+/* 801D0E7C 001CDC7C  90 0D 9C 04 */	stw r0, BI2DebugFlag@sda21(r13)
 /* 801D0E80 001CDC80  90 8D 9C 00 */	stw r4, l_c500_BootInfo@sda21(r13)
-/* 801D0E84 001CDC84  90 0D 9B 14 */	stw r0, lbl_803CC414@sda21(r13)
+/* 801D0E84 001CDC84  90 0D 9B 14 */	stw r0, __DVDLongFileNameFlag@sda21(r13)
 /* 801D0E88 001CDC88  80 64 00 F4 */	lwz r3, 0x800000F4@l(r4)
 /* 801D0E8C 001CDC8C  28 03 00 00 */	cmplwi r3, 0
 /* 801D0E90 001CDC90  41 82 00 34 */	beq lbl_801D0EC4
 /* 801D0E94 001CDC94  38 03 00 0C */	addi r0, r3, 0xc
-/* 801D0E98 001CDC98  90 0D 9C 04 */	stw r0, l_c504_BI2DebugFlag@sda21(r13)
+/* 801D0E98 001CDC98  90 0D 9C 04 */	stw r0, BI2DebugFlag@sda21(r13)
 /* 801D0E9C 001CDC9C  80 03 00 24 */	lwz r0, 0x24(r3)
-/* 801D0EA0 001CDCA0  80 6D 9C 04 */	lwz r3, l_c504_BI2DebugFlag@sda21(r13)
+/* 801D0EA0 001CDCA0  80 6D 9C 04 */	lwz r3, BI2DebugFlag@sda21(r13)
 /* 801D0EA4 001CDCA4  90 0D 9D 04 */	stw r0, lbl_803CC604@sda21(r13)
 /* 801D0EA8 001CDCA8  80 03 00 00 */	lwz r0, 0(r3)
 /* 801D0EAC 001CDCAC  54 00 06 3E */	clrlwi r0, r0, 0x18
@@ -31934,13 +31934,13 @@ lbl_801D0EC4:
 /* 801D0ED0 001CDCD0  88 64 30 E8 */	lbz r3, 0x30e8(r4)
 /* 801D0ED4 001CDCD4  38 0D 9C 08 */	addi r0, r13, l_c508_BI2DebugFlagHolder@sda21
 /* 801D0ED8 001CDCD8  90 6D 9C 08 */	stw r3, l_c508_BI2DebugFlagHolder@sda21(r13)
-/* 801D0EDC 001CDCDC  90 0D 9C 04 */	stw r0, l_c504_BI2DebugFlag@sda21(r13)
+/* 801D0EDC 001CDCDC  90 0D 9C 04 */	stw r0, BI2DebugFlag@sda21(r13)
 /* 801D0EE0 001CDCE0  88 04 30 E9 */	lbz r0, 0x30e9(r4)
 /* 801D0EE4 001CDCE4  90 0D 9D 04 */	stw r0, lbl_803CC604@sda21(r13)
 lbl_801D0EE8:
 /* 801D0EE8 001CDCE8  38 00 00 01 */	li r0, 1
 /* 801D0EEC 001CDCEC  80 6D 9C 00 */	lwz r3, l_c500_BootInfo@sda21(r13)
-/* 801D0EF0 001CDCF0  90 0D 9B 14 */	stw r0, lbl_803CC414@sda21(r13)
+/* 801D0EF0 001CDCF0  90 0D 9B 14 */	stw r0, __DVDLongFileNameFlag@sda21(r13)
 /* 801D0EF4 001CDCF4  80 63 00 30 */	lwz r3, 0x30(r3)
 /* 801D0EF8 001CDCF8  28 03 00 00 */	cmplwi r3, 0
 /* 801D0EFC 001CDCFC  40 82 00 10 */	bne lbl_801D0F0C
@@ -31953,7 +31953,7 @@ lbl_801D0F0C:
 /* 801D0F14 001CDD14  80 03 00 30 */	lwz r0, 0x30(r3)
 /* 801D0F18 001CDD18  28 00 00 00 */	cmplwi r0, 0
 /* 801D0F1C 001CDD1C  40 82 00 30 */	bne lbl_801D0F4C
-/* 801D0F20 001CDD20  80 6D 9C 04 */	lwz r3, l_c504_BI2DebugFlag@sda21(r13)
+/* 801D0F20 001CDD20  80 6D 9C 04 */	lwz r3, BI2DebugFlag@sda21(r13)
 /* 801D0F24 001CDD24  28 03 00 00 */	cmplwi r3, 0
 /* 801D0F28 001CDD28  41 82 00 24 */	beq lbl_801D0F4C
 /* 801D0F2C 001CDD2C  80 03 00 00 */	lwz r0, 0(r3)
@@ -32103,7 +32103,7 @@ lbl_801D10F8:
 /* 801D112C 001CDF2C  48 00 1D D9 */	bl OSReport
 /* 801D1130 001CDF30  80 6D 86 30 */	lwz r3, lbl_803CAF30@sda21(r13)
 /* 801D1134 001CDF34  48 00 04 C9 */	bl OSRegisterVersion
-/* 801D1138 001CDF38  80 6D 9C 04 */	lwz r3, l_c504_BI2DebugFlag@sda21(r13)
+/* 801D1138 001CDF38  80 6D 9C 04 */	lwz r3, BI2DebugFlag@sda21(r13)
 /* 801D113C 001CDF3C  28 03 00 00 */	cmplwi r3, 0
 /* 801D1140 001CDF40  41 82 00 14 */	beq lbl_801D1154
 /* 801D1144 001CDF44  80 03 00 00 */	lwz r0, 0(r3)
@@ -32199,7 +32199,7 @@ lbl_801D1280:
 lbl_801D1290:
 /* 801D1290 001CE090  48 00 01 48 */	b lbl_801D13D8
 lbl_801D1294:
-/* 801D1294 001CE094  80 6D 9C 04 */	lwz r3, l_c504_BI2DebugFlag@sda21(r13)
+/* 801D1294 001CE094  80 6D 9C 04 */	lwz r3, BI2DebugFlag@sda21(r13)
 /* 801D1298 001CE098  28 03 00 00 */	cmplwi r3, 0
 /* 801D129C 001CE09C  41 82 00 34 */	beq lbl_801D12D0
 /* 801D12A0 001CE0A0  80 03 00 00 */	lwz r0, 0(r3)
@@ -52572,8 +52572,8 @@ l_d988_FifoObj:
 gxData:
 	.skip 0x5B0
 .skip 8
-.global l_dfc0_DriveInfo
-l_dfc0_DriveInfo:
+.global DriveInfo
+DriveInfo:
 	.skip 0x50
 .global lbl_8037E010
 lbl_8037E010:
