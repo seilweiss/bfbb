@@ -144,8 +144,6 @@ lbl_80160120:
 #fakelabel
 lbl_80270004:
 	.4byte 0x652E6472
-.global lbl_80270008
-lbl_80270008:
 	.4byte 0x6F705F61
 	.4byte 0x6363656C
 	.4byte 0x006B6172

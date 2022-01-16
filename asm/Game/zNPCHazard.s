@@ -14530,8 +14530,6 @@ l_f45c_g_B302_end:
   .4byte 0
   .4byte 0
 /* SPECULATION: link order */
-.global lbl_802A0004
-lbl_802A0004:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000

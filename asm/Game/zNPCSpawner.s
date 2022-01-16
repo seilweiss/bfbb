@@ -83,10 +83,10 @@ lbl_8012A7F4:
 
 .global zNPCSpawner_GetInstance__Fv
 zNPCSpawner_GetInstance__Fv:
-/* 8012A828 00127628  3C 80 80 2A */	lis r4, lbl_802A0004@ha
-/* 8012A82C 0012762C  84 A4 8C 38 */	lwzu r5, -0x73c8(r4)
+/* 8012A828 00127628  3C 80 80 2A */	lis r4, l_8c38_g_smdepot@ha
+/* 8012A82C 0012762C  84 A4 8C 38 */	lwzu r5, l_8c38_g_smdepot@l(r4)
 /* 8012A830 00127630  38 60 00 00 */	li r3, 0
-/* 8012A834 00127634  80 04 00 04 */	lwz r0, lbl_802A0004@l(r4)
+/* 8012A834 00127634  80 04 00 04 */	lwz r0, 4(r4)
 /* 8012A838 00127638  7C 09 03 A6 */	mtctr r0
 /* 8012A83C 0012763C  2C 00 00 00 */	cmpwi r0, 0
 /* 8012A840 00127640  4C 81 00 20 */	blelr 

@@ -9595,10 +9595,7 @@ gTRKBigEndian:
 	.skip 0x8
 .global gTRKMsgBufs
 gTRKMsgBufs:
-	.skip 0xD10
-.global lbl_80380008
-lbl_80380008:
-	.skip 0xCA0
+	.skip 0x19B0
 .global gTRKInputPendingPtr
 gTRKInputPendingPtr:
 	.skip 0x4
