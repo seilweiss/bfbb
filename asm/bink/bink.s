@@ -34297,9 +34297,9 @@ LogoData:
 	.4byte 0x5D3D7E9D
 	.4byte 0xCE394F35
 	.4byte 0xA57E7C49
-	.4byte l_b644_sReticleModel /* 0x803CB644 */
+	.4byte 0x803CB644 /* FAKE */
 	.4byte 0x47AF1248
-	.4byte lbl_80044820 /* 0x80044820 */
+	.4byte 0x80044820 /* FAKE */
 	.4byte 0x637727E3
 	.4byte 0x9DA935FF
 	.4byte 0x025E9F5E
@@ -35199,7 +35199,7 @@ LogoData:
 	.4byte 0xB5EF0C7B
 	.4byte 0xFF9FFD7D
 	.4byte 0x831C96BE
-	.4byte lbl_801E9844 /* 0x801E9844 */
+	.4byte 0x801E9844 /* FAKE */
 	.4byte 0xB51E29C1
 	.4byte 0x01D30E0D
 	.4byte 0xC73B42FD
@@ -36248,7 +36248,7 @@ LogoData:
 	.4byte 0xF08DAF16
 	.4byte 0x84400864
 	.4byte 0xBBF78038
-	.4byte lbl_8017F81C /* 0x8017F81C */
+	.4byte 0x8017F81C /* FAKE */
 	.4byte 0x77D78685
 	.4byte 0xDD73C05A
 	.4byte 0x3DAF0103
@@ -37438,7 +37438,7 @@ LogoData:
 	.4byte 0x37F159AF
 	.4byte 0xCE214EBF
 	.4byte 0x823145D6
-	.4byte lbl_80036E00 /* 0x80036E00 */
+	.4byte 0x80036E00 /* FAKE */
 	.4byte 0x603D1BDA
 	.4byte 0x205BEC12
 	.4byte 0x9EC83DF1
