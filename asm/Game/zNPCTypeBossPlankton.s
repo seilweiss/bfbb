@@ -1348,7 +1348,7 @@ load__Q234_esc__2_unnamed_esc__2_zNPCTypeBossPlankton_cpp_esc__2_11tweak_groupFP
 register_tweaks__Q234_esc__2_unnamed_esc__2_zNPCTypeBossPlankton_cpp_esc__2_11tweak_groupFbP16xModelAssetParamUiPCc:
 /* 80169E60 00166C60  94 21 FF A0 */	stwu r1, -0x60(r1)
 /* 80169E64 00166C64  7C 08 02 A6 */	mflr r0
-/* 80169E68 00166C68  3C E0 80 27 */	lis r7, lbl_80270004@ha
+/* 80169E68 00166C68  3C E0 80 27 */	lis r7, l_12dc__esc__2_896@ha
 /* 80169E6C 00166C6C  90 01 00 64 */	stw r0, 0x64(r1)
 /* 80169E70 00166C70  54 80 06 3F */	clrlwi. r0, r4, 0x18
 /* 80169E74 00166C74  93 E1 00 5C */	stw r31, 0x5c(r1)
@@ -1359,8 +1359,8 @@ register_tweaks__Q234_esc__2_unnamed_esc__2_zNPCTypeBossPlankton_cpp_esc__2_11tw
 /* 80169E88 00166C88  7C 9D 23 78 */	mr r29, r4
 /* 80169E8C 00166C8C  93 81 00 50 */	stw r28, 0x50(r1)
 /* 80169E90 00166C90  7C 7C 1B 78 */	mr r28, r3
-/* 80169E94 00166C94  84 87 12 DC */	lwzu r4, 0x12dc(r7)
-/* 80169E98 00166C98  80 67 00 04 */	lwz r3, lbl_80270004@l(r7)
+/* 80169E94 00166C94  84 87 12 DC */	lwzu r4, l_12dc__esc__2_896@l(r7)
+/* 80169E98 00166C98  80 67 00 04 */	lwz r3, 4(r7)
 /* 80169E9C 00166C9C  80 07 00 08 */	lwz r0, 8(r7)
 /* 80169EA0 00166CA0  90 81 00 38 */	stw r4, 0x38(r1)
 /* 80169EA4 00166CA4  90 61 00 3C */	stw r3, 0x3c(r1)

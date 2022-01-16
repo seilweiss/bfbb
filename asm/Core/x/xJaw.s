@@ -141,7 +141,7 @@ lbl_80160120:
 
 .section .rodata 
 /* SPECULATION: This seems to be located after zNPCTypeBossSB2 but before zNPCTypeBossPatrick */
-.global lbl_80270004
+#fakelabel
 lbl_80270004:
 	.4byte 0x652E6472
 .global lbl_80270008
