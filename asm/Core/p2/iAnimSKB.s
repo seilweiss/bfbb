@@ -438,11 +438,11 @@ _iAnimSKBAdjustTranslate__FP14iAnimSKBHeaderUiPfPf:
 /* 800BF804 000BC604  39 47 01 18 */	addi r10, r7, l_0118__esc__2_1073@l
 /* 800BF808 000BC608  39 03 00 1C */	addi r8, r3, 0x1c
 /* 800BF80C 000BC60C  BE E1 00 4C */	stmw r23, 0x4c(r1)
-/* 800BF810 000BC610  3D 20 80 26 */	lis r9, lbl_80260004@ha
+/* 800BF810 000BC610  3D 20 80 26 */	lis r9, l_0124__esc__2_1074@ha
 /* 800BF814 000BC614  A1 63 00 0A */	lhz r11, 0xa(r3)
 /* 800BF818 000BC618  A0 E3 00 08 */	lhz r7, 8(r3)
 /* 800BF81C 000BC61C  38 0B FF FE */	addi r0, r11, -2
-/* 800BF820 000BC620  86 E9 01 24 */	lwzu r23, 0x124(r9)
+/* 800BF820 000BC620  86 E9 01 24 */	lwzu r23, l_0124__esc__2_1074@l(r9)
 /* 800BF824 000BC624  7C 00 39 D6 */	mullw r0, r0, r7
 /* 800BF828 000BC628  83 63 00 0C */	lwz r27, 0xc(r3)
 /* 800BF82C 000BC62C  83 AA 00 00 */	lwz r29, 0(r10)
@@ -453,7 +453,7 @@ _iAnimSKBAdjustTranslate__FP14iAnimSKBHeaderUiPfPf:
 /* 800BF840 000BC640  55 67 10 3A */	slwi r7, r11, 2
 /* 800BF844 000BC644  7F DA 3A 14 */	add r30, r26, r7
 /* 800BF848 000BC648  7C 04 02 14 */	add r0, r4, r0
-/* 800BF84C 000BC64C  81 89 00 04 */	lwz r12, lbl_80260004@l(r9)
+/* 800BF84C 000BC64C  81 89 00 04 */	lwz r12, 4(r9)
 /* 800BF850 000BC650  54 8A 08 3C */	slwi r10, r4, 1
 /* 800BF854 000BC654  81 69 00 08 */	lwz r11, 8(r9)
 /* 800BF858 000BC658  54 00 08 3C */	slwi r0, r0, 1

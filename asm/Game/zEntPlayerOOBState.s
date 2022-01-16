@@ -2171,10 +2171,10 @@ lbl_8011C86C:
 render__9oob_stateFv:
 /* 8011C874 00119674  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8011C878 00119678  7C 08 02 A6 */	mflr r0
-/* 8011C87C 0011967C  3C 60 80 29 */	lis r3, 0x8029
+/* 8011C87C 0011967C  3C 60 80 29 */	lis r3, l_7e48_shared__Q29oob_state32_esc__2_unnamed_esc__2_zEntPlayerOOBState_cpp_esc__2_@ha
 /* 8011C880 00119680  90 01 00 14 */	stw r0, 0x14(r1)
 /* 8011C884 00119684  93 E1 00 0C */	stw r31, 0xc(r1)
-/* 8011C888 00119688  84 03 7E 48 */	lwzu r0, 0x7e48(r3)
+/* 8011C888 00119688  84 03 7E 48 */	lwzu r0, l_7e48_shared__Q29oob_state32_esc__2_unnamed_esc__2_zEntPlayerOOBState_cpp_esc__2_@l(r3)
 /* 8011C88C 0011968C  54 00 07 BE */	clrlwi r0, r0, 0x1e
 /* 8011C890 00119690  2C 00 00 03 */	cmpwi r0, 3
 /* 8011C894 00119694  41 82 00 0C */	beq lbl_8011C8A0
@@ -2211,9 +2211,9 @@ lbl_8011C8E8:
 fx_render__9oob_stateFv:
 /* 8011C8FC 001196FC  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 8011C900 00119700  7C 08 02 A6 */	mflr r0
-/* 8011C904 00119704  3C 60 80 29 */	lis r3, 0x8029
+/* 8011C904 00119704  3C 60 80 29 */	lis r3, l_7e48_shared__Q29oob_state32_esc__2_unnamed_esc__2_zEntPlayerOOBState_cpp_esc__2_@ha
 /* 8011C908 00119708  90 01 00 14 */	stw r0, 0x14(r1)
-/* 8011C90C 0011970C  84 03 7E 48 */	lwzu r0, 0x7e48(r3)
+/* 8011C90C 0011970C  84 03 7E 48 */	lwzu r0, l_7e48_shared__Q29oob_state32_esc__2_unnamed_esc__2_zEntPlayerOOBState_cpp_esc__2_@l(r3)
 /* 8011C910 00119710  54 00 07 BE */	clrlwi r0, r0, 0x1e
 /* 8011C914 00119714  2C 00 00 03 */	cmpwi r0, 3
 /* 8011C918 00119718  40 82 00 4C */	bne lbl_8011C964

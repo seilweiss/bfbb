@@ -565,7 +565,7 @@ __as__6RtQuatFRC6RtQuat:
 
 .section .rodata
 /* this apparently goes to iAnimSKB but putting it there breaks the linking order */
-.global lbl_80260004
+# it does not go with iAnimSKB - EpochFlame
 lbl_80260004:
 	.4byte 0x46582056
 	.4byte 0x6F6C756D

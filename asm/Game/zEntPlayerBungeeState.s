@@ -1231,9 +1231,9 @@ fade_hook_update__Q212bungee_state35_esc__2_unnamed_esc__2_zEntPlayerBungeeState
 /* 8011135C 0010E15C  28 03 00 00 */	cmplwi r3, 0
 /* 80111360 0010E160  41 82 00 AC */	beq lbl_8011140C
 /* 80111364 0010E164  3C A0 80 31 */	lis r5, l_3788_fixed__Q212bungee_state35_esc__2_unnamed_esc__2_zEntPlayerBungeeState_cpp_esc__2_@ha
-/* 80111368 0010E168  3C 80 80 29 */	lis r4, 0x8029
+/* 80111368 0010E168  3C 80 80 29 */	lis r4, l_7a68_shared__Q212bungee_state35_esc__2_unnamed_esc__2_zEntPlayerBungeeState_cpp_esc__2_@ha
 /* 8011136C 0010E16C  38 A5 37 88 */	addi r5, r5, l_3788_fixed__Q212bungee_state35_esc__2_unnamed_esc__2_zEntPlayerBungeeState_cpp_esc__2_@l
-/* 80111370 0010E170  84 04 7A 68 */	lwzu r0, 0x7a68(r4)
+/* 80111370 0010E170  84 04 7A 68 */	lwzu r0, l_7a68_shared__Q212bungee_state35_esc__2_unnamed_esc__2_zEntPlayerBungeeState_cpp_esc__2_@l(r4)
 /* 80111374 0010E174  C0 22 9E 88 */	lfs f1, l_e808__esc__2_961@sda21(r2)
 /* 80111378 0010E178  C0 05 00 28 */	lfs f0, 0x28(r5)
 /* 8011137C 0010E17C  54 00 06 73 */	rlwinm. r0, r0, 0, 0x19, 0x19
@@ -2555,9 +2555,9 @@ stop__Q312bungee_state35_esc__2_unnamed_esc__2_zEntPlayerBungeeState_cpp_esc__2_
 render__12bungee_stateFv:
 /* 8011261C 0010F41C  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 80112620 0010F420  7C 08 02 A6 */	mflr r0
-/* 80112624 0010F424  3C 60 80 29 */	lis r3, 0x8029
+/* 80112624 0010F424  3C 60 80 29 */	lis r3, l_7a68_shared__Q212bungee_state35_esc__2_unnamed_esc__2_zEntPlayerBungeeState_cpp_esc__2_@ha
 /* 80112628 0010F428  90 01 00 14 */	stw r0, 0x14(r1)
-/* 8011262C 0010F42C  84 03 7A 68 */	lwzu r0, 0x7a68(r3)
+/* 8011262C 0010F42C  84 03 7A 68 */	lwzu r0, l_7a68_shared__Q212bungee_state35_esc__2_unnamed_esc__2_zEntPlayerBungeeState_cpp_esc__2_@l(r3)
 /* 80112630 0010F430  54 00 07 7E */	clrlwi r0, r0, 0x1d
 /* 80112634 0010F434  2C 00 00 07 */	cmpwi r0, 7
 /* 80112638 0010F438  41 82 00 0C */	beq lbl_80112644
