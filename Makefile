@@ -62,7 +62,7 @@ LDFLAGS := -map $(MAP) -w off -maxerrors 256 -nostdlib
 CFLAGS  := -g -Cpp_exceptions off -proc gekko -fp hard -str reuse,pool,readonly \
            -pragma "check_header_flags off" -pragma "force_active on" \
            -char unsigned -enum int -fp_contract on -nostdinc -RTTI off \
-           -use_lmw_stmw on -inline off -O4,p -msgstyle gcc -gccincludes $(INCLUDES)
+           -use_lmw_stmw on -inline off -O4,p -gccincludes $(INCLUDES)
 PREPROCESS := -preprocess -gccincludes $(INCLUDES)
 PPROCFLAGS := -fsymbol-fixup
 

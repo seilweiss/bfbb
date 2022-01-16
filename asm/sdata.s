@@ -73,10 +73,10 @@ l_ae34_pushcur:
 	.4byte 0x00000000
 .global l_ae38_pushptr
 l_ae38_pushptr:
-	.4byte 0x80363C88
+	.4byte lbl_80363C88
 .global l_ae3c_pushamt
 l_ae3c_pushamt:
-	.4byte 0x80363D08
+	.4byte lbl_80363D08
 .global l_ae40_cursize
 l_ae40_cursize:
 	.4byte 0x00000020

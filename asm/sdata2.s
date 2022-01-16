@@ -35,9 +35,9 @@ patternsalign:
 l_fc70__esc__2_239:
 	.4byte 0x47800000
 	.4byte 0x00000000
-.global lbl_803CFC78
-lbl_803CFC78:
-	.4byte 0x8037DA08
+.global gxDataPtr
+gxDataPtr:
+	.4byte gxData
 .global l_fc7c__esc__2_289
 l_fc7c__esc__2_289:
 	.4byte 0x4B800000

@@ -38,8 +38,8 @@ lbl_801DCDC8:
 lbl_801DCDF0:
 /* 801DCDF0 001D9BF0  38 60 00 00 */	li r3, 0
 /* 801DCDF4 001D9BF4  48 00 58 0D */	bl __begin_critical_region
-/* 801DCDF8 001D9BF8  3C 60 80 38 */	lis r3, lbl_8037EE68@ha
-/* 801DCDFC 001D9BFC  3B E3 EE 68 */	addi r31, r3, lbl_8037EE68@l
+/* 801DCDF8 001D9BF8  3C 60 80 38 */	lis r3, __atexit_funcs@ha
+/* 801DCDFC 001D9BFC  3B E3 EE 68 */	addi r31, r3, __atexit_funcs@l
 /* 801DCE00 001D9C00  48 00 00 20 */	b lbl_801DCE20
 lbl_801DCE04:
 /* 801DCE04 001D9C04  80 6D 9D 84 */	lwz r3, lbl_803CC684@sda21(r13)
@@ -83,8 +83,8 @@ abort:
 /* 801DCE88 001D9C88  38 60 00 00 */	li r3, 0
 /* 801DCE8C 001D9C8C  90 0D 9D 80 */	stw r0, lbl_803CC680@sda21(r13)
 /* 801DCE90 001D9C90  48 00 57 71 */	bl __begin_critical_region
-/* 801DCE94 001D9C94  3C 60 80 38 */	lis r3, lbl_8037EE68@ha
-/* 801DCE98 001D9C98  3B E3 EE 68 */	addi r31, r3, lbl_8037EE68@l
+/* 801DCE94 001D9C94  3C 60 80 38 */	lis r3, __atexit_funcs@ha
+/* 801DCE98 001D9C98  3B E3 EE 68 */	addi r31, r3, __atexit_funcs@l
 /* 801DCE9C 001D9C9C  48 00 00 20 */	b lbl_801DCEBC
 lbl_801DCEA0:
 /* 801DCEA0 001D9CA0  80 6D 9D 84 */	lwz r3, lbl_803CC684@sda21(r13)
@@ -1732,9 +1732,9 @@ lbl_801DE514:
 __flush_line_buffered_output_files:
 /* 801DE534 001DB334  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 801DE538 001DB338  7C 08 02 A6 */	mflr r0
-/* 801DE53C 001DB33C  3C 60 80 2B */	lis r3, lbl_802B6B08@ha
+/* 801DE53C 001DB33C  3C 60 80 2B */	lis r3, __files@ha
 /* 801DE540 001DB340  90 01 00 14 */	stw r0, 0x14(r1)
-/* 801DE544 001DB344  38 03 6B 08 */	addi r0, r3, lbl_802B6B08@l
+/* 801DE544 001DB344  38 03 6B 08 */	addi r0, r3, __files@l
 /* 801DE548 001DB348  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 801DE54C 001DB34C  3B E0 00 00 */	li r31, 0
 /* 801DE550 001DB350  93 C1 00 08 */	stw r30, 8(r1)
@@ -1773,9 +1773,9 @@ lbl_801DE59C:
 __flush_all:
 /* 801DE5C0 001DB3C0  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 801DE5C4 001DB3C4  7C 08 02 A6 */	mflr r0
-/* 801DE5C8 001DB3C8  3C 60 80 2B */	lis r3, lbl_802B6B08@ha
+/* 801DE5C8 001DB3C8  3C 60 80 2B */	lis r3, __files@ha
 /* 801DE5CC 001DB3CC  90 01 00 14 */	stw r0, 0x14(r1)
-/* 801DE5D0 001DB3D0  38 03 6B 08 */	addi r0, r3, lbl_802B6B08@l
+/* 801DE5D0 001DB3D0  38 03 6B 08 */	addi r0, r3, __files@l
 /* 801DE5D4 001DB3D4  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 801DE5D8 001DB3D8  3B E0 00 00 */	li r31, 0
 /* 801DE5DC 001DB3DC  93 C1 00 08 */	stw r30, 8(r1)
@@ -1805,10 +1805,10 @@ lbl_801DE60C:
 lbl_801DE630:
 /* 801DE630 001DB430  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 801DE634 001DB434  7C 08 02 A6 */	mflr r0
-/* 801DE638 001DB438  3C 80 80 2B */	lis r4, lbl_802B6B08@ha
+/* 801DE638 001DB438  3C 80 80 2B */	lis r4, __files@ha
 /* 801DE63C 001DB43C  38 60 00 02 */	li r3, 2
 /* 801DE640 001DB440  90 01 00 14 */	stw r0, 0x14(r1)
-/* 801DE644 001DB444  38 04 6B 08 */	addi r0, r4, lbl_802B6B08@l
+/* 801DE644 001DB444  38 04 6B 08 */	addi r0, r4, __files@l
 /* 801DE648 001DB448  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 801DE64C 001DB44C  7C 1F 03 78 */	mr r31, r0
 /* 801DE650 001DB450  48 00 3F B1 */	bl __begin_critical_region
@@ -1915,9 +1915,9 @@ lbl_801DE798:
 __find_unopened_file:
 /* 801DE7B4 001DB5B4  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 801DE7B8 001DB5B8  7C 08 02 A6 */	mflr r0
-/* 801DE7BC 001DB5BC  3C 60 80 2B */	lis r3, lbl_802B6B08@ha
+/* 801DE7BC 001DB5BC  3C 60 80 2B */	lis r3, __files@ha
 /* 801DE7C0 001DB5C0  90 01 00 14 */	stw r0, 0x14(r1)
-/* 801DE7C4 001DB5C4  38 63 6B 08 */	addi r3, r3, lbl_802B6B08@l
+/* 801DE7C4 001DB5C4  38 63 6B 08 */	addi r3, r3, __files@l
 /* 801DE7C8 001DB5C8  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 801DE7CC 001DB5CC  93 C1 00 08 */	stw r30, 8(r1)
 /* 801DE7D0 001DB5D0  80 63 00 EC */	lwz r3, 0xec(r3)
@@ -8538,12 +8538,12 @@ lbl_801E4078:
 vprintf:
 /* 801E408C 001E0E8C  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 801E4090 001E0E90  7C 08 02 A6 */	mflr r0
-/* 801E4094 001E0E94  3C A0 80 2B */	lis r5, lbl_802B6B08@ha
+/* 801E4094 001E0E94  3C A0 80 2B */	lis r5, __files@ha
 /* 801E4098 001E0E98  90 01 00 24 */	stw r0, 0x24(r1)
 /* 801E409C 001E0E9C  93 E1 00 1C */	stw r31, 0x1c(r1)
 /* 801E40A0 001E0EA0  93 C1 00 18 */	stw r30, 0x18(r1)
 /* 801E40A4 001E0EA4  7C 9E 23 78 */	mr r30, r4
-/* 801E40A8 001E0EA8  38 85 6B 08 */	addi r4, r5, lbl_802B6B08@l
+/* 801E40A8 001E0EA8  38 85 6B 08 */	addi r4, r5, __files@l
 /* 801E40AC 001E0EAC  93 A1 00 14 */	stw r29, 0x14(r1)
 /* 801E40B0 001E0EB0  3B E4 00 50 */	addi r31, r4, 0x50
 /* 801E40B4 001E0EB4  7C 7D 1B 78 */	mr r29, r3
@@ -8657,9 +8657,9 @@ printf:
 /* 801E4238 001E1038  D8 E1 00 58 */	stfd f7, 0x58(r1)
 /* 801E423C 001E103C  D9 01 00 60 */	stfd f8, 0x60(r1)
 lbl_801E4240:
-/* 801E4240 001E1040  3D 60 80 2B */	lis r11, lbl_802B6B08@ha
+/* 801E4240 001E1040  3D 60 80 2B */	lis r11, __files@ha
 /* 801E4244 001E1044  90 81 00 0C */	stw r4, 0xc(r1)
-/* 801E4248 001E1048  39 6B 6B 08 */	addi r11, r11, lbl_802B6B08@l
+/* 801E4248 001E1048  39 6B 6B 08 */	addi r11, r11, __files@l
 /* 801E424C 001E104C  38 80 FF FF */	li r4, -1
 /* 801E4250 001E1050  90 61 00 08 */	stw r3, 8(r1)
 /* 801E4254 001E1054  3B EB 00 50 */	addi r31, r11, 0x50
@@ -18882,8 +18882,8 @@ lbl_801ECD4C:
 /* 801ECD58 001E9B58  4E 80 00 20 */	blr 
 
 .section .data
-.global lbl_802B6B08
-lbl_802B6B08:
+.global __files #ansi_files.c
+__files:
 	.4byte 0x00000000
 	.4byte 0x0A800000
 	.4byte 0x00000000
@@ -18891,9 +18891,9 @@ lbl_802B6B08:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x8037F1A0
+	.4byte stdin_buff
 	.4byte 0x00000100
-	.4byte 0x8037F1A0
+	.4byte stdin_buff
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -18912,9 +18912,9 @@ lbl_802B6B58:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x8037F0A0
+	.4byte stdout_buff
 	.4byte 0x00000100
-	.4byte 0x8037F0A0
+	.4byte stdout_buff
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -18933,9 +18933,9 @@ lbl_802B6BA8:
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x8037EFA0
+	.4byte stderr_buff
 	.4byte 0x00000100
-	.4byte 0x8037EFA0
+	.4byte stderr_buff
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
@@ -20151,12 +20151,21 @@ l_a230__esc__2_904:
 	.4byte 0x65707469
 	.4byte 0x6F6E0000
 .section .bss
-.global lbl_8037EE68
-lbl_8037EE68:
+.global __atexit_funcs #abort_exit.c
+__atexit_funcs:
 	.skip 0x100
 .global l_ef68_protopool_esc__6_192
 l_ef68_protopool_esc__6_192:
-	.skip 0x338
+	.skip 0x38
+.global stderr_buff
+stderr_buff:
+	.skip 0x100
+.global stdout_buff
+stdout_buff:
+	.skip 0x100
+.global stdin_buff
+stdin_buff:
+	.skip 0x100
 .global lbl_8037F2A0
 lbl_8037F2A0:
 	.skip 0x18
