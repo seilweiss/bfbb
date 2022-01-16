@@ -28,7 +28,7 @@ MAP     := $(BUILD_DIR)/bfbb.map
 
 include obj_files.mk
 
-O_FILES := $(INIT_O_FILES) $(EXTAB_O_FILES) $(TEXT_O_FILES) \
+O_FILES := $(EXTAB_O_FILES) $(TEXT_O_FILES) $(INIT_O_FILES) \
            $(CTORS_O_FILES) $(DTORS_O_FILES) \
            $(BSS_O_FILES) $(SDATA_O_FILES) $(SBSS_O_FILES) $(SDATA2_O_FILES)      \
            $(SBSS2_O_FILES)
@@ -36,7 +36,7 @@ O_FILES := $(INIT_O_FILES) $(EXTAB_O_FILES) $(TEXT_O_FILES) \
 #-------------------------------------------------------------------------------
 # Tools
 #-------------------------------------------------------------------------------
-
+MWCC_VERSION := 2.0
 # Programs
 ifeq ($(WINDOWS),1)
   WINE :=
@@ -47,7 +47,7 @@ else
   AS      := $(DEVKITPPC)/bin/powerpc-eabi-as
   CPP     := $(DEVKITPPC)/bin/powerpc-eabi-cpp -P
 endif
-CC      := $(WINE) tools/mwcc_compiler/2.0/mwcceppc.exe
+CC      = $(WINE) tools/mwcc_compiler/$(MWCC_VERSION)/mwcceppc.exe
 LD      := $(WINE) tools/mwcc_compiler/2.7/mwldeppc.exe
 PPROC   := python tools/postprocess.py
 ELF2DOL := tools/elf2dol
@@ -59,12 +59,15 @@ INCLUDES := -Isrc/dolphin/include -Isrc/CodeWarrior -Isrc/rwsdk
 
 ASFLAGS := -mgekko -I include
 LDFLAGS := -map $(MAP) -w off -maxerrors 256 -nostdlib
-CFLAGS  := -g -Cpp_exceptions off -proc gekko -fp hard -str reuse,pool,readonly \
+CFLAGS  = -g -Cpp_exceptions off -proc gekko -fp hard -str reuse,pool,readonly \
            -pragma "check_header_flags off" -pragma "force_active on" \
            -char unsigned -enum int -fp_contract on -nostdinc -RTTI off \
            -use_lmw_stmw on -inline off -O4,p -gccincludes $(INCLUDES)
 PREPROCESS := -preprocess -gccincludes $(INCLUDES)
 PPROCFLAGS := -fsymbol-fixup
+
+$(BUILD_DIR)/src/dolphin/__start.o: MWCC_VERSION := 1.2.5
+$(BUILD_DIR)/src/dolphin/__start.o: CFLAGS := -Cpp_exceptions off -enum int -inline auto -proc gekko -RTTI off -fp hard -fp_contract on -rostr -O4,p -use_lmw_stmw on -sdata 8 -sdata2 8 -nodefaults $(INCLUDES)
 
 #-------------------------------------------------------------------------------
 # Recipes

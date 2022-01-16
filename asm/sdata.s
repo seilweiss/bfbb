@@ -550,7 +550,3 @@ l_b144__rxPipesFreeListPreallocBlocks:
 l_b148_gMemoryLimits:
 	.4byte 0x00000000
 	.4byte 0x00000000
-	.4byte 0x00000000
-	.4byte 0x00000000
-	.4byte 0x00000000
-	.4byte 0x00000000

@@ -1720,4 +1720,3 @@ l_07d0__esc__2_333:
 .global l_07d8__esc__2_60
 l_07d8__esc__2_60:
 	.4byte 0xFFFFFFFF
-	.4byte 0x00000000

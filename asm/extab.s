@@ -64,13 +64,6 @@
 	.4byte 0x00000000
 	.4byte 0x00080000
 	.4byte 0x00000000
-	.4byte 0x00000000
-	.4byte 0x00000000
-	.4byte 0x00000000
-	.4byte 0x00000000
-	.4byte 0x00000000
-	.4byte 0x00000000
-	.4byte 0x00000000
 
 .section extabindex_, "wa"  # 0x80005800 - 0x800058E0
 	.4byte __dt__Q23std9exceptionFv /* 0x801ECE9C */
@@ -124,9 +117,6 @@ lbl_800058B4:
 	.4byte lbl_800058B4 /* 0x800058B4 */
 	.4byte __dt__Q23std9exceptionFv /* 0x801ECE9C */
 	.4byte 0x00002110
-	.4byte 0x00000000
-	.4byte 0x00000000
-	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000
 	.4byte 0x00000000

@@ -11,9 +11,3 @@ l_1d00___init_cpp_exceptions_reference:
 	.4byte __sinit_zNPCGlyph_cpp /* 0x8018710C */
 	.4byte __sinit_zNPCHazard_cpp /* 0x8018F6F4 */
 	.4byte 0x00000000
-	.4byte 0x00000000
-	.4byte 0x00000000
-	.4byte 0x00000000
-	.4byte 0x00000000
-	.4byte 0x00000000
-	.4byte 0x00000000

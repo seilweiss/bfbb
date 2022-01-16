@@ -190,4 +190,4 @@ dutchman_reticle_center:
 	.skip 0xC
 .global mMessage__8iTRCDisk
 mMessage__8iTRCDisk:
-	.skip 0x118
+	.skip 0x100

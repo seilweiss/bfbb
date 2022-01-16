@@ -1,6 +1,3 @@
-INIT_O_FILES :=                                     \
-    $(BUILD_DIR)/asm/init.o
-
 EXTAB_O_FILES :=                                    \
     $(BUILD_DIR)/asm/extab.o
 
@@ -228,7 +225,11 @@ TEXT_O_FILES :=                                     \
     $(BUILD_DIR)/asm/Game/zNPCFXCinematic.o           \
     $(BUILD_DIR)/asm/Core/x/xHudText.o                \
     $(BUILD_DIR)/asm/Game/zCombo.o                    \
-    $(BUILD_DIR)/asm/Core/x/xCM.o                     \
+    $(BUILD_DIR)/asm/Core/x/xCM.o
+INIT_O_FILES :=                                       \
+    $(BUILD_DIR)/asm/sbss_0.o                         \
+    $(BUILD_DIR)/src/dolphin/__start.o                \
+    $(BUILD_DIR)/asm/init.o                           \
     $(BUILD_DIR)/asm/bink/bink.o                      \
     $(BUILD_DIR)/asm/dolphin/dolphin.o                \
     $(BUILD_DIR)/asm/CodeWarrior/MSL_C.o              \
