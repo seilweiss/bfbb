@@ -9,36 +9,22 @@ endif
 # Files
 #-------------------------------------------------------------------------------
 
-# Used for elf2dol
-TARGET_COL := wii
+NAME := bfbb
+VERSION := usa
 
-OBJ_DIR := obj
-
-SRC_DIRS := src             \
-            src/Core/p2     \
-            src/Core/x      \
-            src/Game
-
-ASM_DIRS := asm             \
-            asm/bink        \
-            asm/CodeWarrior \
-            asm/Core/p2     \
-            asm/Core/x      \
-            asm/dolphin     \
-            asm/Game        \
-            asm/ODEGdev     \
-            asm/rwsdk
+BUILD_DIR := build/$(NAME).$(VERSION)
 
 # Inputs
-S_FILES := $(foreach dir,$(ASM_DIRS),$(wildcard $(dir)/*.s))
-C_FILES := $(foreach dir,$(SRC_DIRS),$(wildcard $(dir)/*.c))
-CPP_FILES := $(foreach dir,$(SRC_DIRS),$(wildcard $(dir)/*.cpp))
-LDSCRIPT := ldscript.lcf
+S_FILES := $(wildcard asm/*.s)
+C_FILES := $(wildcard src/*.c)
+CPP_FILES := $(wildcard src/*.cpp)
+CPP_FILES += $(wildcard src/*.cp)
+LDSCRIPT := $(BUILD_DIR)/ldscript.lcf
 
 # Outputs
-DOL     := main.dol
+DOL     := $(BUILD_DIR)/main.dol
 ELF     := $(DOL:.dol=.elf)
-MAP     := bfbb.map
+MAP     := $(BUILD_DIR)/bfbb.map
 
 include obj_files.mk
 
@@ -54,11 +40,13 @@ O_FILES := $(INIT_O_FILES) $(EXTAB_O_FILES) $(TEXT_O_FILES) \
 # Programs
 ifeq ($(WINDOWS),1)
   WINE :=
+  AS      := $(DEVKITPPC)/bin/powerpc-eabi-as.exe
+  CPP     := $(DEVKITPPC)/bin/powerpc-eabi-cpp.exe -P
 else
-  WINE := wine
+  WINE ?= wine
+  AS      := $(DEVKITPPC)/bin/powerpc-eabi-as
+  CPP     := $(DEVKITPPC)/bin/powerpc-eabi-cpp -P
 endif
-AS      := $(DEVKITPPC)/bin/powerpc-eabi-as
-OBJCOPY := $(DEVKITPPC)/bin/powerpc-eabi-objcopy
 CC      := $(WINE) tools/mwcc_compiler/2.0/mwcceppc.exe
 LD      := $(WINE) tools/mwcc_compiler/2.7/mwldeppc.exe
 PPROC   := python tools/postprocess.py
@@ -78,56 +66,52 @@ CFLAGS  := -g -Cpp_exceptions off -proc gekko -fp hard -str reuse,pool,readonly 
 PREPROCESS := -preprocess -gccincludes $(INCLUDES)
 PPROCFLAGS := -fsymbol-fixup
 
-# elf2dol needs to know these in order to calculate sbss correctly.
-SDATA_PDHR := 9
-SBSS_PDHR := 10
-
 #-------------------------------------------------------------------------------
 # Recipes
 #-------------------------------------------------------------------------------
+QUIET := @
 
 default: all
 
 all: $(DOL)
 
-ALL_DIRS := $(OBJ_DIR) $(addprefix $(OBJ_DIR)/,$(SRC_DIRS) $(ASM_DIRS))
+ALL_DIRS := $(sort $(dir $(O_FILES)))
 
 # Make sure build directory exists before compiling anything
 DUMMY != mkdir -p $(ALL_DIRS)
 
 .PHONY: tools
-    
-S=@
+
+$(LDSCRIPT): ldscript.lcf
+	$(QUIET) $(CPP) -MMD -MP -MT $@ -MF $@.d -I include/ -I . -DBUILD_DIR=$(BUILD_DIR) -o $@ $<
 
 $(DOL): $(ELF) | tools
-	@echo "ELF2DOL "$<
-	$S$(ELF2DOL) $< $@ $(SDATA_PDHR) $(SBSS_PDHR) $(TARGET_COL)
-	$S$(SHA1SUM) -c bfbb.sha1 || $(ASMDIFF)
+	$(QUIET) $(ELF2DOL) $< $@
+	$(SHA1SUM) -c sha1/$(NAME).$(VERSION).sha1 || $(ASMDIFF)
 
 clean:
 	@echo cleaning build dir
-	$Srm -rf $(DOL) $(ELF) $(O_FILES) $(MAP) obj
-	$S$(MAKE) -C tools clean
+	rm -f -d -r build
+	$(QUIET) $(MAKE) -C tools clean
 
 tools:
-	$S$(MAKE) -C tools
+	$(QUIET) $(MAKE) -C tools
 
 $(ELF): $(O_FILES) $(LDSCRIPT)
 	@echo "LINK    "$@
-	$S$(LD) $(LDFLAGS) -o $@ -lcf $(LDSCRIPT) $(O_FILES)
-# The Metrowerks linker doesn't generate physical addresses in the ELF program headers. This fixes it somehow.
-	$S$(OBJCOPY) $@ $@
+	@echo $(O_FILES) > build/o_files
+	$(LD) $(LDFLAGS) -o $@ -lcf $(LDSCRIPT) @build/o_files
 
-$(OBJ_DIR)/%.o: %.s
+$(BUILD_DIR)/%.o: %.s
 	@echo "AS      "$<
-	$S$(AS) $(ASFLAGS) -o $@ $<
-	$S$(PPROC) $(PPROCFLAGS) $@
+	$(QUIET) $(AS) $(ASFLAGS) -o $@ $<
+	$(QUIET) $(PPROC) $(PPROCFLAGS) $@
 
-$(OBJ_DIR)/%.o: %.c
+$(BUILD_DIR)/%.o: %.c
 	@echo "CC      "$<
-	$S$(CC) $(CFLAGS) -c -o $@ $<
+	$(QUIET) $(CC) $(CFLAGS) -c -o $@ $<
 
-$(OBJ_DIR)/%.o: %.cpp
+$(BUILD_DIR)/%.o: %.cpp
 	@echo "CXX     "$<
-	$S$(CC) $(PREPROCESS) -o obj/$*.cp $<
-	$S$(CC) $(CFLAGS) -c -o $@ obj/$*.cp
+	$(QUIET) $(CC) $(PREPROCESS) -o $(BUILD_DIR)/$*.cp $<
+	$(QUIET) $(CC) $(CFLAGS) -c -o $@ $(BUILD_DIR)/$*.cp
