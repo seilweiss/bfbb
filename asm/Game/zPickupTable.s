@@ -114,9 +114,6 @@ l_ff40_ptranstbl:
 	.4byte l_e710__esc__2_stringBase0 + 167
 	.4byte 0x00000000
 	.4byte 0x010A0000
-/* SPECULATION: link order */
-.global lbl_80290000
-lbl_80290000:
 	.4byte l_e710__esc__2_stringBase0 + 177
 	.4byte 0x00000000
 	.4byte 0x010B0000

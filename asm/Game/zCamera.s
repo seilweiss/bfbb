@@ -2810,10 +2810,10 @@ zCameraEnableWallJump__FP7xCameraRC5xVec3:
 /* 800523A8 0004F1A8  38 00 00 03 */	li r0, 3
 /* 800523AC 0004F1AC  90 0D 8B E0 */	stw r0, l_b4e0_wall_jump_enabled__21_esc__2_unnamed_esc__2_zCamera_cpp_esc__2_@sda21(r13)
 lbl_800523B0:
-/* 800523B0 0004F1B0  3C A0 80 25 */	lis r5, lbl_80250004@ha
-/* 800523B4 0004F1B4  84 E5 47 AC */	lwzu r7, 0x47ac(r5)
+/* 800523B0 0004F1B0  3C A0 80 25 */	lis r5, l_47ac__esc__2_1548@ha
+/* 800523B4 0004F1B4  84 E5 47 AC */	lwzu r7, l_47ac__esc__2_1548@l(r5)
 /* 800523B8 0004F1B8  3C 60 80 2E */	lis r3, l_ba70_wall_jump_view__21_esc__2_unnamed_esc__2_zCamera_cpp_esc__2_@ha
-/* 800523BC 0004F1BC  80 C5 00 04 */	lwz r6, lbl_80250004@l(r5)
+/* 800523BC 0004F1BC  80 C5 00 04 */	lwz r6, 4(r5)
 /* 800523C0 0004F1C0  38 63 BA 70 */	addi r3, r3, l_ba70_wall_jump_view__21_esc__2_unnamed_esc__2_zCamera_cpp_esc__2_@l
 /* 800523C4 0004F1C4  80 05 00 08 */	lwz r0, 8(r5)
 /* 800523C8 0004F1C8  38 A1 00 08 */	addi r5, r1, 8

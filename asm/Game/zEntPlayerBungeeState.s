@@ -1167,16 +1167,16 @@ fade_hook_out__Q212bungee_state35_esc__2_unnamed_esc__2_zEntPlayerBungeeState_cp
 /* 8011127C 0010E07C  28 03 00 00 */	cmplwi r3, 0
 /* 80111280 0010E080  41 82 00 30 */	beq lbl_801112B0
 /* 80111284 0010E084  A0 03 00 44 */	lhz r0, 0x44(r3)
-/* 80111288 0010E088  3C 80 80 29 */	lis r4, lbl_80290000@ha
+/* 80111288 0010E088  3C 80 80 29 */	lis r4, l_7a68_shared__Q212bungee_state35_esc__2_unnamed_esc__2_zEntPlayerBungeeState_cpp_esc__2_@ha
 /* 8011128C 0010E08C  60 00 40 00 */	ori r0, r0, 0x4000
 /* 80111290 0010E090  B0 03 00 44 */	sth r0, 0x44(r3)
 /* 80111294 0010E094  80 03 00 14 */	lwz r0, 0x14(r3)
 /* 80111298 0010E098  54 00 07 32 */	rlwinm r0, r0, 0, 0x1c, 0x19
 /* 8011129C 0010E09C  60 00 00 30 */	ori r0, r0, 0x30
 /* 801112A0 0010E0A0  90 03 00 14 */	stw r0, 0x14(r3)
-/* 801112A4 0010E0A4  84 04 7A 68 */	lwzu r0, 0x7a68(r4)
+/* 801112A4 0010E0A4  84 04 7A 68 */	lwzu r0, l_7a68_shared__Q212bungee_state35_esc__2_unnamed_esc__2_zEntPlayerBungeeState_cpp_esc__2_@l(r4)
 /* 801112A8 0010E0A8  60 00 00 40 */	ori r0, r0, 0x40
-/* 801112AC 0010E0AC  90 04 00 00 */	stw r0, lbl_80290000@l(r4)
+/* 801112AC 0010E0AC  90 04 00 00 */	stw r0, 0(r4)
 lbl_801112B0:
 /* 801112B0 0010E0B0  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 801112B4 0010E0B4  7C 08 03 A6 */	mtlr r0
@@ -1199,16 +1199,16 @@ fade_hook_in__Q212bungee_state35_esc__2_unnamed_esc__2_zEntPlayerBungeeState_cpp
 /* 801112EC 0010E0EC  28 03 00 00 */	cmplwi r3, 0
 /* 801112F0 0010E0F0  41 82 00 30 */	beq lbl_80111320
 /* 801112F4 0010E0F4  A0 03 00 44 */	lhz r0, 0x44(r3)
-/* 801112F8 0010E0F8  3C 80 80 29 */	lis r4, lbl_80290000@ha
+/* 801112F8 0010E0F8  3C 80 80 29 */	lis r4, l_7a68_shared__Q212bungee_state35_esc__2_unnamed_esc__2_zEntPlayerBungeeState_cpp_esc__2_@ha
 /* 801112FC 0010E0FC  60 00 40 00 */	ori r0, r0, 0x4000
 /* 80111300 0010E100  B0 03 00 44 */	sth r0, 0x44(r3)
 /* 80111304 0010E104  80 03 00 14 */	lwz r0, 0x14(r3)
 /* 80111308 0010E108  54 00 07 32 */	rlwinm r0, r0, 0, 0x1c, 0x19
 /* 8011130C 0010E10C  60 00 00 30 */	ori r0, r0, 0x30
 /* 80111310 0010E110  90 03 00 14 */	stw r0, 0x14(r3)
-/* 80111314 0010E114  84 04 7A 68 */	lwzu r0, 0x7a68(r4)
+/* 80111314 0010E114  84 04 7A 68 */	lwzu r0, l_7a68_shared__Q212bungee_state35_esc__2_unnamed_esc__2_zEntPlayerBungeeState_cpp_esc__2_@l(r4)
 /* 80111318 0010E118  60 00 00 20 */	ori r0, r0, 0x20
-/* 8011131C 0010E11C  90 04 00 00 */	stw r0, lbl_80290000@l(r4)
+/* 8011131C 0010E11C  90 04 00 00 */	stw r0, 0(r4)
 lbl_80111320:
 /* 80111320 0010E120  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 80111324 0010E124  7C 08 03 A6 */	mtlr r0
@@ -2602,11 +2602,11 @@ stop__12bungee_stateFv:
 /* 801126B8 0010F4B8  4E 80 04 21 */	bctrl 
 lbl_801126BC:
 /* 801126BC 0010F4BC  38 00 00 00 */	li r0, 0
-/* 801126C0 0010F4C0  3C 60 80 29 */	lis r3, lbl_80290000@ha
+/* 801126C0 0010F4C0  3C 60 80 29 */	lis r3, l_7a68_shared__Q212bungee_state35_esc__2_unnamed_esc__2_zEntPlayerBungeeState_cpp_esc__2_@ha
 /* 801126C4 0010F4C4  90 1F 00 04 */	stw r0, 4(r31)
-/* 801126C8 0010F4C8  84 03 7A 68 */	lwzu r0, 0x7a68(r3)
+/* 801126C8 0010F4C8  84 03 7A 68 */	lwzu r0, l_7a68_shared__Q212bungee_state35_esc__2_unnamed_esc__2_zEntPlayerBungeeState_cpp_esc__2_@l(r3)
 /* 801126CC 0010F4CC  54 00 07 B8 */	rlwinm r0, r0, 0, 0x1e, 0x1c
-/* 801126D0 0010F4D0  90 03 00 00 */	stw r0, lbl_80290000@l(r3)
+/* 801126D0 0010F4D0  90 03 00 00 */	stw r0, 0(r3)
 lbl_801126D4:
 /* 801126D4 0010F4D4  80 01 00 14 */	lwz r0, 0x14(r1)
 /* 801126D8 0010F4D8  83 E1 00 0C */	lwz r31, 0xc(r1)
@@ -3340,12 +3340,12 @@ start__Q312bungee_state35_esc__2_unnamed_esc__2_zEntPlayerBungeeState_cpp_esc__2
 /* 801131E4 0010FFE4  98 1D 00 98 */	stb r0, 0x98(r29)
 /* 801131E8 0010FFE8  4B FF D2 99 */	bl show_models__Q212bungee_state35_esc__2_unnamed_esc__2_zEntPlayerBungeeState_cpp_esc__2_Fv
 /* 801131EC 0010FFEC  4B FF D5 81 */	bl update_hook_loc__Q212bungee_state35_esc__2_unnamed_esc__2_zEntPlayerBungeeState_cpp_esc__2_Fv
-/* 801131F0 0010FFF0  3C 80 80 29 */	lis r4, lbl_80290000@ha
-/* 801131F4 0010FFF4  84 04 7A 68 */	lwzu r0, 0x7a68(r4)
+/* 801131F0 0010FFF0  3C 80 80 29 */	lis r4, l_7a68_shared__Q212bungee_state35_esc__2_unnamed_esc__2_zEntPlayerBungeeState_cpp_esc__2_@ha
+/* 801131F4 0010FFF4  84 04 7A 68 */	lwzu r0, l_7a68_shared__Q212bungee_state35_esc__2_unnamed_esc__2_zEntPlayerBungeeState_cpp_esc__2_@l(r4)
 /* 801131F8 0010FFF8  38 60 00 04 */	li r3, 4
 /* 801131FC 0010FFFC  60 00 00 08 */	ori r0, r0, 8
 /* 80113200 00110000  54 00 07 34 */	rlwinm r0, r0, 0, 0x1c, 0x1a
-/* 80113204 00110004  90 04 00 00 */	stw r0, lbl_80290000@l(r4)
+/* 80113204 00110004  90 04 00 00 */	stw r0, 0(r4)
 /* 80113208 00110008  4B F3 EE F9 */	bl zCameraDisableTracking__F17camera_owner_enum
 /* 8011320C 0011000C  38 60 00 00 */	li r3, 0
 /* 80113210 00110010  38 80 00 04 */	li r4, 4

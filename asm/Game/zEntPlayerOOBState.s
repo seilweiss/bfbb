@@ -2084,10 +2084,10 @@ lbl_8011C750:
 /* 8011C750 00119550  88 0D 95 10 */	lbz r0, oob_player_teleported@sda21(r13)
 /* 8011C754 00119554  28 00 00 00 */	cmplwi r0, 0
 /* 8011C758 00119558  41 82 00 14 */	beq lbl_8011C76C
-/* 8011C75C 0011955C  3C 60 80 29 */	lis r3, lbl_80290000@ha
-/* 8011C760 00119560  84 03 7E 48 */	lwzu r0, 0x7e48(r3)
+/* 8011C75C 0011955C  3C 60 80 29 */	lis r3, l_7e48_shared__Q29oob_state32_esc__2_unnamed_esc__2_zEntPlayerOOBState_cpp_esc__2_@ha
+/* 8011C760 00119560  84 03 7E 48 */	lwzu r0, l_7e48_shared__Q29oob_state32_esc__2_unnamed_esc__2_zEntPlayerOOBState_cpp_esc__2_@l(r3)
 /* 8011C764 00119564  54 00 07 76 */	rlwinm r0, r0, 0, 0x1d, 0x1b
-/* 8011C768 00119568  90 03 00 00 */	stw r0, lbl_80290000@l(r3)
+/* 8011C768 00119568  90 03 00 00 */	stw r0, 0(r3)
 lbl_8011C76C:
 /* 8011C76C 0011956C  3C 60 80 29 */	lis r3, l_7e48_shared__Q29oob_state32_esc__2_unnamed_esc__2_zEntPlayerOOBState_cpp_esc__2_@ha
 /* 8011C770 00119570  80 03 7E 48 */	lwz r0, l_7e48_shared__Q29oob_state32_esc__2_unnamed_esc__2_zEntPlayerOOBState_cpp_esc__2_@l(r3)
