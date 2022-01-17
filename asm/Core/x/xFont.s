@@ -6402,8 +6402,8 @@ parse_tag_model__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRQ28xtextbox3jotRC8x
 /* 8002538C 0002218C  7C 9D 23 78 */	mr r29, r4
 /* 80025390 00022190  7C C4 33 78 */	mr r4, r6
 /* 80025394 00022194  4B FF CE 65 */	bl load_model_args__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_FRQ219_esc__2_unnamed_esc__2_xFont_cpp_esc__2_10model_argsRC6substr
-/* 80025398 00022198  3C 60 80 2C */	lis r3, 0x802c
-/* 8002539C 0002219C  84 03 ED 70 */	lwzu r0, -0x1290(r3)
+/* 80025398 00022198  3C 60 80 2C */	lis r3, l_ed70_def_model_args__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_@ha
+/* 8002539C 0002219C  84 03 ED 70 */	lwzu r0, l_ed70_def_model_args__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_@l(r3)
 /* 800253A0 000221A0  28 00 00 00 */	cmplwi r0, 0
 /* 800253A4 000221A4  41 82 00 FC */	beq lbl_800254A0
 /* 800253A8 000221A8  83 DF 00 10 */	lwz r30, 0x10(r31)
