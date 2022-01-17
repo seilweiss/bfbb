@@ -33793,14 +33793,7 @@ ReadBPLossyWithMotion:
 .section .data
 .global l_1f34_TrackNums
 l_1f34_TrackNums:
-	.4byte 0x00000000
-	.4byte 0x00000000
-	.4byte 0x00000000
-	.4byte 0x00000000
-	.4byte 0x00000000
-	.4byte 0x00000000
-	.4byte 0x00000000
-	.4byte 0x00000000
+	.skip 32
 .global LogoData
 LogoData:
 	.4byte 0x42494B69
@@ -53579,3 +53572,60 @@ lbl_80363C88:
 .global lbl_80363D08
 lbl_80363D08:
 	.skip 0x80
+
+.section .sdata  # 0x803CA900 - 0x803CB160
+.balign 8
+l_add8_starttime.189:
+	.4byte 0x00000000
+lbl_803CADDC:
+	.4byte 0x00000000
+l_ade0_usermalloc:
+	.4byte 0x00000000
+l_ade4_userfree:
+	.4byte 0x00000000
+l_ade8_userarammalloc:
+	.4byte 0x00000000
+l_adec_useraramfree:
+	.4byte 0x00000000
+l_adf0_sysopen:
+	.4byte 0x00000000
+l_adf4_sndopen:
+	.4byte 0x00000000
+l_adf8_numopensounds:
+	.4byte 0x00000000
+l_adfc_cb_bink_IO:
+	.4byte 0x00000000
+l_ae00_cb_bink_sound:
+	.4byte 0x00000000
+l_ae04_ForceRate:
+	.4byte 0xFFFFFFFF
+l_ae08_IOBufferSize:
+	.4byte 0xFFFFFFFF
+l_ae0c_Simulate:
+	.4byte 0xFFFFFFFF
+l_ae10_TotTracks:
+	.4byte 1
+l_ae14_UserOpen:
+	.4byte 0x00000000
+l_ae18_whichyuv:
+	.4byte 0x00000000
+rgb_layout:
+	.4byte 0xFFFFFFFF
+l_ae20_z2hsize:
+	.4byte 0x00000000
+l_ae24_z2hbuf1:
+	.4byte 0x00000000
+l_ae28_z2hbuf2:
+	.4byte 0x00000000
+l_ae2c_donetables:
+	.4byte 0x00000000
+l_ae30_pushtot:
+	.4byte 0x00000000
+l_ae34_pushcur:
+	.4byte 0x00000000
+l_ae38_pushptr:
+	.4byte lbl_80363C88
+l_ae3c_pushamt:
+	.4byte lbl_80363D08
+l_ae40_cursize:
+	.4byte 0x00000020
