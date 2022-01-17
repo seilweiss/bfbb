@@ -7827,6 +7827,7 @@ lbl_800266AC:
 /* 800266C4 000234C4  4E 80 00 20 */	blr 
 
 .section .data
+.balign 8
 l_b590_default_font_texture__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_:
 	.4byte l_29d4__esc__2_stringBase0 /* 0x802529D4 */
 	.4byte l_29d4__esc__2_stringBase0 + 8

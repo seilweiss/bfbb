@@ -5564,6 +5564,7 @@ l_f078__esc__2_stringBase0:
 	.4byte 0x70000000
 
 .section .data
+.balign 8
 l_0528_sLevelTable:
 	.4byte l_f078__esc__2_stringBase0 /* 0x8025F078 */
 	.4byte l_f078__esc__2_stringBase0 + 14

@@ -669,6 +669,7 @@ expand__13basic_rect_esc__0_f_esc__1_Ff:
 /* 8004DC44 0004AA44  4E 80 00 20 */	blr 
 
 .section .data
+.balign 8
 l_a2a8_tb_esc__6_731:
 	.4byte 0x00000000
 	.4byte 0x00000000

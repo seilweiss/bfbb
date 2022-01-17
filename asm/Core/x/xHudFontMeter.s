@@ -414,6 +414,7 @@ render__5xfontCFPCcff:
 /* 8002F578 0002C378  4E 80 00 20 */	blr 
 
 .section .data
+.balign 8
 l_d640_format_text_esc__6_709:
 	.4byte l_2f10__esc__2_stringBase0 + 15
 	.4byte l_2f10__esc__2_stringBase0 + 18

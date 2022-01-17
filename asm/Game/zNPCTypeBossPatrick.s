@@ -9836,6 +9836,7 @@ l_089c__esc__2_stringBase0:
 	.4byte 0x00000000
 
 .section .data
+.balign 8
 l_aa68_sBone:
 	.4byte 0x00000004
 	.4byte 0x00000013

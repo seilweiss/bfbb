@@ -4316,6 +4316,7 @@ l_c920__esc__2_stringBase0:
 	.4byte 0x00000000
 
 .section .data
+.balign 8
 l_8e68_new_tags__22_esc__2_unnamed_esc__2_zTalkBox_cpp_esc__2_:
 	.4byte l_c920__esc__2_stringBase0 + 135
 	.4byte 0x0000000A

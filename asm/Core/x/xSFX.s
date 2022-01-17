@@ -625,6 +625,7 @@ xSFXStop__FP4xSFX:
 /* 80044774 00041574  4E 80 00 20 */	blr 
 
 .section .data
+.balign 8
 l_8c38__esc__2_964:
 	.4byte lbl_80044324 /* 0x80044324 */
 	.4byte lbl_80044408 /* 0x80044408 */

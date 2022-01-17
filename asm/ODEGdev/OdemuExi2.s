@@ -9396,6 +9396,7 @@ lbl_801F7204:
 /* 801F720C 001F400C  4E 80 00 20 */	blr 
 
 .section .data
+.balign 8
 .global gTRKDispatchTable
 gTRKDispatchTable:
 	.4byte TRKDoUnsupported /* 0x801F2FBC */

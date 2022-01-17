@@ -4349,6 +4349,7 @@ lbl_8001BB40:
 /* 8001BB50 00018950  4E 80 00 20 */	blr 
 
 .section .data
+.balign 8
 l_b428_receive_models_esc__6_855:
 	.4byte 0x00000000
 	.4byte 0x00000000

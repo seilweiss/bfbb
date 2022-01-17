@@ -9772,6 +9772,7 @@ l_6120__esc__2_stringBase0:
 	.4byte 0x00373800
 
 .section .data
+.balign 8
 l_2678_g_isgdata_MAIN:
 	.4byte 0x00000000
 	.4byte 0x00000000

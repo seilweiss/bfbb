@@ -419,6 +419,7 @@ iPadKill__Fv:
 /* 800CAEE8 000C7CE8  4E 80 00 20 */	blr 
 
 .section .data
+.balign 8
 l_2620_sPadData:
 	.4byte 0x00000000
 	.4byte 0x00000000

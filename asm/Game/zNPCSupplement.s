@@ -6310,6 +6310,7 @@ l_32e0__esc__2_stringBase0:
 	.4byte 0x00000000
 
 .section .data
+.balign 8
 l_b8a0__esc__2_921:
 	.4byte lbl_80180E5C /* 0x80180E5C */
 	.4byte lbl_80180F08 /* 0x80180F08 */

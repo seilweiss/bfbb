@@ -45710,6 +45710,7 @@ lbl_801DCD44:
 /* 801DCD78 001D9B78  4E 80 00 20 */	blr 
 
 .section .data
+.balign 8
 .global l_04e0___AXSrcCycles
 l_04e0___AXSrcCycles:
 	.4byte 0x00000DF8

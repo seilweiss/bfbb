@@ -1146,6 +1146,7 @@ l_2c50__esc__2_stringBase0:
 	.4byte 0x00000000
 
 .section .data
+.balign 8
 l_b868__esc__2_650:
 	.4byte lbl_80180C40 /* 0x80180C40 */
 	.4byte lbl_80180C74 /* 0x80180C74 */

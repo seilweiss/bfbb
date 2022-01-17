@@ -2306,6 +2306,7 @@ l_b258__esc__2_932:
 	.4byte 0x00000000
 
 .section .data
+.balign 8
 l_7db8__esc__2_1006:
 	.4byte lbl_80119DCC /* 0x80119DCC */
 	.4byte lbl_80119DDC /* 0x80119DDC */

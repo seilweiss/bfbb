@@ -4029,6 +4029,7 @@ Name__19st_PACKER_ATOC_NODECFv:
 /* 8003C494 00039294  4E 80 00 20 */	blr 
 
 .section .data
+.balign 8
 l_d8a8_g_pkr_read_funcmap_original:
 	.4byte 0x00000001
 	.4byte PKR_ReadInit__FPvPcUiPiP19st_PACKER_ASSETTYPE /* 0x800393D8 */

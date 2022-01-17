@@ -2221,6 +2221,7 @@ l_f224__esc__2_stringBase0:
 	.4byte 0x660A0000
 
 .section .data
+.balign 8
 l_a490_BossArmTags:
 	.4byte 0x41381CAC
 	.4byte 0x4090BC6A

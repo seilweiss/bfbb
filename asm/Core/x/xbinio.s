@@ -1211,6 +1211,7 @@ xFileReadAsyncStatus__FiPi:
 /* 8000A524 00007324  4E 80 00 20 */	blr 
 
 .section .data
+.balign 8
 l_a5c0_g_loadinst:
 	.4byte 0x00000000
 	.4byte 0x00000000

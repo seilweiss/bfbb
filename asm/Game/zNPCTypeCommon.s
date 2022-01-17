@@ -7294,6 +7294,7 @@ l_8cc0__esc__2_stringBase0:
 	.4byte 0x00000000
 
 .section .data
+.balign 8
 l_4f48_g_strz_params:
 	.4byte l_8cc0__esc__2_stringBase0 + 215
 	.4byte l_8cc0__esc__2_stringBase0 + 221

@@ -1492,6 +1492,7 @@ l_f4e8__esc__2_stringBase0:
 	.4byte 0x4E450000
 
 .section .data
+.balign 8
 l_0ea8__esc__2_1183:
 	.4byte lbl_800B66EC /* 0x800B66EC */
 	.4byte lbl_800B6700 /* 0x800B6700 */

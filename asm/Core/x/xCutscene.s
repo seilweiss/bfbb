@@ -2171,6 +2171,7 @@ UpdatedAnimated__9XCSNNoseyFP8RpAtomicP11RwMatrixTagUiUi:
 /* 80017D38 00014B38  4E 80 00 20 */	blr 
 
 .section .data
+.balign 8
 l_b418_shadVec_esc__6_1235:
 	.4byte 0x00000000
 	.4byte 0xBF800000

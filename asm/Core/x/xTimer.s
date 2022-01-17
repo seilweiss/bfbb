@@ -351,6 +351,7 @@ lbl_8004D690:
 /* 8004D6A8 0004A4A8  4E 80 00 20 */	blr 
 
 .section .data
+.balign 8
 l_a258_sPauseTimerHash:
 	.4byte 0xBC345600
 	.4byte 0xBC345609

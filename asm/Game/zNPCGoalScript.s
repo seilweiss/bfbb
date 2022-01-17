@@ -385,6 +385,7 @@ __ct__14zNPCGoalScriptFi:
 /* 80124AE0 001218E0  4E 80 00 20 */	blr 
 
 .section .data
+.balign 8
 l_8108__esc__2_811:
 	.4byte lbl_80124618 /* 0x80124618 */
 	.4byte lbl_80124640 /* 0x80124640 */

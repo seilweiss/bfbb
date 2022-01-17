@@ -9996,6 +9996,7 @@ l_3800__esc__2_stringBase0:
 	.4byte 0x74000000
 
 .section .data
+.balign 8
 l_ba40_g_hazard_rawModel:
 	.4byte 0x00000000
 	.4byte 0x00000000

@@ -507,6 +507,7 @@ lbl_8004E2D8:
 /* 8004E2EC 0004B0EC  4E 80 00 20 */	blr 
 
 .section .data
+.balign 8
 l_a378_g_crc32_table:
 	.4byte 0x00000000
 	.4byte 0x00000000

@@ -4625,6 +4625,7 @@ l_e9c0__esc__2_stringBase0:
 	.4byte 0x45440000
 
 .section .data
+.balign 8
 l_00e0_currSceneStr:
 	.4byte 0x54454D50
 	.4byte 0x00000000

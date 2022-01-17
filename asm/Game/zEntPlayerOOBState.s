@@ -3557,6 +3557,7 @@ l_b42c__esc__2_stringBase0:
 	.4byte 0x00000000
 
 .section .data
+.balign 8
 l_7e48_shared__Q29oob_state32_esc__2_unnamed_esc__2_zEntPlayerOOBState_cpp_esc__2_:
 	.4byte 0x00000001
 	.4byte 0x00000000

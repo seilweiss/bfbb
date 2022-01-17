@@ -1288,6 +1288,7 @@ iFileAsyncService__Fv:
 /* 8004C210 00049010  4E 80 00 20 */	blr 
 
 .section .data
+.balign 8
 l_9060_g_xstdata:
 	.4byte 0x00000000
 	.4byte 0x00000000

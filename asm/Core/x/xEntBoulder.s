@@ -3183,6 +3183,7 @@ l_b948__esc__2_stringBase0:
 	.4byte 0x00000000
 
 .section .data
+.balign 8
 l_7f80__esc__2_1566:
 	.4byte lbl_80121928 /* 0x80121928 */
 	.4byte lbl_80121928 /* 0x80121928 */

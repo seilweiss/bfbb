@@ -3424,6 +3424,7 @@ lbl_8003F390:
 /* 8003F3A0 0003C1A0  4E 80 00 20 */	blr 
 
 .section .data
+.balign 8
 l_6888_g_xsgdata:
 	.4byte 0x00000000
 	.4byte 0x00000000

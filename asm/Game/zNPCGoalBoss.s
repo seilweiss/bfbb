@@ -843,6 +843,7 @@ __ct__13zNPCGoalExistFi:
 /* 8014F768 0014C568  4E 80 00 20 */	blr 
 
 .section .data
+.balign 8
 l_a138__esc__2_887:
 	.4byte lbl_8014ECC0 /* 0x8014ECC0 */
 	.4byte lbl_8014ECE8 /* 0x8014ECE8 */

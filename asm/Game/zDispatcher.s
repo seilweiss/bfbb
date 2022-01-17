@@ -1141,6 +1141,7 @@ lbl_800541C4:
 /* 800541FC 00050FFC  4E 80 00 20 */	blr 
 
 .section .data
+.balign 8
 l_c0f8__esc__2_1068:
 	.4byte lbl_800538C0 /* 0x800538C0 */
 	.4byte lbl_800538CC /* 0x800538CC */

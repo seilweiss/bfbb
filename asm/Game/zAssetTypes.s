@@ -1440,6 +1440,7 @@ xSndPlay3D__FUiffUiUiP4xEntf14sound_categoryf:
 /* 8004FBF8 0004C9F8  4E 80 00 20 */	blr 
 
 .section .data
+.balign 8
 l_a808_assetTypeHandlers:
 	.4byte 0x42535020
 	.4byte 0x00000000

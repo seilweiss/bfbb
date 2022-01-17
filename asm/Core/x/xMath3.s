@@ -2072,6 +2072,7 @@ xQuatAdd__FP5xQuatPC5xQuatPC5xQuat:
 /* 80033550 00030350  4E 80 00 20 */	blr 
 
 .section .data
+.balign 8
 l_d6f0_nxt_esc__6_2148:
 	.4byte 0x00000001
 	.4byte 0x00000002

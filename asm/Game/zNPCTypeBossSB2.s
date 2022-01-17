@@ -11119,6 +11119,7 @@ l_fc00__esc__2_stringBase0:
 	.4byte 0x61726174
 
 .section .data
+.balign 8
 l_a700_boss_cam__29_esc__2_unnamed_esc__2_zNPCTypeBossSB2_cpp_esc__2_:
 	.4byte 0x40C00000
 	.4byte 0x40400000

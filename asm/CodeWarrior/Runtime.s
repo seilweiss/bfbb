@@ -2800,6 +2800,7 @@ lbl_801EF168:
 /* 801EF18C 001EBF8C  4E 80 00 20 */	blr 
 
 .section .data
+.balign 8
 .global lbl_802B7470
 lbl_802B7470:
 	.4byte l_afe8___RTTI__Q23std9exception /* 0x803CAFE8 */

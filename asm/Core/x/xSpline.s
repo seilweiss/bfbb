@@ -1626,6 +1626,7 @@ xSpline3_Catmullize__FP8xSpline3:
 /* 8004B104 00047F04  4E 80 00 20 */	blr 
 
 .section .data
+.balign 8
 l_8fe0_sBasisBezier:
 	.4byte 0xBF800000
 	.4byte 0x40400000

@@ -748,6 +748,7 @@ lbl_8002D968:
 /* 8002D988 0002A788  4E 80 00 20 */	blr 
 
 .section .data
+.balign 8
 l_d0a0_g_hiploadinst:
 	.4byte 0x00000000
 	.4byte 0x00000000

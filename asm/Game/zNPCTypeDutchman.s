@@ -11814,6 +11814,7 @@ l_20f0__esc__2_stringBase0:
 	.4byte 0x00000000
 
 .section .data
+.balign 8
 l_b460_boss_cam__30_esc__2_unnamed_esc__2_zNPCTypeDutchman_cpp_esc__2_:
 	.4byte 0x40C00000
 	.4byte 0x40400000

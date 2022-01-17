@@ -1755,6 +1755,7 @@ xMat3x3RMulVec__FP5xVec3PC7xMat3x3PC5xVec3:
 /* 80038424 00035224  4E 80 00 20 */	blr 
 
 .section .data
+.balign 8
 l_d700_sCmdInfo:
 	.4byte 0x00000000
 	.4byte 0x00000000

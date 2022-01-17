@@ -1227,6 +1227,7 @@ Stun__10zNPCCommonFf:
 /* 800EE2C8 000EB0C8  4E 80 00 20 */	blr 
 
 .section .data
+.balign 8
 l_4050_g_postoffice:
 	.4byte 0x00000000
 	.4byte 0x00000000
