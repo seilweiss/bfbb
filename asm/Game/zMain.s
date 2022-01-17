@@ -5026,7 +5026,7 @@ l_d494__esc__2_stringBase0:
 	.4byte 0x65647D00
 
 .section .data
-.balign 8
+.balign 4
 l_fb70_g_xser_sizeinfo:
 	.4byte 0x504C5952
 	.4byte 0x00000148

@@ -4121,7 +4121,7 @@ l_5ea8__esc__2_stringBase0:
 	.4byte 0x25660A00
 
 .section .data
-.balign 8
+.balign 4
 l_c640_ShinySparklyTable:
 	.4byte 0x00000004
 	.4byte 0x3E19999A

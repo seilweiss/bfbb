@@ -807,7 +807,7 @@ l_cba0__esc__2_stringBase0:
 	.4byte 0x6C000000
 
 .section .data
-.balign 8
+.balign 4
 l_fa20_widget_resources__Q24zhud18_esc__2_unnamed_esc__2_zHud_cpp_esc__2_:
 	.4byte l_cba0__esc__2_stringBase0 + 0
 	.4byte l_cba0__esc__2_stringBase0 + 20

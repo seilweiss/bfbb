@@ -568,7 +568,7 @@ l_4a00__esc__2_stringBase0:
 	.4byte 0x4B000000
 
 .section .data
-.balign 8
+.balign 4
 l_1b88_comboReward:
 	.4byte 0x00000000
 	.4byte l_4a00__esc__2_stringBase0 /* 0x80274A00 */

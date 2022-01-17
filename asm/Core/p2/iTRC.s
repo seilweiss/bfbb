@@ -12,13 +12,13 @@ Init__7ROMFontFv:
 /* 8018004C 0017CE4C  28 00 00 01 */	cmplwi r0, 1
 /* 80180050 0017CE50  40 82 00 18 */	bne lbl_80180068
 /* 80180054 0017CE54  3C 80 00 12 */	lis r4, 0x00120F00@ha
-/* 80180058 0017CE58  80 6D 86 40 */	lwz r3, lbl_803CAF40@sda21(r13)
+/* 80180058 0017CE58  80 6D 86 40 */	lwz r3, __OSCurrHeap@sda21(r13)
 /* 8018005C 0017CE5C  38 84 0F 00 */	addi r4, r4, 0x00120F00@l
 /* 80180060 0017CE60  48 05 1D A1 */	bl OSAllocFromHeap
 /* 80180064 0017CE64  48 00 00 14 */	b lbl_80180078
 lbl_80180068:
 /* 80180068 0017CE68  3C 80 00 02 */	lis r4, 0x00020120@ha
-/* 8018006C 0017CE6C  80 6D 86 40 */	lwz r3, lbl_803CAF40@sda21(r13)
+/* 8018006C 0017CE6C  80 6D 86 40 */	lwz r3, __OSCurrHeap@sda21(r13)
 /* 80180070 0017CE70  38 84 01 20 */	addi r4, r4, 0x00020120@l
 /* 80180074 0017CE74  48 05 1D 8D */	bl OSAllocFromHeap
 lbl_80180078:
@@ -1146,7 +1146,7 @@ l_2c50__esc__2_stringBase0:
 	.4byte 0x00000000
 
 .section .data
-.balign 8
+.balign 4
 l_b868__esc__2_650:
 	.4byte lbl_80180C40 /* 0x80180C40 */
 	.4byte lbl_80180C74 /* 0x80180C74 */

@@ -919,7 +919,7 @@ l_bcc0__esc__2_stringBase0:
 	.4byte 0x00000000
 
 .section .data
-.balign 8
+.balign 4
 l_82c8_g_tmrz_sndplay:
 	.4byte 0x00000000
 	.4byte 0x00000000

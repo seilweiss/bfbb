@@ -1012,7 +1012,7 @@ lbl_80122BF0:
 /* 80122C00 0011FA00  4E 80 00 20 */	blr 
 
 .section .data
-.balign 8
+.balign 4
 l_8040_offs_esc__6_919:
 	.4byte 0xFFFFFFFF
 	.4byte 0x00000000

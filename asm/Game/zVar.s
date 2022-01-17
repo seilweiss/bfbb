@@ -1785,7 +1785,7 @@ l_fcb0__esc__2_stringBase0:
 	.4byte 0x6D650053
 
 .section .data
-.balign 8
+.balign 4
 l_16e0_state_text_esc__6_908:
 	.4byte l_fcb0__esc__2_stringBase0 + 61
 	.4byte l_fcb0__esc__2_stringBase0 + 71

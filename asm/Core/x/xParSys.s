@@ -1001,7 +1001,7 @@ l_afd8_sBlendTable:
 	.4byte 0x00000000
 
 .section .data
-.balign 8
+.balign 4
 l_7ce0_sParSysInfo:
 	.4byte 0x00000000
 	.4byte render_par_sprite__FPvP9xParGroup /* 0x80116C88 */

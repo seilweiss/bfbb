@@ -23773,7 +23773,7 @@ l_73d8__esc__2_stringBase0:
 	.4byte 0x00000000
 
 .section .data
-.balign 8
+.balign 4
 l_2eb8_g_SharedCollisRecordList:
 	.4byte 0x00001F00
 	.4byte 0x00000000

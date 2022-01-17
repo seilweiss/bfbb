@@ -2876,7 +2876,7 @@ l_cfb0__esc__2_stringBase0:
 	.4byte 0x00000000
 
 .section .data
-.balign 8
+.balign 4
 l_95b0__esc__2_850:
 	.4byte lbl_801366B0 /* 0x801366B0 */
 	.4byte lbl_801366D8 /* 0x801366D8 */

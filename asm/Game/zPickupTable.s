@@ -65,7 +65,7 @@ lbl_800A8E9C:
 /* 800A8EC4 000A5CC4  4E 80 00 20 */	blr 
 
 .section .data
-.balign 8
+.balign 4
 l_ff40_ptranstbl:
 	.4byte l_e710__esc__2_stringBase0 + 0
 	.4byte 0x00000000

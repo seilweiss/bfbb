@@ -1952,7 +1952,7 @@ l_c2a4__esc__2_1389:
 	.4byte 0x00000000
 
 .section .data
-.balign 8
+.balign 4
 l_8c38_g_smdepot:
 	.4byte 0x00000000
 	.4byte 0x00000000

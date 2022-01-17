@@ -9572,7 +9572,7 @@ l_1464__esc__2_stringBase0:
 	.4byte 0x52474500
 
 .section .data
-.balign 8
+.balign 4
 l_af30_beam_launch_effect__34_esc__2_unnamed_esc__2_zNPCTypeBossPlankton_cpp_esc__2_:
 	.4byte 0x00000003
 	.4byte 0x00000000

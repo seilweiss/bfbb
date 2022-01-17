@@ -1289,7 +1289,7 @@ lbl_80043EA8:
 /* 80043EB4 00040CB4  4E 80 00 20 */	blr 
 
 .section .data
-.balign 8
+.balign 4
 l_8b10_g_xserdata:
 	.4byte 0x00000000
 	.4byte 0x00000000

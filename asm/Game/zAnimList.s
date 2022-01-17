@@ -327,7 +327,7 @@ lbl_8004EBE4:
 /* 8004EBE8 0004B9E8  4E 80 00 20 */	blr 
 
 .section .data
-.balign 8
+.balign 4
 l_a7b8_astnames:
 	.4byte l_4318__esc__2_stringBase0 /* 0x80254318 */
 	.4byte l_4318__esc__2_stringBase0 + 6

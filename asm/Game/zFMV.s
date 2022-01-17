@@ -96,7 +96,7 @@ l_ba20__esc__2_stringBase0:
 	.4byte 0x00000000
 
 .section .data
-.balign 8
+.balign 4
 l_ee98_zFMVFileTable:
 	.4byte 0x00000000
 	.4byte 0x464D565C

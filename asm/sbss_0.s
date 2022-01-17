@@ -548,11 +548,11 @@ l_c550_ArenaStart:
 .global l_c554_ArenaEnd
 l_c554_ArenaEnd:
 	.skip 0x4
-.global l_c558___OSArenaHi
-l_c558___OSArenaHi:
+.global __OSArenaHi
+__OSArenaHi:
 	.skip 0x8
-.global l_c560_FontData
-l_c560_FontData:
+.global FontData
+FontData:
 	.skip 0x4
 .global l_c564_SheetImage
 l_c564_SheetImage:

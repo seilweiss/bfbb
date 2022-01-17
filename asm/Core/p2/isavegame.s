@@ -2257,10 +2257,10 @@ iSG_discard_icondata__Fv:
 /* 800CE470 000CB270  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 800CE474 000CB274  7C 08 02 A6 */	mflr r0
 /* 800CE478 000CB278  90 01 00 14 */	stw r0, 0x14(r1)
-/* 800CE47C 000CB27C  80 6D 86 40 */	lwz r3, lbl_803CAF40@sda21(r13)
+/* 800CE47C 000CB27C  80 6D 86 40 */	lwz r3, __OSCurrHeap@sda21(r13)
 /* 800CE480 000CB280  80 8D 92 8C */	lwz r4, l_bb8c_g_rawicon@sda21(r13)
 /* 800CE484 000CB284  48 10 3A 79 */	bl OSFreeToHeap
-/* 800CE488 000CB288  80 6D 86 40 */	lwz r3, lbl_803CAF40@sda21(r13)
+/* 800CE488 000CB288  80 6D 86 40 */	lwz r3, __OSCurrHeap@sda21(r13)
 /* 800CE48C 000CB28C  80 8D 92 90 */	lwz r4, l_bb90_g_rawbanr@sda21(r13)
 /* 800CE490 000CB290  48 10 3A 6D */	bl OSFreeToHeap
 /* 800CE494 000CB294  38 00 00 00 */	li r0, 0
@@ -9772,7 +9772,7 @@ l_6120__esc__2_stringBase0:
 	.4byte 0x00373800
 
 .section .data
-.balign 8
+.balign 4
 l_2678_g_isgdata_MAIN:
 	.4byte 0x00000000
 	.4byte 0x00000000

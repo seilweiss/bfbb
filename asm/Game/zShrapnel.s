@@ -3234,7 +3234,7 @@ l_c170__esc__2_stringBase0:
 	.4byte 0x68000000
 
 .section .data
-.balign 8
+.balign 4
 l_8b88_sShrapnelTable:
 	.4byte l_c170__esc__2_stringBase0 /* 0x8026C170 */
 	.4byte zShrapnel_DestructObjInit__FP14zShrapnelAssetP14xModelInstanceP5xVec3PFP5zFragP10zFragAsset_v /* 0x80129308 */

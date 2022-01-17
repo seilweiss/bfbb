@@ -137,12 +137,12 @@ l_af34__esc__2_97:
 .global l_af3c__esc__2_144
 l_af3c__esc__2_144:
 	.4byte 0x25730A00
-.global lbl_803CAF40
-lbl_803CAF40:
+.global __OSCurrHeap
+__OSCurrHeap:
 	.4byte 0xFFFFFFFF
 	.4byte 0x00000000
-.global l_af48___OSArenaLo
-l_af48___OSArenaLo:
+.global __OSArenaLo
+__OSArenaLo:
 	.4byte 0xFFFFFFFF
 	.4byte 0x00000000
 .global lbl_803CAF50

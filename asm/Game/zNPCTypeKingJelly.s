@@ -10461,7 +10461,7 @@ l_d8b0__esc__2_stringBase0:
 	.4byte 0x00000000
 
 .section .data
-.balign 8
+.balign 4
 l_9da8_sound_name__31_esc__2_unnamed_esc__2_zNPCTypeKingJelly_cpp_esc__2_:
 	.4byte l_d8b0__esc__2_stringBase0 /* 0x8026D8B0 */
 	.4byte 0x00000000

@@ -226,7 +226,7 @@ radmalloc:
 /* 80196B6C 0019396C  39 20 00 03 */	li r9, 3
 /* 80196B70 00193970  48 00 00 24 */	b lbl_80196B94
 lbl_80196B74:
-/* 80196B74 00193974  80 6D 86 40 */	lwz r3, lbl_803CAF40@sda21(r13)
+/* 80196B74 00193974  80 6D 86 40 */	lwz r3, __OSCurrHeap@sda21(r13)
 /* 80196B78 00193978  7F E4 FB 78 */	mr r4, r31
 /* 80196B7C 0019397C  48 03 B2 85 */	bl OSAllocFromHeap
 /* 80196B80 00193980  7C 63 1B 79 */	or. r3, r3, r3
@@ -272,7 +272,7 @@ radfree:
 /* 80196C04 00193A04  48 00 00 14 */	b lbl_80196C18
 lbl_80196C08:
 /* 80196C08 00193A08  88 89 FF FF */	lbz r4, -1(r9)
-/* 80196C0C 00193A0C  80 6D 86 40 */	lwz r3, lbl_803CAF40@sda21(r13)
+/* 80196C0C 00193A0C  80 6D 86 40 */	lwz r3, __OSCurrHeap@sda21(r13)
 /* 80196C10 00193A10  7C 84 48 50 */	subf r4, r4, r9
 /* 80196C14 00193A14  48 03 B2 E9 */	bl OSFreeToHeap
 lbl_80196C18:
@@ -2338,9 +2338,9 @@ lbl_80198884:
 /* 80198888 00195688  90 6D 85 10 */	stw r3, l_ae10_TotTracks@sda21(r13)
 /* 8019888C 0019568C  7C 0A 18 40 */	cmplw r10, r3
 /* 80198890 00195690  4C 80 00 20 */	bgelr 
-/* 80198894 00195694  3D 20 80 2A */	lis r9, l_1f34_TrackNums@ha
+/* 80198894 00195694  3D 20 80 2A */	lis r9, TrackNums@ha
 /* 80198898 00195698  39 60 00 00 */	li r11, 0
-/* 8019889C 0019569C  39 29 1F 34 */	addi r9, r9, l_1f34_TrackNums@l
+/* 8019889C 0019569C  39 29 1F 34 */	addi r9, r9, TrackNums@l
 lbl_801988A0:
 /* 801988A0 001956A0  7C 0B 20 2E */	lwzx r0, r11, r4
 /* 801988A4 001956A4  39 4A 00 01 */	addi r10, r10, 1
@@ -2504,8 +2504,8 @@ BinkOpen:
 /* 80198ACC 001958CC  3B C9 CD 58 */	addi r30, r9, lbl_8019CD58@l
 /* 80198AD0 001958D0  40 82 00 14 */	bne lbl_80198AE4
 /* 80198AD4 001958D4  38 00 00 01 */	li r0, 1
-/* 80198AD8 001958D8  3D 20 80 2A */	lis r9, l_1f34_TrackNums@ha
-/* 80198ADC 001958DC  91 69 1F 34 */	stw r11, l_1f34_TrackNums@l(r9)
+/* 80198AD8 001958D8  3D 20 80 2A */	lis r9, TrackNums@ha
+/* 80198ADC 001958DC  91 69 1F 34 */	stw r11, TrackNums@l(r9)
 /* 80198AE0 001958E0  90 0D 85 10 */	stw r0, l_ae10_TotTracks@sda21(r13)
 lbl_80198AE4:
 /* 80198AE4 001958E4  38 61 00 08 */	addi r3, r1, 8
@@ -3246,8 +3246,8 @@ lbl_80199588:
 /* 80199590 00196390  41 80 FF A8 */	blt lbl_80199538
 lbl_80199594:
 /* 80199594 00196394  38 00 00 00 */	li r0, 0
-/* 80199598 00196398  3D 20 80 2A */	lis r9, l_1f34_TrackNums@ha
-/* 8019959C 0019639C  90 09 1F 34 */	stw r0, l_1f34_TrackNums@l(r9)
+/* 80199598 00196398  3D 20 80 2A */	lis r9, TrackNums@ha
+/* 8019959C 0019639C  90 09 1F 34 */	stw r0, TrackNums@l(r9)
 /* 801995A0 001963A0  39 60 00 01 */	li r11, 1
 /* 801995A4 001963A4  3B 80 00 00 */	li r28, 0
 /* 801995A8 001963A8  91 6D 85 10 */	stw r11, l_ae10_TotTracks@sda21(r13)
@@ -33790,9 +33790,10 @@ ReadBPLossyWithMotion:
 /* 801B5348 001B2148  38 21 00 60 */	addi r1, r1, 0x60
 /* 801B534C 001B214C  4E 80 00 20 */	blr 
 
-.section .data
-.global l_1f34_TrackNums
-l_1f34_TrackNums:
+.section .data # bink data is allergic to alignment
+.balign 4
+.global TrackNums
+TrackNums:
 	.skip 32
 .global LogoData
 LogoData:

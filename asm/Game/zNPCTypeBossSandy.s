@@ -10615,7 +10615,7 @@ l_d19c__esc__2_stringBase0:
 	.4byte 0x00000000
 
 .section .data
-.balign 8
+.balign 4
 l_98c8_sBone:
 	.4byte 0x00000003
 	.4byte 0x00000005

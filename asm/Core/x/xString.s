@@ -1099,7 +1099,7 @@ lbl_8004D04C:
 /* 8004D050 00049E50  4E 80 00 20 */	blr 
 
 .section .data
-.balign 8
+.balign 4
 l_a228__esc__2_1131:
 	.4byte lbl_8004D04C /* 0x8004D04C */
 	.4byte lbl_8004CAB0 /* 0x8004CAB0 */

@@ -50,7 +50,7 @@ lbl_800C63C0:
 /* 800C6404 000C3204  90 A9 00 10 */	stw r5, 0x10(r9)
 /* 800C6408 000C3208  90 09 00 14 */	stw r0, 0x14(r9)
 /* 800C640C 000C320C  90 8D 92 24 */	stw r4, HeapSize@sda21(r13)
-/* 800C6410 000C3210  80 6D 86 40 */	lwz r3, lbl_803CAF40@sda21(r13)
+/* 800C6410 000C3210  80 6D 86 40 */	lwz r3, __OSCurrHeap@sda21(r13)
 /* 800C6414 000C3214  48 10 B9 ED */	bl OSAllocFromHeap
 /* 800C6418 000C3218  90 6D 92 14 */	stw r3, mem_base_alloc@sda21(r13)
 /* 800C641C 000C321C  3C 80 80 39 */	lis r4, gMemInfo@ha

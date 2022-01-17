@@ -423,7 +423,7 @@ __ct__12zNPCGoalHereFi:
 /* 80139214 00136014  4E 80 00 20 */	blr 
 
 .section .data
-.balign 8
+.balign 4
 l_9860__esc__2_863:
 	.4byte lbl_80138CE4 /* 0x80138CE4 */
 	.4byte lbl_80138D0C /* 0x80138D0C */

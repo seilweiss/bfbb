@@ -1388,7 +1388,7 @@ l_b008__esc__2_stringBase0:
 	.4byte 0x72730000
 
 .section .data
-.balign 8
+.balign 4
 l_7d18__esc__2_927:
 	.4byte lbl_80117DB0 /* 0x80117DB0 */
 	.4byte lbl_80117D9C /* 0x80117D9C */

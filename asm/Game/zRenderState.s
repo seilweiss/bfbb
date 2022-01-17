@@ -286,7 +286,7 @@ lbl_800ACDCC:
 /* 800ACDDC 000A9BDC  4E 80 00 20 */	blr 
 
 .section .data
-.balign 8
+.balign 4
 l_0030__esc__2_558:
 	.4byte lbl_800ACDCC /* 0x800ACDCC */
 	.4byte lbl_800ACDCC /* 0x800ACDCC */

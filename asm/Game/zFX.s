@@ -5386,7 +5386,7 @@ l_be04__esc__2_stringBase0:
 	.4byte 0x696E6600
 
 .section .data
-.balign 8
+.balign 4
 l_efe0_cb_spawn_bubble_wall_esc__6_724:
 	.4byte 0x00000000
 	.4byte 0x00000000

@@ -766,7 +766,7 @@ l_a3f8__esc__2_727:
 	.4byte 0x00000000
 
 .section .data
-.balign 8
+.balign 4
 l_7460_g_colrec:
 	.4byte 0x00000000
 	.4byte 0x00000000

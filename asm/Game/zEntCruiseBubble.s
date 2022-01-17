@@ -11706,7 +11706,7 @@ l_533c__esc__2_stringBase0:
 	.4byte 0x00000000
 
 .section .data
-.balign 8
+.balign 4
 l_c200_base__Q213cruise_bubble30_esc__2_unnamed_esc__2_zEntCruiseBubble_cpp_esc__2_:
 	.4byte 0x00000000
 	.4byte 0x30000000

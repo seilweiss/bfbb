@@ -850,7 +850,7 @@ l_ca44__esc__2_stringBase0:
 	.4byte 0x00000000
 
 .section .data
-.balign 8
+.balign 4
 l_8f80_render_bk_table__22_esc__2_unnamed_esc__2_zTextBox_cpp_esc__2_:
 	.4byte render_bk_fill__22_esc__2_unnamed_esc__2_zTextBox_cpp_esc__2_FRC8ztextbox /* 0x80133E38 */
 	.4byte render_bk_tex_scale__22_esc__2_unnamed_esc__2_zTextBox_cpp_esc__2_FRC8ztextbox /* 0x80133E7C */

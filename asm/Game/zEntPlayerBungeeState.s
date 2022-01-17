@@ -7705,7 +7705,7 @@ l_a688__esc__2_stringBase0:
 	.4byte 0x6B000000
 
 .section .data
-.balign 8
+.balign 4
 l_7a68_shared__Q212bungee_state35_esc__2_unnamed_esc__2_zEntPlayerBungeeState_cpp_esc__2_:
 	.4byte 0x00000001
 	.4byte 0x00000000

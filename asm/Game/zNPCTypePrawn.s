@@ -6789,7 +6789,7 @@ l_e9f0__esc__2_stringBase0:
 	.4byte 0x00000000
 
 .section .data
-.balign 8
+.balign 4
 l_a240_boss_cam__27_esc__2_unnamed_esc__2_zNPCTypePrawn_cpp_esc__2_:
 	.4byte 0x40C00000
 	.4byte 0x40400000

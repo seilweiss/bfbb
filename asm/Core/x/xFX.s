@@ -7316,7 +7316,7 @@ lbl_8002CA94:
 /* 8002CA9C 0002989C  4E 80 00 20 */	blr 
 
 .section .data
-.balign 8
+.balign 4
 l_d010__esc__2_1933:
 	.4byte lbl_80028610 /* 0x80028610 */
 	.4byte lbl_80028640 /* 0x80028640 */

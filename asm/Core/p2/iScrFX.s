@@ -441,7 +441,7 @@ lbl_800CF91C:
 /* 800CF928 000CC728  4E 80 00 20 */	blr 
 
 .section .data
-.balign 8
+.balign 4
 l_2b00_sMBD:
 	.4byte 0x00000000
 	.4byte 0x00000000

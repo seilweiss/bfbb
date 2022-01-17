@@ -1511,7 +1511,7 @@ l_33f8__esc__2_stringBase0:
 	.4byte 0x00000000
 
 .section .data
-.balign 8
+.balign 4
 l_b9c8_g_strz_glyphmodel:
 	.4byte l_33f8__esc__2_stringBase0 + 0
 	.4byte l_33f8__esc__2_stringBase0 + 8

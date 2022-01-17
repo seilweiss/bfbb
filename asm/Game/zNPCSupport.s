@@ -3269,7 +3269,7 @@ l_c808__esc__2_stringBase0:
 	.4byte 0x00000000
 
 .section .data
-.balign 8
+.balign 4
 l_8c68_sNPCSndFx:
 	.4byte 0x00000000
 	.4byte 0x00000000

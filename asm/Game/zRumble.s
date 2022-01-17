@@ -313,7 +313,7 @@ zPadAddRumble__F14_tagRumbleTypefiUi:
 /* 800AD208 000AA008  4E 80 00 20 */	blr 
 
 .section .data
-.balign 8
+.balign 4
 l_0090__esc__2_686:
 	.4byte lbl_800AD01C /* 0x800AD01C */
 	.4byte lbl_800ACF78 /* 0x800ACF78 */

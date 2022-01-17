@@ -3472,7 +3472,7 @@ xDrawSetColor__F10iColor_tag:
 /* 8001F434 0001C234  4E 80 00 20 */	blr 
 
 .section .data
-.balign 8
+.balign 4
 l_b570__esc__2_1412:
 	.4byte lbl_8001E978 /* 0x8001E978 */
 	.4byte lbl_8001E9A8 /* 0x8001E9A8 */

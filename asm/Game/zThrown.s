@@ -3311,7 +3311,7 @@ l_f590__esc__2_stringBase0:
 	.4byte 0x00000000
 
 .section .data
-.balign 8
+.balign 4
 l_0f08_l_normal:
 	.4byte 0x41200000
 	.4byte 0x41700000

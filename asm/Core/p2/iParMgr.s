@@ -1569,7 +1569,7 @@ lbl_800CC5C0:
 /* 800CC5E4 000C93E4  4E 80 00 20 */	blr 
 
 .section .data
-.balign 8
+.balign 4
 l_2650_i3d_esc__6_923:
 	.4byte 0x00000001
 	.4byte 0x00020000

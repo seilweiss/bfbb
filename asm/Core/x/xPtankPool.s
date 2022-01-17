@@ -751,7 +751,7 @@ lbl_80180018:
 /* 80180034 0017CE34  4E 80 00 20 */	blr 
 
 .section .data
-.balign 8
+.balign 4
 l_b830_groups__24_esc__2_unnamed_esc__2_xPtankPool_cpp_esc__2_:
 	.4byte 0x00000004
 	.4byte 0x0000008A

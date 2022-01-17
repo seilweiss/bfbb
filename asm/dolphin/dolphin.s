@@ -33141,8 +33141,8 @@ lbl_801D1F54:
 
 .global OSSetCurrentHeap
 OSSetCurrentHeap:
-/* 801D1F78 001CED78  80 0D 86 40 */	lwz r0, lbl_803CAF40@sda21(r13)
-/* 801D1F7C 001CED7C  90 6D 86 40 */	stw r3, lbl_803CAF40@sda21(r13)
+/* 801D1F78 001CED78  80 0D 86 40 */	lwz r0, __OSCurrHeap@sda21(r13)
+/* 801D1F7C 001CED7C  90 6D 86 40 */	stw r3, __OSCurrHeap@sda21(r13)
 /* 801D1F80 001CED80  7C 03 03 78 */	mr r3, r0
 /* 801D1F84 001CED84  4E 80 00 20 */	blr 
 
@@ -33174,7 +33174,7 @@ lbl_801D1FC4:
 /* 801D1FDC 001CEDDC  90 0D 9C 54 */	stw r0, l_c554_ArenaEnd@sda21(r13)
 /* 801D1FE0 001CEDE0  7C 63 3A 14 */	add r3, r3, r7
 /* 801D1FE4 001CEDE4  38 03 00 1F */	addi r0, r3, 0x1f
-/* 801D1FE8 001CEDE8  90 8D 86 40 */	stw r4, lbl_803CAF40@sda21(r13)
+/* 801D1FE8 001CEDE8  90 8D 86 40 */	stw r4, __OSCurrHeap@sda21(r13)
 /* 801D1FEC 001CEDEC  54 03 00 34 */	rlwinm r3, r0, 0, 0, 0x1a
 /* 801D1FF0 001CEDF0  90 6D 9C 50 */	stw r3, l_c550_ArenaStart@sda21(r13)
 /* 801D1FF4 001CEDF4  4E 80 00 20 */	blr 
@@ -33214,22 +33214,22 @@ lbl_801D205C:
 
 .global OSGetArenaHi
 OSGetArenaHi:
-/* 801D2064 001CEE64  80 6D 9C 58 */	lwz r3, l_c558___OSArenaHi@sda21(r13)
+/* 801D2064 001CEE64  80 6D 9C 58 */	lwz r3, __OSArenaHi@sda21(r13)
 /* 801D2068 001CEE68  4E 80 00 20 */	blr 
 
 .global OSGetArenaLo
 OSGetArenaLo:
-/* 801D206C 001CEE6C  80 6D 86 48 */	lwz r3, l_af48___OSArenaLo@sda21(r13)
+/* 801D206C 001CEE6C  80 6D 86 48 */	lwz r3, __OSArenaLo@sda21(r13)
 /* 801D2070 001CEE70  4E 80 00 20 */	blr 
 
 .global OSSetArenaHi
 OSSetArenaHi:
-/* 801D2074 001CEE74  90 6D 9C 58 */	stw r3, l_c558___OSArenaHi@sda21(r13)
+/* 801D2074 001CEE74  90 6D 9C 58 */	stw r3, __OSArenaHi@sda21(r13)
 /* 801D2078 001CEE78  4E 80 00 20 */	blr 
 
 .global OSSetArenaLo
 OSSetArenaLo:
-/* 801D207C 001CEE7C  90 6D 86 48 */	stw r3, l_af48___OSArenaLo@sda21(r13)
+/* 801D207C 001CEE7C  90 6D 86 48 */	stw r3, __OSArenaLo@sda21(r13)
 /* 801D2080 001CEE80  4E 80 00 20 */	blr 
 
 .global __OSInitAudioSystem
@@ -35113,7 +35113,7 @@ lbl_801D3A3C:
 /* 801D3A44 001D0844  38 7E 00 00 */	addi r3, r30, 0
 /* 801D3A48 001D0848  38 9D 00 00 */	addi r4, r29, 0
 /* 801D3A4C 001D084C  4B FF FD 01 */	bl Decode
-/* 801D3A50 001D0850  93 AD 9C 60 */	stw r29, l_c560_FontData@sda21(r13)
+/* 801D3A50 001D0850  93 AD 9C 60 */	stw r29, FontData@sda21(r13)
 /* 801D3A54 001D0854  A0 8D 86 58 */	lhz r4, l_af58_fontEncode_esc__6_80@sda21(r13)
 /* 801D3A58 001D0858  A0 1D 00 22 */	lhz r0, 0x22(r29)
 /* 801D3A5C 001D085C  28 04 00 01 */	cmplwi r4, 1
@@ -35160,7 +35160,7 @@ lbl_801D3AC8:
 /* 801D3AE4 001D08E4  90 01 00 20 */	stw r0, 0x20(r1)
 /* 801D3AE8 001D08E8  4B FF FA C9 */	bl GetFontCode
 /* 801D3AEC 001D08EC  80 AD 9C 6C */	lwz r5, l_c56c_CharsInSheet@sda21(r13)
-/* 801D3AF0 001D08F0  81 8D 9C 60 */	lwz r12, l_c560_FontData@sda21(r13)
+/* 801D3AF0 001D08F0  81 8D 9C 60 */	lwz r12, FontData@sda21(r13)
 /* 801D3AF4 001D08F4  7D 43 2B D6 */	divw r10, r3, r5
 /* 801D3AF8 001D08F8  A0 C1 00 1C */	lhz r6, 0x1c(r1)
 /* 801D3AFC 001D08FC  A0 0C 00 1E */	lhz r0, 0x1e(r12)
@@ -35210,7 +35210,7 @@ lbl_801D3AC8:
 /* 801D3BAC 001D09AC  B0 C9 00 00 */	sth r6, 0(r9)
 /* 801D3BB0 001D09B0  39 45 00 05 */	addi r10, r5, 5
 /* 801D3BB4 001D09B4  39 25 00 06 */	addi r9, r5, 6
-/* 801D3BB8 001D09B8  80 ED 9C 60 */	lwz r7, l_c560_FontData@sda21(r13)
+/* 801D3BB8 001D09B8  80 ED 9C 60 */	lwz r7, FontData@sda21(r13)
 /* 801D3BBC 001D09BC  38 C5 00 07 */	addi r6, r5, 7
 /* 801D3BC0 001D09C0  A0 A1 00 1E */	lhz r5, 0x1e(r1)
 /* 801D3BC4 001D09C4  A0 E7 00 1E */	lhz r7, 0x1e(r7)
@@ -35232,7 +35232,7 @@ lbl_801D3AC8:
 /* 801D3C04 001D0A04  7D 08 3A 14 */	add r8, r8, r7
 /* 801D3C08 001D0A08  7D 08 1A 14 */	add r8, r8, r3
 /* 801D3C0C 001D0A0C  B0 A8 00 00 */	sth r5, 0(r8)
-/* 801D3C10 001D0A10  80 ED 9C 60 */	lwz r7, l_c560_FontData@sda21(r13)
+/* 801D3C10 001D0A10  80 ED 9C 60 */	lwz r7, FontData@sda21(r13)
 /* 801D3C14 001D0A14  A0 A1 00 20 */	lhz r5, 0x20(r1)
 /* 801D3C18 001D0A18  A0 E7 00 1E */	lhz r7, 0x1e(r7)
 /* 801D3C1C 001D0A1C  7C E7 1E 70 */	srawi r7, r7, 3
@@ -35253,7 +35253,7 @@ lbl_801D3AC8:
 /* 801D3C58 001D0A58  7D 08 3A 14 */	add r8, r8, r7
 /* 801D3C5C 001D0A5C  7D 08 1A 14 */	add r8, r8, r3
 /* 801D3C60 001D0A60  B0 A8 00 00 */	sth r5, 0(r8)
-/* 801D3C64 001D0A64  80 AD 9C 60 */	lwz r5, l_c560_FontData@sda21(r13)
+/* 801D3C64 001D0A64  80 AD 9C 60 */	lwz r5, FontData@sda21(r13)
 /* 801D3C68 001D0A68  A0 A5 00 1E */	lhz r5, 0x1e(r5)
 /* 801D3C6C 001D0A6C  7C A5 1E 70 */	srawi r5, r5, 3
 /* 801D3C70 001D0A70  7C A5 01 94 */	addze r5, r5
@@ -35288,7 +35288,7 @@ ExpandFontSheet:
 /* 801D3CD8 001D0AD8  7C 08 02 A6 */	mflr r0
 /* 801D3CDC 001D0ADC  90 01 00 04 */	stw r0, 4(r1)
 /* 801D3CE0 001D0AE0  94 21 FF F8 */	stwu r1, -8(r1)
-/* 801D3CE4 001D0AE4  80 CD 9C 60 */	lwz r6, l_c560_FontData@sda21(r13)
+/* 801D3CE4 001D0AE4  80 CD 9C 60 */	lwz r6, FontData@sda21(r13)
 /* 801D3CE8 001D0AE8  A0 06 00 18 */	lhz r0, 0x18(r6)
 /* 801D3CEC 001D0AEC  38 A6 00 2C */	addi r5, r6, 0x2c
 /* 801D3CF0 001D0AF0  28 00 00 00 */	cmplwi r0, 0
@@ -35521,7 +35521,7 @@ lbl_801D4018:
 /* 801D4060 001D0E60  38 E7 FF FC */	addi r7, r7, -4
 /* 801D4064 001D0E64  42 00 FF B4 */	bdnz lbl_801D4018
 lbl_801D4068:
-/* 801D4068 001D0E68  80 AD 9C 60 */	lwz r5, l_c560_FontData@sda21(r13)
+/* 801D4068 001D0E68  80 AD 9C 60 */	lwz r5, FontData@sda21(r13)
 /* 801D406C 001D0E6C  7C 83 23 78 */	mr r3, r4
 /* 801D4070 001D0E70  80 85 00 28 */	lwz r4, 0x28(r5)
 /* 801D4074 001D0E74  4B FF E3 15 */	bl DCStoreRange
@@ -35581,7 +35581,7 @@ lbl_801D410C:
 /* 801D411C 001D0F1C  38 60 00 00 */	li r3, 0
 /* 801D4120 001D0F20  48 00 00 38 */	b lbl_801D4158
 lbl_801D4124:
-/* 801D4124 001D0F24  80 AD 9C 60 */	lwz r5, l_c560_FontData@sda21(r13)
+/* 801D4124 001D0F24  80 AD 9C 60 */	lwz r5, FontData@sda21(r13)
 /* 801D4128 001D0F28  80 05 00 24 */	lwz r0, 0x24(r5)
 /* 801D412C 001D0F2C  7C 05 02 14 */	add r0, r5, r0
 /* 801D4130 001D0F30  90 0D 9C 64 */	stw r0, l_c564_SheetImage@sda21(r13)
@@ -35688,7 +35688,7 @@ lbl_801D4284:
 /* 801D4284 001D1084  4B FF F3 2D */	bl GetFontCode
 /* 801D4288 001D1088  80 0D 9C 6C */	lwz r0, l_c56c_CharsInSheet@sda21(r13)
 /* 801D428C 001D108C  28 1F 00 00 */	cmplwi r31, 0
-/* 801D4290 001D1090  80 8D 9C 60 */	lwz r4, l_c560_FontData@sda21(r13)
+/* 801D4290 001D1090  80 8D 9C 60 */	lwz r4, FontData@sda21(r13)
 /* 801D4294 001D1094  7C C3 03 D6 */	divw r6, r3, r0
 /* 801D4298 001D1098  80 AD 9C 64 */	lwz r5, l_c564_SheetImage@sda21(r13)
 /* 801D429C 001D109C  80 04 00 14 */	lwz r0, 0x14(r4)
@@ -35696,7 +35696,7 @@ lbl_801D4284:
 /* 801D42A4 001D10A4  7C 05 02 14 */	add r0, r5, r0
 /* 801D42A8 001D10A8  90 1C 00 00 */	stw r0, 0(r28)
 /* 801D42AC 001D10AC  80 0D 9C 6C */	lwz r0, l_c56c_CharsInSheet@sda21(r13)
-/* 801D42B0 001D10B0  80 AD 9C 60 */	lwz r5, l_c560_FontData@sda21(r13)
+/* 801D42B0 001D10B0  80 AD 9C 60 */	lwz r5, FontData@sda21(r13)
 /* 801D42B4 001D10B4  7C 86 01 D6 */	mullw r4, r6, r0
 /* 801D42B8 001D10B8  A0 C5 00 1A */	lhz r6, 0x1a(r5)
 /* 801D42BC 001D10BC  A0 05 00 10 */	lhz r0, 0x10(r5)
@@ -35706,7 +35706,7 @@ lbl_801D4284:
 /* 801D42CC 001D10CC  7C 84 28 50 */	subf r4, r4, r5
 /* 801D42D0 001D10D0  7C 04 01 D6 */	mullw r0, r4, r0
 /* 801D42D4 001D10D4  90 1D 00 00 */	stw r0, 0(r29)
-/* 801D42D8 001D10D8  80 8D 9C 60 */	lwz r4, l_c560_FontData@sda21(r13)
+/* 801D42D8 001D10D8  80 8D 9C 60 */	lwz r4, FontData@sda21(r13)
 /* 801D42DC 001D10DC  A0 04 00 12 */	lhz r0, 0x12(r4)
 /* 801D42E0 001D10E0  7C 07 01 D6 */	mullw r0, r7, r0
 /* 801D42E4 001D10E4  90 1E 00 00 */	stw r0, 0(r30)
@@ -45710,7 +45710,7 @@ lbl_801DCD44:
 /* 801DCD78 001D9B78  4E 80 00 20 */	blr 
 
 .section .data
-.balign 8
+.balign 4
 .global l_04e0___AXSrcCycles
 l_04e0___AXSrcCycles:
 	.4byte 0x00000DF8

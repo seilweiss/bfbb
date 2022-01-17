@@ -1374,7 +1374,7 @@ l_c0e8__esc__2_stringBase0:
 	.4byte 0x00000000
 
 .section .data
-.balign 8
+.balign 4
 l_8aa8_idx_smoke_esc__6_1150:
 	.4byte 0x00000007
 	.4byte 0x00000008

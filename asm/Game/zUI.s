@@ -3504,7 +3504,7 @@ l_f750__esc__2_stringBase0:
 	.4byte 0x49730000
 
 .section .data
-.balign 8
+.balign 4
 l_12f8_Index:
 	.4byte 0x00000001
 	.4byte 0x00020000

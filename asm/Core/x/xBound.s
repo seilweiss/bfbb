@@ -1008,7 +1008,7 @@ xDrawSphere2__FPC7xSphereUi:
 /* 8000B2AC 000080AC  4E 80 00 20 */	blr 
 
 .section .data
-.balign 8
+.balign 4
 l_b380__esc__2_700:
 	.4byte lbl_8000A93C /* 0x8000A93C */
 	.4byte lbl_8000A97C /* 0x8000A97C */

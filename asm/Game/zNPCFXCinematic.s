@@ -5862,7 +5862,7 @@ l_3d08__esc__2_stringBase0:
 	.4byte 0x00000000
 
 .section .data
-.balign 8
+.balign 4
 l_19f8_g_cutmap:
 	.4byte l_3d08__esc__2_stringBase0 + 2758
 	.4byte l_bf58_g_JF01_cin_fodder /* 0x8029BF58 */

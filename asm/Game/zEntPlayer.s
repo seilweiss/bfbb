@@ -49836,7 +49836,7 @@ l_6118__esc__2_stringBase0:
 	.4byte 0x00000000
 
 .section .data
-.balign 8
+.balign 4
 l_c9b0_sPlayerSnd:
 	.4byte 0x00000000
 	.4byte 0x00000000

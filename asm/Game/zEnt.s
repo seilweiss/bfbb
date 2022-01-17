@@ -1829,7 +1829,7 @@ l_5024__esc__2_stringBase0:
 	.4byte 0x00000000
 
 .section .data
-.balign 8
+.balign 4
 l_c158__esc__2_1035:
 	.4byte lbl_80055780 /* 0x80055780 */
 	.4byte lbl_80055780 /* 0x80055780 */
