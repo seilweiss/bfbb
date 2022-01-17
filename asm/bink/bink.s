@@ -53561,7 +53561,6 @@ patterns:
 	.4byte 0x0E0F0607
 
 .section .bss
-l_9920_ClampRegion:
 /* SPECULATION: link order */
 .global lbl_80363088
 lbl_80363088:
