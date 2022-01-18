@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text  # 0x800EED74 - 0x800EEE4C
+.section .text, "ax"  # 0x800EED74 - 0x800EEE4C
 
 .global zNPCTypes_StartupTypes__Fv
 zNPCTypes_StartupTypes__Fv:

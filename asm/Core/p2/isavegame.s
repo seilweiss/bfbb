@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text  # 0x800CC5E8 - 0x800CF34C
+.section .text, "ax"  # 0x800CC5E8 - 0x800CF34C
 
 .global iSGStartup__Fv
 iSGStartup__Fv:
@@ -9771,7 +9771,7 @@ l_6120__esc__2_stringBase0:
 	.4byte 0x47515045
 	.4byte 0x00373800
 
-.section .data
+.section .data, "wa"
 .balign 4
 l_2678_g_isgdata_MAIN:
 	.4byte 0x00000000
@@ -10101,7 +10101,7 @@ l_bbb0_i_esc__6_1664:
 l_bbb4_init_esc__6_1665:
 	.skip 0x4
 
-.section .sbss2
+.section .sbss2, "", @nobits
 l_08b0__esc__2_1260:
 	.skip 0x4
 /* SPECULATION: link order */

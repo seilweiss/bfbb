@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text  # 0x8004D1F0 - 0x8004D6AC
+.section .text, "ax"  # 0x8004D1F0 - 0x8004D6AC
 
 GetRandomizedTime__FP11xTimerAsset:
 /* 8004D1F0 00049FF0  94 21 FF E0 */	stwu r1, -0x20(r1)
@@ -350,7 +350,7 @@ lbl_8004D690:
 /* 8004D6A4 0004A4A4  38 21 00 20 */	addi r1, r1, 0x20
 /* 8004D6A8 0004A4A8  4E 80 00 20 */	blr 
 
-.section .data
+.section .data, "wa"
 .balign 4
 l_a258_sPauseTimerHash:
 	.4byte 0xBC345600
@@ -374,7 +374,7 @@ l_a258_sPauseTimerHash:
 	.4byte 0xBC345A9B
 	.4byte 0xBC345AA4
 
-.section .sdata2
+.section .sdata2, "a"
 l_d118__esc__2_669:
 	.4byte 0x447A0000
 	.4byte 0x00000000

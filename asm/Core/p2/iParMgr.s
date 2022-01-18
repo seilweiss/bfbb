@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text  # 0x800CAEEC - 0x800CC5E8
+.section .text, "ax"  # 0x800CAEEC - 0x800CC5E8
 
 .global iParMgrInit__Fv
 iParMgrInit__Fv:
@@ -1568,7 +1568,7 @@ lbl_800CC5C0:
 /* 800CC5E0 000C93E0  38 21 00 20 */	addi r1, r1, 0x20
 /* 800CC5E4 000C93E4  4E 80 00 20 */	blr 
 
-.section .data
+.section .data, "wa"
 .balign 4
 l_2650_i3d_esc__6_923:
 	.4byte 0x00000001
@@ -1598,7 +1598,7 @@ l_e058_v3d_esc__6_1482:
 l_bb80_gColorTableInit:
 	.skip 0x8
 
-.section .sdata2
+.section .sdata2, "a"
 l_e138__esc__2_684:
 	.4byte 0x437F0000
 	.4byte 0x00000000

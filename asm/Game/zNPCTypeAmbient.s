@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text  # 0x801077A0 - 0x80109588
+.section .text, "ax"  # 0x801077A0 - 0x80109588
 
 .global ZNPC_Ambient_Startup__Fv
 ZNPC_Ambient_Startup__Fv:
@@ -2238,7 +2238,7 @@ l_a280__esc__2_stringBase0:
 	.4byte 0x65000000
 	.4byte 0x00000000
 
-.section .sdata2
+.section .sdata2, "a"
 l_e698__esc__2_882:
 	.4byte 0x3F800000
 l_e69c__esc__2_883:

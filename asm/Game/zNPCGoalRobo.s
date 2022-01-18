@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text  # 0x800D92AC - 0x800ECBFC
+.section .text, "ax"  # 0x800D92AC - 0x800ECBFC
 
 .global GOALCreate_Robotic__FiP10RyzMemGrowPv
 GOALCreate_Robotic__FiP10RyzMemGrowPv:
@@ -23772,7 +23772,7 @@ l_73d8__esc__2_stringBase0:
 	.4byte 0x6E640000
 	.4byte 0x00000000
 
-.section .data
+.section .data, "wa"
 .balign 4
 l_2eb8_g_SharedCollisRecordList:
 	.4byte 0x00001F00
@@ -25161,7 +25161,7 @@ l_bcb0_dst_tetherMax_esc__6_5888:
 l_bcb4_init_esc__6_5889:
 	.skip 0x4
 
-.section .sdata2
+.section .sdata2, "a"
 l_e270__esc__2_1130:
 	.4byte 0x00000000
 l_e274__esc__2_1131:

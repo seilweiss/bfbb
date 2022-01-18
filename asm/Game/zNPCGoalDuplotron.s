@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text  # 0x80129FB4 - 0x8012A728
+.section .text, "ax"  # 0x80129FB4 - 0x8012A728
 
 .global GOALCreate_Duplotron__FiP10RyzMemGrowPv
 GOALCreate_Duplotron__FiP10RyzMemGrowPv:
@@ -537,7 +537,7 @@ __ct__17zNPCGoalDuploLiveFi:
 /* 8012A720 00127520  38 21 00 10 */	addi r1, r1, 0x10
 /* 8012A724 00127524  4E 80 00 20 */	blr 
 
-.section .sdata2
+.section .sdata2, "a"
 l_eb58__esc__2_816:
 	.4byte 0x41A00000
 l_eb5c__esc__2_840:

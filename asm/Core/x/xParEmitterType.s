@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text  # 0x80118A04 - 0x8011A940
+.section .text, "ax"  # 0x80118A04 - 0x8011A940
 
 .global xParEmitterEmitPoint__FP4xParP16xParEmitterAssetf
 xParEmitterEmitPoint__FP4xParP16xParEmitterAssetf:
@@ -2305,7 +2305,7 @@ l_b258__esc__2_932:
 	.4byte 0x00000000
 	.4byte 0x00000000
 
-.section .data
+.section .data, "wa"
 .balign 4
 l_7db8__esc__2_1006:
 	.4byte lbl_80119DCC /* 0x80119DCC */
@@ -2354,7 +2354,7 @@ sBlendTable:
 l_44f0_buffer_mat_esc__6_943:
 	.skip 0x40
 
-.section .sbss2
+.section .sbss2, "", @nobits
 l_08c8__esc__2_824:
 	.skip 0x4
 /* SPECULATION: link order */
@@ -2362,7 +2362,7 @@ l_08c8__esc__2_824:
 lbl_803D08CC:
 	.skip 0x4
 
-.section .sdata2
+.section .sdata2, "a"
 l_e8f8__esc__2_663:
 	.4byte 0x00000000
 l_e8fc__esc__2_664:

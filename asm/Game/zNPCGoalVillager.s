@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text  # 0x801365C8 - 0x80138CA0
+.section .text, "ax"  # 0x801365C8 - 0x80138CA0
 
 .global GOALCreate_Villager__FiP10RyzMemGrowPv
 GOALCreate_Villager__FiP10RyzMemGrowPv:
@@ -2875,7 +2875,7 @@ l_cfb0__esc__2_stringBase0:
 	.4byte 0x616E6400
 	.4byte 0x00000000
 
-.section .data
+.section .data, "wa"
 .balign 4
 l_95b0__esc__2_850:
 	.4byte lbl_801366B0 /* 0x801366B0 */
@@ -3099,7 +3099,7 @@ l_bf4e_init_esc__6_1126:
 l_bf4f_init_esc__6_1129:
 	.skip 0x1
 
-.section .sdata2
+.section .sdata2, "a"
 l_ed20__esc__2_905:
 	.4byte 0x40800000
 l_ed24__esc__2_906:

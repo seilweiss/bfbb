@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text  # 0x8009EC78 - 0x800A1D18
+.section .text, "ax"  # 0x8009EC78 - 0x800A1D18
 
 lightningTweakChangeType__FRC10tweak_info:
 /* 8009EC78 0009BA78  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -3685,7 +3685,7 @@ l_aba8_sLFuncUVSpeed:
 xglobals:
 	.4byte globals /* 0x803C0558 */
 
-.section .sdata2
+.section .sdata2, "a"
 l_dba0__esc__2_668:
 	.4byte 0xCE6E6B28
 l_dba4__esc__2_669:

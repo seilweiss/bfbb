@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text  # 0x80102C2C - 0x801077A0
+.section .text, "ax"  # 0x80102C2C - 0x801077A0
 
 .global ZNPC_Villager_Startup__Fv
 ZNPC_Villager_Startup__Fv:
@@ -5932,7 +5932,7 @@ l_9d40__esc__2_stringBase0:
 	.4byte 0x425F4C45
 	.4byte 0x414B0000
 
-.section .data
+.section .data, "wa"
 .balign 4
 l_6708__esc__2_1578:
 	.4byte lbl_80104CA4 /* 0x80104CA4 */
@@ -6936,7 +6936,7 @@ g_strz_tikianim:
 	.4byte l_a358__esc__2_stringBase0 /* 0x8026A358 */
 	.4byte l_a358__esc__2_stringBase0 + 8
 
-.section .sdata2
+.section .sdata2, "a"
 l_e610__esc__2_983:
 	.4byte 0x3F800000
 l_e614__esc__2_984:

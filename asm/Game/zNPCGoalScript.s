@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text  # 0x801245D4 - 0x80124AE4
+.section .text, "ax"  # 0x801245D4 - 0x80124AE4
 
 .global GOALCreate_Script__FiP10RyzMemGrowPv
 GOALCreate_Script__FiP10RyzMemGrowPv:
@@ -384,7 +384,7 @@ __ct__14zNPCGoalScriptFi:
 /* 80124ADC 001218DC  38 21 00 10 */	addi r1, r1, 0x10
 /* 80124AE0 001218E0  4E 80 00 20 */	blr 
 
-.section .data
+.section .data, "wa"
 .balign 4
 l_8108__esc__2_811:
 	.4byte lbl_80124618 /* 0x80124618 */

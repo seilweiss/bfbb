@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text  # 0x8003F3A4 - 0x80041920
+.section .text, "ax"  # 0x8003F3A4 - 0x80041920
 
 .global xSceneInit__FP6xSceneUsUsUsUs
 xSceneInit__FP6xSceneUsUsUsUs:
@@ -2705,11 +2705,11 @@ l_b375_sNearestCollType:
 g_debugRenderSafeArea:
 	.skip 0x4
 
-.section .sbss2
+.section .sbss2, "", @nobits
 l_0818__esc__2_587:
 	.skip 0x8
 
-.section .sdata2
+.section .sdata2, "a"
 l_cf78__esc__2_998:
 	.4byte 0x3F000000
 l_cf7c__esc__2_999:

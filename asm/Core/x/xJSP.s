@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text  # 0x80122C04 - 0x80123228
+.section .text, "ax"  # 0x80122C04 - 0x80123228
 
 l_2c04_CountAtomicCB__FP8RpAtomicPv:
 /* 80122C04 0011FA04  80 AD 95 3C */	lwz r5, l_be3c_sAtomicStartCount@sda21(r13)

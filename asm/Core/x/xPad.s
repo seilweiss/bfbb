@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text  # 0x80035E70 - 0x8003694C
+.section .text, "ax"  # 0x80035E70 - 0x8003694C
 
 .global xPadInit__Fv
 xPadInit__Fv:
@@ -814,7 +814,7 @@ lbl_80036944:
 l_8770_mRumbleList:
 	.skip 0x200
 
-.section .sdata2
+.section .sdata2, "a"
 l_cef8__esc__2_807:
 	.4byte 0x00000000
 l_cefc__esc__2_808:

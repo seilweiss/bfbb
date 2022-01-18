@@ -17,7 +17,7 @@ l_2f38__esc__2_stringBase0:
 	.4byte 0x74657200
 	.4byte 0x00000000
 
-.section .text  # 0x8002F57C - 0x8002FC88
+.section .text, "ax"  # 0x8002F57C - 0x8002FC88
 
 /* add_global_tweaks__Q24xhud23@unnamed@xHudMeter_cpp@Fv */
 add_global_tweaks__Q24xhud23_esc__2_unnamed_esc__2_xHudMeter_cpp_esc__2_Fv:
@@ -543,7 +543,7 @@ l_b2b0_myid_esc__6_716:
 l_b2b4_init_esc__6_717:
 	.skip 0x4
 
-.section .sdata2
+.section .sdata2, "a"
 l_cda0__esc__2_680:
 	.4byte 0xBC23D70A
 l_cda4__esc__2_681:

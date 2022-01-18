@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text  # 0x8010F2D0 - 0x8010F82C
+.section .text, "ax"  # 0x8010F2D0 - 0x8010F82C
 
 .global __ct__8xFactoryFi
 __ct__8xFactoryFi:

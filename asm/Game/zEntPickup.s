@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text  # 0x800627CC - 0x80066210
+.section .text, "ax"  # 0x800627CC - 0x80066210
 
 PickupFallPhysics__FP10zEntPickupP6xScenef:
 /* 800627CC 0005F5CC  94 21 FF D0 */	stwu r1, -0x30(r1)
@@ -4120,7 +4120,7 @@ l_5ea8__esc__2_stringBase0:
 	.4byte 0x20256620
 	.4byte 0x25660A00
 
-.section .data
+.section .data, "wa"
 .balign 4
 l_c640_ShinySparklyTable:
 	.4byte 0x00000004
@@ -4385,7 +4385,7 @@ l_aa90_sSpatulaGrabbedLife:
 l_aa94_sUnderwearFade:
 	.4byte 0x3F800000
 
-.section .sdata2
+.section .sdata2, "a"
 l_d4d0__esc__2_864:
 	.4byte 0x3F4CCCCD
 l_d4d4__esc__2_865:

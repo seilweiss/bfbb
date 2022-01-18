@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text  # 0x800EEE4C - 0x800F4A6C
+.section .text, "ax"  # 0x800EEE4C - 0x800F4A6C
 
 .global ZNPC_Create_Common__FiP10RyzMemGrowPv
 ZNPC_Create_Common__FiP10RyzMemGrowPv:
@@ -7293,7 +7293,7 @@ l_8cc0__esc__2_stringBase0:
 	.4byte 0x6C653031
 	.4byte 0x00000000
 
-.section .data
+.section .data, "wa"
 .balign 4
 l_4f48_g_strz_params:
 	.4byte l_8cc0__esc__2_stringBase0 + 215
@@ -7807,7 +7807,7 @@ l_ac68_g_tmr_talkless:
 	.4byte 0x41200000
 	.4byte 0x00000000
 
-.section .sdata2
+.section .sdata2, "a"
 l_e430__esc__2_902:
 	.4byte 0x00000000
 l_e434__esc__2_944:

@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text  # 0x80092074 - 0x80092720
+.section .text, "ax"  # 0x80092074 - 0x80092720
 
 .global zEntTriggerInit__FPvPv
 zEntTriggerInit__FPvPv:
@@ -483,7 +483,7 @@ xSphereHitsVCircle__FRC7xSphereRC5xVec3f:
 /* 80092718 0008F518  38 21 00 10 */	addi r1, r1, 0x10
 /* 8009271C 0008F51C  4E 80 00 20 */	blr 
 
-.section .sdata2
+.section .sdata2, "a"
 l_d958__esc__2_670:
 	.4byte 0x3F000000
 l_d95c__esc__2_671:

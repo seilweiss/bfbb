@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text  # 0x80123638 - 0x80123740
+.section .text, "ax"  # 0x80123638 - 0x80123740
 
 .global zCamMarkerInit__FP5xBaseP9xCamAsset
 zCamMarkerInit__FP5xBaseP9xCamAsset:

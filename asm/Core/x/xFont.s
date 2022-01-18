@@ -323,7 +323,7 @@ l_29d4__esc__2_stringBase0:
 	.4byte 0x00797370
 	.4byte 0x61636500
 
-.section .text  # 0x8001FFB0 - 0x800266C8
+.section .text, "ax"  # 0x8001FFB0 - 0x800266C8
 
 l_2b90__esc__2_1168:
 /* find_bounds__19@unnamed@xFont_cpp@FPC10iColor_tagRC13basic_rect<i>i */
@@ -7826,7 +7826,7 @@ lbl_800266AC:
 /* 800266C0 000234C0  38 21 00 10 */	addi r1, r1, 0x10
 /* 800266C4 000234C4  4E 80 00 20 */	blr 
 
-.section .data
+.section .data, "wa"
 .balign 4
 l_b590_default_font_texture__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_:
 	.4byte l_29d4__esc__2_stringBase0 /* 0x802529D4 */
@@ -9580,7 +9580,7 @@ gAtomicRenderCallBack:
 MainLight:
 	.skip 0x4
 
-.section .sbss2
+.section .sbss2, "", @nobits
 l_0808__esc__2_427:
 	.skip 0x4
 /* SPECULATION: link order */
@@ -9604,7 +9604,7 @@ l_a934_format_tags_size__19_esc__2_unnamed_esc__2_xFont_cpp_esc__2_:
 EnvMapShininess:
 	.4byte 0x3F800000
 
-.section .sdata2
+.section .sdata2, "a"
 l_cc58__esc__2_744:
 	.4byte 0x3F000000
 	.4byte 0x00000000

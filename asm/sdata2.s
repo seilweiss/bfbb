@@ -1,4 +1,4 @@
-.section .sdata2  # 0x803CC980 - 0x803D07E0
+.section .sdata2, "a"  # 0x803CC980 - 0x803D07E0
 .global l_fc28_rlelens
 l_fc28_rlelens:
 	.4byte 0x04080C20

@@ -57,7 +57,7 @@ l_1e00__esc__2_stringBase0:
 	.4byte 0x65210A00
 	.4byte 0x00000000
 
-.section .text  # 0x800058E0 - 0x80009400
+.section .text, "ax"  # 0x800058E0 - 0x80009400
 
 _xSingleCompare__Fcc:
 /* 800058E0 000026E0  54 80 06 3E */	clrlwi r0, r4, 0x18
@@ -4393,7 +4393,7 @@ l_89e0_sxAnimTempTranPool:
 gxAnimUseGrowAlloc:
 	.skip 0x8
 
-.section .sdata2
+.section .sdata2, "a"
 l_c980__esc__2_809:
 	.4byte 0x00000000
 l_c984__esc__2_835:

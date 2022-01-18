@@ -9,7 +9,7 @@ l_3eb8__esc__2_845:
 	.4byte 0x00000000
 	.4byte 0x00000000
 
-.section .text  # 0x800499E4 - 0x8004B108
+.section .text, "ax"  # 0x800499E4 - 0x8004B108
 
 Tridiag_Solve__FPfPfPfP5xVec3P5xVec3i:
 /* 800499E4 000467E4  94 21 FF D0 */	stwu r1, -0x30(r1)
@@ -1625,7 +1625,7 @@ xSpline3_Catmullize__FP8xSpline3:
 /* 8004B100 00047F00  38 21 00 10 */	addi r1, r1, 0x10
 /* 8004B104 00047F04  4E 80 00 20 */	blr 
 
-.section .data
+.section .data, "wa"
 .balign 4
 l_8fe0_sBasisBezier:
 	.4byte 0xBF800000
@@ -1662,7 +1662,7 @@ l_9020_sBasisHermite:
 	.4byte 0x00000000
 	.4byte 0x00000000
 
-.section .sdata2
+.section .sdata2, "a"
 l_d098__esc__2_720:
 	.4byte 0x3F800000
 l_d09c__esc__2_741:

@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text  # 0x8004D054 - 0x8004D1F0
+.section .text, "ax"  # 0x8004D054 - 0x8004D1F0
 
 .global xSurfaceInit__FUs
 xSurfaceInit__FUs:

@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text  # 0x8012D888 - 0x8012DD64
+.section .text, "ax"  # 0x8012D888 - 0x8012DD64
 
 .global zBusStop_Init__FR5xBaseR9xDynAssetUl
 zBusStop_Init__FR5xBaseR9xDynAssetUl:
@@ -361,7 +361,7 @@ l_c400__esc__2_stringBase0:
 l_bedc_sBusStopUI:
 	.skip 0x4
 
-.section .sdata2
+.section .sdata2, "a"
 l_ec28__esc__2_806:
 	.4byte 0xBF800000
 l_ec2c__esc__2_863:

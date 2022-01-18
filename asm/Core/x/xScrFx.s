@@ -13,7 +13,7 @@ l_3e68__esc__2_stringBase0:
 	.4byte 0x65616B32
 	.4byte 0x00000000
 
-.section .text  # 0x80041920 - 0x80042D6C
+.section .text, "ax"  # 0x80041920 - 0x80042D6C
 
 .global xScrFxInit__Fv
 xScrFxInit__Fv:
@@ -1493,7 +1493,7 @@ l_a994_indices_esc__6_1171:
 	.4byte 0x00020003
 	.4byte 0x00000000
 
-.section .sdata2
+.section .sdata2, "a"
 l_cfa8__esc__2_689:
 	.4byte 0x00000000
 	.4byte 0x00000000

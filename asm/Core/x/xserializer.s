@@ -13,7 +13,7 @@ l_3e94__esc__2_1074:
 	.4byte 0x00000000
 	.4byte 0x00000000
 
-.section .text  # 0x80042D6C - 0x80043EB8
+.section .text, "ax"  # 0x80042D6C - 0x80043EB8
 
 .global xSerialStartup__FiP21st_SERIAL_PERCID_SIZE
 xSerialStartup__FiP21st_SERIAL_PERCID_SIZE:
@@ -1288,7 +1288,7 @@ lbl_80043EA8:
 /* 80043EB0 00040CB0  38 21 00 20 */	addi r1, r1, 0x20
 /* 80043EB4 00040CB4  4E 80 00 20 */	blr 
 
-.section .data
+.section .data, "wa"
 .balign 4
 l_8b10_g_xserdata:
 	.4byte 0x00000000

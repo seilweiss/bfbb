@@ -12,7 +12,7 @@ l_47ac__esc__2_1548:
 	.4byte 0x3F800000
 	.4byte 0x00000000
 
-.section .text  # 0x8004FBFC - 0x80052558
+.section .text, "ax"  # 0x8004FBFC - 0x80052558
 
 .global zCameraReset__FP7xCamera
 zCameraReset__FP7xCamera:
@@ -2996,7 +2996,7 @@ l_aa58_rewardTiltAmount:
 	.4byte 0xBE6147AE
 	.4byte 0x00000000
 
-.section .sdata2
+.section .sdata2, "a"
 l_d198__esc__2_819:
 	.4byte 0x42960000
 l_d19c__esc__2_820:

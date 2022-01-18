@@ -21,7 +21,7 @@ l_2f10__esc__2_stringBase0:
 	.4byte 0x00000000
 	.4byte 0x00000000
 
-.section .text  # 0x8002F008 - 0x8002F57C
+.section .text, "ax"  # 0x8002F008 - 0x8002F57C
 
 .global load__Q24xhud17font_meter_widgetFR5xBaseR9xDynAssetUl
 load__Q24xhud17font_meter_widgetFR5xBaseR9xDynAssetUl:
@@ -413,7 +413,7 @@ render__5xfontCFPCcff:
 /* 8002F574 0002C374  38 21 00 20 */	addi r1, r1, 0x20
 /* 8002F578 0002C378  4E 80 00 20 */	blr 
 
-.section .data
+.section .data, "wa"
 .balign 4
 l_d640_format_text_esc__6_709:
 	.4byte l_2f10__esc__2_stringBase0 + 15
@@ -479,7 +479,7 @@ l_b2a8_myid_esc__6_692:
 l_b2ac_init_esc__6_693:
 	.skip 0x4
 
-.section .sdata2
+.section .sdata2, "a"
 l_cd88__esc__2_729:
 	.4byte 0x3F000000
 l_cd8c__esc__2_730:

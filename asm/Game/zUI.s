@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text  # 0x800B96B8 - 0x800BC558
+.section .text, "ax"  # 0x800B96B8 - 0x800BC558
 
 /* refresh_model__17@unnamed@zUI_cpp@FR4_zUI */
 refresh_model__17_esc__2_unnamed_esc__2_zUI_cpp_esc__2_FR4_zUI:
@@ -3503,7 +3503,7 @@ l_f750__esc__2_stringBase0:
 	.4byte 0x4C4C2055
 	.4byte 0x49730000
 
-.section .data
+.section .data, "wa"
 .balign 4
 l_12f8_Index:
 	.4byte 0x00000001
@@ -3854,7 +3854,7 @@ sCameraNearClip:
 sCameraFarClip:
 	.4byte 0x43C80000
 
-.section .sdata2
+.section .sdata2, "a"
 l_df70__esc__2_787:
 	.4byte 0x00000000
 l_df74__esc__2_950:

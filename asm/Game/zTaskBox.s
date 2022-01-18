@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text  # 0x8013499C - 0x801352A4
+.section .text, "ax"  # 0x8013499C - 0x801352A4
 
 .global load__8ztaskboxFRCQ28ztaskbox10asset_type
 load__8ztaskboxFRCQ28ztaskbox10asset_type:

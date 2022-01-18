@@ -69,7 +69,7 @@ l_2194__esc__2_stringBase0:
 	.4byte 0x6C650000
 	.4byte 0x00000000
 
-.section .text  # 0x80018064 - 0x8001BB54
+.section .text, "ax"  # 0x80018064 - 0x8001BB54
 
 l_2280__esc__2_886:
 /* reset__Q218@unnamed@xEnt_cpp@9anim_collFR4xEnt */
@@ -4348,7 +4348,7 @@ lbl_8001BB40:
 /* 8001BB4C 0001894C  90 03 00 08 */	stw r0, 8(r3)
 /* 8001BB50 00018950  4E 80 00 20 */	blr 
 
-.section .data
+.section .data, "wa"
 .balign 4
 l_b428_receive_models_esc__6_855:
 	.4byte 0x00000000
@@ -4469,7 +4469,7 @@ l_a920_nsn_angle:
 	.4byte 0x3F060A92
 	.4byte 0x00000000
 
-.section .sdata2
+.section .sdata2, "a"
 l_cba8__esc__2_780:
 	.4byte 0x3F800000
 l_cbac__esc__2_781:

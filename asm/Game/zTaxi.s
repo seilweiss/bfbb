@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text  # 0x80172034 - 0x80172664
+.section .text, "ax"  # 0x80172034 - 0x80172664
 
 .global zTaxi_Init__FR5xBaseR9xDynAssetUl
 zTaxi_Init__FR5xBaseR9xDynAssetUl:
@@ -492,7 +492,7 @@ mResetEnabled__11ResetButton:
 	.2byte 0x0000
 	.byte 0x00
 
-.section .sdata2
+.section .sdata2, "a"
 l_f610__esc__2_819:
 	.4byte 0x3FA66666
 l_f614__esc__2_828:

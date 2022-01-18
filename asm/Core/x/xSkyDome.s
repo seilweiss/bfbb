@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text  # 0x8010EED8 - 0x8010F150
+.section .text, "ax"  # 0x8010EED8 - 0x8010F150
 
 l_eed8_xSkyDome_EmptyRender__FP4xEnt:
 /* 8010EED8 0010BCD8  4E 80 00 20 */	blr 

@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text  # 0x80135EA0 - 0x8013612C
+.section .text, "ax"  # 0x80135EA0 - 0x8013612C
 
 .global ZNPC_SubBoss_Startup__Fv
 ZNPC_SubBoss_Startup__Fv:

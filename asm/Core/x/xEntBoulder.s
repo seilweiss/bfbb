@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text  # 0x8011F0B8 - 0x80121E0C
+.section .text, "ax"  # 0x8011F0B8 - 0x80121E0C
 
 .global xEntBoulder_FitToModel__FP11xEntBoulder
 xEntBoulder_FitToModel__FP11xEntBoulder:
@@ -3182,7 +3182,7 @@ l_b948__esc__2_stringBase0:
 	.4byte 0x45520000
 	.4byte 0x00000000
 
-.section .data
+.section .data, "wa"
 .balign 4
 l_7f80__esc__2_1566:
 	.4byte lbl_80121928 /* 0x80121928 */
@@ -3243,7 +3243,7 @@ l_ad48_sBubbleStreakID:
 	.4byte 0x0000DEAD
 	.4byte 0x00000000
 
-.section .sdata2
+.section .sdata2, "a"
 l_e9a8__esc__2_831:
 	.4byte 0x41200000
 l_e9ac__esc__2_832:

@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text  # 0x801263C0 - 0x80129FB4
+.section .text, "ax"  # 0x801263C0 - 0x80129FB4
 
 .global zFrag_Alloc__F9zFragType
 zFrag_Alloc__F9zFragType:
@@ -3233,7 +3233,7 @@ l_c170__esc__2_stringBase0:
 	.4byte 0x72656E63
 	.4byte 0x68000000
 
-.section .data
+.section .data, "wa"
 .balign 4
 l_8b88_sShrapnelTable:
 	.4byte l_c170__esc__2_stringBase0 /* 0x8026C170 */
@@ -3317,7 +3317,7 @@ l_beb8_sCinCB:
 l_bebc_sCinFrag:
 	.skip 0x4
 
-.section .sdata2
+.section .sdata2, "a"
 l_ead8__esc__2_712:
 	.4byte 0x3F000000
 l_eadc__esc__2_713:

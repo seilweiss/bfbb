@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text  # 0x8012DD64 - 0x801305FC
+.section .text, "ax"  # 0x8012DD64 - 0x801305FC
 
 .global NPCSupport_Startup__Fv
 NPCSupport_Startup__Fv:
@@ -3268,7 +3268,7 @@ l_c808__esc__2_stringBase0:
 	.4byte 0x6C6F6F70
 	.4byte 0x00000000
 
-.section .data
+.section .data, "wa"
 .balign 4
 l_8c68_sNPCSndFx:
 	.4byte 0x00000000
@@ -3445,7 +3445,7 @@ acc_thrust__8Firework:
 acc_gravity__8Firework:
 	.4byte 0xC1200000
 
-.section .sdata2
+.section .sdata2, "a"
 l_ec40__esc__2_1016:
 	.4byte 0x7E967699
 l_ec44__esc__2_1017:

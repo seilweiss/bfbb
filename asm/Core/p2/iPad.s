@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text  # 0x800CA920 - 0x800CAEEC
+.section .text, "ax"  # 0x800CA920 - 0x800CAEEC
 
 .global iPadInit__Fv
 iPadInit__Fv:
@@ -418,7 +418,7 @@ iPadStartRumble__FP8_tagxPadP11_tagxRumble:
 iPadKill__Fv:
 /* 800CAEE8 000C7CE8  4E 80 00 20 */	blr 
 
-.section .data
+.section .data, "wa"
 .balign 4
 l_2620_sPadData:
 	.4byte 0x00000000
@@ -434,7 +434,7 @@ l_2620_sPadData:
 	.4byte 0x00000000
 	.4byte 0x00000000
 
-.section .sdata2
+.section .sdata2, "a"
 l_e118__esc__2_677:
 	.4byte 0x42200000
 l_e11c__esc__2_678:

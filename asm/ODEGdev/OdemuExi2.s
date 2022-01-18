@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text  # 0x801EF190 - 0x801F7210
+.section .text, "ax"  # 0x801EF190 - 0x801F7210
 
 .global TRKNubMainLoop
 TRKNubMainLoop:
@@ -9395,7 +9395,7 @@ lbl_801F7204:
 /* 801F7208 001F4008  38 21 00 48 */	addi r1, r1, 0x48
 /* 801F720C 001F400C  4E 80 00 20 */	blr 
 
-.section .data
+.section .data, "wa"
 .balign 4
 .global gTRKDispatchTable
 gTRKDispatchTable:

@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text  # 0x80036B8C - 0x80038428
+.section .text, "ax"  # 0x80036B8C - 0x80038428
 
 .global xParCmdInit__Fv
 xParCmdInit__Fv:
@@ -1754,7 +1754,7 @@ xMat3x3RMulVec__FP5xVec3PC7xMat3x3PC5xVec3:
 /* 80038420 00035220  D0 03 00 08 */	stfs f0, 8(r3)
 /* 80038424 00035224  4E 80 00 20 */	blr 
 
-.section .data
+.section .data, "wa"
 .balign 4
 l_d700_sCmdInfo:
 	.4byte 0x00000000
@@ -1864,7 +1864,7 @@ l_d700_sCmdInfo:
 	.4byte 0x00000000
 	.4byte 0x00000000
 
-.section .sdata2
+.section .sdata2, "a"
 l_cf18__esc__2_658:
 	.4byte 0xBF800000
 l_cf1c__esc__2_691:

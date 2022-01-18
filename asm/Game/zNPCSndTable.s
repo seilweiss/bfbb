@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text  # 0x80124AE4 - 0x801251BC
+.section .text, "ax"  # 0x80124AE4 - 0x801251BC
 
 .global NPCS_Startup__Fv
 NPCS_Startup__Fv:
@@ -918,7 +918,7 @@ l_bcc0__esc__2_stringBase0:
 	.4byte 0x00000000
 	.4byte 0x00000000
 
-.section .data
+.section .data, "wa"
 .balign 4
 l_82c8_g_tmrz_sndplay:
 	.4byte 0x00000000
@@ -1542,7 +1542,7 @@ g_strz_dupoanim:
 l_4c50_g_hash_sndgroup:
 	.skip 0x68
 
-.section .sdata2
+.section .sdata2, "a"
 l_ea78__esc__2_647:
 	.4byte 0xBF800000
 l_ea7c__esc__2_675:

@@ -31,4 +31,6 @@ FORCEFILES
 {
     extab.o
     extabindex.o
+    ctors.o
+    dtors.o
 }

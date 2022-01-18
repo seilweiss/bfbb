@@ -23,7 +23,7 @@ l_2108__esc__2_stringBase0:
 	.4byte 0x57000000
 	.4byte 0x00000000
 
-.section .text  # 0x8000E96C - 0x8000F058
+.section .text, "ax"  # 0x8000E96C - 0x8000F058
 
 xClimateVecFromAngle__FfP5xVec3:
 /* 8000E96C 0000B76C  94 21 FF B0 */	stwu r1, -0x50(r1)
@@ -517,7 +517,7 @@ xMat3x3Copy__FP7xMat3x3PC7xMat3x3:
 l_b188_sClimate:
 	.skip 0x8
 
-.section .sdata2
+.section .sdata2, "a"
 l_ca68__esc__2_642:
 	.4byte 0x40490FDB
 l_ca6c__esc__2_643:

@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text  # 0x800ACDE0 - 0x800AD20C
+.section .text, "ax"  # 0x800ACDE0 - 0x800AD20C
 
 .global zRumbleStart__Fi16_tagSDRumbleTypeP4xEnt
 zRumbleStart__Fi16_tagSDRumbleTypeP4xEnt:
@@ -312,7 +312,7 @@ zPadAddRumble__F14_tagRumbleTypefiUi:
 /* 800AD204 000AA004  38 21 00 10 */	addi r1, r1, 0x10
 /* 800AD208 000AA008  4E 80 00 20 */	blr 
 
-.section .data
+.section .data, "wa"
 .balign 4
 l_0090__esc__2_686:
 	.4byte lbl_800AD01C /* 0x800AD01C */
@@ -336,7 +336,7 @@ l_0090__esc__2_686:
 	.4byte lbl_800AD008 /* 0x800AD008 */
 	.4byte 0x00000000
 
-.section .sdata2
+.section .sdata2, "a"
 l_de30__esc__2_674:
 	.4byte 0x3E4CCCCD
 l_de34__esc__2_675:

@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text  # 0x80156D98 - 0x8015FF60
+.section .text, "ax"  # 0x80156D98 - 0x8015FF60
 
 /* init_sound__29@unnamed@zNPCTypeBossSB2_cpp@Fv */
 init_sound__29_esc__2_unnamed_esc__2_zNPCTypeBossSB2_cpp_esc__2_Fv:
@@ -11118,7 +11118,7 @@ l_fc00__esc__2_stringBase0:
 	.4byte 0x656C006B
 	.4byte 0x61726174
 
-.section .data
+.section .data, "wa"
 .balign 4
 l_a700_boss_cam__29_esc__2_unnamed_esc__2_zNPCTypeBossSB2_cpp_esc__2_:
 	.4byte 0x40C00000
@@ -11396,7 +11396,7 @@ l_bff9_use_smooth_esc__6_3262:
 l_bffa_init_esc__6_3263:
 	.skip 0x6
 
-.section .sbss2
+.section .sbss2, "", @nobits
 l_0910__esc__2_781:
 	.skip 0x4
 /* SPECULATION: link order */
@@ -11428,7 +11428,7 @@ l_0930__esc__2_2703:
 lbl_803D0934:
 	.skip 0x4
 
-.section .sdata2
+.section .sdata2, "a"
 l_f218_say_intro__29_esc__2_unnamed_esc__2_zNPCTypeBossSB2_cpp_esc__2_:
 	.4byte 0x00000045
 l_f21c_say_hit_boss_3__29_esc__2_unnamed_esc__2_zNPCTypeBossSB2_cpp_esc__2_:

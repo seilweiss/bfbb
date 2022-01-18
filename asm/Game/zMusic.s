@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text  # 0x800A6E9C - 0x800A7CC4
+.section .text, "ax"  # 0x800A6E9C - 0x800A7CC4
 
 volume_reset__Fv:
 /* 800A6E9C 000A3C9C  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -1105,7 +1105,7 @@ l_e588__esc__2_stringBase0:
 	.4byte 0x6F706533
 	.4byte 0x00000000
 
-.section .data
+.section .data, "wa"
 .balign 4
 l_fd80_sMusicInfo:
 	.4byte 0x00000000
@@ -1245,7 +1245,7 @@ l_abd8_sMusicTimer:
 	.4byte 0x00000000
 	.4byte 0x00000000
 
-.section .sdata2
+.section .sdata2, "a"
 l_dd48__esc__2_668:
 	.4byte 0x00000000
 l_dd4c__esc__2_669:

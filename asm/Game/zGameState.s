@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text  # 0x8009A924 - 0x8009AD50
+.section .text, "ax"  # 0x8009A924 - 0x8009AD50
 
 .global zGameStateGet__Fv
 zGameStateGet__Fv:
@@ -324,7 +324,7 @@ l_cb38__esc__2_stringBase0:
 	.4byte 0x00000000
 	.4byte 0x00000000
 
-.section .data
+.section .data, "wa"
 .balign 4
 l_f928_sGameMode_DispatchTable:
 	.4byte 0x00000000

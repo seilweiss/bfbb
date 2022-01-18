@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text  # 0x8005720C - 0x800609B4
+.section .text, "ax"  # 0x8005720C - 0x800609B4
 
 /* init_sound__Q213cruise_bubble30@unnamed@zEntCruiseBubble_cpp@Fv */
 init_sound__Q213cruise_bubble30_esc__2_unnamed_esc__2_zEntCruiseBubble_cpp_esc__2_Fv:
@@ -11705,7 +11705,7 @@ l_533c__esc__2_stringBase0:
 	.4byte 0x00666C79
 	.4byte 0x00000000
 
-.section .data
+.section .data, "wa"
 .balign 4
 l_c200_base__Q213cruise_bubble30_esc__2_unnamed_esc__2_zEntCruiseBubble_cpp_esc__2_:
 	.4byte 0x00000000
@@ -12071,7 +12071,7 @@ l_b565_init_esc__6_2604:
 l_b566_init_esc__6_2607:
 	.skip 0x2
 
-.section .sbss2
+.section .sbss2, "", @nobits
 l_0830__esc__2_2265:
 	.skip 0x4
 /* SPECULATION: link order */
@@ -12084,7 +12084,7 @@ l_aa80_current_tweak__Q213cruise_bubble30_esc__2_unnamed_esc__2_zEntCruiseBubble
 	.4byte l_ba80_normal_tweak__Q213cruise_bubble30_esc__2_unnamed_esc__2_zEntCruiseBubble_cpp_esc__2_ /* 0x802DBA80 */
 	.4byte 0x00000000
 
-.section .sdata2
+.section .sdata2, "a"
 l_d338__esc__2_1551:
 	.4byte 0x00000000
 l_d33c__esc__2_1655:

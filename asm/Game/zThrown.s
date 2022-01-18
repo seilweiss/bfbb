@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text  # 0x800B6928 - 0x800B96B8
+.section .text, "ax"  # 0x800B6928 - 0x800B96B8
 
 .global zThrown_Setup__FP6zScene
 zThrown_Setup__FP6zScene:
@@ -3310,7 +3310,7 @@ l_f590__esc__2_stringBase0:
 	.4byte 0x64340000
 	.4byte 0x00000000
 
-.section .data
+.section .data, "wa"
 .balign 4
 l_0f08_l_normal:
 	.4byte 0x41200000
@@ -3588,7 +3588,7 @@ l_ba08_sDebugDepth:
 l_ac1c_c_fruit:
 	.4byte 0x41C00000
 
-.section .sdata2
+.section .sdata2, "a"
 l_df18__esc__2_837:
 	.4byte 0x40000000
 l_df1c__esc__2_842:

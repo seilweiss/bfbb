@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text  # 0x80054200 - 0x80054BFC
+.section .text, "ax"  # 0x80054200 - 0x80054BFC
 
 .global zEGenerator_Init__FPvPv
 zEGenerator_Init__FPvPv:
@@ -729,7 +729,7 @@ l_5010__esc__2_stringBase0:
 	.4byte 0x004F6E00
 	.4byte 0x00000000
 
-.section .sdata2
+.section .sdata2, "a"
 l_d290__esc__2_679:
 	.4byte 0x3F800000
 l_d294__esc__2_680:

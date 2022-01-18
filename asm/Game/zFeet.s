@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text  # 0x80092B0C - 0x80092BEC
+.section .text, "ax"  # 0x80092B0C - 0x80092BEC
 
 .global zFeetGetIDs__Fv
 zFeetGetIDs__Fv:

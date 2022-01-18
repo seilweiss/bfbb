@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text  # 0x801251BC - 0x801263C0
+.section .text, "ax"  # 0x801251BC - 0x801263C0
 
 .global ZNPC_Duplotron_Startup__Fv
 ZNPC_Duplotron_Startup__Fv:
@@ -1373,7 +1373,7 @@ l_c0e8__esc__2_stringBase0:
 	.4byte 0x48454154
 	.4byte 0x00000000
 
-.section .data
+.section .data, "wa"
 .balign 4
 l_8aa8_idx_smoke_esc__6_1150:
 	.4byte 0x00000007
@@ -1465,7 +1465,7 @@ l_ad50_idx_steam_esc__6_1151:
 	.4byte 0x0000000C
 	.4byte 0xFFFFFFFF
 
-.section .sdata2
+.section .sdata2, "a"
 l_ea98__esc__2_866:
 	.4byte 0x3F800000
 l_ea9c__esc__2_867:

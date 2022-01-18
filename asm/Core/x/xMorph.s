@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text  # 0x80035034 - 0x80035494
+.section .text, "ax"  # 0x80035034 - 0x80035494
 
 .global xMorphSeqSetup__FPvPFUiPc_Pv
 xMorphSeqSetup__FPvPFUiPc_Pv:
@@ -323,7 +323,7 @@ xMorphSeqDuration__FP13xMorphSeqFile:
 /* 8003548C 0003228C  C0 23 00 0C */	lfs f1, 0xc(r3)
 /* 80035490 00032290  4E 80 00 20 */	blr 
 
-.section .sdata2
+.section .sdata2, "a"
 l_cec0__esc__2_683:
 	.4byte 0x00000000
 	.4byte 0x00000000

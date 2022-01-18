@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text  # 0x800C3998 - 0x800C477C
+.section .text, "ax"  # 0x800C3998 - 0x800C477C
 
 .global iFMVmalloc__FUl
 iFMVmalloc__FUl:
@@ -1032,7 +1032,7 @@ he:
 HeapSize:
 	.skip 0x4
 
-.section .sbss2
+.section .sbss2, "", @nobits
 l_0898__esc__2_721:
 	.skip 0x4
 l_089c__esc__2_880:
@@ -1057,7 +1057,7 @@ bad_val:
 test_alloc_val:
 	.4byte 0x0000210A
 
-.section .sdata2
+.section .sdata2, "a"
 l_e080__esc__2_706:
 	.4byte 0x00000000
 l_e084__esc__2_707:

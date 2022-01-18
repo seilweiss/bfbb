@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text  # 0x801102B8 - 0x80116588
+.section .text, "ax"  # 0x801102B8 - 0x80116588
 
 /* play_sound__Q212bungee_state35@unnamed@zEntPlayerBungeeState_cpp@FQ312bungee_state35@unnamed@zEntPlayerBungeeState_cpp@10sound_enumf */
 play_sound__Q212bungee_state35_esc__2_unnamed_esc__2_zEntPlayerBungeeState_cpp_esc__2_FQ312bungee_state35_esc__2_unnamed_esc__2_zEntPlayerBungeeState_cpp_esc__2_10sound_enumf:
@@ -7704,7 +7704,7 @@ l_a688__esc__2_stringBase0:
 	.4byte 0x7C486F6F
 	.4byte 0x6B000000
 
-.section .data
+.section .data, "wa"
 .balign 4
 l_7a68_shared__Q212bungee_state35_esc__2_unnamed_esc__2_zEntPlayerBungeeState_cpp_esc__2_:
 	.4byte 0x00000001
@@ -7905,11 +7905,11 @@ l_be00_start_to_esc__6_2301:
 l_be04_init_esc__6_2302:
 	.skip 0x4
 
-.section .sbss2
+.section .sbss2, "", @nobits
 l_08c0__esc__2_1561:
 	.skip 0x8
 
-.section .sdata2
+.section .sdata2, "a"
 l_e800__esc__2_945:
 	.4byte 0x43FA0000
 l_e804__esc__2_960:

@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text  # 0x8004DC48 - 0x8004E2F0
+.section .text, "ax"  # 0x8004DC48 - 0x8004E2F0
 
 .global xUtilStartup__Fv
 xUtilStartup__Fv:
@@ -506,7 +506,7 @@ lbl_8004E2D8:
 /* 8004E2E8 0004B0E8  42 00 FF F0 */	bdnz lbl_8004E2D8
 /* 8004E2EC 0004B0EC  4E 80 00 20 */	blr 
 
-.section .data
+.section .data, "wa"
 .balign 4
 l_a378_g_crc32_table:
 	.4byte 0x00000000
@@ -792,7 +792,7 @@ l_a9b0_g_crc_needinit:
 	.4byte 0x00000001
 	.4byte 0x00000000
 
-.section .sdata2
+.section .sdata2, "a"
 l_d150__esc__2_651:
 	.4byte 0x00000000
 l_d154__esc__2_652:

@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text  # 0x800ECBFC - 0x800ED1E0
+.section .text, "ax"  # 0x800ECBFC - 0x800ED1E0
 
 .global GOALCreate_Tiki__FiP10RyzMemGrowPv
 GOALCreate_Tiki__FiP10RyzMemGrowPv:
@@ -450,7 +450,7 @@ Clear__18zNPCGoalTikiPatrolFv:
 Clear__16zNPCGoalTikiIdleFv:
 /* 800ED1DC 000E9FDC  4E 80 00 20 */	blr 
 
-.section .sdata2
+.section .sdata2, "a"
 l_e408__esc__2_836:
 	.4byte 0x3DCCCCCD
 l_e40c__esc__2_837:

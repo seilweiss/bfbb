@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text  # 0x80160144 - 0x80168A94
+.section .text, "ax"  # 0x80160144 - 0x80168A94
 
 .global ZNPC_AnimTable_BossPatrick__Fv
 ZNPC_AnimTable_BossPatrick__Fv:
@@ -9835,7 +9835,7 @@ l_089c__esc__2_stringBase0:
 	.4byte 0x70000000
 	.4byte 0x00000000
 
-.section .data
+.section .data, "wa"
 .balign 4
 l_aa68_sBone:
 	.4byte 0x00000004
@@ -10219,7 +10219,7 @@ l_ada8_sUseBossCam:
 	.4byte 0x01000000
 	.4byte 0x00000000
 
-.section .sdata2
+.section .sdata2, "a"
 l_f340__esc__2_831:
 	.4byte 0x3F800000
 l_f344__esc__2_832:

@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text  # 0x80092BEC - 0x80092D1C
+.section .text, "ax"  # 0x80092BEC - 0x80092D1C
 
 .global zFMVPlay__FPcUifbb
 zFMVPlay__FPcUifbb:
@@ -95,7 +95,7 @@ l_ba20__esc__2_stringBase0:
 	.4byte 0x6B000000
 	.4byte 0x00000000
 
-.section .data
+.section .data, "wa"
 .balign 4
 l_ee98_zFMVFileTable:
 	.4byte 0x00000000

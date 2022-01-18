@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text  # 0x8006180C - 0x800627CC
+.section .text, "ax"  # 0x8006180C - 0x800627CC
 
 .global zEntHangable_SetupFX__Fv
 zEntHangable_SetupFX__Fv:
@@ -1160,7 +1160,7 @@ l_b58c_sMountEmitter:
 gEmitShinySparkles:
 	.skip 0x4
 
-.section .sdata2
+.section .sdata2, "a"
 l_d4a0__esc__2_666:
 	.4byte 0x00000000
 l_d4a4__esc__2_667:

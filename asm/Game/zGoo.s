@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text  # 0x80123740 - 0x80123B1C
+.section .text, "ax"  # 0x80123740 - 0x80123B1C
 
 .global zGooInit__Fi
 zGooInit__Fi:
@@ -302,7 +302,7 @@ l_be54_zgoo_ngps:
 l_be58_zgoo_nused:
 	.skip 0x8
 
-.section .sdata2
+.section .sdata2, "a"
 l_ea48__esc__2_742:
 	.4byte 0x00000000
 l_ea4c__esc__2_780:

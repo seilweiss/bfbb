@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text  # 0x801DCD7C - 0x801ECD5C
+.section .text, "ax" # 0x801DCD7C - 0x801ECD5C
 
 .global exit
 exit:
@@ -15,9 +15,9 @@ exit:
 /* 801DCD9C 001D9B9C  48 00 58 65 */	bl __begin_critical_region
 /* 801DCDA0 001D9BA0  38 60 00 00 */	li r3, 0
 /* 801DCDA4 001D9BA4  48 00 58 59 */	bl __end_critical_region
-/* 801DCDA8 001D9BA8  48 01 00 7D */	bl func_801ECE24
-/* 801DCDAC 001D9BAC  3C 60 80 25 */	lis r3, l_1d40___destroy_global_chain_reference@ha
-/* 801DCDB0 001D9BB0  38 03 1D 40 */	addi r0, r3, l_1d40___destroy_global_chain_reference@l
+/* 801DCDA8 001D9BA8  48 01 00 7D */	bl __destroy_global_chain
+/* 801DCDAC 001D9BAC  3C 60 80 25 */	lis r3, _dtors@ha
+/* 801DCDB0 001D9BB0  38 03 1D 40 */	addi r0, r3, _dtors@l
 /* 801DCDB4 001D9BB4  7C 1F 03 78 */	mr r31, r0
 /* 801DCDB8 001D9BB8  48 00 00 10 */	b lbl_801DCDC8
 lbl_801DCDBC:
@@ -18881,7 +18881,7 @@ lbl_801ECD4C:
 /* 801ECD54 001E9B54  38 60 00 00 */	li r3, 0
 /* 801ECD58 001E9B58  4E 80 00 20 */	blr 
 
-.section .data
+.section .data, "wa"
 .balign 4
 .global __files #ansi_files.c
 __files:

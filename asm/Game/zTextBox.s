@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text  # 0x80133E38 - 0x8013499C
+.section .text, "ax"  # 0x80133E38 - 0x8013499C
 
 render_bk_fill__22_esc__2_unnamed_esc__2_zTextBox_cpp_esc__2_FRC8ztextbox:
 /* 80133E38 00130C38  94 21 FF E0 */	stwu r1, -0x20(r1)
@@ -849,7 +849,7 @@ l_ca44__esc__2_stringBase0:
 	.4byte 0x626C6168
 	.4byte 0x00000000
 
-.section .data
+.section .data, "wa"
 .balign 4
 l_8f80_render_bk_table__22_esc__2_unnamed_esc__2_zTextBox_cpp_esc__2_:
 	.4byte render_bk_fill__22_esc__2_unnamed_esc__2_zTextBox_cpp_esc__2_FRC8ztextbox /* 0x80133E38 */
@@ -1297,7 +1297,7 @@ l_ad78_new_tags_size__22_esc__2_unnamed_esc__2_zTextBox_cpp_esc__2_:
 	.4byte 0x00000001
 	.4byte 0x00000000
 
-.section .sdata2
+.section .sdata2, "a"
 l_ecc8__esc__2_720:
 	.4byte 0x3F800000
 l_eccc__esc__2_721:

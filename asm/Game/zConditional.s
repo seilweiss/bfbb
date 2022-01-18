@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text  # 0x80052558 - 0x80052874
+.section .text, "ax"  # 0x80052558 - 0x80052874
 
 .global zConditionalInit__FPvPv
 zConditionalInit__FPvPv:

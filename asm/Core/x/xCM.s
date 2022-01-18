@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text  # 0x80195FE8 - 0x801B5350
+.section .text, "ax"  # 0x80195FE8 - 0x801B5350
 
 xCMprep__FP12xCreditsData:
 /* 80195FE8 00192DE8  80 83 00 00 */	lwz r4, 0(r3)
@@ -817,7 +817,7 @@ lbl_803CC218:
 l_add4_credits_time:
 	.4byte 0x461C4000
 
-.section .sdata2
+.section .sdata2, "a"
 l_fbf0__esc__2_660:
 	.4byte 0x43300000
 	.4byte 0x00000000

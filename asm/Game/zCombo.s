@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text  # 0x8019590C - 0x80195FE8
+.section .text, "ax"  # 0x8019590C - 0x80195FE8
 
 fillCombo__FP12zComboReward:
 /* 8019590C 0019270C  3C 80 80 3C */	lis r4, globals@ha
@@ -567,7 +567,7 @@ l_4a00__esc__2_stringBase0:
 	.4byte 0x4354414C
 	.4byte 0x4B000000
 
-.section .data
+.section .data, "wa"
 .balign 4
 l_1b88_comboReward:
 	.4byte 0x00000000
@@ -843,7 +843,7 @@ l_adcc_comboDisplayTime:
 dtscale:
 	.4byte 0x3F800000
 
-.section .sdata2
+.section .sdata2, "a"
 l_fbe0__esc__2_844:
 	.4byte 0xBF800000
 l_fbe4__esc__2_855:

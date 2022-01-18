@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text  # 0x8000A528 - 0x8000B2B0
+.section .text, "ax"  # 0x8000A528 - 0x8000B2B0
 
 .global xBoundUpdate__FP6xBound
 xBoundUpdate__FP6xBound:
@@ -1007,7 +1007,7 @@ xDrawOBB__FPC4xBoxPC7xMat4x3:
 xDrawSphere2__FPC7xSphereUi:
 /* 8000B2AC 000080AC  4E 80 00 20 */	blr 
 
-.section .data
+.section .data, "wa"
 .balign 4
 l_b380__esc__2_700:
 	.4byte lbl_8000A93C /* 0x8000A93C */
@@ -1052,7 +1052,7 @@ sCameraFXTable:
 	.4byte 0x00000000
 	.4byte 0x00000000
 
-.section .sdata2
+.section .sdata2, "a"
 l_c9b8__esc__2_571:
 	.4byte 0x3F000000
 l_c9bc__esc__2_640:

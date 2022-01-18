@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text  # 0x80109588 - 0x8010CE24
+.section .text, "ax"  # 0x80109588 - 0x8010CE24
 
 .global ZNPC_Tiki_Startup__Fv
 ZNPC_Tiki_Startup__Fv:
@@ -4036,7 +4036,7 @@ xClumpColl_FilterFlags:
 	.4byte 0x04000000
 	.4byte 0x00000000
 
-.section .sdata2
+.section .sdata2, "a"
 l_e6f8__esc__2_858:
 	.4byte 0x00000000
 l_e6fc__esc__2_859:

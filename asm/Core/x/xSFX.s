@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text  # 0x80043EB8 - 0x80044778
+.section .text, "ax"  # 0x80043EB8 - 0x80044778
 
 .global xSFXEnvironmentalStreamSceneExit__Fv
 xSFXEnvironmentalStreamSceneExit__Fv:
@@ -624,7 +624,7 @@ xSFXStop__FP4xSFX:
 /* 80044770 00041570  38 21 00 10 */	addi r1, r1, 0x10
 /* 80044774 00041574  4E 80 00 20 */	blr 
 
-.section .data
+.section .data, "wa"
 .balign 4
 l_8c38__esc__2_964:
 	.4byte lbl_80044324 /* 0x80044324 */
@@ -683,7 +683,7 @@ ShadowStrength:
 rscale:
 	.4byte 0x3F800000
 
-.section .sdata2
+.section .sdata2, "a"
 l_cfe8__esc__2_966:
 	.4byte 0x43300000
 	.4byte 0x00000000

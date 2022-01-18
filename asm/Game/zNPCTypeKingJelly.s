@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text  # 0x801465FC - 0x8014EC7C
+.section .text, "ax"  # 0x801465FC - 0x8014EC7C
 
 /* init_sound__31@unnamed@zNPCTypeKingJelly_cpp@Fv */
 init_sound__31_esc__2_unnamed_esc__2_zNPCTypeKingJelly_cpp_esc__2_Fv:
@@ -10460,7 +10460,7 @@ l_d8b0__esc__2_stringBase0:
 	.4byte 0x00000000
 	.4byte 0x00000000
 
-.section .data
+.section .data, "wa"
 .balign 4
 l_9da8_sound_name__31_esc__2_unnamed_esc__2_zNPCTypeKingJelly_cpp_esc__2_:
 	.4byte l_d8b0__esc__2_stringBase0 /* 0x8026D8B0 */
@@ -10753,7 +10753,7 @@ l_ada0_last_hit_at_esc__6_2858:
 	.4byte 0xFFFFFFFF
 	.4byte 0xFFFFFFFF
 
-.section .sdata2
+.section .sdata2, "a"
 l_efb0__esc__2_1868:
 	.4byte 0x3F800000
 l_efb4__esc__2_1869:

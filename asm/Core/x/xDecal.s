@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text  # 0x8017C420 - 0x8017D544
+.section .text, "ax"  # 0x8017C420 - 0x8017D544
 
 /* register_emitter__20@unnamed@xDecal_cpp@FP13xDecalEmitter */
 register_emitter__20_esc__2_unnamed_esc__2_xDecal_cpp_esc__2_FP13xDecalEmitter:
@@ -1306,7 +1306,7 @@ l_b448_active_emitters__20_esc__2_unnamed_esc__2_xDecal_cpp_esc__2_:
 l_c0b0_active_emitters_size__20_esc__2_unnamed_esc__2_xDecal_cpp_esc__2_:
 	.skip 0x8
 
-.section .sdata2
+.section .sdata2, "a"
 l_f778__esc__2_805:
 	.4byte 0x3F800000
 l_f77c__esc__2_806:

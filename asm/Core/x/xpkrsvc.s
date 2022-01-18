@@ -395,7 +395,7 @@ l_358c__esc__2_stringBase0:
 	.4byte 0x6B6E6F77
 	.4byte 0x6E3E0000
 
-.section .text  # 0x800392A0 - 0x8003C498
+.section .text, "ax"  # 0x800392A0 - 0x8003C498
 
 .global PKRGetReadFuncs__Fi
 PKRGetReadFuncs__Fi:
@@ -4028,7 +4028,7 @@ Name__19st_PACKER_ATOC_NODECFv:
 /* 8003C490 00039290  38 63 00 52 */	addi r3, r3, 0x52
 /* 8003C494 00039294  4E 80 00 20 */	blr 
 
-.section .data
+.section .data, "wa"
 .balign 4
 l_d8a8_g_pkr_read_funcmap_original:
 	.4byte 0x00000001

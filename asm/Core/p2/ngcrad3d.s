@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text  # 0x800D4A14 - 0x800D50BC
+.section .text, "ax"  # 0x800D4A14 - 0x800D50BC
 
 Setup_surface_array__Fv:
 /* 800D4A14 000D1814  80 0D 93 50 */	lwz r0, l_bc50_Built_tables@sda21(r13)
@@ -481,7 +481,7 @@ l_2164_Pixel_info:
 l_bc50_Built_tables:
 	.skip 0x8
 
-.section .sdata2
+.section .sdata2, "a"
 l_e1e0__esc__2_423:
 	.4byte 0x00000000
 l_e1e4__esc__2_460:

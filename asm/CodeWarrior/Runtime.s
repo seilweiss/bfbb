@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text  # 0x801ECD5C - 0x801EF190
+.section .text, "ax"  # 0x801ECD5C - 0x801EF190
 
 .global __va_arg
 __va_arg:
@@ -61,8 +61,8 @@ lbl_801ECE1C:
 /* 801ECE1C 001E9C1C  7C C3 33 78 */	mr r3, r6
 /* 801ECE20 001E9C20  4E 80 00 20 */	blr 
 
-.global func_801ECE24
-func_801ECE24:
+.global __destroy_global_chain
+__destroy_global_chain:
 /* 801ECE24 001E9C24  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 801ECE28 001E9C28  7C 08 02 A6 */	mflr r0
 /* 801ECE2C 001E9C2C  90 01 00 14 */	stw r0, 0x14(r1)
@@ -1175,8 +1175,8 @@ lbl_801EDB64:
 func_801EDB6C:
 /* 801EDB6C 001EA96C  7C 43 13 78 */	mr r3, r2
 /* 801EDB70 001EA970  4E 80 00 20 */	blr 
-.global lbl_801EDB74
-lbl_801EDB74:
+.global __fini_cpp_exceptions
+__fini_cpp_exceptions:
 /* 801EDB74 001EA974  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 801EDB78 001EA978  7C 08 02 A6 */	mflr r0
 /* 801EDB7C 001EA97C  90 01 00 14 */	stw r0, 0x14(r1)
@@ -1191,8 +1191,8 @@ lbl_801EDB98:
 /* 801EDB9C 001EA99C  7C 08 03 A6 */	mtlr r0
 /* 801EDBA0 001EA9A0  38 21 00 10 */	addi r1, r1, 0x10
 /* 801EDBA4 001EA9A4  4E 80 00 20 */	blr 
-.global lbl_801EDBA8
-lbl_801EDBA8:
+.global __init_cpp_exceptions
+__init_cpp_exceptions:
 /* 801EDBA8 001EA9A8  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 801EDBAC 001EA9AC  7C 08 02 A6 */	mflr r0
 /* 801EDBB0 001EA9B0  90 01 00 14 */	stw r0, 0x14(r1)
@@ -2799,7 +2799,7 @@ lbl_801EF168:
 /* 801EF188 001EBF88  38 21 00 20 */	addi r1, r1, 0x20
 /* 801EF18C 001EBF8C  4E 80 00 20 */	blr 
 
-.section .data
+.section .data, "wa"
 .balign 4
 .global lbl_802B7470
 lbl_802B7470:

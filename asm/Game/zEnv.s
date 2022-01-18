@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text  # 0x80092720 - 0x80092AF8
+.section .text, "ax"  # 0x80092720 - 0x80092AF8
 
 .global zEnvInit__FPvPv
 zEnvInit__FPvPv:

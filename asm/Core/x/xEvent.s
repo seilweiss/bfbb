@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text  # 0x8001F524 - 0x8001F8BC
+.section .text, "ax"  # 0x8001F524 - 0x8001F8BC
 
 .global zEntEvent__FPcUi
 zEntEvent__FPcUi:

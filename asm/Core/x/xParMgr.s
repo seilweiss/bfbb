@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text  # 0x80038AD4 - 0x80038B98
+.section .text, "ax"  # 0x80038AD4 - 0x80038B98
 
 .global xParMgrInit__Fv
 xParMgrInit__Fv:

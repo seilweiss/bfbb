@@ -1,4 +1,4 @@
-.section .sbss2
+.section .sbss2, "", @nobits
 .global l_0a48__esc__2_460
 l_0a48__esc__2_460:
 	.skip 0x4

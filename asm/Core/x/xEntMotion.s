@@ -349,7 +349,7 @@ l_228c__esc__2_stringBase0:
 	.4byte 0x6C736500
 	.4byte 0x00000000
 
-.section .text  # 0x8001C888 - 0x8001F438
+.section .text, "ax"  # 0x8001C888 - 0x8001F438
 
 .global xEntMotionInit__FP10xEntMotionP4xEntP15xEntMotionAsset
 xEntMotionInit__FP10xEntMotionP4xEntP15xEntMotionAsset:
@@ -3471,7 +3471,7 @@ xDrawLine__FPC5xVec3PC5xVec3:
 xDrawSetColor__F10iColor_tag:
 /* 8001F434 0001C234  4E 80 00 20 */	blr 
 
-.section .data
+.section .data, "wa"
 .balign 4
 l_b570__esc__2_1412:
 	.4byte lbl_8001E978 /* 0x8001E978 */
@@ -3502,7 +3502,7 @@ l_a928_dbg_idx:
 	.4byte 0xFFFF0000
 	.4byte 0x00000000
 
-.section .sdata2
+.section .sdata2, "a"
 l_cc18__esc__2_650:
 	.4byte 0x00000000
 l_cc1c__esc__2_651:

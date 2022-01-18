@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text  # 0x800A6BF8 - 0x800A6E9C
+.section .text, "ax"  # 0x800A6BF8 - 0x800A6E9C
 
 .global zMovePoint_GetMemPool__Fi
 zMovePoint_GetMemPool__Fi:
@@ -228,7 +228,7 @@ l_b950_g_mvpt_list:
 l_b954_g_mvpt_cnt:
 	.skip 0x4
 
-.section .sdata2
+.section .sdata2, "a"
 l_dd40__esc__2_775:
 	.4byte 0x3727C5AC
 l_dd44__esc__2_776:

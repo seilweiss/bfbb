@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text  # 0x800C6360 - 0x800C64A8
+.section .text, "ax"  # 0x800C6360 - 0x800C64A8
 
 .global iMemInit__Fv
 iMemInit__Fv:

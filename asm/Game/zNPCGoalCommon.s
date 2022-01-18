@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text  # 0x800D5114 - 0x800D5480
+.section .text, "ax"  # 0x800D5114 - 0x800D5480
 
 .global Enter__14zNPCGoalCommonFfPv
 Enter__14zNPCGoalCommonFfPv:

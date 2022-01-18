@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text  # 0x80139218 - 0x8013A5D0
+.section .text, "ax"  # 0x80139218 - 0x8013A5D0
 
 shadowRayCB__FP14RpIntersectionP13RpWorldSectorP19RpCollisionTrianglefPv:
 /* 80139218 00136018  94 21 FF C0 */	stwu r1, -0x40(r1)
@@ -1386,7 +1386,7 @@ l_bf54_sShadVertCount:
 l_bf58_sModelMat:
 	.skip 0x8
 
-.section .sdata2
+.section .sdata2, "a"
 l_ed78__esc__2_804:
 	.4byte 0x3DB27EB0
 l_ed7c__esc__2_849:

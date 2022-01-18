@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text  # 0x800609B4 - 0x8006180C
+.section .text, "ax"  # 0x800609B4 - 0x8006180C
 
 /* SwapModel__29@unnamed@zEntDestructObj_cpp@FP15zEntDestructObjP14xModelInstance */
 SwapModel__29_esc__2_unnamed_esc__2_zEntDestructObj_cpp_esc__2_FP15zEntDestructObjP14xModelInstance:
@@ -1074,7 +1074,7 @@ l_b578_sEmitSmoke:
 l_b57c_sShrapDefault:
 	.skip 0x4
 
-.section .sdata2
+.section .sdata2, "a"
 l_d478__esc__2_793:
 	.4byte 0x00000000
 	.4byte 0x00000000

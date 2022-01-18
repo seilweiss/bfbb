@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text  # 0x8009E7F8 - 0x8009EC78
+.section .text, "ax"  # 0x8009E7F8 - 0x8009EC78
 
 .global zLightEffectSet__FP7_zLighti
 zLightEffectSet__FP7_zLighti:
@@ -357,7 +357,7 @@ lbl_8009EC08:
 /* 8009EC70 0009BA70  38 21 00 20 */	addi r1, r1, 0x20
 /* 8009EC74 0009BA74  4E 80 00 20 */	blr 
 
-.section .sdata2
+.section .sdata2, "a"
 l_db60__esc__2_653:
 	.4byte 0x477FFF00
 	.4byte 0x00000000

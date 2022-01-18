@@ -5,6 +5,16 @@ ifneq ($(findstring MSYS,$(shell uname)),)
   WINDOWS := 1
 endif
 
+# If 0, tells the console to chill out. (Quiets the make process.)
+VERBOSE ?= 0
+
+# If MAPGENFLAG set to 1, tells LDFLAGS to generate a mapfile, which makes linking take several minutes.
+MAPGENFLAG ?= 0
+
+ifeq ($(VERBOSE),0)
+  QUIET := @
+endif
+
 #-------------------------------------------------------------------------------
 # Files
 #-------------------------------------------------------------------------------
@@ -26,6 +36,10 @@ DOL     := $(BUILD_DIR)/main.dol
 ELF     := $(DOL:.dol=.elf)
 MAP     := $(BUILD_DIR)/bfbb.map
 
+ifeq ($(MAPGENFLAG),1)
+  MAPGEN := -map $(MAP)
+endif
+
 include obj_files.mk
 
 O_FILES := $(EXTAB_O_FILES) $(TEXT_O_FILES) $(INIT_O_FILES) \
@@ -37,6 +51,7 @@ O_FILES := $(EXTAB_O_FILES) $(TEXT_O_FILES) $(INIT_O_FILES) \
 # Tools
 #-------------------------------------------------------------------------------
 MWCC_VERSION := 2.0
+MWLD_VERSION := 2.0
 # Programs
 ifeq ($(WINDOWS),1)
   WINE :=
@@ -48,7 +63,7 @@ else
   CPP     := $(DEVKITPPC)/bin/powerpc-eabi-cpp -P
 endif
 CC      = $(WINE) tools/mwcc_compiler/$(MWCC_VERSION)/mwcceppc.exe
-LD      := $(WINE) tools/mwcc_compiler/2.7/mwldeppc.exe
+LD      := $(WINE) tools/mwcc_compiler/$(MWLD_VERSION)/mwldeppc.exe
 PPROC   := python tools/postprocess.py
 ELF2DOL := tools/elf2dol
 SHA1SUM := sha1sum
@@ -58,7 +73,7 @@ ASMDIFF := ./asmdiff.sh
 INCLUDES := -Isrc/dolphin/include -Isrc/CodeWarrior -Isrc/rwsdk
 
 ASFLAGS := -mgekko -I include
-LDFLAGS := -map $(MAP) -w off -maxerrors 256 -nostdlib
+LDFLAGS := $(MAPGEN) -w off -maxerrors 256 -nostdlib
 CFLAGS  = -g -Cpp_exceptions off -proc gekko -fp hard -str reuse,pool,readonly \
            -pragma "check_header_flags off" -pragma "force_active on" \
            -char unsigned -enum int -fp_contract on -nostdinc -RTTI off \
@@ -66,14 +81,17 @@ CFLAGS  = -g -Cpp_exceptions off -proc gekko -fp hard -str reuse,pool,readonly \
 PREPROCESS := -preprocess -gccincludes $(INCLUDES)
 PPROCFLAGS := -fsymbol-fixup
 
+ifeq ($(VERBOSE),0)
+# this set of ASFLAGS generates no warnings.
+ASFLAGS += -W
+endif
+
 $(BUILD_DIR)/src/dolphin/__start.o: MWCC_VERSION := 1.2.5
 $(BUILD_DIR)/src/dolphin/__start.o: CFLAGS := -Cpp_exceptions off -enum int -inline auto -proc gekko -RTTI off -fp hard -fp_contract on -rostr -O4,p -use_lmw_stmw on -sdata 8 -sdata2 8 -nodefaults $(INCLUDES)
 
 #-------------------------------------------------------------------------------
 # Recipes
 #-------------------------------------------------------------------------------
-QUIET := @
-
 default: all
 
 all: $(DOL)

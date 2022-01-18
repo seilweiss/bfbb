@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text  # 0x8017F5E0 - 0x80180038
+.section .text, "ax"  # 0x8017F5E0 - 0x80180038
 
 /* sort_buckets__24@unnamed@xPtankPool_cpp@FRQ224@unnamed@xPtankPool_cpp@10group_data */
 sort_buckets__24_esc__2_unnamed_esc__2_xPtankPool_cpp_esc__2_FRQ224_esc__2_unnamed_esc__2_xPtankPool_cpp_esc__2_10group_data:
@@ -750,7 +750,7 @@ lbl_80180018:
 /* 80180030 0017CE30  38 21 00 20 */	addi r1, r1, 0x20
 /* 80180034 0017CE34  4E 80 00 20 */	blr 
 
-.section .data
+.section .data, "wa"
 .balign 4
 l_b830_groups__24_esc__2_unnamed_esc__2_xPtankPool_cpp_esc__2_:
 	.4byte 0x00000004
@@ -820,7 +820,7 @@ mMovieSuspendFunction__8iTRCDisk:
 mMovieResumeFunction__8iTRCDisk:
 	.skip 0x8
 
-.section .sdata2
+.section .sdata2, "a"
 l_f7e8__esc__2_644:
 	.4byte 0x3F800000
 l_f7ec__esc__2_645:

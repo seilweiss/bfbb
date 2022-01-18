@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text  # 0x80090E88 - 0x80092074
+.section .text, "ax"  # 0x80090E88 - 0x80092074
 
 .global zEntSimpleObj_MgrInit__FPP13zEntSimpleObjUi
 zEntSimpleObj_MgrInit__FPP13zEntSimpleObjUi:
@@ -3402,7 +3402,7 @@ l_b770_sSimpleCustomCount:
 l_b774_sSimpleCustomList:
 	.skip 0x4
 
-.section .sdata2
+.section .sdata2, "a"
 l_d938__esc__2_920:
 	.4byte 0x3F8CCCCD
 l_d93c__esc__2_921:

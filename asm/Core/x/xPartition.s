@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text  # 0x80038B98 - 0x800392A0
+.section .text, "ax"  # 0x80038B98 - 0x800392A0
 
 .global xPartitionReset__Fv
 xPartitionReset__Fv:
@@ -518,7 +518,7 @@ iEnvGetBBox__FP4iEnv:
 /* 80039298 00036098  38 63 00 50 */	addi r3, r3, 0x50
 /* 8003929C 0003609C  4E 80 00 20 */	blr 
 
-.section .sdata2
+.section .sdata2, "a"
 l_cf58__esc__2_560:
 	.4byte 0x43300000
 	.4byte 0x80000000

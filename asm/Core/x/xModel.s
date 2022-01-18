@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text  # 0x80033E2C - 0x80035034
+.section .text, "ax"  # 0x80033E2C - 0x80035034
 
 .global xModelGetPipeFlags__FP8RpAtomic
 xModelGetPipeFlags__FP8RpAtomic:
@@ -1354,7 +1354,7 @@ gPlayerPad:
 gParDead:
 	.skip 0x8
 
-.section .sdata2
+.section .sdata2, "a"
 l_ce98__esc__2_726:
 	.4byte 0x00000000
 l_ce9c__esc__2_727:

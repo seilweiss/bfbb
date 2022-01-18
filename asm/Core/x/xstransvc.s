@@ -21,7 +21,7 @@ l_3ee0__esc__2_stringBase0:
 	.4byte 0x73000000
 	.4byte 0x00000000
 
-.section .text  # 0x8004B108 - 0x8004C214
+.section .text, "ax"  # 0x8004B108 - 0x8004C214
 
 .global xSTStartup__FP19st_PACKER_ASSETTYPE
 xSTStartup__FP19st_PACKER_ASSETTYPE:
@@ -1287,7 +1287,7 @@ lbl_8004C208:
 iFileAsyncService__Fv:
 /* 8004C210 00049010  4E 80 00 20 */	blr 
 
-.section .data
+.section .data, "wa"
 .balign 4
 l_9060_g_xstdata:
 	.4byte 0x00000000
@@ -2439,7 +2439,7 @@ l_b404_g_pkrf:
 l_b408_g_typeHandlers:
 	.skip 0x8
 
-.section .sdata2
+.section .sdata2, "a"
 l_d108__esc__2_560:
 	.4byte 0x00000000
 l_d10c__esc__2_561:

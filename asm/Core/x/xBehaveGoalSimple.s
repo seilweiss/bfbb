@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text  # 0x8010EB94 - 0x8010EED8
+.section .text, "ax"  # 0x8010EB94 - 0x8010EED8
 
 .global xGoalSimple_RegisterTypes__FP8xFactory
 xGoalSimple_RegisterTypes__FP8xFactory:

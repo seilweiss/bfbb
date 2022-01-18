@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text  # 0x80123228 - 0x80123638
+.section .text, "ax"  # 0x80123228 - 0x80123638
 
 .global xLightKit_Prepare__FPv
 xLightKit_Prepare__FPv:
@@ -308,7 +308,7 @@ lbl_80123624:
 /* 80123630 00120430  38 21 00 20 */	addi r1, r1, 0x20
 /* 80123634 00120434  4E 80 00 20 */	blr 
 
-.section .sdata2
+.section .sdata2, "a"
 l_ea40__esc__2_513:
 	.4byte 0x3F800000
 l_ea44__esc__2_575:

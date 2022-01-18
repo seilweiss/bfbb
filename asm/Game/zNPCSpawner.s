@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text  # 0x8012A728 - 0x8012C0A8
+.section .text, "ax"  # 0x8012A728 - 0x8012C0A8
 
 .global zNPCSpawner_Startup__Fv
 zNPCSpawner_Startup__Fv:
@@ -1951,7 +1951,7 @@ l_c2a4__esc__2_1389:
 	.4byte 0x00000000
 	.4byte 0x00000000
 
-.section .data
+.section .data, "wa"
 .balign 4
 l_8c38_g_smdepot:
 	.4byte 0x00000000
@@ -1972,7 +1972,7 @@ l_8c48__esc__2_1044:
 l_bec0_g_drawSpawnBounds:
 	.skip 0x8
 
-.section .sdata2
+.section .sdata2, "a"
 l_eb90__esc__2_805:
 	.4byte 0x40A00000
 l_eb94__esc__2_885:

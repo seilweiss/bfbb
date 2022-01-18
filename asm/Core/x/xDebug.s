@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text  # 0x80017D3C - 0x80018064
+.section .text, "ax"  # 0x80017D3C - 0x80018064
 
 .global xprintf__FPCce
 xprintf__FPCce:
@@ -259,7 +259,7 @@ __as__13basic_rect_esc__0_f_esc__1_FRC13basic_rect_esc__0_f_esc__1_:
 /* 8001805C 00014E5C  D0 03 00 0C */	stfs f0, 0xc(r3)
 /* 80018060 00014E60  4E 80 00 20 */	blr 
 
-.section .sdata2
+.section .sdata2, "a"
 l_cba0__esc__2_781:
 	.4byte 0x3B088889
 l_cba4__esc__2_783:

@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text  # 0x800AC9E8 - 0x800ACDE0
+.section .text, "ax"  # 0x800AC9E8 - 0x800ACDE0
 
 .global zRenderStateInit__Fv
 zRenderStateInit__Fv:
@@ -285,7 +285,7 @@ lbl_800ACDCC:
 /* 800ACDD8 000A9BD8  38 21 00 10 */	addi r1, r1, 0x10
 /* 800ACDDC 000A9BDC  4E 80 00 20 */	blr 
 
-.section .data
+.section .data, "wa"
 .balign 4
 l_0030__esc__2_558:
 	.4byte lbl_800ACDCC /* 0x800ACDCC */

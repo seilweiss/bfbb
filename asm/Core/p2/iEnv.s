@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text  # 0x800C2EAC - 0x800C3300
+.section .text, "ax"  # 0x800C2EAC - 0x800C3300
 
 l_2eac_SetPipelineCB__FP8RpAtomicPv:
 /* 800C2EAC 000BFCAC  94 21 FF F0 */	stwu r1, -0x10(r1)

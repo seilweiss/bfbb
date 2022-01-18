@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text  # 0x800A7CC4 - 0x800A87EC
+.section .text, "ax"  # 0x800A7CC4 - 0x800A87EC
 
 .global zParCmdInit__Fv
 zParCmdInit__Fv:
@@ -875,7 +875,7 @@ l_2c20_bnd_fake_esc__6_868:
 l_b968_sClipVolumeTotal:
 	.skip 0x8
 
-.section .sdata2
+.section .sdata2, "a"
 l_dd68__esc__2_804:
 	.4byte 0xBF800000
 l_dd6c__esc__2_852:

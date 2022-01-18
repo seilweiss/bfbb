@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text  # 0x80172664 - 0x8017C0A0
+.section .text, "ax"  # 0x80172664 - 0x8017C0A0
 
 /* look_at__30@unnamed@zNPCTypeDutchman_cpp@FR7xMat3x3RC5xVec3 */
 look_at__30_esc__2_unnamed_esc__2_zNPCTypeDutchman_cpp_esc__2_FR7xMat3x3RC5xVec3:
@@ -11813,7 +11813,7 @@ l_20f0__esc__2_stringBase0:
 	.4byte 0x6C617900
 	.4byte 0x00000000
 
-.section .data
+.section .data, "wa"
 .balign 4
 l_b460_boss_cam__30_esc__2_unnamed_esc__2_zNPCTypeDutchman_cpp_esc__2_:
 	.4byte 0x40C00000
@@ -12149,7 +12149,7 @@ dutchman_reticle_radius:
 l_c0ac_dutchman_count:
 	.skip 0x4
 
-.section .sbss2
+.section .sbss2, "", @nobits
 l_09a8__esc__2_512:
 	.skip 0x4
 /* SPECULATION: link order */
@@ -12265,7 +12265,7 @@ l_0a38__esc__2_3689:
 lbl_803D0A3C:
 	.skip 0x4
 
-.section .sdata2
+.section .sdata2, "a"
 l_f630__esc__2_1603:
 	.4byte 0xB727C5AC
 l_f634__esc__2_1604:

@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text  # 0x80116588 - 0x801168EC
+.section .text, "ax"  # 0x80116588 - 0x801168EC
 
 .global zCollGeom_EntSetup__FP4xEnt
 zCollGeom_EntSetup__FP4xEnt:
@@ -264,7 +264,3 @@ l_4204_sTableList:
 .section .sbss
 l_be08_sNumTables:
 	.skip 0x8
-/* SPECULATION: link order */
-.global oob_player_teleported
-oob_player_teleported:
-	.skip 0x1

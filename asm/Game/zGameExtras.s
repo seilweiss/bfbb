@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text  # 0x80099680 - 0x8009A924
+.section .text, "ax"  # 0x80099680 - 0x8009A924
 
 .global zGameExtras_ExtrasFlags__Fv
 zGameExtras_ExtrasFlags__Fv:
@@ -1447,7 +1447,7 @@ l_ca20__esc__2_stringBase0:
 	.4byte 0x45435420
 	.4byte 0x55494600
 
-.section .data
+.section .data, "wa"
 .balign 4
 l_f1b0_g_eggBasket:
 	.4byte EGG_check_ExtrasFlags__FP7EGGItem /* 0x80099938 */
@@ -2022,7 +2022,7 @@ l_ab38_choices_esc__6_1273:
 gGameState:
 	.4byte 0x00000006
 
-.section .sdata2
+.section .sdata2, "a"
 l_da78__esc__2_975:
 	.4byte 0x00000000
 l_da7c__esc__2_1152:

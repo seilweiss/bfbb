@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text  # 0x80054BFC - 0x800564EC
+.section .text, "ax"  # 0x80054BFC - 0x800564EC
 
 .global zEntInit__FP4zEntP9xEntAssetUi
 zEntInit__FP4zEntP9xEntAssetUi:
@@ -1828,7 +1828,7 @@ l_5024__esc__2_stringBase0:
 	.4byte 0x696D3035
 	.4byte 0x00000000
 
-.section .data
+.section .data, "wa"
 .balign 4
 l_c158__esc__2_1035:
 	.4byte lbl_80055780 /* 0x80055780 */
@@ -1884,7 +1884,7 @@ gShadowParams:
 	.4byte 0x40000000
 	.4byte 0x00000000
 
-.section .sdata2
+.section .sdata2, "a"
 l_d2c8__esc__2_839:
 	.4byte 0x00000000
 l_d2cc__esc__2_840:

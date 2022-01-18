@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text  # 0x800D30B4 - 0x800D44F0
+.section .text, "ax"  # 0x800D30B4 - 0x800D44F0
 
 .global psGetMemoryFunctions__Fv
 psGetMemoryFunctions__Fv:

@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text  # 0x8010E9B0 - 0x8010EB94
+.section .text, "ax"  # 0x8010E9B0 - 0x8010EB94
 
 .global SetPsyche__5xGoalFP7xPsyche
 SetPsyche__5xGoalFP7xPsyche:

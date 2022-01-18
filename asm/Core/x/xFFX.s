@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text  # 0x8001F8BC - 0x8001FDBC
+.section .text, "ax"  # 0x8001F8BC - 0x8001FDBC
 
 .global xFFXPoolInit__FUi
 xFFXPoolInit__FUi:
@@ -411,7 +411,7 @@ l_b204_rot_match_pool:
 l_b208_rot_match_alist:
 	.skip 0x8
 
-.section .sdata2
+.section .sdata2, "a"
 l_cc48__esc__2_701:
 	.4byte 0x00000000
 	.4byte 0x00000000

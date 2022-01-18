@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text  # 0x800D5480 - 0x800D92AC
+.section .text, "ax"  # 0x800D5480 - 0x800D92AC
 
 .global GOALCreate_Standard__FiP10RyzMemGrowPv
 GOALCreate_Standard__FiP10RyzMemGrowPv:
@@ -4476,7 +4476,7 @@ l_bc58_ds2_min_esc__6_1368:
 l_bc5c_init_esc__6_1369:
 	.skip 0x4
 
-.section .sdata2
+.section .sdata2, "a"
 l_e210__esc__2_871:
 	.4byte 0xBF800000
 l_e214__esc__2_907:

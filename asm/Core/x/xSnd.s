@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text  # 0x800480B0 - 0x800499E4
+.section .text, "ax"  # 0x800480B0 - 0x800499E4
 
 .global xSndInit__Fv
 xSndInit__Fv:
@@ -1875,7 +1875,7 @@ xSndGetVol__FUi:
 /* 800499DC 000467DC  38 21 00 10 */	addi r1, r1, 0x10
 /* 800499E0 000467E0  4E 80 00 20 */	blr 
 
-.section .data
+.section .data, "wa"
 .balign 4
 l_8ca0_sDelayedSnd:
 	.4byte 0x00000000
@@ -2097,7 +2097,7 @@ l_b3f8_sDelayedPaused:
 l_b3fc_faders_active__18_esc__2_unnamed_esc__2_xSnd_cpp_esc__2_:
 	.skip 0x4
 
-.section .sdata2
+.section .sdata2, "a"
 l_d078__esc__2_585:
 	.4byte 0x3F800000
 l_d07c__esc__2_586:

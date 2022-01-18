@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text  # 0x800ED1E0 - 0x800EE2CC
+.section .text, "ax"  # 0x800ED1E0 - 0x800EE2CC
 
 .global zNPCMsg_Startup__Fv
 zNPCMsg_Startup__Fv:
@@ -1226,7 +1226,7 @@ IsAlive__10zNPCCommonFv:
 Stun__10zNPCCommonFf:
 /* 800EE2C8 000EB0C8  4E 80 00 20 */	blr 
 
-.section .data
+.section .data, "wa"
 .balign 4
 l_4050_g_postoffice:
 	.4byte 0x00000000
@@ -1446,7 +1446,7 @@ l_2250_g_msgdata:
 l_bcb8_g_lockarea:
 	.skip 0x8
 
-.section .sbss2
+.section .sbss2, "", @nobits
 l_08b8__esc__2_962:
 	.skip 0x4
 /* SPECULATION: link order */
@@ -1454,7 +1454,7 @@ l_08b8__esc__2_962:
 lbl_803D08BC:
 	.skip 0x4
 
-.section .sdata2
+.section .sdata2, "a"
 l_e418__esc__2_817:
 	.4byte 0xBF800000
 l_e41c__esc__2_818:

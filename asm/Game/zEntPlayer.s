@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text  # 0x80066210 - 0x80090E88
+.section .text, "ax"  # 0x80066210 - 0x80090E88
 
 zEntPlayer_SpawnWandBubbles__FP5xVec3Ui:
 /* 80066210 00063010  94 21 FF A0 */	stwu r1, -0x60(r1)
@@ -49835,7 +49835,7 @@ l_6118__esc__2_stringBase0:
 	.4byte 0x365F6300
 	.4byte 0x00000000
 
-.section .data
+.section .data, "wa"
 .balign 4
 l_c9b0_sPlayerSnd:
 	.4byte 0x00000000
@@ -52561,7 +52561,7 @@ l_b75c_init_esc__6_10278:
 l_b760_g_flg_loaded:
 	.skip 0x8
 
-.section .sbss2
+.section .sbss2, "", @nobits
 l_0838__esc__2_4634:
 	.skip 0x4
 l_083c__esc__2_6900:
@@ -52633,7 +52633,7 @@ l_aaf0_sPlayerNPC_KnockBackTime:
 l_aaf4_sPlayerNPC_KnockBackVel:
 	.4byte 0x41380000
 
-.section .sdata2
+.section .sdata2, "a"
 l_d580__esc__2_872:
 	.4byte 0x3E800000
 l_d584__esc__2_873:

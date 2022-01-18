@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text  # 0x8009B684 - 0x8009C000
+.section .text, "ax"  # 0x8009B684 - 0x8009C000
 
 l_b684_hide_widget__Q24zhud18_esc__2_unnamed_esc__2_zHud_cpp_esc__2_FRQ24xhud6widgetRQ24xhud6motive:
 /* 8009B684 00098484  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -806,7 +806,7 @@ l_cba0__esc__2_stringBase0:
 	.4byte 0x6D6F6465
 	.4byte 0x6C000000
 
-.section .data
+.section .data, "wa"
 .balign 4
 l_fa20_widget_resources__Q24zhud18_esc__2_unnamed_esc__2_zHud_cpp_esc__2_:
 	.4byte l_cba0__esc__2_stringBase0 + 0
@@ -918,7 +918,7 @@ l_ab70_last_paused__Q24zhud18_esc__2_unnamed_esc__2_zHud_cpp_esc__2_:
 	.4byte 0x01000000
 	.4byte 0x00000000
 
-.section .sdata2
+.section .sdata2, "a"
 l_dac0__esc__2_707:
 	.4byte 0x3CA3D70A
 l_dac4__esc__2_708:

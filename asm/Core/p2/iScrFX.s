@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text  # 0x800CF34C - 0x800CF92C
+.section .text, "ax"  # 0x800CF34C - 0x800CF92C
 
 .global iScrFxInit__Fv
 iScrFxInit__Fv:
@@ -440,7 +440,7 @@ lbl_800CF91C:
 /* 800CF924 000CC724  38 21 00 10 */	addi r1, r1, 0x10
 /* 800CF928 000CC728  4E 80 00 20 */	blr 
 
-.section .data
+.section .data, "wa"
 .balign 4
 l_2b00_sMBD:
 	.4byte 0x00000000
@@ -770,7 +770,7 @@ SoundFlags:
 fc:
 	.skip 0x4
 
-.section .sdata2
+.section .sdata2, "a"
 l_e168__esc__2_527:
 	.4byte 0x00000000
 l_e16c__esc__2_542:

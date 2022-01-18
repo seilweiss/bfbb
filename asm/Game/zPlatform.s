@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text  # 0x800A8EC8 - 0x800AC8A0
+.section .text, "ax"  # 0x800A8EC8 - 0x800AC8A0
 
 l_8ec8_genericPlatRender__FP4xEnt:
 /* 800A8EC8 000A5CC8  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -4086,7 +4086,7 @@ l_b970_sEmitTremble:
 l_b974_sEmitBreakaway:
 	.skip 0x4
 
-.section .sdata2
+.section .sdata2, "a"
 l_ddb0__esc__2_820:
 	.4byte 0x3F800000
 l_ddb4__esc__2_821:

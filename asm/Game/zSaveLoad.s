@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text  # 0x800AD20C - 0x800B0A28
+.section .text, "ax"  # 0x800AD20C - 0x800B0A28
 
 .global zUpdateThumbIcon__Fv
 zUpdateThumbIcon__Fv:
@@ -4624,7 +4624,7 @@ l_e9c0__esc__2_stringBase0:
 	.4byte 0x504C4554
 	.4byte 0x45440000
 
-.section .data
+.section .data, "wa"
 .balign 4
 l_00e0_currSceneStr:
 	.4byte 0x54454D50
@@ -4963,7 +4963,7 @@ l_abf8_autoSaveCard:
 	.4byte 0xFFFFFFFF
 	.4byte 0x00000000
 
-.section .sdata2
+.section .sdata2, "a"
 l_de68__esc__2_846:
 	.4byte 0x3F800000
 l_de6c__esc__2_847:

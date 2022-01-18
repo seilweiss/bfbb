@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text  # 0x8011A9F0 - 0x8011D564
+.section .text, "ax"  # 0x8011A9F0 - 0x8011D564
 
 /* set_camera__Q29oob_state32@unnamed@zEntPlayerOOBState_cpp@Fb */
 set_camera__Q29oob_state32_esc__2_unnamed_esc__2_zEntPlayerOOBState_cpp_esc__2_Fb:
@@ -3556,8 +3556,7 @@ l_b42c__esc__2_stringBase0:
 	.4byte 0x00000000
 	.4byte 0x00000000
 
-.section .data
-.balign 4
+.section .data, "wa"
 l_7e48_shared__Q29oob_state32_esc__2_unnamed_esc__2_zEntPlayerOOBState_cpp_esc__2_:
 	.4byte 0x00000001
 	.4byte 0x00000000
@@ -3667,6 +3666,9 @@ l_45ac_shared_target__Q29oob_state32_esc__2_unnamed_esc__2_zEntPlayerOOBState_cp
 	.skip 0xEC
 
 .section .sbss
+.global oob_player_teleported
+oob_player_teleported:
+	.skip 0x1
 l_be11_init_esc__6_1549:
 	.skip 0x3
 l_be14_in_state_esc__6_1548:
@@ -3684,11 +3686,11 @@ l_be29_init_esc__6_1558:
 gGridIterActive:
 	.skip 0x4
 
-.section .sbss2
+.section .sbss2, "", @nobits
 l_08d0__esc__2_1469:
 	.skip 0x8
 
-.section .sdata2
+.section .sdata2, "a"
 l_e928__esc__2_1033:
 	.4byte 0x00000000
 l_e92c__esc__2_1034:

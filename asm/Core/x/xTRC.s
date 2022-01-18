@@ -255,7 +255,7 @@ l_3f10__esc__2_stringBase0:
 	.4byte 0x657D0000
 	.4byte 0x00000000
 
-.section .text  # 0x8004D6AC - 0x8004DC48
+.section .text, "ax"  # 0x8004D6AC - 0x8004DC48
 
 .global xTRCInit__Fv
 xTRCInit__Fv:
@@ -668,7 +668,7 @@ expand__13basic_rect_esc__0_f_esc__1_Ff:
 /* 8004DC40 0004AA40  38 21 00 10 */	addi r1, r1, 0x10
 /* 8004DC44 0004AA44  4E 80 00 20 */	blr 
 
-.section .data
+.section .data, "wa"
 .balign 4
 l_a2a8_tb_esc__6_731:
 	.4byte 0x00000000
@@ -735,7 +735,7 @@ l_b424_message_text:
 l_b428_init_esc__6_897:
 	.skip 0x8
 
-.section .sdata2
+.section .sdata2, "a"
 l_d130_yellow:
 	.4byte 0xFFE600FF
 l_d134__esc__2_746:

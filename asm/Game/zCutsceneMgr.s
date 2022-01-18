@@ -407,7 +407,7 @@ l_47b8__esc__2_stringBase0:
 	.4byte 0x49542E2E
 	.4byte 0x2E0A0000
 
-.section .text  # 0x80052874 - 0x800534E4
+.section .text, "ax"  # 0x80052874 - 0x800534E4
 
 .global zCutsceneMgrInit__FPvPv
 zCutsceneMgrInit__FPvPv:
@@ -1304,7 +1304,7 @@ lbl_800534D8:
 /* 800534DC 000502DC  40 82 FF DC */	bne lbl_800534B8
 /* 800534E0 000502E0  4E 80 00 20 */	blr 
 
-.section .data
+.section .data, "wa"
 .balign 4
 l_b6b0_cutsceneHackTable:
 	.4byte l_47b8__esc__2_stringBase0 /* 0x802547B8 */
@@ -1977,7 +1977,7 @@ l_b518_ents_hidden:
 l_b51c_s_atomicNumber:
 	.skip 0x4
 
-.section .sdata2
+.section .sdata2, "a"
 l_d268__esc__2_897:
 	.4byte 0x00000000
 	.4byte 0x00000000

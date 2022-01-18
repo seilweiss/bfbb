@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text  # 0x80121E0C - 0x80122C04
+.section .text, "ax"  # 0x80121E0C - 0x80122C04
 
 .global xGridBoundInit__FP10xGridBoundPv
 xGridBoundInit__FP10xGridBoundPv:
@@ -1011,7 +1011,7 @@ lbl_80122BF0:
 /* 80122BFC 0011F9FC  38 21 00 50 */	addi r1, r1, 0x50
 /* 80122C00 0011FA00  4E 80 00 20 */	blr 
 
-.section .data
+.section .data, "wa"
 .balign 4
 l_8040_offs_esc__6_919:
 	.4byte 0xFFFFFFFF
@@ -1043,7 +1043,7 @@ l_8040_offs_esc__6_919:
 l_be34_k_esc__6_920:
 	.skip 0x4
 
-.section .sdata2
+.section .sdata2, "a"
 l_ea10__esc__2_617:
 	.4byte 0x3A83126F
 l_ea14__esc__2_618:

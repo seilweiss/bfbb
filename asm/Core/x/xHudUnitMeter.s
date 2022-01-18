@@ -15,7 +15,7 @@ l_2f90__esc__2_stringBase0:
 	.4byte 0x65723A75
 	.4byte 0x6E697400
 
-.section .text  # 0x8002FF80 - 0x80030640
+.section .text, "ax"  # 0x8002FF80 - 0x80030640
 
 .global load__Q24xhud17unit_meter_widgetFR5xBaseR9xDynAssetUl
 load__Q24xhud17unit_meter_widgetFR5xBaseR9xDynAssetUl:
@@ -524,7 +524,7 @@ l_a980_tweak_anim_time_delta__Q24xhud27_esc__2_unnamed_esc__2_xHudUnitMeter_cpp_
 	.4byte 0x3DCCCCCD
 	.4byte 0x00000000
 
-.section .sdata2
+.section .sdata2, "a"
 l_cdf0__esc__2_692:
 	.4byte 0x00000000
 l_cdf4__esc__2_693:

@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text  # 0x800C3300 - 0x800C3998
+.section .text, "ax"  # 0x800C3300 - 0x800C3998
 
 .global iFileInit__Fv
 iFileInit__Fv:

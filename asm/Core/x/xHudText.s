@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text  # 0x80195428 - 0x8019590C
+.section .text, "ax"  # 0x80195428 - 0x8019590C
 
 .global load__Q24xhud11text_widgetFR5xBaseR9xDynAssetUl
 load__Q24xhud11text_widgetFR5xBaseR9xDynAssetUl:
@@ -367,7 +367,7 @@ l_c1cc_init_esc__6_756:
 comboHUD:
 	.skip 0x4
 
-.section .sdata2
+.section .sdata2, "a"
 l_fbc0__esc__2_725:
 	.4byte 0x437F0000
 	.4byte 0x00000000

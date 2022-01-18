@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text  # 0x800B5228 - 0x800B55F0
+.section .text, "ax"  # 0x800B5228 - 0x800B55F0
 
 .global zScriptInit__FPvPv
 zScriptInit__FPvPv:

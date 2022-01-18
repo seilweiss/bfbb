@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text  # 0x80092D1C - 0x800974A8
+.section .text, "ax"  # 0x80092D1C - 0x800974A8
 
 l_2d1c_on_spawn_bubble_wall__FRC10tweak_info:
 /* 80092D1C 0008FB1C  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -5385,7 +5385,7 @@ l_be04__esc__2_stringBase0:
 	.4byte 0x66002E6D
 	.4byte 0x696E6600
 
-.section .data
+.section .data, "wa"
 .balign 4
 l_efe0_cb_spawn_bubble_wall_esc__6_724:
 	.4byte 0x00000000
@@ -5543,7 +5543,7 @@ l_b79c_entrails_size__17_esc__2_unnamed_esc__2_zFX_cpp_esc__2_:
 gGameSfxReport:
 	.skip 0x4
 
-.section .sbss2
+.section .sbss2, "", @nobits
 l_0850__esc__2_1619:
 	.skip 0x4
 /* SPECULATION: link order */
@@ -5585,7 +5585,7 @@ soaklevels:
 soaktime:
 	.4byte 0x40800000
 
-.section .sdata2
+.section .sdata2, "a"
 l_d968__esc__2_754:
 	.4byte 0x3E19999A
 l_d96c__esc__2_755:

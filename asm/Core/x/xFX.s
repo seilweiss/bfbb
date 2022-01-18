@@ -109,7 +109,7 @@ l_2bd4__esc__2_stringBase0:
 	.4byte 0x7C526962
 	.4byte 0x626F6E00
 
-.section .text  # 0x800266C8 - 0x8002CAA0
+.section .text, "ax"  # 0x800266C8 - 0x8002CAA0
 
 .global xFXInit__Fv
 xFXInit__Fv:
@@ -7315,7 +7315,7 @@ lbl_8002CA94:
 /* 8002CA98 00029898  41 81 FF F4 */	bgt lbl_8002CA8C
 /* 8002CA9C 0002989C  4E 80 00 20 */	blr 
 
-.section .data
+.section .data, "wa"
 .balign 4
 l_d010__esc__2_1933:
 	.4byte lbl_80028610 /* 0x80028610 */
@@ -7465,7 +7465,7 @@ xFXanimUV2PScale:
 	.4byte 0x3F800000
 	.4byte 0x3F800000
 
-.section .sdata2
+.section .sdata2, "a"
 l_ccb8__esc__2_957:
 	.4byte 0x00000000
 l_ccbc__esc__2_958:

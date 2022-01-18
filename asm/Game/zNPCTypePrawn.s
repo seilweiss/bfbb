@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text  # 0x8014F76C - 0x80154DD8
+.section .text, "ax"  # 0x8014F76C - 0x80154DD8
 
 /* init_sound__27@unnamed@zNPCTypePrawn_cpp@Fv */
 init_sound__27_esc__2_unnamed_esc__2_zNPCTypePrawn_cpp_esc__2_Fv:
@@ -6788,7 +6788,7 @@ l_e9f0__esc__2_stringBase0:
 	.4byte 0x4420546F
 	.4byte 0x00000000
 
-.section .data
+.section .data, "wa"
 .balign 4
 l_a240_boss_cam__27_esc__2_unnamed_esc__2_zNPCTypePrawn_cpp_esc__2_:
 	.4byte 0x40C00000
@@ -6994,7 +6994,7 @@ l_bfd8_lerp_esc__6_2076:
 l_bfdc_init_esc__6_2077:
 	.skip 0x4
 
-.section .sbss2
+.section .sbss2, "", @nobits
 l_08f0__esc__2_784:
 	.skip 0x4
 /* SPECULATION: link order */
@@ -7020,7 +7020,7 @@ l_0908__esc__2_2297:
 lbl_803D090C:
 	.skip 0x4
 
-.section .sdata2
+.section .sdata2, "a"
 l_f0e8__esc__2_1052:
 	.4byte 0x3F800000
 l_f0ec__esc__2_1053:

@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text  # 0x800B0A28 - 0x800B5228
+.section .text, "ax"  # 0x800B0A28 - 0x800B5228
 
 /* count_dynamic_types__20@unnamed@zScene_cpp@FPCc */
 count_dynamic_types__20_esc__2_unnamed_esc__2_zScene_cpp_esc__2_FPCc:
@@ -5563,7 +5563,7 @@ l_f078__esc__2_stringBase0:
 	.4byte 0x0054656D
 	.4byte 0x70000000
 
-.section .data
+.section .data, "wa"
 .balign 4
 l_0528_sLevelTable:
 	.4byte l_f078__esc__2_stringBase0 /* 0x8025F078 */
@@ -6224,7 +6224,7 @@ l_b9e8_sSuddenMove:
 l_b9ec_scobj_idbps:
 	.skip 0x4
 
-.section .sbss2
+.section .sbss2, "", @nobits
 l_0880__esc__2_1251:
 	.skip 0x4
 /* SPECULATION: link order */
@@ -6248,7 +6248,7 @@ l_ac08_scobj_size:
 l_ac0c_nidbps:
 	.4byte 0xFFFFFFFF
 
-.section .sdata2
+.section .sdata2, "a"
 l_de88__esc__2_1250:
 	.4byte 0x0F0F0F00
 l_de8c__esc__2_1373:

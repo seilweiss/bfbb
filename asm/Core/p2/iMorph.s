@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text  # 0x800C9630 - 0x800CA920
+.section .text, "ax"  # 0x800C9630 - 0x800CA920
 
 MorphCommon__FP8RpAtomicP11RwMatrixTagPPsPsUifi:
 /* 800C9630 000C6430  94 21 FF 90 */	stwu r1, -0x70(r1)
@@ -1309,7 +1309,7 @@ l_bb78_s_nTemp:
 l_bb7c_s_numV:
 	.skip 0x4
 
-.section .sdata2
+.section .sdata2, "a"
 l_e108__esc__2_674:
 	.4byte 0x3F800000
 l_e10c__esc__2_675:

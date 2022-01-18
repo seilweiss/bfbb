@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text  # 0x80180038 - 0x80180D54
+.section .text, "ax"  # 0x80180038 - 0x80180D54
 
 .global Init__7ROMFontFv
 Init__7ROMFontFv:
@@ -1145,7 +1145,7 @@ l_2c50__esc__2_stringBase0:
 	.4byte 0x73632E00
 	.4byte 0x00000000
 
-.section .data
+.section .data, "wa"
 .balign 4
 l_b868__esc__2_650:
 	.4byte lbl_80180C40 /* 0x80180C40 */
@@ -1163,11 +1163,11 @@ l_b868__esc__2_650:
 	.4byte lbl_80180C2C /* 0x80180C2C */
 	.4byte 0x00000000
 
-.section .sbss2
+.section .sbss2, "", @nobits
 l_0a40__esc__2_415:
 	.skip 0x8
 
-.section .sdata2
+.section .sdata2, "a"
 l_f800__esc__2_422:
 	.4byte 0x00000000
 l_f804__esc__2_423:

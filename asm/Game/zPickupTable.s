@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text  # 0x800A8DF0 - 0x800A8EC8
+.section .text, "ax"  # 0x800A8DF0 - 0x800A8EC8
 
 .global zPickupTableInit__Fv
 zPickupTableInit__Fv:
@@ -64,7 +64,7 @@ lbl_800A8E9C:
 /* 800A8EC0 000A5CC0  38 21 00 20 */	addi r1, r1, 0x20
 /* 800A8EC4 000A5CC4  4E 80 00 20 */	blr 
 
-.section .data
+.section .data, "wa"
 .balign 4
 l_ff40_ptranstbl:
 	.4byte l_e710__esc__2_stringBase0 + 0

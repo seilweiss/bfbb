@@ -19,7 +19,7 @@ m_UnitAxisY__5xVec3:
 	.4byte 0x00000000
 	.4byte 0x00000000
 
-.section .text  # 0x8004E2F0 - 0x8004E510
+.section .text, "ax"  # 0x8004E2F0 - 0x8004E510
 
 .global xVec3Normalize__FP5xVec3PC5xVec3
 xVec3Normalize__FP5xVec3PC5xVec3:
@@ -175,7 +175,7 @@ xVec3Dot__FPC5xVec3PC5xVec3:
 /* 8004E508 0004B308  10 23 10 94 */	ps_sum0 f1, f3, f2, f2
 /* 8004E50C 0004B30C  4E 80 00 20 */	blr 
 
-.section .sdata2
+.section .sdata2, "a"
 l_d158__esc__2_432:
 	.4byte 0x3F800000
 l_d15c__esc__2_433:

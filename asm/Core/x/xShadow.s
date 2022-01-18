@@ -11,7 +11,7 @@ l_3ea0__esc__2_867:
 	.4byte 0x00000000
 	.4byte 0xBF000000
 
-.section .text  # 0x80044778 - 0x800480B0
+.section .text, "ax"  # 0x80044778 - 0x800480B0
 
 .global xShadowInit__Fv
 xShadowInit__Fv:
@@ -4044,7 +4044,7 @@ l_b3ec_sMgrCount:
 l_b3f0_sMgrTotal:
 	.skip 0x8
 
-.section .sdata2
+.section .sdata2, "a"
 l_d000__esc__2_837:
 	.4byte 0x40000000
 l_d004__esc__2_966:

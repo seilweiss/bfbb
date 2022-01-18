@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text  # 0x80035494 - 0x80035A00
+.section .text, "ax"  # 0x80035494 - 0x80035A00
 
 .global xMovePointInit__FP10xMovePointP15xMovePointAsset
 xMovePointInit__FP10xMovePointP15xMovePointAsset:
@@ -400,7 +400,7 @@ lbl_800359D4:
 /* 800359F8 000327F8  38 21 00 40 */	addi r1, r1, 0x40
 /* 800359FC 000327FC  4E 80 00 20 */	blr 
 
-.section .sdata2
+.section .sdata2, "a"
 l_ced0__esc__2_553:
 	.4byte 0x3EAAAAAB
 l_ced4__esc__2_554:

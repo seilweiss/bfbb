@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text  # 0x801168EC - 0x80117690
+.section .text, "ax"  # 0x801168EC - 0x80117690
 
 par_sprite_begin__Fv:
 /* 801168EC 001136EC  94 21 FF E0 */	stwu r1, -0x20(r1)
@@ -1000,7 +1000,7 @@ l_afd8_sBlendTable:
 	.4byte 0x0000000B
 	.4byte 0x00000000
 
-.section .data
+.section .data, "wa"
 .balign 4
 l_7ce0_sParSysInfo:
 	.4byte 0x00000000
@@ -1024,7 +1024,7 @@ l_4210_par_offset_right:
 l_421c_par_offset_up:
 	.skip 0xC
 
-.section .sdata2
+.section .sdata2, "a"
 l_e8a8__esc__2_693:
 	.4byte 0x3F000000
 l_e8ac__esc__2_776:

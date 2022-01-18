@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text  # 0x8013AF64 - 0x8013D054
+.section .text, "ax"  # 0x8013AF64 - 0x8013D054
 
 /* create_glow_light__25@unnamed@zDiscoFloor_cpp@Fv */
 create_glow_light__25_esc__2_unnamed_esc__2_zDiscoFloor_cpp_esc__2_Fv:
@@ -2455,7 +2455,7 @@ l_bf71_init_esc__6_976:
 l_bf74_clone_pipe__25_esc__2_unnamed_esc__2_zDiscoFloor_cpp_esc__2_:
 	.skip 0x4
 
-.section .sdata2
+.section .sdata2, "a"
 l_eda8__esc__2_710:
 	.4byte 0x3F800000
 l_edac_off_flag_esc__6_790:

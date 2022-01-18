@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text  # 0x800BD1B0 - 0x800BE470
+.section .text, "ax"  # 0x800BD1B0 - 0x800BE470
 
 var_text_ActivePad__18_esc__2_unnamed_esc__2_zVar_cpp_esc__2_Fv:
 /* 800BD1B0 000B9FB0  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -1784,7 +1784,7 @@ l_fcb0__esc__2_stringBase0:
 	.4byte 0x566F6C75
 	.4byte 0x6D650053
 
-.section .data
+.section .data, "wa"
 .balign 4
 l_16e0_state_text_esc__6_908:
 	.4byte l_fcb0__esc__2_stringBase0 + 61
@@ -2857,7 +2857,7 @@ l_8a80_scratchBuffer:
 l_ba68_selSceneID__18_esc__2_unnamed_esc__2_zVar_cpp_esc__2_:
 	.skip 0x8
 
-.section .sdata2
+.section .sdata2, "a"
 l_dfa8__esc__2_1136:
 	.4byte 0x40240000
 	.4byte 0x00000000

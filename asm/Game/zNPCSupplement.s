@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text  # 0x80180D54 - 0x8018626C
+.section .text, "ax"  # 0x80180D54 - 0x8018626C
 
 .global NPCSupplement_Startup__Fv
 NPCSupplement_Startup__Fv:
@@ -6309,7 +6309,7 @@ l_32e0__esc__2_stringBase0:
 	.4byte 0x6F726B00
 	.4byte 0x00000000
 
-.section .data
+.section .data, "wa"
 .balign 4
 l_b8a0__esc__2_921:
 	.4byte lbl_80180E5C /* 0x80180E5C */
@@ -6425,7 +6425,7 @@ l_adc0_g_doNPARCull:
 	.4byte 0x00000001
 	.4byte 0x00000000
 
-.section .sdata2
+.section .sdata2, "a"
 l_f818__esc__2_906:
 	.4byte 0x3E99999A
 l_f81c__esc__2_907:

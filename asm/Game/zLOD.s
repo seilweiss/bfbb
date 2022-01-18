@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text  # 0x800A1D18 - 0x800A26A0
+.section .text, "ax"  # 0x800A1D18 - 0x800A26A0
 
 AddToLODList__FP14xModelInstance:
 /* 800A1D18 0009EB18  94 21 FF D0 */	stwu r1, -0x30(r1)
@@ -706,7 +706,7 @@ l_b910_sManagerIndex:
 l_b914_sManagerCount:
 	.skip 0x4
 
-.section .sdata2
+.section .sdata2, "a"
 l_dc40__esc__2_704:
 	.4byte 0x3F800000
 l_dc44__esc__2_705:

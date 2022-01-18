@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text  # 0x80118934 - 0x80118A04
+.section .text, "ax"  # 0x80118934 - 0x80118A04
 
 .global Init__7xVolumeFP12xVolumeAsset
 Init__7xVolumeFP12xVolumeAsset:

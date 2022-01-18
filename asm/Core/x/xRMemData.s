@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text  # 0x8010F150 - 0x8010F2D0
+.section .text, "ax"  # 0x8010F150 - 0x8010F2D0
 
 .global __nw__10RyzMemDataFUliP10RyzMemGrow
 __nw__10RyzMemDataFUliP10RyzMemGrow:

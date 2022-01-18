@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text  # 0x8010F82C - 0x801102B8
+.section .text, "ax"  # 0x8010F82C - 0x801102B8
 
 .global Init__9xNPCBasicFP9xEntAsset
 Init__9xNPCBasicFP9xEntAsset:
@@ -765,7 +765,7 @@ l_a3f8__esc__2_727:
 	.4byte 0x00000000
 	.4byte 0x00000000
 
-.section .data
+.section .data, "wa"
 .balign 4
 l_7460_g_colrec:
 	.4byte 0x00000000
@@ -1158,7 +1158,7 @@ __vt__9xNPCBasic:
   .4byte ColPenByFlags__9xNPCBasicCFv
   .4byte PhysicsFlags__9xNPCBasicCFv
 
-.section .sdata2
+.section .sdata2, "a"
 l_e7d0__esc__2_705:
 	.4byte 0x00000000
 l_e7d4__esc__2_706:

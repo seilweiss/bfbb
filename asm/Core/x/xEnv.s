@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text  # 0x8001F438 - 0x8001F524
+.section .text, "ax"  # 0x8001F438 - 0x8001F524
 
 .global xEnvLoadBsp__FP4xEnvPCvUii
 xEnvLoadBsp__FP4xEnvPCvUii:

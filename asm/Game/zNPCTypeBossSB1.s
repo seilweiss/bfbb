@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text  # 0x80154DD8 - 0x80156D98
+.section .text, "ax"  # 0x80154DD8 - 0x80156D98
 
 .global ZNPC_AnimTable_BossSB1__Fv
 ZNPC_AnimTable_BossSB1__Fv:
@@ -2220,7 +2220,7 @@ l_f224__esc__2_stringBase0:
 	.4byte 0x73202025
 	.4byte 0x660A0000
 
-.section .data
+.section .data, "wa"
 .balign 4
 l_a490_BossArmTags:
 	.4byte 0x41381CAC
@@ -2411,7 +2411,7 @@ l_bfe8_sSB1_deflated:
 _singleton__9zNPCB_SB2:
 	.skip 0x4
 
-.section .sdata2
+.section .sdata2, "a"
 l_f1a8__esc__2_822:
 	.4byte 0x3F800000
 l_f1ac__esc__2_823:

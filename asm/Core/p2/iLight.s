@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text  # 0x800C4AF4 - 0x800C4E4C
+.section .text, "ax"  # 0x800C4AF4 - 0x800C4E4C
 
 .global iLightInit__FP7RpWorld
 iLightInit__FP7RpWorld:
@@ -258,7 +258,7 @@ lbl_800C4E40:
 /* 800C4E44 000C1C44  98 03 00 02 */	stb r0, 2(r3)
 /* 800C4E48 000C1C48  4E 80 00 20 */	blr 
 
-.section .sdata2
+.section .sdata2, "a"
 l_e0b0__esc__2_535:
 	.4byte 0x00000000
 l_e0b4__esc__2_536:

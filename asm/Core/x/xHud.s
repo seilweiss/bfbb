@@ -149,7 +149,7 @@ l_2ee8__esc__2_stringBase0:
 	.4byte 0x002E6466
 	.4byte 0x66000000
 
-.section .text  # 0x8002D98C - 0x8002F008
+.section .text, "ax"  # 0x8002D98C - 0x8002F008
 
 .global flush_all__Q24xhud15block_allocatorFv
 flush_all__Q24xhud15block_allocatorFv:
@@ -1871,7 +1871,7 @@ l_b2a0_myid_esc__6_924:
 l_b2a4_init_esc__6_925:
 	.skip 0x4
 
-.section .sdata2
+.section .sdata2, "a"
 l_cd58__esc__2_857:
 	.4byte 0x3F800000
 l_cd5c__esc__2_945:

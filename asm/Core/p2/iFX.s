@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text  # 0x800C477C - 0x800C4AF4
+.section .text, "ax"  # 0x800C477C - 0x800C4AF4
 
 l_477c__iGCUVRenderCallback__FPvP18RxGameCubePipeData:
 /* 800C477C 000C157C  94 21 FF 90 */	stwu r1, -0x70(r1)

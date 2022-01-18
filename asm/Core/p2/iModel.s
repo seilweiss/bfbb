@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text  # 0x800C78C4 - 0x800C9630
+.section .text, "ax"  # 0x800C78C4 - 0x800C9630
 
 GetChildFrameHierarchy__FP7RwFramePv:
 /* 800C78C4 000C46C4  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -2157,7 +2157,7 @@ l_bb5c_sMaterialFlags:
 l_bb60_sLastMaterial:
 	.skip 0x8
 
-.section .sbss2
+.section .sbss2, "", @nobits
 l_08a0__esc__2_1063:
 	.skip 0x4
 /* SPECULATION: link order */
@@ -2171,7 +2171,7 @@ l_08a8__esc__2_1083:
 lbl_803D08AC:
 	.skip 0x4
 
-.section .sdata2
+.section .sdata2, "a"
 l_e0e0__esc__2_824:
 	.4byte 0xBF800000
 l_e0e4__esc__2_825:

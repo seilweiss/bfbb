@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text  # 0x8002CF70 - 0x8002D98C
+.section .text, "ax"  # 0x8002CF70 - 0x8002D98C
 
 .global get_HIPLFuncs__Fv
 get_HIPLFuncs__Fv:
@@ -747,7 +747,7 @@ lbl_8002D968:
 /* 8002D984 0002A784  38 21 00 20 */	addi r1, r1, 0x20
 /* 8002D988 0002A788  4E 80 00 20 */	blr 
 
-.section .data
+.section .data, "wa"
 .balign 4
 l_d0a0_g_hiploadinst:
 	.4byte 0x00000000

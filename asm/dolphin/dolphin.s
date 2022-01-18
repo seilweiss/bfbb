@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text  # 0x801B5350 - 0x801DCD7C
+.section .text, "ax"  # 0x801B5350 - 0x801DCD7C
 
 .global AIRegisterDMACallback
 AIRegisterDMACallback:
@@ -39798,8 +39798,8 @@ __init_cpp:
 /* 801D79F0 001D47F0  90 01 00 04 */	stw r0, 4(r1)
 /* 801D79F4 001D47F4  94 21 FF F0 */	stwu r1, -0x10(r1)
 /* 801D79F8 001D47F8  93 E1 00 0C */	stw r31, 0xc(r1)
-/* 801D79FC 001D47FC  3C 60 80 25 */	lis r3, l_1d00___init_cpp_exceptions_reference@ha
-/* 801D7A00 001D4800  38 03 1D 00 */	addi r0, r3, l_1d00___init_cpp_exceptions_reference@l
+/* 801D79FC 001D47FC  3C 60 80 25 */	lis r3, _ctors@ha
+/* 801D7A00 001D4800  38 03 1D 00 */	addi r0, r3, _ctors@l
 /* 801D7A04 001D4804  7C 1F 03 78 */	mr r31, r0
 /* 801D7A08 001D4808  48 00 00 04 */	b lbl_801D7A0C
 lbl_801D7A0C:
@@ -45709,7 +45709,7 @@ lbl_801DCD44:
 /* 801DCD74 001D9B74  7C 08 03 A6 */	mtlr r0
 /* 801DCD78 001D9B78  4E 80 00 20 */	blr 
 
-.section .data
+.section .data, "wa"
 .balign 4
 .global l_04e0___AXSrcCycles
 l_04e0___AXSrcCycles:

@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text  # 0x8018626C - 0x80187630
+.section .text, "ax"  # 0x8018626C - 0x80187630
 
 .global zNPCGlyph_Startup__Fv
 zNPCGlyph_Startup__Fv:
@@ -1510,7 +1510,7 @@ l_33f8__esc__2_stringBase0:
 	.4byte 0x00000000
 	.4byte 0x00000000
 
-.section .data
+.section .data, "wa"
 .balign 4
 l_b9c8_g_strz_glyphmodel:
 	.4byte l_33f8__esc__2_stringBase0 + 0
@@ -1550,7 +1550,7 @@ l_ba18__esc__2_896:
 l_be30_g_glyphs_talk:
 	.skip 0x2908
 
-.section .sdata2
+.section .sdata2, "a"
 l_f948__esc__2_849:
 	.4byte 0x00000000
 l_f94c__esc__2_850:

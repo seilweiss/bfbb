@@ -15,7 +15,7 @@ l_2f68__esc__2_stringBase0:
 	.4byte 0x6F64656C
 	.4byte 0x00000000
 
-.section .text  # 0x8002FC88 - 0x8002FF80
+.section .text, "ax"  # 0x8002FC88 - 0x8002FF80
 
 .global XHUD_AnimTable_Idle__Fv
 XHUD_AnimTable_Idle__Fv:
@@ -245,7 +245,7 @@ l_b2b8_myid_esc__6_686:
 l_b2bc_init_esc__6_687:
 	.skip 0x4
 
-.section .sdata2
+.section .sdata2, "a"
 l_cde0__esc__2_654:
 	.4byte 0x3F800000
 l_cde4__esc__2_655:

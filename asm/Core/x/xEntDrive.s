@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text  # 0x8001BB54 - 0x8001C888
+.section .text, "ax"  # 0x8001BB54 - 0x8001C888
 
 .global xEntDriveInit__FP9xEntDriveP4xEnt
 xEntDriveInit__FP9xEntDriveP4xEnt:
@@ -926,7 +926,7 @@ __as__5xVec3Ff:
 /* 8001C880 00019680  D0 23 00 00 */	stfs f1, 0(r3)
 /* 8001C884 00019684  4E 80 00 20 */	blr 
 
-.section .sdata2
+.section .sdata2, "a"
 l_cc08__esc__2_561:
 	.4byte 0x00000000
 l_cc0c__esc__2_658:

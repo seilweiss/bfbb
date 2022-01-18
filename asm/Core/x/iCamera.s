@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text  # 0x800C0138 - 0x800C0D20
+.section .text, "ax"  # 0x800C0138 - 0x800C0D20
 
 .global iCameraCreate__Fiii
 iCameraCreate__Fiii:
@@ -835,7 +835,7 @@ lbl_800C0D04:
 l_ba84_sMainGameCamera:
 	.skip 0x4
 
-.section .sdata2
+.section .sdata2, "a"
 l_e030__esc__2_640:
 	.4byte 0x3F800000
 l_e034__esc__2_706:

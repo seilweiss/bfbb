@@ -13,7 +13,7 @@ l_2134__esc__2_2936:
 	.4byte 0x00000000
 	.4byte 0x00000000
 
-.section .text  # 0x8000F058 - 0x800159D4
+.section .text, "ax"  # 0x8000F058 - 0x800159D4
 
 .global xCollideGetCollsIdx__FPC7xCollisPC5xVec3PC7xMat3x3
 xCollideGetCollsIdx__FPC7xCollisPC5xVec3PC7xMat3x3:
@@ -7355,7 +7355,7 @@ l_b1a0_sSweptSphereMover:
 l_b1a4_sSweptSphereIgnoreMovers:
 	.skip 0x4
 
-.section .sbss2
+.section .sbss2, "", @nobits
 l_07e0__esc__2_3039:
 	.skip 0x4
 /* SPECULATION: link order */
@@ -7381,7 +7381,7 @@ l_07f8__esc__2_3068:
 lbl_803D07FC:
 	.skip 0x4
 
-.section .sdata2
+.section .sdata2, "a"
 l_caa8__esc__2_728:
 	.4byte 0x00000000
 l_caac__esc__2_835:

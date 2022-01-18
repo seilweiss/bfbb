@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text  # 0x800BE470 - 0x800BF1C0
+.section .text, "ax"  # 0x800BE470 - 0x800BF1C0
 
 .global iAnimInit__Fv
 iAnimInit__Fv:
@@ -639,7 +639,7 @@ l_0108__esc__2_581:
 	.4byte 0x00000000
 	.4byte 0x3F800000
 
-.section .sdata2
+.section .sdata2, "a"
 l_dfc0__esc__2_879:
 	.4byte 0x00000000
 l_dfc4__esc__2_880:

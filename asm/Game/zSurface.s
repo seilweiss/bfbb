@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text  # 0x800B55F0 - 0x800B6928
+.section .text, "ax"  # 0x800B55F0 - 0x800B6928
 
 .global zSurfaceInit__Fv
 zSurfaceInit__Fv:
@@ -1491,7 +1491,7 @@ l_f4e8__esc__2_stringBase0:
 	.4byte 0x64004E4F
 	.4byte 0x4E450000
 
-.section .data
+.section .data, "wa"
 .balign 4
 l_0ea8__esc__2_1183:
 	.4byte lbl_800B66EC /* 0x800B66EC */
@@ -1537,7 +1537,7 @@ l_ac10_sMapper:
 l_ac18_c_normal:
 	.4byte 0x00000000
 
-.section .sdata2
+.section .sdata2, "a"
 l_ded0__esc__2_693:
 	.4byte 0x43B40000
 l_ded4__esc__2_694:

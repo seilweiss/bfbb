@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text  # 0x801305FC - 0x80133E38
+.section .text, "ax"  # 0x801305FC - 0x80133E38
 
 /* speak_stop__22@unnamed@zTalkBox_cpp@Fv */
 speak_stop__22_esc__2_unnamed_esc__2_zTalkBox_cpp_esc__2_Fv:
@@ -4315,7 +4315,7 @@ l_c920__esc__2_stringBase0:
 	.4byte 0x6D650000
 	.4byte 0x00000000
 
-.section .data
+.section .data, "wa"
 .balign 4
 l_8e68_new_tags__22_esc__2_unnamed_esc__2_zTalkBox_cpp_esc__2_:
 	.4byte l_c920__esc__2_stringBase0 + 135
@@ -4434,7 +4434,7 @@ l_bf0a_init_esc__6_2131:
 l_bf0c_stop_state_esc__6_2130:
 	.skip 0xC
 
-.section .sbss2
+.section .sbss2, "", @nobits
 l_08e8__esc__2_1622:
 	.skip 0x4
 /* SPECULATION: link order */
@@ -4451,7 +4451,7 @@ l_ad70_music_fade_delay__22_esc__2_unnamed_esc__2_zTalkBox_cpp_esc__2_:
 	.4byte 0x3F000000
 	.4byte 0x00000000
 
-.section .sdata2
+.section .sdata2, "a"
 l_eca8__esc__2_1032:
 	.4byte 0x00000000
 l_ecac__esc__2_1150:

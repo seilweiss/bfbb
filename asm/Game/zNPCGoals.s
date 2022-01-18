@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text  # 0x800D4A14 - 0x800D5114
+.section .text, "ax"  # 0x800D4A14 - 0x800D5114
 
 .global zNPCGoals_RegisterTypes__FP8xFactory
 zNPCGoals_RegisterTypes__FP8xFactory:

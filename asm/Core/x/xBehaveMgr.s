@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text  # 0x8010CE24 - 0x8010E9B0
+.section .text, "ax"  # 0x8010CE24 - 0x8010E9B0
 
 .global xBehaveMgr_Startup__Fv
 xBehaveMgr_Startup__Fv:
@@ -2087,7 +2087,7 @@ l_bde0_g_modinit:
 l_bde4_g_behavmgr:
 	.skip 0x4
 
-.section .sdata2
+.section .sdata2, "a"
 l_e7c0__esc__2_750:
 	.4byte 0x00000000
 l_e7c4__esc__2_911:

@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text  # 0x801352A4 - 0x80135ACC
+.section .text, "ax"  # 0x801352A4 - 0x80135ACC
 
 .global iCSSoundSetup__FP9xCutscene
 iCSSoundSetup__FP9xCutscene:
@@ -597,7 +597,7 @@ lbl_80135AB4:
 /* 80135AC4 001328C4  38 21 00 20 */	addi r1, r1, 0x20
 /* 80135AC8 001328C8  4E 80 00 20 */	blr 
 
-.section .sdata2
+.section .sdata2, "a"
 l_ece0__esc__2_835:
 	.4byte 0x3F666666
 l_ece4__esc__2_836:

@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text  # 0x80195FE8 - 0x801B5350
+.section .text, "ax"  # 0x80195FE8 - 0x801B5350
 
 .global mult64anddiv
 mult64anddiv:
@@ -33790,7 +33790,7 @@ ReadBPLossyWithMotion:
 /* 801B5348 001B2148  38 21 00 60 */	addi r1, r1, 0x60
 /* 801B534C 001B214C  4E 80 00 20 */	blr 
 
-.section .data # bink data is allergic to alignment
+.section .data, "wa" # bink data is allergic to alignment
 .balign 4
 .global TrackNums
 TrackNums:
@@ -43977,7 +43977,7 @@ lbl_80363C88:
 lbl_80363D08:
 	.skip 0x80
 
-.section .sdata  # 0x803CA900 - 0x803CB160
+.section .sdata, "wa" # 0x803CA900 - 0x803CB160
 .balign 8
 l_add8_starttime.189:
 	.4byte 0x00000000

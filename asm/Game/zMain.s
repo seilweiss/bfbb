@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text  # 0x800A26A0 - 0x800A6000
+.section .text, "ax"  # 0x800A26A0 - 0x800A6000
 
 .global main
 main:
@@ -5025,7 +5025,7 @@ l_d494__esc__2_stringBase0:
 	.4byte 0x6661696C
 	.4byte 0x65647D00
 
-.section .data
+.section .data, "wa"
 .balign 4
 l_fb70_g_xser_sizeinfo:
 	.4byte 0x504C5952
@@ -5208,7 +5208,7 @@ l_b928_init_esc__6_1084:
 menu_fmv_played:
 	.skip 0x4
 
-.section .sbss2
+.section .sbss2, "", @nobits
 l_0868__esc__2_1163:
 	.skip 0x4
 l_086c__esc__2_1354:
@@ -5228,7 +5228,7 @@ gSkipTimeCutscene:
 gSkipTimeFlythrough:
 	.4byte 0x3F800000
 
-.section .sdata2
+.section .sdata2, "a"
 l_dc58__esc__2_909:
 	.4byte 0x3D088889
 l_dc5c__esc__2_1001:

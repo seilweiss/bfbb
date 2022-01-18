@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text  # 0x8017047C - 0x80172034
+.section .text, "ax"  # 0x8017047C - 0x80172034
 
 zParPTankSparkleCreate__FP9zParPTankUiPFP9zParPTankf_v:
 /* 8017047C 0016D27C  94 21 FF E0 */	stwu r1, -0x20(r1)
@@ -1951,7 +1951,7 @@ l_c05c_snow_particles__23_esc__2_unnamed_esc__2_zParPTank_cpp_esc__2_:
 l_c060_sSteamAnimTime:
 	.skip 0x8
 
-.section .sdata2
+.section .sdata2, "a"
 l_f56c_sparkle_size:
 	.4byte 0x3E99999A
 	.4byte 0x3E99999A

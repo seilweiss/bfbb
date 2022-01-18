@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text  # 0x80168A94 - 0x8017047C
+.section .text, "ax"  # 0x80168A94 - 0x8017047C
 
 /* get_player_loc__34@unnamed@zNPCTypeBossPlankton_cpp@Fv */
 get_player_loc__34_esc__2_unnamed_esc__2_zNPCTypeBossPlankton_cpp_esc__2_Fv:
@@ -9571,7 +9571,7 @@ l_1464__esc__2_stringBase0:
 	.4byte 0x5F434841
 	.4byte 0x52474500
 
-.section .data
+.section .data, "wa"
 .balign 4
 l_af30_beam_launch_effect__34_esc__2_unnamed_esc__2_zNPCTypeBossPlankton_cpp_esc__2_:
 	.4byte 0x00000003
@@ -9974,7 +9974,7 @@ l_a140_sound_data__34_esc__2_unnamed_esc__2_zNPCTypeBossPlankton_cpp_esc__2_:
 l_a1a0_tweak__34_esc__2_unnamed_esc__2_zNPCTypeBossPlankton_cpp_esc__2_:
 	.skip 0x300
 
-.section .sbss2
+.section .sbss2, "", @nobits
 l_0938__esc__2_821:
 	.skip 0x4
 /* SPECULATION: link order */
@@ -10060,7 +10060,7 @@ l_09a0__esc__2_2564:
 lbl_803D09A4:
 	.skip 0x4
 
-.section .sdata2
+.section .sdata2, "a"
 l_f480_say_intro__34_esc__2_unnamed_esc__2_zNPCTypeBossPlankton_cpp_esc__2_:
 	.4byte 0x00000017
 	.4byte 0x00000018

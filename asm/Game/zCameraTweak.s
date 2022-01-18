@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text  # 0x8017EEA4 - 0x8017F5E0
+.section .text, "ax"  # 0x8017EEA4 - 0x8017F5E0
 
 zCameraTweak_LookPreCalc__FP13zCamTweakLookfff:
 /* 8017EEA4 0017BCA4  94 21 FF C0 */	stwu r1, -0x40(r1)
@@ -563,7 +563,7 @@ l_c0e0_sCamH:
 l_c0e4_sCamPitch:
 	.skip 0x4
 
-.section .sdata2
+.section .sdata2, "a"
 l_f7c8__esc__2_463:
 	.4byte 0x00000000
 l_f7cc__esc__2_464:

@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text  # 0x8004C214 - 0x8004D054
+.section .text, "ax"  # 0x8004C214 - 0x8004D054
 
 .global xStrHash__FPCc
 xStrHash__FPCc:
@@ -1098,7 +1098,7 @@ lbl_8004D04C:
 /* 8004D04C 00049E4C  38 60 00 00 */	li r3, 0
 /* 8004D050 00049E50  4E 80 00 20 */	blr 
 
-.section .data
+.section .data, "wa"
 .balign 4
 l_a228__esc__2_1131:
 	.4byte lbl_8004D04C /* 0x8004D04C */

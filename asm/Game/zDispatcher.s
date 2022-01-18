@@ -139,7 +139,7 @@ l_4e10__esc__2_1155:
 	.4byte 0x00000000
 	.4byte 0x00000000
 
-.section .text  # 0x800534E4 - 0x80054200
+.section .text, "ax"  # 0x800534E4 - 0x80054200
 
 .global zDispatcher_Startup__Fv
 zDispatcher_Startup__Fv:
@@ -1140,7 +1140,7 @@ lbl_800541C4:
 /* 800541F8 00050FF8  38 21 00 20 */	addi r1, r1, 0x20
 /* 800541FC 00050FFC  4E 80 00 20 */	blr 
 
-.section .data
+.section .data, "wa"
 .balign 4
 l_c0f8__esc__2_1068:
 	.4byte lbl_800538C0 /* 0x800538C0 */
@@ -1192,7 +1192,7 @@ model_id_esc__6_localstatic3_esc__6_checkpoint_collision_hack__FP4zEnt:
 init_esc__6_localstatic4_esc__6_checkpoint_collision_hack__FP4zEnt:
 	.skip 0x4
 
-.section .sbss2
+.section .sbss2, "", @nobits
 l_0828__esc__2_1143:
 	.skip 0x8
 
@@ -1201,7 +1201,7 @@ l_aa60_g_zdsp_depot:
 	.4byte 0x00000000
 	.4byte 0x00000000
 
-.section .sdata2
+.section .sdata2, "a"
 l_d270__esc__2_1142:
 	.4byte 0x000000FF
 l_d274__esc__2_1179:

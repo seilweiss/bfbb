@@ -67,7 +67,7 @@ g_IQ:
 	.4byte 0x00000000
 	.4byte 0x3F800000
 
-.section .text  # 0x800318B8 - 0x80033554
+.section .text, "ax"  # 0x800318B8 - 0x80033554
 
 .global xMath3Init__Fv
 xMath3Init__Fv:
@@ -2071,7 +2071,7 @@ xQuatAdd__FP5xQuatPC5xQuatPC5xQuat:
 /* 8003354C 0003034C  38 21 00 10 */	addi r1, r1, 0x10
 /* 80033550 00030350  4E 80 00 20 */	blr 
 
-.section .data
+.section .data, "wa"
 .balign 4
 l_d6f0_nxt_esc__6_2148:
 	.4byte 0x00000001
@@ -2079,7 +2079,7 @@ l_d6f0_nxt_esc__6_2148:
 	.4byte 0x00000000
 	.4byte 0x00000000
 
-.section .sdata2
+.section .sdata2, "a"
 l_ce70__esc__2_533:
 	.4byte 0x00000000
 l_ce74__esc__2_699:

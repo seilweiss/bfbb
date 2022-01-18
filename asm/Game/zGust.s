@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text  # 0x8009AD50 - 0x8009B684
+.section .text, "ax"  # 0x8009AD50 - 0x8009B684
 
 zGustInit__FP5zGustP10zGustAsset:
 /* 8009AD50 00097B50  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -703,7 +703,7 @@ l_b8b8_sGustDustEmitter:
 l_b8bc_sGustDebrisEmitter:
 	.skip 0x4
 
-.section .sdata2
+.section .sdata2, "a"
 l_da90__esc__2_646:
 	.4byte 0x3E19999A
 l_da94__esc__2_785:

@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text  # 0x800BC558 - 0x800BD1B0
+.section .text, "ax"  # 0x800BC558 - 0x800BD1B0
 
 set_text__FR7zUIFontUi:
 /* 800BC558 000B9358  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -903,7 +903,7 @@ l_f9a8__esc__2_stringBase0:
 	.4byte 0x74696E75
 	.4byte 0x65000000
 
-.section .sdata2
+.section .sdata2, "a"
 l_df98__esc__2_708:
 	.4byte 0x42480000
 l_df9c__esc__2_930:

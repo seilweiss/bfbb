@@ -9,7 +9,7 @@ l_2fb8__esc__2_stringBase0:
 	.4byte 0x00000000
 	.4byte 0x00000000
 
-.section .text  # 0x80030640 - 0x80030C04
+.section .text, "ax"  # 0x80030640 - 0x80030C04
 
 TrimWhitespace__FPc:
 /* 80030640 0002D440  94 21 FF F0 */	stwu r1, -0x10(r1)

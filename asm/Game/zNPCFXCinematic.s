@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text  # 0x80190F80 - 0x80195428
+.section .text, "ax"  # 0x80190F80 - 0x80195428
 
 .global NCIN_Par_BPLANK_JET_1_Upd__FPC12zCutsceneMgrP9NCINEntryi
 NCIN_Par_BPLANK_JET_1_Upd__FPC12zCutsceneMgrP9NCINEntryi:
@@ -5861,7 +5861,7 @@ l_3d08__esc__2_stringBase0:
 	.4byte 0x69730000
 	.4byte 0x00000000
 
-.section .data
+.section .data, "wa"
 .balign 4
 l_19f8_g_cutmap:
 	.4byte l_3d08__esc__2_stringBase0 + 2758
@@ -5996,7 +5996,7 @@ l_c1c4_init_esc__6_1885:
 l_c1c5_init_esc__6_1890:
 	.skip 0x3
 
-.section .sdata2
+.section .sdata2, "a"
 l_fb00__esc__2_820:
 	.4byte 0x00000000
 l_fb04__esc__2_821:

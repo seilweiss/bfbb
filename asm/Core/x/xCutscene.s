@@ -21,7 +21,7 @@ l_2168__esc__2_stringBase0:
 	.4byte 0x72000000
 	.4byte 0x00000000
 
-.section .text  # 0x80015EA4 - 0x80017D3C
+.section .text, "ax"  # 0x80015EA4 - 0x80017D3C
 
 .global xCutscene_Init__FPv
 xCutscene_Init__FPv:
@@ -2170,7 +2170,7 @@ CanRenderNow__9XCSNNoseyFv:
 UpdatedAnimated__9XCSNNoseyFP8RpAtomicP11RwMatrixTagUiUi:
 /* 80017D38 00014B38  4E 80 00 20 */	blr 
 
-.section .data
+.section .data, "wa"
 .balign 4
 l_b418_shadVec_esc__6_1235:
 	.4byte 0x00000000
@@ -2194,7 +2194,7 @@ l_b1ac_sCutTocInfo:
 gFrameCount:
 	.skip 0x8
 
-.section .sbss2
+.section .sbss2, "", @nobits
 l_0800__esc__2_1181:
 	.skip 0x4
 /* SPECULATION: link order */
@@ -2202,7 +2202,7 @@ l_0800__esc__2_1181:
 lbl_803D0804:
 	.skip 0x4
 
-.section .sdata2
+.section .sdata2, "a"
 l_cb38__esc__2_672:
 	.4byte 0x3F800000
 l_cb3c__esc__2_741:

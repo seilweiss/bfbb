@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text  # 0x8018FDC4 - 0x80190F80
+.section .text, "ax"  # 0x8018FDC4 - 0x80190F80
 
 .global GOALCreate_Ambient__FiP10RyzMemGrowPv
 GOALCreate_Ambient__FiP10RyzMemGrowPv:
@@ -1272,7 +1272,7 @@ l_c1ac_init_esc__6_1065:
 g_noz_ncin:
 	.skip 0x4
 
-.section .sdata2
+.section .sdata2, "a"
 l_fac0__esc__2_858:
 	.4byte 0x3C23D70A
 l_fac4__esc__2_859:

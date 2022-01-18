@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text  # 0x80135ACC - 0x80135EA0
+.section .text, "ax"  # 0x80135ACC - 0x80135EA0
 
 .global ZNPC_Test_Startup__Fv
 ZNPC_Test_Startup__Fv:
@@ -308,7 +308,7 @@ l_ca50__esc__2_stringBase0:
 	.4byte 0x50435465
 	.4byte 0x73740000
 
-.section .sdata2
+.section .sdata2, "a"
 l_ecf0__esc__2_830:
 	.4byte 0x3F800000
 l_ecf4__esc__2_831:

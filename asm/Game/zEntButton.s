@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text  # 0x800564EC - 0x8005720C
+.section .text, "ax"  # 0x800564EC - 0x8005720C
 
 .global zEntButton_Init__FPvPv
 zEntButton_Init__FPvPv:
@@ -974,7 +974,7 @@ l_aa78_sColorMultiplierSign:
 	.4byte 0x00000001
 	.4byte 0x00000000
 
-.section .sdata2
+.section .sdata2, "a"
 l_d2f8__esc__2_784:
 	.4byte 0x3EB851EC
 l_d2fc__esc__2_785:

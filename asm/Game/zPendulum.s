@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text  # 0x800A8868 - 0x800A8DF0
+.section .text, "ax"  # 0x800A8868 - 0x800A8DF0
 
 .global zPendulum_Init__FPvPv
 zPendulum_Init__FPvPv:
@@ -410,7 +410,7 @@ lbl_800A8DD8:
 /* 800A8DE8 000A5BE8  38 21 00 20 */	addi r1, r1, 0x20
 /* 800A8DEC 000A5BEC  4E 80 00 20 */	blr 
 
-.section .sdata2
+.section .sdata2, "a"
 l_dda0__esc__2_692:
 	.4byte 0x00000000
 l_dda4__esc__2_693:

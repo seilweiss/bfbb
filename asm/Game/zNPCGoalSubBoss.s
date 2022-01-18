@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text  # 0x80138CA0 - 0x80139218
+.section .text, "ax"  # 0x80138CA0 - 0x80139218
 
 .global GOALCreate_SubBoss__FiP10RyzMemGrowPv
 GOALCreate_SubBoss__FiP10RyzMemGrowPv:
@@ -422,7 +422,7 @@ __ct__12zNPCGoalHereFi:
 /* 80139210 00136010  38 21 00 10 */	addi r1, r1, 0x10
 /* 80139214 00136014  4E 80 00 20 */	blr 
 
-.section .data
+.section .data, "wa"
 .balign 4
 l_9860__esc__2_863:
 	.4byte lbl_80138CE4 /* 0x80138CE4 */

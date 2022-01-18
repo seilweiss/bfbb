@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text  # 0x800C4F18 - 0x800C6360
+.section .text, "ax"  # 0x800C4F18 - 0x800C6360
 
 .global iMath3Init__Fv
 iMath3Init__Fv:
@@ -1444,7 +1444,7 @@ xVec2Init__FP5xVec2ff:
 /* 800C6358 000C3158  D0 43 00 04 */	stfs f2, 4(r3)
 /* 800C635C 000C315C  4E 80 00 20 */	blr 
 
-.section .sdata2
+.section .sdata2, "a"
 l_e0b8__esc__2_555:
 	.4byte 0x3F000000
 l_e0bc__esc__2_557:

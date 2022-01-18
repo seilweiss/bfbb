@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text  # 0x80117690 - 0x80118934
+.section .text, "ax"  # 0x80117690 - 0x80118934
 
 add_tweaks__FR11xParEmitter:
 /* 80117690 00114490  4E 80 00 20 */	blr 
@@ -1387,7 +1387,7 @@ l_b008__esc__2_stringBase0:
 	.4byte 0x69747465
 	.4byte 0x72730000
 
-.section .data
+.section .data, "wa"
 .balign 4
 l_7d18__esc__2_927:
 	.4byte lbl_80117DB0 /* 0x80117DB0 */
@@ -1441,7 +1441,7 @@ l_427c_sSaveEmmiterPropSettings:
 l_43b4_sDummyProp:
 	.skip 0x13C
 
-.section .sdata2
+.section .sdata2, "a"
 l_e8c8__esc__2_776:
 	.4byte 0x00000000
 l_e8cc__esc__2_777:

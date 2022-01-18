@@ -9,7 +9,7 @@ l_4308__esc__2_stringBase0:
 	.4byte 0x4E455300
 	.4byte 0x00000000
 
-.section .text  # 0x8004E510 - 0x8004E7E0
+.section .text, "ax"  # 0x8004E510 - 0x8004E7E0
 
 .global zActionLineInit__Fv
 zActionLineInit__Fv:
@@ -219,7 +219,7 @@ l_b9c0_sStripVert_esc__6_718:
 l_b438_sActionLineRaster:
 	.skip 0x8
 
-.section .sdata2
+.section .sdata2, "a"
 l_d168__esc__2_710:
 	.4byte 0x00000000
 l_d16c__esc__2_751:

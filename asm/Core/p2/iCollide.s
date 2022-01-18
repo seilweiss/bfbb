@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text  # 0x800C0D20 - 0x800C2E38
+.section .text, "ax"  # 0x800C0D20 - 0x800C2E38
 
 .global iCollideInit__FP6xScene
 iCollideInit__FP6xScene:
@@ -2381,7 +2381,7 @@ collide_rwct:
 collide_rwtime_secs:
 	.skip 0x4
 
-.section .sdata2
+.section .sdata2, "a"
 l_e060__esc__2_690:
 	.4byte 0x00000000
 l_e064__esc__2_717:

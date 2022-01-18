@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text  # 0x80035A00 - 0x80035E70
+.section .text, "ax"  # 0x80035A00 - 0x80035E70
 
 .global XOrdInit__FP16st_XORDEREDARRAYii
 XOrdInit__FP16st_XORDEREDARRAYii:
@@ -342,7 +342,7 @@ lbl_80035E54:
 /* 80035E68 00032C68  38 21 00 40 */	addi r1, r1, 0x40
 /* 80035E6C 00032C6C  4E 80 00 20 */	blr 
 
-.section .sdata2
+.section .sdata2, "a"
 l_cee8__esc__2_427:
 	.4byte 0x3F733333
 	.4byte 0x00000000

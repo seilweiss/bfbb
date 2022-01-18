@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text  # 0x8013D054 - 0x801465FC
+.section .text, "ax"  # 0x8013D054 - 0x801465FC
 
 on_change_newsfish__FRC10tweak_info:
 /* 8013D054 00139E54  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -10614,7 +10614,7 @@ l_d19c__esc__2_stringBase0:
 	.4byte 0x67340000
 	.4byte 0x00000000
 
-.section .data
+.section .data, "wa"
 .balign 4
 l_98c8_sBone:
 	.4byte 0x00000003
@@ -11030,7 +11030,7 @@ l_ad94_sRightFootBones:
 	.4byte 0x00000031
 	.4byte 0x00000000
 
-.section .sdata2
+.section .sdata2, "a"
 l_ee48__esc__2_830:
 	.4byte 0x00000000
 l_ee4c__esc__2_831:

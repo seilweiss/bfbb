@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text  # 0x800974A8 - 0x80099680
+.section .text, "ax"  # 0x800974A8 - 0x80099680
 
 PickNextSoak__Fv:
 /* 800974A8 000942A8  94 21 FF E0 */	stwu r1, -0x20(r1)
@@ -3265,7 +3265,7 @@ bgv1:
 gGameWhereAmI:
 	.skip 0x8
 
-.section .sbss2
+.section .sbss2, "", @nobits
 l_0858__esc__2_858:
 	.skip 0x4
 /* SPECULATION: link order */
@@ -3308,7 +3308,7 @@ bgb:
 bga:
 	.byte 0x80
 
-.section .sdata2
+.section .sdata2, "a"
 l_d9e0__esc__2_946:
 	.4byte 0x00000000
 	.4byte 0x00000000

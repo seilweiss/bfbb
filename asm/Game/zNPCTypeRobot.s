@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text  # 0x800F4A6C - 0x80102C2C
+.section .text, "ax"  # 0x800F4A6C - 0x80102C2C
 
 .global ZNPC_Robot_Startup__Fv
 ZNPC_Robot_Startup__Fv:
@@ -16534,7 +16534,7 @@ l_96f4__esc__2_stringBase0:
 	.4byte 0x4D000000
 	.4byte 0x00000000
 
-.section .data
+.section .data, "wa"
 l_566c_g_strz_cloudanim:
 	.4byte l_96f4__esc__2_stringBase0 /* 0x802696F4 */
 	.4byte l_96f4__esc__2_stringBase0 + 481
@@ -17846,7 +17846,7 @@ l_acec_uv_bot_esc__6_3443:
 	.4byte 0x3F800000
 	.4byte 0x00000000
 
-.section .sdata2
+.section .sdata2, "a"
 l_e4c8__esc__2_1046:
 	.4byte 0x3F800000
 l_e4cc__esc__2_1047:

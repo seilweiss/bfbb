@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text  # 0x80033554 - 0x80033E2C
+.section .text, "ax"  # 0x80033554 - 0x80033E2C
 
 .global xMemDebug_SoakLog__FPCc
 xMemDebug_SoakLog__FPCc:

@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text  # 0x8012C0A8 - 0x8012D888
+.section .text, "ax"  # 0x8012C0A8 - 0x8012D888
 
 VecFromAngle__FfP5xVec3:
 /* 8012C0A8 00128EA8  94 21 FF B0 */	stwu r1, -0x50(r1)
@@ -1732,7 +1732,7 @@ l_bed4_sTeleportCamPitch:
 gBusStopIsRunning:
 	.skip 0x4
 
-.section .sdata2
+.section .sdata2, "a"
 l_ebb8__esc__2_777:
 	.4byte 0x40490FDB
 l_ebbc__esc__2_778:

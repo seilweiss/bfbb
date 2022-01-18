@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text  # 0x800A6000 - 0x800A6BF8
+.section .text, "ax"  # 0x800A6000 - 0x800A6BF8
 
 .global zMenuRunning__Fv
 zMenuRunning__Fv:
@@ -884,7 +884,7 @@ l_b944_sInMenu:
 l_b948_corruptFileCount:
 	.skip 0x8
 
-.section .sbss2
+.section .sbss2, "", @nobits
 l_0878__esc__2_826:
 	.skip 0x8
 
@@ -897,7 +897,7 @@ l_abc8_holdTmr:
 	.4byte 0x41200000
 	.4byte 0x00000000
 
-.section .sdata2
+.section .sdata2, "a"
 l_dd10__esc__2_817:
 	.4byte 0x42410E56
 l_dd14__esc__2_818:

@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text  # 0x80123B1C - 0x801245D4
+.section .text, "ax"  # 0x80123B1C - 0x801245D4
 
 hack_flag_shadows__FP6zScene:
 /* 80123B1C 0012091C  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -851,7 +851,7 @@ l_b998__esc__2_stringBase0:
 	.4byte 0x5F700000
 	.4byte 0x00000000
 
-.section .data
+.section .data, "wa"
 .balign 4
 l_80a0_special_models_esc__6_666:
 	.4byte 0x00000000
@@ -887,7 +887,7 @@ l_be60_zGridInitted:
 l_be64_init_esc__6_667:
 	.skip 0x4
 
-.section .sdata2
+.section .sdata2, "a"
 l_ea50__esc__2_793:
 	.4byte 0x3A83126F
 l_ea54__esc__2_794:

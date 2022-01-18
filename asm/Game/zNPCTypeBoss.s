@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text  # 0x8013612C - 0x801365C8
+.section .text, "ax"  # 0x8013612C - 0x801365C8
 
 .global ZNPC_Boss_Startup__Fv
 ZNPC_Boss_Startup__Fv:
@@ -610,7 +610,7 @@ l_bf40_g_boss_is_in_the_house:
 l_bf44_g_pemit_holder:
 	.skip 0x4
 
-.section .sdata2
+.section .sdata2, "a"
 l_ed08__esc__2_917:
 	.4byte 0x00000001
 /* SPECULATION: link order */

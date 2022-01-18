@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text  # 0x8015FF60 - 0x80160144
+.section .text, "ax"  # 0x8015FF60 - 0x80160144
 
 .global xJaw_FindData__FUi
 xJaw_FindData__FUi:
@@ -651,7 +651,7 @@ lbl_80270004:
 	.4byte 0x43415354
 	.4byte 0x45520000
 
-.section .sdata2
+.section .sdata2, "a"
 l_f328__esc__2_441:
 	.4byte 0x42700000
 l_f32c__esc__2_442:

@@ -37,7 +37,7 @@ l_4318__esc__2_stringBase0:
 	.4byte 0x0069646C
 	.4byte 0x65000000
 
-.section .text  # 0x8004E7E0 - 0x8004EBEC
+.section .text, "ax"  # 0x8004E7E0 - 0x8004EBEC
 
 l_e7e0_AlwaysConditional__FP15xAnimTransitionP11xAnimSinglePv:
 /* 8004E7E0 0004B5E0  38 60 00 01 */	li r3, 1
@@ -326,7 +326,7 @@ lbl_8004EBE4:
 /* 8004EBE4 0004B9E4  38 60 00 00 */	li r3, 0
 /* 8004EBE8 0004B9E8  4E 80 00 20 */	blr 
 
-.section .data
+.section .data, "wa"
 .balign 4
 l_a7b8_astnames:
 	.4byte l_4318__esc__2_stringBase0 /* 0x80254318 */
@@ -360,7 +360,7 @@ l_b448_atbls:
 l_b44c_anused:
 	.skip 0x4
 
-.section .sdata2
+.section .sdata2, "a"
 l_d170__esc__2_558:
 	.4byte 0x3F800000
 l_d174__esc__2_559:

@@ -1,4 +1,4 @@
-.section .sdata  # 0x803CA900 - 0x803CB160
+.section .sdata, "wa" # 0x803CA900 - 0x803CB160
 .balign 8
 .global __AIVersion
 __AIVersion:

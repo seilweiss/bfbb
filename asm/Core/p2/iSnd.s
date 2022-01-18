@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text  # 0x800CF92C - 0x800D30B4
+.section .text, "ax"  # 0x800CF92C - 0x800D30B4
 
 l_f92c_dv_callback__FPv:
 /* 800CF92C 000CC72C  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -3991,7 +3991,7 @@ size:
 gEmergencyMemLevel:
 	.skip 0x4
 
-.section .sdata2
+.section .sdata2, "a"
 l_e188__esc__2_702:
 	.4byte 0x2D303158
 /* SPECULATION: link order */

@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text  # 0x8002CAA0 - 0x8002CF70
+.section .text, "ax"  # 0x8002CAA0 - 0x8002CF70
 
 .global lbl_8002CAA0
 lbl_8002CAA0:

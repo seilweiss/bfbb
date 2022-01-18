@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text  # 0x8017D544 - 0x8017EEA4
+.section .text, "ax"  # 0x8017D544 - 0x8017EEA4
 
 .global init__17xLaserBoltEmitterFUlPCc
 init__17xLaserBoltEmitterFUlPCc:
@@ -1890,7 +1890,7 @@ l_2c40__esc__2_621:
 	.4byte 0x00000000
 	.4byte 0x00000000
 
-.section .sdata2
+.section .sdata2, "a"
 l_f7a0__esc__2_899:
 	.4byte 0x3C888889
 l_f7a4__esc__2_930:

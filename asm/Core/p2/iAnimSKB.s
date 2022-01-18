@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text  # 0x800BE470 - 0x800C0138
+.section .text, "ax"  # 0x800BE470 - 0x800C0138
 
 .global iAnimEvalSKB__FP14iAnimSKBHeaderfUiP5xVec3P5xQuat
 iAnimEvalSKB__FP14iAnimSKBHeaderfUiP5xVec3P5xQuat:
@@ -1071,7 +1071,7 @@ l_0124__esc__2_1074:
 	.4byte 0x00000000
 	.4byte 0x00000000
 
-.section .sdata2
+.section .sdata2, "a"
 l_dff0__esc__2_661:
 	.4byte 0x00000000
 l_dff4__esc__2_662:

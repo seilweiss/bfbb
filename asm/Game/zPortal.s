@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text  # 0x800AC8A0 - 0x800AC9E8
+.section .text, "ax"  # 0x800AC8A0 - 0x800AC9E8
 
 .global zPortalInit__FPvPv
 zPortalInit__FPvPv:

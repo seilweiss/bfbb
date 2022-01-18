@@ -533,7 +533,7 @@ l_3a4c__esc__2_stringBase0:
 	.4byte 0x00000000
 	.4byte 0x00000000
 
-.section .text  # 0x8003CC4C - 0x8003F3A4
+.section .text, "ax"  # 0x8003CC4C - 0x8003F3A4
 
 .global xSGStartup__Fv
 xSGStartup__Fv:
@@ -3423,7 +3423,7 @@ lbl_8003F390:
 /* 8003F39C 0003C19C  38 21 00 10 */	addi r1, r1, 0x10
 /* 8003F3A0 0003C1A0  4E 80 00 20 */	blr 
 
-.section .data
+.section .data, "wa"
 .balign 4
 l_6888_g_xsgdata:
 	.4byte 0x00000000

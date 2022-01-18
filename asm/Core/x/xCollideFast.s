@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text  # 0x800159D4 - 0x80015B3C
+.section .text, "ax"  # 0x800159D4 - 0x80015B3C
 
 .global xCollideFastInit__FP6xScene
 xCollideFastInit__FP6xScene:
@@ -107,7 +107,7 @@ lbl_80015B28:
 /* 80015B34 00012934  38 21 00 40 */	addi r1, r1, 0x40
 /* 80015B38 00012938  4E 80 00 20 */	blr 
 
-.section .sdata2
+.section .sdata2, "a"
 l_caf8__esc__2_567:
 	.4byte 0x00000000
 l_cafc__esc__2_568:

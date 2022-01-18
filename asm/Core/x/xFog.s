@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text  # 0x8001FDBC - 0x8001FFB0
+.section .text, "ax"  # 0x8001FDBC - 0x8001FFB0
 
 .global xFogClearFog__Fv
 xFogClearFog__Fv:
@@ -155,7 +155,7 @@ lbl_8001FF98:
 xFogUpdate__FP5xBaseP6xScenef:
 /* 8001FFAC 0001CDAC  4E 80 00 20 */	blr 
 
-.section .sdata2
+.section .sdata2, "a"
 l_cc50__esc__2_638:
 	.4byte 0x00000000
 	.4byte 0x00000000

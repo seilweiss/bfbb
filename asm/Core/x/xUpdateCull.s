@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text  # 0x8013A5D0 - 0x8013AF64
+.section .text, "ax"  # 0x8013A5D0 - 0x8013AF64
 
 xUpdateCull_Swap__FP14xUpdateCullMgrUiUi:
 /* 8013A5D0 001373D0  80 C3 00 0C */	lwz r6, 0xc(r3)

@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text 
+.section .text, "ax" 
 
 zVolumeInit__FP7zVolumeP12xVolumeAsset:
 /* 800BE470 000BB270  94 21 FF F0 */	stwu r1, -0x10(r1)
@@ -414,7 +414,7 @@ gOccludeCalcCount:
 globalCamera:
 	.skip 0x4
 
-.section .sdata2
+.section .sdata2, "a"
 l_dfb8__esc__2_761:
 	.4byte 0x3F800000
 	.4byte 0x00000000

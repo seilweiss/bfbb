@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text  # 0x801263C0 - 0x80127314
+.section .text, "ax"  # 0x801263C0 - 0x80127314
 
 l_63c0_CmpAlphaBucket__FPCvPCv:
 /* 801263C0 001231C0  80 A3 00 10 */	lwz r5, 0x10(r3)
@@ -1144,7 +1144,7 @@ l_bea8_sAlphaCount:
 l_beac_sAlphaList:
 	.skip 0x4
 
-.section .sbss2
+.section .sbss2, "", @nobits
 l_08d8__esc__2_684:
 	.skip 0x4
 /* SPECULATION: link order */
@@ -1158,7 +1158,7 @@ l_08e0__esc__2_691:
 lbl_803D08E4:
 	.skip 0x4
 
-.section .sdata2
+.section .sdata2, "a"
 l_eac0__esc__2_675:
 	.4byte 0x47C35000
 l_eac4__esc__2_676:

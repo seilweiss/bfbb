@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text  # 0x800D44F0 - 0x800D4A14
+.section .text, "ax"  # 0x800D44F0 - 0x800D4A14
 
 .global iGetMinute__Fv
 iGetMinute__Fv:
@@ -390,7 +390,7 @@ iFuncProfileParse__FPci:
 l_bc48_sGameTime:
 	.skip 0x8
 
-.section .sdata2
+.section .sdata2, "a"
 l_e1d8__esc__2_424:
 	.4byte 0x43300000
 	.4byte 0x00000000

@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text  # 0x800C64A8 - 0x800C78C4
+.section .text, "ax"  # 0x800C64A8 - 0x800C78C4
 
 __MIXGetVolume__Fi:
 /* 800C64A8 000C32A8  2C 03 FC 78 */	cmpwi r3, -904

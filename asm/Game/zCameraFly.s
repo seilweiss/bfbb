@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text  # 0x8017C0A0 - 0x8017C2B4
+.section .text, "ax"  # 0x8017C0A0 - 0x8017C2B4
 
 .global zCameraFly_Init__FR5xBaseR9xDynAssetUl
 zCameraFly_Init__FR5xBaseR9xDynAssetUl:
@@ -169,7 +169,7 @@ lbl_8017C29C:
 /* 8017C2AC 001790AC  38 21 00 10 */	addi r1, r1, 0x10
 /* 8017C2B0 001790B0  4E 80 00 20 */	blr 
 
-.section .sdata2
+.section .sdata2, "a"
 l_f758__esc__2_713:
 	.4byte 0x3F800000
 l_f75c__esc__2_714:

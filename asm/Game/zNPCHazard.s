@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text  # 0x80187630 - 0x8018FDC4
+.section .text, "ax"  # 0x80187630 - 0x8018FDC4
 
 .global zNPCHazard_Startup__Fv
 zNPCHazard_Startup__Fv:
@@ -9995,7 +9995,7 @@ l_3800__esc__2_stringBase0:
 	.4byte 0x63656869
 	.4byte 0x74000000
 
-.section .data
+.section .data, "wa"
 .balign 4
 l_ba40_g_hazard_rawModel:
 	.4byte 0x00000000
@@ -16261,7 +16261,7 @@ l_c19c_moreorless_esc__6_3518:
 l_c1a0_init_esc__6_3519:
 	.skip 0x8
 
-.section .sdata2
+.section .sdata2, "a"
 l_f968__esc__2_958:
 	.4byte 0x00000000
 l_f96c__esc__2_959:

@@ -265,7 +265,7 @@ l_43a4__esc__2_stringBase0:
 	.4byte 0x25303264
 	.4byte 0x00000000
 
-.section .text  # 0x8004EBEC - 0x8004FBFC
+.section .text, "ax"  # 0x8004EBEC - 0x8004FBFC
 
 .global zAssetStartup__Fv
 zAssetStartup__Fv:
@@ -1439,7 +1439,7 @@ xSndPlay3D__FUiffUiUiP4xEntf14sound_categoryf:
 /* 8004FBF4 0004C9F4  38 21 00 10 */	addi r1, r1, 0x10
 /* 8004FBF8 0004C9F8  4E 80 00 20 */	blr 
 
-.section .data
+.section .data, "wa"
 .balign 4
 l_a808_assetTypeHandlers:
 	.4byte 0x42535020
@@ -2503,7 +2503,7 @@ zcam_fovcurr:
 zcam_fovdest:
 	.skip 0x4
 
-.section .sbss2
+.section .sbss2, "", @nobits
 l_0820__esc__2_868:
 	.skip 0x4
 /* SPECULATION: link order */
@@ -2639,7 +2639,7 @@ zcam_overrot_tmanual:
 zcam_mintgtheight:
 	.4byte 0xFE967699
 
-.section .sdata2
+.section .sdata2, "a"
 l_d178__esc__2_853:
 	.4byte 0x00000000
 l_d17c__esc__2_1040:

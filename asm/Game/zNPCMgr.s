@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text  # 0x800EE2CC - 0x800EED74
+.section .text, "ax"  # 0x800EE2CC - 0x800EED74
 
 .global zNPCMgrSelf__Fv
 zNPCMgrSelf__Fv:
@@ -830,7 +830,7 @@ RenderExtra__10zNPCCommonFv:
 RenderExtraPostParticles__10zNPCCommonFv:
 /* 800EED70 000EBB70  4E 80 00 20 */	blr 
 
-.section .data
+.section .data, "wa"
 l_4374_g_tbltype:
 	.4byte 0x4E54523C
 	.4byte l_73d8__esc__2_stringBase0 + 1095
@@ -1604,7 +1604,7 @@ l_bcc4_g_npcmgr:
 l_bcc8_g_firstFrameUpdateAllNPC:
 	.skip 0x8
 
-.section .sdata2
+.section .sdata2, "a"
 l_e428__esc__2_883:
 	.4byte 0x3C888889
 	.4byte 0x00000000

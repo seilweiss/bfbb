@@ -118,7 +118,7 @@ l_20e4__esc__2_1733:
 	.4byte 0x00000000
 	.4byte 0x00000000
 
-.section .text  # 0x8000B2B0 - 0x8000E96C
+.section .text, "ax"  # 0x8000B2B0 - 0x8000E96C
 
 .global xCameraInit__FP7xCameraUiUi
 xCameraInit__FP7xCameraUiUi:
@@ -3998,7 +3998,7 @@ l_b180_last_dt_esc__6_975:
 l_b184_init_esc__6_976:
 	.skip 0x4
 
-.section .sdata2
+.section .sdata2, "a"
 l_c9d0__esc__2_764:
 	.4byte 0x42960000
 l_c9d4__esc__2_765:

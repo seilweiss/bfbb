@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text  # 0x8003C498 - 0x8003CC4C
+.section .text, "ax"  # 0x8003C498 - 0x8003CC4C
 
 .global xQuickCullInit__FP10xQCControlffffff
 xQuickCullInit__FP10xQCControlffffff:
@@ -556,7 +556,7 @@ xQuickCullForEverything__FP7xQCData:
 /* 8003CC44 00039A44  98 03 00 07 */	stb r0, 7(r3)
 /* 8003CC48 00039A48  4E 80 00 20 */	blr 
 
-.section .sdata2
+.section .sdata2, "a"
 l_cf60__esc__2_526:
 	.4byte 0x00000000
 l_cf64__esc__2_527:

@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text  # 0x8009C000 - 0x8009E02C
+.section .text, "ax"  # 0x8009C000 - 0x8009E02C
 
 .global zLasso_Init__FP6zLassoP14xModelInstancefff
 zLasso_Init__FP6zLassoP14xModelInstancefff:
@@ -2248,7 +2248,7 @@ l_ab78_negativeHondaX:
 	.4byte 0x00000001
 	.4byte 0x00000000
 
-.section .sdata2
+.section .sdata2, "a"
 l_dae0__esc__2_746:
 	.4byte 0x00000000
 l_dae4__esc__2_747:

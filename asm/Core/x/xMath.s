@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text  # 0x80030C04 - 0x800318B8
+.section .text, "ax"  # 0x80030C04 - 0x800318B8
 
 .global xMathInit__Fv
 xMathInit__Fv:
@@ -971,7 +971,7 @@ gActiveHeap:
 sMemBaseNotifyFunc:
 	.skip 0x4
 
-.section .sdata2
+.section .sdata2, "a"
 l_ce08__esc__2_597:
 	.4byte 0x7E967699
 l_ce0c__esc__2_598:

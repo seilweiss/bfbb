@@ -1,6 +1,6 @@
 .include "macros.inc"
 
-.section .text  # 0x8009E02C - 0x8009E7F8
+.section .text, "ax"  # 0x8009E02C - 0x8009E7F8
 
 .global zLightResetAll__FP4xEnv
 zLightResetAll__FP4xEnv:
@@ -589,7 +589,7 @@ l_cd30__esc__2_stringBase0:
 	.4byte 0x00000000
 	.4byte 0x00000000
 
-.section .data
+.section .data, "wa"
 .balign 4
 l_fb50_sDefaultShadowVec:
 	.4byte 0x00000000
@@ -620,7 +620,7 @@ l_b8ec_sPartitionVolume:
 l_b8f0_gNumTemporaryLights:
 	.skip 0x8
 
-.section .sdata2
+.section .sdata2, "a"
 l_db58__esc__2_752:
 	.4byte 0x3F800000
 	.4byte 0x00000000

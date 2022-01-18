@@ -79,7 +79,7 @@ l_1f5c__esc__2_stringBase0:
 	.4byte 0x62000000
 	.4byte 0x00000000
 
-.section .text  # 0x80009564 - 0x8000A528
+.section .text, "ax"  # 0x80009564 - 0x8000A528
 
 .global xBinioLoadCreate__FPCc
 xBinioLoadCreate__FPCc:
@@ -1210,7 +1210,7 @@ xFileReadAsyncStatus__FiPi:
 /* 8000A520 00007320  38 21 00 10 */	addi r1, r1, 0x10
 /* 8000A524 00007324  4E 80 00 20 */	blr 
 
-.section .data
+.section .data, "wa"
 .balign 4
 l_a5c0_g_loadinst:
 	.4byte 0x00000000
