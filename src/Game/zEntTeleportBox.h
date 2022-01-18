@@ -1,6 +1,0 @@
-#ifndef ZENTTELEPORTBOX_H
-#define ZENTTELEPORTBOX_H
-
-
-
-#endif

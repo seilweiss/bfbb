@@ -1,6 +1,0 @@
-#ifndef ZNPCTYPEKINGJELLY_H
-#define ZNPCTYPEKINGJELLY_H
-
-
-
-#endif
