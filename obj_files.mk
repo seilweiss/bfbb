@@ -226,6 +226,7 @@ TEXT_O_FILES :=                                     \
     $(BUILD_DIR)/asm/Core/x/xHudText.o                \
     $(BUILD_DIR)/asm/Game/zCombo.o                    \
     $(BUILD_DIR)/asm/Core/x/xCM.o
+	
 INIT_O_FILES :=                                       \
     $(BUILD_DIR)/asm/sbss_0.o                         \
     $(BUILD_DIR)/src/dolphin/__start.o                \
@@ -257,3 +258,6 @@ SDATA2_O_FILES :=                                   \
 
 SBSS2_O_FILES :=                                    \
     $(BUILD_DIR)/asm/sbss2.o
+
+MOD_O_FILES :=                                      \
+	$(BUILD_DIR)/src/Randomizer/Randomizer.o

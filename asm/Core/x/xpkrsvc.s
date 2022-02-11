@@ -1064,7 +1064,7 @@ lbl_80039BC4:
 /* 80039BC4 000369C4  2C 03 00 01 */	cmpwi r3, 1
 /* 80039BC8 000369C8  40 82 00 68 */	bne lbl_80039C30
 /* 80039BCC 000369CC  80 6D 8A 4C */	lwz r3, l_b34c_asynlay_esc__6_620@sda21(r13)
-/* 80039BD0 000369D0  48 00 04 1D */	bl PKR_updateLayerAssets__FP19st_PACKER_LTOC_NODE
+/* 80039BD0 000369D0  48 00 04 1D */	bl RandomizerHook
 /* 80039BD4 000369D4  80 6D 8A 4C */	lwz r3, l_b34c_asynlay_esc__6_620@sda21(r13)
 /* 80039BD8 000369D8  80 63 00 00 */	lwz r3, 0(r3)
 /* 80039BDC 000369DC  48 00 02 E1 */	bl PKR_layerTypeNeedsXForm__F13en_LAYER_TYPE
@@ -1378,6 +1378,7 @@ lbl_80039FD8:
 /* 80039FE4 00036DE4  54 03 0F FE */	srwi r3, r0, 0x1f
 /* 80039FE8 00036DE8  4E 80 00 20 */	blr 
 
+.global PKR_updateLayerAssets__FP19st_PACKER_LTOC_NODE
 PKR_updateLayerAssets__FP19st_PACKER_LTOC_NODE:
 /* 80039FEC 00036DEC  94 21 FF E0 */	stwu r1, -0x20(r1)
 /* 80039FF0 00036DF0  7C 08 02 A6 */	mflr r0
